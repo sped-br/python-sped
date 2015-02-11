@@ -1,4 +1,4 @@
-# python-sped
+# SPED para python
 
 [![Build Status](https://travis-ci.org/sped-br/python-sped.svg "Build Status")](https://pypi.python.org/pypi/sped/)
 [![Coverage Status](https://coveralls.io/repos/sped-br/python-sped/badge.svg)](https://coveralls.io/r/sped-br/python-sped)
@@ -10,7 +10,7 @@
 
 Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python 3.4+.
 
-This software is coded and documented in portuguese only as it is intended to be used to generate the necessary files for the brazilian government regarding to digital bookkeeping.
+*This software is coded and documented in portuguese only as it is intended to be used to generate the necessary files for the brazilian government regarding to digital bookkeeping.*
 
 ## Como instalar
 
