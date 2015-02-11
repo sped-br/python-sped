@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sped-br/python-sped.svg "Build Status")](https://pypi.python.org/pypi/sped/)
 [![Coverage Status](https://coveralls.io/repos/sped-br/python-sped/badge.svg)](https://coveralls.io/r/sped-br/python-sped)
-[![Stories in Ready](https://badge.waffle.io/sped-br/python-sped.svg?label=ready&title=Ready)](http://waffle.io/sped-br/python-sped)python
+[![Stories in Ready](https://badge.waffle.io/sped-br/python-sped.svg?label=ready&title=Ready)](http://waffle.io/sped-br/python-sped)
 [![Latest Version](https://pypip.in/version/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
 [![Supported Python versions](https://pypip.in/py_versions/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
 [![Development Status](https://pypip.in/status/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
