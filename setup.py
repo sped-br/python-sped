@@ -1,5 +1,26 @@
 from setuptools import setup, find_packages
+from setuptools.command.test import test as test_command
 from sped import __version__
+
+
+class PyTest(test_command):
+    user_options = [('pytest-args=', 'a', "Arguments to pass to py.test")]
+
+    def initialize_options(self):
+        test_command.initialize_options(self)
+        self.pytest_args = []
+
+    def finalize_options(self):
+        test_command.finalize_options(self)
+        self.test_args = []
+        self.test_suite = True
+
+    def run_tests(self):
+        import sys
+        import pytest
+        errno = pytest.main(self.pytest_args)
+        sys.exit(errno)
+
 
 setup(
     name='sped',
@@ -18,4 +39,6 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
     keywords='sped fiscal contábil contabilidade receita federal',
+    tests_require=['pytest'],
+    cmdclass={'test': PyTest},
 )

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from ...campos import Campo
 from ...campos import CampoAlfanumerico
 from ...campos import CampoData
@@ -18,7 +20,7 @@ class Registro0000(Registro):
     >>> r.COD_VER
     '002'
     >>> r.TIPO_ESCRIT
-    0
+    '0'
     """
     campos = [
         CampoFixo(1, 'REG', '0000'),

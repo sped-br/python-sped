@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from ..campos import *
 from ..registros import Registro
 

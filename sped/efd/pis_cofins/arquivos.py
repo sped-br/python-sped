@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from ...arquivos import ArquivoDigital
 from . import blocos
 from . import registros

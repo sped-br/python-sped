@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 class Bloco(object):
     registro_abertura = None
     registro_fechamento = None

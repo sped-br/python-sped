@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from ..blocos import Bloco
 from .registros import Registro0001
 from .registros import Registro0990

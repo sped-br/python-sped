@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 class RegistroError(Exception):
     def __init__(self, registro):
         self._registro = registro
