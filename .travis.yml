@@ -4,7 +4,8 @@ python:
 install:
   - pip install pytest
   - pip install coveralls
-script: coverage run --source=sped setup.py test -a sped
+script:
+  - coverage run --source=sped setup.py test -a sped
 deploy:
   provider: pypi
   user: ginx
@@ -14,4 +15,4 @@ deploy:
     tags: true
     repo: sped-br/python-sped
 after_success:
-  coveralls
+  - coveralls
