@@ -2,8 +2,8 @@ language: python
 python:
 - '3.4'
 install:
-  pip install pytest
-  pip install coveralls
+  - pip install pytest
+  - pip install coveralls
 script: coverage run --source=sped setup.py test -a sped
 deploy:
   provider: pypi
