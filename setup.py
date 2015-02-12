@@ -27,9 +27,12 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     version=__version__,
     description='Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python.',
+    long_description='Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para '
+                     'Python.',
     author='Sergio Garcia',
     author_email='sergio@ginx.com.br',
     url='https://github.com/sped-br/python-sped',
+    download_url='https://github.com/sped-br/python-sped/releases',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',

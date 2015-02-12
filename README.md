@@ -47,7 +47,7 @@ O projeto está em fase inicial de desenvolvimento e não deve ser usado em prod
 | Módulo         |     Status    |
 |----------------|:-------------:|
 | ECD            | Não Iniciado  |
-| ECF            |   Iniciado    |
+| ECF            |   Funcional   |
 | EFD-PIS/COFINS |   Funcional   |
 | EFD-ICMS/IPI   | Não Iniciado  |
 
@@ -57,7 +57,10 @@ Este módulo ainda não foi iniciado seu desenvolvimento.
 
 ### ECF
 
-Este módulo está em fase inicial de desenvolvimento, seu registros ainda não estão com os campos populados.
+Este módulo está funcional, com todos seus registros codificados, porém muitos campos ainda não possuem uma validação
+adequada, consultado tabelas externas por exemplo, ou validando corretamente todos os tamanhos de campos.
+
+Ele pode ser usado para gerar um arquivo digital, com validações de abertura e fechamento de bloco automaticamente.
 
 ### EFD-PIS/COFINS
 
