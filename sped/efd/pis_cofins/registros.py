@@ -103,11 +103,11 @@ class Registro0111(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '0111'),
-        Campo(2, 'REC_BRU_NCUM_TRIB_MI', obrigatorio=True),
-        Campo(3, 'REC_BRU_ NCUM_NT_MI', obrigatorio=True),
-        Campo(4, 'REC_BRU_ NCUM_EXP', obrigatorio=True),
-        Campo(5, 'REC_BRU_CUM', obrigatorio=True),
-        Campo(6, 'REC_BRU_TOTAL', obrigatorio=True),
+        CampoNumerico(2, 'REC_BRU_NCUM_TRIB_MI', obrigatorio=True),
+        CampoNumerico(3, 'REC_BRU_NCUM_NT_MI', obrigatorio=True),
+        CampoNumerico(4, 'REC_BRU_NCUM_EXP', obrigatorio=True),
+        CampoNumerico(5, 'REC_BRU_CUM', obrigatorio=True),
+        CampoNumerico(6, 'REC_BRU_TOTAL', obrigatorio=True),
     ]
 
 
@@ -269,7 +269,7 @@ class Registro0500(Registro):
     campos = [
         CampoFixo(1, 'REG', '0500'),
         CampoData(2, 'DT_ALT', obrigatorio=True),
-        Campo(3, 'COD_ NAT_CC', obrigatorio=True),
+        Campo(3, 'COD_NAT_CC', obrigatorio=True),
         Campo(4, 'IND_CTA', obrigatorio=True),
         Campo(5, 'NÍVEL', obrigatorio=True),
         Campo(6, 'COD_CTA', obrigatorio=True),
@@ -1735,7 +1735,7 @@ class RegistroF120(Registro):
         CampoNumerico(15, 'VL_COFINS'),
         Campo(16, 'COD_CTA'),
         Campo(17, 'COD_CCUS'),
-        Campo(18, 'DESC_ BEM_IMOB'),
+        Campo(18, 'DESC_BEM_IMOB'),
     ]
 
 
@@ -1775,7 +1775,7 @@ class RegistroF130(Registro):
         CampoNumerico(18, 'VL_COFINS'),
         Campo(19, 'COD_CTA'),
         Campo(20, 'COD_CCUS'),
-        Campo(21, 'DESC_ BEM_IMOB'),
+        Campo(21, 'DESC_BEM_IMOB'),
     ]
 
 
@@ -1806,7 +1806,7 @@ class RegistroF150(Registro):
         CampoNumerico(9, 'VL_CRED_PIS', obrigatorio=True),
         Campo(10, 'CST_COFINS', obrigatorio=True),
         CampoNumerico(11, 'ALIQ_COFINS', obrigatorio=True),
-        CampoNumerico(12, 'VL_CRED_ COFINS', obrigatorio=True),
+        CampoNumerico(12, 'VL_CRED_COFINS', obrigatorio=True),
         Campo(13, 'DESC_EST'),
         Campo(14, 'COD_CTA'),
     ]
@@ -2686,7 +2686,7 @@ class RegistroM700(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'M700'),
-        Campo(2, ' COD_CONT', obrigatorio=True),
+        Campo(2, 'COD_CONT', obrigatorio=True),
         CampoNumerico(3, 'VL_CONT_APUR_DIFER', obrigatorio=True),
         Campo(4, 'NAT_CRED_DESC'),
         CampoNumerico(5, 'VL_CRED_DESC_DIFER'),
@@ -2939,7 +2939,7 @@ class Registro1102(Registro):
         CampoFixo(1, 'REG', '1102'),
         CampoNumerico(2, 'VL_CRED_PIS_TRIB_MI'),
         CampoNumerico(3, 'VL_CRED_PIS_NT_MI'),
-        CampoNumerico(4, 'VL_CRED_PIS_ EXP'),
+        CampoNumerico(4, 'VL_CRED_PIS_EXP'),
     ]
 
 
@@ -3074,7 +3074,7 @@ class Registro1502(Registro):
         CampoFixo(1, 'REG', '1502'),
         CampoNumerico(2, 'VL_CRED_COFINS_TRIB_MI'),
         CampoNumerico(3, 'VL_CRED_COFINS_NT_MI'),
-        CampoNumerico(4, 'VL_CRED_COFINS_ EXP'),
+        CampoNumerico(4, 'VL_CRED_COFINS_EXP'),
     ]
 
 
@@ -3152,8 +3152,8 @@ class Registro1800(Registro):
     campos = [
         CampoFixo(1, 'REG', '1800'),
         Campo(2, 'INC_IMOB', obrigatorio=True),
-        Campo(3, 'REC_RECEB_RET', obrigatorio=True),
-        Campo(4, 'REC_FIN_RET'),
+        CampoNumerico(3, 'REC_RECEB_RET', obrigatorio=True),
+        CampoNumerico(4, 'REC_FIN_RET'),
         Campo(5, 'BC_RET', obrigatorio=True),
         CampoNumerico(6, 'ALIQ_RET', obrigatorio=True),
         CampoNumerico(7, 'VL_REC_UNI', obrigatorio=True),
