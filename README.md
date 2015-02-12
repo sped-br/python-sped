@@ -18,7 +18,7 @@ Biblioteca para geração dos arquivos do Sistema Público de Escrituração Dig
 
 ## Como instalar
 
-    $ pip install sped
+    $ pip install sped==0.2dev1
 
 ## Objetivos do Projeto
 
