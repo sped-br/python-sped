@@ -10,7 +10,7 @@ deploy:
   provider: pypi
   user: ginx
   password:
-    secure: ZhMfnK7Ev+SPbXCEPQJ7DZtL356a+Mv5ppNievewZNoK/M1SOgZ4iEmid2oIcMSXMPLvYoAXT034sCa4/diSl50MMoiV2UubaFP1zacOFPacHdqsoE13w0fGQYzkAg/P9UL1kqvYoxL/3SGTXgncmgTbUc1ocAAW1yHCqKNwCMQ=
+    secure: "TAjKq1M0eWjMq/ZJ2tuBOYbcLY1v0mwKqRUsrpBJUOgam+4YLQhblPcHLZ3yOV5FzqBxHU/WBByZMloW3Cx5+FYL0MRDmktJTqsM0OjdIqmS5m9+yWIQul8nc/54Aa5lMhXgmDHFrqVV+Noe7nYZ//EetN02DHwx7HN/3lva/Is="
   on:
     tags: true
     repo: sped-br/python-sped
