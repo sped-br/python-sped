@@ -3,6 +3,10 @@
 from ..blocos import Bloco
 from .registros import Registro0001
 from .registros import Registro0990
+from .registros import RegistroI001
+from .registros import RegistroI990
+from .registros import RegistroJ001
+from .registros import RegistroJ990
 from .registros import Registro9001
 from .registros import Registro9990
 
@@ -13,6 +17,22 @@ class Bloco0(Bloco):
     """
     registro_abertura = Registro0001
     registro_fechamento = Registro0990
+
+
+class BlocoI(Bloco):
+    """
+    Lançamentos Contábeis
+    """
+    registro_abertura = RegistroI001
+    registro_fechamento = RegistroI990
+
+
+class BlocoJ(Bloco):
+    """
+    Demonstrações Contábeis
+    """
+    registro_abertura = RegistroJ001
+    registro_fechamento = RegistroJ990
 
 
 class Bloco9(Bloco):

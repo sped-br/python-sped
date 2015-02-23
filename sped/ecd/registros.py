@@ -4,6 +4,7 @@ from ..registros import Registro
 from ..campos import Campo
 from ..campos import CampoFixo
 
+
 class Registro0000(Registro):
     """
     ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DO EMPRESÁRIO OU DA SOCIEDADE EMPRESÁRIA

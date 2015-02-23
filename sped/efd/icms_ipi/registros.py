@@ -2,6 +2,7 @@
 
 from ...registros import Registro
 from ...campos import Campo
+from ...campos import CampoData
 from ...campos import CampoFixo
 
 
@@ -281,6 +282,16 @@ class Registro0990(Registro):
     campos = [
         CampoFixo(1, 'REG', '0990'),
         Campo(2, 'QTD_LIN_0'),
+    ]
+
+
+class RegistroC001(Registro):
+    """
+    ABERTURA DO BLOCO C
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'C001'),
+        Campo(2, 'IND_MOV'),
     ]
 
 
@@ -996,7 +1007,8 @@ class RegistroC495(Registro):
 
 class RegistroC500(Registro):
     """
-    NOTA FISCAL/CONTA DE ENERGIA ELÉTRICA, NOTA FISCAL CONSUMO FORNECIMENTO DE GÁS E NOTA FISCAL/CONTA DE FORNECIMENTO DÁGUA CANALIZADA (CÓDIGO 06, 28 e 29)
+    NOTA FISCAL/CONTA DE ENERGIA ELÉTRICA, NOTA FISCAL CONSUMO FORNECIMENTO DE GÁS E NOTA FISCAL/CONTA DE FORNECIMENTO
+    DÁGUA CANALIZADA (CÓDIGO 06, 28 e 29)
     """
     campos = [
         CampoFixo(1, 'REG', 'C500'),
@@ -1060,7 +1072,8 @@ class RegistroC510(Registro):
 
 class RegistroC590(Registro):
     """
-    REGISTRO ANALÍTICO DO DOCUMENTO - NOTA FISCAL/CONTA DE ENERGIA ELÉTRICA E NOTA FISCAL CONSUMO FORNECIMENTO DE GÁS (CÓDIGO 06 E 28)
+    REGISTRO ANALÍTICO DO DOCUMENTO - NOTA FISCAL/CONTA DE ENERGIA ELÉTRICA E NOTA FISCAL CONSUMO FORNECIMENTO DE GÁS
+    (CÓDIGO 06 E 28)
     """
     campos = [
         CampoFixo(1, 'REG', 'C590'),
@@ -1079,7 +1092,8 @@ class RegistroC590(Registro):
 
 class RegistroC600(Registro):
     """
-    CONSOLIDAÇÃO DIÁRIA DE NOTAS FISCAIS/CONTAS DE ENERGIA ELÉTRICA, NOTA FISCAL/CONTA DE FORNECIMENTO DÁGUA CANALIZADA E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS (EMPRESAS NÃO OBRIGADAS AO CONVÊNIO ICMS 115/03) - CÓDIGO 06, 29 E 28.
+    CONSOLIDAÇÃO DIÁRIA DE NOTAS FISCAIS/CONTAS DE ENERGIA ELÉTRICA, NOTA FISCAL/CONTA DE FORNECIMENTO DÁGUA CANALIZADA
+    E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS (EMPRESAS NÃO OBRIGADAS AO CONVÊNIO ICMS 115/03) - CÓDIGO 06, 29 E 28.
     """
     campos = [
         CampoFixo(1, 'REG', 'C600'),
@@ -1109,7 +1123,8 @@ class RegistroC600(Registro):
 
 class RegistroC601(Registro):
     """
-    DOCUMENTOS CANCELADOS - CONSOLIDAÇÃO DIÁRIA DE NOTAS FISCAIS/CONTAS DE ENERGIA ELÉTRICA, NOTA FISCAL/CONTA DE FORNECIMENTO DÁGUA CANALIZADA E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS - CÓDIGO 06, 29 E 28.
+    DOCUMENTOS CANCELADOS - CONSOLIDAÇÃO DIÁRIA DE NOTAS FISCAIS/CONTAS DE ENERGIA ELÉTRICA, NOTA FISCAL/CONTA DE
+    FORNECIMENTO DÁGUA CANALIZADA E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS - CÓDIGO 06, 29 E 28.
     """
     campos = [
         CampoFixo(1, 'REG', 'C601'),
@@ -1119,7 +1134,8 @@ class RegistroC601(Registro):
 
 class RegistroC610(Registro):
     """
-    ITENS DO DOCUMENTO CONSOLIDADO, NOTA FISCAL/CONTA DE FORNECIMENTO DÁGUA CANALIZADA E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS (EMPRESAS NÃO OBRIGADAS AO CONVÊNIO ICMS 115/03) - CÓDIGO 06, 29 E 28.
+    ITENS DO DOCUMENTO CONSOLIDADO, NOTA FISCAL/CONTA DE FORNECIMENTO DÁGUA CANALIZADA E NOTA FISCAL/CONTA DE
+    FORNECIMENTO DE GÁS (EMPRESAS NÃO OBRIGADAS AO CONVÊNIO ICMS 115/03) - CÓDIGO 06, 29 E 28.
     """
     campos = [
         CampoFixo(1, 'REG', 'C610'),
@@ -1144,7 +1160,8 @@ class RegistroC610(Registro):
 
 class RegistroC690(Registro):
     """
-    REGISTRO ANALÍTICO DOS DOCUMENTOS NOTAS FISCAIS/CONTAS DE ENERGIA ELÉTRICA, NOTA FISCAL/CONTA DE FORNECIMENTO D’ÁGUA CANALIZADA E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS - CÓDIGO 06, 29 E 28.
+    REGISTRO ANALÍTICO DOS DOCUMENTOS NOTAS FISCAIS/CONTAS DE ENERGIA ELÉTRICA, NOTA FISCAL/CONTA DE FORNECIMENTO D’ÁGUA
+    CANALIZADA E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS - CÓDIGO 06, 29 E 28.
     """
     campos = [
         CampoFixo(1, 'REG', 'C690'),
@@ -1163,7 +1180,8 @@ class RegistroC690(Registro):
 
 class RegistroC700(Registro):
     """
-    CONSOLIDAÇÃO DOS DOCUMENTOS NOTA FISCAL/CONTA ENERGIA ELÉTRICA, EMITIDAS EM VIA ÚNICA (EMPRESAS OBRIGADAS AO CONVÊNIO ICMS 115/03) E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS CANALIZADO
+    CONSOLIDAÇÃO DOS DOCUMENTOS NOTA FISCAL/CONTA ENERGIA ELÉTRICA, EMITIDAS EM VIA ÚNICA (EMPRESAS OBRIGADAS AO
+    CONVÊNIO ICMS 115/03) E NOTA FISCAL/CONTA DE FORNECIMENTO DE GÁS CANALIZADO
     """
     campos = [
         CampoFixo(1, 'REG', 'C700'),
@@ -1279,9 +1297,32 @@ class RegistroC890(Registro):
     ]
 
 
+class RegistroC990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO C
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'C990'),
+        Campo(2, 'QTD_LIN_C'),
+    ]
+
+
+class RegistroD001(Registro):
+    """
+    ABERTURA DO BLOCO D
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'D001'),
+        Campo(2, 'IND_MOV'),
+    ]
+
+
 class RegistroD100(Registro):
     """
-    NOTA FISCAL DE SERVIÇO DE TRANSPORTE E CONHECIMENTOS DE TRANSPORTE RODOVIÁRIO DE CARGAS, CONHECIMENTOS DE TRANSPORTE DE CARGAS AVULSO (CÓDIGO 8B), AQUAVIÁRIO DE CARGAS, AÉREO, FERROVIÁRIO DE CARGAS E MULTIMODAL DE CARGAS, NOTA FISCAL DE TRANSPORTE FERROVIÁRIO DE CARGA E CONHECIMENTO DE TRANSPORTE ELETRÔNICO - CT-E - (CÓDIGO 07, 08, 09, 10, 11, 26, 27 E 57)
+    NOTA FISCAL DE SERVIÇO DE TRANSPORTE E CONHECIMENTOS DE TRANSPORTE RODOVIÁRIO DE CARGAS, CONHECIMENTOS DE TRANSPORTE
+    DE CARGAS AVULSO (CÓDIGO 8B), AQUAVIÁRIO DE CARGAS, AÉREO, FERROVIÁRIO DE CARGAS E MULTIMODAL DE CARGAS, NOTA FISCAL
+    DE TRANSPORTE FERROVIÁRIO DE CARGA E CONHECIMENTO DE TRANSPORTE ELETRÔNICO - CT-E - (CÓDIGO 07, 08, 09, 10, 11, 26,
+    27 E 57)
     """
     campos = [
         CampoFixo(1, 'REG', 'D100'),
@@ -1542,7 +1583,8 @@ class RegistroD197(Registro):
 
 class RegistroD300(Registro):
     """
-    REGISTRO ANALÍTICO DOS BILHETES CONSOLIDADOS DE PASSAGEM RODOVIÁRIO, DE PASSAGEM AQUAVIÁRIO, DE PASSAGEM E NOTA DE BAGAGEM E DE PASSAGEM FERROVIÁRIO (CÓDIGO 13, 14, 15 E 16)
+    REGISTRO ANALÍTICO DOS BILHETES CONSOLIDADOS DE PASSAGEM RODOVIÁRIO, DE PASSAGEM AQUAVIÁRIO, DE PASSAGEM E NOTA DE
+    BAGAGEM E DE PASSAGEM FERROVIÁRIO (CÓDIGO 13, 14, 15 E 16)
     """
     campos = [
         CampoFixo(1, 'REG', 'D300'),
@@ -1570,7 +1612,8 @@ class RegistroD300(Registro):
 
 class RegistroD301(Registro):
     """
-    DOCUMENTOS CANCELADOS DOS BILHETES DE PASSAGEM RODOVIÁRIO, DE PASSAGEM AQUAVIÁRIO, DE PASSAGEM E NOTA DE BAGAGEM E DE PASSAGEM FERROVIÁRIO (CÓDIGO 13, 14, 15 E 16)
+    DOCUMENTOS CANCELADOS DOS BILHETES DE PASSAGEM RODOVIÁRIO, DE PASSAGEM AQUAVIÁRIO, DE PASSAGEM E NOTA DE BAGAGEM E
+    DE PASSAGEM FERROVIÁRIO (CÓDIGO 13, 14, 15 E 16)
     """
     campos = [
         CampoFixo(1, 'REG', 'D301'),
@@ -1842,7 +1885,8 @@ class RegistroD590(Registro):
 
 class RegistroD600(Registro):
     """
-    CONSOLIDAÇÃO DA PRESTAÇÃO DE SERVIÇOS - NOTAS DE SERVIÇO DE COMUNICAÇÃO E DE SERVIÇO DE TELECOMUNICAÇÃO (CÓDIGO 21 E 22)
+    CONSOLIDAÇÃO DA PRESTAÇÃO DE SERVIÇOS - NOTAS DE SERVIÇO DE COMUNICAÇÃO E DE SERVIÇO DE TELECOMUNICAÇÃO (CÓDIGO 21
+    E 22)
     """
     campos = [
         CampoFixo(1, 'REG', 'D600'),
@@ -1913,7 +1957,8 @@ class RegistroD690(Registro):
 
 class RegistroD695(Registro):
     """
-    CONSOLIDAÇÃO DA PRESTAÇÃO DE SERVIÇOS - NOTAS DE SERVIÇO DE COMUNICAÇÃO E DE SERVIÇO DE TELECOMUNICAÇÃO (CÓDIGO 21 E 22)
+    CONSOLIDAÇÃO DA PRESTAÇÃO DE SERVIÇOS - NOTAS DE SERVIÇO DE COMUNICAÇÃO E DE SERVIÇO DE TELECOMUNICAÇÃO (CÓDIGO 21
+    E 22)
     """
     campos = [
         CampoFixo(1, 'REG', 'D695'),
@@ -1948,13 +1993,24 @@ class RegistroD696(Registro):
 
 class RegistroD697(Registro):
     """
-    REGISTRO DE INFORMAÇÕES DE OUTRAS UFs, RELATIVAMENTE AOS SERVIÇOS “NÃO-MEDIDOS” DE TELEVISÃO POR ASSINATURA VIA SATÉLITE
+    REGISTRO DE INFORMAÇÕES DE OUTRAS UFs, RELATIVAMENTE AOS SERVIÇOS “NÃO-MEDIDOS” DE TELEVISÃO POR ASSINATURA VIA
+    SATÉLITE
     """
     campos = [
         CampoFixo(1, 'REG', 'D697'),
         Campo(2, 'UF'),
         Campo(3, 'VL_BC_ICMS'),
         Campo(4, 'VL_ICMS'),
+    ]
+
+
+class RegistroD990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO D
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'D990'),
+        Campo(2, 'QTD_LIN_D'),
     ]
 
 
@@ -2137,7 +2193,8 @@ class RegistroE230(Registro):
 
 class RegistroE240(Registro):
     """
-    INFORMAÇÕES ADICIONAIS DOS AJUSTES DA APURAÇÃO DO ICMS SUBSTITUIÇÃO TRIBUTÁRIA - IDENTIFICAÇÃO DOS DOCUMENTOS FISCAIS
+    INFORMAÇÕES ADICIONAIS DOS AJUSTES DA APURAÇÃO DO ICMS SUBSTITUIÇÃO TRIBUTÁRIA - IDENTIFICAÇÃO DOS DOCUMENTOS
+    FISCAIS
     """
     campos = [
         CampoFixo(1, 'REG', 'E240'),
@@ -2224,6 +2281,16 @@ class RegistroE530(Registro):
         Campo(5, 'IND_DOC'),
         Campo(6, 'NUM_DOC'),
         Campo(7, 'DESCR_AJ'),
+    ]
+
+
+class RegistroE990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO E
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'E990'),
+        Campo(2, 'QTD_LIN_E'),
     ]
 
 
@@ -2317,6 +2384,16 @@ class RegistroG140(Registro):
     ]
 
 
+class RegistroG990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO G
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'G990'),
+        Campo(2, 'QTD_LIN_G'),
+    ]
+
+
 class RegistroH001(Registro):
     """
     ABERTURA DO BLOCO H
@@ -2366,6 +2443,126 @@ class RegistroH020(Registro):
         Campo(2, 'CST_ICMS'),
         Campo(3, 'BC_ICMS'),
         Campo(4, 'VL_ICMS'),
+    ]
+
+
+class RegistroH990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO H
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'H990'),
+        Campo(2, 'QTD_LIN_H'),
+    ]
+
+
+class RegistroK001(Registro):
+    """
+    ABERTURA DO BLOCO K
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K001'),
+        Campo(2, 'IND_MOV'),
+    ]
+
+
+class RegistroK100(Registro):
+    """
+    PERÍODO DE APURAÇÃO DO ICMS/IPI
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K100'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
+    ]
+
+
+class RegistroK200(Registro):
+    """
+    ESTOQUE ESCRITURADO
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K200'),
+        CampoData(2, 'DT_EST'),
+        Campo(3, 'COD_ITEM'),
+        Campo(4, 'QTD'),
+        Campo(5, 'IND_EST'),
+        Campo(6, 'COD_PART'),
+    ]
+
+
+class RegistroK220(Registro):
+    """
+    OUTRAS MOVIMENTAÇÕES INTERNAS ENTRE MERCADORIAS
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K220'),
+        CampoData(2, 'DT_MOV'),
+        Campo(3, 'COD_ITEM_ORI'),
+        Campo(4, 'COD_ITEM_DEST'),
+        Campo(5, 'QTD'),
+    ]
+
+
+class RegistroK230(Registro):
+    """
+    ITENS PRODUZIDOS
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K230'),
+        CampoData(2, 'DT_INI_OP'),
+        CampoData(3, 'DT_FIN_OP'),
+        Campo(4, 'COD_DOC_OP'),
+        Campo(5, 'COD_ITEM'),
+        Campo(6, 'QTD_ENC'),
+    ]
+
+
+class RegistroK235(Registro):
+    """
+    INSUMOS CONSUMIDOS
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K235'),
+        CampoData(2, 'DT_SAÍDA'),
+        Campo(3, 'COD_ITEM'),
+        Campo(4, 'QTD'),
+        Campo(5, 'COD_INS_SUBST'),
+    ]
+
+
+class RegistroK250(Registro):
+    """
+    INDUSTRIALIZAÇÃO EFETUADA POR TERCEIROS – ITENS PRODUZIDOS
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K250'),
+        CampoData(2, 'DT_PROD'),
+        Campo(3, 'COD_ITEM'),
+        Campo(4, 'QTD'),
+    ]
+
+
+class RegistroK255(Registro):
+    """
+    INDUSTRIALIZAÇÃO EM TERCEIROS – INSUMOS CONSUMIDOS
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K255'),
+        CampoData(2, 'DT_CONS'),
+        Campo(3, 'COD_ITEM'),
+        Campo(4, 'QTD'),
+        Campo(5, 'COD_INS_SUBST'),
+    ]
+
+
+class RegistroK990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO K
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'K990'),
+        Campo(2, 'QTD_LIN_K'),
     ]
 
 
