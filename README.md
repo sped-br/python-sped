@@ -18,7 +18,7 @@ Biblioteca para geração dos arquivos do Sistema Público de Escrituração Dig
 
 ## Como instalar
 
-    $ pip install sped==0.2dev1
+    $ pip install sped==0.2.dev2
 
 ## Objetivos do Projeto
 
@@ -46,16 +46,26 @@ O projeto está em fase inicial de desenvolvimento e não deve ser usado em prod
 
 | Módulo         |     Status    |
 |----------------|:-------------:|
-| ECD            | Não Iniciado  |
+| ECD            |   Funcional   |
 | ECF            |   Funcional   |
 | EFD-PIS/COFINS |   Funcional   |
-| EFD-ICMS/IPI   | Não Iniciado  |
+| EFD-ICMS/IPI   |   Funcional   |
 
 ### ECD
 
-Este módulo ainda não foi iniciado seu desenvolvimento.
+Este módulo está funcional, com todos seus registros codificados, porém muitos campos ainda não possuem uma validação
+adequada, consultado tabelas externas por exemplo, ou validando corretamente todos os tamanhos de campos.
+
+Ele pode ser usado para gerar um arquivo digital, com validações de abertura e fechamento de bloco automaticamente.
 
 ### ECF
+
+Este módulo está funcional, com todos seus registros codificados, porém muitos campos ainda não possuem uma validação
+adequada, consultado tabelas externas por exemplo, ou validando corretamente todos os tamanhos de campos.
+
+Ele pode ser usado para gerar um arquivo digital, com validações de abertura e fechamento de bloco automaticamente.
+
+### EFD-ICMS/IPI
 
 Este módulo está funcional, com todos seus registros codificados, porém muitos campos ainda não possuem uma validação
 adequada, consultado tabelas externas por exemplo, ou validando corretamente todos os tamanhos de campos.
@@ -69,6 +79,3 @@ adequada, consultado tabelas externas por exemplo, ou validando corretamente tod
 
 Ele pode ser usado para gerar um arquivo digital, com validações de abertura e fechamento de bloco automaticamente.
 
-### EFD-ICMS/IPI
-
-Este módulo ainda não foi iniciado seu desenvolvimento.

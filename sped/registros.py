@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from .campos import *
+from .campos import CampoData
+from .campos import CampoFixo
+from .campos import CampoRegex
+from .erros import CampoError
+from .erros import CampoInexistenteError
 
 
 class Registro(object):

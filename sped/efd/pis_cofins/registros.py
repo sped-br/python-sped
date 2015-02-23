@@ -2,6 +2,7 @@
 
 from ...campos import Campo
 from ...campos import CampoAlfanumerico
+from ...campos import CampoCNPJ
 from ...campos import CampoData
 from ...campos import CampoFixo
 from ...campos import CampoNumerico
@@ -31,7 +32,7 @@ class Registro0000(Registro):
         CampoData(6, 'DT_INI', obrigatorio=True),
         CampoData(7, 'DT_FIN', obrigatorio=True),
         Campo(8, 'NOME', obrigatorio=True),
-        Campo(9, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(9, 'CNPJ', obrigatorio=True),
         Campo(10, 'UF', obrigatorio=True),
         Campo(11, 'COD_MUN', obrigatorio=True),
         Campo(12, 'SUFRAMA'),
@@ -71,7 +72,7 @@ class Registro0100(Registro):
         Campo(2, 'NOME', obrigatorio=True),
         Campo(3, 'CPF', obrigatorio=True),
         Campo(4, 'CRC', obrigatorio=True),
-        Campo(5, 'CNPJ'),
+        CampoCNPJ(5, 'CNPJ'),
         Campo(6, 'CEP'),
         Campo(7, 'END'),
         Campo(8, 'NUM'),
@@ -130,7 +131,7 @@ class Registro0140(Registro):
         CampoFixo(1, 'REG', '0140'),
         Campo(2, 'COD_EST'),
         Campo(3, 'NOME', obrigatorio=True),
-        Campo(4, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(4, 'CNPJ', obrigatorio=True),
         Campo(5, 'UF', obrigatorio=True),
         Campo(6, 'IE'),
         Campo(7, 'COD_MUN', obrigatorio=True),
@@ -162,7 +163,7 @@ class Registro0150(Registro):
         Campo(2, 'COD_PART', obrigatorio=True),
         Campo(3, 'NOME', obrigatorio=True),
         Campo(4, 'COD_PAIS', obrigatorio=True),
-        Campo(5, 'CNPJ'),
+        CampoCNPJ(5, 'CNPJ'),
         Campo(6, 'CPF'),
         Campo(7, 'IE'),
         Campo(8, 'COD_MUN'),
@@ -275,7 +276,7 @@ class Registro0500(Registro):
         Campo(6, 'COD_CTA', obrigatorio=True),
         Campo(7, 'NOME_CTA', obrigatorio=True),
         Campo(8, 'COD_CTA_REF'),
-        Campo(9, 'CNPJ_EST'),
+        CampoCNPJ(9, 'CNPJ_EST'),
     ]
 
 
@@ -317,7 +318,7 @@ class RegistroA010(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'A010'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
 
 
@@ -441,7 +442,7 @@ class RegistroC010(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'C010'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         Campo(3, 'IND_ESCRI'),
     ]
 
@@ -1277,7 +1278,7 @@ class RegistroD010(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'D010'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
 
 
@@ -1670,7 +1671,7 @@ class RegistroF010(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'F010'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
 
 
@@ -2074,7 +2075,7 @@ class RegistroF600(Registro):
         CampoNumerico(5, 'VL_RET', obrigatorio=True),
         Campo(6, 'COD_REC'),
         Campo(7, 'IND_NAT_REC'),
-        Campo(8, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(8, 'CNPJ', obrigatorio=True),
         CampoNumerico(9, 'VL_RET_PIS', obrigatorio=True),
         CampoNumerico(10, 'VL_RET_COFINS', obrigatorio=True),
         Campo(11, 'IND_DEC', obrigatorio=True),
@@ -2092,7 +2093,7 @@ class RegistroF700(Registro):
         CampoNumerico(4, 'VL_DED_PIS', obrigatorio=True),
         CampoNumerico(5, 'VL_DED_COFINS', obrigatorio=True),
         CampoNumerico(6, 'VL_BC_OPER', obrigatorio=True),
-        Campo(7, 'CNPJ'),
+        CampoCNPJ(7, 'CNPJ'),
         Campo(8, 'INF_COMP'),
     ]
 
@@ -2105,7 +2106,7 @@ class RegistroF800(Registro):
         CampoFixo(1, 'REG', 'F800'),
         Campo(2, 'IND_NAT_EVEN', obrigatorio=True),
         CampoData(3, 'DT_EVEN', obrigatorio=True),
-        Campo(4, 'CNPJ_SUCED', obrigatorio=True),
+        CampoCNPJ(4, 'CNPJ_SUCED', obrigatorio=True),
         Campo(5, 'PA_CONT_CRED', obrigatorio=True),
         Campo(6, 'COD_CRED', obrigatorio=True),
         CampoNumerico(7, 'VL_CRED_PIS', obrigatorio=True),
@@ -2140,7 +2141,7 @@ class RegistroI010(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'I010'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         Campo(3, 'IND_ATIV', obrigatorio=True),
         Campo(4, 'INFO_COMPL'),
     ]
@@ -2425,7 +2426,7 @@ class RegistroM230(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'M230'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         CampoNumerico(3, 'VL_VEND', obrigatorio=True),
         CampoNumerico(4, 'VL_NAO_RECEB', obrigatorio=True),
         CampoNumerico(5, 'VL_CONT_DIF', obrigatorio=True),
@@ -2671,7 +2672,7 @@ class RegistroM630(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'M630'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         CampoNumerico(3, 'VL_VEND', obrigatorio=True),
         CampoNumerico(4, 'VL_NAO_RECEB', obrigatorio=True),
         CampoNumerico(5, 'VL_CONT_DIF', obrigatorio=True),
@@ -2750,7 +2751,7 @@ class RegistroP010(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'P010'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
 
 
@@ -2883,7 +2884,7 @@ class Registro1100(Registro):
         CampoFixo(1, 'REG', '1100'),
         Campo(2, 'PER_APU_CRED', obrigatorio=True),
         Campo(3, 'ORIG_CRED', obrigatorio=True),
-        Campo(4, 'CNPJ_SUC'),
+        CampoCNPJ(4, 'CNPJ_SUC'),
         Campo(5, 'COD_CRED', obrigatorio=True),
         CampoNumerico(6, 'VL_CRED_APU', obrigatorio=True),
         CampoNumerico(7, 'VL_CRED_EXT_APU'),
@@ -2927,7 +2928,7 @@ class Registro1101(Registro):
         Campo(19, 'COD_CCUS'),
         Campo(20, 'DESC_COMPL'),
         Campo(21, 'PER_ESCRIT'),
-        Campo(22, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(22, 'CNPJ', obrigatorio=True),
     ]
 
 
@@ -2968,7 +2969,7 @@ class Registro1210(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '1210'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         Campo(3, 'CST_PIS', obrigatorio=True),
         Campo(4, 'COD_PART'),
         CampoData(5, 'DT_OPER', obrigatorio=True),
@@ -3018,7 +3019,7 @@ class Registro1500(Registro):
         CampoFixo(1, 'REG', '1500'),
         Campo(2, 'PER_APU_CRED', obrigatorio=True),
         Campo(3, 'ORIG_CRED', obrigatorio=True),
-        Campo(4, 'CNPJ_SUC'),
+        CampoCNPJ(4, 'CNPJ_SUC'),
         Campo(5, 'COD_CRED', obrigatorio=True),
         CampoNumerico(6, 'VL_CRED_APU', obrigatorio=True),
         CampoNumerico(7, 'VL_CRED_EXT_APU'),
@@ -3062,7 +3063,7 @@ class Registro1501(Registro):
         Campo(19, 'COD_CCUS'),
         Campo(20, 'DESC_COMPL'),
         Campo(21, 'PER_ESCRIT'),
-        Campo(22, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(22, 'CNPJ', obrigatorio=True),
     ]
 
 
@@ -3103,7 +3104,7 @@ class Registro1610(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '1610'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         Campo(3, 'CST_COFINS', obrigatorio=True),
         Campo(4, 'COD_PART'),
         CampoData(5, 'DT_OPER', obrigatorio=True),
@@ -3180,7 +3181,7 @@ class Registro1900(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '1900'),
-        Campo(2, 'CNPJ', obrigatorio=True),
+        CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         Campo(3, 'COD_MOD', obrigatorio=True),
         Campo(4, 'SER'),
         Campo(5, 'SUB_SER'),

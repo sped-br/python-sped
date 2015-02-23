@@ -7,7 +7,9 @@ from datetime import date
 from datetime import datetime
 from decimal import Decimal
 
-from .erros import *
+from .erros import CampoFixoError
+from .erros import CampoObrigatorioError
+from .erros import FormatoInvalidoError
 
 
 class Campo(object):
@@ -48,7 +50,15 @@ class Campo(object):
         return registro.valores[self._indice] or None
 
     def set(self, registro, valor):
+        if self._obrigatorio and not valor:
+            raise CampoObrigatorioError(registro, self.nome)
+        if valor and not self.__class__.validar(valor):
+            raise FormatoInvalidoError(registro, self.nome)
         registro.valores[self._indice] = valor or ''
+
+    @staticmethod
+    def validar(valor):
+        return True
 
 
 class CampoFixo(Campo):
@@ -162,3 +172,67 @@ class CampoRegex(Campo):
             super().set(registro, valor)
         else:
             raise FormatoInvalidoError(registro, self.nome)
+
+
+class CampoCNPJ(Campo):
+    @staticmethod
+    def validar(valor):
+        if len(valor) != 14:
+            return False
+
+        multiplicadores = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
+
+        cnpj = [int(c) for c in valor]
+
+        soma1 = sum([cnpj[i] * multiplicadores[i+1] for i in range(12)])
+        soma2 = sum([cnpj[i] * multiplicadores[i] for i in range(13)])
+        digito1 = 11 - (soma1 % 11)
+        digito2 = 11 - (soma2 % 11)
+
+        if digito1 >= 10:
+            digito1 = 0
+
+        if digito2 >= 10:
+            digito2 = 0
+
+        if cnpj[12] != digito1 or cnpj[13] != digito2:
+            return False
+
+        return True
+
+
+class CampoCPF(Campo):
+    @staticmethod
+    def validar(valor):
+        if len(valor) != 11:
+            return False
+
+        multiplicadores = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+
+        cpf = [int(c) for c in valor]
+
+        soma1 = sum([cpf[i] * multiplicadores[i+1] for i in range(9)])
+        soma2 = sum([cpf[i] * multiplicadores[i] for i in range(10)])
+        digito1 = 11 - (soma1 % 11)
+        digito2 = 11 - (soma2 % 11)
+
+        if digito1 >= 10:
+            digito1 = 0
+
+        if digito2 >= 10:
+            digito2 = 0
+
+        if cpf[9] != digito1 or cpf[10] != digito2:
+            return False
+
+        return True
+
+
+class CampoCPFouCNPJ(Campo):
+    @staticmethod
+    def validar(valor):
+        if len(valor) == 14:
+            return CampoCNPJ.validar(valor)
+        if len(valor) == 11:
+            return CampoCPF.validar(valor)
+        return False

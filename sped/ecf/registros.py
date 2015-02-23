@@ -37,7 +37,7 @@ class Registro0000(Registro):
         CampoFixo(1, 'REG', '0000'),
         CampoFixo(2, 'NOME_ESC', 'LECF'),
         CampoAlfanumerico(3, 'COD_VER', obrigatorio=True, tamanho=4),
-        CampoAlfanumerico(4, 'CNPJ', obrigatorio=True, tamanho=14),
+        CampoCNPJ(4, 'CNPJ', obrigatorio=True),
         CampoAlfanumerico(5, 'NOME', obrigatorio=True),
         CampoRegex(6, 'IND_SIT_INI_PER', obrigatorio=True, regex='[0-4]'),
         CampoRegex(7, 'SIT_ESPECIAL', obrigatorio=True, regex='[0-9]'),
@@ -200,7 +200,7 @@ class RegistroC040(Registro):
         CampoData(3, 'DT_INI'),
         CampoData(4, 'DT_FIN'),
         Campo(5, 'IND_SIT_ESP'),
-        Campo(6, 'CNPJ'),
+        CampoCNPJ(6, 'CNPJ'),
         Campo(7, 'NUM_ORD'),
         Campo(8, 'NIRE'),
         Campo(9, 'NAT_LIVR'),
@@ -1882,7 +1882,7 @@ class RegistroY540(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y540'),
-        Campo(2, 'CNPJ_ESTAB'),
+        CampoCNPJ(2, 'CNPJ_ESTAB'),
         Campo(3, 'VL_REC_ESTAB'),
         Campo(4, 'CNAE'),
     ]
@@ -1895,7 +1895,7 @@ class RegistroY550(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y550'),
-        Campo(2, 'CNPJ_EXP'),
+        CampoCNPJ(2, 'CNPJ_EXP'),
         Campo(3, 'COD_NCM'),
         Campo(4, 'VL_VENDA'),
     ]
@@ -1908,7 +1908,7 @@ class RegistroY560(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y560'),
-        Campo(2, 'CNPJ'),
+        CampoCNPJ(2, 'CNPJ'),
         Campo(3, 'COD_NCM'),
         Campo(4, 'VL_COMPRA'),
         Campo(5, 'VL_EXP'),
@@ -1922,7 +1922,7 @@ class RegistroY570(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y570'),
-        Campo(2, 'CNPJ_FON'),
+        CampoCNPJ(2, 'CNPJ_FON'),
         Campo(3, 'NOM_EMP'),
         Campo(4, 'IND_ORG_PUB'),
         Campo(5, 'COD_REC'),
@@ -1938,7 +1938,7 @@ class RegistroY580(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y580'),
-        Campo(2, 'CNPJ'),
+        CampoCNPJ(2, 'CNPJ'),
         Campo(3, 'TIP_BENEF'),
         Campo(4, 'FORM_DOA'),
         Campo(5, 'VL_DOA'),
@@ -2023,7 +2023,7 @@ class RegistroY620(Registro):
     campos = [
         CampoFixo(1, 'REG', 'Y620'),
         Campo(2, 'PAIS'),
-        Campo(3, 'CNPJ'),
+        CampoCNPJ(3, 'CNPJ'),
         Campo(4, 'NOM_EMP'),
         CampoNumerico(5, 'VALOR_REAIS'),
         CampoNumerico(6, 'VALOR_ESTR'),
@@ -2045,7 +2045,7 @@ class RegistroY630(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y630'),
-        Campo(2, 'CNPJ'),
+        CampoCNPJ(2, 'CNPJ'),
         Campo(3, 'QTE_QUOT'),
         Campo(4, 'QTE_QUOTA'),
         Campo(5, 'PATR_FIN_PER'),
@@ -2060,7 +2060,7 @@ class RegistroY640(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y640'),
-        Campo(2, 'CNPJ'),
+        CampoCNPJ(2, 'CNPJ'),
         Campo(3, 'COND_DECL'),
         Campo(4, 'VL_CONS'),
         Campo(5, 'CNPJ_LID'),
@@ -2074,7 +2074,7 @@ class RegistroY650(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y650'),
-        Campo(2, 'CNPJ'),
+        CampoCNPJ(2, 'CNPJ'),
         Campo(3, 'VL_PART'),
     ]
 
@@ -2085,7 +2085,7 @@ class RegistroY660(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'Y660'),
-        Campo(2, 'CNPJ'),
+        CampoCNPJ(2, 'CNPJ'),
         Campo(3, 'NOM_EMP'),
         CampoNumerico(4, 'PERC_PAT_LIQ'),
     ]

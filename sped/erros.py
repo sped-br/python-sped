@@ -26,6 +26,10 @@ class CampoInexistenteError(CampoError):
     pass
 
 
+class CampoObrigatorioError(CampoError):
+    pass
+
+
 class FormatoInvalidoError(CampoError):
     pass
 
