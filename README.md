@@ -42,7 +42,7 @@ Contribuições são bem vindas ao projeto, exemplos de como você pode contribu
 
 ## Status do Projeto
 
-O projeto está em fase inicial de desenvolvimento e não deve ser usado em produção.
+O projeto está em fase inicial de desenvolvimento e **não deve** ser usado em produção.
 
 | Módulo         |     Status    |
 |----------------|:-------------:|
@@ -78,4 +78,3 @@ Este módulo está funcional, com todos seus registros codificados, porém muito
 adequada, consultado tabelas externas por exemplo, ou validando corretamente todos os tamanhos de campos.
 
 Ele pode ser usado para gerar um arquivo digital, com validações de abertura e fechamento de bloco automaticamente.
-
