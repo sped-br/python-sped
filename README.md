@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/sped-br/python-sped.svg "Build Status")](https://travis-ci.org/sped-br/python-sped)
 [![Coverage Status](https://coveralls.io/repos/sped-br/python-sped/badge.svg)](https://coveralls.io/r/sped-br/python-sped)
 [![Stories in Ready](https://badge.waffle.io/sped-br/python-sped.svg?label=ready&title=Ready)](http://waffle.io/sped-br/python-sped)
-[![Supported Python versions](https://shields.io/py_versions/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
 
 Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python 3.4+.
 
