@@ -1,12 +1,8 @@
 # SPED para python
 
-[![License](https://pypip.in/license/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
 [![Build Status](https://travis-ci.org/sped-br/python-sped.svg "Build Status")](https://travis-ci.org/sped-br/python-sped)
 [![Coverage Status](https://coveralls.io/repos/sped-br/python-sped/badge.svg)](https://coveralls.io/r/sped-br/python-sped)
 [![Stories in Ready](https://badge.waffle.io/sped-br/python-sped.svg?label=ready&title=Ready)](http://waffle.io/sped-br/python-sped)
-[![Latest Version](https://pypip.in/version/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
-[![Supported Python versions](https://pypip.in/py_versions/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
-[![Development Status](https://pypip.in/status/sped/badge.svg)](https://pypi.python.org/pypi/sped/)
 
 Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python 3.4+.
 
@@ -42,7 +38,7 @@ Contribuições são bem vindas ao projeto, exemplos de como você pode contribu
 
 ## Status do Projeto
 
-O projeto está em fase inicial de desenvolvimento e não deve ser usado em produção.
+O projeto está em fase inicial de desenvolvimento e **não deve** ser usado em produção.
 
 | Módulo         |     Status    |
 |----------------|:-------------:|
@@ -78,4 +74,3 @@ Este módulo está funcional, com todos seus registros codificados, porém muito
 adequada, consultado tabelas externas por exemplo, ou validando corretamente todos os tamanhos de campos.
 
 Ele pode ser usado para gerar um arquivo digital, com validações de abertura e fechamento de bloco automaticamente.
-
