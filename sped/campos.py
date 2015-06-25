@@ -52,6 +52,9 @@ class Campo(object):
     def set(self, registro, valor):
         if self._obrigatorio and not valor:
             raise CampoObrigatorioError(registro, self.nome)
+        if not valor:
+            registro.valores[self._indice] = ''
+            return
         if valor and not self.__class__.validar(valor):
             raise FormatoInvalidoError(registro, self.nome)
         if not isinstance(valor, str):

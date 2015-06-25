@@ -40,4 +40,5 @@ assets/
 # Setup Generated files
 dist/
 build/
+.eggs/
 *.egg-info
