@@ -54,6 +54,8 @@ class Campo(object):
             raise CampoObrigatorioError(registro, self.nome)
         if valor and not self.__class__.validar(valor):
             raise FormatoInvalidoError(registro, self.nome)
+        if not isinstance(valor, str):
+            raise FormatoInvalidoError(registro, self.nome)
         registro.valores[self._indice] = valor or ''
 
     @staticmethod
@@ -133,12 +135,12 @@ class CampoNumerico(Campo):
         return Decimal(valor.replace(',', '.'))
 
     def set(self, registro, valor):
-        if not valor:
-            super().set(registro, None)
-        elif isinstance(valor, Decimal) or isinstance(valor, float):
+        if isinstance(valor, Decimal) or isinstance(valor, float):
             super().set(registro, (('%.' + str(self._precisao) + 'f') % valor).replace('.', ','))
         elif isinstance(valor, int):
             super().set(registro, str(valor))
+        elif not valor:
+            super().set(registro, '0')
         else:
             raise FormatoInvalidoError(registro, self.nome)
 
@@ -154,10 +156,10 @@ class CampoData(Campo):
         return datetime.strptime(valor, '%d%m%Y').date()
 
     def set(self, registro, valor):
-        if not valor:
-            super().set(registro, None)
-        elif isinstance(valor, date):
+        if isinstance(valor, date):
             super().set(registro, valor.strftime('%d%m%Y'))
+        elif not valor:
+            super().set(registro, None)
         else:
             raise FormatoInvalidoError(registro, self.nome)
 

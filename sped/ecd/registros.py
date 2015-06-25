@@ -2,7 +2,9 @@
 
 from ..registros import Registro
 from ..campos import Campo
+from ..campos import CampoData
 from ..campos import CampoFixo
+from ..campos import CampoNumerico
 
 
 class Registro0000(Registro):
@@ -11,16 +13,24 @@ class Registro0000(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '0000'),
-        Campo(2, 'LECD'),
-        Campo(3, 'DT_INI'),
-        Campo(4, 'DT_FIN'),
+        CampoFixo(2, 'LECD', 'LECD'),
+        CampoData(3, 'DT_INI'),
+        CampoData(4, 'DT_FIN'),
         Campo(5, 'NOME'),
         Campo(6, 'CNPJ'),
         Campo(7, 'UF'),
         Campo(8, 'IE'),
-        Campo(9, 'COD_MUN'),
+        CampoNumerico(9, 'COD_MUN'),
         Campo(10, 'IM'),
         Campo(11, 'IND_SIT_ESP'),
+        Campo(12, 'IND_SIT_INI_PER'),
+        Campo(13, 'IND_NIRE'),
+        Campo(14, 'IND_FIN_ESC'),
+        Campo(15, 'COD_HASH_SUB'),
+        Campo(16, 'NIRE_SUBST'),
+        Campo(17, 'IND_GRANDE_PORTE'),
+        Campo(18, 'TIP_ECD'),
+        Campo(19, 'COD_SCP'),
     ]
 
 
@@ -89,8 +99,8 @@ class Registro0180(Registro):
     campos = [
         CampoFixo(1, 'REG', '0180'),
         Campo(2, 'COD_REL'),
-        Campo(3, 'DT_INI_REL'),
-        Campo(4, 'DT_FIN_REL'),
+        CampoData(3, 'DT_INI_REL'),
+        CampoData(4, 'DT_FIN_REL'),
     ]
 
 
@@ -100,7 +110,7 @@ class Registro0990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '0990'),
-        Campo(2, 'QTD_LIN_0'),
+        CampoNumerico(2, 'QTD_LIN_0'),
     ]
 
 
@@ -169,15 +179,16 @@ class RegistroI030(Registro):
     campos = [
         CampoFixo(1, 'REG', 'I030'),
         Campo(2, 'DNRC_ABERT'),
-        Campo(3, 'NUM_ORD'),
+        CampoNumerico(3, 'NUM_ORD'),
         Campo(4, 'NAT_LIVR'),
-        Campo(5, 'QTD_LIN'),
+        CampoNumerico(5, 'QTD_LIN'),
         Campo(6, 'NOME'),
         Campo(7, 'NIRE'),
         Campo(8, 'CNPJ'),
-        Campo(9, 'DT_ARQ'),
-        Campo(10, 'DT_ARQ_CONV'),
+        CampoData(9, 'DT_ARQ'),
+        CampoData(10, 'DT_ARQ_CONV'),
         Campo(11, 'DESC_MUN'),
+        CampoData(12, 'DT_EX_SOCIAL'),
     ]
 
 
@@ -187,10 +198,10 @@ class RegistroI050(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'I050'),
-        Campo(2, 'DT_ALT'),
+        CampoData(2, 'DT_ALT'),
         Campo(3, 'COD_NAT'),
         Campo(4, 'IND_CTA'),
-        Campo(5, 'NÍVEL'),
+        CampoNumerico(5, 'NIVEL'),
         Campo(6, 'COD_CTA'),
         Campo(7, 'COD_CTA_SUP'),
         Campo(8, 'CTA'),
@@ -237,7 +248,7 @@ class RegistroI100(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'I100'),
-        Campo(2, 'DT_ALT'),
+        CampoData(2, 'DT_ALT'),
         Campo(3, 'COD_CCUS'),
         Campo(4, 'CCUS'),
     ]
@@ -249,8 +260,8 @@ class RegistroI150(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'I150'),
-        Campo(2, 'DT_INI'),
-        Campo(3, 'DT_FIN'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
     ]
 
 
@@ -262,11 +273,11 @@ class RegistroI155(Registro):
         CampoFixo(1, 'REG', 'I155'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        Campo(4, 'VL_SLD_INI'),
+        CampoNumerico(4, 'VL_SLD_INI'),
         Campo(5, 'IND_DC_INI'),
-        Campo(6, 'VL_DEB'),
-        Campo(7, 'VL_CRED'),
-        Campo(8, 'VL_SLD_FIN'),
+        CampoNumerico(6, 'VL_DEB'),
+        CampoNumerico(7, 'VL_CRED'),
+        CampoNumerico(8, 'VL_SLD_FIN'),
         Campo(9, 'IND_DC_FIN'),
     ]
 
@@ -278,8 +289,8 @@ class RegistroI200(Registro):
     campos = [
         CampoFixo(1, 'REG', 'I200'),
         Campo(2, 'NUM_LCTO'),
-        Campo(3, 'DT_LCTO'),
-        Campo(4, 'VL_LCTO'),
+        CampoData(3, 'DT_LCTO'),
+        CampoNumerico(4, 'VL_LCTO'),
         Campo(5, 'IND_LCTO'),
     ]
 
@@ -292,7 +303,7 @@ class RegistroI250(Registro):
         CampoFixo(1, 'REG', 'I250'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        Campo(4, 'VL_DC'),
+        CampoNumerico(4, 'VL_DC'),
         Campo(5, 'IND_DC'),
         Campo(6, 'NUM_ARQ'),
         Campo(7, 'COD_HIST_PAD'),
@@ -307,7 +318,7 @@ class RegistroI300(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'I300'),
-        Campo(2, 'DT_BCTE'),
+        CampoData(2, 'DT_BCTE'),
     ]
 
 
@@ -319,8 +330,18 @@ class RegistroI310(Registro):
         CampoFixo(1, 'REG', 'I310'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        Campo(4, 'VAL_DEBD'),
-        Campo(5, 'VAL_CRÉD'),
+        CampoNumerico(4, 'VAL_DEBD'),
+        CampoNumerico(5, 'VAL_CREDD'),
+    ]
+
+
+class RegistroI350(Registro):
+    """
+    SALDOS DAS CONTAS DE RESULTADO ANTES DO ENCERRAMENTO - IDENTIFICAÇÃO DA DATA
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'I350'),
+        CampoData(2, 'DT_RES'),
     ]
 
 
@@ -332,7 +353,7 @@ class RegistroI355(Registro):
         CampoFixo(1, 'REG', 'I355'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        Campo(4, 'VL_CTA'),
+        CampoNumerico(4, 'VL_CTA'),
         Campo(5, 'IND_DC'),
     ]
 
@@ -388,7 +409,7 @@ class RegistroI990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'I990'),
-        Campo(2, 'QTD_LIN_I'),
+        CampoNumerico(2, 'QTD_LIN_I'),
     ]
 
 
@@ -408,8 +429,8 @@ class RegistroJ005(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'J005'),
-        Campo(2, 'DT_INI'),
-        Campo(3, 'DT_FIN'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
         Campo(4, 'ID_DEM'),
         Campo(5, 'CAB_DEM'),
     ]
@@ -425,7 +446,7 @@ class RegistroJ100(Registro):
         Campo(3, 'NÍVEL_AGL'),
         Campo(4, 'IND_GRP_BAL'),
         Campo(5, 'DESCR_COD_AGL'),
-        Campo(6, 'VL_CTA'),
+        CampoNumerico(6, 'VL_CTA'),
         Campo(7, 'IND_DC_BAL'),
     ]
 
@@ -439,7 +460,7 @@ class RegistroJ150(Registro):
         Campo(2, 'COD_AGL'),
         Campo(3, 'NÍVEL_AGL'),
         Campo(4, 'DESCR_COD_AGL'),
-        Campo(5, 'VL_CTA'),
+        CampoNumerico(5, 'VL_CTA'),
         Campo(6, 'IND_VL'),
     ]
 
@@ -462,12 +483,12 @@ class RegistroJ900(Registro):
     campos = [
         CampoFixo(1, 'REG', 'J900'),
         Campo(2, 'DNRC_ENCER'),
-        Campo(3, 'NUM_ORD'),
+        CampoNumerico(3, 'NUM_ORD'),
         Campo(4, 'NAT_LIVRO'),
         Campo(5, 'NOME'),
-        Campo(6, 'QTD_LIN'),
-        Campo(7, 'DT_INI_ESCR'),
-        Campo(8, 'DT_FIN_ESCR'),
+        CampoNumerico(6, 'QTD_LIN'),
+        CampoData(7, 'DT_INI_ESCR'),
+        CampoData(8, 'DT_FIN_ESCR'),
     ]
 
 
@@ -491,7 +512,7 @@ class RegistroJ990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'J990'),
-        Campo(2, 'QTD_LIN_J'),
+        CampoNumerico(2, 'QTD_LIN_J'),
     ]
 
 
@@ -512,7 +533,7 @@ class Registro9900(Registro):
     campos = [
         CampoFixo(1, 'REG', '9900'),
         Campo(2, 'REG_BLC'),
-        Campo(3, 'QTD_REG_BLC'),
+        CampoNumerico(3, 'QTD_REG_BLC'),
     ]
 
 
@@ -522,7 +543,7 @@ class Registro9990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '9990'),
-        Campo(2, 'QTD_LIN_9'),
+        CampoNumerico(2, 'QTD_LIN_9'),
     ]
 
 
@@ -532,5 +553,5 @@ class Registro9999(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '9999'),
-        Campo(2, 'QTD_LIN'),
+        CampoNumerico(2, 'QTD_LIN'),
     ]

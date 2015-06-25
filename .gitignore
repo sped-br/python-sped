@@ -38,5 +38,6 @@ node_modules/
 assets/
 
 # Setup Generated files
-dist
+dist/
+build/
 *.egg-info
