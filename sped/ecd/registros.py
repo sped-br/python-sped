@@ -273,11 +273,11 @@ class RegistroI155(Registro):
         CampoFixo(1, 'REG', 'I155'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        CampoNumerico(4, 'VL_SLD_INI'),
+        CampoNumerico(4, 'VL_SLD_INI', precisao=2),
         Campo(5, 'IND_DC_INI'),
-        CampoNumerico(6, 'VL_DEB'),
-        CampoNumerico(7, 'VL_CRED'),
-        CampoNumerico(8, 'VL_SLD_FIN'),
+        CampoNumerico(6, 'VL_DEB', precisao=2),
+        CampoNumerico(7, 'VL_CRED', precisao=2),
+        CampoNumerico(8, 'VL_SLD_FIN', precisao=2),
         Campo(9, 'IND_DC_FIN'),
     ]
 
@@ -290,7 +290,7 @@ class RegistroI200(Registro):
         CampoFixo(1, 'REG', 'I200'),
         Campo(2, 'NUM_LCTO'),
         CampoData(3, 'DT_LCTO'),
-        CampoNumerico(4, 'VL_LCTO'),
+        CampoNumerico(4, 'VL_LCTO', precisao=2),
         Campo(5, 'IND_LCTO'),
     ]
 
@@ -303,7 +303,7 @@ class RegistroI250(Registro):
         CampoFixo(1, 'REG', 'I250'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        CampoNumerico(4, 'VL_DC'),
+        CampoNumerico(4, 'VL_DC', precisao=2),
         Campo(5, 'IND_DC'),
         Campo(6, 'NUM_ARQ'),
         Campo(7, 'COD_HIST_PAD'),
@@ -330,8 +330,8 @@ class RegistroI310(Registro):
         CampoFixo(1, 'REG', 'I310'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        CampoNumerico(4, 'VAL_DEBD'),
-        CampoNumerico(5, 'VAL_CREDD'),
+        CampoNumerico(4, 'VAL_DEBD', precisao=2),
+        CampoNumerico(5, 'VAL_CREDD', precisao=2),
     ]
 
 
@@ -353,7 +353,7 @@ class RegistroI355(Registro):
         CampoFixo(1, 'REG', 'I355'),
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
-        CampoNumerico(4, 'VL_CTA'),
+        CampoNumerico(4, 'VL_CTA', precisao=2),
         Campo(5, 'IND_DC'),
     ]
 
@@ -446,7 +446,7 @@ class RegistroJ100(Registro):
         Campo(3, 'NÍVEL_AGL'),
         Campo(4, 'IND_GRP_BAL'),
         Campo(5, 'DESCR_COD_AGL'),
-        CampoNumerico(6, 'VL_CTA'),
+        CampoNumerico(6, 'VL_CTA', precisao=2),
         Campo(7, 'IND_DC_BAL'),
     ]
 
@@ -460,7 +460,7 @@ class RegistroJ150(Registro):
         Campo(2, 'COD_AGL'),
         Campo(3, 'NÍVEL_AGL'),
         Campo(4, 'DESCR_COD_AGL'),
-        CampoNumerico(5, 'VL_CTA'),
+        CampoNumerico(5, 'VL_CTA', precisao=2),
         Campo(6, 'IND_VL'),
     ]
 
