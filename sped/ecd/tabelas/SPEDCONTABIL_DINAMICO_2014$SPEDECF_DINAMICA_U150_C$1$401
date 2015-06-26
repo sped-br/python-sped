@@ -1,0 +1,111 @@
+versão=1 CODIGO, DESCRICAO, DT_INI, DT_FIM, ORDEM, TIPO, COD_SUP, NIVEL, NATUREZA
+3|LUCRO LÍQUIDO DO PERÍODO DE APURAÇÃO|01012014||1|S||1|04
+3.01|LUCRO LÍQUIDO ANTES DO IRPJ E DA CSLL|01012014||2|S|3|2|04
+3.01.01|RESULTADO DO PERÍODO DE APURAÇÃO|01012014||3|S|3.01|3|04
+3.01.01.01|RESULTADO OPERACIONAL|01012014||4|S|3.01.01|4|04
+3.01.01.01.01|RESULTADO DA ATIVIDADE DE SEGUROS, PREVIDÊNCIA ABERTA E CAPITALIZAÇÃO|01012014||5|S|3.01.01.01|5|04
+3.01.01.01.01.01|PRÊMIOS GANHOS|01012014||6|S|3.01.01.01.01|6|04
+3.01.01.01.01.01.01|Prêmios de Seguros Diretos e de Resseguros Retidos|01012014||7|A|3.01.01.01.01.01|6|04
+3.01.01.01.01.01.02|(-) Ajustes de Emissão (Descontos, Cancelamentos e Restituições)|01012014||8|A|3.01.01.01.01.01|6|04
+3.01.01.01.01.01.03|Prêmios de Cosseguros Aceitos e Retrocessões|01012014||9|A|3.01.01.01.01.01|6|04
+3.01.01.01.01.01.04|(-)Prêmios de Cosseguros Cedidos, Resseguros Cedidos e Cedidos a Consórcios e Fundos|01012014||10|A|3.01.01.01.01.01|6|04
+3.01.01.01.01.01.05|Variações das Provisões Técnicas|01012014||11|A|3.01.01.01.01.01|6|04
+3.01.01.01.01.02|OUTROS GANHOS|01012014||12|S|3.01.01.01.01|6|04
+3.01.01.01.01.02.01|(-)Indenizações Avisadas|01012014||13|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.02|(-)Despesas com Sinistro|01012014||14|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.03|(-)Despesas com Benefícios e Resgates|01012014||15|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.04|Recuperação de Sinistros|01012014||16|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.05|Salvados|01012014||17|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.06|Ressarcimentos|01012014||18|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.07|Variação da Provisão de Sinistros e Eventos Ocorridos Mas Não Avisados|01012014||19|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.08|(-)Despesas de Comissões|01012014||20|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.09|Recuperação de Comissões|01012014||21|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.10|(-)Outras Despesas de Comercialização|01012014||22|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.11|Variação das Despesas de Comercialização Diferidas|01012014||23|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.12|Outras Receitas de Seguros|01012014||24|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.13|(-)Outras Despesas de Seguros|01012014||25|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.14|(-)Despesa com Provisão para Riscos de Créditos Duvidosos|01012014||26|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.15|Rendas de Contribuições Retidas - Previdência|01012014||27|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.16|Variações das Provisões Técnicas - Previdência|01012014||28|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.17|(-)Despesas com Benefícios e Resgates - Previdência|01012014||29|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.18|(-)Despesas de Comercialização Retidas - Previdência|01012014||30|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.19|Outras Receitas de Previdência|01012014||31|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.20|(-)Outras Despesas de Previdência|01012014||32|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.21|Receita Líquida com Títulos de Capitalização|01012014||33|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.22|Variações das Provisões Técnicas - Capitalização|01012014||34|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.23|(-)Despesas com Resgates e Sorteios - Capitalização|01012014||35|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.24|(-)Despesas de Comercialização - Capitalização|01012014||36|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.25|Outras Receitas de Capitalização|01012014||37|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.02.26|(-) Outras Despesas de Capitalização|01012014||38|A|3.01.01.01.01.02|6|04
+3.01.01.01.01.03|RECEITAS OPERACIONAIS|01012014||39|S|3.01.01.01.01|6|04
+3.01.01.01.01.03.01|Receitas em Operações de Renda Fixa|01012014||40|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.02|Receitas em Operações de Renda Variável|01012014||41|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.03|Ajuste Positivo a Valor de Mercado|01012014||42|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.04|Variações Cambiais Ativas|01012014||43|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.05|Receitas de Juros sobre o Capital Próprio|01012014||44|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.06|Rendimentos e Ganhos de Capital Auferidos no Exterior|01012014||45|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.07|Outras Receitas Financeiras|01012014||46|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.08|Resultados Positivos em participações Societárias|01012014||47|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.09|Amortização de Deságio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido|01012014||48|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.10|Amortização de Deságio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido - Incorporação, Fusão ou Cisão (Lei nº 9.532/1997, art. 7º)|01012014||49|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.11|Receita com Imóveis de Renda|01012014||50|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.12|Prêmios na Emissão de Debêntures|01012014||51|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.13|Doações e Subvenções para Investimento|01012014||52|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.14|Receitas Decorrentes de Ajustes a Valor Justo|01012014||53|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.15|Receitas Decorrentes de Ajustes a Valor Presente|01012014||54|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.16|Receitas Decorrentes de Outros Ajustes aos Padrões Internacionais de Contabilidade|01012014||55|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.17|Receitas Originárias de Planos de Benefícios Administrados por Entidades Fechadas de Previdência Complementar (Lei nº 11.948/2009, art. 5º)|01012014||56|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.18|Subvenções Governamentais para Pesquisa e Desenvolvimento de Produtos e Processos Inovadores em Empresas e Entidades Nacionais (Lei nº 10.973/2004, art. 19)|01012014||57|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.19|Subvenções Governamentais para Remuneração de Pesquisadores Empregados em Atividades de Inovação Tecnológica em Empresas no País (Lei nº 11.196/2005, art. 21)|01012014||58|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.03.20|Outras Receitas Operacionais|01012014||59|A|3.01.01.01.01.03|6|04
+3.01.01.01.01.04|DESPESAS OPERACIONAIS|01012014||60|S|3.01.01.01.01|6|04
+3.01.01.01.01.04.01|Remuneração a Dirigentes e a Conselho de Administração|01012014||61|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.02|Ordenados, Salários, Gratificações e Outras Remunerações a Empregados|01012014||62|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.03|Serviços Prestados por Terceiros|01012014||63|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.04|Encargos Sociais (inclusive FGTS)|01012014||64|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.05|Gratificações a Administradores|01012014||65|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.06|Localização e Funcionamento|01012014||66|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.07|Encargos de Depreciação e Amortização|01012014||67|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.08|Publicidade, Propaganda e Publicações|01012014||68|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.09|PIS/Pasep|01012014||69|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.10|Cofins|01012014||70|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.11|CPMF|01012014||71|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.12|Demais Impostos, Taxas e Contribuições, exceto IR e CSLL|01012014||72|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.13|Doações e Patrocínios de Caráter Cultural e Artístico|01012014||73|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.14|Operações de Aquisição de Vale-Cultura (Lei nº 12.761/2012, art. 10)|01012014||74|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.15|Doações a Instituições de Ensino e Pesquisa|01012014||75|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.16|Doações a Entidades Civis|01012014||76|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.17|Outras Contribuições e Doações|01012014||77|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.18|Multas|01012014||78|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.19|Outras Despesas Administrativas|01012014||79|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.20|(-)Perdas Incorridas no Mercado de Renda Variável|01012014||80|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.21|(-)Ajuste Negativo a Valor de Mercado|01012014||81|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.22|(-)Variações Cambiais Passivas|01012014||82|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.23|(-)Juros Sobre o Capital Próprio|01012014||83|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.24|(-)Perdas em Operações Realizadas no Exterior|01012014||84|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.25|(-)Juros Pagos Decorrentes de Empréstimos com Pessoas Vinculadas ou Situadas em País com Tributação Favorecida (Lei nº 12.249/2010, arts. 24 e 25)|01012014||85|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.26|(-)Outras Despesas Financeiras|01012014||86|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.27|(-)Resultados Negativos em Participações Societárias|01012014||87|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.28|(-)Amortização de Ágio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido|01012014||88|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.29|(-)Amortização de Ágio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido - Incorporação, Fusão ou Cisão (Lei nº 9.532/1997, art. 7º)|01012014||89|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.30|(-)Despesas com Imóveis de Renda|01012014||90|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.31|(-)Despesas Decorrentes de Ajustes a Valor Justo|01012014||91|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.32|(-)Despesas Decorrentes de Ajustes a Valor Presente|01012014||92|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.33|(-)Perdas Decorrentes de Teste de Recuperabilidade do Imobilizado e do Intangível|01012014||93|A|3.01.01.01.01.04|6|04
+3.01.01.01.01.04.34|(-)Despesas Decorrentes de Outros Ajustes aos Padrões Internacionais de Contabilidade|01012014||94|A|3.01.01.01.01.04|6|04
+3.01.01.02|RESULTADO NÃO OPERACIONAL|01012014||95|S|3.01.01|4|04
+3.01.01.02.01|Receitas de Alienações de Bens e Direitos Classificados nos Subgrupos Investimentos, Imobilizado e Intangível do Ativo Permanente|01012014||96|A|3.01.01.02|5|04
+3.01.01.02.02|Ganhos de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012014||97|A|3.01.01.02|5|04
+3.01.01.02.03|Outras Receitas Não Relacionadas nas Linhas Anteriores|01012014||98|A|3.01.01.02|5|04
+3.01.01.02.04|(-)Valor Contábil dos Bens e Direitos Alienados|01012014||99|A|3.01.01.02|5|04
+3.01.01.02.05|(-)Perdas de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012014||100|A|3.01.01.02|5|04
+3.01.01.02.06|(-)Outras Despesas Não Relacionadas nas Linhas Anteriores|01012014||101|A|3.01.01.02|5|04
+3.01.01.03|PARTICIPAÇÕES|01012014||102|S|3.01.01|4|04
+3.01.01.03.01|(-)Participações de Debêntures|01012014||103|A|3.01.01.03|5|04
+3.01.01.03.02|(-)Participações de Empregados|01012014||104|A|3.01.01.03|5|04
+3.01.01.03.03|(-)Participações de Administradores e Partes Beneficiárias|01012014||105|A|3.01.01.03|5|04
+3.01.01.03.04|(-)Contribuições para Assistência ou Previdência de Empregados|01012014||106|A|3.01.01.03|5|04
+3.02|PROVISÃO PARA CSLL|01012014||107|S|3|2|04
+3.02.01|(-)Contribuição Social sobre o Lucro Líquido|01012014||108|A|3.02|3|04
+3.03|PROVISÃO PARA IRPJ|01012014||109|S|3|2|04
+3.03.01|(-)Provisão para o Imposto de Renda|01012014||110|A|3.03|3|04

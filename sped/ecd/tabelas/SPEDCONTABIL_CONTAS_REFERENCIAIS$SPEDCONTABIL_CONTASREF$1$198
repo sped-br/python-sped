@@ -1,0 +1,808 @@
+versão=1 Codigo, Nome, DataInicio, DataFim, Tipo_Conta, COD_CTA_SU, NÍVEL_CONT, COD_NAT, Utilizacao
+1|ATIVO|28122007||S||1|1|A
+1.01|CIRCULANTE|28122007||S|1|2|1|A
+1.01.01|DISPONIBILIDADES|28122007||S|1.01|3|1|A
+1.01.01.01.00|Caixa|28122007||A|1.01.01|4|1|A
+1.01.01.02.00|Bancos|28122007||A|1.01.01|4|1|A
+1.01.01.03.00|Recursos no Exterior Decorrentes de Exportação|28122007||A|1.01.01|4|1|A
+1.01.01.04.00|Contas Bancárias - Subvenções|28122007||A|1.01.01|4|1|A
+1.01.01.05.00|Contas Bancárias - Doações|28122007||A|1.01.01|4|1|A
+1.01.01.06.00|Contas Bancárias - Outros Recursos Sujeitos a Restrições|28122007||A|1.01.01|4|1|A
+1.01.01.07.00|Títulos e Valores Mobiliários|28122007|31122008|A|1.01.01|4|1|A
+1.01.01.07.01|Valores Mobiliários - Mercado de Capitais Interno|01012008||A|1.01.01|4|1|A
+1.01.01.07.02|Valores Mobiliários - Mercado de Capitais Externo|01012008||A|1.01.01|4|1|A
+1.01.01.08.00|Valores Mobiliários - Aplicações de Subvenções|28122007||A|1.01.01|4|1|A
+1.01.01.09.00|Valores Mobiliários - Aplicações de Doações|28122007||A|1.01.01|4|1|A
+1.01.01.10.00|Valores Mobiliários - Aplicações de Outros Recursos Sujeitos a Restrições|28122007||A|1.01.01|4|1|A
+1.01.01.11.00|Outras|28122007||A|1.01.01|4|1|A
+1.01.03|ESTOQUES|28122007||S|1.01|3|1|A
+1.01.03.01.00|Estoques|28122007|31122008|A|1.01.03|4|1|A
+1.01.03.01.01|Mercadorias para Revenda|01012008||A|1.01.03|4|1|A
+1.01.03.01.02|Insumos (materiais diretos)|01012008||A|1.01.03|4|1|A
+1.01.03.01.03|Produtos em Elaboração|01012008||A|1.01.03|4|1|A
+1.01.03.01.04|Produtos Acabados|01012008||A|1.01.03|4|1|A
+1.01.03.01.05|Serviços em andamento|01012008||A|1.01.03|4|1|A
+1.01.03.01.06|Insumos Agropecuários|01012008||A|1.01.03|4|1|A
+1.01.03.01.07|Produtos Agropecuários em Formação|01012008||A|1.01.03|4|1|A
+1.01.03.01.08|Produtos Agropecuários Acabados|01012008||A|1.01.03|4|1|A
+1.01.03.02.00|Imóveis Destinados à Venda|28122007||A|1.01.03|4|1|A
+1.01.03.02.01|Construções em Andamento de Imóveis Destinados à Venda|01012008||A|1.01.03|4|1|A
+1.01.03.03.00|Estoques Destinados à Doação|28122007||A|1.01.03|4|1|A
+1.01.03.04.00|Outras|28122007||A|1.01.03|4|1|A
+1.01.05|CRÉDITOS|28122007||S|1.01|3|1|A
+1.01.05.01.00|Adiantamentos a Fornecedores|28122007||A|1.01.05|4|1|A
+1.01.05.02.00|Clientes|28122007||A|1.01.05|4|1|A
+1.01.05.03.00|Créditos Fiscais CSLL - Diferenças Temporárias e Base de Cálculo Negativa|28122007||A|1.01.05|4|1|A
+1.01.05.04.00|Créditos Fiscais IRPJ - Diferenças Temporárias e Prejuízos Fiscais|28122007||A|1.01.05|4|1|A
+1.01.05.05.00|Impostos e Contribuições a Recuperar|28122007|31122008|A|1.01.05|4|1|A
+1.01.05.05.01|IRPJ a Recuperar|01012008||A|1.01.05|4|1|A
+1.01.05.05.02|IPI a Recuperar|01012008||A|1.01.05|4|1|A
+1.01.05.05.03|PIS e COFINS a Recuperar|01012008|01012011|A|1.01.05|4|1|A
+1.01.05.05.04|CSLL a Recuperar|01012008||A|1.01.05|4|1|A
+1.01.05.05.05|ICMS a Recuperar|01012008||A|1.01.05|4|1|A
+1.01.05.05.06|Tributos Municipais a Recuperar|01012008||A|1.01.05|4|1|A
+1.01.05.05.07|PIS  a Recuperar - Crédito Básico|01012010||A|1.01.05|4|1|A
+1.01.05.05.08|PIS  a Recuperar - Crédito Presumido|01012010||A|1.01.05|4|1|A
+1.01.05.05.09|COFINS  a Recuperar - Crédito Básico|01012010||A|1.01.05|4|1|A
+1.01.05.05.10|COFINS  a Recuperar - Crédito Presumido|01012010||A|1.01.05|4|1|A
+1.01.05.05.11|CIDE a Recuperar|01012010||A|1.01.05|4|1|A
+1.01.05.05.90|Outros Impostos e Contribuições a Recuperar|01012008||A|1.01.05|4|1|A
+1.01.05.06.00|Créditos por Contribuições e Doações|28122007||A|1.01.05|4|1|A
+1.01.05.07.00|Outras|28122007||A|1.01.05|4|1|A
+1.01.05.10.00|IR Retido na Fonte|01012010||A|1.01.05|4|1|A
+1.01.05.10.01|IRPJ Recolhido por Estimativa|01012010||A|1.01.05|4|1|A
+1.01.05.11.00|CSLL Retida na Fonte|01012010||A|1.01.05|4|1|A
+1.01.05.11.01|CSLL Recolhida por Estimativa|01012010||A|1.01.05|4|1|A
+1.01.05.12.00|PIS/PASEP Retido na Fonte|01012010||A|1.01.05|4|1|A
+1.01.05.12.01|PIS/PASEP  a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.13.00|COFINS Retida na Fonte|01012010||A|1.01.05|4|1|A
+1.01.05.13.01|COFINS  a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.14.00|IPI a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.15.00|IOF a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.16.00|IMPOSTO DE IMPORTAÇÃO a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.17.00|IMPOSTO DE EXPORTAÇÃO a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.18.00|ITR a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.19.00|CIDE a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.20.00|Contribuições Previdenciárias a Compensar|01012010||A|1.01.05|4|1|A
+1.01.05.21.00|Contribuição Previdenciária Retida na Prestação de Serviços|01012010||A|1.01.05|4|1|A
+1.01.07|DESPESAS DO EXERCÍCIO SEGUINTE|28122007||S|1.01|3|1|A
+1.01.07.01.00|Despesas do Exercício Seguinte|28122007||A|1.01.07|4|1|A
+1.01.07.02.00|Outras Contas|28122007||A|1.01.07|4|1|A
+1.01.09|CONTAS RETIFICADORAS|28122007||S|1.01|3|1|A
+1.01.09.01.00|(-) Contas Retificadoras|28122007|31122008|A|1.01.09|4|1|A
+1.01.09.01.01|(-) Duplicatas Descontadas|01012008||A|1.01.09|4|1|A
+1.01.09.01.03|(-) Provisões para Créditos de Liquidação Duvidosa|01012008||A|1.01.09|4|1|A
+1.01.09.01.05|(-) Provisão para Ajuste do Estoque ao Valor de Mercado|01012008||A|1.01.09|4|1|A
+1.01.09.01.07|(-) Provisões para Ajuste ao Valor Provável de Realização|01012008||A|1.01.09|4|1|A
+1.01.09.01.09|(-) Ajuste a Valor Presente - Receita Financeira a Apropriar|01012010||A|1.01.09|4|1|S
+1.01.09.01.90|(-) Outras Contas Retificadoras|01012008||A|1.01.09|4|1|A
+1.04|REALIZÁVEL A LONGO PRAZO|28122007||S|1|2|1|F
+1.04.01|CRÉDITOS|28122007||S|1.04|3|1|F
+1.04.01.01.00|Clientes|28122007||A|1.04.01|4|1|F
+1.04.01.02.00|Créditos com Pessoas Ligadas (Físicas/Jurídicas)|28122007||A|1.04.01|4|1|F
+1.04.01.03.00|Títulos e Valores Mobiliários|28122007||A|1.04.01|4|1|F
+1.04.01.04.00|Depósitos Judiciais|28122007||A|1.04.01|4|1|F
+1.04.01.05.00|Créditos Fiscais CSLL - Diferenças Temporárias e Base de Cálculo Negativa|28122007||A|1.04.01|4|1|F
+1.04.01.06.00|Créditos Fiscais IRPJ - Diferenças Temporárias e Prejuízos Fiscais|28122007||A|1.04.01|4|1|F
+1.04.01.07.00|Créditos por Contribuições e Doações|28122007||A|1.04.01|4|1|F
+1.04.01.08.00|Outras Contas|28122007||A|1.04.01|4|1|F
+1.04.01.09.00|(-) Contas Retificadoras|28122007||A|1.04.01|4|1|F
+1.07|PERMANENTE / NÃO CIRCULANTE|28122007||S|1|2|1|F
+1.07.00|REALIZÁVEL A LONGO PRAZO|01012008||S|1.07|3|1|S
+1.07.00.01.00|Clientes|01012008||A|1.07.00|4|1|S
+1.07.00.02.00|Créditos com Pessoas Ligadas (Físicas/Jurídicas)|01012008||A|1.07.00|4|1|S
+1.07.00.03.00|Valores Mobiliários|01012008||A|1.07.00|4|1|S
+1.07.00.04.00|Depósitos Judiciais|01012008||A|1.07.00|4|1|S
+1.07.00.05.00|Créditos Fiscais CSLL - Diferenças Temporárias e Base de Cálculo Negativa|01012008||A|1.07.00|4|1|S
+1.07.00.06.00|Créditos Fiscais IRPJ - Diferenças Temporárias e Prejuízos Fiscais|01012008||A|1.07.00|4|1|S
+1.07.00.07.00|Créditos por Contribuições e Doações|01012008||A|1.07.00|4|1|S
+1.07.00.08.00|Outras Contas|01012008||A|1.07.00|4|1|S
+1.07.00.90.00|(-) Duplicatas Descontadas|01012008||A|1.07.00|4|1|S
+1.07.00.93.00|(-) Provisões para Créditos de Liquidação Duvidosa|01012008||A|1.07.00|4|1|S
+1.07.00.95.00|(-) Provisões para Ajuste ao Valor Provável de Realização|01012008||A|1.07.00|4|1|S
+1.07.00.96.00|(-) Ajuste a Valor Presente - Receita Financeira a Apropriar|01012010||A|1.07.00|4|1|S
+1.07.00.97.00|(-) Outras Contas Retificadoras|01012008||A|1.07.00|4|1|S
+1.07.01|INVESTIMENTOS|28122007||S|1.07|3|1|A
+1.07.01.01.00|Participações Permanentes em Coligadas ou Controladas|28122007||A|1.07.01|4|1|A
+1.07.01.02.00|Investimentos Decorrentes de Incentivos Fiscais|28122007||A|1.07.01|4|1|A
+1.07.01.03.00|Outros Investimentos|28122007||A|1.07.01|4|1|A
+1.07.01.04.00|Ágios em Investimentos|28122007||A|1.07.01|4|1|A
+1.07.01.05.00|Correção Monetária - Diferença IPC/BTNF (Lei no 8.200/1991)|28122007||A|1.07.01|4|1|A
+1.07.01.06.00|Correção Monetária Especial (Lei no 8.200/1991)|28122007||A|1.07.01|4|1|A
+1.07.01.07.00|(-) Deságios e Provisão para Perdas Prováveis em Investimentos|28122007||A|1.07.01|4|1|A
+1.07.01.90.00|Outras Contas|01012008||A|1.07.01|4|1|A
+1.07.01.97.00|(-) Outras Contas Retificadoras|01012008||A|1.07.01|4|1|A
+1.07.04|IMOBILIZADO|28122007||S|1.07|3|1|A
+1.07.04.01.00|Terrenos|28122007||A|1.07.04|4|1|A
+1.07.04.02.00|Edifícios e Construções|28122007||A|1.07.04|4|1|A
+1.07.04.02.01|Construções em Andamento|01012008||A|1.07.04|4|1|A
+1.07.04.03.00|Equipamentos, Máquinas e Instalações Industriais|28122007||A|1.07.04|4|1|A
+1.07.04.04.00|Veículos|28122007||A|1.07.04|4|1|A
+1.07.04.04.01|Embarcações|01012008||A|1.07.04|4|1|A
+1.07.04.04.02|Aeronaves|01012008||A|1.07.04|4|1|A
+1.07.04.05.00|Móveis, Utensílios e Instalações Comerciais|28122007||A|1.07.04|4|1|A
+1.07.04.06.00|Recursos Minerais|28122007||A|1.07.04|4|1|A
+1.07.04.07.00|Florestamento e Reflorestamento|28122007||A|1.07.04|4|1|A
+1.07.04.08.00|Direitos Contratuais de Exploração de Florestas|28122007||A|1.07.04|4|1|A
+1.07.04.09.00|Outras Imobilizações|28122007||A|1.07.04|4|1|A
+1.07.04.10.00|Correção Monetária - Diferença IPC/BTNF (Lei no 8.200/1991)|28122007||A|1.07.04|4|1|A
+1.07.04.11.00|Correção Monetária Especial (Lei no 8.200/1991)|28122007||A|1.07.04|4|1|A
+1.07.04.12.00|(-) Depreciações, Amortizações e Quotas de Exaustão|28122007||A|1.07.04|4|1|A
+1.07.04.90.00|(-) Outras Contas Redutoras do Imobilizado|01012008||A|1.07.04|4|1|S
+1.07.05|INTANGÍVEL|01012008||S|1.07|3|1|S
+1.07.05.01.00|Concessões|01012008||A|1.07.05|4|1|S
+1.07.05.03.00|Marcas e Patentes|01012008||A|1.07.05|4|1|S
+1.07.05.05.00|Direitos Autorais|01012008||A|1.07.05|4|1|S
+1.07.05.07.00|Fundo de Comércio|01012008||A|1.07.05|4|1|S
+1.07.05.09.00|Software ou Programas de Computador|01012008||A|1.07.05|4|1|S
+1.07.05.11.00|Franquias|01012008||A|1.07.05|4|1|S
+1.07.05.13.00|Desenvolvimento de Produtos|01012008||A|1.07.05|4|1|S
+1.07.05.15.00|Outras|01012008||A|1.07.05|4|1|S
+1.07.05.90.00|(-) Amortização do Intangível|01012008||A|1.07.05|4|1|S
+1.07.05.97.00|(-) Outras Contas Redutoras do Intangível|01012008||A|1.07.05|4|1|S
+1.07.07|DIFERIDO|28122007||S|1.07|3|1|A
+1.07.07.01.00|Despesas Pré-Operacionais ou Pré-Industriais|28122007||A|1.07.07|4|1|A
+1.07.07.02.00|Despesas com Pesquisas Científicas ou Tecnológicas|28122007||A|1.07.07|4|1|A
+1.07.07.03.00|Demais Aplicações em Despesas Amortizáveis|28122007||A|1.07.07|4|1|A
+1.07.07.04.00|Correção Monetária - Diferença IPC/BTNF (Lei no 8.200/1991)|28122007||A|1.07.07|4|1|A
+1.07.07.05.00|Correção Monetária Especial (Lei no 8.200/1991)|28122007||A|1.07.07|4|1|A
+1.07.07.06.00|(-) Amortização do Diferido|28122007||A|1.07.07|4|1|A
+2|PASSIVO|28122007||S||1|2|A
+2.01|CIRCULANTE|28122007||S|2|2|2|A
+2.01.01|OBRIGAÇÕES DE CURTO PRAZO|28122007||S|2.01|3|2|A
+2.01.01.01.00|Fornecedores|28122007||A|2.01.01|4|2|A
+2.01.01.01.01|Adiantamentos de Clientes|01012008||A|2.01.01|4|2|A
+2.01.01.02.00|Financiamentos a Curto Prazo|28122007|31122008|A|2.01.01|4|2|A
+2.01.01.02.01|Financiamentos a Curto Prazo - Sistema Financeiro Nacional|01012008||A|2.01.01|4|2|A
+2.01.01.02.02|Arrendamento Mercantil (Financeiro) a Curto Prazo - Sistema Financeiro Nacional|01012008||A|2.01.01|4|2|A
+2.01.01.02.03|Financiamentos a Curto Prazo - Outros|01012008||A|2.01.01|4|2|A
+2.01.01.02.04|Financiamentos a Curto Prazo - Exterior|01012008||A|2.01.01|4|2|A
+2.01.01.02.05|Arrendamento Mercantil (Financeiro) a Curto Prazo - Exterior|01012008||A|2.01.01|4|2|A
+2.01.01.03.00|Impostos, Taxas e Contribuições a Recolher|28122007|31122008|A|2.01.01|4|2|A
+2.01.01.03.01|IPI a Recolher|01012008||A|2.01.01|4|2|A
+2.01.01.03.02|ICMS e Contribuições a Recolher|01012008||A|2.01.01|4|2|A
+2.01.01.03.03|Tributos Municipais a Recolher|01012008||A|2.01.01|4|2|A
+2.01.01.03.04|IOF  a Recolher|01012010||A|2.01.01|4|2|A
+2.01.01.03.05|CIDE  a Recolher|01012010||A|2.01.01|4|2|A
+2.01.01.04.00|FGTS a Recolher|28122007||A|2.01.01|4|2|A
+2.01.01.05.00|PIS e COFINS a Recolher|28122007|01012011|A|2.01.01|4|2|A
+2.01.01.05.01|PIS a Recolher|01012010||A|2.01.01|4|2|A
+2.01.01.05.02|COFINS a Recolher|01012010||A|2.01.01|4|2|A
+2.01.01.06.00|Contribuições Previdenciárias a Recolher -INSS|28122007||A|2.01.01|4|2|A
+2.01.01.06.90|Outros tributos a recolher|28122007||A|2.01.01|4|2|A
+2.01.01.07.00|Salários a Pagar|28122007||A|2.01.01|4|2|A
+2.01.01.08.00|Dividendos Propostos ou Lucros Creditados|28122007||A|2.01.01|4|2|A
+2.01.01.09.00|Provisão para a Contribuição Social sobre o Lucro Líquido|28122007||A|2.01.01|4|2|A
+2.01.01.10.00|Provisão para o Imposto de Renda|28122007||A|2.01.01|4|2|A
+2.01.01.11.00|Débitos Fiscais CSLL - Diferenças Temporárias|28122007||A|2.01.01|4|2|A
+2.01.01.12.00|Débitos Fiscais IRPJ - Diferenças Temporárias|28122007||A|2.01.01|4|2|A
+2.01.01.12.10|Provisões de Natureza Fiscal|01012008||A|2.01.01|4|2|A
+2.01.01.12.20|Provisões de Natureza Trabalhista|01012008||A|2.01.01|4|2|A
+2.01.01.12.30|Provisões de Natureza Cível|01012008||A|2.01.01|4|2|A
+2.01.01.12.40|Doações e Subvenções para Investimentos|01012008||A|2.01.01|4|2|A
+2.01.01.12.50|Debêntures|01012010||A|2.01.01|4|2|S
+2.01.01.13.00|Outras Contas|01012008||A|2.01.01|4|2|A
+2.01.01.14.00|(-) Contas Retificadoras|28122007|31122008|A|2.01.01|4|2|A
+2.01.01.90.00|(-) Contas Retificadoras|28122007||A|2.01.01|4|2|A
+2.01.01.92.00|(-) Ajuste a Valor Presente - Encargos Financeiros a Transcorrer|01012010||A|2.01.01|4|2|S
+2.01.01.94.00|(-) Custos a Amortizar - Debênture|01012010||A|2.01.01|4|2|S
+2.01.01.94.01|(-) Deságio a Apropriar - Debênture|01012010||A|2.01.01|4|2|S
+2.03|EXIGÍVEL A LONGO PRAZO|28122007|31122008|S|2|2|2|F
+2.03|NÃO-CIRCULANTE|01012008||S|2|2|2|S
+2.03.01|OBRIGAÇÕES A LONGO PRAZO|28122007||S|2.03|3|2|A
+2.03.01.01.00|Fornecedores|28122007||A|2.03.01|4|2|A
+2.03.01.02.00|Financiamentos a Longo Prazo|28122007|31122008|A|2.03.01|4|2|A
+2.03.01.02.01|Financiamentos a Longo Prazo - Sistema Financeiro Nacional|01012008||A|2.03.01|4|2|A
+2.03.01.02.02|Arrendamento Mercantil (Financeiro) a Longo Prazo - Sistema Financeiro Nacional|01012008||A|2.03.01|4|2|A
+2.03.01.02.03|Financiamentos a Longo Prazo - Brasil - Outros|01012008||A|2.03.01|4|2|A
+2.03.01.02.04|Financiamentos a Longo Prazo - Exterior|01012008||A|2.03.01|4|2|A
+2.03.01.02.05|Arrendamento Mercantil (Financeiro) a Longo Prazo - Exterior|01012008||A|2.03.01|4|2|A
+2.03.01.03.00|Empréstimos de Sócios/Acionistas Não Administradores|28122007||A|2.03.01|4|2|A
+2.03.01.04.00|Créditos de Pessoas Ligadas (Físicas/Jurídicas)|28122007||A|2.03.01|4|2|A
+2.03.01.05.00|Provisão para o Imposto de Renda sobre Lucros Diferidos|28122007||A|2.03.01|4|2|A
+2.03.01.06.00|Débitos Fiscais CSLL - Diferenças Temporárias|28122007||A|2.03.01|4|2|A
+2.03.01.07.00|Débitos Fiscais IRPJ - Diferenças Temporárias|28122007||A|2.03.01|4|2|A
+2.03.01.07.10|Outras Provisões de Natureza Fiscal|01012008||A|2.03.01|4|2|A
+2.03.01.07.20|Outras Provisões de Natureza Trabalhista|01012008||A|2.03.01|4|2|A
+2.03.01.07.30|Outras Provisões de Natureza Cível|01012008||A|2.03.01|4|2|A
+2.03.01.07.40|Doações e Subvenções para Investimentos|01012008||A|2.03.01|4|2|A
+2.03.01.07.50|Debêntures|01012010||A|2.03.01|4|2|S
+2.03.01.07.51|Prêmio na Emissão de Debêntures a Amortizar|01012010||A|2.03.01|4|2|S
+2.03.01.08.00|Outras Contas|28122007||A|2.03.01|4|2|A
+2.03.01.09.00|(-) Contas Retificadoras|28122007|31122008|A|2.03.01|4|2|A
+2.03.01.90.00|(-) Contas Retificadoras|01012008||A|2.03.01|4|2|A
+2.03.01.92.00|(-) Ajuste a Valor Presente - Encargos Financeiros a Transcorrer|01012010||A|2.03.01|4|2|S
+2.03.01.94.00|(-) Custos a Amortizar - Debênture|01012010||A|2.03.01|4|2|S
+2.03.01.94.01|(-) Deságio a Apropriar - Debênture|01012010||A|2.03.01|4|2|S
+2.03.03|RECEITAS DIFERIDAS|01012008||S|2.03|3|2|S
+2.03.03.01.00|Receitas Diferidas|01012008||A|2.03.03|4|2|S
+2.03.03.03.00|(-) Custos Correspondentes às Receitas Diferidas|01012008||A|2.03.03|4|2|S
+2.05|RESULTADO DE EXERCÍCIOS FUTUROS|28122007||S|2|2|2|F
+2.05.01|RESULTADO DE EXERCÍCIOS FUTUROS|28122007||S|2.05|3|2|F
+2.05.01.01.00|Receita de Exercícios Futuros|28122007||A|2.05.01|4|2|F
+2.05.01.02.00|(-) Custos e Despesas Correspondentes|28122007||A|2.05.01|4|2|F
+2.07|PATRIMÔNIO LÍQUIDO|28122007||S|2|2|3|A
+2.07.01|CAPITAL REALIZADO|28122007||S|2.07|3|3|A
+2.07.01.01.00|Capital Subscrito de Domiciliados e Residentes no País|28122007||A|2.07.01|4|3|A
+2.07.01.02.00|(-) Capital a Integralizar de Domiciliados e Residentes no País|28122007||A|2.07.01|4|3|A
+2.07.01.03.00|Capital Subscrito de Domiciliados e Residentes no Exterior|28122007||A|2.07.01|4|3|A
+2.07.01.04.00|(-) Capital a Integralizar de Domiciliados e Residentes no Exterior|28122007||A|2.07.01|4|3|A
+2.07.04|RESERVAS|28122007||S|2.07|3|3|A
+2.07.04.01.00|Reservas de Capital|28122007|01012011|A|2.07.04|4|3|A
+2.07.04.01.00|Reservas de Capital|01012010||S|2.07.04|4|3|A
+2.07.04.01.01|Ágio na Emissão de Ações|01012010||A|2.07.04.01.00|5|3|A
+2.07.04.01.02|Alienação de Partes Beneficiárias e Bônus de Subscrição|01012010||A|2.07.04.01.00|5|3|A
+2.07.04.01.03|Prêmio Recebido na Emissão de Debêntures|01012010||A|2.07.04.01.00|5|3|F
+2.07.04.01.04|Doações e Subvenções para Investimentos|01012010||A|2.07.04.01.00|5|3|F
+2.07.04.02.00|Reservas de Reavaliação|28122007||A|2.07.04|4|3|A
+2.07.04.03.00|Reservas de Lucros|28122007|01012011|A|2.07.04|4|3|A
+2.07.04.03.00|Reservas de Lucros|01012010||S|2.07.04|4|3|A
+2.07.04.03.01|Reservas de Lucros - Doações e Subvenções para Investimentos|01012008||A|2.07.04.03.00|5|3|S
+2.07.04.03.02|Reservas de Lucros - Prêmio na Emissão de Debêntures|01012008||A|2.07.04.03.00|5|3|S
+2.07.04.03.03|Reserva Legal|01012010||A|2.07.04.03.00|5|3|A
+2.07.04.03.04|Reserva Estatutária|01012010||A|2.07.04.03.00|5|3|A
+2.07.04.03.05|Reserva para Contingência|01012010||A|2.07.04.03.00|5|3|A
+2.07.04.04.00|Reserva para Aumento de Capital (Lei no 9.249/1995, art. 9o, § 9o)|28122007||A|2.07.04.03.00|5|3|A
+2.07.04.05.00|Outras Reservas|28122007||A|2.07.04.03.00|5|3|A
+2.07.05|AJUSTES DE AVALIAÇÃO PATRIMONIAL|01012008||S|2.07|3|3|S
+2.07.05.01.00|Ajustes às Normas Internacionais de Contabilidade|01012008||A|2.07.05|4|3|S
+2.07.05.01.01|(-) Ajustes às Normas Internacionais de Contabilidade|01012008||A|2.07.05|4|3|S
+2.07.07|OUTRAS CONTAS|28122007||S|2.07|3|3|A
+2.07.07.01.00|Lucros Acumulados e/ou Saldo à Disposição da Assembléia|28122007||A|2.07.07|4|3|A
+2.07.07.02.00|(-) Prejuízos Acumulados|28122007||A|2.07.07|4|3|A
+2.07.07.03.00|(-) Ações em Tesouraria|28122007||A|2.07.07|4|3|A
+2.07.07.04.00|Outras|28122007||A|2.07.07|4|3|A
+2.08|PATRIMÔNIO SOCIAL|28122007||S|2|2|3|A
+2.08.01|FUNDO PATRIMONIAL|28122007||S|2.08|3|3|A
+2.08.01.01.00|Fundo Patrimonial|28122007||A|2.08.01|4|3|A
+2.08.04|RESERVAS|28122007||S|2.08|3|3|A
+2.08.04.01.00|Reservas Patrimoniais|28122007||A|2.08.04|4|3|A
+2.08.04.02.00|Reservas Estatutárias|28122007||A|2.08.04|4|3|A
+2.08.07|OUTRAS CONTAS|28122007||S|2.08|3|3|A
+2.08.07.01.00|Superávits Acumulados|28122007||A|2.08.07|4|3|A
+2.08.07.02.00|Déficits Acumulados|28122007||A|2.08.07|4|3|A
+3|RESULTADO LÍQUIDO DO PERÍODO|28122007||S||1|4|A
+3.01|RESULTADO LÍQUIDO DO PERÍODO ANTES DO IRPJ E DA CSLL - ATIVIDADE GERAL|28122007||S|3|2|4|A
+3.01.01|RESULTADO OPERACIONAL|28122007||S|3.01|3|4|A
+3.01.01.01|RECEITA LIQUIDA|28122007||S|3.01.01|4|4|A
+3.01.01.01.01|RECEITA BRUTA|28122007||S|3.01.01.01|5|4|A
+3.01.01.01.01.01.00|Receita da Exportação de Produtos|28122007|31122008|A|3.01.01.01.01|6|4|A
+3.01.01.01.01.01.01|Receita de Exportação Direta de Mercadorias e Produtos|01012008||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.01.02|Receita de Vendas de Mercadorias e Produtos a Comercial Exportadora com Fim Específico de Exportação|01012008||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.01.03|Receita de Exportação de Serviços|01012008||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.02.00|Receita da Venda no Mercado Interno de Produtos de Fabricação Própria|28122007||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.03.00|Receita da Revenda de Mercadorias no Mercado Interno|28122007||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.04.00|Receita da Prestação de Serviços - Mercado Interno|28122007||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.05.00|Receita das Unidades Imobiliárias Vendidas|28122007||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.06.00|Receita de Locação de Bens Móveis e Imóveis|28122007||A|3.01.01.01.01|6|4|A
+3.01.01.01.01.07.00|Outras|28122007||A|3.01.01.01.01|6|4|A
+3.01.01.01.03|DEDUÇÕES DA RECEITA BRUTA|28122007||S|3.01.01.01|5|4|A
+3.01.01.01.03.01.00|(-) Vendas Canceladas, Devoluções e Descontos Incondicionais|28122007||A|3.01.01.01.03|6|4|A
+3.01.01.01.03.02.00|(-) ICMS|28122007||A|3.01.01.01.03|6|4|A
+3.01.01.01.03.03.00|(-) Cofins|28122007||A|3.01.01.01.03|6|4|A
+3.01.01.01.03.04.00|(-) PIS/Pasep|28122007||A|3.01.01.01.03|6|4|A
+3.01.01.01.03.05.00|(-) ISS|28122007||A|3.01.01.01.03|6|4|A
+3.01.01.01.03.06.00|(-) Demais Impostos e Contribuições Incidentes sobre Vendas e Serviços|28122007||A|3.01.01.01.03|6|4|A
+3.01.01.03|CUSTO DOS BENS E SERVIÇOS VENDIDOS|28122007||S|3.01.01|4|4|A
+3.01.01.03.01|CUSTO DOS PRODUTOS DE FABRICAÇÃO PRÓPRIA VENDIDOS|28122007||S|3.01.01.03|5|4|A
+3.01.01.03.01.00.00|Custo dos Produtos de Fabricação Própria Vendidos|01012008||A|3.01.01.03.01|6|4|A
+3.01.01.03.01.01.00|Estoques no Início do Período de Apuração|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.02.00|Compras de Insumos à Vista|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.03.00|Compras de Insumos a Prazo|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.04.00|Remuneração a Dirigentes de Indústria|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.05.00|Custo do Pessoal Aplicado na Produção|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.06.00|Encargos Sociais - Previdência Social|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.07.00|Encargos Sociais - FGTS|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.08.00|Encargos Sociais - Outros|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.09.00|Alimentação do Trabalhador|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.10.00|Manutenção e Reparo de Bens Aplicados na Produção|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.11.00|Arrendamento Mercantil|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.12.00|Encargos de Depreciação, Amortização e Exaustão|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.13.00|Constituição de Provisões|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.14.00|Serviços Prestados por Pessoa Física sem Vínculo Empregatício|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.15.00|Serviços Prestados Pessoa Jurídica|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.16.00|Royalties e Assistência Técnica - PAÍS|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.17.00|Royalties e Assistência Técnica - EXTERIOR|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.18.00|Outros Custos|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.01.19.00|(-) Estoques no Final do Período de Apuração|28122007|31122008|A|3.01.01.03.01|6|4|A
+3.01.01.03.03|CUSTO DAS MERCADORIAS REVENDIDAS|28122007||S|3.01.01.03|5|4|A
+3.01.01.03.03.00.00|Custo das Mercadorias Revendidas|01012008||A|3.01.01.03.03|6|4|A
+3.01.01.03.03.01.00|Estoques no Início do Período de Apuração|28122007|31122008|A|3.01.01.03.03|6|4|A
+3.01.01.03.03.02.00|Compras de Mercadorias à Vista|28122007|31122008|A|3.01.01.03.03|6|4|A
+3.01.01.03.03.03.00|Compras de Mercadorias a Prazo|28122007|31122008|A|3.01.01.03.03|6|4|A
+3.01.01.03.03.04.00|(-) Estoques no Final do Período de Apuração|28122007|31122008|A|3.01.01.03.03|6|4|A
+3.01.01.03.05|CUSTO DOS SERVIÇOS VENDIDOS|28122007||S|3.01.01.03|5|4|A
+3.01.01.03.05.00.00|Custo dos Serviços Vendidos|01012008||A|3.01.01.03.05|6|4|A
+3.01.01.03.05.01.00|Saldo Inicial de Serviços em Andamento|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.02.00|Material Aplicado na Produção dos Serviços|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.03.00|Remuneração de Dirigentes de Produção dos Serviços|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.04.00|Custo do Pessoal Aplicado na Produção dos Serviços|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.05.00|Serviços Prestados por Pessoa Física sem Vínculo Empregatício|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.06.00|Serviços Prestados Pessoa Jurídica|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.07.00|Encargos Sociais - Previdência Social|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.08.00|Encargos Sociais - FGTS|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.09.00|Encargos Sociais - Outros|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.10.00|Alimentação do Trabalhador|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.11.00|Encargos de Depreciação e Amortização|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.12.00|Arrendamento Mercantil|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.13.00|Constituição de Provisões|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.14.00|Royalties e Assistência Técnica - PAÍS|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.15.00|Royalties e Assistência Técnica - EXTERIOR|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.16.00|Outros Custos|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.05.17.00|(-) Saldo Final de Serviços em Andamento|28122007|31122008|A|3.01.01.03.05|6|4|A
+3.01.01.03.07|CUSTO DAS UNIDADES IMOBILIÁRIAS VENDIDAS|28122007||S|3.01.01.03|5|4|A
+3.01.01.03.07.01.00|Custo das Unidades Imobiliárias Vendidas|28122007||A|3.01.01.03.07|6|4|A
+3.01.01.03.09|AJUSTES DE ESTOQUES DECORRENTES DE ARBITRAMENTO|28122007||S|3.01.01.03|5|4|A
+3.01.01.03.09.01.00|Ajustes de Estoques Decorrentes de Arbitramento|28122007|31122008|A|3.01.01.03.09|6|4|A
+3.01.01.05|OUTRAS RECEITAS OPERACIONAIS|28122007||S|3.01.01|4|4|A
+3.01.01.05.01|OUTRAS RECEITAS OPERACIONAIS|28122007||S|3.01.01.05|5|4|A
+3.01.01.05.01.01.00|Variações Cambiais Ativas|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.02.00|Ganhos Auferidos no Mercado de Renda Variável, exceto Day-Trade|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.03.00|Ganhos em Operações Day-Trade|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.04.00|Receitas de Juros sobre o Capital Próprio|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.05.00|Outras Receitas Financeiras|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.06.00|Ganhos na Alienação de Participações Não Integrantes do Ativo Permanente|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.07.00|Resultados Positivos em Participações Societárias|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.07.10|Amortização de Deságio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido|01012008||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.08.00|Resultados Positivos em SCP|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.09.00|Rendimentos e Ganhos de Capital Auferidos no Exterior|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.10.00|Reversão dos Saldos das Provisões Operacionais|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.10.10|Prêmios Recebidos na Emissão de Debêntures|01012008||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.10.20|Doações e Subvenções para Investimentos|01012008||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.10.30|Contrapartida dos Ajustes ao Valor Presente|01012008||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.10.40|Contrapartida de outros Ajustes às Normas Internacionais de Contabilidade|01012008||A|3.01.01.05.01|6|4|A
+3.01.01.05.01.11.00|Outras Receitas Operacionais|28122007||A|3.01.01.05.01|6|4|A
+3.01.01.07|DESPESAS OPERACIONAIS|28122007||S|3.01.01|4|4|A
+3.01.01.07.01|DESPESAS OPERACIONAIS DAS ATIVIDADES EM GERAL|28122007||S|3.01.01.07|5|4|A
+3.01.01.07.01.01.00|Remuneração a Dirigentes e a Conselho de Administração|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.02.00|Ordenados, Salários, Gratificações e Outras Remunerações a Empregados|28122007|31122008|A|3.01.01.07.01|6|4|A
+3.01.01.07.01.02.01|Ordenados, Salários Gratificações e Outras Remunerações a Empregados|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.02.03|Planos de Poupança e Investimentos de Empregados|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.02.05|Fundo de Aposentadoria Programada Individual de Empregados|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.02.07|Plano de Previdência Privada de Empregados|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.02.09|Outros Gastos com Pessoal|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.03.00|Prestação de Serviços por Pessoa Física sem Vínculo Empregatício|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.04.00|Prestação de Serviço Pessoa Jurídica|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.04.01|Serviços Prestados por Cooperativa de Trabalho|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.04.02|Locação de Mão-de-obra|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.05.00|Encargos Sociais - Previdência Social|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.06.00|Encargos Sociais - FGTS|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.07.00|Encargos Sociais - Outros|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.08.00|Doações e Patrocínios de Caráter Cultural e Artístico (Lei no 8.313/1991)|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.09.00|Doações a Instituições de Ensino e Pesquisa (Lei nº 9.249/1995, art.13, § 2º)|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.10.00|Doações a Entidades Civis|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.11.00|Outras Contribuições e Doações|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.12.00|Alimentação do Trabalhador|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.13.00|PIS/Pasep|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.14.00|Cofins|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.15.00|CPMF|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.16.00|Demais Impostos, Taxas e Contribuições, exceto IR e CSLL|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.17.00|Arrendamento Mercantil|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.18.00|Aluguéis|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.19.00|Despesas com Veículos e de Conservação de Bens e Instalações|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.20.00|Propaganda e Publicidade|28122007|31122008|A|3.01.01.07.01|6|4|A
+3.01.01.07.01.20.01|Propaganda, Publicidade e Patrocínio (Associações Desportivas que Mantenham Equipe de Futebol Profissional)|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.20.02|Propaganda, Publicidade e Patrocínio|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.21.00|Multas|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.22.00|Encargos de Depreciação e Amortização|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.23.00|Perdas em Operações de Crédito|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.24.00|Provisões para Férias e 13o Salário de Empregados|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.25.00|Provisão para Perda de Estoque|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.26.00|Demais Provisões|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.27.00|Gratificações a Administradores|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.28.00|Royalties e Assistência Técnica - PAÍS|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.29.00|Royalties e Assistência Técnica - EXTERIOR|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.30.00|Assistência Médica, Odontológica e Farmacêutica a Empregados|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.31.00|Pesquisas Científicas e Tecnológicas|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.32.00|Bens de Natureza Permanente Deduzidos como Despesa|28122007||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.33.00|Outras Despesas Operacionais|28122007|31122008|A|3.01.01.07.01|6|4|A
+3.01.01.07.01.33.01|Despesas com viagens, diárias e ajusta de custo|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.07.01.33.90|Outras Despesas Operacionais|01012008||A|3.01.01.07.01|6|4|A
+3.01.01.09|OUTRAS DESPESAS OPERACIONAIS|28122007||S|3.01.01|4|4|A
+3.01.01.09.01|OUTRAS DESPESAS OPERACIONAIS|28122007||S|3.01.01.09|5|4|A
+3.01.01.09.01.01.00|(-) Variações Cambiais Passivas|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.02.00|(-) Perdas Incorridas no Mercado de Renda Variável, exceto Day-Trade|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.03.00|(-) Perdas em Operações Day-Trade|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.04.00|(-) Juros sobre o Capital Próprio|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.05.00|(-) Outras Despesas Financeiras|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.06.00|(-) Prejuízos na Alienação de Participações Não Integrantes do Ativo Permanente|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.07.00|(-) Resultados Negativos em Participações Societárias|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.07.10|(-) Amortização de Ágio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido|01012008||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.08.00|(-) Resultados Negativos em SCP|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.09.00|(-) Perdas em Operações Realizadas no Exterior|28122007||A|3.01.01.09.01|6|4|A
+3.01.01.09.01.10.00|(-) Contrapartida dos Ajustes ao Valor Presente|01012008||A|3.01.01.09.01|6|4|S
+3.01.01.09.01.11.00|(-) Contrapartida de outros Ajustes às Normas Internacionais de Contabilidade|28122007||A|3.01.01.09.01|6|4|S
+3.01.01.09.01.12.00|(-) Contrapartida dos Ajustes de Valor do Imobilizado e Intangível|28122007||A|3.01.01.09.01|6|4|S
+3.01.01.11|RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012010||S|3.01.01|4|4|S
+3.01.01.11.01|RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012010||S|3.01.01.11|5|4|S
+3.01.01.11.01.01.00|Receitas e Despesas das Operações Descontinuadas|01012010||A|3.01.01.11.01|6|4|S
+3.01.03|OUTRAS RECEITAS E OUTRAS DESPESAS|28122007||S|3.01|3|4|A
+3.01.03.01|RECEITAS E DESPESAS NÃO OPERACIONAIS|28122007||S|3.01.03|4|4|F
+3.01.03.01.01|RECEITAS NÃO OPERACIONAIS|28122007||S|3.01.03.01|5|4|F
+3.01.03.01.01.01.00|Receitas de Alienações de Bens e Direitos do Ativo Permanente|28122007||A|3.01.03.01.01|6|4|F
+3.01.03.01.01.01.10|Ganhos de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012008||A|3.01.03.01.01|6|4|F
+3.01.03.01.01.02.00|Outras Receitas Não Operacionais|28122007||A|3.01.03.01.01|6|4|F
+3.01.03.01.03|DESPESAS NÃO OPERACIONAIS|28122007||S|3.01.03.01|5|4|F
+3.01.03.01.03.01.00|(-) Valor Contábil dos Bens e Direitos Alienados|28122007||A|3.01.03.01.03|6|4|F
+3.01.03.01.03.01.10|(-) Perdas de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012008||A|3.01.03.01.03|6|4|F
+3.01.03.01.03.02.00|(-) Outras Despesas Não Operacionais|28122007||A|3.01.03.01.03|6|4|F
+3.01.05|PARTICIPAÇÕES|28122007||S|3.01|3|4|A
+3.01.05.01|PARTICIPAÇÕES NOS LUCROS|28122007||S|3.01.05|4|4|A
+3.01.05.01.01|PARTICIPAÇÕES DE EMPREGADOS|28122007||S|3.01.05.01|5|4|A
+3.01.05.01.01.01.00|(-) Participações de Empregados|28122007||A|3.01.05.01.01|6|4|A
+3.01.05.01.01.02.00|(-) Contribuições para Assistência ou Previdência de Empregados|28122007||A|3.01.05.01.01|6|4|A
+3.01.05.01.01.03.00|(-) Outras Participações de Empregados|28122007||A|3.01.05.01.01|6|4|A
+3.01.05.01.03|OUTRAS PARTICIPAÇÕES|28122007||S|3.01.05.01|5|4|A
+3.01.05.01.03.01.00|(-) Participações de Administradores e Partes Beneficiárias|28122007||A|3.01.05.01.03|6|4|A
+3.01.05.01.03.02.00|(-) Participações de Debêntures|28122007||A|3.01.05.01.03|6|4|A
+3.01.05.01.03.03.00|(-) Outras|28122007||A|3.01.05.01.03|6|4|A
+3.02|PROVISÃO PARA CSLL E IRPJ (ATIVIDADES EM GERAL)|28122007||S|3|2|4|A
+3.02.01|PROVISÃO PARA CSLL E IRPJ|28122007||S|3.02|3|4|A
+3.02.01.01|PROVISÃO PARA CSLL E IRPJ|28122007||S|3.02.01|4|4|A
+3.02.01.01.01|PROVISÃO PARA CSLL E IRPJ|28122007||S|3.02.01.01|5|4|A
+3.02.01.01.01.01.00|(-) Contribuição Social sobre o Lucro Líquido|28122007||A|3.02.01.01.01|6|4|A
+3.02.01.01.01.02.00|(-) Provisão para Imposto de Renda - Pessoa Jurídica|28122007||A|3.02.01.01.01|6|4|A
+3.05|RESULTADO ANTES DO IRPJ E DA CSLL - ATIVIDADE RURAL|28122007||S|3|2|4|A
+3.05.01|RESULTADO OPERACIONAL DA ATIVIDADE RURAL|28122007||S|3.05|3|4|A
+3.05.01.01|RECEITA OPERACIONAL LÍQUIDA DA ATIVIDADE RURAL|28122007||S|3.05.01|4|4|A
+3.05.01.01.01|RECEITA BRUTA DA ATIVIDADE RURAL|28122007||S|3.05.01.01|5|4|A
+3.05.01.01.01.01.00|Receita da Atividade Rural|28122007||A|3.05.01.01.01|6|4|A
+3.05.01.01.03|DEDUÇÕES DA RECEITA BRUTA|28122007||S|3.05.01.01|5|4|A
+3.05.01.01.03.01.00|(-) Vendas Canceladas, Devoluções e Descontos Incondicionais|28122007||A|3.05.01.01.03|6|4|A
+3.05.01.01.03.02.00|(-) ICMS|28122007||A|3.05.01.01.03|6|4|A
+3.05.01.01.03.03.00|(-) Cofins|28122007||A|3.05.01.01.03|6|4|A
+3.05.01.01.03.04.00|(-) PIS/Pasep|28122007||A|3.05.01.01.03|6|4|A
+3.05.01.01.03.05.00|(-) ISS|28122007||A|3.05.01.01.03|6|4|A
+3.05.01.01.03.06.00|(-) Demais Impostos e Contribuições Incidentes sobre Vendas e Serviços|28122007||A|3.05.01.01.03|6|4|A
+3.05.01.03|CUSTO DOS BENS E SERVIÇOS VENDIDOS|28122007||S|3.05.01|4|4|A
+3.05.01.03.01|CUSTO DOS PRODUTOS DA ATIVIDADE RURAL VENDIDOS|28122007||S|3.05.01.03|5|4|A
+3.05.01.03.01.00.00|Custo dos Produtos Vendidos da Atividade Rural|01012008||A|3.05.01.03.01|6|4|A
+3.05.01.03.01.01.01|Estoques Iniciais de Insumos Agropecuários|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.01.02|Estoques Iniciais de Produtos Agropecuários Acabados|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.01.03|Estoques Iniciais de Produtos Agropecuários em Formação|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.02.00|Compras de Insumos Agropecuários à Vista|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.03.00|Compras de Insumos Agropecuários a Prazo|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.04.00|Remuneração a Dirigentes da Produção|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.05.00|Custo do Pessoal Aplicado na Produção|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.06.00|Encargos Sociais - Previdência Social|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.07.00|Encargos Sociais - FGTS|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.08.00|Encargos Sociais - Outros|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.09.00|Alimentação do Trabalhador|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.10.00|Manutenção e Reparo de Bens Aplicados na Produção|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.11.00|Arrendamento Mercantil|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.12.00|Encargos de Depreciação, Amortização e Exaustão|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.13.00|Constituição de Provisões|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.14.00|Serviços Prestados por Pessoa Física sem Vínculo Empregatício|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.15.00|Serviços Prestados por Pessoa Jurídica|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.16.00|Royalties e Assistência Técnica - PAÍS|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.17.00|Royalties e Assistência Técnica - EXTERIOR|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.18.00|Outros Custos|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.19.01|(-) Estoques Finais de Insumos Agropecuários|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.19.02|(-) Estoques Finais de Produtos Agropecuários em Formação|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.01.19.03|(-) Estoques Finais de Produtos Agropecuários Acabados|28122007|31122008|A|3.05.01.03.01|6|4|A
+3.05.01.03.09|AJUSTES DE ESTOQUES DECORRENTES DE ARBITRAMENTO|28122007||S|3.05.01.03|5|4|A
+3.05.01.03.09.01.00|Ajustes de Estoques Decorrentes de Arbitramento|28122007|31122008|A|3.05.01.03.09|6|4|A
+3.05.01.05|OUTRAS RECEITAS OPERACIONAIS|28122007||S|3.05.01|4|4|A
+3.05.01.05.01|OUTRAS RECEITAS OPERACIONAIS|28122007||S|3.05.01.05|5|4|A
+3.05.01.05.01.01.00|Variações Cambiais Ativas|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.02.00|Ganhos Auferidos no Mercado de Renda Variável, exceto Day-Trade|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.03.00|Ganhos em Operações Day-Trade|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.04.00|Receitas de Juros sobre o Capital Próprio|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.05.00|Outras Receitas Financeiras|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.06.00|Ganhos na Alienação de Participações Não Integrantes do Ativo Permanente|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.07.00|Resultados Positivos em Participações Societárias|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.07.10|Amortização de Deságio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido|01012008||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.08.00|Resultados Positivos em SCP|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.09.00|Rendimentos e Ganhos de Capital Auferidos no Exterior|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.10.00|Reversão dos Saldos das Provisões Operacionais|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.11.00|Outras Receitas Operacionais|28122007||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.12.00|Prêmios Recebidos na Emissão de Debêntures|01012008||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.13.00|Doações e Subvenções para Investimentos|01012008||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.14.00|Contrapartida dos Ajustes ao Valor Presente|01012008||A|3.05.01.05.01|6|4|A
+3.05.01.05.01.15.00|Contrapartida de outros Ajustes às Normas Internacionais de Contabilidade|01012008||A|3.05.01.05.01|6|4|A
+3.05.01.07|DESPESAS OPERACIONAIS|28122007||S|3.05.01|4|4|A
+3.05.01.07.01|DESPESAS OPERACIONAIS DA ATIVIDADE RURAL|28122007||S|3.05.01.07|5|4|A
+3.05.01.07.01.01.00|Remuneração a Dirigentes e a Conselho de Administração|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.02.00|Ordenados, Salários, Gratificações e Outras Remunerações a Empregados|28122007|31122008|A|3.05.01.07.01|6|4|A
+3.05.01.07.01.02.01|Ordenados, Salários Gratificações e Outras Remunerações a Empregados|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.02.03|Planos de Poupança e Investimentos de Empregados|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.02.05|Fundo de Aposentadoria Programada Individual de Empregados|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.02.07|Plano de Previdência Privada de Empregados|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.02.09|Outros Gastos com Pessoal|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.03.00|Prestação de Serviços por Pessoa Física sem Vínculo Empregatício|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.04.00|Prestação de Serviço Pessoa Jurídica|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.04.01|Serviços Prestados por Cooperativa de Trabalho|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.04.02|Locação de Mão-de-obra|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.05.00|Encargos Sociais - Previdência Social|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.06.00|Encargos Sociais - FGTS|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.07.00|Encargos Sociais - Outros|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.08.00|Doações e Patrocínios de Caráter Cultural e Artístico (Lei no 8.313/1991)|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.09.00|Doações a Instituições de Ensino e Pesquisa (Lei no 9.249/1995, art.13, § 2o)|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.10.00|Doações a Entidades Civis|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.11.00|Outras Contribuições e Doações|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.12.00|Alimentação do Trabalhador|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.13.00|PIS/Pasep|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.14.00|Cofins|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.15.00|CPMF|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.16.00|Demais Impostos, Taxas e Contribuições, exceto IR e CSLL|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.17.00|Arrendamento Mercantil|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.18.00|Aluguéis|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.19.00|Despesas com Veículos e de Conservação de Bens e Instalações|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.20.00|Propaganda e Publicidade|28122007|31122008|A|3.05.01.07.01|6|4|A
+3.05.01.07.01.20.01|Propaganda, Publicidade e Patrocínio (Associações Desportivas que Mantenham Equipe de Futebol Profissional)|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.20.02|Propaganda, Publicidade e Patrocínio|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.21.00|Multas|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.22.00|Encargos de Depreciação e Amortização|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.23.00|Perdas em Operações de Crédito|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.24.00|Provisões para Férias e 13o Salário de Empregados|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.25.00|Provisão para Perda de Estoque|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.26.00|Demais Provisões|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.27.00|Gratificações a Administradores|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.28.00|Royalties e Assistência Técnica - PAÍS|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.29.00|Royalties e Assistência Técnica - EXTERIOR|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.30.00|Assistência Médica, Odontológica e Farmacêutica a Empregados|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.31.00|Pesquisas Científicas e Tecnológicas|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.32.00|Bens de Natureza Permanente Deduzidos como Despesa|28122007||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.33.00|Outras Despesas Operacionais|28122007|31122008|A|3.05.01.07.01|6|4|A
+3.05.01.07.01.33.01|Despesas com viagens, diárias e ajusta de custo|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.07.01.33.90|Outras Despesas Operacionais|01012008||A|3.05.01.07.01|6|4|A
+3.05.01.09|OUTRAS DESPESAS OPERACIONAIS|28122007||S|3.05.01|4|4|A
+3.05.01.09.01|OUTRAS DESPESAS OPERACIONAIS|28122007||S|3.05.01.09|5|4|A
+3.05.01.09.01.01.00|(-) Variações Cambiais Passivas|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.02.00|(-) Perdas Incorridas no Mercado de Renda Variável, exceto Day-Trade|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.03.00|(-) Perdas em Operações Day-Trade|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.04.00|(-) Juros sobre o Capital Próprio|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.05.00|(-) Outras Despesas Financeiras|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.06.00|(-) Prejuízos na Alienação de Participações Não Integrantes do Ativo Permanente|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.07.00|(-) Resultados Negativos em Participações Societárias|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.07.10|(-) Amortização de Ágio nas Aquisições de Investimentos Avaliados pelo Patrimônio Líquido|01012008||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.08.00|(-) Resultados Negativos em SCP|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.09.00|(-) Perdas em Operações Realizadas no Exterior|28122007||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.10.00|(-) Contrapartida dos Ajustes ao Valor Presente|01012008||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.11.00|(-) Contrapartida de outros Ajustes às Normas Internacionais de Contabilidade|01012008||A|3.05.01.09.01|6|4|A
+3.05.01.09.01.12.00|(-) Contrapartida dos ajustes de valor do imobilizado e intangível|28122007||A|3.05.01.09.01|6|4|A
+3.05.03|PARTICIPAÇÕES|28122007||S|3.05|3|4|A
+3.05.03.01|PARTICIPAÇÕES NOS LUCROS|28122007||S|3.05.03|4|4|A
+3.05.03.01.01|PARTICIPAÇÕES DE EMPREGADOS|28122007||S|3.05.03.01|5|4|A
+3.05.03.01.01.01.00|(-) Participações de Empregados|28122007||A|3.05.03.01.01|6|4|A
+3.05.03.01.01.02.00|(-) Contribuições para Assistência ou Previdência de Empregados|28122007||A|3.05.03.01.01|6|4|A
+3.05.03.01.01.03.00|(-) Outras Participações de Empregados|28122007||A|3.05.03.01.01|6|4|A
+3.05.03.01.03|OUTRAS PARTICIPAÇÕES|28122007||S|3.05.03.01|5|4|A
+3.05.03.01.03.01.00|(-) Participações de Administradores e Partes Beneficiárias|28122007||A|3.05.03.01.03|6|4|A
+3.05.03.01.03.02.00|(-) Participações de Debêntures|28122007||A|3.05.03.01.03|6|4|A
+3.05.03.01.03.05.00|(-) Outras|28122007||A|3.05.03.01.03|6|4|A
+3.06|PROVISÃO PARA CSLL E IRPJ (ATIVIDADE RURAL)|28122007||S|3|2|4|A
+3.06.01|PROVISÃO PARA CSLL E IRPJ|28122007||S|3.06|3|4|A
+3.06.01.01|PROVISÃO PARA CSLL E IRPJ|28122007||S|3.06.01|4|4|A
+3.06.01.01.01|PROVISÃO PARA CSLL E IRPJ|28122007||S|3.06.01.01|5|4|A
+3.06.01.01.01.01.00|(-) Contribuição Social sobre o Lucro Líquido|28122007||A|3.06.01.01.01|6|4|A
+3.06.01.01.01.02.00|(-) Provisão para Imposto de Renda - Pessoa Jurídica|28122007||A|3.06.01.01.01|6|4|A
+4|SUPERÁVIT/DÉFICIT LÍQUIDO DO PERÍODO|28122007||S||1|4|A
+4.01|RESULTADO OPERACIONAL|28122007||S|4|2|4|A
+4.01.01|RECEITA OPERACIONAL LÍQUIDA|28122007||S|4.01|3|4|A
+4.01.01.01|RECEITA BRUTA|28122007||S|4.01.01|4|4|A
+4.01.01.01.01|RECEITA DE VENDA DE PRODUTOS|28122007||S|4.01.01.01|5|4|A
+4.01.01.01.01.01.00|Da atividade de Educação|28122007||A|4.01.01.01.01|6|4|A
+4.01.01.01.01.02.00|Da atividade de Saúde|28122007||A|4.01.01.01.01|6|4|A
+4.01.01.01.01.03.00|Da atividade de Assistência Social|28122007||A|4.01.01.01.01|6|4|A
+4.01.01.01.01.04.00|Outras|28122007||A|4.01.01.01.01|6|4|A
+4.01.01.01.02|RECEITA DE PRESTAÇÃO DOS SERVIÇOS|28122007||S|4.01.01.01|5|4|A
+4.01.01.01.02.01.00|Serviços Educacionais|28122007||A|4.01.01.01.02|6|4|A
+4.01.01.01.02.02.00|Doações/Subvenções Vinculadas|28122007||A|4.01.01.01.02|6|4|A
+4.01.01.01.02.03.00|Doações|28122007||A|4.01.01.01.02|6|4|A
+4.01.01.01.02.04.00|Contribuições|28122007||A|4.01.01.01.02|6|4|A
+4.01.01.01.02.05.00|Outras|28122007||A|4.01.01.01.02|6|4|A
+4.01.01.01.03|RECEITA DE SERVIÇOS DE SAÚDE|28122007||S|4.01.01.01|5|4|A
+4.01.01.01.03.01.00|Pacientes Particulares|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.03.02.00|Convênios - SUS|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.03.03.00|Convênios - Outros|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.03.04.00|Doações/Subvenções Vinculadas|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.03.05.00|Doações|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.03.06.00|Contribuições|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.03.07.00|Outras|28122007||A|4.01.01.01.03|6|4|A
+4.01.01.01.04|RECEITAS DE SERVIÇOS DE ASSISTÊNCIA SOCIAL|28122007||S|4.01.01.01|5|4|A
+4.01.01.01.04.01.00|Pacientes Particulares|28122007||A|4.01.01.01.04|6|4|A
+4.01.01.01.04.02.00|Convênios - Outros|28122007||A|4.01.01.01.04|6|4|A
+4.01.01.01.04.03.00|Doações/Subvenções Vinculadas|28122007||A|4.01.01.01.04|6|4|A
+4.01.01.01.04.04.00|Doações|28122007||A|4.01.01.01.04|6|4|A
+4.01.01.01.04.05.00|Contribuições|28122007||A|4.01.01.01.04|6|4|A
+4.01.01.01.04.06.00|Outras|28122007||A|4.01.01.01.04|6|4|A
+4.01.01.01.05|RECEITAS DE OUTRAS ATIVIDADES|28122007||S|4.01.01.01|5|4|A
+4.01.01.01.05.01.00|Contribuições Sindicais|28122007||A|4.01.01.01.05|6|4|A
+4.01.01.01.05.02.00|Contribuições Confederativas/Associativas|28122007||A|4.01.01.01.05|6|4|A
+4.01.01.01.05.03.00|Mensalidades|28122007||A|4.01.01.01.05|6|4|A
+4.01.01.01.05.04.00|Doações/Subvenções|28122007||A|4.01.01.01.05|6|4|A
+4.01.01.01.05.05.00|Outras Contribuições|28122007||A|4.01.01.01.05|6|4|A
+4.01.01.01.05.06.00|Outras|28122007||A|4.01.01.01.05|6|4|A
+4.01.01.01.09|DEDUÇÕES DA RECEITA BRUTA|28122007||S|4.01.01.01|5|4|A
+4.01.01.01.09.01.00|(-) Vendas Canceladas|28122007||A|4.01.01.01.09|6|4|A
+4.01.01.01.09.02.00|(-) Devoluções e Descontos Incondicionais|28122007||A|4.01.01.01.09|6|4|A
+4.01.01.01.09.03.00|Outras|28122007||A|4.01.01.01.09|6|4|A
+4.01.03|CUSTO DOS PRODUTOS E SERVIÇOS VENDIDOS|28122007||S|4.01|3|4|A
+4.01.03.01|CUSTO DOS PRODUTOS VENDIDOS|28122007||S|4.01.03|4|4|A
+4.01.03.01.01|CUSTO DOS PRODUTOS VENDIDOS PARA EDUCAÇÃO|28122007||S|4.01.03.01|5|4|A
+4.01.03.01.01.01.00|Custos dos Produtos para Educação - Vendidos|28122007||A|4.01.03.01.01|6|4|A
+4.01.03.01.01.02.00|Custos dos Produtos para Educação - Gratuidades|28122007||A|4.01.03.01.01|6|4|A
+4.01.03.01.01.03.00|Outros Custos|28122007||A|4.01.03.01.01|6|4|A
+4.01.03.01.02|CUSTO DOS PRODUTOS VENDIDOS PARA SAÚDE|28122007||S|4.01.03.01|5|4|A
+4.01.03.01.02.01.00|Custos dos Produtos para Saúde - Vendidos|28122007||A|4.01.03.01.02|6|4|A
+4.01.03.01.02.02.00|Custos dos Produtos para Saúde - Gratuidades|28122007||A|4.01.03.01.02|6|4|A
+4.01.03.01.02.03.00|Outros Custos|28122007||A|4.01.03.01.02|6|4|A
+4.01.03.01.03|CUSTO DOS PRODUTOS VENDIDOS PARA ASSISTÊNCIA SOCIAL|28122007||S|4.01.03.01|5|4|A
+4.01.03.01.03.01.00|Custos dos Produtos para Assistência Social - Vendidos|28122007||A|4.01.03.01.03|6|4|A
+4.01.03.01.03.02.00|Custos dos Produtos para Assistência Social - Gratuidades|28122007||A|4.01.03.01.03|6|4|A
+4.01.03.01.03.03.00|Outras|28122007||A|4.01.03.01.03|6|4|A
+4.01.03.01.04|CUSTO DOS PRODUTOS VENDIDOS PARA AS DEMAIS ATIVIDADES|28122007||S|4.01.03.01|5|4|A
+4.01.03.01.04.01.00|Custos dos Produtos Vendidos em Geral|28122007||A|4.01.03.01.04|6|4|A
+4.01.03.01.04.02.00|Outros Custos|28122007||A|4.01.03.01.04|6|4|A
+4.01.03.02|CUSTO DOS SERVIÇOS PRESTADOS|28122007||S|4.01.03|4|4|A
+4.01.03.02.01|CUSTO DOS SERVIÇOS PRESTADOS PARA EDUCAÇÃO|28122007||S|4.01.03.02|5|4|A
+4.01.03.02.01.01.00|Custo dos Serviços Prestados a Alunos Não Bolsistas|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.01.02.00|Custo dos Serviços Prestados a Convênios/Contratos/Parcerias (Exceto PROUNI)|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.01.03.00|Custo dos Serviços Prestados a Doações/Subvenções Vinculadas|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.01.04.00|Custo dos Serviços Prestados a Doações|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.01.05.00|Custo dos Serviços Prestados ao PROUNI|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.01.06.00|Custo dos Serviços Prestados a Gratuidade|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.01.07.00|Outros Custos|28122007||A|4.01.03.02.01|6|4|A
+4.01.03.02.02|CUSTO DOS SERVIÇOS PRESTADOS PARA SAÚDE|28122007||S|4.01.03.02|5|4|A
+4.01.03.02.02.01.00|Custo dos Serviços Prestados a Pacientes Particulares|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.02.02.00|Custo dos Serviços Prestados a Convênios SUS|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.02.03.00|Custo dos Serviços Prestados a Convênios/Contratos/Parcerias|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.02.04.00|Custo dos Serviços Prestados a Doações/Subvenções Vinculadas|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.02.05.00|Custo dos Serviços Prestados a Doações|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.02.06.00|Custo dos Serviços Prestados a Gratuidade|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.02.07.00|Outros Custos|28122007||A|4.01.03.02.02|6|4|A
+4.01.03.02.03|CUSTO DOS SERVIÇOS PRESTADOS PARA ASSISTÊNCIA SOCIAL|28122007||S|4.01.03.02|5|4|A
+4.01.03.02.03.01.00|Custo dos Serviços Prestados a Pacientes Particulares|28122007||A|4.01.03.02.03|6|4|A
+4.01.03.02.03.02.00|Custo dos Serviços Prestados a Convênios/Contratos/Parcerias|28122007||A|4.01.03.02.03|6|4|A
+4.01.03.02.03.03.00|Custo dos Serviços Prestados a Doações/Subvenções Vinculadas|28122007||A|4.01.03.02.03|6|4|A
+4.01.03.02.03.04.00|Custo dos Serviços Prestados a Doações|28122007||A|4.01.03.02.03|6|4|A
+4.01.03.02.03.05.00|Custo dos Serviços Prestados a Gratuidade|28122007||A|4.01.03.02.03|6|4|A
+4.01.03.02.03.06.00|Outros Custos|28122007||A|4.01.03.02.03|6|4|A
+4.01.03.02.04|CUSTO DOS SERVIÇOS PRESTADOS PARA AS DEMAIS ATIVIDADES|28122007||S|4.01.03.02|5|4|A
+4.01.03.02.04.01.00|Custo dos Serviços Prestados em Geral|28122007||A|4.01.03.02.04|6|4|A
+4.01.03.02.04.02.00|Outros Custos|28122007||A|4.01.03.02.04|6|4|A
+4.01.05|OUTRAS RECEITAS OPERACIONAIS|28122007||S|4.01|3|4|A
+4.01.05.01|OUTRAS RECEITAS OPERACIONAIS|28122007||S|4.01.05|4|4|A
+4.01.05.01.01|OUTRAS RECEITAS OPERACIONAIS|28122007||S|4.01.05.01|5|4|A
+4.01.05.01.01.01.00|Variações Cambiais Ativas|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.02.00|Ganhos Auferidos no Mercado de Renda Variável, exceto Day-Trade|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.03.00|Ganhos em Operações Day-Trade|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.04.00|Outras Receitas de Aplicações Financeiras|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.05.00|Ganhos na Alienação de Participações Não Integrantes do Ativo Permanente|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.06.00|Resultados Positivos em Participações Societárias|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.07.00|Rendimentos e Ganhos de Capital Auferidos no Exterior|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.08.00|Reversão dos Saldos das Provisões Operacionais|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.09.00|Outras Receitas Operacionais|28122007||A|4.01.05.01.01|6|4|A
+4.01.05.01.01.10.00|Outras|28122007||A|4.01.05.01.01|6|4|A
+4.01.07|DESPESAS OPERACIONAIS|28122007||S|4.01|3|4|A
+4.01.07.01|DESPESAS OPERACIONAIS|28122007||S|4.01.07|4|4|A
+4.01.07.01.01|DESPESAS OPERACIONAIS|28122007||S|4.01.07.01|5|4|A
+4.01.07.01.01.00|Remunerações a Empregados|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.02.00|Indenizações Trabalhistas|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.03.00|Remuneração a Dirigentes e a Conselho de Administração/Fiscal|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.04.00|Prestação de Serviços por Pessoa Física sem Vínculo Empregatício|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.05.00|Prestação de Serviço por Pessoa Jurídica|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.06.00|Doações e Patrocínios de Caráter Cultural e Artístico (Lei no 8.313/1991)|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.07.00|Doações a Instituições de Ensino e Pesquisa (Lei no 9.249/1995, art.13, § 2o)|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.08.00|Doações a Entidades Civis|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.09.00|Outras Contribuições e Doações|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.10.00|FGTS (sem indenização 40%)|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.11.00|Assistência Médica, Odontológica, Medicamentos, Aparelhos Ortopédicos e Similares|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.12.00|Provisões para Férias e 13o Salário de Empregados|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.13.00|Demais Provisões|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.14.00|Arrendamento Mercantil|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.15.00|Aluguéis|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.16.00|Despesas com Veículos e de Conservação de Bens e Instalações|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.17.00|Propaganda e Publicidade|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.18.00|Multas|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.19.00|Encargos de Depreciação e Amortização|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.20.00|Repasses para Outras Entidades (Sindicatos/Federações/Confederações)|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.21.00|Contribuições Previdenciárias Patronais|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.22.00|COFINS|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.23.00|CSLL|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.24.00|PIS/PASEP|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.25.00|CPMF|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.26.00|Demais Impostos, Taxas e Contribuições, exceto as citadas acima.|28122007||A|4.01.07.01.01|6|4|A
+4.01.07.01.27.00|Outras Despesas Operacionais|28122007||A|4.01.07.01.01|6|4|A
+4.01.09|OUTRAS DESPESAS OPERACIONAIS|28122007||S|4.01|3|4|A
+4.01.09.01|OUTRAS DESPESAS OPERACIONAIS|28122007||S|4.01.09|4|4|A
+4.01.09.01.01|OUTRAS DESPESAS OPERACIONAIS|28122007||S|4.01.09.01|5|4|A
+4.01.09.01.01.01.00|(-) Variações Cambiais Passivas|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.02.00|(-) Perdas Incorridas no Mercado de Renda Variável, exceto Day-Trade|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.03.00|(-) Perdas em Operações Day-Trade|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.04.00|(-) Outras Despesas de Aplicações|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.05.00|(-) Prejuízos na Alienação de Participações Não Integrantes do Ativo Permanente|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.06.00|(-) Resultados Negativos em Participações Societárias|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.07.00|(-) Perdas em Operações Realizadas no Exterior|28122007||A|4.01.09.01.01|6|4|A
+4.01.09.01.01.08.00|Outras Despesas Operacionais|28122007||A|4.01.09.01.01|6|4|A
+4.01.11|RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012010||S|4.01|3|4|S
+4.01.11.01|RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012010||S|4.01.11|4|4|S
+4.01.11.01.01|RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012010||S|4.01.11.01|5|4|S
+4.01.11.01.01.01.00|Receitas e Despesas das Operações Descontinuadas|01012010||A|4.01.11.01.01|6|4|S
+4.03|OUTRAS RECEITAS E DESPESAS|28122007||S|4|2|4|A
+4.03.01|RECEITAS E DESPESAS NÃO OPERACIONAIS|28122007||S|4.03|3|4|F
+4.03.01.01|RECEITAS E DESPESAS NÃO OPERACIONAIS|28122007||S|4.03.01|4|4|F
+4.03.01.01.01|RECEITAS NÃO OPERACIONAIS|28122007||S|4.03.01.01|5|4|F
+4.03.01.01.01.01.00|Receitas de Alienações de Bens e Direitos do Ativo Permanente.|28122007||A|4.03.01.01.01|6|4|F
+4.03.01.01.01.02.00|Outras Receitas Não Operacionais|28122007||A|4.03.01.01.01|6|4|F
+4.03.01.01.02|DESPESAS NÃO OPERACIONAIS|28122007||S|4.03.01.01|5|4|F
+4.03.01.01.02.01.00|(-) Valor Contábil dos Bens e Direitos Alienados|28122007||A|4.03.01.01.02|6|4|F
+4.03.01.01.02.02.00|(-) Outras Despesas Não Operacionais|28122007||A|4.03.01.01.02|6|4|F
+5|CUSTOS DE PRODUÇÃO|01012008||S||1|4|A
+5.01|CUSTO DOS BENS E SERVIÇOS PRODUZIDOS|01012008||S|5|2|4|A
+5.01.01|CUSTO DOS PRODUTOS DE FABRICAÇÃO PRÓPRIA PRODUZIDOS|01012008||S|5.01|3|4|A
+5.01.01.01.00|Consumo de Insumos|01012008||A|5.01.01|4|4|A
+5.01.01.04.00|Remuneração a Dirigentes de Ligados à Produção|01012008||A|5.01.01|4|4|A
+5.01.01.05.00|Custo do Pessoal Aplicado na Produção|01012008||A|5.01.01|4|4|A
+5.01.01.05.03|Planos de Poupança e Investimentos de Empregados Ligados à Produção|01012008||A|5.01.01|4|4|A
+5.01.01.05.05|Fundo de Aposentadoria Programada Individual de Empregados Ligados à Produção|01012008||A|5.01.01|4|4|A
+5.01.01.05.07|Plano de Previdência Privada de Empregados Ligados à Produção|01012008||A|5.01.01|4|4|A
+5.01.01.05.09|Outros Gastos com Pessoal Ligado à Produção|01012008||A|5.01.01|4|4|A
+5.01.01.06.00|Prestação de Serviços por Pessoa Física sem Vínculo Empregatício|01012008||A|5.01.01|4|4|A
+5.01.01.07.00|Prestação de Serviço Pessoa Jurídica|01012008||A|5.01.01|4|4|A
+5.01.01.08.00|Serviços Prestados por Cooperativa de Trabalho|01012008||A|5.01.01|4|4|A
+5.01.01.09.00|Locação de Mão-de-obra|01012008||A|5.01.01|4|4|A
+5.01.01.10.00|Encargos Sociais - Previdência Social|01012008||A|5.01.01|4|4|A
+5.01.01.11.00|Encargos Sociais - FGTS|01012008||A|5.01.01|4|4|A
+5.01.01.12.00|Encargos Sociais - Outros|01012008||A|5.01.01|4|4|A
+5.01.01.13.00|Alimentação do Trabalhador|01012008||A|5.01.01|4|4|A
+5.01.01.14.00|Manutenção e Reparo de Bens Aplicados na Produção|01012008||A|5.01.01|4|4|A
+5.01.01.15.00|Arrendamento Mercantil|01012008||A|5.01.01|4|4|A
+5.01.01.16.00|Encargos de Depreciação, Amortização e Exaustão|01012008||A|5.01.01|4|4|A
+5.01.01.17.00|Constituição de Provisões|01012008||A|5.01.01|4|4|A
+5.01.01.18.00|Serviços Prestados por Pessoa Física sem Vínculo Empregatício|01012008||A|5.01.01|4|4|A
+5.01.01.19.00|Serviços Prestados Pessoa Jurídica|01012008||A|5.01.01|4|4|A
+5.01.01.20.00|Royalties e Assistência Técnica - PAÍS|01012008||A|5.01.01|4|4|A
+5.01.01.21.00|Royalties e Assistência Técnica - EXTERIOR|01012008||A|5.01.01|4|4|A
+5.01.01.90.00|Outros Custos|01012008||A|5.01.01|4|4|A
+5.01.03|CUSTO DOS SERVIÇOS PRODUZIDOS|01012008||S|5.01|3|4|A
+5.01.03.02.00|Material Aplicado na Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.04.00|Remuneração a Dirigentes ligados à Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.05.00|Custo do Pessoal Aplicado na Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.05.03|Planos de Poupança e Investimentos de Empregados Ligados à Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.05.05|Fundo de Aposentadoria Programada Individual de Empregados Ligados à Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.05.07|Plano de Previdência Privada de Empregados Ligados à Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.05.09|Outros Gastos com Pessoal Ligado à Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.06.00|Prestação de Serviços por Pessoa Física sem Vínculo Empregatício|01012008||A|5.01.03|4|4|A
+5.01.03.07.00|Prestação de Serviço Pessoa Jurídica|01012008||A|5.01.03|4|4|A
+5.01.03.08.00|Serviços Prestados por Cooperativa de Trabalho|01012008||A|5.01.03|4|4|A
+5.01.03.09.00|Locação de Mão-de-obra|01012008||A|5.01.03|4|4|A
+5.01.03.10.00|Encargos Sociais - Previdência Social|01012008||A|5.01.03|4|4|A
+5.01.03.11.00|Encargos Sociais - FGTS|01012008||A|5.01.03|4|4|A
+5.01.03.12.00|Encargos Sociais - Outros|01012008||A|5.01.03|4|4|A
+5.01.03.13.00|Alimentação do Trabalhador|01012008||A|5.01.03|4|4|A
+5.01.03.14.00|Manutenção e Reparo de Bens Aplicados na Produção de Serviços|01012008||A|5.01.03|4|4|A
+5.01.03.15.00|Arrendamento Mercantil|01012008||A|5.01.03|4|4|A
+5.01.03.16.00|Encargos de Depreciação, Amortização e Exaustão|01012008||A|5.01.03|4|4|A
+5.01.03.17.00|Constituição de Provisões|01012008||A|5.01.03|4|4|A
+5.01.03.18.00|Serviços Prestados por Pessoa Física sem Vínculo Empregatício|01012008||A|5.01.03|4|4|A
+5.01.03.19.00|Serviços Prestados Pessoa Jurídica|01012008||A|5.01.03|4|4|A
+5.01.03.20.00|Royalties e Assistência Técnica - PAÍS|01012008||A|5.01.03|4|4|A
+5.01.03.21.00|Royalties e Assistência Técnica - EXTERIOR|01012008||A|5.01.03|4|4|A
+5.01.03.90.00|Outros Custos|01012008||A|5.01.03|4|4|A
+5.01.05|CUSTO DOS PRODUTOS DE FABRICAÇÃO PRÓPRIA PRODUZIDOS DA ATIVIDADE RURAL|01012008||S|5.01|3|4|A
+5.01.05.01.00|Consumo de Insumos|01012008||A|5.01.05|4|4|A
+5.01.05.04.00|Remuneração a Dirigentes de Ligados à Produção|01012008||A|5.01.05|4|4|A
+5.01.05.05.00|Custo do Pessoal Aplicado na Produção|01012008||A|5.01.05|4|4|A
+5.01.05.05.03|Planos de Poupança e Investimentos de Empregados Ligados à Produção|01012008||A|5.01.05|4|4|A
+5.01.05.05.05|Fundo de Aposentadoria Programada Individual de Empregados Ligados à Produção|01012008||A|5.01.05|4|4|A
+5.01.05.05.07|Plano de Previdência Privada de Empregados Ligados à Produção|01012008||A|5.01.05|4|4|A
+5.01.05.05.09|Outros Gastos com Pessoal Ligado à Produção|01012008||A|5.01.05|4|4|A
+5.01.05.06.00|Prestação de Serviços por Pessoa Física sem Vínculo Empregatício|01012008||A|5.01.05|4|4|A
+5.01.05.07.00|Prestação de Serviço Pessoa Jurídica|01012008||A|5.01.05|4|4|A
+5.01.05.08.00|Serviços Prestados por Cooperativa de Trabalho|01012008||A|5.01.05|4|4|A
+5.01.05.09.00|Locação de Mão-de-obra|01012008||A|5.01.05|4|4|A
+5.01.05.10.00|Encargos Sociais - Previdência Social|01012008||A|5.01.05|4|4|A
+5.01.05.11.00|Encargos Sociais - FGTS|01012008||A|5.01.05|4|4|A
+5.01.05.12.00|Encargos Sociais - Outros|01012008||A|5.01.05|4|4|A
+5.01.05.13.00|Alimentação do Trabalhador|01012008||A|5.01.05|4|4|A
+5.01.05.14.00|Manutenção e Reparo de Bens Aplicados na Produção|01012008||A|5.01.05|4|4|A
+5.01.05.15.00|Arrendamento Mercantil|01012008||A|5.01.05|4|4|A
+5.01.05.16.00|Encargos de Depreciação, Amortização e Exaustão|01012008||A|5.01.05|4|4|A
+5.01.05.17.00|Constituição de Provisões|01012008||A|5.01.05|4|4|A
+5.01.05.18.00|Serviços Prestados por Pessoa Física sem Vínculo Empregatício|01012008||A|5.01.05|4|4|A
+5.01.05.19.00|Serviços Prestados Pessoa Jurídica|01012008||A|5.01.05|4|4|A
+5.01.05.20.00|Royalties e Assistência Técnica - PAÍS|01012008||A|5.01.05|4|4|A
+5.01.05.21.00|Royalties e Assistência Técnica - EXTERIOR|01012008||A|5.01.05|4|4|A
+5.01.05.90.00|Outros Custos|01012008||A|5.01.05|4|4|A

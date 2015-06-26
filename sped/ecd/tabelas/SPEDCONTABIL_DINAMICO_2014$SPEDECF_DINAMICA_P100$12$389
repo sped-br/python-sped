@@ -1,0 +1,582 @@
+versão=12 CODIGO, DESCRICAO, DT_INI, DT_FIM, ORDEM, TIPO, COD_SUP, NIVEL, NATUREZA
+1|ATIVO|01012014||1|S||1|01
+1.01|ATIVO CIRCULANTE|01012014||2|S|1|2|01
+1.01.01|DISPONIBILIDADES|01012014||3|S|1.01|3|01
+1.01.01.01|CAIXA GERAL|01012014||4|S|1.01.01|4|01
+1.01.01.01.01|Caixa Matriz|01012014||5|A|1.01.01.01|5|01
+1.01.01.01.02|Caixa Filiais|01012014||6|A|1.01.01.01|5|01
+1.01.01.02|DEPÓSITOS BANCÁRIOS À VISTA|01012014||7|S|1.01.01|4|01
+1.01.01.02.01|Bancos Conta Movimento - No País|01012014||8|A|1.01.01.02|5|01
+1.01.01.02.02|Bancos Conta Movimento - No Exterior|01012014||9|A|1.01.01.02|5|01
+1.01.01.04|NUMERÁRIOS EM TRÂNSITO|01012014||10|S|1.01.01|4|01
+1.01.01.04.01|Numerários em Trânsito|01012014||11|A|1.01.01.04|5|01
+1.01.01.05|TÍTULOS E VALORES MOBILIÁRIOS  - NÃO HEDGE - NO PAÍS|01012014||12|S|1.01.01|4|01
+1.01.01.05.01|Títulos para Negociação - Mensurados a Valor Justo Por Meio do Resultado (VJPR) - No País|01012014||13|A|1.01.01.05|5|01
+1.01.01.05.02|Títulos Disponíveis para Venda - No País|01012014||14|A|1.01.01.05|5|01
+1.01.01.05.03|Títulos Mantidos até o Vencimento - No País|01012014||15|A|1.01.01.05|5|01
+1.01.01.05.10|Debêntures Emitidas por Partes Relacionadas - No País|01012014||16|A|1.01.01.05|5|01
+1.01.01.05.11|Debêntures Emitidas por Partes Não Relacionadas - No País|01012014||17|A|1.01.01.05|5|01
+1.01.01.05.15|Outros Empréstimos e Recebíveis - No País|01012014||18|A|1.01.01.05|5|01
+1.01.01.05.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Valores Mobiliários - No País|01012014||19|A|1.01.01.05|5|01
+1.01.01.05.55|(-) Perdas  por Redução ao Valor Recuperável (Impairment)- Valores Mobiliários - No País|01012014||20|A|1.01.01.05|5|01
+1.01.01.06|VALORES MOBILIÁRIOS  - HEDGE - NO PAÍS|01012014||23|S|1.01.01|4|01
+1.01.01.06.01|Derivativos - Hedge Valor Justo - No País|01012014||24|A|1.01.01.06|5|01
+1.01.01.06.02|Derivativos - Hedge Fluxo de Caixa - No País|01012014||25|A|1.01.01.06|5|01
+1.01.01.06.03|Derivativos - Hedge  Investimento no Exterior - No País|01012014||26|A|1.01.01.06|5|01
+1.01.01.09|TÍTULOS E VALORES MOBILIÁRIOS - NÃO HEDGE - NO EXTERIOR|01012014||29|S|1.01.01|4|01
+1.01.01.09.01|Títulos para Negociação - Mensurados a Valor Justo por Meio de Resultado (VJPR) - No Exterior|01012014||30|A|1.01.01.09|5|01
+1.01.01.09.02|Títulos Disponíveis para Venda - No Exterior|01012014||31|A|1.01.01.09|5|01
+1.01.01.09.03|Títulos Mantidos até o Vencimento - No Exterior|01012014||32|A|1.01.01.09|5|01
+1.01.01.09.10|Debêntures emitidas por Partes Relacionadas - No Exterior|01012014||33|A|1.01.01.09|5|01
+1.01.01.09.11|Debêntures emitidas por Partes Não Relacionadas - No Exterior|01012014||34|A|1.01.01.09|5|01
+1.01.01.09.15|Outros Empréstimos e Recebíveis - No Exterior|01012014||35|A|1.01.01.09|5|01
+1.01.01.09.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Valores Mobiliários - No Exterior|01012014||36|A|1.01.01.09|5|01
+1.01.01.09.55|(-) Perdas  por Redução ao Valor Recuperável (Impairment)- Valores Mobiliários - No Exterior|01012014||37|A|1.01.01.09|5|01
+1.01.01.10|VALORES MOBILIÁRIOS  - HEDGE - NO EXTERIOR|01012014||40|S|1.01.01|4|01
+1.01.01.10.01|Derivativos - Hedge Valor Justo -  No Exterior|01012014||41|A|1.01.01.10|5|01
+1.01.01.10.02|Derivativos - Hedge Fluxo de Caixa - No Exterior|01012014||42|A|1.01.01.10|5|01
+1.01.01.10.03|Derivativos - Hedge  Investimento no Exterior - No Exterior|01012014||43|A|1.01.01.10|5|01
+1.01.01.40|RECURSOS NO EXTERIOR DECORRENTES DE EXPORTAÇÃO|01012014||45|S|1.01.01|4|01
+1.01.01.40.01|Recursos no Exterior Decorrentes de Exportação|01012014||46|A|1.01.01.40|5|01
+1.01.01.99|OUTRAS DISPONIBILIDADES|01012014||47|S|1.01.01|4|01
+1.01.01.99.01|Outras Disponibilidades|01012014||48|A|1.01.01.99|5|01
+1.01.02|CRÉDITOS|01012014||49|S|1.01|3|01
+1.01.02.01|ADIANTAMENTOS|01012014||50|S|1.01.02|4|01
+1.01.02.01.01|Adiantamentos a Fornecedores - no País – Circulante|01012014||51|A|1.01.02.01|5|01
+1.01.02.01.02|Adiantamentos a Fornecedores - no Exterior – Circulante|01012014||52|A|1.01.02.01|5|01
+1.01.02.01.03|Adiantamentos a Funcionários – Circulante|01012014||53|A|1.01.02.01|5|01
+1.01.02.01.04|Adiantamentos a Terceiros – Circulante|01012014||54|A|1.01.02.01|5|01
+1.01.02.01.98|Outros Adiantamentos  – Circulante|01012014||55|A|1.01.02.01|5|01
+1.01.02.02|DUPLICATAS A RECEBER|01012014||56|S|1.01.02|4|01
+1.01.02.02.01|Duplicatas a Receber - Operações com Partes Não Relacionadas - no País|01012014||57|A|1.01.02.02|5|01
+1.01.02.02.02|Duplicatas a Receber - Operações com Partes Não Relacionadas - no Exterior|01012014||58|A|1.01.02.02|5|01
+1.01.02.02.03|Duplicatas a Receber - Operações com Partes Relacionadas - no País|01012014||59|A|1.01.02.02|5|01
+1.01.02.02.04|Duplicatas a Receber - Operações com Partes Relacionadas - no Exterior|01012014||60|A|1.01.02.02|5|01
+1.01.02.02.50|(-) Juros a Apropriar Decorrentes de Ajuste da Valor Presente (AVP)  – Duplicatas a Receber |01012014||61|A|1.01.02.02|5|01
+1.01.02.02.52|(-) Perdas Estimadas em Créditos de Liquidação Duvidosa - Duplicatas a Receber |01012014||62|A|1.01.02.02|5|01
+1.01.02.02.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Duplicatas a Receber |01012014||63|A|1.01.02.02|5|01
+1.01.02.03|TRIBUTOS A RECUPERAR|01012014||65|S|1.01.02|4|01
+1.01.02.03.01|IPI a Recuperar|01012014||66|A|1.01.02.03|5|01
+1.01.02.03.02|ICMS a Recuperar|01012014||67|A|1.01.02.03|5|01
+1.01.02.03.03|PIS  a Recuperar - Crédito Básico|01012014||68|A|1.01.02.03|5|01
+1.01.02.03.04|PIS  a Recuperar - Crédito Presumido|01012014||69|A|1.01.02.03|5|01
+1.01.02.03.05|COFINS  a Recuperar - Crédito Básico|01012014||70|A|1.01.02.03|5|01
+1.01.02.03.06|COFINS  a Recuperar - Crédito Presumido|01012014||71|A|1.01.02.03|5|01
+1.01.02.03.07|CIDE a Recuperar|01012014||72|A|1.01.02.03|5|01
+1.01.02.03.40|Outros Impostos e Contribuições a Recuperar|01012014||73|A|1.01.02.03|5|01
+1.01.02.03.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Tributos a Recuperar|01012014||74|A|1.01.02.03|5|01
+1.01.02.03.55|(-) Perdas  por Redução ao Valor Recuperável (Impairment) -  Tributos a Recuperar|01012014||75|A|1.01.02.03|5|01
+1.01.02.04|TRIBUTOS A COMPENSAR|01012014||76|S|1.01.02|4|01
+1.01.02.04.01|Imposto de Renda Retido na Fonte (IRRF)|01012014||77|A|1.01.02.04|5|01
+1.01.02.04.02|IRPJ Recolhido por Estimativa|01012014||78|A|1.01.02.04|5|01
+1.01.02.04.03|IRPJ Saldo Negativo|01012014||79|A|1.01.02.04|5|01
+1.01.02.04.04|CSLL Retida na Fonte|01012014||80|A|1.01.02.04|5|01
+1.01.02.04.05|CSLL Recolhida por Estimativa|01012014||81|A|1.01.02.04|5|01
+1.01.02.04.06|CSLL Saldo Negativo|01012014||82|A|1.01.02.04|5|01
+1.01.02.04.07|PIS/PASEP Retido na Fonte|01012014||83|A|1.01.02.04|5|01
+1.01.02.04.08|PIS/PASEP a Compensar|01012014||84|A|1.01.02.04|5|01
+1.01.02.04.09|COFINS Retida na Fonte|01012014||85|A|1.01.02.04|5|01
+1.01.02.04.10|COFINS  a Compensar|01012014||86|A|1.01.02.04|5|01
+1.01.02.04.11|IPI a Compensar|01012014||87|A|1.01.02.04|5|01
+1.01.02.04.12|IOF a Compensar|01012014||88|A|1.01.02.04|5|01
+1.01.02.04.13|Imposto de Importação a Compensar|01012014||89|A|1.01.02.04|5|01
+1.01.02.04.14|Imposto de Exportação a Compensar|01012014||90|A|1.01.02.04|5|01
+1.01.02.04.15|ITR a Compensar|01012014||91|A|1.01.02.04|5|01
+1.01.02.04.16|CIDE a Compensar|01012014||92|A|1.01.02.04|5|01
+1.01.02.04.17|Contribuição Previdenciária Retida na Prestação de Serviços|01012014||93|A|1.01.02.04|5|01
+1.01.02.04.18|Contribuição Previdenciária a Compensar|01012014||94|A|1.01.02.04|5|01
+1.01.02.04.40|Outros Tributos a Compensar|01012014||95|A|1.01.02.04|5|01
+1.01.02.04.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Tributos a Compensar|01012014||96|A|1.01.02.04|5|01
+1.01.02.04.55|(-) Perdas  por Redução ao Valor Recuperável (Impairment)- Tributos a Compensar|01012014||97|A|1.01.02.04|5|01
+1.01.02.09|OUTROS CRÉDITOS – CIRCULANTE|01012014||98|S|1.01.02|4|01
+1.01.02.09.01|Mútuos com Partes Não Relacionadas – Circulante - No País|01012014||99|A|1.01.02.09|5|01
+1.01.02.09.02|Mútuos com Partes Não Relacionadas – Circulante - No Exterior|01012014||100|A|1.01.02.09|5|01
+1.01.02.09.03|Dividendos a Receber - Circulante - No País|01012014||101|A|1.01.02.09|5|01
+1.01.02.09.04|Dividendos a Receber - Circulante - No Exterior|01012014||102|A|1.01.02.09|5|01
+1.01.02.09.05|Juros Sobre o Capital Próprio a Receber  - Circulante|01012014||103|A|1.01.02.09|5|01
+1.01.02.09.06|Adiantamento para Futuro Aumento de Capital –Ativo - Circulante|01012014||104|A|1.01.02.09|5|01
+1.01.02.09.07| Outros Juros a Receber - Circulante|01012014||105|A|1.01.02.09|5|01
+1.01.02.09.09|Contraprestação Contingente Ativa  - Combinação de Negócios - Circulante|01012014||106|A|1.01.02.09|5|01
+1.01.02.09.10|Demais Créditos a Receber - Circulante|01012014||107|A|1.01.02.09|5|01
+1.01.02.09.20|Direitos Creditórios Cedidos|01012014||108|A|1.01.02.09|5|01
+1.01.02.09.21|(-) Deságio na Cessão de Títulos|01012014||109|A|1.01.02.09|5|01
+1.01.02.09.25|Direitos Creditórios a Receber|01012014||110|A|1.01.02.09|5|01
+1.01.02.09.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP)  –  Outros Créditos - Circulante|01012014||111|A|1.01.02.09|5|01
+1.01.02.09.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Outros Créditos - Circulante|01012014||112|A|1.01.02.09|5|01
+1.01.03|ESTOQUES|01012014||114|S|1.01|3|01
+1.01.03.01|ESTOQUES DE MERCADORIAS|01012014||115|S|1.01.03|4|01
+1.01.03.01.01|Mercadorias para Revenda|01012014||116|A|1.01.03.01|5|01
+1.01.03.01.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoque Mercadorias|01012014||117|A|1.01.03.01|5|01
+1.01.03.02|ESTOQUES DE PRODUTOS|01012014||121|S|1.01.03|4|01
+1.01.03.02.01|Insumos (materiais diretos)|01012014||122|A|1.01.03.02|5|01
+1.01.03.02.02|Outros Materiais|01012014||123|A|1.01.03.02|5|01
+1.01.03.02.03|Produtos em Elaboração|01012014||124|A|1.01.03.02|5|01
+1.01.03.02.04|Produtos Acabados|01012014||125|A|1.01.03.02|5|01
+1.01.03.02.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoque Produtos|01012014||126|A|1.01.03.02|5|01
+1.01.03.03|ESTOQUES - ATIVIDADE IMOBILIÁRIA|01012014||130|S|1.01.03|4|01
+1.01.03.03.01|Terrenos - Atividade Imobiliária|01012014||131|A|1.01.03.03|5|01
+1.01.03.03.02|Imóveis Adquiridos para Revenda - Atividade Imobiliária|01012014||132|A|1.01.03.03|5|01
+1.01.03.03.03|Obras em Andamento - Atividade Imobiliária|01012014||133|A|1.01.03.03|5|01
+1.01.03.03.04|Imóveis  à Venda - Atividade Imobiliária|01012014||134|A|1.01.03.03|5|01
+1.01.03.03.05|Construções em Andamento de Imóveis Destinados à Venda|01012014||135|A|1.01.03.03|5|01
+1.01.03.03.06|Materiais de Construção - Atividade Imobiliária|01012014||136|A|1.01.03.03|5|01
+1.01.03.03.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoque Atividade Imobiliária|01012014||137|A|1.01.03.03|5|01
+1.01.03.04|ESTOQUES - LONGA MATURAÇÃO|01012014||140|S|1.01.03|4|01
+1.01.03.04.01|Insumos (materiais diretos)  - Estoque Longa Maturação|01012014||141|A|1.01.03.04|5|01
+1.01.03.04.02|Outros Materiais - Estoque Longa Maturação|01012014||142|A|1.01.03.04|5|01
+1.01.03.04.03|Produtos em Elaboração - Estoque Longa Maturação|01012014||143|A|1.01.03.04|5|01
+1.01.03.04.04|Produtos Acabados - Estoque Longa Maturação|01012014||144|A|1.01.03.04|5|01
+1.01.03.04.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoque Longa Maturação|01012014||145|A|1.01.03.04|5|01
+1.01.03.05|ESTOQUES - ATIVIDADE RURAL|01012014||149|S|1.01.03|4|01
+1.01.03.05.01|Produtos Agropecuários de Origem Animal|01012014||150|A|1.01.03.05|5|01
+1.01.03.05.02|Produtos Agropecuários de Origem Vegetal|01012014||151|A|1.01.03.05|5|01
+1.01.03.05.03|Insumos Agropecuários|01012014||152|A|1.01.03.05|5|01
+1.01.03.05.04|Outros Materiais - Atividade Rural|01012014||153|A|1.01.03.05|5|01
+1.01.03.05.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoque Atividade Rural|01012014||154|A|1.01.03.05|5|01
+1.01.03.06|ESTOQUES SERVIÇOS|01012014||158|S|1.01.03|4|01
+1.01.03.06.01|Materiais Aplicados na Produção de Serviços|01012014||159|A|1.01.03.06|5|01
+1.01.03.06.02|Serviços em Andamento|01012014||160|A|1.01.03.06|5|01
+1.01.03.06.03|Serviços Acabados|01012014||161|A|1.01.03.06|5|01
+1.01.03.06.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoque Serviços|01012014||162|A|1.01.03.06|5|01
+1.01.03.07|ESTOQUES (OUTROS)|01012014||165|S|1.01.03|4|01
+1.01.03.07.01|Material em Almoxarifado|01012014||166|A|1.01.03.07|5|01
+1.01.03.07.02|Material Destinado à Destruição|01012014||167|A|1.01.03.07|5|01
+1.01.03.07.03|Sucata|01012014||168|A|1.01.03.07|5|01
+1.01.03.07.04|Outros Estoques|01012014||169|A|1.01.03.07|5|01
+1.01.03.07.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Estoques Outros|01012014||170|A|1.01.03.07|5|01
+1.01.05|DESPESAS DO EXERCÍCIO SEGUINTE|01012014||172|S|1.01|3|01
+1.01.05.01|DESPESAS DO EXERCÍCIO SEGUINTE|01012014||173|S|1.01.05|4|01
+1.01.05.01.01|Alugueis Pagos Antecipadamente|01012014||174|A|1.01.05.01|5|01
+1.01.05.01.02|Prêmios de Seguros a Apropriar|01012014||175|A|1.01.05.01|5|01
+1.01.05.01.03|Encargos Financeiros a Apropriar|01012014||176|A|1.01.05.01|5|01
+1.01.05.01.09|Outros Custos e Despesas Pagos Antecipadamente|01012014||177|A|1.01.05.01|5|01
+1.01.10|ATIVO BIOLÓGICO - CIRCULANTE|01012014||178|S|1.01|3|01
+1.01.10.01|ATIVO BIOLÓGICO AVALIADO PELO VALOR JUSTO - CIRCULANTE|01012014||179|S|1.01.10|4|01
+1.01.10.01.01|Ativo Biológico Consumível - Origem Animal – Pelo Valor Justo|01012014||180|A|1.01.10.01|5|01
+1.01.10.01.02|Ativo Biológico Consumível - Origem Vegetal – Pelo Valor Justo|01012014||181|A|1.01.10.01|5|01
+1.01.10.02|ATIVO BIOLÓGICO AVALIADO PELO CUSTO - CIRCULANTE|01012014||185|S|1.01.10|4|01
+1.01.10.02.01|Ativo Biológico Consumível - Origem Animal - Pelo Custo|01012014||186|A|1.01.10.02|5|01
+1.01.10.02.02|Ativo Biológico Consumível - Origem Vegetal - Pelo Custo|01012014||187|A|1.01.10.02|5|01
+1.01.10.02.55|( - ) Perdas  por Redução ao Valor Recuperável (Impairment) -  Ativos Biológicos Consumível - Pelo Custo|01012014||188|A|1.01.10.02|5|01
+1.01.11|ATIVO NÃO CIRCULANTE MANTIDO PARA VENDA|01012014||190|S|1.01|3|01
+1.01.11.01|ATIVO NÃO CIRCULANTE MANTIDO PARA VENDA|01012014||191|S|1.01.11|4|01
+1.01.11.01.01|Ativo Não Circulante Mantido Para Venda|01012014||192|A|1.01.11.01|5|01
+1.01.11.01.55|(-) Perdas por Redução ao Valor Recuperável (Impaiment) - Ativo Não Circulante Mantido para Venda|01012014||193|A|1.01.11.01|5|01
+1.02|ATIVO NÃO CIRCULANTE|01012014||197|S|1|2|01
+1.02.01|REALIZÁVEL A LONGO PRAZO|01012014||198|S|1.02|3|01
+1.02.01.01|CRÉDITOS E VALORES - LONGO PRAZO|01012014||199|S|1.02.01|4|01
+1.02.01.01.01|Clientes - Longo Prazo|01012014||200|A|1.02.01.01|5|01
+1.02.01.01.02|Mútuos com Partes Não Relacionadas  - Ativo- Longo Prazo|01012014||201|A|1.02.01.01|5|01
+1.02.01.01.03|Mútuos com Partes Relacionadas - Ativo - Longo Prazo|01012014||202|A|1.02.01.01|5|01
+1.02.01.01.04|Adiantamento para Futuro Aumento de Capital - Ativo - Longo Prazo|01012014||203|A|1.02.01.01|5|01
+1.02.01.01.07|Títulos Patrimoniais Avaliados pelo Custo - Longo Prazo|01012014||204|A|1.02.01.01|5|01
+1.02.01.01.09|Contraprestação Contingente Ativa  - Combinação de Negócios – Longo Prazo|01012014||205|A|1.02.01.01|5|01
+1.02.01.01.10|Outros Valores Mobiliários - No Exterior - Longo Prazo|01012014||206|A|1.02.01.01|5|01
+1.02.01.01.19|(-) Outras Contas Retificadoras – Créditos e Valores - Longo Prazo|01012014||207|A|1.02.01.01|5|01
+1.02.01.01.20|Direitos Creditórios Cedidos –Longo Prazo|01012014||208|A|1.02.01.01|5|01
+1.02.01.01.21|(-) Deságio na Cessão de Títulos–Longo Prazo|01012014||209|A|1.02.01.01|5|01
+1.02.01.01.25|Direitos Creditórios a Receber–Longo Prazo|01012014||210|A|1.02.01.01|5|01
+1.02.01.01.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Créditos –Longo Prazo|01012014||211|A|1.02.01.01|5|01
+1.02.01.01.52|(-) Perdas  em Créditos de Liquidação Duvidosa –  Longo Prazo|01012014||212|A|1.02.01.01|5|01
+1.02.01.01.55|( - ) Perdas  por Redução ao Valor Recuperável (Impairment) - Créditos e Valores - Longo Prazo|01012014||213|A|1.02.01.01|5|01
+1.02.01.02|TÍTULOS E VALORES MOBILIÁRIOS - NO PAÍS|01012014||216|S|1.02.01|4|01
+1.02.01.02.01|Títulos para Negociação - No País - Longo Prazo|01012014||217|A|1.02.01.02|5|01
+1.02.01.02.02|Títulos Disponíveis para Venda - No País - Longo Prazo|01012014||218|A|1.02.01.02|5|01
+1.02.01.02.03|Títulos Mantidos até o Vencimento - No País - Longo Prazo|01012014||219|A|1.02.01.02|5|01
+1.02.01.02.10|Debêntures Emitidas por Partes Relacionada  - No País - Longo Prazo|01012014||220|A|1.02.01.02|5|01
+1.02.01.02.11|Debêntures Emitidas por Partes Não Relacionada  - No País - Longo Prazo|01012014||221|A|1.02.01.02|5|01
+1.02.01.02.15|Outros Empréstimos e Recebíveis – No País - Longo Prazo|01012014||222|A|1.02.01.02|5|01
+1.02.01.02.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) Valores Mobiliários – No País - Longo Prazo|01012014||223|A|1.02.01.02|5|01
+1.02.01.02.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Valores Mobiliários - No País - Longo Prazo|01012014||224|A|1.02.01.02|5|01
+1.02.01.03|TÍTULOS E VALORES MOBILIÁRIOS - NO EXTERIOR|01012014||227|S|1.02.01|4|01
+1.02.01.03.01|Títulos para Negociação - No Exterior - Longo Prazo|01012014||228|A|1.02.01.03|5|01
+1.02.01.03.02|Títulos Disponíveis para Venda - No Exterior - Longo Prazo|01012014||229|A|1.02.01.03|5|01
+1.02.01.03.03|Títulos Mantidos até o Vencimento - No Exterior - Longo Prazo|01012014||230|A|1.02.01.03|5|01
+1.02.01.03.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) Valores Mobiliários – No Exterior - Longo Prazo|01012014||231|A|1.02.01.03|5|01
+1.02.01.03.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Valores Mobiliário - No Exterior - Longo Prazo|01012014||232|A|1.02.01.03|5|01
+1.02.01.05|ATIVOS FISCAIS DIFERIDOS - LONGO PRAZO|01012014||235|S|1.02.01|4|01
+1.02.01.05.01|Créditos Fiscais CSLL - Diferenças Temporárias e Base de Cálculo Negativa - Longo Prazo|01012014||236|A|1.02.01.05|5|01
+1.02.01.05.02|Créditos Fiscais IRPJ - Diferenças Temporárias e Prejuízos Fiscais - Longo Prazo|01012014||237|A|1.02.01.05|5|01
+1.02.01.07|CRÉDITOS EM CONTENCIOSO - LONGO PRAZO|01012014||238|S|1.02.01|4|01
+1.02.01.07.01|Depósitos em Contencioso - Longo Prazo|01012014||239|A|1.02.01.07|5|01
+1.02.01.07.10|Outros Créditos em Contencioso - Longo Prazo|01012014||240|A|1.02.01.07|5|01
+1.02.01.07.55|( - ) Perdas  por Redução ao Valor Recuperável (Impairment) -  Créditos em Contencioso – Longo Prazo|01012014||241|A|1.02.01.07|5|01
+1.02.01.08|TRIBUTOS A RECUPERAR - Longo Prazo|01012014||242|S|1.02.01|4|01
+1.02.01.08.01|IPI a Recuperar - Longo Prazo|01012014||243|A|1.02.01.08|5|01
+1.02.01.08.02|ICMS a Recuperar - Longo Prazo|01012014||244|A|1.02.01.08|5|01
+1.02.01.08.03|PIS  a Recuperar - Crédito Básico - Longo Prazo|01012014||245|A|1.02.01.08|5|01
+1.02.01.08.04|PIS  a Recuperar - Crédito Presumido - Longo Prazo|01012014||246|A|1.02.01.08|5|01
+1.02.01.08.05|COFINS  a Recuperar - Crédito Básico - Longo Prazo|01012014||247|A|1.02.01.08|5|01
+1.02.01.08.06|COFINS  a Recuperar - Crédito Presumido - Longo Prazo|01012014||248|A|1.02.01.08|5|01
+1.02.01.08.07|CIDE a Recuperar - Longo Prazo|01012014||249|A|1.02.01.08|5|01
+1.02.01.08.40|Outros Impostos e Contribuições a Recuperar - Longo Prazo|01012014||250|A|1.02.01.08|5|01
+1.02.01.08.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Tributos a Recuperar - Longo Prazo|01012014||251|A|1.02.01.08|5|01
+1.02.01.08.55|(-) Perdas  por Redução ao Valor Recuperável (Impairment) -  Tributos a Recuperar - Longo Prazo|01012014||252|A|1.02.01.08|5|01
+1.02.01.09|DESPESAS PAGAS ANTECIPADAMENTE - LONGO PRAZO|01012014||253|S|1.02.01|4|01
+1.02.01.09.01|Alugueis pagos Antecipadamente - Longo Prazo|01012014||254|A|1.02.01.09|5|01
+1.02.01.09.02|Prêmios de Seguros a Apropriar - Longo Prazo|01012014||255|A|1.02.01.09|5|01
+1.02.01.09.03|Encargos Financeiros a Apropriar –Longo Prazo|01012014||256|A|1.02.01.09|5|01
+1.02.01.09.09|Outros Custos e Despesas Pagos Antecipadamente - Longo Prazo|01012014||257|A|1.02.01.09|5|01
+1.02.01.10|ATIVO BIOLÓGICO - LONGO PRAZO|01012014||258|S|1.02.01|4|01
+1.02.01.10.01|Ativo Biológico Consumível - Origem Animal - Pelo Valor Justo - Longo Prazo|01012014||259|A|1.02.01.10|5|01
+1.02.01.10.02|Ativo Biológico Consumível - Origem Vegetal - Pelo Valor Justo - Longo Prazo|01012014||260|A|1.02.01.10|5|01
+1.02.01.10.10|Ativo Biológico Consumível - Origem Animal - Pelo Custo - Longo Prazo|01012014||261|A|1.02.01.10|5|01
+1.02.01.10.11|Ativo Biológico Consumível - Origem Vegetal - Pelo Custo - Longo Prazo|01012014||262|A|1.02.01.10|5|01
+1.02.01.10.55|( - ) Perdas  por Redução ao Valor Recuperável (Impairment) -  Ativos Biológicos Consumível – Longo Prazo|01012014||263|A|1.02.01.10|5|01
+1.02.01.15|OUTROS CRÉDITOS – LONGO PRAZO|01012014||267|S|1.02.01|4|01
+1.02.01.15.01|Outros Créditos - Longo Prazo|01012014||268|A|1.02.01.15|5|01
+1.02.02|INVESTIMENTOS|01012014||269|S|1.02|3|01
+1.02.02.01|PARTICIPAÇÕES PERMANENTES EM SOCIEDADES - NO PAÍS|01012014||270|S|1.02.02|4|01
+1.02.02.01.01|Participações Permanentes em Controladas - no País |01012014||271|A|1.02.02.01|5|01
+1.02.02.01.04|Participações Permanentes em Coligadas -  no País |01012014||272|A|1.02.02.01|5|01
+1.02.02.01.05|Participações Permanentes em Joint Ventures e Sociedades de Propósito Específico (SPE) - no País |01012014||273|A|1.02.02.01|5|01
+1.02.02.01.06|Participações Permanentes em Outras Sociedades do Mesmo Grupo ou Controle Comum - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no País|01012014||274|A|1.02.02.01|5|01
+1.02.02.01.07|Participações em Sociedades em Conta de Participação (SCP) - Sócio Ostensivo - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no País |01012014||275|A|1.02.02.01|5|01
+1.02.02.01.08|Participações em Sociedades em Conta de Participação (SCP) - Sócio Participante -  no País |01012014||276|A|1.02.02.01|5|01
+1.02.02.01.10|Goodwill em Investimentos - no País|01012014||277|A|1.02.02.01|5|01
+1.02.02.01.11|Mais Valia em Investimentos - no País |01012014||278|A|1.02.02.01|5|01
+1.02.02.01.12|(-) Menos Valia em Investimentos  - no País|01012014||279|A|1.02.02.01|5|01
+1.02.02.01.20|Ágios em Investimentos Gerados até 31/12/2009 - no País|01012014||280|A|1.02.02.01|5|01
+1.02.02.01.21|(-) Deságios em Investimentos Gerados até 31/12/2009  - no País|01012014||281|A|1.02.02.01|5|01
+1.02.02.01.40|(-) Lucros a Apropriar em Vendas com Controladas -no País|01012014||282|A|1.02.02.01|5|01
+1.02.02.01.41|(-) Lucros a Apropriar em Vendas com Coligadas -no País|01012014||283|A|1.02.02.01|5|01
+1.02.02.01.42|(-) Lucros a Apropriar em Vendas com Joint Ventures -no País|01012014||284|A|1.02.02.01|5|01
+1.02.02.01.43|(-) Lucros a Apropriar em Vendas com outras sociedades - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no País|01012014||285|A|1.02.02.01|5|01
+1.02.02.01.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) de Participações Permanentes Avaliadas pelo Método de Equivalência Patrimonial - no País|01012014||286|A|1.02.02.01|5|01
+1.02.02.01.56|(-) Perdas por Redução ao Valor Recuperável (Impairment) do Goodwill em Investimentos - no País|01012014||287|A|1.02.02.01|5|01
+1.02.02.02|PARTICIPAÇÕES PERMANENTES EM SOCIEDADES - NO EXTERIOR|01012014||297|S|1.02.02|4|01
+1.02.02.02.01|Participações Permanentes em Controladas -  no Exterior  |01012014||298|A|1.02.02.02|5|01
+1.02.02.02.04|Participações Permanentes em Coligadas - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no Exterior |01012014||301|A|1.02.02.02|5|01
+1.02.02.02.05|Participações Permanentes em Joint Ventures - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no Exterior |01012014||302|A|1.02.02.02|5|01
+1.02.02.02.06|Participações Permamentes em Outras Sociedades do Mesmo Grupo ou Controle Comum - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no Exterior |01012014||303|A|1.02.02.02|5|01
+1.02.02.02.10|Goodwill em Investimentos -  no Exterior |01012014||304|A|1.02.02.02|5|01
+1.02.02.02.11|Mais Valia em Investimentos -  no Exterior |01012014||305|A|1.02.02.02|5|01
+1.02.02.02.12|(-) Menos Valia em Investimentos  -  no Exterior |01012014||306|A|1.02.02.02|5|01
+1.02.02.02.20|Ágios em Investimentos Gerados até 31/12/2009 - no Exterior |01012014||307|A|1.02.02.02|5|01
+1.02.02.02.21|(-) Deságios em Investimentos Gerados até 31/12/2009  - no Exterior |01012014||308|A|1.02.02.02|5|01
+1.02.02.02.40|(-) Lucros a Apropriar em Vendas com Controladas - no Exterior |01012014||309|A|1.02.02.02|5|01
+1.02.02.02.41|(-) Lucros a Apropriar em Vendas com Coligadas - no Exterior |01012014||310|A|1.02.02.02|5|01
+1.02.02.02.42|(-) Lucros a Apropriar em Vendas com Joint Ventures - no Exterior |01012014||311|A|1.02.02.02|5|01
+1.02.02.02.43|(-) Lucros a Apropriar em Vendas com outras sociedades - Avaliadas pelo Método de Equivalência Patrimonial (MEP) - no Exterior|01012014||312|A|1.02.02.02|5|01
+1.02.02.02.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) em Participações Permanentes Avaliadas pelo Método de Equivalência Patrimonial (MEP) -  no Exterior |01012014||313|A|1.02.02.02|5|01
+1.02.02.02.56|(-) Perdas por Redução ao Valor Recuperável (Impairment) do Goodwill em Investimentos - no Exterior|01012014||314|A|1.02.02.02|5|01
+1.02.02.03|PROPRIEDADES PARA INVESTIMENTO|01012014||315|S|1.02.02|4|01
+1.02.02.03.01|Imóveis Próprios  em Construção -  Propriedades para Investimento|01012014||316|A|1.02.02.03|5|01
+1.02.02.03.05|Imóveis Próprios  –  Pelo Custo -  Propriedades para Investimento|01012014||317|A|1.02.02.03|5|01
+1.02.02.03.06|Imóveis Próprios –  Valor Justo - Propriedades para Investimento|01012014||318|A|1.02.02.03|5|01
+1.02.02.03.08|Imóveis Objeto de Leasing Financeiro – Propriedades para Investimento|01012014||319|A|1.02.02.03|5|01
+1.02.02.03.30|(-) Depreciação Acumuladas – Propriedades para Investimento|01012014||320|A|1.02.02.03|5|01
+1.02.02.03.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Propriedades para Investimento|01012014||321|A|1.02.02.03|5|01
+1.02.02.10|OUTROS INVESTIMENTOS PERMANENTES|01012014||329|S|1.02.02|4|01
+1.02.02.10.03|Investimentos Decorrentes de Incentivos Fiscais|01012014||330|A|1.02.02.10|5|01
+1.02.02.10.10|Outros Investimentos Permanentes|01012014||331|A|1.02.02.10|5|01
+1.02.02.10.20|(-) Outras Contas Retificadoras - Outros Investimentos Permanentes|01012014||332|A|1.02.02.10|5|01
+1.02.02.10.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) – Outros Investimentos Permanentes|01012014||333|A|1.02.02.10|5|01
+1.02.02.10.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Outros Investimentos|01012014||334|A|1.02.02.10|5|01
+1.02.03|IMOBILIZADO|01012014||337|S|1.02|3|01
+1.02.03.01|IMOBILIZADO - AQUISIÇÃO|01012014||338|S|1.02.03|4|01
+1.02.03.01.01|Terrenos|01012014||339|A|1.02.03.01|5|01
+1.02.03.01.02|Edifícios e Construções|01012014||340|A|1.02.03.01|5|01
+1.02.03.01.03|Construções em Andamento - Imóvel Próprio|01012014||341|A|1.02.03.01|5|01
+1.02.03.01.04|Outras Imobilizações em Andamento|01012014||342|A|1.02.03.01|5|01
+1.02.03.01.05|Benfeitorias em Imóveis de Terceiros|01012014||343|A|1.02.03.01|5|01
+1.02.03.01.06|Máquinas, Equipamentos e Instalações Industriais|01012014||344|A|1.02.03.01|5|01
+1.02.03.01.07|Móveis, Utensílios e Instalações Comerciais|01012014||345|A|1.02.03.01|5|01
+1.02.03.01.08|Veículos|01012014||346|A|1.02.03.01|5|01
+1.02.03.01.09|Embarcações|01012014||347|A|1.02.03.01|5|01
+1.02.03.01.10|Aeronaves|01012014||348|A|1.02.03.01|5|01
+1.02.03.01.11|Recursos Minerais|01012014||349|A|1.02.03.01|5|01
+1.02.03.01.12|Dutos e Tubulações |01012014||350|A|1.02.03.01|5|01
+1.02.03.01.13|Linhas de Transmissão Elétrica |01012014||351|A|1.02.03.01|5|01
+1.02.03.01.14|Antenas e Torres de Transmissão |01012014||352|A|1.02.03.01|5|01
+1.02.03.01.15|Máquinas Empregadas na Atividade Rural |01012014||353|A|1.02.03.01|5|01
+1.02.03.01.16|Tratores e Demais Veículos Empregados na Atividade Rural |01012014||354|A|1.02.03.01|5|01
+1.02.03.01.28|Outras Imobilizações por Aquisição|01012014||355|A|1.02.03.01|5|01
+1.02.03.01.30|(-) Depreciação Acumulada - Imobilizado|01012014||356|A|1.02.03.01|5|01
+1.02.03.01.31|(-) Amortização Acumulada - Imobilizado|01012014||357|A|1.02.03.01|5|01
+1.02.03.01.32|(-) Exaustão Acumulada - Imobilizado|01012014||358|A|1.02.03.01|5|01
+1.02.03.01.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Imobilizado|01012014||359|A|1.02.03.01|5|01
+1.02.03.02|IMOBILIZADO – LEASING FINANCEIRO|01012014||369|S|1.02.03|4|01
+1.02.03.02.01|Veículos|01012014||370|A|1.02.03.02|5|01
+1.02.03.02.02|Embarcações|01012014||371|A|1.02.03.02|5|01
+1.02.03.02.03|Aeronaves|01012014||372|A|1.02.03.02|5|01
+1.02.03.02.04|Máquinas, Equipamentos e Instalações Industriais|01012014||373|A|1.02.03.02|5|01
+1.02.03.02.05|Móveis, Utensílios e Instalações Comerciais|01012014||374|A|1.02.03.02|5|01
+1.02.03.02.06|Imóveis|01012014||375|A|1.02.03.02|5|01
+1.02.03.02.09|Outras Imobilizações por Arrendamento|01012014||376|A|1.02.03.02|5|01
+1.02.03.02.30|(-) Depreciação Acumulada - Imobilizado -Leasing Financeiro|01012014||377|A|1.02.03.02|5|01
+1.02.03.02.31|(-) Amortização Acumulada - Imobilizado -Leasing Financeiro|01012014||378|A|1.02.03.02|5|01
+1.02.03.02.32|(-) Exaustão Acumulada - Imobilizado -Leasing Financeiro|01012014||379|A|1.02.03.02|5|01
+1.02.03.02.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Imobilizado - Leasing Financeiro|01012014||380|A|1.02.03.02|5|01
+1.02.03.04|ATIVO BIOLÓGICO - DE PRODUÇÃO|01012014||381|S|1.02.03|4|01
+1.02.03.04.01|Ativo Biológico de Produção - Origem Animal – Pelo Valor Justo |01012014||382|A|1.02.03.04|5|01
+1.02.03.04.02|Ativo Biológico de Produção - Origem Vegetal – Pelo Valor Justo |01012014||383|A|1.02.03.04|5|01
+1.02.03.04.03|Ativo Biológico de Produção - Origem Animal – Pelo Custo|01012014||384|A|1.02.03.04|5|01
+1.02.03.04.04|Ativo Biológico de Produção - Origem Vegetal -  Pelo Custo|01012014||385|A|1.02.03.04|5|01
+1.02.03.04.30|(-) Depreciação Acumulada Ativos Biológicos de Produção|01012014||386|A|1.02.03.04|5|01
+1.02.03.04.32|(-) Exaustão Acumulada Ativos Biológicos de Produção|01012014||387|A|1.02.03.04|5|01
+1.02.03.04.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Ativos Biológicos de Produção|01012014||388|A|1.02.03.04|5|01
+1.02.03.05|OUTROS IMOBILIZADOS|01012014||397|S|1.02.03|4|01
+1.02.03.05.03|Imobilizados Recebidos em Subvenções Governamentais|01012014||398|A|1.02.03.05|5|01
+1.02.03.05.04|(-) Redutoras de Imobilizados Recebidos em Subvenções Governamentais|01012014||399|A|1.02.03.05|5|01
+1.02.03.05.28|Outros Imobilizados|01012014||400|A|1.02.03.05|5|01
+1.02.03.05.29|(-) Outras Contas Redutoras do Imobilizado|01012014||401|A|1.02.03.05|5|01
+1.02.03.05.30|(-) Outras Depreciações, Amortizações e Quotas de Exaustão Acumuladas|01012014||402|A|1.02.03.05|5|01
+1.02.05|INTANGÍVEL|01012014||410|S|1.02|3|01
+1.02.05.01|ATIVOS INTANGÍVEIS|01012014||411|S|1.02.05|4|01
+1.02.05.01.01|Marcas|01012014||412|A|1.02.05.01|5|01
+1.02.05.01.02|Patentes e Segredos Industriais|01012014||413|A|1.02.05.01|5|01
+1.02.05.01.03|Direitos de Exploração de Serviços Públicos|01012014||414|A|1.02.05.01|5|01
+1.02.05.01.04|Direitos de Exploração de Recursos Florestais|01012014||415|A|1.02.05.01|5|01
+1.02.05.01.05|Direitos de Exploração de Recursos Minerais|01012014||416|A|1.02.05.01|5|01
+1.02.05.01.06|Direitos de Exploração de Recursos Hídricos|01012014||417|A|1.02.05.01|5|01
+1.02.05.01.07|Direitos Autorais|01012014||418|A|1.02.05.01|5|01
+1.02.05.01.08|Patrimônio Cultural|01012014||419|A|1.02.05.01|5|01
+1.02.05.01.09|Fundo de Comércio|01012014||420|A|1.02.05.01|5|01
+1.02.05.01.10|Software ou Programas de Computador|01012014||421|A|1.02.05.01|5|01
+1.02.05.01.11|Contratos de Aluguel|01012014||422|A|1.02.05.01|5|01
+1.02.05.01.12|Contratos de Franquias|01012014||423|A|1.02.05.01|5|01
+1.02.05.01.13|Desenvolvimento de Produtos ou Serviços|01012014||424|A|1.02.05.01|5|01
+1.02.05.01.14|Direito Readquirido|01012014||425|A|1.02.05.01|5|01
+1.02.05.01.15|Leasing Operacional  Contratado pela Adquirida em Condições Mais Favoráveis|01012014||426|A|1.02.05.01|5|01
+1.02.05.01.16|Intangíveis Não Reconhecidos na Adquirida|01012014||427|A|1.02.05.01|5|01
+1.02.05.01.17|Intangíveis Recebidos em Subvenções Governamentais|01012014||428|A|1.02.05.01|5|01
+1.02.05.01.18|(-) Redutora de Intangíveis Recebidos em Subvenções Governamentais|01012014||429|A|1.02.05.01|5|01
+1.02.05.01.20|(-) Amortização Acumulada - Intangível|01012014||430|A|1.02.05.01|5|01
+1.02.05.01.21|Goodwill – Intangível|01012014||431|A|1.02.05.01|5|01
+1.02.05.01.28|Outros Intangíveis|01012014||432|A|1.02.05.01|5|01
+1.02.05.01.29|(-) Outras Contas Redutoras do Intangível|01012014||433|A|1.02.05.01|5|01
+1.02.05.01.55|(-) Perdas por Redução ao Valor Recuperável (Impairment) - Intangível|01012014||434|A|1.02.05.01|5|01
+1.02.05.01.56|(-) Perdas por Redução ao Valor Recuperável (Impairment) do Goodwill - Intangível|01012014||435|A|1.02.05.01|5|01
+1.02.06|DIFERIDO|01012014||439|S|1.02|3|01
+1.02.06.01|ATIVO DIFERIDO|01012014||440|S|1.02.06|4|01
+1.02.06.01.01|Despesas Pré-Operacionais ou Pré-Industriais - Ativo Diferido|01012014||441|A|1.02.06.01|5|01
+1.02.06.01.02|Despesas com Pesquisas Científicas ou Tecnológicas - Ativo Diferido|01012014||442|A|1.02.06.01|5|01
+1.02.06.01.03|Demais Aplicações em Despesas Amortizáveis - Ativo Diferido|01012014||443|A|1.02.06.01|5|01
+1.02.06.01.31|(-) Amortização Acumulada - Ativo Diferido|01012014||444|A|1.02.06.01|5|01
+1.02.06.01.56|(-) Perdas por Redução ao Valor Recuperável (Impairment) -  Ativo Diferido|01012014||445|A|1.02.06.01|5|01
+2|PASSIVO|01012014||447|S||1|02
+2.01|PASSIVO CIRCULANTE|01012014||448|S|2|2|02
+2.01.01|OBRIGAÇÕES DO CIRCULANTE|01012014||449|S|2.01|3|02
+2.01.01.01|BENEFÍCIOS E ENCARGOS SOCIAIS - CIRCULANTE|01012014||450|S|2.01.01|4|02
+2.01.01.01.01|Salários e Remunerações a Pagar|01012014||451|A|2.01.01.01|5|02
+2.01.01.01.02|Participações no Resultado a Pagar|01012014||452|A|2.01.01.01|5|02
+2.01.01.01.03|INSS a Recolher|01012014||453|A|2.01.01.01|5|02
+2.01.01.01.04|FGTS a Recolher|01012014||454|A|2.01.01.01|5|02
+2.01.01.01.05|Benefícios Não Monetários|01012014||455|A|2.01.01.01|5|02
+2.01.01.01.50|Benefícios Pós-Emprego|01012014||456|A|2.01.01.01|5|02
+2.01.01.01.55|Outros Benefícios de Longo Prazo|01012014||457|A|2.01.01.01|5|02
+2.01.01.01.60|Benefícios Rescisórios|01012014||458|A|2.01.01.01|5|02
+2.01.01.01.09|Demais Encargos a Recolher|01012014||459|A|2.01.01.01|5|02
+2.01.01.03|FORNECEDORES – CIRCULANTE|01012014||460|S|2.01.01|4|02
+2.01.01.03.01|Fornecedores - Operações com Partes Não Relacionadas - No País – Circulante|01012014||461|A|2.01.01.03|5|02
+2.01.01.03.02|Fornecedores - Operações com Partes Não Relacionadas - No Exterior – Circulante|01012014||462|A|2.01.01.03|5|02
+2.01.01.03.03|Fornecedores - Operações com Partes  Relacionadas - No País – Circulante|01012014||463|A|2.01.01.03|5|02
+2.01.01.03.04|Fornecedores - Operações com Partes Relacionadas - No Exterior – Circulante|01012014||464|A|2.01.01.03|5|02
+2.01.01.03.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) - Fornecedores Circulante|01012014||465|A|2.01.01.03|5|02
+2.01.01.05|CONTAS A PAGAR – CIRCULANTE|01012014||467|S|2.01.01|4|02
+2.01.01.05.01|Adiantamentos de Clientes - no País|01012014||468|A|2.01.01.05|5|02
+2.01.01.05.02|Adiantamentos de Clientes - no Exterior|01012014||469|A|2.01.01.05|5|02
+2.01.01.05.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Contas a Pagar - Circulante|01012014||470|A|2.01.01.05|5|02
+2.01.01.07|EMPRÉSTIMOS OU FINANCIAMENTOS – CIRCULANTE|01012014||472|S|2.01.01|4|02
+2.01.01.07.01|Duplicatas Descontadas - Circulante|01012014||473|A|2.01.01.07|5|02
+2.01.01.07.02|Empréstimos ou Financiamentos - no País - Circulante|01012014||474|A|2.01.01.07|5|02
+2.01.01.07.03|Empréstimos ou Financiamentos - no Exterior – Circulante|01012014||475|A|2.01.01.07|5|02
+2.01.01.07.04|Adiantamentos de Contrato de Câmbio|01012014||476|A|2.01.01.07|5|02
+2.01.01.07.05|Arrendamento Mercantil - no País – Circulante|01012014||477|A|2.01.01.07|5|02
+2.01.01.07.06|Arrendamento Mercantil - no Exterior - Circulante|01012014||478|A|2.01.01.07|5|02
+2.01.01.07.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Empréstimos e Financiamentos - Circulante|01012014||479|A|2.01.01.07|5|02
+2.01.01.09|OBRIGAÇÕES FISCAIS – CIRCULANTE|01012014||481|S|2.01.01|4|02
+2.01.01.09.01|IRRF a Recolher - Circulante|01012014||482|A|2.01.01.09|5|02
+2.01.01.09.02|IPI a Recolher - Circulante|01012014||483|A|2.01.01.09|5|02
+2.01.01.09.03|ICMS a Recolher - Circulante|01012014||484|A|2.01.01.09|5|02
+2.01.01.09.04|PIS a Recolher - Circulante|01012014||485|A|2.01.01.09|5|02
+2.01.01.09.05|COFINS a Recolher - Circulante|01012014||486|A|2.01.01.09|5|02
+2.01.01.09.06|IOF  a Recolher - Circulante|01012014||487|A|2.01.01.09|5|02
+2.01.01.09.07|CIDE  a Recolher - Circulante|01012014||488|A|2.01.01.09|5|02
+2.01.01.09.08|Tributos Municipais a Recolher - Circulante|01012014||489|A|2.01.01.09|5|02
+2.01.01.09.09|Parcelamentos Especiais a Recolher - Tributos Federais – Circulante|01012014||490|A|2.01.01.09|5|02
+2.01.01.09.10|Parcelamentos Especiais a Recolher - Tributos Estaduais e Municipais – Circulante|01012014||491|A|2.01.01.09|5|02
+2.01.01.09.11|Contribuições Previdenciárias a Recolher - Desoneração da Folha de Pagamento - Circulante|01012014||492|A|2.01.01.09|5|02
+2.01.01.09.28|Outros Tributos a Recolher - Circulante|01012014||493|A|2.01.01.09|5|02
+2.01.01.11|VALORES MOBILIÁRIOS – HEDGE – NO PAÍS|01012014||494|S|2.01.01|4|02
+2.01.01.11.01|Derivativos - Hedge Valor Justo - No País|01012014||495|A|2.01.01.11|5|02
+2.01.01.11.02|Derivativos - Hedge Fluxo de Caixa - No País|01012014||496|A|2.01.01.11|5|02
+2.01.01.11.03|Derivativos - Hedge  Investimento no Exterior - No País|01012014||497|A|2.01.01.11|5|02
+2.01.01.12|VALORES MOBILIÁRIOS - HEDGE - NO EXTERIOR|01012014||500|S|2.01.01|4|02
+2.01.01.12.01|Derivativos - Hedge Valor Justo - No Exterior|01012014||501|A|2.01.01.12|5|02
+2.01.01.12.02|Derivativos - Hedge Fluxo de Caixa - No Exterior|01012014||502|A|2.01.01.12|5|02
+2.01.01.12.03|Derivativos - Hedge  Investimento no Exterior - No Exterior|01012014||503|A|2.01.01.12|5|02
+2.01.01.13|TÍTULOS DE DÍVIDA – CIRCULANTE|01012014||506|S|2.01.01|4|02
+2.01.01.13.01|Debêntures a Pagar – Circulante|01012014||507|A|2.01.01.13|5|02
+2.01.01.13.02|Prêmio na Emissão de Debêntures – Circulante|01012014||508|A|2.01.01.13|5|02
+2.01.01.13.04|Notas Promissórias a Pagar|01012014||509|A|2.01.01.13|5|02
+2.01.01.13.05|Bonds a Pagar|01012014||510|A|2.01.01.13|5|02
+2.01.01.13.06|Certificados de Recebíveis Imobiliários - CRI|01012014||511|A|2.01.01.13|5|02
+2.01.01.13.07|Certificados de Recebíveis do Agronegócio - CRA|01012014||512|A|2.01.01.13|5|02
+2.01.01.13.25|Outros Títulos de Dívida a Pagar – Pelo Custo Amortizado - Circulante|01012014||513|A|2.01.01.13|5|02
+2.01.01.13.27|(-) Custos a Amortizar – Títulos de Dívida - Circulante|01012014||514|A|2.01.01.13|5|02
+2.01.01.13.28|Outros Títulos de Dívida a Pagar – Pelo Pelo Valor Justo(VJPR) - Circulante|01012014||515|A|2.01.01.13|5|02
+2.01.01.13.29|(-) Deságio a Apropriar – Títulos de Dívida - Circulante|01012014||516|A|2.01.01.13|5|02
+2.01.01.13.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Títulos de Dívida - Circulante|01012014||517|A|2.01.01.13|5|02
+2.01.01.15|PROVISÕES – CIRCULANTE|01012014||520|S|2.01.01|4|02
+2.01.01.15.01|Provisão para o Imposto de Renda|01012014||521|A|2.01.01.15|5|02
+2.01.01.15.02|Provisão para a Contribuição Social sobre o Lucro Líquido|01012014||522|A|2.01.01.15|5|02
+2.01.01.15.03|Provisão para Férias|01012014||523|A|2.01.01.15|5|02
+2.01.01.15.04|Provisão para 13º Salário|01012014||524|A|2.01.01.15|5|02
+2.01.01.15.05|Provisões de Natureza Trabalhista - Circulante|01012014||525|A|2.01.01.15|5|02
+2.01.01.15.06|Provisões de Natureza Tributária – Circulante|01012014||526|A|2.01.01.15|5|02
+2.01.01.15.07|Provisões de Natureza Cível – Circulante|01012014||527|A|2.01.01.15|5|02
+2.01.01.15.28|Outras Provisões|01012014||528|A|2.01.01.15|5|02
+2.01.01.15.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) -  Provisões - Circulante|01012014||529|A|2.01.01.15|5|02
+2.01.01.17|OUTRAS OBRIGAÇÕES - CIRCULANTE|01012014||530|S|2.01.01|4|02
+2.01.01.17.01|Mútuos – Partes Não Relacionadas – No País - Ciculante|01012014||531|A|2.01.01.17|5|02
+2.01.01.17.02|Mútuos - Partes Não Relacionadas – No Exterior - Ciculante|01012014||532|A|2.01.01.17|5|02
+2.01.01.17.03|Mútuos – Partes Relacionadas – No País – Circulante|01012014||533|A|2.01.01.17|5|02
+2.01.01.17.04|Mútuos - Partes Relacionadas – No Exterior - Circulante|01012014||534|A|2.01.01.17|5|02
+2.01.01.17.09|Contraprestação Contingente Passiva - Combinação de Negócios - Circulante|01012014||535|A|2.01.01.17|5|02
+2.01.01.17.10|Passivo Contingente Assumido em Combinação de Negócios - Circulante|01012014||536|A|2.01.01.17|5|02
+2.01.01.17.11|Faturamento para Entrega Futura - Circulante|01012014||537|A|2.01.01.17|5|02
+2.01.01.17.12|Juros sobre o Capital Próprio a Pagar - Circulante|01012014||538|A|2.01.01.17|5|02
+2.01.01.17.13|Dividendos a Pagar – Circulante|01012014||539|A|2.01.01.17|5|02
+2.01.01.17.15| Conta de Controle de Custo Contratado - Circulante|01012014||540|A|2.01.01.17|5|02
+2.01.01.17.16| Conta de Controle de Custo Orçado - Circulante|01012014||541|A|2.01.01.17|5|02
+2.01.01.17.25|Direitos Creditórios a Pagar - Circulante|01012014||542|A|2.01.01.17|5|02
+2.01.01.17.28|Outras Obrigações – Circulante|01012014||543|A|2.01.01.17|5|02
+2.01.01.17.50|(-)Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP)  – Outras Contas a Pagar - Circulante|01012014||544|A|2.01.01.17|5|02
+2.01.01.19|Receitas Diferidas|01012014||545|S|2.01.01|4|02
+2.01.01.19.01|Receitas Diferidas|01012014||546|A|2.01.01.19|5|02
+2.01.01.19.02|(-) Custos Correspondentes às Receitas Diferidas|01012014||547|A|2.01.01.19|5|02
+2.01.01.19.03|Subvenção Governamental a Apropriar|01012014||548|A|2.01.01.19|5|02
+2.01.01.19.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP)  – Receitas Diferidas|01012014||549|A|2.01.01.19|5|02
+2.02|PASSIVO NÃO-CIRCULANTE|01012014||550|S|2|2|02
+2.02.01|OBRIGAÇÕES A LONGO PRAZO|01012014||551|S|2.02|3|02
+2.02.01.01|EMPRÉSTIMOS E FINANCIAMENTOS - LONGO PRAZO|01012014||552|S|2.02.01|4|02
+2.02.01.01.01|Fornecedores - No País - Longo Prazo|01012014||553|A|2.02.01.01|5|02
+2.02.01.01.02|Fornecedores - No Exterior - Longo Prazo|01012014||554|A|2.02.01.01|5|02
+2.02.01.01.03|Credores por Financiamento - Longo Prazo|01012014||555|A|2.02.01.01|5|02
+2.02.01.01.04|Títulos a Pagar - Longo Prazo|01012014||556|A|2.02.01.01|5|02
+2.02.01.01.05|Duplicatas Descontadas - Longo Prazo|01012014||557|A|2.02.01.01|5|02
+2.02.01.01.06|Empréstimos ou Financiamentos - no País - Longo Prazo|01012014||558|A|2.02.01.01|5|02
+2.02.01.01.07|Empréstimos ou Financiamentos - no Exterior - Longo Prazo|01012014||559|A|2.02.01.01|5|02
+2.02.01.01.08|Adiantamentos de Contrato de Câmbio - Longo Prazo|01012014||560|A|2.02.01.01|5|02
+2.02.01.01.09|Arrendamento Mercantil - no País - Longo Prazo|01012014||561|A|2.02.01.01|5|02
+2.02.01.01.10|Arrendamento Mercantil - no Exterior - Longo Prazo|01012014||562|A|2.02.01.01|5|02
+2.02.01.01.50|(-)Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP)  – Empréstimos e Financiamentos - Longo Prazo|01012014||563|A|2.02.01.01|5|02
+2.02.01.02|BENEFÍCIOS A EMPREGADOS - LONGO PRAZO|01012014||566|S|2.02.01|4|02
+2.02.01.02.01|Benefícios Pós Emprego - Longo Prazo |01012014||567|A|2.02.01.02|5|02
+2.02.01.02.02|Outro Benefícios de Longo Prazo - Longo Prazo |01012014||568|A|2.02.01.02|5|02
+2.02.01.02.03|Benefícios Rescisórios - Longo Prazo |01012014||569|A|2.02.01.02|5|02
+2.02.01.03|PARCELAMENTOS FISCAIS - LONGO PRAZO|01012014||570|S|2.02.01|4|02
+2.02.01.03.01|Parcelamentos Especiais e Ordinários a Recolher - Tributos Federais - Longo Prazo|01012014||571|A|2.02.01.03|5|02
+2.02.01.03.02|Parcelamentos Especiais e Ordinários a Recolher - Tributos Estaduais e Municipais - Longo Prazo|01012014||572|A|2.02.01.03|5|02
+2.02.01.03.28|Outros Parcelamentos a Recolher - Longo Prazo|01012014||573|A|2.02.01.03|5|02
+2.02.01.05|PASSIVOS FISCAIS DIFERIDOS - LONGO PRAZO|01012014||574|S|2.02.01|4|02
+2.02.01.05.01|Débitos Fiscais IRPJ - Diferenças Temporárias - Longo Prazo|01012014||575|A|2.02.01.05|5|02
+2.02.01.05.02|Débitos Fiscais CSLL - Diferenças Temporárias - Longo Prazo|01012014||576|A|2.02.01.05|5|02
+2.02.01.07|TÍTULOS DE DÍVIDA - LONGO PRAZO|01012014||577|S|2.02.01|4|02
+2.02.01.07.01|Debêntures a Pagar - Longo Prazo|01012014||578|A|2.02.01.07|5|02
+2.02.01.07.02|Prêmio na Emissão de Debêntures - Longo Prazo|01012014||579|A|2.02.01.07|5|02
+2.02.01.07.04|Notas Promissórias a Pagar – Longo Prazo|01012014||580|A|2.02.01.07|5|02
+2.02.01.07.05|Bonds a Pagar|01012014||581|A|2.02.01.07|5|02
+2.02.01.07.06|Certificados de Recebíveis Imobiliários(CRI) – Longo Prazo|01012014||582|A|2.02.01.07|5|02
+2.02.01.07.07|Certificados de Recebíveis do Agronegócio(CRA) – Longo Prazo|01012014||583|A|2.02.01.07|5|02
+2.02.01.07.25|Outros Títulos de Dívida a Pagar - – Pelo Custo Amortizado  - Longo Prazo|01012014||584|A|2.02.01.07|5|02
+2.02.01.07.27|(-) Custos a Amortizar - Títulos de Dívida - Longo Prazo|01012014||585|A|2.02.01.07|5|02
+2.02.01.07.28|Outros Títulos de Dívida a Pagar – Pelo Pelo Valor Justo(VJPR)  - – Longo Prazo|01012014||586|A|2.02.01.07|5|02
+2.02.01.07.29|(-) Deságio a Apropriar - Debêntures - Longo Prazo|01012014||587|A|2.02.01.07|5|02
+2.02.01.09|PROVISÕES - LONGO PRAZO|01012014||589|S|2.02.01|4|02
+2.02.01.09.01|Provisões de Natureza Trabalhista - Longo Prazo|01012014||590|A|2.02.01.09|5|02
+2.02.01.09.02|Provisões de Natureza Tributária - Longo Prazo|01012014||591|A|2.02.01.09|5|02
+2.02.01.09.03|Provisões de Natureza Cível - Longo Prazo|01012014||592|A|2.02.01.09|5|02
+2.02.01.09.28|Outras Provisões - Longo Prazo|01012014||593|A|2.02.01.09|5|02
+2.02.01.10|OBRIGAÇÕES FISCAIS – LONGO PRAZO|01012014||594|S|2.02.01|4|02
+2.02.01.10.01|IRRF a Recolher - Longo Prazo|01012014||595|A|2.02.01.10|5|02
+2.02.01.10.02|IPI a Recolher - Longo Prazo|01012014||596|A|2.02.01.10|5|02
+2.02.01.10.03|ICMS a Recolher - Longo Prazo|01012014||597|A|2.02.01.10|5|02
+2.02.01.10.04|PIS a Recolher - Longo Prazo|01012014||598|A|2.02.01.10|5|02
+2.02.01.10.05|COFINS a Recolher - Longo Prazo|01012014||599|A|2.02.01.10|5|02
+2.02.01.10.06|IOF  a Recolher - Longo Prazo|01012014||600|A|2.02.01.10|5|02
+2.02.01.10.07|CIDE  a Recolher - Longo Prazo|01012014||601|A|2.02.01.10|5|02
+2.02.01.10.08|Tributos Municipais a Recolher - Longo Prazo|01012014||602|A|2.02.01.10|5|02
+2.02.01.10.09|Parcelamentos Especiais a Recolher - Tributos Federais – Longo Prazo|01012014||603|A|2.02.01.10|5|02
+2.02.01.10.10|Parcelamentos Especiais a Recolher - Tributos Estaduais e Municipais – Longo Prazo|01012014||604|A|2.02.01.10|5|02
+2.02.01.10.11|Contribuição a Recolher - Desoneração da Folha de Pagamento - Longo Prazo|01012014||605|A|2.02.01.10|5|02
+2.02.01.10.28|Outros Tributos a Recolher - Longo Prazo|01012014||606|A|2.02.01.10|5|02
+2.02.01.11|OUTRAS OBRIGAÇÕES - LONGO PRAZO|01012014||607|S|2.02.01|4|02
+2.02.01.11.01|Mútuos - Partes Não Relacionadas – No País - Longo Prazo|01012014||608|A|2.02.01.11|5|02
+2.02.01.11.02|Mútuos - Partes Não Relacionadas - No Exterior - Longo Prazo|01012014||609|A|2.02.01.11|5|02
+2.02.01.11.03|Mútuos – Partes Relacionadas – No País - Longo Prazo|01012014||610|A|2.02.01.11|5|02
+2.02.01.11.04|Mútuos - Partes Relacionadas – No Exterior - Longo Prazo|01012014||611|A|2.02.01.11|5|02
+2.02.01.11.10|Passivo Contingente Assumido em Combinação de Negócios - Longo Prazo|01012014||612|A|2.02.01.11|5|02
+2.02.01.11.13|Adiantamento para Futuro Aumento de Capital - Passivo - Longo Prazo|01012014||613|A|2.02.01.11|5|02
+2.02.01.11.15|Conta de Controle de Custo Contratado - Longo Prazo|01012014||614|A|2.02.01.11|5|02
+2.02.01.11.16|Conta de Controle de Custo Orçado - Longo Prazo|01012014||615|A|2.02.01.11|5|02
+2.02.01.11.22|Direitos Creditórios a Pagar – Longo Prazo|01012014||616|A|2.02.01.11|5|02
+2.02.01.11.28|Outras Obrigações - Longo Prazo|01012014||617|A|2.02.01.11|5|02
+2.02.01.11.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) Outras Obrigações - Longo Prazo|01012014||618|A|2.02.01.11|5|02
+2.02.01.21|RECEITAS DIFERIDAS|01012014||621|S|2.02.01|4|02
+2.02.01.21.01|Receitas Diferidas|01012014||622|A|2.02.01.21|5|02
+2.02.01.21.02|(-) Custos Correspondentes às Receitas Diferidas|01012014||623|A|2.02.01.21|5|02
+2.02.01.21.03|Subvenção Governamental a Apropriar|01012014||624|A|2.02.01.21|5|02
+2.02.01.21.50|(-) Juros a Apropriar Decorrentes de Ajuste a Valor Presente (AVP) - Receita Diferida - Longo Prazo|01012014||625|A|2.02.01.21|5|02
+2.03|PATRIMÔNIO LÍQUIDO|01012014||628|S|2|2|03
+2.03.01|CAPITAL SOCIAL|01012014||629|S|2.03|3|03
+2.03.01.01|CAPITAL REALIZADO - DE RESIDENTE NO PAÍS|01012014||630|S|2.03.01|4|03
+2.03.01.01.01|Capital Subscrito de Domiciliados e Residentes no País|01012014||631|A|2.03.01.01|5|03
+2.03.01.01.21|(-) Capital a Integralizar de Domiciliados e Residentes no País|01012014||632|A|2.03.01.01|5|03
+2.03.01.02|CAPITAL REALIZADO - DE NÃO RESIDENTE NO PAÍS|01012014||633|S|2.03.01|4|03
+2.03.01.02.01|Capital Subscrito de Domiciliados e Residentes no Exterior|01012014||634|A|2.03.01.02|5|03
+2.03.01.02.10|(-) Capital a Integralizar de Domiciliados e Residentes no Exterior|01012014||635|A|2.03.01.02|5|03
+2.03.01.10|GASTOS COM EMISSÕES DE TÍTULOS PATRIMONIAIS|01012014||636|S|2.03.01|4|03
+2.03.01.10.01|(-) Gastos com Emissão de Ações|01012014||637|A|2.03.01.10|5|03
+2.03.02|RESERVAS|01012014||638|S|2.03|3|03
+2.03.02.01|RESERVAS DE CAPITAL|01012014||639|S|2.03.02|4|03
+2.03.02.01.01|Ágio na Emissão de Ações|01012014||640|A|2.03.02.01|5|03
+2.03.02.01.02|Reserva Especial de Ágio na Incorporação|01012014||641|A|2.03.02.01|5|03
+2.03.02.01.03|Alienação de Partes Beneficiárias e Bônus de Subscrição|01012014||642|A|2.03.02.01|5|03
+2.03.02.01.11|Doações e Subvenções para Investimentos (Reserva constituída até 31/12/2007)|01012014||643|A|2.03.02.01|5|03
+2.03.02.01.12|Prêmio Recebido na Emissão de Debêntures (Reserva constituída até 31/12/2007)|01012014||644|A|2.03.02.01|5|03
+2.03.02.01.99|Outras Reservas de Capital|01012014||645|A|2.03.02.01|5|03
+2.03.02.02|RESERVAS DE REAVALIAÇÃO|01012014||646|S|2.03.02|4|03
+2.03.02.02.01|Reserva de Reavaliação|01012014||647|A|2.03.02.02|5|03
+2.03.02.02.02|Reserva de Reavaliação Reflexa|01012014||648|A|2.03.02.02|5|03
+2.03.02.03|RESERVAS DE LUCROS|01012014||649|S|2.03.02|4|03
+2.03.02.03.01|Reserva Legal|01012014||650|A|2.03.02.03|5|03
+2.03.02.03.02|Reserva Estatutária|01012014||651|A|2.03.02.03|5|03
+2.03.02.03.03|Reserva para Contingência|01012014||652|A|2.03.02.03|5|03
+2.03.02.03.04|Reserva de Incentivos Fiscais|01012014||653|A|2.03.02.03|5|03
+2.03.02.03.05|Reserva de Lucros para Expansão|01012014||654|A|2.03.02.03|5|03
+2.03.02.03.06|Reserva de Lucros a Realizar|01012014||655|A|2.03.02.03|5|03
+2.03.02.03.07|Reserva Especial para Dividendo Obrigatório não Distribuído|01012014||656|A|2.03.02.03|5|03
+2.03.02.03.08|Reserva de Prêmio na Emissão de Debêntures|01012014||657|A|2.03.02.03|5|03
+2.03.02.03.09|Reserva para Aumento de Capital (Lei nº 9.249/1995, art. 9º, § 9º)|01012014||658|A|2.03.02.03|5|03
+2.03.02.03.99|Outras Reservas de Lucros|01012014||659|A|2.03.02.03|5|03
+2.03.03|AJUSTES DE AVALIAÇÃO PATRIMONIAL|01012014||660|S|2.03|3|03
+2.03.03.01|AJUSTES DE AVALIAÇÃO PATRIMONIAL|01012014||661|S|2.03.03|4|03
+2.03.03.01.01|Contrapartidas Ajustes Ativos Financeiros Disponíveis para Venda|01012014||662|A|2.03.03.01|5|03
+2.03.03.01.02|Contrapartidas Ajustes em Operações de Hedge|01012014||663|A|2.03.03.01|5|03
+2.03.03.01.03|Contrapartida da Diferença Positiva de Ativo Imobilizado Transferido para Programa para Investimento|01012014||664|A|2.03.03.01|5|03
+2.03.03.01.04|Contrapartida de Ajustes dos Planos de Benefícios a Empregados|01012014||665|A|2.03.03.01|5|03
+2.03.03.01.05|Contrapartida de Ajustes do Ativo Imobilizado e de Propriedades para Investimento - Adoção Inicial CPCs|01012014||666|A|2.03.03.01|5|03
+2.03.03.01.06|Ajustes Acumulados de Conversão|01012014||667|A|2.03.03.01|5|03
+2.03.03.01.30|(-) Ajustes de Avaliação Patrimonial Negativos|01012014||668|A|2.03.03.01|5|03
+2.03.03.01.90|Outros  Resultados Abrangentes - Ajustes de Avaliação Patrimonial|01012014||669|A|2.03.03.01|5|03
+2.03.03.02|AJUSTES DE AVALIAÇÃO PATRIMONIAL - REFLEXOS|01012014||670|S|2.03.03|4|03
+2.03.03.02.01|Contrapartidas Ajustes Ativos Financeiros Disponíveis para Venda - Refexa|01012014||671|A|2.03.03.02|5|03
+2.03.03.02.02|Contrapartidas Ajustes em Operações de Hedge - Reflexa|01012014||672|A|2.03.03.02|5|03
+2.03.03.02.03|Contrapartida Diferença Positiva de Ativo Imobilizado Transferido para Propriedades para Investimento  - Reflexa|01012014||673|A|2.03.03.02|5|03
+2.03.03.02.04|Contrapartida Ajustes Planos de Benefícios a Empregados - Reflexa|01012014||674|A|2.03.03.02|5|03
+2.03.03.02.05|Contrapartida Ajustes Imobilizado e Propriedades para Investimento - Adoção Inicial CPCs  - Reflexa|01012014||675|A|2.03.03.02|5|03
+2.03.03.02.06|Ajustes Acumulados de Conversão - Reflexa|01012014||676|A|2.03.03.02|5|03
+2.03.03.02.30|(-) Ajustes de Avaliação Patrimonial Negativos - Reflexa|01012014||677|A|2.03.03.02|5|03
+2.03.03.02.90|Outros Resultados Abrangentes - Ajustes de Avaliação Patrimonial - Reflexa|01012014||678|A|2.03.03.02|5|03
+2.03.04|OUTRAS CONTAS DO PATRIMÔNIO LÍQUIDO|01012014||679|S|2.03|3|03
+2.03.04.01|OUTRAS CONTAS DO PATRIMÔNIO LÍQUIDO|01012014||680|S|2.03.04|4|03
+2.03.04.01.01|Lucros Acumulados e/ou Saldo à Disposição da Assembléia|01012014||681|A|2.03.04.01|5|03
+2.03.04.01.05|Contraprestação Contingente  - Combinação de Negócios - Patrimônio Líquido|01012014||682|A|2.03.04.01|5|03
+2.03.04.01.10|Ajustes de Exercícios Anteriores|01012014||683|A|2.03.04.01|5|03
+2.03.04.01.11|(-) Prejuízos Acumulados|01012014||684|A|2.03.04.01|5|03
+2.03.04.01.12|(-) Ações em Tesouraria|01012014||685|A|2.03.04.01|5|03
+2.03.04.01.15|(-) Transações de Capital|01012014||686|A|2.03.04.01|5|03
+2.03.04.01.90|Contas do Patrimônio Líquido Não Classificadas|01012014||687|A|2.03.04.01|5|03

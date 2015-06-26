@@ -1,0 +1,297 @@
+versão=3 CODIGO, DESCRICAO, DT_INI, DT_FIM, ORDEM, TIPO, COD_SUP, NIVEL, NATUREZA
+1|ATIVO|01012014||1|S||1|01
+1.1|DISPONÍVEL|01012014||2|S|1|2|01
+1.1.1|Imediato|01012014||3|A|1.1|3|01
+1.1.2|Vinculado|01012014||4|A|1.1|3|01
+1.2|REALIZÁVEL|01012014||5|S|1|2|01
+1.2.1|GESTÃO PREVIDENCIAL|01012014||6|S|1.2|3|01
+1.2.1.1|RECURSOS A RECEBER|01012014||7|S|1.2.1|4|01
+1.2.1.1.01|CONTRIBUIÇÕES DO MÊS|01012014||8|S|1.2.1.1|5|01
+1.2.1.1.01.01|Patrocinador(es)|01012014||9|A|1.2.1.1.01|6|01
+1.2.1.1.01.02|Instituidor(es)|01012014||10|A|1.2.1.1.01|6|01
+1.2.1.1.01.03|Participantes|01012014||11|A|1.2.1.1.01|6|01
+1.2.1.1.01.04|Autopatrocinados|01012014||12|A|1.2.1.1.01|6|01
+1.2.1.1.01.05|Participantes em BPD|01012014||13|A|1.2.1.1.01|6|01
+1.2.1.1.02|CONTRIBUIÇÕES EM ATRASO|01012014||14|S|1.2.1.1|5|01
+1.2.1.1.02.01|Patrocinador(es)|01012014||15|A|1.2.1.1.02|6|01
+1.2.1.1.02.02|Instituidor(es)|01012014||16|A|1.2.1.1.02|6|01
+1.2.1.1.02.03|Participantes|01012014||17|A|1.2.1.1.02|6|01
+1.2.1.1.02.04|Autopatrocinados|01012014||18|A|1.2.1.1.02|6|01
+1.2.1.1.02.05|Participantes em BPD|01012014||19|A|1.2.1.1.02|6|01
+1.2.1.1.03|CONTRIBUIÇÕES SOBRE 13º SALÁRIO|01012014||20|S|1.2.1.1|5|01
+1.2.1.1.03.01|Patrocinador(es)|01012014||21|A|1.2.1.1.03|6|01
+1.2.1.1.03.02|Instituidor(es)|01012014||22|A|1.2.1.1.03|6|01
+1.2.1.1.03.03|Participantes|01012014||23|A|1.2.1.1.03|6|01
+1.2.1.1.03.04|Autopatrocinados|01012014||24|A|1.2.1.1.03|6|01
+1.2.1.1.03.05|Participantes em BPD|01012014||25|A|1.2.1.1.03|6|01
+1.2.1.1.04|CONTRIBUIÇÕES CONTRATADAS|01012014||26|S|1.2.1.1|5|01
+1.2.1.1.04.01|Contribuições em Atraso Contratadas|01012014||27|A|1.2.1.1.04|6|01
+1.2.1.1.04.02|Serviço Passado Contratado|01012014||28|A|1.2.1.1.04|6|01
+1.2.1.1.04.03|Déficit Técnico Contratado|01012014||29|A|1.2.1.1.04|6|01
+1.2.1.1.04.99|Outras Contratações|01012014||30|A|1.2.1.1.04|6|01
+1.2.1.1.99|Outros Recursos a Receber|01012014||31|A|1.2.1.1|5|01
+1.2.1.2|Adiantamentos|01012014||32|A|1.2|4|01
+1.2.1.3|Resultados a Realizar|01012014||33|A|1.2|4|01
+1.2.1.4|Custeio Administrativo Antecipado|01012014||34|A|1.2|4|01
+1.2.1.5|Depósitos Judiciais/Recursais|01012014||35|A|1.2|4|01
+1.2.1.9|Outros Realizáveis|01012014||36|A|1.2|4|01
+1.2.2|GESTÃO ADMINISTRATIVA|01012014||37|S|1|3|01
+1.2.2.1|CONTAS A RECEBER|01012014||38|S|1.2|4|01
+1.2.2.1.01|CONTRIBUIÇÕES PARA CUSTEIO|01012014||39|S|1.2.2.1|5|01
+1.2.2.1.01.01|Patrocinador(es)|01012014||40|A|1.2.2.1.01|6|01
+1.2.2.1.01.02|Instituidor(es)|01012014||41|A|1.2.2.1.01|6|01
+1.2.2.1.01.03|Participantes|01012014||42|A|1.2.2.1.01|6|01
+1.2.2.1.01.04|Autopatrocinados|01012014||43|A|1.2.2.1.01|6|01
+1.2.2.1.01.05|Participantes em BPD|01012014||44|A|1.2.2.1.01|6|01
+1.2.2.1.02|CONTRIBUIÇÕES PARA CUSTEIO EM ATRASO|01012014||45|S|1.2.2.1|5|01
+1.2.2.1.02.01|Patrocinador(es)|01012014||46|A|1.2.2.1.02|6|01
+1.2.2.1.02.02|Instituidor(es)|01012014||47|A|1.2.2.1.02|6|01
+1.2.2.1.02.03|Participantes|01012014||48|A|1.2.2.1.02|6|01
+1.2.2.1.02.04|Autopatrocinados|01012014||49|A|1.2.2.1.02|6|01
+1.2.2.1.02.05|Participantes em BPD|01012014||50|A|1.2.2.1.02|6|01
+1.2.2.1.03|CONTRIBUIÇÕES PARA CUSTEIO CONTRATADAS|01012014||51|S|1.2.2.1|5|01
+1.2.2.1.03.01|Contribuições em Atraso Contratadas|01012014||52|A|1.2.2.1.03|6|01
+1.2.2.1.03.02|Serviço Passado Contratado|01012014||53|A|1.2.2.1.03|6|01
+1.2.2.1.03.99|Outras Contratações|01012014||54|A|1.2.2.1.03|6|01
+1.2.2.1.04|Responsabilidade de Empregados|01012014||55|A|1.2.2.1|5|01
+1.2.2.1.05|Responsabilidade de Terceiros|01012014||56|A|1.2.2.1|5|01
+1.2.2.1.99|Outros Recursos a Receber|01012014||57|A|1.2.2.1|5|01
+1.2.2.2|Despesas Antecipadas|01012014||58|A|1.2|4|01
+1.2.2.3|Participação no Plano de Gestão Administrativa|01012014||59|A|1.2|4|01
+1.2.2.4|Depósitos Judiciais/Recursais|01012014||60|A|1.2|4|01
+1.2.2.5|Tributos a Compensar|01012014||61|A|1.2|4|01
+1.2.2.9|Outros Realizáveis|01012014||62|A|1.2|4|01
+1.2.3|INVESTIMENTOS|01012014||63|S|1|3|01
+1.2.3.1|TÍTULOS PÚBLICOS|01012014||64|S|1.2|4|01
+1.2.3.1.01|Títulos Públicos Federais|01012014||65|A|1.2.3.1|5|01
+1.2.3.1.02|Títulos Públicos Estaduais|01012014||66|A|1.2.3.1|5|01
+1.2.3.1.03|Títulos Públicos Municipais|01012014||67|A|1.2.3.1|5|01
+1.2.3.1.04|Empréstimos de Títulos|01012014||68|A|1.2.3.1|5|01
+1.2.3.2|CRÉDITOS PRIVADOS E DEPÓSITOS|01012014||69|S|1.2|4|01
+1.2.3.2.01|Instituições Financeiras|01012014||70|A|1.2.3.2|5|01
+1.2.3.2.02|Companhias Abertas|01012014||71|A|1.2.3.2|5|01
+1.2.3.2.03|Companhias Fechadas|01012014||72|A|1.2.3.2|5|01
+1.2.3.2.04|Sociedades de Propósito Específico|01012014||73|A|1.2.3.2|5|01
+1.2.3.2.05|Sociedades Limitadas|01012014||74|A|1.2.3.2|5|01
+1.2.3.2.06|Pessoas Físicas|01012014||75|A|1.2.3.2|5|01
+1.2.3.2.07|Organismos Multilaterais|01012014||76|A|1.2.3.2|5|01
+1.2.3.2.08|Patrocinador(es)|01012014||77|A|1.2.3.2|5|01
+1.2.3.2.09|Empréstimos de Crédito Privado|01012014||78|A|1.2.3.2|5|01
+1.2.3.2.99|Outros Emissores|01012014||79|A|1.2.3.2|5|01
+1.2.3.3|AÇÕES|01012014||80|S|1.2|4|01
+1.2.3.3.01|Instituições Financeiras|01012014||81|A|1.2.3.3|5|01
+1.2.3.3.02|Companhias Abertas|01012014||82|A|1.2.3.3|5|01
+1.2.3.3.03|Companhias Abertas - Exterior|01012014||83|A|1.2.3.3|5|01
+1.2.3.3.04|Companhias Fechadas|01012014||84|A|1.2.3.3|5|01
+1.2.3.3.05|Sociedades de Propósito Específico|01012014||85|A|1.2.3.3|5|01
+1.2.3.3.06|Patrocinador(es)|01012014||86|A|1.2.3.3|5|01
+1.2.3.3.07|Empréstimos de Ações|01012014||87|A|1.2.3.3|5|01
+1.2.3.3.99|Outros Emissores|01012014||88|A|1.2.3.3|5|01
+1.2.3.4|FUNDOS DE INVESTIMENTO|01012014||89|S|1.2|4|01
+1.2.3.4.01|Curto Prazo|01012014||90|A|1.2.3.4|5|01
+1.2.3.4.02|Referenciado|01012014||91|A|1.2.3.4|5|01
+1.2.3.4.03|Renda Fixa|01012014||92|A|1.2.3.4|5|01
+1.2.3.4.04|Ações|01012014||93|A|1.2.3.4|5|01
+1.2.3.4.05|Cambial|01012014||94|A|1.2.3.4|5|01
+1.2.3.4.06|Dívida Externa|01012014||95|A|1.2.3.4|5|01
+1.2.3.4.07|Multimercado|01012014||96|A|1.2.3.4|5|01
+1.2.3.4.08|Índice de Mercado|01012014||97|A|1.2.3.4|5|01
+1.2.3.4.09|Direitos Creditórios|01012014||98|A|1.2.3.4|5|01
+1.2.3.4.10|Empresas Emergentes|01012014||99|A|1.2.3.4|5|01
+1.2.3.4.11|Participações|01012014||100|A|1.2.3.4|5|01
+1.2.3.4.12|Imobiliário|01012014||101|A|1.2.3.4|5|01
+1.2.3.4.13|Empréstimos de Cotas de Fundos|01012014||102|A|1.2.3.4|5|01
+1.2.3.4.99|Outros|01012014||103|A|1.2.3.4|5|01
+1.2.3.5|DERIVATIVOS|01012014||104|S|1.2|4|01
+1.2.3.5.01|Swap|01012014||105|A|1.2.3.5|5|01
+1.2.3.5.02|A TERMO - COMPRA|01012014||106|S|1.2.3.5|5|01
+1.2.3.5.02.01|Renda Fixa|01012014||107|A|1.2.3.5.02|6|01
+1.2.3.5.02.02|Renda Variável|01012014||108|A|1.2.3.5.02|6|01
+1.2.3.5.03|A TERMO - VENDA|01012014||109|S|1.2.3.5|5|01
+1.2.3.5.03.01|Renda Fixa|01012014||110|A|1.2.3.5.03|6|01
+1.2.3.5.03.02|Renda Variável|01012014||111|A|1.2.3.5.03|6|01
+1.2.3.5.04|Mercados Futuros|01012014||112|A|1.2.3.5|5|01
+1.2.3.5.05|OPÇÕES - AÇÕES|01012014||113|S|1.2.3.5|5|01
+1.2.3.5.05.01|Opções de Compra - Titular|01012014||114|A|1.2.3.5.05|6|01
+1.2.3.5.05.02|Opções de Venda - Titular|01012014||115|A|1.2.3.5.05|6|01
+1.2.3.5.06|OPÇÕES - ATIVOS FINANCEIROS E MERCADORIAS|01012014||116|S|1.2.3.5|5|01
+1.2.3.5.06.01|Opções de Compra - Titular|01012014||117|A|1.2.3.5.06|6|01
+1.2.3.5.06.02|Opções de Venda - Titular|01012014||118|A|1.2.3.5.06|6|01
+1.2.3.5.99|Outros|01012014||119|A|1.2.3.5|5|01
+1.2.3.6|INVESTIMENTOS IMOBILIÁRIOS|01012014||120|S|1.2|4|01
+1.2.3.6.01|Terrenos|01012014||121|A|1.2.3.6|5|01
+1.2.3.6.02|Imóveis em Construção|01012014||122|A|1.2.3.6|5|01
+1.2.3.6.03|Desenvolvimento|01012014||123|A|1.2.3.6|5|01
+1.2.3.6.04|ALUGUÉIS E RENDA|01012014||124|S|1.2.3.6|5|01
+1.2.3.6.04.01|Uso Próprio|01012014||125|A|1.2.3.6.04|6|01
+1.2.3.6.04.02|Locadas a Patrocinador(es)|01012014||126|A|1.2.3.6.04|6|01
+1.2.3.6.04.03|Locadas a Terceiros|01012014||127|A|1.2.3.6.04|6|01
+1.2.3.6.04.04|Rendas de Participações|01012014||128|A|1.2.3.6.04|6|01
+1.2.3.6.05|Direitos em Alienações de Investimentos Imobiliários|01012014||129|A|1.2.3.6|5|01
+1.2.3.6.99|Outros Investimentos Imobiliários|01012014||130|A|1.2.3.6|5|01
+1.2.3.7|EMPRÉSTIMOS E FINANCIAMENTOS|01012014||131|S|1.2|4|01
+1.2.3.7.01|Empréstimos|01012014||132|A|1.2.3.7|5|01
+1.2.3.7.02|Financiamentos Imobiliários|01012014||133|A|1.2.3.7|5|01
+1.2.3.8|Depósitos Judiciais/Recursais|01012014||134|A|1.2|4|01
+1.2.3.9|Outros Realizáveis|01012014||135|A|1.2|4|01
+1.3|PERMANENTE|01012014||136|S|1|2|01
+1.3.1|IMOBILIZADO|01012014||137|S|1|3|01
+1.3.1.1|OPERACIONAL CORPÓREO|01012014||138|S|1.3|4|01
+1.3.1.1.01|Bens Móveis|01012014||139|A|1.3.1.1|5|01
+1.3.1.1.02|Bens Imóveis|01012014||140|A|1.3.1.1|5|01
+1.3.2|INTANGÍVEL|01012014||141|S|1|3|01
+1.3.2.1|Gastos com Implantação, Reorganização e Desenvolvimento|01012014||142|A|1.3|4|01
+1.3.3|DIFERIDO|01012014||143|S|1|3|01
+1.3.3.1|Gastos com Implantação, Reorganização e Desenvolvimento|01012014||144|A|1.3|4|01
+1.3.3.2|Fomento|01012014||145|A|1.3|4|01
+1.4|Gestão Assistencial|01012014||146|A|1|2|01
+2|PASSIVO|01012014||147|S||1|02
+2.1|EXIGÍVEL OPERACIONAL|01012014||148|S|2|2|02
+2.1.1|GESTÃO PREVIDENCIAL|01012014||149|S|2|3|02
+2.1.1.1|Benefícios a Pagar|01012014||150|A|2.1|4|02
+2.1.1.2|Retenções a Recolher|01012014||151|A|2.1|4|02
+2.1.1.3|Recursos Antecipados|01012014||152|A|2.1|4|02
+2.1.1.4|Obrigações Contratadas|01012014||153|A|2.1|4|02
+2.1.1.5|LIQUIDAÇÃO EXTRAJUDICIAL|01012014||154|S|2.1|4|02
+2.1.1.5.01|Obrigações com Credores|01012014||155|A|2.1.1.5|5|02
+2.1.1.5.02|(+/-) Excesso/Insuficiência|01012014||156|A|2.1.1.5|5|02
+2.1.1.9|Outras Exigibilidades|01012014||157|A|2.1|4|02
+2.1.2|GESTÃO ADMINISTRATIVA|01012014||158|S|2.|3|02
+2.1.2.1|Contas a Pagar|01012014||159|A|2.1|4|02
+2.1.2.2|Retenções a Recolher|01012014||160|A|2.1|4|02
+2.1.2.3|Receitas Antecipadas|01012014||161|A|2.1|4|02
+2.1.2.4|Tributos a Recolher|01012014||162|A|2.1|4|02
+2.1.2.9|Outras Exigibilidades|01012014||163|A|2.1|4|02
+2.1.3|INVESTIMENTOS|01012014||164|S|2|3|02
+2.1.3.1|TÍTULOS PÚBLICOS|01012014||165|S|2.1|4|02
+2.1.3.1.01|Títulos Públicos Federais|01012014||166|A|2.1.3.1|5|02
+2.1.3.1.02|Títulos Públicos Estaduais|01012014||167|A|2.1.3.1|5|02
+2.1.3.1.03|Títulos Públicos Municipais|01012014||168|A|2.1.3.1|5|02
+2.1.3.1.04|Empréstimos de Títulos|01012014||169|A|2.1.3.1|5|02
+2.1.3.2|CRÉDITOS PRIVADOS E DEPÓSITOS|01012014||170|S|2.1|4|02
+2.1.3.2.01|Instituições Financeiras|01012014||171|A|2.1.3.2|5|02
+2.1.3.2.02|Companhias Abertas|01012014||172|A|2.1.3.2|5|02
+2.1.3.2.03|Companhias Fechadas|01012014||173|A|2.1.3.2|5|02
+2.1.3.2.04|Sociedades de Propósito Específico|01012014||174|A|2.1.3.2|5|02
+2.1.3.2.05|Sociedades Limitadas|01012014||175|A|2.1.3.2|5|02
+2.1.3.2.06|Pessoas Físicas|01012014||176|A|2.1.3.2|5|02
+2.1.3.2.07|Organismos Multilaterais|01012014||177|A|2.1.3.2|5|02
+2.1.3.2.08|Patrocinador(es)|01012014||178|A|2.1.3.2|5|02
+2.1.3.2.09|Empréstimos de Crédito Privado|01012014||179|A|2.1.3.2|5|02
+2.1.3.2.99|Outros Emissores|01012014||180|A|2.1.3.2|5|02
+2.1.3.3|AÇÕES|01012014||181|S|2.1|4|02
+2.1.3.3.01|Instituições Financeiras|01012014||182|A|2.1.3.3|5|02
+2.1.3.3.02|Companhias Abertas|01012014||183|A|2.1.3.3|5|02
+2.1.3.3.03|Companhias Abertas - Exterior|01012014||184|A|2.1.3.3|5|02
+2.1.3.3.04|Companhias Fechadas|01012014||185|A|2.1.3.3|5|02
+2.1.3.3.05|Sociedades de Propósito Específico|01012014||186|A|2.1.3.3|5|02
+2.1.3.3.06|Patrocinador(es)|01012014||187|A|2.1.3.3|5|02
+2.1.3.3.07|Empréstimos de Ações|01012014||188|A|2.1.3.3|5|02
+2.1.3.3.99|Outros Emissores|01012014||189|A|2.1.3.3|5|02
+2.1.3.4|FUNDOS DE INVESTIMENTO|01012014||190|S|2.1|4|02
+2.1.3.4.01|Curto Prazo|01012014||191|A|2.1.3.4|5|02
+2.1.3.4.02|Referenciado|01012014||192|A|2.1.3.4|5|02
+2.1.3.4.03|Renda Fixa|01012014||193|A|2.1.3.4|5|02
+2.1.3.4.04|Ações|01012014||194|A|2.1.3.4|5|02
+2.1.3.4.05|Cambial|01012014||195|A|2.1.3.4|5|02
+2.1.3.4.06|Dívida Externa|01012014||196|A|2.1.3.4|5|02
+2.1.3.4.07|Multimercado|01012014||197|A|2.1.3.4|5|02
+2.1.3.4.08|Índice de Mercado|01012014||198|A|2.1.3.4|5|02
+2.1.3.4.09|Direitos Creditórios|01012014||199|A|2.1.3.4|5|02
+2.1.3.4.10|Empresas Emergentes|01012014||200|A|2.1.3.4|5|02
+2.1.3.4.11|Participações|01012014||201|A|2.1.3.4|5|02
+2.1.3.4.12|Imobiliário|01012014||202|A|2.1.3.4|5|02
+2.1.3.4.13|Empréstimos de Cotas de Fundos|01012014||203|A|2.1.3.4|5|02
+2.1.3.4.99|Outros|01012014||204|A|2.1.3.4|5|02
+2.1.3.5|DERIVATIVOS|01012014||205|S|2.1|4|02
+2.1.3.5.01|Swap|01012014||206|A|2.1.3.5|5|02
+2.1.3.5.02|A TERMO - COMPRA|01012014||207|S|2.1.3.5|5|02
+2.1.3.5.02.01|Renda Fixa|01012014||208|A|2.1.3.5.02|6|02
+2.1.3.5.02.02|Renda Variável|01012014||209|A|2.1.3.5.02|6|02
+2.1.3.5.03|A TERMO - VENDA|01012014||210|S|2.1.3.5|5|02
+2.1.3.5.03.01|Renda Fixa|01012014||211|A|2.1.3.5.03|6|02
+2.1.3.5.03.02|Renda Variável|01012014||212|A|2.1.3.5.03|6|02
+2.1.3.5.04|Mercados Futuros|01012014||213|A|2.1.3.5|5|02
+2.1.3.5.05|OPÇÕES - AÇÕES|01012014||214|S|2.1.3.5|5|02
+2.1.3.5.05.01|Opções de Compra - Lançador|01012014||215|A|2.1.3.5.05|6|02
+2.1.3.5.05.02|Opções de Venda - Lançador|01012014||216|A|2.1.3.5.05|6|02
+2.1.3.5.06|OPÇÕES - ATIVOS FINANCEIROS E MERCADORIAS|01012014||217|S|2.1.3.5|5|02
+2.1.3.5.06.01|Opções de Compra - Lançador|01012014||218|A|2.1.3.5.06|6|02
+2.1.3.5.06.02|Opções de Venda - Lançador|01012014||219|A|2.1.3.5.06|6|02
+2.1.3.5.99|Outros|01012014||220|A|2.1.3.5|5|02
+2.1.3.6|INVESTIMENTOS IMOBILIÁRIOS|01012014||221|S|2.1|4|02
+2.1.3.6.01|Terrenos|01012014||222|A|2.1.3.6|5|02
+2.1.3.6.02|Imóveis em Construção|01012014||223|A|2.1.3.6|5|02
+2.1.3.6.03|Desenvolvimento|01012014||224|A|2.1.3.6|5|02
+2.1.3.6.04|ALUGUÉIS E RENDA|01012014||225|S|2.1.3.6|5|02
+2.1.3.6.04.01|Uso Próprio|01012014||226|A|2.1.3.6.04|6|02
+2.1.3.6.04.02|Locadas a Patrocinador(es)|01012014||227|A|2.1.3.6.04|6|02
+2.1.3.6.04.03|Locadas a Terceiros|01012014||228|A|2.1.3.6.04|6|02
+2.1.3.6.04.04|Rendas de Participações|01012014||229|A|2.1.3.6.04|6|02
+2.1.3.6.05|Obrigações em Alienações de Investimentos Imobiliários|01012014||230|A|2.1.3.6|5|02
+2.1.3.6.99|Outros Investimentos Imobiliários|01012014||231|A|2.1.3.6|5|02
+2.1.3.7|EMPRÉSTIMOS E FINANCIAMENTOS|01012014||232|S|2.1|4|02
+2.1.3.7.01|Empréstimos|01012014||233|A|2.1.3.7|5|02
+2.1.3.7.02|Financiamentos Imobiliários|01012014||234|A|2.1.3.7|5|02
+2.1.3.8|Relacionados com o Disponível|01012014||235|A|2.1|4|02
+2.1.3.9|Outras Exigibilidades|01012014||236|A|2.1|4|02
+2.2|EXIGÍVEL CONTINGENCIAL|01012014||237|S|2|2|02
+2.2.1|GESTÃO PREVIDENCIAL|01012014||238|S|2|3|02
+2.2.1.1|Provisão|01012014||239|A|2.2.|4|02
+2.2.2|GESTÃO ADMINISTRATIVA|01012014||240|S|2|3|02
+2.2.2.1|COMUM|01012014||241|S|2.2.|4|02
+2.2.2.1.01|Provisão|01012014||242|A|2.2.2.1|5|02
+2.2.2.2|ESPECÍFICA|01012014||243|S|2.2.|4|02
+2.2.2.2.01|Provisão|01012014||244|A|2.2.2.2|5|02
+2.2.3|INVESTIMENTOS|01012014||245|S|2|3|02
+2.2.3.1|Provisão|01012014||246|A|2.2.|4|02
+2.3|PATRIMÔNIO SOCIAL|01012014||247|S|2|2|03
+2.3.1|PATRIMÔNIO DE COBERTURA DO PLANO|01012014||248|S|2|3|03
+2.3.1.1|PROVISÕES MATEMÁTICAS|01012014||249|S|2.3.|4|03
+2.3.1.1.01|BENEFÍCIOS CONCEDIDOS|01012014||250|S|2.3.1.1|5|03
+2.3.1.1.01.01|CONTRIBUIÇÃO DEFINIDA|01012014||251|S|2.3.1.1.01|6|03
+2.3.1.1.01.01.01|Saldo de Contas dos Assistidos|01012014||252|A|2.3.1.1.01.01|6|03
+2.3.1.1.01.02|BENEFÍCIO DEFINIDO ESTRUTURADO EM REGIME DE CAPITALIZAÇÃO|01012014||253|S|2.3.1.1.01|6|03
+2.3.1.1.01.02.01|Valor Atual dos Benefícios Futuros Programados - Assistidos|01012014||254|A|2.3.1.1.01.02|6|03
+2.3.1.1.01.02.02|Valor Atual dos Benefícios Futuros Não Programados - Assistidos|01012014||255|A|2.3.1.1.01.02|6|03
+2.3.1.1.02|BENEFÍCIOS A CONCEDER|01012014||256|S|2.3.1.1|5|03
+2.3.1.1.02.01|CONTRIBUIÇÃO DEFINIDA|01012014||257|S|2.3.1.1.02|6|03
+2.3.1.1.02.01.01|Saldo de Contas - Parcela Patrocinador(es)/Instituidor(es)|01012014||258|A|2.3.1.1.02.01|6|03
+2.3.1.1.02.01.02|Saldo de Contas - Parcela Participantes|01012014||259|A|2.3.1.1.02.01|6|03
+2.3.1.1.02.02|BENEFÍCIO DEFINIDO ESTRUTURADO EM REGIME DE CAPITALIZAÇÃO PROGRAMADO|01012014||260|S|2.3.1.1.02|6|03
+2.3.1.1.02.02.01|Valor Atual dos Benefícios Futuros Programados|01012014||261|A|2.3.1.1.02.02|6|03
+2.3.1.1.02.02.02|(-)Valor Atual das Contribuições Futuras dos Patrocinadores|01012014||262|A|2.3.1.1.02.02|6|03
+2.3.1.1.02.02.03|(-)Valor Atual das Contribuições Futuras dos Participantes|01012014||263|A|2.3.1.1.02.02|6|03
+2.3.1.1.02.03|BENEFÍCIO DEFINIDO ESTRUTURADO EM REGIME DE CAPITALIZAÇÃO NÃO PROGRAMADO|01012014||264|S|2.3.1.1.02|6|03
+2.3.1.1.02.03.01|Valor Atual dos Benefícios Futuros Não Programados|01012014||265|A|2.3.1.1.02.03|6|03
+2.3.1.1.02.03.02|(-)Valor Atual das Contribuições Futuras dos Patrocinadores|01012014||266|A|2.3.1.1.02.03|6|03
+2.3.1.1.02.03.03|(-)Valor Atual das Contribuições Futuras dos Participantes|01012014||267|A|2.3.1.1.02.03|6|03
+2.3.1.1.03|(-)PROVISÕES MATEMÁTICAS A CONSTITUIR|01012014||268|S|2.3.1.1|5|03
+2.3.1.1.03.01|(-)SERVIÇO PASSADO|01012014||269|S|2.3.1.1.03|6|03
+2.3.1.1.03.01.01|(-)Patrocinador(es)|01012014||270|A|2.3.1.1.03.01|6|03
+2.3.1.1.03.01.02|(-)Participantes|01012014||271|A|2.3.1.1.03.01|6|03
+2.3.1.1.03.02|(-)DÉFICIT EQUACIONADO|01012014||272|S|2.3.1.1.03|6|03
+2.3.1.1.03.02.01|(-)Patrocinador(es)|01012014||273|A|2.3.1.1.03.02|6|03
+2.3.1.1.03.02.02|(-)Participantes|01012014||274|A|2.3.1.1.03.02|6|03
+2.3.1.1.03.02.03|(-)Assistidos|01012014||275|A|2.3.1.1.03.02|6|03
+2.3.1.1.03.03|(+/-)POR AJUSTES DAS CONTRIBUIÇÕES EXTRAORDINÁRIAS|01012014||276|S|2.3.1.1.03|6|03
+2.3.1.1.03.03.01|(+/-)Patrocinador(es)|01012014||277|A|2.3.1.1.03.03|6|03
+2.3.1.1.03.03.02|(+/-)Participantes|01012014||278|A|2.3.1.1.03.03|6|03
+2.3.1.1.03.03.03|(+/-)Assistidos|01012014||279|A|2.3.1.1.03.03|6|03
+2.3.1.2|EQUILÍBRIO TÉCNICO|01012014||280|S|2.3.|4|03
+2.3.1.2.01|RESULTADOS REALIZADOS|01012014||281|S|2.3.1.2|5|03
+2.3.1.2.01.01|SUPERÁVIT TÉCNICO ACUMULADO|01012014||282|S|2.3.1.2.01|6|03
+2.3.1.2.01.01.01|Reserva de Contingência|01012014||283|A|2.3.1.2.01.01|6|03
+2.3.1.2.01.01.02|Reserva Especial para Revisão de Plano|01012014||284|A|2.3.1.2.01.01|6|03
+2.3.1.2.01.02|(-)Déficit Técnico Acumulado|01012014||285|A|2.3.1.2.01|6|03
+2.3.1.2.02|Resultados a Realizar|01012014||286|A|2.3.1.2|5|03
+2.3.2|FUNDOS|01012014||287|S|2|3|03
+2.3.2.1|FUNDOS PREVIDENCIAIS|01012014||288|S|2.3.|4|03
+2.3.2.1.01|Reversão de Saldo por Exigência Regulamentar|01012014||289|A|2.3.2.1|5|03
+2.3.2.1.02|Revisão de Plano|01012014||290|A|2.3.2.1|5|03
+2.3.2.1.03|Outros - Previsto em Nota Técnica Atuarial|01012014||291|A|2.3.2.1|5|03
+2.3.2.2|FUNDOS ADMINISTRATIVOS|01012014||292|S|2.3.|4|03
+2.3.2.2.01|Plano de Gestão Administrativa|01012014||293|A|2.3.2.2|5|03
+2.3.2.2.02|Participação no Fundo Administrativo PGA|01012014||294|A|2.3.2.2|5|03
+2.3.2.3|Fundos dos Investimentos|01012014||295|A|2.3.|4|03
+2.4|Gestão Assistencial|01012014||296|A|2|2|03

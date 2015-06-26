@@ -1,0 +1,12 @@
+versão=1 Codigo, Nome, DataInicio, DataFim
+01|Matriz no exterior|01012008|
+02|Filial, inclusive agência ou dependência, no exterior|01012008|
+03|Coligada, inclusive equiparada|01012008|
+04|Controladora|01012008|
+05|Controlada (exceto subsidiária integral)|01012008|
+06|Subsidiária integral|01012008|
+07|Controlada em conjunto|01012008|
+08|Entidade de Propósito Específico (conforme definição da CVM)|01012008|
+09|Participante do conglomerado, conforme norma específica do órgão regulador, exceto as que se enquadrem nos tipos precedentes|01012008|
+10|Vinculadas (Art. 23 da Lei 9.430/96), exceto as que se enquadrem nos tipos precedentes|01012008|
+11|Localizada em país com tributação favorecida (Art. 24 da Lei 9.430/96), exceto as que se enquadrem nos tipos precedentes|01012008|

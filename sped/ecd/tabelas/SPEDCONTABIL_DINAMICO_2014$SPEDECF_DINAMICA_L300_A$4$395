@@ -1,0 +1,370 @@
+versão=4 CODIGO, DESCRICAO, DT_INI, DT_FIM, ORDEM, TIPO, COD_SUP, NIVEL, NATUREZA
+3|RESULTADO LÍQUIDO DO PERÍODO|01012014||1|S||1|04
+3.01|RESULTADO LÍQUIDO DO PERÍODO ANTES DO IRPJ E DA CSLL - ATIVIDADE GERAL|01012014||2|S|3|2|04
+3.01.01|RESULTADO OPERACIONAL|01012014||3|S|3.01|3|04
+3.01.01.01|RECEITA LIQUIDA|01012014||4|S|3.01.01|4|04
+3.01.01.01.01|RECEITA BRUTA|01012014||5|S|3.01.01.01|5|04
+3.01.01.01.01.01|Receita de Exportação Direta de Mercadorias e Produtos|01012014||6|A|3.01.01.01.01|6|04
+3.01.01.01.01.02|Receita de Vendas de Mercadorias e Produtos a Comercial Exportadora com Fim Específico de Exportação|01012014||7|A|3.01.01.01.01|6|04
+3.01.01.01.01.03|Receita de Exportação de Serviços|01012014||8|A|3.01.01.01.01|6|04
+3.01.01.01.01.04|Receita da Venda de Produtos de Fabricação Própria no Mercado Interno|01012014||9|A|3.01.01.01.01|6|04
+3.01.01.01.01.05|Receita da Revenda de Mercadorias no Mercado Interno|01012014||10|A|3.01.01.01.01|6|04
+3.01.01.01.01.06|Receita da Prestação de Serviços no Mercado Interno|01012014||11|A|3.01.01.01.01|6|04
+3.01.01.01.01.07|Receita da Venda de Unidades Imobiliárias|01012014||12|A|3.01.01.01.01|6|04
+3.01.01.01.01.08|Receita da Locação de Bens Móveis e Imóveis|01012014||13|A|3.01.01.01.01|6|04
+3.01.01.01.01.20|Receita de Contrato de Construção|01012014||14|A|3.01.01.01.01|6|04
+3.01.01.01.01.25|Receita de Direito de Exploração Serviço Público|01012014||15|A|3.01.01.01.01|6|04
+3.01.01.01.01.30|Receita de Securitização de Créditos|01012014||16|A|3.01.01.01.01|6|04
+3.01.01.01.01.98|Outras Receitas da Atividade Geral|01012014||17|A|3.01.01.01.01|6|04
+3.01.01.01.02|DEDUÇÕES DA RECEITA BRUTA|01012014||18|S|3.01.01.01|5|04
+3.01.01.01.02.01|(-) Vendas Canceladas e Devoluções de Vendas|01012014||19|A|3.01.01.01.02|6|04
+3.01.01.01.02.02|(-) Descontos Incondicionais e Abatimentos|01012014||20|A|3.01.01.01.02|6|04
+3.01.01.01.02.03|(-) ICMS|01012014||21|A|3.01.01.01.02|6|04
+3.01.01.01.02.04|(-) COFINS Sobre Receita Bruta|01012014||22|A|3.01.01.01.02|6|04
+3.01.01.01.02.05|(-) PIS/PASEP Sobre Receita Bruta|01012014||23|A|3.01.01.01.02|6|04
+3.01.01.01.02.06|(-) ISS|01012014||24|A|3.01.01.01.02|6|04
+3.01.01.01.02.09|(-) Demais Impostos e Contribuições Incidentes sobre Vendas e Serviços|01012014||25|A|3.01.01.01.02|6|04
+3.01.01.01.02.10|(-) Ajuste a Valor Presente sobre Receita Bruta|01012014||26|A|3.01.01.01.02|6|04
+3.01.01.03|CUSTO DOS BENS E SERVIÇOS|01012014||27|S|3.01.01|4|04
+3.01.01.03.01|CUSTO DOS BENS E SERVIÇOS VENDIDOS DAS ATIVIDADES EM GERAL|01012014||28|S|3.01.01.03|5|04
+3.01.01.03.01.01|(-) Custo dos Produtos de Fabricação Própria Vendidos|01012014||29|A|3.01.01.03.01|6|04
+3.01.01.03.01.02|(-) Custo das Mercadorias Revendidas|01012014||30|A|3.01.01.03.01|6|04
+3.01.01.03.01.03|(-) Custo dos Serviços Prestados|01012014||31|A|3.01.01.03.01|6|04
+3.01.01.03.01.04|(-) Custo das Unidades Imobiliárias Vendidas|01012014||32|A|3.01.01.03.01|6|04
+3.01.01.03.01.20|(-) Custo de Construção|01012014||33|A|3.01.01.03.01|6|04
+3.01.01.03.01.30|(-) Custo de Operação de Securitização|01012014||34|A|3.01.01.03.01|6|04
+3.01.01.05|OUTRAS RECEITAS OPERACIONAIS|01012014||35|S|3.01.01|4|04
+3.01.01.05.01|OUTRAS RECEITAS OPERACIONAIS DAS ATIVIDADES EM GERAL|01012014||36|S|3.01.01.05|5|04
+3.01.01.05.01.01|Variações Cambiais Ativas|01012014||37|A|3.01.01.05.01|6|04
+3.01.01.05.01.02|Ganhos Auferidos no Mercado de Renda Variável, exceto Day-Trade|01012014||38|A|3.01.01.05.01|6|04
+3.01.01.05.01.03|Ganhos em Operações Day-Trade|01012014||39|A|3.01.01.05.01|6|04
+3.01.01.05.01.04|Receitas de Juros sobre o Capital Próprio|01012014||40|A|3.01.01.05.01|6|04
+3.01.01.05.01.05|Outras Receitas Financeiras|01012014||41|A|3.01.01.05.01|6|04
+3.01.01.05.01.06|Resultados Positivos em Participações Societárias Avaliadas pelo Método de Equivalência Patrimonial|01012014||42|A|3.01.01.05.01|6|04
+3.01.01.05.01.07|Resultados Positivos em SCP Avaliadas pelo Método de Equivalência Patrimonial|01012014||43|A|3.01.01.05.01|6|04
+3.01.01.05.01.08|Rendimentos e Ganhos de Capital Auferidos no Exterior|01012014||44|A|3.01.01.05.01|6|04
+3.01.01.05.01.09|Reversão das Perdas Estimadas Decorrentes de Teste de Recuperabilidade (Impairment)|01012014||45|A|3.01.01.05.01|6|04
+3.01.01.05.01.10|Reversão dos Saldos das Provisões|01012014||46|A|3.01.01.05.01|6|04
+3.01.01.05.01.11|Prêmios Recebidos na Emissão de Debêntures|01012014||47|A|3.01.01.05.01|6|04
+3.01.01.05.01.12|Doações e Subvenções para Custeio ou Operações|01012014||48|A|3.01.01.05.01|6|04
+3.01.01.05.01.13|Doações e Subvenções para Investimentos|01012014||49|A|3.01.01.05.01|6|04
+3.01.01.05.01.14|Receitas de Reclassificação de Ajustes de Avaliação Patrimonial|01012014||50|A|3.01.01.05.01|6|04
+3.01.01.05.01.15|Receitas de Reclassificação de Ajustes de Avaliação Patrimonial - Reflexo|01012014||51|A|3.01.01.05.01|6|04
+3.01.01.05.01.16|Receitas Financeiras Decorrentes de Ajustes ao Valor Presente|01012014||52|A|3.01.01.05.01|6|04
+3.01.01.05.01.17|Ganho Por Compra Vantajosa em Investimentos|01012014||53|A|3.01.01.05.01|6|04
+3.01.01.05.01.18|Amortização de Menos-Valia|01012014||54|A|3.01.01.05.01|6|04
+3.01.01.05.01.19|Receita de Aluguel de Bens Imóveis - Atividade Não Principal|01012014||55|A|3.01.01.05.01|6|04
+3.01.01.05.01.20|Receita de Aluguel de Bens Móveis - Atividade Não Principal|01012014||56|A|3.01.01.05.01|6|04
+3.01.01.05.01.21|Créditos Presumidos de IPI|01012014||57|A|3.01.01.05.01|6|04
+3.01.01.05.01.22|Créditos Presumidos de PIS/COFINS|01012014||58|A|3.01.01.05.01|6|04
+3.01.01.05.01.23|Outros Créditos Fiscais Presumidos|01012014||59|A|3.01.01.05.01|6|04
+3.01.01.05.01.24|Multas e Outras Vantagens Recebidas|01012014||60|A|3.01.01.05.01|6|04
+3.01.01.05.01.25|Lucros e Dividendos Derivados de Participações Societárias Avaliadas pelo Custos de Aquisição|01012014||61|A|3.01.01.05.01|6|04
+3.01.01.05.01.26|Receitas com Empréstimos de Valores Mobiliários|01012014||62|A|3.01.01.05.01|6|04
+3.01.01.05.01.27|Rendimentos Auferidos em Operações de Mútuo – Partes Relacionadas|01012014||63|A|3.01.01.05.01|6|04
+3.01.01.05.01.28|Rendimentos Auferidos em Operações de Mútuo – Partes Não Relacionadas|01012014||64|A|3.01.01.05.01|6|04
+3.01.01.05.01.29|Rendimentos Auferidos com Debêntures - Emitente Partes  Relacionadas|01012014||65|A|3.01.01.05.01|6|04
+3.01.01.05.01.30|Rendimentos Auferidos com Debêntures - Emitente Partes Não Relacionadas|01012014||66|A|3.01.01.05.01|6|04
+3.01.01.05.01.31|Rendimentos Auferidos com Títulos Públicos|01012014||67|A|3.01.01.05.01|6|04
+3.01.01.05.01.32|Juros Auferidos com Outros Ativos Financeiros Mensurados Pelo Custo Amortizado|01012014||68|A|3.01.01.05.01|6|04
+3.01.01.05.01.33|Ganho de Ajustes a Valor Justo - Instrumentos Financeiros  para Negociação - Não Hedge – Valor Justo pelo Resultado (VJPR).|01012014||69|A|3.01.01.05.01|6|04
+3.01.01.05.01.34|Ganho de Ajustes a Valor Justo  - Instrumentos Financeiros  Disponíveis para Venda - Reclassificação de Ajustes de Avaliação Patrimonial|01012014||70|A|3.01.01.05.01|6|04
+3.01.01.05.01.35|Ganho de Ajustes a Valor Justo - Instrumentos Financeiros  de Hedge  de Valor Justo|01012014||71|A|3.01.01.05.01|6|04
+3.01.01.05.01.36|Ganho de Ajustes a Valor Justo - Instrumentos Financeiros  de Hedge -  Reclassificação de Ajustes de Avaliação Patrimonial|01012014||72|A|3.01.01.05.01|6|04
+3.01.01.05.01.37|Ganho de Ajustes a Valor Justo - Item Objeto de Hedge de Valor Justo|01012014||73|A|3.01.01.05.01|6|04
+3.01.01.05.01.38|Ganho de Ajustes a Valor Justo - Propriedade para Investimento|01012014||74|A|3.01.01.05.01|6|04
+3.01.01.05.01.39|Ganho de Ajustes a Valor Justo - Ativo Biológico Consumível|01012014||75|A|3.01.01.05.01|6|04
+3.01.01.05.01.40|Ganho de Ajustes a Valor Justo - Ativo Biológico de Produção|01012014||76|A|3.01.01.05.01|6|04
+3.01.01.05.01.41|Ganho de Ajustes a Valor Justo - Ativos Não Circulantes Mantidos para Venda|01012014||77|A|3.01.01.05.01|6|04
+3.01.01.05.01.42|Ganho de Ajustes a Valor Justo - Subscrição de Capital com demais Bens|01012014||78|A|3.01.01.05.01|6|04
+3.01.01.05.01.43|Ganho de Ajustes a Valor Justo - Subscrição de Capital com Participação Societária|01012014||79|A|3.01.01.05.01|6|04
+3.01.01.05.01.44|Ganho de Ajustes a Valor Justo - Aquisição de Participação Societária em Estágios|01012014||80|A|3.01.01.05.01|6|04
+3.01.01.05.01.45|Ganho de Ajustes a Valor Justo  - Decorrente de Permuta de Ativos ou Passivos|01012014||81|A|3.01.01.05.01|6|04
+3.01.01.05.01.46|Ganho de Ajustes a Valor Justo  - Outras Operações|01012014||82|A|3.01.01.05.01|6|04
+3.01.01.05.01.99|Outras Receitas Operacionais|01012014||83|A|3.01.01.05.01|6|04
+3.01.01.07|DESPESAS OPERACIONAIS|01012014||84|S|3.01.01|4|04
+3.01.01.07.01|DESPESAS OPERACIONAIS DAS ATIVIDADES EM GERAL|01012014||85|S|3.01.01.07|5|04
+3.01.01.07.01.01|(-) Remuneração a Dirigentes e a Conselho de Administração|01012014||86|A|3.01.01.07.01|6|04
+3.01.01.07.01.02|(-) Ordenados, Salários, Gratificações e Outras Remunerações a Empregados|01012014||87|A|3.01.01.07.01|6|04
+3.01.01.07.01.03|(-) Outros Gastos com Pessoal|01012014||88|A|3.01.01.07.01|6|04
+3.01.01.07.01.04|(-) Outros Serviços Prestados  por Pessoa Física ou Jurídica|01012014||89|A|3.01.01.07.01|6|04
+3.01.01.07.01.05|(-) Encargos Sociais - Previdência Social|01012014||90|A|3.01.01.07.01|6|04
+3.01.01.07.01.06|(-) Encargos Sociais - FGTS|01012014||91|A|3.01.01.07.01|6|04
+3.01.01.07.01.07|(-) Encargos Sociais – Outros|01012014||92|A|3.01.01.07.01|6|04
+3.01.01.07.01.08|(-) Doações e Patrocínios de Caráter Cultural e Artístico (Lei no 8.313/1991)|01012014||93|A|3.01.01.07.01|6|04
+3.01.01.07.01.09|(-) Doações de Aquisição de Vale-Cultura (Lei no 12.761/2012, art. 10)|01012014||94|A|3.01.01.07.01|6|04
+3.01.01.07.01.10|(-) Doações a Instituições de Ensino e Pesquisa (Lei nº 9.249/1995, art.13, § 2º)|01012014||95|A|3.01.01.07.01|6|04
+3.01.01.07.01.11|(-) Doações a Entidades Civis|01012014||96|A|3.01.01.07.01|6|04
+3.01.01.07.01.12|(-) Outras Contribuições, Doações e Patrocínios|01012014||97|A|3.01.01.07.01|6|04
+3.01.01.07.01.13|(-) Alimentação do Trabalhador|01012014||98|A|3.01.01.07.01|6|04
+3.01.01.07.01.14|(-) PIS/PASEP|01012014||99|A|3.01.01.07.01|6|04
+3.01.01.07.01.15|(-) COFINS|01012014||100|A|3.01.01.07.01|6|04
+3.01.01.07.01.16|(-) Demais Impostos, Taxas e Contribuições, exceto IR e CSLL|01012014||101|A|3.01.01.07.01|6|04
+3.01.01.07.01.17|(-) Arrendamento Mercantil|01012014||102|A|3.01.01.07.01|6|04
+3.01.01.07.01.18|(-) Aluguéis|01012014||103|A|3.01.01.07.01|6|04
+3.01.01.07.01.19|(-) Despesas com Veículos e de Conservação de Bens e Instalações|01012014||104|A|3.01.01.07.01|6|04
+3.01.01.07.01.20|(-) Propaganda, Publicidade e Patrocínio|01012014||105|A|3.01.01.07.01|6|04
+3.01.01.07.01.21|(-) Propaganda, Publicidade e Patrocínio de Assoc. Desportivas que Mantenha Equipe de Futebol Profissional|01012014||106|A|3.01.01.07.01|6|04
+3.01.01.07.01.22|(-) Multas|01012014||107|A|3.01.01.07.01|6|04
+3.01.01.07.01.23|(-) Encargos de Depreciação|01012014||108|A|3.01.01.07.01|6|04
+3.01.01.07.01.24|(-) Encargos de Amortização|01012014||109|A|3.01.01.07.01|6|04
+3.01.01.07.01.25|(-) Perdas em Operações de Crédito|01012014||110|A|3.01.01.07.01|6|04
+3.01.01.07.01.26|(-) Provisões para Férias|01012014||111|A|3.01.01.07.01|6|04
+3.01.01.07.01.27|(-) Provisões para 13º Salário de Empregados|01012014||112|A|3.01.01.07.01|6|04
+3.01.01.07.01.28|(-) Provisão para Perda de Estoque|01012014||113|A|3.01.01.07.01|6|04
+3.01.01.07.01.29|(-) Demais Provisões|01012014||114|A|3.01.01.07.01|6|04
+3.01.01.07.01.30|(-) Gratificações a Administradores|01012014||115|A|3.01.01.07.01|6|04
+3.01.01.07.01.31|(-) Royalties e Assistência Técnica - no PAÍS|01012014||116|A|3.01.01.07.01|6|04
+3.01.01.07.01.32|(-) Royalties e Assistência Técnica - no EXTERIOR|01012014||117|A|3.01.01.07.01|6|04
+3.01.01.07.01.33|(-) Assistência Médica, Odontológica e Farmacêutica a Empregados|01012014||118|A|3.01.01.07.01|6|04
+3.01.01.07.01.34|(-) Pesquisas Científicas e Tecnológicas|01012014||119|A|3.01.01.07.01|6|04
+3.01.01.07.01.35|(-) Bens de Pequeno Valor Unitário ou de Vida Útil de até um Ano Deduzidos como Despesa|01012014||120|A|3.01.01.07.01|6|04
+3.01.01.07.01.36|(-) Despesas com Energia Elétrica|01012014||121|A|3.01.01.07.01|6|04
+3.01.01.07.01.37|(-) Despesas com Água e Esgoto|01012014||122|A|3.01.01.07.01|6|04
+3.01.01.07.01.38|(-) Despesas com Telefone e Internet|01012014||123|A|3.01.01.07.01|6|04
+3.01.01.07.01.39|(-) Despesas com Correios e Malotes|01012014||124|A|3.01.01.07.01|6|04
+3.01.01.07.01.40|(-) Despesas com Seguros|01012014||125|A|3.01.01.07.01|6|04
+3.01.01.09|OUTRAS DESPESAS OPERACIONAIS|01012014||126|S|3.01.01|4|04
+3.01.01.09.01|OUTRAS DESPESAS OPERACIONAIS DAS ATIVIDADES EM GERAL|01012014||127|S|3.01.01.09|5|04
+3.01.01.09.01.01|(-) Variações Cambiais Passivas|01012014||128|A|3.01.01.09.01|6|04
+3.01.01.09.01.02|(-) Perdas Incorridas no Mercado de Renda Variável, exceto Day-Trade|01012014||129|A|3.01.01.09.01|6|04
+3.01.01.09.01.03|(-) Perdas em Operações Day-Trade|01012014||130|A|3.01.01.09.01|6|04
+3.01.01.09.01.04|(-) Despesas de Juros sobre o Capital Próprio|01012014||131|A|3.01.01.09.01|6|04
+3.01.01.09.01.05|(-) Despesas de Remuneração de Debêntures|01012014||132|A|3.01.01.09.01|6|04
+3.01.01.09.01.06|(-) Juros com Empréstimos de Pessoas Vinculadas ou Situadas em País com Tributação favorecida|01012014||133|A|3.01.01.09.01|6|04
+3.01.01.09.01.07|(-) Despesas Financeiras Relativas à Arrendamento Mercantil Financeiro|01012014||134|A|3.01.01.09.01|6|04
+3.01.01.09.01.08|(-) Outras Despesas Financeiras|01012014||135|A|3.01.01.09.01|6|04
+3.01.01.09.01.09|(-) Resultados Negativos em Participações Societárias Avaliadas pelo Método de Equivalência Patrimonial|01012014||136|A|3.01.01.09.01|6|04
+3.01.01.09.01.10|(-) Resultados Negativos em SCP Avaliadas pelo Método de Equivalência Patrimonial|01012014||137|A|3.01.01.09.01|6|04
+3.01.01.09.01.11|(-) Perdas em Operações Realizadas no Exterior|01012014||138|A|3.01.01.09.01|6|04
+3.01.01.09.01.12|(-) Perdas Estimadas Decorrentes de Teste de Recuperabilidade (Impairment)|01012014||139|A|3.01.01.09.01|6|04
+3.01.01.09.01.13|(-) Despesas de Reclassificação de Ajustes de Avaliação Patrimonial|01012014||140|A|3.01.01.09.01|6|04
+3.01.01.09.01.14|(-) Despesas de Reclassificação de Ajustes de Avaliação Patrimonial -Reflexo|01012014||141|A|3.01.01.09.01|6|04
+3.01.01.09.01.15|(-) Despesas Financeiras Decorrentes dos Ajustes ao Valor Presente|01012014||142|A|3.01.01.09.01|6|04
+3.01.01.09.01.16|(-) Encargos de Depreciação de Bens Objeto de Leasing Financeiro|01012014||143|A|3.01.01.09.01|6|04
+3.01.01.09.01.17|(-) Encargos de Amortização de Mais - Valia|01012014||144|A|3.01.01.09.01|6|04
+3.01.01.09.01.18|(-) Aluguéis de Bens Imóveis- Locador  Parte Relacionada|01012014||145|A|3.01.01.09.01|6|04
+3.01.01.09.01.19|(-) Aluguéis de Bens Imóveis Locador  Parte Não Relacionada|01012014||146|A|3.01.01.09.01|6|04
+3.01.01.09.01.20|(-) Despesas com Empréstimos de Valores Mobiliários|01012014||147|A|3.01.01.09.01|6|04
+3.01.01.09.01.21|(-) Despesas com Corretagem e Emolumentos|01012014||148|A|3.01.01.09.01|6|04
+3.01.01.09.01.22|(-) Despesas  com Deságio na Cessão de Títulos|01012014||149|A|3.01.01.09.01|6|04
+3.01.01.09.01.23|(-) Despesas Incorridas em Operações de Mútuo – Parte Relacionada|01012014||150|A|3.01.01.09.01|6|04
+3.01.01.09.01.24|(-) Despesas Incorridas em Operações de Mútuo – Parte Não Relacionada|01012014||151|A|3.01.01.09.01|6|04
+3.01.01.09.01.25|(-) Despesas Incorridas  em Outros Passivos Financeiros Mensurados Pelo Custo Amortizado|01012014||152|A|3.01.01.09.01|6|04
+3.01.01.09.01.26|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  para Negociação - Não Hedge - Valor Justo pelo Resultado|01012014||153|A|3.01.01.09.01|6|04
+3.01.01.09.01.27|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  Disponíveis para Venda - Reclassificação de Ajustes de Avaliação Patrimonial|01012014||154|A|3.01.01.09.01|6|04
+3.01.01.09.01.28|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  de Hedge  de Valor Justo|01012014||155|A|3.01.01.09.01|6|04
+3.01.01.09.01.29|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  de Hedge -  Reclassificação de Ajustes de Avaliação Patrimonial|01012014||156|A|3.01.01.09.01|6|04
+3.01.01.09.01.30|(-) Perda de Ajuste a Valor Justo - Item Objeto de Hedge de Valor Justo|01012014||157|A|3.01.01.09.01|6|04
+3.01.01.09.01.31|(-) Perda de Ajuste a Valor Justo - Propriedade para Investimento|01012014||158|A|3.01.01.09.01|6|04
+3.01.01.09.01.32|(-) Perda de Ajuste a Valor Justo - Ativo Biológico Consumível|01012014||159|A|3.01.01.09.01|6|04
+3.01.01.09.01.33|(-) Perda de Ajuste a Valor Justo - Ativo Biológico de Produção|01012014||160|A|3.01.01.09.01|6|04
+3.01.01.09.01.34|(-) Perda de Ajuste a Valor Justo - Ativos Não Circulantes Mantidos para Venda|01012014||161|A|3.01.01.09.01|6|04
+3.01.01.09.01.35|(-) Perda de Ajuste a Valor Justo - Subscrição de Capital com demais Bens|01012014||162|A|3.01.01.09.01|6|04
+3.01.01.09.01.36|(-) Perda de Ajuste a Valor Justo - Subscrição de Capital com Participação Societária|01012014||163|A|3.01.01.09.01|6|04
+3.01.01.09.01.37|(-) Perda de Ajuste a Valor Justo - Aquisição de Participação Societária em Estágios|01012014||164|A|3.01.01.09.01|6|04
+3.01.01.09.01.38|(-) Perda de Ajuste a Valor Justo - Decorrente de Permuta de Ativos ou Passivos|01012014||165|A|3.01.01.09.01|6|04
+3.01.01.09.01.39|(-) Perda de Ajuste a Valor Justo - Outras Operações|01012014||166|A|3.01.01.09.01|6|04
+3.01.01.09.01.99|(-) Outras Despesas Operacionais|01012014||167|A|3.01.01.09.01|6|04
+3.01.01.11|OUTRAS RECEITAS, OUTRAS DESPESAS E RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012014||168|S|3.01.01|4|04
+3.01.01.11.01|OUTRAS RECEITAS, OUTRAS DESPESAS E RESULTADO DE OPERAÇÕES DESCONTINUADAS DAS ATIVIDADES EM GERAL|01012014||169|S|3.01.01.11|5|04
+3.01.01.11.01.01|Receitas na Alienação de Participações Integrantes do Ativo Circulante ou do Ativo Realizável a Longo Prazo|01012014||170|A|3.01.01.11.01|6|04
+3.01.01.11.01.02|Receitas de Alienações de Bens e Direitos do Ativo Não Circulante Investimentos, Imobilizado e Intangível|01012014||171|A|3.01.01.11.01|6|04
+3.01.01.11.01.03|Ganhos de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012014||172|A|3.01.01.11.01|6|04
+3.01.01.11.01.04|(-) Valor Contábil de Participações Integrantes do Ativo Circulante ou do Ativo Realizável a Longo Prazo Alienadas|01012014||173|A|3.01.01.11.01|6|04
+3.01.01.11.01.05|(-) Valor Contábil dos Bens e Direitos do Ativo Não Circulante Investimentos, Intangível e Imobilizado Alienados|01012014||174|A|3.01.01.11.01|6|04
+3.01.01.11.01.06|(-) Perdas de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012014||175|A|3.01.01.11.01|6|04
+3.01.01.11.01.07|Receitas de Operações Descontinuadas|01012014||176|A|3.01.01.11.01|6|04
+3.01.01.11.01.08|(-) Despesas de Operações Descontinuadas|01012014||177|A|3.01.01.11.01|6|04
+3.01.05|PARTICIPAÇÕES|01012014||178|S|3.01|3|04
+3.01.05.01|PARTICIPAÇÕES NOS LUCROS|01012014||179|S|3.01.05|4|04
+3.01.05.01.01|PARTICIPAÇÕES DE EMPREGADOS|01012014||180|S|3.01.05.01|5|04
+3.01.05.01.01.01|(-) Participações de Empregados|01012014||181|A|3.01.05.01.01|6|04
+3.01.05.01.01.02|(-) Contribuições para Assistência ou Previdência de Empregados|01012014||182|A|3.01.05.01.01|6|04
+3.01.05.01.01.98|(-) Outras Participações de Empregados|01012014||183|A|3.01.05.01.01|6|04
+3.01.05.01.03|OUTRAS PARTICIPAÇÕES|01012014||184|S|3.01.05.01|5|04
+3.01.05.01.03.01|(-) Participações de Administradores e Partes Beneficiárias|01012014||185|A|3.01.05.01.03|6|04
+3.01.05.01.03.02|(-) Participações de Debêntures|01012014||186|A|3.01.05.01.03|6|04
+3.01.05.01.03.98|(-) Outras Participações|01012014||187|A|3.01.05.01.03|6|04
+3.02|PROVISÃO PARA CSLL E IRPJ|01012014||188|S|3|2|04
+3.02.01|PROVISÃO PARA CSLL E IRPJ|01012014||189|S|3.02|3|04
+3.02.01.01|PROVISÃO PARA CSLL E IRPJ|01012014||190|S|3.02.01|4|04
+3.02.01.01.01|PROVISÃO PARA CSLL E IRPJ|01012014||191|S|3.02.01.01|5|04
+3.02.01.01.01.01|(-) Provisão para Contribuição Social sobre o Lucro Líquido (Atividade Geral)|01012014||192|A|3.02.01.01.01|6|04
+3.02.01.01.01.02|(-) Provisão para Imposto de Renda - Pessoa Jurídica (Atividade Geral e Rural)|01012014||193|A|3.02.01.01.01|6|04
+3.11|RESULTADO LÍQUIDO DO PERÍODO ANTES DO IRPJ E DA CSLL - ATIVIDADE RURAL|01012014||194|S|3|2|04
+3.11.01|RESULTADO OPERACIONAL DA ATIVIDADE RURAL|01012014||195|S|3.11|3|04
+3.11.01.01|RECEITA OPERACIONAL LÍQUIDA DA ATIVIDADE RURAL|01012014||196|S|3.11.01|4|04
+3.11.01.01.01|RECEITA BRUTA DA ATIVIDADE RURAL|01012014||197|S|3.11.01.01|5|04
+3.11.01.01.01.01|Receita da Atividade Rural - Exportação Direta|01012014||198|A|3.11.01.01.01|6|04
+3.11.01.01.01.02|Receita da Atvidade Rural - Venda a Comercial Exportadora com Fim Específico de Exportação|01012014||199|A|3.11.01.01.01|6|04
+3.11.01.01.01.03|Receita da Atividade Rural - Mercado Interno|01012014||200|A|3.11.01.01.01|6|04
+3.11.01.01.02|DEDUÇÕES DA RECEITA BRUTA|01012014||201|S|3.11.01.01|5|04
+3.11.01.01.02.01|(-) Vendas Canceladas e Devoluções de Vendas|01012014||202|A|3.11.01.01.02|6|04
+3.11.01.01.02.02|(-) Descontos Incondicionais e Abatimentos|01012014||203|A|3.11.01.01.02|6|04
+3.11.01.01.02.03|(-) ICMS|01012014||204|A|3.11.01.01.02|6|04
+3.11.01.01.02.04|(-) Cofins Sobre Receita Bruta|01012014||205|A|3.11.01.01.02|6|04
+3.11.01.01.02.05|(-) PIS/Pasep Sobre Receita Bruta|01012014||206|A|3.11.01.01.02|6|04
+3.11.01.01.02.06|(-) ISS|01012014||207|A|3.11.01.01.02|6|04
+3.11.01.01.02.09|(-) Demais Impostos e Contribuições Incidentes sobre Vendas e Serviços|01012014||208|A|3.11.01.01.02|6|04
+3.11.01.01.02.10|(-) Ajuste a Valor Presente sobre Receita Bruta|01012014||209|A|3.11.01.01.02|6|04
+3.11.01.03|CUSTO DOS BENS E PRODUTOS|01012014||210|S|3.11.01|4|04
+3.11.01.03.01|CUSTO DOS BENS E PRODUTOS VENDIDOS DA ATIVIDADE RURAL|01012014||211|S|3.11.01.03|5|04
+3.11.01.03.01.01|(-) Custo dos Bens e Produtos Vendidos da Atividade Rural|01012014||212|A|3.11.01.03.01|6|04
+3.11.01.05|OUTRAS RECEITAS OPERACIONAIS|01012014||213|S|3.11.01|4|04
+3.11.01.05.01|OUTRAS RECEITAS OPERACIONAIS DA ATIVIDADE RURAL|01012014||214|S|3.11.01.05|5|04
+3.11.01.05.01.01|Variações Cambiais Ativas|01012014||215|A|3.11.01.05.01|6|04
+3.11.01.05.01.02|Ganhos Auferidos no Mercado de Renda Variável, exceto Day-Trade|01012014||216|A|3.11.01.05.01|6|04
+3.11.01.05.01.03|Ganhos em Operações Day-Trade|01012014||217|A|3.11.01.05.01|6|04
+3.11.01.05.01.04|Receitas de Juros sobre o Capital Próprio|01012014||218|A|3.11.01.05.01|6|04
+3.11.01.05.01.05|Outras Receitas Financeiras|01012014||219|A|3.11.01.05.01|6|04
+3.11.01.05.01.06|Resultados Positivos em Participações Societárias Avaliadas pelo Método de Equivalência Patrimonial|01012014||220|A|3.11.01.05.01|6|04
+3.11.01.05.01.07|Resultados Positivos em SCP Avaliadas pelo Método de Equivalência Patrimonial|01012014||221|A|3.11.01.05.01|6|04
+3.11.01.05.01.08|Rendimentos e Ganhos de Capital Auferidos no Exterior|01012014||222|A|3.11.01.05.01|6|04
+3.11.01.05.01.09|Reversão das Perdas Estimadas Decorrentes de Teste de Recuperabilidade (Impairment)|01012014||223|A|3.11.01.05.01|6|04
+3.11.01.05.01.10|Reversão dos Saldos das Provisões|01012014||224|A|3.11.01.05.01|6|04
+3.11.01.05.01.11|Prêmios Recebidos na Emissão de Debêntures|01012014||225|A|3.11.01.05.01|6|04
+3.11.01.05.01.12|Doações e Subvenções para Custeio ou Operações|01012014||226|A|3.11.01.05.01|6|04
+3.11.01.05.01.13|Receitas de Reclassificação de Ajustes de Avaliação Patrimonial|01012014||227|A|3.11.01.05.01|6|04
+3.11.01.05.01.14|Receitas de Reclassificação de Ajustes de Avaliação Patrimonial - Reflexo|01012014||228|A|3.11.01.05.01|6|04
+3.11.01.05.01.16|Receitas Financeiras Decorrentes de Ajustes ao Valor Presente|01012014||229|A|3.11.01.05.01|6|04
+3.11.01.05.01.17|Ganho Por Compra Vantajosa em Investimentos|01012014||230|A|3.11.01.05.01|6|04
+3.11.01.05.01.18|Amortização de Menos-Valia|01012014||231|A|3.11.01.05.01|6|04
+3.11.01.05.01.19|Receita de Aluguel de Bens Imóveis - Atividade Não Principal|01012014||232|A|3.11.01.05.01|6|04
+3.11.01.05.01.20|Receita de Aluguel de Bens Móveis - Atividade Não Principal|01012014||233|A|3.11.01.05.01|6|04
+3.11.01.05.01.21|Créditos Presumidos de IPI|01012014||234|A|3.11.01.05.01|6|04
+3.11.01.05.01.22|Créditos Presumidos de PIS/COFINS|01012014||235|A|3.11.01.05.01|6|04
+3.11.01.05.01.23|Outros Créditos Fiscais Presumidos|01012014||236|A|3.11.01.05.01|6|04
+3.11.01.05.01.24|Multas e Outras Vantagens Recebidas|01012014||237|A|3.11.01.05.01|6|04
+3.11.01.05.01.25|Lucros e Dividendos Derivados de Participações Societárias Avaliadas pelo Custos de Aquisição|01012014||238|A|3.11.01.05.01|6|04
+3.11.01.05.01.26|Receitas com Empréstimos de Valores Mobiliários|01012014||239|A|3.11.01.05.01|6|04
+3.11.01.05.01.27|Rendimentos Auferidos em Operações de Mútuo – Partes Relacionadas|01012014||240|A|3.11.01.05.01|6|04
+3.11.01.05.01.28|Rendimentos Auferidos em Operações de Mútuo – Partes Não Relacionadas|01012014||241|A|3.11.01.05.01|6|04
+3.11.01.05.01.29|Rendimentos Auferidos com Debêntures - Emitente Partes  Relacionadas|01012014||242|A|3.11.01.05.01|6|04
+3.11.01.05.01.30|Rendimentos Auferidos com Debêntures - Emitente Partes Não Relacionadas|01012014||243|A|3.11.01.05.01|6|04
+3.11.01.05.01.31|Rendimentos Auferidos com Títulos Públicos|01012014||244|A|3.11.01.05.01|6|04
+3.11.01.05.01.32|Juros Auferidos com Outros Ativos Financeiros Mensurados Pelo Custo Amortizado|01012014||245|A|3.11.01.05.01|6|04
+3.11.01.05.01.33|Ganho de Ajustes a Valor Justo - Instrumentos Financeiros  para Negociação - Não Hedge – Valor Justo pelo Resultado (VJPR).|01012014||246|A|3.11.01.05.01|6|04
+3.11.01.05.01.34|Ganho de Ajustes a Valor Justo  - Instrumentos Financeiros  Disponíveis para Venda - Reclassificação de Ajustes de Avaliação Patrimonial|01012014||247|A|3.11.01.05.01|6|04
+3.11.01.05.01.35|Ganho de Ajustes a Valor Justo - Instrumentos Financeiros  de Hedge  de Valor Justo|01012014||248|A|3.11.01.05.01|6|04
+3.11.01.05.01.36|Ganho de Ajustes a Valor Justo - Instrumentos Financeiros  de Hedge -  Reclassificação de Ajustes de Avaliação Patrimonial|01012014||249|A|3.11.01.05.01|6|04
+3.11.01.05.01.37|Ganho de Ajustes a Valor Justo - Item Objeto de Hedge de Valor Justo|01012014||250|A|3.11.01.05.01|6|04
+3.11.01.05.01.38|Ganho de Ajustes a Valor Justo - Propriedade para Investimento|01012014||251|A|3.11.01.05.01|6|04
+3.11.01.05.01.39|Ganho de Ajustes a Valor Justo - Ativo Biológico Consumível|01012014||252|A|3.11.01.05.01|6|04
+3.11.01.05.01.40|Ganho de Ajustes a Valor Justo - Ativo Biológico de Produção|01012014||253|A|3.11.01.05.01|6|04
+3.11.01.05.01.41|Ganho de Ajustes a Valor Justo - Ativos Não Circulantes Mantidos para Venda|01012014||254|A|3.11.01.05.01|6|04
+3.11.01.05.01.42|Ganho de Ajustes a Valor Justo - Subscrição de Capital com demais Bens|01012014||255|A|3.11.01.05.01|6|04
+3.11.01.05.01.43|Ganho de Ajustes a Valor Justo - Subscrição de Capital com Participação Societária|01012014||256|A|3.11.01.05.01|6|04
+3.11.01.05.01.44|Ganho de Ajustes a Valor Justo - Aquisição de Participação Societária em Estágios|01012014||257|A|3.11.01.05.01|6|04
+3.11.01.05.01.45|Ganho de Ajustes a Valor Justo  - Decorrente de Permuta de Ativos ou Passivos|01012014||258|A|3.11.01.05.01|6|04
+3.11.01.05.01.46|Ganho de Ajustes a Valor Justo  - Outras Operações|01012014||259|A|3.11.01.05.01|6|04
+3.11.01.05.01.99|Outras Receitas Operacionais|01012014||260|A|3.11.01.05.01|6|04
+3.11.01.07|DESPESAS OPERACIONAIS|01012014||261|S|3.11.01|4|04
+3.11.01.07.01|DESPESAS OPERACIONAIS DA ATIVIDADE RURAL|01012014||262|S|3.11.01.07|5|04
+3.11.01.07.01.01|(-) Remuneração a Dirigentes e a Conselho de Administração|01012014||263|A|3.11.01.07.01|6|04
+3.11.01.07.01.02|(-) Ordenados, Salários, Gratificações e Outras Remunerações a Empregados|01012014||264|A|3.11.01.07.01|6|04
+3.11.01.07.01.03|(-) Outros Gastos com Pessoal|01012014||265|A|3.11.01.07.01|6|04
+3.11.01.07.01.04|(-) Outros Serviços Prestados  por Pessoa Física ou Jurídica|01012014||266|A|3.11.01.07.01|6|04
+3.11.01.07.01.05|(-) Encargos Sociais - Previdência Social|01012014||267|A|3.11.01.07.01|6|04
+3.11.01.07.01.06|(-) Encargos Sociais - FGTS|01012014||268|A|3.11.01.07.01|6|04
+3.11.01.07.01.07|(-) Encargos Sociais – Outros|01012014||269|A|3.11.01.07.01|6|04
+3.11.01.07.01.08|(-) Doações e Patrocínios de Caráter Cultural e Artístico (Lei no 8.313/1991)|01012014||270|A|3.11.01.07.01|6|04
+3.11.01.07.01.09|(-) Doações de Aquisição de Vale-Cultura (Lei no 12.761/2012, art. 10)|01012014||271|A|3.11.01.07.01|6|04
+3.11.01.07.01.10|(-) Doações a Instituições de Ensino e Pesquisa (Lei nº 9.249/1995, art.13, § 2º)|01012014||272|A|3.11.01.07.01|6|04
+3.11.01.07.01.11|(-) Doações a Entidades Civis|01012014||273|A|3.11.01.07.01|6|04
+3.11.01.07.01.12|(-) Outras Contribuições, Doações e Patrocínios|01012014||274|A|3.11.01.07.01|6|04
+3.11.01.07.01.13|(-) Alimentação do Trabalhador|01012014||275|A|3.11.01.07.01|6|04
+3.11.01.07.01.14|(-) PIS/PASEP|01012014||276|A|3.11.01.07.01|6|04
+3.11.01.07.01.15|(-) COFINS|01012014||277|A|3.11.01.07.01|6|04
+3.11.01.07.01.16|(-) Demais Impostos, Taxas e Contribuições, exceto IR e CSLL|01012014||278|A|3.11.01.07.01|6|04
+3.11.01.07.01.17|(-) Arrendamento Mercantil|01012014||279|A|3.11.01.07.01|6|04
+3.11.01.07.01.18|(-) Aluguéis|01012014||280|A|3.11.01.07.01|6|04
+3.11.01.07.01.19|(-) Despesas com Veículos e de Conservação de Bens e Instalações|01012014||281|A|3.11.01.07.01|6|04
+3.11.01.07.01.20|(-) Propaganda, Publicidade e Patrocínio|01012014||282|A|3.11.01.07.01|6|04
+3.11.01.07.01.21|(-) Propaganda, Publicidade e Patrocínio de Assoc. Desportivas que Mantenha Equipe de Futebol Profissional|01012014||283|A|3.11.01.07.01|6|04
+3.11.01.07.01.22|(-) Multas|01012014||284|A|3.11.01.07.01|6|04
+3.11.01.07.01.23|(-) Encargos de Depreciação|01012014||285|A|3.11.01.07.01|6|04
+3.11.01.07.01.24|(-) Encargos de Amortização|01012014||286|A|3.11.01.07.01|6|04
+3.11.01.07.01.25|(-) Perdas em Operações de Crédito|01012014||287|A|3.11.01.07.01|6|04
+3.11.01.07.01.26|(-) Provisões para Férias|01012014||288|A|3.11.01.07.01|6|04
+3.11.01.07.01.27|(-) Provisões para 13º Salário de Empregados|01012014||289|A|3.11.01.07.01|6|04
+3.11.01.07.01.28|(-) Provisão para Perda de Estoque|01012014||290|A|3.11.01.07.01|6|04
+3.11.01.07.01.29|(-) Demais Provisões|01012014||291|A|3.11.01.07.01|6|04
+3.11.01.07.01.30|(-) Gratificações a Administradores|01012014||292|A|3.11.01.07.01|6|04
+3.11.01.07.01.31|(-) Royalties e Assistência Técnica - no PAÍS|01012014||293|A|3.11.01.07.01|6|04
+3.11.01.07.01.32|(-) Royalties e Assistência Técnica - no EXTERIOR|01012014||294|A|3.11.01.07.01|6|04
+3.11.01.07.01.33|(-) Assistência Médica, Odontológica e Farmacêutica a Empregados|01012014||295|A|3.11.01.07.01|6|04
+3.11.01.07.01.34|(-) Pesquisas Científicas e Tecnológicas|01012014||296|A|3.11.01.07.01|6|04
+3.11.01.07.01.35|(-) Bens de Pequeno Valor Unitário ou de Vida Útil de até um Ano Deduzidos como Despesa|01012014||297|A|3.11.01.07.01|6|04
+3.11.01.07.01.36|(-) Despesas com Energia Elétrica|01012014||298|A|3.11.01.07.01|6|04
+3.11.01.07.01.37|(-) Despesas com Água e Esgoto|01012014||299|A|3.11.01.07.01|6|04
+3.11.01.07.01.38|(-) Despesas com Telefone e Internet|01012014||300|A|3.11.01.07.01|6|04
+3.11.01.07.01.39|(-) Despesas com Correios e Malotes|01012014||301|A|3.11.01.07.01|6|04
+3.11.01.07.01.40|(-) Despesas com Seguros|01012014||302|A|3.11.01.07.01|6|04
+3.11.01.09|OUTRAS DESPESAS OPERACIONAIS|01012014||303|S|3.11.01|4|04
+3.11.01.09.01|OUTRAS DESPESAS OPERACIONAIS DA ATIVIDADE RURAL|01012014||304|S|3.11.01.09|5|04
+3.11.01.09.01.01|(-) Variações Cambiais Passivas|01012014||305|A|3.11.01.09.01|6|04
+3.11.01.09.01.02|(-) Perdas Incorridas no Mercado de Renda Variável, exceto Day-Trade|01012014||306|A|3.11.01.09.01|6|04
+3.11.01.09.01.03|(-) Perdas em Operações Day-Trade|01012014||307|A|3.11.01.09.01|6|04
+3.11.01.09.01.04|(-) Despesas de Juros sobre o Capital Próprio|01012014||308|A|3.11.01.09.01|6|04
+3.11.01.09.01.05|(-) Despesas de Remuneração de Debêntures|01012014||309|A|3.11.01.09.01|6|04
+3.11.01.09.01.06|(-) Juros com Empréstimos de Pessoas Vinculadas ou Situadas em País com Tributação favorecida|01012014||310|A|3.11.01.09.01|6|04
+3.11.01.09.01.07|(-) Despesas Financeiras Relativas à Arrendamento Mercantil Financeiro|01012014||311|A|3.11.01.09.01|6|04
+3.11.01.09.01.08|(-) Outras Despesas Financeiras|01012014||312|A|3.11.01.09.01|6|04
+3.11.01.09.01.09|(-) Resultados Negativos em Participações Societárias Avaliadas pelo Método de Equivalência Patrimonial|01012014||313|A|3.11.01.09.01|6|04
+3.11.01.09.01.10|(-) Resultados Negativos em SCP Avaliadas pelo Método de Equivalência Patrimonial|01012014||314|A|3.11.01.09.01|6|04
+3.11.01.09.01.11|(-) Perdas em Operações Realizadas no Exterior|01012014||315|A|3.11.01.09.01|6|04
+3.11.01.09.01.12|(-) Perdas Estimadas Decorrentes de Teste de Recuperabilidade (Impairment)|01012014||316|A|3.11.01.09.01|6|04
+3.11.01.09.01.13|(-) Despesas de Reclassificação de Ajustes de Avaliação Patrimonial|01012014||317|A|3.11.01.09.01|6|04
+3.11.01.09.01.14|(-) Despesas de Reclassificação de Ajustes de Avaliação Patrimonial -Reflexo|01012014||318|A|3.11.01.09.01|6|04
+3.11.01.09.01.15|(-) Despesas Financeiras Decorrentes dos Ajustes ao Valor Presente|01012014||319|A|3.11.01.09.01|6|04
+3.11.01.09.01.16|(-) Encargos de Depreciação de Bens Objeto de Leasing Financeiro|01012014||320|A|3.11.01.09.01|6|04
+3.11.01.09.01.17|(-) Encargos de Amortização de Mais - Valia|01012014||321|A|3.11.01.09.01|6|04
+3.11.01.09.01.18|(-) Aluguéis de Bens Imóveis- Locador  Parte Relacionada|01012014||322|A|3.11.01.09.01|6|04
+3.11.01.09.01.19|(-) Aluguéis de Bens Imóveis Locador  Parte Não Relacionada|01012014||323|A|3.11.01.09.01|6|04
+3.11.01.09.01.20|(-) Despesas com Empréstimos de Valores Mobiliários|01012014||324|A|3.11.01.09.01|6|04
+3.11.01.09.01.21|(-) Despesas com Corretagem e Emolumentos|01012014||325|A|3.11.01.09.01|6|04
+3.11.01.09.01.22|(-) Despesas  com Deságio na Cessão de Títulos|01012014||326|A|3.11.01.09.01|6|04
+3.11.01.09.01.23|(-) Despesas Incorridas em Operações de Mútuo – Parte Relacionada|01012014||327|A|3.11.01.09.01|6|04
+3.11.01.09.01.24|(-) Despesas Incorridas em Operações de Mútuo – Parte Não Relacionada|01012014||328|A|3.11.01.09.01|6|04
+3.11.01.09.01.25|(-) Despesas Incorridas  em Outros Passivos Financeiros Mensurados Pelo Custo Amortizado|01012014||329|A|3.11.01.09.01|6|04
+3.11.01.09.01.26|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  para Negociação - Não Hedge - Valor Justo pelo Resultado|01012014||330|A|3.11.01.09.01|6|04
+3.11.01.09.01.27|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  Disponíveis para Venda - Reclassificação de Ajustes de Avaliação Patrimonial|01012014||331|A|3.11.01.09.01|6|04
+3.11.01.09.01.28|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  de Hedge  de Valor Justo|01012014||332|A|3.11.01.09.01|6|04
+3.11.01.09.01.29|(-) Perda de Ajuste a Valor Justo - Instrumentos Financeiros  de Hedge -  Reclassificação de Ajustes de Avaliação Patrimonial|01012014||333|A|3.11.01.09.01|6|04
+3.11.01.09.01.30|(-) Perda de Ajuste a Valor Justo - Item Objeto de Hedge de Valor Justo|01012014||334|A|3.11.01.09.01|6|04
+3.11.01.09.01.31|(-) Perda de Ajuste a Valor Justo - Propriedade para Investimento|01012014||335|A|3.11.01.09.01|6|04
+3.11.01.09.01.32|(-) Perda de Ajuste a Valor Justo - Ativo Biológico Consumível|01012014||336|A|3.11.01.09.01|6|04
+3.11.01.09.01.33|(-) Perda de Ajuste a Valor Justo - Ativo Biológico de Produção|01012014||337|A|3.11.01.09.01|6|04
+3.11.01.09.01.34|(-) Perda de Ajuste a Valor Justo - Ativos Não Circulantes Mantidos para Venda|01012014||338|A|3.11.01.09.01|6|04
+3.11.01.09.01.35|(-) Perda de Ajuste a Valor Justo - Subscrição de Capital com demais Bens|01012014||339|A|3.11.01.09.01|6|04
+3.11.01.09.01.36|(-) Perda de Ajuste a Valor Justo - Subscrição de Capital com Participação Societária|01012014||340|A|3.11.01.09.01|6|04
+3.11.01.09.01.37|(-) Perda de Ajuste a Valor Justo - Aquisição de Participação Societária em Estágios|01012014||341|A|3.11.01.09.01|6|04
+3.11.01.09.01.38|(-) Perda de Ajuste a Valor Justo - Decorrente de Permuta de Ativos ou Passivos|01012014||342|A|3.11.01.09.01|6|04
+3.11.01.09.01.39|(-) Perda de Ajuste a Valor Justo - Outras Operações|01012014||343|A|3.11.01.09.01|6|04
+3.11.01.09.01.99|(-) Outras Despesas Operacionais|01012014||344|A|3.11.01.09.01|6|04
+3.11.01.11|OUTRAS RECEITAS, OUTRAS DESPESAS E RESULTADO DE OPERAÇÕES DESCONTINUADAS|01012014||345|S|3.11.01|4|04
+3.11.01.11.01|OUTRAS RECEITAS, OUTRAS DESPESAS E RESULTADO DE OPERAÇÕES DESCONTINUADAS DAS ATIVIDADES EM GERAL|01012014||346|S|3.11.01.11|5|04
+3.11.01.11.01.01|Receitas na Alienação de Participações Integrantes do Ativo Circulante ou do Ativo Realizável a Longo Prazo|01012014||347|A|3.11.01.11.01|6|04
+3.11.01.11.01.02|Receitas de Alienações de Bens e Direitos do Ativo Não Circulante Investimentos, Imobilizado e Intangível|01012014||348|A|3.11.01.11.01|6|04
+3.11.01.11.01.03|Ganhos de Capital por Variação Percentual em Participação Societária Avaliada pelo Patrimônio Líquido|01012014||349|A|3.11.01.11.01|6|04
+3.11.01.11.01.04|(-) Valor Contábil de Participações Integrantes do Ativo Circulante ou do Ativo Realizável a Longo Prazo Alienadas|01012014||350|A|3.11.01.11.01|6|04
+3.11.01.11.01.05|(-) Valor Contábil dos Bens e Direitos do Ativo Não Circulante Investimentos, Intangível e Imobilizado Alienados|01012014||351|A|3.11.01.11.01|6|04
+3.11.01.11.01.06|(-) Perdas de Capital por Variação Percentual em Participação Societária Avaliada pelo Patr.Líquido|01012014||352|A|3.11.01.11.01|6|04
+3.11.01.11.01.07|Receitas de Operações Descontinuadas|01012014||353|A|3.11.01.11.01|6|04
+3.11.01.11.01.08|(-) Despesas de Operações Descontinuadas|01012014||354|A|3.11.01.11.01|6|04
+3.11.05|PARTICIPAÇÕES|01012014||355|S|3.11|3|04
+3.11.05.01|PARTICIPAÇÕES NOS LUCROS|01012014||356|S|3.11.05|4|04
+3.11.05.01.01|PARTICIPAÇÕES DE EMPREGADOS|01012014||357|S|3.11.05.01|5|04
+3.11.05.01.01.01|(-) Participações de Empregados|01012014||358|A|3.11.05.01.01|6|04
+3.11.05.01.01.02|(-) Contribuições para Assistência ou Previdência de Empregados|01012014||359|A|3.11.05.01.01|6|04
+3.11.05.01.01.99|(-) Outras Participações de Empregados|01012014||360|A|3.11.05.01.01|6|04
+3.11.05.01.03|OUTRAS PARTICIPAÇÕES|01012014||361|S|3.11.05.01|5|04
+3.11.05.01.03.01|(-) Participações de Administradores e Partes Beneficiárias|01012014||362|A|3.11.05.01.03|6|04
+3.11.05.01.03.02|(-) Participações de Debêntures|01012014||363|A|3.11.05.01.03|6|04
+3.11.05.01.03.99|(-) Outras Participações|01012014||364|A|3.11.05.01.03|6|04
+3.12|PROVISÃO PARA CSLL (ATIVIDADE RURAL)|01012014||365|S|3|2|04
+3.12.01|PROVISÃO PARA CSLL (ATIVIDADE RURAL)|01012014||366|S|3.12|3|04
+3.12.01.01|PROVISÃO PARA CSLL (ATIVIDADE RURAL)|01012014||367|S|3.12.01|4|04
+3.12.01.01.01|PROVISÃO PARA CSLL (ATIVIDADE RURAL)|01012014||368|S|3.12.01.01|5|04
+3.12.01.01.01.01|Contribuição Social sobre o Lucro Líquido (Atividade Rural)|01012014||369|A|3.12.01.01.01|6|04

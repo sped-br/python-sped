@@ -1,0 +1,214 @@
+versão=1 CODIGO, DESCRICAO, DT_INI, DT_FIM, ORDEM, TIPO, COD_SUP, NIVEL, NATUREZA
+4|SUPERÁVIT/DÉFICIT LÍQUIDO DO EXERCÍCIO|01012014||1|S||1|04
+4.01|RECEITAS|01012014||2|S|4|2|04
+4.01.01|RECEITA DAS ATIVIDADES|01012014||3|S|4.01|3|04
+4.01.01.01|RECEITA DE SUBVENÇÕES|01012014||4|S|4.01.01|4|04
+4.01.01.01.01|Subvenções Governamentais - União|01012014||5|A|4.01.01.01|5|04
+4.01.01.01.02|Subvenções Governamentais - Estados|01012014||6|A|4.01.01.01|5|04
+4.01.01.01.03|Subvenções Governamentais - Municípios|01012014||7|A|4.01.01.01|5|04
+4.01.01.01.04|Subvenções Não Governamentais de Pessoas Jurídicas|01012014||8|A|4.01.01.01|5|04
+4.01.01.01.05|Subvenções Não Governamentais de Pessoas Físicas|01012014||9|A|4.01.01.01|5|04
+4.01.01.02|RECEITA DE DOAÇÕES|01012014||10|S|4.01.01|4|04
+4.01.01.02.01|Doações Governamentais - União|01012014||11|A|4.01.01.02|5|04
+4.01.01.02.02|Doações Governamentais - Estados|01012014||12|A|4.01.01.02|5|04
+4.01.01.02.03|Doações Governamentais - Municípios|01012014||13|A|4.01.01.02|5|04
+4.01.01.02.04|Doações Não Governamentais de Pessoas Jurídicas|01012014||14|A|4.01.01.02|5|04
+4.01.01.02.05|Doações Não Governamentais de Pessoas Físicas|01012014||15|A|4.01.01.02|5|04
+4.01.01.03|RECEITA DE CONTRIBUIÇÕES|01012014||16|S|4.01.01|4|04
+4.01.01.03.01|Contribuições Governamentais - União|01012014||17|A|4.01.01.03|5|04
+4.01.01.03.02|Contribuições Governamentais - Estados|01012014||18|A|4.01.01.03|5|04
+4.01.01.03.03|Contribuições Governamentais - Municípios|01012014||19|A|4.01.01.03|5|04
+4.01.01.03.04|Contribuições Não Governamentais de Pessoas Jurídicas|01012014||20|A|4.01.01.03|5|04
+4.01.01.03.05|Contribuições Não Governamentais de Pessoas Físicas|01012014||21|A|4.01.01.03|5|04
+4.01.01.05|RECEITAS DA GRATUIDADE E DO TRABALHO VOLUNTÁRIO|01012014||22|S|4.01.01|4|04
+4.01.01.05.01|Receitas da Gratuidade|01012014||23|A|4.01.01.05|5|04
+4.01.01.05.09|(-) Custos e Despesas da Gratuidade|01012014||24|A|4.01.01.05|5|04
+4.01.01.05.11|Receitas do Trabalho Voluntário|01012014||25|A|4.01.01.05|5|04
+4.01.01.05.19|(-) Custos e Despesas do Trabalho Voluntário|01012014||26|A|4.01.01.05|5|04
+4.01.01.07|RECEITA DA VENDA DE PRODUTOS/MERCADORIAS/SERVIÇOS|01012014||27|S|4.01.01|4|04
+4.01.01.07.01|VENDA DE PRODUTOS|01012014||28|S|4.01.01.07|5|04
+4.01.01.07.01.01|Da Atividade de Educação|01012014||29|A|4.01.01.07.01|6|04
+4.01.01.07.01.02|Da Atividade de Saúde|01012014||30|A|4.01.01.07.01|6|04
+4.01.01.07.01.03|Da Atividade de Assistência Social|01012014||31|A|4.01.01.07.01|6|04
+4.01.01.07.02|VENDA DE MERCADORIAS|01012014||32|S|4.01.01.07|5|04
+4.01.01.07.02.01|Da Atividade de Educação|01012014||33|A|4.01.01.07.02|6|04
+4.01.01.07.02.02|Da Atividade de Saúde|01012014||34|A|4.01.01.07.02|6|04
+4.01.01.07.02.03|Da Atividade de Assistência Social|01012014||35|A|4.01.01.07.02|6|04
+4.01.01.07.03|VENDA DE SERVIÇOS|01012014||36|S|4.01.01.07|5|04
+4.01.01.07.03.01|RECEITA DE PRESTAÇÃO DE SERVIÇOS EDUCACIONAIS - EDUCAÇÃO BÁSICA|01012014||37|S|4.01.01.07.03|6|04
+4.01.01.07.03.01.01|Receita de mensalidades (alunos pagantes)|01012014||38|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.02|Receita de mensalidades revertidas como bolsas de estudo educação básica  (bolsistas integrais – Funcionários e seus dependentes)|01012014||39|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.03|Receita de mensalidades revertidas como bolsas de estudo (bolsistas integrais – critério de seleção Lei 12.101/2009)|01012014||40|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.04|Receita de mensalidades revertidas como bolsas de estudo (bolsistas parciais 50% – critério de seleção Lei 12.101/2009)|01012014||41|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.05|Receita de mensalidades revertidas como bolsas de estudo (bolsistas parciais – beneficiários previstos pelo art. 31 do Decreto nº 7.237/2010)|01012014||42|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.06|Receita de mensalidades revertidas como bolsas de estudo educação básica (bolsistas integrais – beneficiários não carentes)|01012014||43|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.07|Receita de mensalidades revertidas como bolsas de estudo educação básica (bolsistas parciais 50% – beneficiários não carentes)|01012014||44|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.08|Receita de mensalidades revertidas como bolsas de estudo educação básica (outros casos não previstos)|01012014||45|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.01.19|Serviços Educacionais – Outros|01012014||46|A|4.01.01.07.03.01|7|04
+4.01.01.07.03.02|RECEITA DE PRESTAÇÃO DE SERVIÇOS EDUCACIONAIS – EDUCAÇÃO SUPERIOR – GRADUAÇÃO|01012014||47|S|4.01.01.07.03|6|04
+4.01.01.07.03.02.01|Receita de mensalidades (alunos pagantes)|01012014||48|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.02|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas integrais PROUNI – Funcionários e seus dependentes)|01012014||49|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.03|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas parciais 50% PROUNI – Funcionários e seus dependentes)|01012014||50|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.04|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas parciais 25% PROUNI – Funcionários e seus dependentes)|01012014||51|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.05|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas integrais PROUNI – beneficiários critério de seleção Lei 11.096/2005)|01012014||52|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.06|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas parciais 50% PROUNI – beneficiários critério de seleção Lei 11.096/2005)|01012014||53|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.07|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas parciais 25% PROUNI – beneficiários critério de seleção Lei 11.096/2005)|01012014||54|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.08|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas integrais – Bolsas da própria instituição)|01012014||55|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.09|Receita de mensalidades revertidas como bolsas de estudo graduação (bolsistas parciais 50% – Bolsas da própria instituição)|01012014||56|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.10|Receita de mensalidades revertidas como bolsas de estudo graduação (outros casos não previstos)|01012014||57|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.02.19|Serviços Educacionais – Outros|01012014||58|A|4.01.01.07.03.02|7|04
+4.01.01.07.03.03|RECEITA DE PRESTAÇÃO DE SERVIÇOS EDUCACIONAIS – EDUCAÇÃO SUPERIOR – PÓS-GRADUAÇÃO|01012014||59|S|4.01.01.07.03|6|04
+4.01.01.07.03.03.01|Receita de mensalidades (alunos pagantes)|01012014||60|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.02|Receita de mensalidades revertidas como bolsas de estudo pós-graduação (bolsistas integrais – Funcionários e seus dependentes)|01012014||61|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.03|Receita de mensalidades revertidas como bolsas de estudo pós-graduação (bolsistas parciais – Funcionários e seus dependentes)|01012014||62|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.04|Receita de mensalidades revertidas como bolsas de estudo pós-graduação (bolsistas integrais – Bolsas da própria instituição)|01012014||63|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.05|Receita de mensalidades revertidas como bolsas de estudo pós-graduação (bolsistas parciais – Bolsas da própria instituição)|01012014||64|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.06|Receita de mensalidades revertidas como bolsas de estudo pós-graduação (outros casos não previstos)|01012014||65|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.07|Parcerias com outras entidades sem fins lucrativos (Art. 3º §§ 3º e 4º do Dec 7.237/2010)|01012014||66|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.03.19|Serviços Educacionais – Outros|01012014||67|A|4.01.01.07.03.03|7|04
+4.01.01.07.03.04|RECEITA DE PRESTAÇÃO DE SERVIÇOS DE SAÚDE|01012014||68|S|4.01.01.07.03|6|04
+4.01.01.07.03.04.01|Pacientes Particulares|01012014||69|A|4.01.01.07.03.04|7|04
+4.01.01.07.03.04.02|Convênios - SUS|01012014||70|A|4.01.01.07.03.04|7|04
+4.01.01.07.03.04.03|Convênios - Outros|01012014||71|A|4.01.01.07.03.04|7|04
+4.01.01.07.03.04.04|Parcerias com outras entidades sem fins lucrativos (Art. 3º §§ 3º e 4º do Dec 7.237/2010)|01012014||72|A|4.01.01.07.03.04|7|04
+4.01.01.07.03.04.09|Serviços de Saúde – Outros|01012014||73|A|4.01.01.07.03.04|7|04
+4.01.01.07.03.05|RECEITAS DA PRESTAÇÃO DE SERVIÇOS DE ASSISTÊNCIA SOCIAL|01012014||74|S|4.01.01.07.03|6|04
+4.01.01.07.03.05.01|Pacientes Particulares|01012014||75|A|4.01.01.07.03.05|7|04
+4.01.01.07.03.05.02|Pessoa Idosa Abrigada (Art. 35 da Lei 10.741/2003)|01012014||76|A|4.01.01.07.03.05|7|04
+4.01.01.07.03.05.03|Convênios - Outros|01012014||77|A|4.01.01.07.03.05|7|04
+4.01.01.07.03.05.04|Parcerias com outras entidades sem fins lucrativos (Art. 3º §§ 3º e 4º do Dec 7.237/2010)|01012014||78|A|4.01.01.07.03.05|7|04
+4.01.01.07.03.05.09|Serviços de Assistência Social – Outros|01012014||79|A|4.01.01.07.03.05|7|04
+4.01.01.09|OUTRAS RECEITAS|01012014||80|S|4.01.01|4|04
+4.01.01.09.01|Contribuições Sindicais|01012014||81|A|4.01.01.09|5|04
+4.01.01.09.02|Contribuições Confederativas/Associativas|01012014||82|A|4.01.01.09|5|04
+4.01.01.09.03|Mensalidades|01012014||83|A|4.01.01.09|5|04
+4.01.01.09.09|Outras Receitas das Atividades|01012014||84|A|4.01.01.09|5|04
+4.01.02|DEDUÇÕES DAS RECEITAS|01012014||85|S|4.01|3|04
+4.01.02.01|DEDUÇÕES DAS RECEITAS DAS ATIVIDADES|01012014||86|S|4.01.02|4|04
+4.01.02.01.01|(-) Vendas Canceladas e Devoluções de Vendas|01012014||87|A|4.01.02.01|5|04
+4.01.02.01.02|(-) Descontos Incondicionais e Abatimentos|01012014||88|A|4.01.02.01|5|04
+4.01.02.01.03|(-) ICMS|01012014||89|A|4.01.02.01|5|04
+4.01.02.01.04|(-) Cofins Sobre Receita Bruta|01012014||90|A|4.01.02.01|5|04
+4.01.02.01.05|(-) PIS/Pasep Sobre Receita Bruta|01012014||91|A|4.01.02.01|5|04
+4.01.02.01.06|(-) ISS|01012014||92|A|4.01.02.01|5|04
+4.01.02.01.09|(-) Demais Impostos e Contribuições Incidentes sobre Vendas e Serviços|01012014||93|A|4.01.02.01|5|04
+4.01.02.01.11|(-)DEDUÇÕES - ENTIDADE DE EDUCAÇÃO (Art. 10 do ProUni)|01012014||94|S|4.01.02.01|5|04
+4.01.02.01.11.01|(-) BOLSAS DE ESTUDO CONCEDIDAS - EDUCAÇÃO BÁSICA|01012014||95|S|4.01.02.01.11|6|04
+4.01.02.01.11.01.01|(-) Bolsas de estudo concedidas - educação básica (bolsistas integrais – Funcionários e seus dependentes)|01012014||96|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.02|(-) Bolsas de estudo concedidas - educação básica (bolsistas parciais 50% – Funcionários e seus dependentes)|01012014||97|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.03|(-) Bolsas de estudo concedidas - educação básica (bolsistas integrais – critério de seleção Lei 12.101/2009)|01012014||98|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.04|(-) Bolsas de estudo concedidas - educação básica (bolsistas parciais 50% – critério de seleção Lei 12.101/2009)|01012014||99|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.05|(-) Bolsas de estudo concedidas - educação básica (bolsistas parciais – beneficiários previstos pelo art. 31 do Decreto nº 7.237/2010)|01012014||100|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.06|(-) Bolsas de estudo concedidas - educação básica (bolsistas integrais – beneficiários não carentes)|01012014||101|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.07|(-) Bolsas de estudo concedidas - educação básica (bolsistas parciais 50% – beneficiários não carentes)|01012014||102|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.01.08|(-) Bolsas de estudo concedidas - educação básica (outros casos não previstos)|01012014||103|A|4.01.02.01.11.01|7|04
+4.01.02.01.11.02|(-) BOLSAS DE ESTUDO CONCEDIDAS - EDUCAÇÃO SUPERIOR - GRADUAÇÃO|01012014||104|S|4.01.02.01.11|6|04
+4.01.02.01.11.02.01|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas integrais PROUNI – Funcionários e seus dependentes)|01012014||105|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.02|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas parciais 50% PROUNI – Funcionários e seus dependentes)|01012014||106|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.03|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas parciais 25% PROUNI – Funcionários e seus dependentes)|01012014||107|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.04|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas integrais PROUNI – beneficiários critério de seleção Lei 11.096/2005)|01012014||108|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.05|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas parciais 50% PROUNI – beneficiários critério de seleção Lei 11.096/2005)|01012014||109|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.06|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas parciais 25% PROUNI – beneficiários critério de seleção Lei 11.096/2005)|01012014||110|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.07|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas integrais – Bolsas da própria instituição)|01012014||111|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.08|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas parciais 50% – Bolsas da própria instituição)|01012014||112|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.09|(-) Bolsas de estudo concedidas - educação superior graduação (bolsistas parciais 25% – Bolsas da própria instituição)|01012014||113|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.02.10|(-) Bolsas de estudo concedidas - educação superior graduação (outros casos não previstos)|01012014||114|A|4.01.02.01.11.02|7|04
+4.01.02.01.11.03|(-) BOLSAS DE ESTUDO CONCEDIDAS - EDUCAÇÃO SUPERIOR - PÓS-GRADUAÇÃO|01012014||115|S|4.01.02.01.11|6|04
+4.01.02.01.11.03.01|(-) Bolsas de estudo concedidas - educação superior pós-graduação (bolsistas integrais – Funcionários e seus dependentes)|01012014||116|A|4.01.02.01.11.03|7|04
+4.01.02.01.11.03.02|(-) Bolsas de estudo concedidas - educação superior pós-graduação (bolsistas parciais – Funcionários e seus dependentes)|01012014||117|A|4.01.02.01.11.03|7|04
+4.01.02.01.11.03.03|(-) Bolsas de estudo concedidas - educação superior pós-graduação (bolsistas integrais – Bolsas da própria instituição)|01012014||118|A|4.01.02.01.11.03|7|04
+4.01.02.01.11.03.04|(-) Bolsas de estudo concedidas - educação superior pós-graduação (bolsistas parciais – Bolsas da própria instituição)|01012014||119|A|4.01.02.01.11.03|7|04
+4.01.02.01.11.03.05|(-) Bolsas de estudo concedidas - educação superior pós-graduação (outros casos não previstos)|01012014||120|A|4.01.02.01.11.03|7|04
+4.01.03|CUSTO DOS BENS E SERVIÇOS VENDIDOS|01012014||121|S|4.01|3|04
+4.01.03.01|CUSTO DA VENDA DOS PRODUTOS/MERCADORIAS/SERVIÇOS|01012014||122|S|4.01.03|4|04
+4.01.03.01.01|Custo dos Produtos de Fabricação Própria Vendidos|01012014||123|A|4.01.03.01|5|04
+4.01.03.01.02|Custo das Mercadorias Revendidas|01012014||124|A|4.01.03.01|5|04
+4.01.03.01.03|Custo dos Serviços Prestados|01012014||125|A|4.01.03.01|5|04
+4.01.03.01.04|Custo das Unidades Imobiliárias Vendidas|01012014||126|A|4.01.03.01|5|04
+4.01.03.01.09|Outros Custos|01012014||127|A|4.01.03.01|5|04
+4.01.04|AJUSTES A VALOR PRESENTE|01012014||128|S|4.01|3|04
+4.01.04.01|AJUSTES A VALOR PRESENTE|01012014||129|S|4.01.04|4|04
+4.01.04.01.01|Ajuste a Valor Presente de Estoques|01012014||130|A|4.01.04.01|5|04
+4.01.04.01.09|Outros Ajustes a Valor Presente|01012014||131|A|4.01.04.01|5|04
+4.01.05|RECEITAS FINANCEIRAS|01012014||132|S|4.01|3|04
+4.01.05.01|RECEITAS FINANCEIRAS|01012014||133|S|4.01.05|4|04
+4.01.05.01.01|Receitas de Aplicações Financeiras|01012014||134|A|4.01.05.01|5|04
+4.01.05.01.02|Descontos Obtidos|01012014||135|A|4.01.05.01|5|04
+4.01.05.01.09|Outras Receitas Financeiras|01012014||136|A|4.01.05.01|5|04
+4.01.09|OUTRAS RECEITAS|01012014||137|S|4.01|3|04
+4.01.09.01|OUTRAS RECEITAS|01012014||138|S|4.01.09|4|04
+4.01.09.01.01|Receita de Aluguéis|01012014||139|A|4.01.09.01|5|04
+4.01.09.01.02|Receita de Arrendamento|01012014||140|A|4.01.09.01|5|04
+4.01.09.01.03|Lucros e Dividendos Recebidos|01012014||141|A|4.01.09.01|5|04
+4.01.09.01.04|Participação em Debêntures e Congêneres|01012014||142|A|4.01.09.01|5|04
+4.01.09.01.05|Receita de Venda de Bens Patrimoniais|01012014||143|A|4.01.09.01|5|04
+4.01.09.01.06|(-) Custo dos Bens Patrimoniais Vendidos|01012014||144|A|4.01.09.01|5|04
+4.01.09.01.09|Outras Receitas nâo Associadas às Atividades|01012014||145|A|4.01.09.01|5|04
+4.02|DESPESAS|01012014||146|S|4|2|04
+4.02.01|DESPESAS COM RECURSOS HUMANOS|01012014||147|S|4.02|3|04
+4.02.01.01|HONORÁRIOS DA DIRETORIA|01012014||148|S|4.02.01|4|04
+4.02.01.01.01|Remuneração a Dirigentes e a Conselho de Administração|01012014||149|A|4.02.01.01|5|04
+4.02.01.01.02|Ajuda de Custos da Diretoria|01012014||150|A|4.02.01.01|5|04
+4.02.01.01.03|Encargos Sociais com a Diretoria|01012014||151|A|4.02.01.01|5|04
+4.02.01.01.04|(-) Reversão de Encargos Sociais com a Diretoria|01012014||152|A|4.02.01.01|5|04
+4.02.01.01.05|Despesa com Provisão para Remuneração e Encargos da Diretoria|01012014||153|A|4.02.01.01|5|04
+4.02.01.01.09|Outras Despesas com a Diretoria|01012014||154|A|4.02.01.01|5|04
+4.02.01.02|DESPESAS COM EMPREGADOS|01012014||155|S|4.02.01|4|04
+4.02.01.02.01|Ordenados, Salários, Gratificações e Outras Remunerações a Empregados|01012014||156|A|4.02.01.02|5|04
+4.02.01.02.02|Planos de Previdência com Empregados|01012014||157|A|4.02.01.02|5|04
+4.02.01.02.03|Encargos Sociais com Empregados|01012014||158|A|4.02.01.02|5|04
+4.02.01.02.04|(-) Reversão de Encargos Sociais com Empregados|01012014||159|A|4.02.01.02|5|04
+4.02.01.02.05|Despesa com Provisão para Remuneração e Encargos dos Empregados|01012014||160|A|4.02.01.02|5|04
+4.02.01.02.09|Outros Gastos com Empregados|01012014||161|A|4.02.01.02|5|04
+4.02.01.03|DESPESAS COM PESSOAS SEM VÍNCULO EMPREGATÍCIO|01012014||162|S|4.02.01|4|04
+4.02.01.03.01|Prestação de Serviços por Pessoas Físicas sem Vínculo Empregatício|01012014||163|A|4.02.01.03|5|04
+4.02.01.03.02|Encargos Sociais com Pessoas Físicas sem Vínculo Empregatício|01012014||164|A|4.02.01.03|5|04
+4.02.01.03.03|(-) Reversão de Encargos Sociais com Pessoas Físicas sem Vínculo Empregatício|01012014||165|A|4.02.01.03|5|04
+4.02.01.03.04|Despesa com Provisão para Gastos com Pessoas Físicas sem Vínculo Empregatício|01012014||166|A|4.02.01.03|5|04
+4.02.01.03.09|Outros Gastos com Pessoas Físicas sem Vínculo Empregatício|01012014||167|A|4.02.01.03|5|04
+4.02.02|DESPESAS ADMINISTRATIVAS|01012014||168|S|4.02|3|04
+4.02.02.01|DESPESAS ADMINISTRATIVAS|01012014||169|S|4.02.02|4|04
+4.02.02.01.01|Despesas com Subvenções, Contribuições e Doações|01012014||170|A|4.02.02.01|5|04
+4.02.02.01.02|Prestação de Serviços por Pessoas Jurídicas|01012014||171|A|4.02.02.01|5|04
+4.02.02.01.03|Despesas de Alugueis|01012014||172|A|4.02.02.01|5|04
+4.02.02.01.04|Despesas com Veículos|01012014||173|A|4.02.02.01|5|04
+4.02.02.01.05|Despesas de Consumo (Água/Esgoto/Energia Elétrica/Comunicação)|01012014||174|A|4.02.02.01|5|04
+4.02.02.01.06|Despesas de Consumo (Materiais de Expediente)|01012014||175|A|4.02.02.01|5|04
+4.02.02.01.07|Despesas de Manutenção e Conservação de Bens e Instalações|01012014||176|A|4.02.02.01|5|04
+4.02.02.01.08|Despesas com Viagens, Diárias e Ajuda de Custo|01012014||177|A|4.02.02.01|5|04
+4.02.02.01.09|Propaganda, Publicidade e Patrocínio|01012014||178|A|4.02.02.01|5|04
+4.02.02.01.10|Multas|01012014||179|A|4.02.02.01|5|04
+4.02.02.01.11|Encargos de Depreciação/Amortização/Exaustão|01012014||180|A|4.02.02.01|5|04
+4.02.02.01.12|Despesa com Provisões Administraivas|01012014||181|A|4.02.02.01|5|04
+4.02.02.01.19|Outras Despesas Administrativas|01012014||182|A|4.02.02.01|5|04
+4.02.03|DESPESAS FINANCEIRAS E TRIBUTÁRIAS|01012014||183|S|4.02|3|04
+4.02.03.01|DESPESAS FINANCEIRAS|01012014||184|S|4.02.03|4|04
+4.02.03.01.01|Despesas de Juros e Multas|01012014||185|A|4.02.03.01|5|04
+4.02.03.01.02|Descontos Concedidos|01012014||186|A|4.02.03.01|5|04
+4.02.03.01.03|Variações Monetárias|01012014||187|A|4.02.03.01|5|04
+4.02.03.01.09|Outras Despesas Financeiras|01012014||188|A|4.02.03.01|5|04
+4.02.03.02|DESPESAS TRIBUTÁRIAS|01012014||189|S|4.02.03|4|04
+4.02.03.02.01|Despesas com Tributos Federais|01012014||190|A|4.02.03.02|5|04
+4.02.03.02.02|(-) Reversão de Tributos Federais|01012014||191|A|4.02.03.02|5|04
+4.02.03.02.03|Despesas com Tributos Estaduais|01012014||192|A|4.02.03.02|5|04
+4.02.03.02.04|(-) Reversão de Tributos Estaduais|01012014||193|A|4.02.03.02|5|04
+4.02.03.02.05|Despesas com Tributos Municipais|01012014||194|A|4.02.03.02|5|04
+4.02.03.02.06|(-) Reversão de Tributos Municipais|01012014||195|A|4.02.03.02|5|04
+4.02.03.02.09|Outras Despesas Tributárias|01012014||196|A|4.02.03.02|5|04
+4.02.03.02.10|(-) Reversão de Outras Despesas Tributárias|01012014||197|A|4.02.03.02|5|04
+4.02.09|OUTRAS DESPESAS|01012014||198|S|4.02|3|04
+4.02.09.01|OUTRAS DESPESAS|01012014||199|S|4.02.09|4|04
+4.02.09.01.01|DESPESAS POR PROGRMAS DE APOIO, PROJETOS OU AÇÕES ASSISTENCIAIS DE ENTIDADE DE EDUCAÇÃO|01012014||200|S|4.02.09.01|5|04
+4.02.09.01.01.01|Ensino gratuito da educação básica em unidades específicas|01012014||201|A|4.02.09.01.01|6|04
+4.02.09.01.01.02|Programas de apoio a alunos bolsistas – transporte|01012014||202|A|4.02.09.01.01|6|04
+4.02.09.01.01.03|Programas de apoio a alunos bolsistas – uniforme|01012014||203|A|4.02.09.01.01|6|04
+4.02.09.01.01.04|Programas de apoio a alunos bolsistas – material didático|01012014||204|A|4.02.09.01.01|6|04
+4.02.09.01.01.05|Programas de apoio a alunos bolsistas – alimentação|01012014||205|A|4.02.09.01.01|6|04
+4.02.09.01.01.06|Programas de apoio a alunos bolsistas – outros|01012014||206|A|4.02.09.01.01|6|04
+4.02.09.01.01.09|Outras Despesas relacionadas a Programas de Apoio, Projetos ou Ações Assistenciais de Entidade de Educação|01012014||207|A|4.02.09.01.01|6|04
+4.02.09.01.02|DESPESAS POR PROGRAMAS, PROJETOS OU AÇÕES DE ASSISTÊNCIA SOCIAL|01012014||208|S|4.02.09.01|5|04
+4.02.09.01.02.01|Atendimento|01012014||209|A|4.02.09.01.02|6|04
+4.02.09.01.02.02|Assessoramento|01012014||210|A|4.02.09.01.02|6|04
+4.02.09.01.02.03|Defesa e garantia de direitos|01012014||211|A|4.02.09.01.02|6|04
+4.02.09.01.02.09|Outras Despesas relacionadas a Programas, Projetos ou Ações  de Assistência Social|01012014||212|A|4.02.09.01.02|6|04
+4.02.09.01.09|Outras Despesas Gerais|01012014||213|A|4.02.09.01|5|04

@@ -1,0 +1,1718 @@
+versão=4 CODIGO, DESCRICAO, DT_INI, DT_FIM, ORDEM, TIPO, COD_SUP, NIVEL, NATUREZA
+1.0.0.0.0.00.00|ATIVO GERAL|01012014||1|S||1|01
+1.1.0.0.0.00.00|ATIVO|01012014||2|S|1.0.0.0.0.00.00|2|01
+1.1.1.0.0.00.00|CIRCULANTE E REALIZÁVEL A LONGO PRAZO|01012014||3|S|1.1.0.0.0.00.00|3|01
+1.1.1.1.0.00.00|DISPONIBILIDADES|01012014||4|S|1.1.1.0.0.00.00|4|01
+1.1.1.1.1.00.00|Caixa|01012014||5|S|1.1.1.1.0.00.00|5|01
+1.1.1.1.1.10.00|CAIXA|01012014||6|A|1.1.1.1.1.00.00|6|01
+1.1.1.1.2.00.00|Depósitos Bancários|01012014||8|S|1.1.1.1.0.00.00|5|01
+1.1.1.1.2.30.00|DEPÓSITOS BANCÁRIOS DE INSTITUIÇÕES SEM CONTA RESERVA|01012014||9|A|1.1.1.1.2.00.00|6|01
+1.1.1.1.2.92.00|DEPÓSITOS BANCÁRIOS|01012014||10|A|1.1.1.1.2.00.00|6|01
+1.1.1.1.3.00.00|Reservas Livres|01012014||11|S|1.1.1.1.0.00.00|5|01
+1.1.1.1.3.10.00|BANCO CENTRAL - RESERVAS LIVRES EM ESPÉCIE|01012014||12|A|1.1.1.1.3.00.00|6|01
+1.1.1.1.4.00.00|Aplicações em Ouro|01012014||13|S|1.1.1.1.0.00.00|5|01
+1.1.1.1.4.10.00|APLICAÇÕES TEMPORÁRIAS EM OURO|01012014||14|A|1.1.1.1.4.00.00|6|01
+1.1.1.1.5.00.00|Disponibilidades em Moedas Estrangeiras|01012014||15|S|1.1.1.1.0.00.00|5|01
+1.1.1.1.5.10.00|BANCOS - DEPÓSITOS EM MOEDAS ESTRANGEIRAS NO PAÍS|01012014||16|A|1.1.1.1.5.00.00|6|01
+1.1.1.1.5.20.00|DEPÓSITOS NO EXTERIOR EM MOEDAS ESTRANGEIRAS|01012014||17|A|1.1.1.1.5.00.00|6|01
+1.1.1.1.5.40.00|DISPONIBILIDADES DE MOEDAS ESTRANGEIRAS|01012014||18|A|1.1.1.1.5.00.00|6|01
+1.1.1.2.0.00.00|APLICAÇÕES INTERFINANCEIRAS DE LIQUIDEZ|01012014||19|S|1.1.1.0.0.00.00|4|01
+1.1.1.2.1.00.00|Aplicações em Operações Compromissadas|01012014||20|S|1.1.1.2.0.00.00|5|01
+1.1.1.2.1.10.00|REVENDAS A LIQUIDAR - POSIÇÃO BANCADA|01012014||21|S|1.1.1.2.1.00.00|6|01
+1.1.1.2.1.10.03|Letras Financeiras do Tesouro|01012014||22|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.05|Letras do Tesouro Nacional|01012014||23|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.07|Notas do Tesouro Nacional|01012014||24|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.10|Obrigações do Tesouro Nacional|01012014||25|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.12|Bônus do Tesouro Nacional|01012014||26|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.15|Letras do Banco Central|01012014||27|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.16|Notas do Banco Central|01012014||28|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.18|Bônus do Banco Central|01012014||29|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.20|Títulos Estaduais e Municipais|01012014||30|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.21|Títulos Estaduais - Dívidas Refinanciadas pela União|01012014||31|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.25|Certificados de Depósito Bancário|01012014||32|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.30|CDB - Instituição Financeira Ligada|01012014||33|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.35|Letras de Câmbio|01012014||34|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.40|LC - Instituição Financeira Ligada|01012014||35|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.45|Letras Imobiliárias|01012014||36|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.50|LI - Instituição Financeira Ligada|01012014||37|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.62|Certificados de Recebíveis  Imobiliários|01012014||38|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.65|Debêntures|01012014||39|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.70|Títulos de Responsabilidade da União no Exterior|01012014||40|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.85|Outros Títulos no Exterior|01012014||41|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.10.99|Outros|01012014||42|A|1.1.1.2.1.10.00|7|01
+1.1.1.2.1.20.00|REVENDAS A LIQUIDAR - POSIÇÃO FINANCIADA|01012014||43|S|1.1.1.2.1.00.00|6|01
+1.1.1.2.1.20.03|Letras Financeiras do Tesouro|01012014||44|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.05|Letras do Tesouro Nacional|01012014||45|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.07|Notas do Tesouro Nacional|01012014||46|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.10|Obrigações do Tesouro Nacional|01012014||47|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.12|Bônus do Tesouro Nacional|01012014||48|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.15|Letras do Banco Central|01012014||49|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.16|Notas do Banco Central|01012014||50|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.18|Bônus do Banco Central|01012014||51|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.20|Títulos Estaduais e Municipais|01012014||52|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.21|Títulos Estaduais - Dívidas Refinanciadas pela União|01012014||53|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.25|Certificados de Depósito Bancário|01012014||54|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.30|CDB - Instituição Financeira Ligada|01012014||55|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.35|Letras de Câmbio|01012014||56|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.40|LC - Instituição Financeira Ligada|01012014||57|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.45|Letras Imobiliárias|01012014||58|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.50|LI - Instituição Financeira Ligada|01012014||59|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.62|Certificados de Recebíveis Imobiliários|01012014||60|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.65|Debêntures|01012014||61|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.70|Títulos de Responsabilidade da União no Exterior|01012014||62|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.85|Outros Títulos no Exterior|01012014||63|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.20.99|Outros|01012014||64|A|1.1.1.2.1.20.00|7|01
+1.1.1.2.1.30.00|REVENDAS A LIQUIDAR - POSIÇÃO VENDIDA|01012014||65|S|1.1.1.2.1.00.00|6|01
+1.1.1.2.1.30.02|Títulos Públicos Federais - Tesouro Nacional|01012014||66|A|1.1.1.2.1.30.00|7|01
+1.1.1.2.1.30.04|Títulos Públicos Federais - Banco Central|01012014||67|A|1.1.1.2.1.30.00|7|01
+1.1.1.2.1.30.90|Outros Títulos de Renda Fixa|01012014||68|A|1.1.1.2.1.30.00|7|01
+1.1.1.2.1.35.00|REVENDAS A LIQUIDAR - CÂMARAS DE LIQUIDAÇÃO E COMPENSAÇÃO - OPERAÇÕES GENÉRICAS|01012014||69|A|1.1.1.2.1.00.00|6|01
+1.1.1.2.2.00.00|Aplicações em Depósitos Interfinanceiros|01012014||70|S|1.1.1.2.0.00.00|5|01
+1.1.1.2.2.10.00|APLICAÇÕES EM DEPÓSITOS INTERFINANCEIROS|01012014||71|S|1.1.1.2.2.00.00|6|01
+1.1.1.2.2.10.10|Ligadas|01012014||72|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.15|Ligadas com Garantia|01012014||73|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.20|Não Ligadas|01012014||74|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.25|Não Ligadas com Garantia|01012014||75|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.30|Ligadas - Vinculados ao Crédito Rural|01012014||76|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.35|Ligadas com Garantia - Vinculados ao Crédito Rural|01012014||77|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.40|Não Ligadas - Vinculados ao Crédito Rural|01012014||78|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.45|Não Ligadas com Garantia - Vinculados ao Crédito Rural|01012014||79|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.50|Ligadas - Vinculados a Dívidas Renegociadas|01012014||80|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.10.55|Não Ligadas - Vinculados a Dívidas Renegociadas|01012014||81|A|1.1.1.2.2.10.00|7|01
+1.1.1.2.2.20.00|APLICAÇÕES INTERFINANCEIRAS PRÓPRIAS A RESGATAR|01012014||82|S|1.1.1.2.2.00.00|6|01
+1.1.1.2.2.20.10|Ligadas|01012014||83|A|1.1.1.2.2.20.00|7|01
+1.1.1.2.2.20.20|Não Ligadas|01012014||84|A|1.1.1.2.2.20.00|7|01
+1.1.1.2.2.30.00|APLICAÇÕES INTERFINANCEIRAS PRÓPRIAS A LIQUIDAR (-)|01012014||85|S|1.1.1.2.2.00.00|6|01
+1.1.1.2.2.30.10|Ligadas|01012014||86|A|1.1.1.2.2.30.00|7|01
+1.1.1.2.2.30.20|Não Ligadas|01012014||87|A|1.1.1.2.2.30.00|7|01
+1.1.1.2.2.99.00|PROVISÃO PARA PERDAS EM APLICAÇÕES EM DEPÓSITOS INTERFINANCEIROS (-)|01012014||88|S|1.1.1.2.2.00.00|6|01
+1.1.1.2.2.99.10|Ligadas|01012014||89|A|1.1.1.2.2.99.00|7|01
+1.1.1.2.2.99.20|Não Ligadas|01012014||90|A|1.1.1.2.2.99.00|7|01
+1.1.1.2.3.00.00|Aplicações Voluntárias no Banco Central|01012014||91|S|1.1.1.2.0.00.00|5|01
+1.1.1.2.3.10.00|DEPÓSITOS VOLUNTÁRIOS NO BANCO CENTRAL|01012014||92|A|1.1.1.2.3.00.00|6|01
+1.1.1.2.5.00.00|Aplicações em Depósitos de Poupança|01012014||93|S|1.1.1.2.0.00.00|5|01
+1.1.1.2.5.10.00|APLICAÇÕES EM DEPÓSITOS DE POUPANÇA|01012014||94|A|1.1.1.2.5.00.00|6|01
+1.1.1.2.6.00.00|Aplicações em Moedas Estrangeiras|01012014||95|S|1.1.1.2.0.00.00|5|01
+1.1.1.2.6.10.00|APLICAÇÕES EM MOEDAS ESTRANGEIRAS|01012014||96|S|1.1.1.2.6.00.00|6|01
+1.1.1.2.6.10.10|Aviso Prévio|01012014||97|A|1.1.1.2.6.10.00|7|01
+1.1.1.2.6.10.20|Prazo Fixo|01012014||98|A|1.1.1.2.6.10.00|7|01
+1.1.1.2.6.10.30|Banco Central - Excesso de Posição|01012014||99|A|1.1.1.2.6.10.00|7|01
+1.1.1.2.9.00.00|Outras|01012014||100|S|1.1.1.2.0.00.00|5|01
+1.1.1.2.9.90.00|APLICAÇÕES FINANCEIRAS|01012014||101|S|1.1.1.2.9.00.00|6|01
+1.1.1.2.9.90.12|Disponibilidades do Grupo|01012014||102|A|1.1.1.2.9.90.00|7|01
+1.1.1.2.9.90.25|Vinculadas a Contemplações - Selic|01012014||103|A|1.1.1.2.9.90.00|7|01
+1.1.1.2.9.90.35|Vinculadas a Contemplações - Demais Aplicações|01012014||104|A|1.1.1.2.9.90.00|7|01
+1.1.1.2.9.90.55|Recursos de Grupos em Formação|01012014||105|A|1.1.1.2.9.90.00|7|01
+1.1.1.3.0.00.00|TÍTULOS E VALORES MOBILIÁRIOS E INSTRUMENTOS FINANCEIROS DERIVATIVOS|01012014||106|S|1.1.1.0.0.00.00|4|01
+1.1.1.3.1.00.00|Livres|01012014||107|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.1.05.00|TÍTULOS DE RENDA FIXA INTERMEDIADOS|01012014||108|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.05.03|Letras Financeiras do Tesouro|01012014||109|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.05|Letras do Tesouro Nacional|01012014||110|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.10|Obrigações do Tesouro Nacional|01012014||111|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.12|Bônus do Tesouro Nacional|01012014||112|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.15|Letras do Banco Central|01012014||113|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.19|Títulos Públicos Federais - Outros|01012014||114|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.20|Títulos Estaduais e Municipais|01012014||115|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.25|Certificados de Depósito Bancário|01012014||116|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.30|CDB - Instituição Financeira Ligada|01012014||117|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.35|Letras de Câmbio|01012014||118|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.40|LC - Instituição Financeira Ligada|01012014||119|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.45|Letras Imobiliárias|01012014||120|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.50|LI - Instituição Financeira Ligada|01012014||121|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.55|Letras Hipotecárias|01012014||122|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.60|LH - Instituição Financeira Ligada|01012014||123|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.62|Certificados de Recebíveis Imobiliários|01012014||124|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.65|Debêntures|01012014||125|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.70|Obrigações da Eletrobrás|01012014||126|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.75|Títulos da Dívida Agrária|01012014||127|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.97|De Emissão de Entidades Financeiras Vinculadas a Organismos Oficiais Internacionais|01012014||128|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.05.99|Outros|01012014||129|A|1.1.1.3.1.05.00|7|01
+1.1.1.3.1.10.00|TÍTULOS DE RENDA FIXA|01012014||130|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.10.03|Letras Financeiras do Tesouro|01012014||131|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.05|Letras do Tesouro Nacional|01012014||132|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.07|Notas do Tesouro Nacional|01012014||133|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.10|Obrigações do Tesouro Nacional|01012014||134|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.12|Bônus do Tesouro Nacional|01012014||135|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.15|Letras do Banco Central|01012014||136|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.16|Notas do Banco Central|01012014||137|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.18|Bônus do Banco Central|01012014||138|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.19|Títulos Públicos Federais - Outros|01012014||139|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.20|Títulos Estaduais e Municipais|01012014||140|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.21|Títulos Estaduais - Dívidas Refinanciadas pela União|01012014||141|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.25|Certificados de Depósito Bancário|01012014||142|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.30|CDB - Instituição Financeira Ligada|01012014||143|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.35|Letras de Câmbio|01012014||144|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.40|LC - Instituição Financeira Ligada|01012014||145|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.45|Letras Imobiliárias|01012014||146|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.50|LI - Instituição Financeira Ligada|01012014||147|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.55|Letras Hipotecárias|01012014||148|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.60|LH - Instituição Financeira Ligada|01012014||149|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.62|Certificados de Recebíveis Imobiliários|01012014||150|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.65|Debêntures|01012014||151|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.70|Obrigações da Eletrobrás|01012014||152|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.75|Títulos da Dívida Agrária|01012014||153|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.95|Títulos que Compõem o PR de Instituições Autorizadas a Funcionar pelo Banco Central|01012014||154|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.97|De Emissão de Entidades Financeiras Vinculadas a Organismos Oficiais Internacionais|01012014||155|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.10.99|Outros|01012014||156|A|1.1.1.3.1.10.00|7|01
+1.1.1.3.1.13.00|APLICAÇÃO EM CERTIFICADOS DE OPERAÇÕES ESTRUTURADAS|01012014||157|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.13.10|Certificados de Operações Estruturadas - Valor Nominal Protegido|01012014||158|A|1.1.1.3.1.13.00|7|01
+1.1.1.3.1.13.30|Certificados de Operações Estruturadas - Valor Nominal em Risco|01012014||159|A|1.1.1.3.1.13.00|7|01
+1.1.1.3.1.15.00|COTAS DE FUNDOS DE INVESTIMENTO|01012014||160|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.15.15|Cotas de Fundo de Curto Prazo|01012014||161|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.25|Cotas de Fundo Referenciado|01012014||162|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.30|Cotas de Fundo de Renda Fixa|01012014||163|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.35|Cotas de Fundo de Ações|01012014||164|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.40|Cotas do Fundo de Desenvolvimento Social|01012014||165|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.45|Cotas de Fundo Cambial|01012014||166|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.50|Cotas de Fundo Multimercado|01012014||167|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.55|Cotas de Fundo de Investimento de Índice de Mercado|01012014||168|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.60|Cotas de Fundo em Direitos Creditórios|01012014||169|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.65|Cotas de Fundo Imobiliário|01012014||170|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.70|Cotas de Fundo em Empresas Emergentes|01012014||171|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.75|Cotas de Fundo em Participações|01012014||172|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.15.99|Outras|01012014||173|A|1.1.1.3.1.15.00|7|01
+1.1.1.3.1.20.00|TÍTULOS DE RENDA VARIÁVEL|01012014||174|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.20.10|Ações de Companhias Abertas|01012014||175|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.20|Ações de Companhias Fechadas|01012014||176|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.30|Bônus de Subscrição de Companhias Abertas|01012014||177|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.40|Cotas de Fundos de Renda Variável|01012014||178|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.50|Ações de Empresas Privatizadas|01012014||179|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.60|Recebidos por Empréstimo|01012014||180|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.95|Títulos que Compõem o PR de Instituições Autorizadas a Funcionar pelo Banco Central|01012014||181|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.20.99|Outros|01012014||182|A|1.1.1.3.1.20.00|7|01
+1.1.1.3.1.50.00|TÍTULOS DE DESENVOLVIMENTO ECONÔMICO|01012014||183|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.50.10|Ligadas|01012014||184|A|1.1.1.3.1.50.00|7|01
+1.1.1.3.1.50.20|Não Ligadas|01012014||185|A|1.1.1.3.1.50.00|7|01
+1.1.1.3.1.60.00|APLICAÇÕES EM "COMMODITIES"|01012014||186|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.60.30|"Warrants"|01012014||187|A|1.1.1.3.1.60.00|7|01
+1.1.1.3.1.60.40|Certificados de Mercadoria|01012014||188|A|1.1.1.3.1.60.00|7|01
+1.1.1.3.1.60.90|Outros|01012014||189|A|1.1.1.3.1.60.00|7|01
+1.1.1.3.1.85.00|APLICAÇÕES EM TÍTULOS E VALORES MOBILIÁRIOS NO EXTERIOR|01012014||190|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.85.10|Títulos Emitidos pelo Tesouro Nacional|01012014||191|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.20|Títulos Emitidos pelo Governo de Outros Países|01012014||192|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.25|Títulos que Compõem o PR de Instituições Autorizadas a Funcionar pelo Banco Central|01012014||193|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.26|Títulos que Compõem o PR de Instituições Financeiras no Exterior|01012014||194|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.30|Títulos de Renda Fixa - Empresas Estatais do Brasil|01012014||195|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.40|Outros Títulos de Renda Fixa|01012014||196|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.50|Títulos de Renda Variável - Empresas Estatais do Brasil|01012014||197|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.60|Outros Títulos de Renda Variável|01012014||198|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.85.90|Outros|01012014||199|A|1.1.1.3.1.85.00|7|01
+1.1.1.3.1.90.00|TÍTULOS E VALORES MOBILIÁRIOS DE SOCIEDADES EM REGIME ESPECIAL|01012014||200|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.90.10|Certificados de Depósito Bancário|01012014||201|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.90.20|Letras de Câmbio|01012014||202|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.90.30|Letras Imobiliárias|01012014||203|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.90.40|Letras Hipotecárias|01012014||204|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.90.50|Debêntures|01012014||205|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.90.95|Títulos que Compõem o PR de Instituições Autorizadas a Funcionar pelo Banco Central|01012014||206|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.90.99|Outros Papéis|01012014||207|A|1.1.1.3.1.90.00|7|01
+1.1.1.3.1.99.00|PROVISÃO PARA DESVALORIZAÇÃO DE TÍTULOS LIVRES (-)|01012014||208|S|1.1.1.3.1.00.00|6|01
+1.1.1.3.1.99.30|Títulos Públicos Federais - Tesouro Nacional|01012014||209|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.40|Títulos Públicos Federais - Banco Central|01012014||210|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.45|Títulos Públicos Federais - Outros|01012014||211|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.50|Títulos de Emissão de Instituições Financeiras Ligadas|01012014||212|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.55|Títulos de Emissão de Instituições Financeiras não Ligadas|01012014||213|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.60|Títulos Públicos Estaduais e Municipais|01012014||214|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.62|Certificados de Recebíveis Imobiliários|01012014||215|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.65|Aplicações em "Commodities"|01012014||216|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.85|Ações|01012014||217|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.1.99.99|Outros no País|01012014||218|A|1.1.1.3.1.99.00|7|01
+1.1.1.3.2.00.00|Vinculados a Operações Compromissadas|01012014||219|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.2.10.00|TÍTULOS DE RENDA FIXA - VINCULADOS A RECOMPRAS|01012014||220|S|1.1.1.3.2.00.00|6|01
+1.1.1.3.2.10.03|Letras Financeiras do Tesouro|01012014||221|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.05|Letras do Tesouro Nacional|01012014||222|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.07|Notas do Tesouro Nacional|01012014||223|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.10|Obrigações do Tesouro Nacional|01012014||224|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.12|Bônus do Tesouro Nacional|01012014||225|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.15|Letras do Banco Central|01012014||226|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.16|Notas do Banco Central|01012014||227|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.18|Bônus do Banco Central|01012014||228|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.20|Títulos Estaduais e Municipais|01012014||229|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.21|Títulos Estaduais - Dívidas Refinanciadas pela União|01012014||230|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.25|Certificados de Depósito Bancário|01012014||231|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.30|CDB - Instituição Financeira Ligada|01012014||232|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.35|Letras de Câmbio|01012014||233|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.40|LC - Instituição Financeira Ligada|01012014||234|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.45|Letras Imobiliárias|01012014||235|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.50|LI - Instituição Financeira Ligada|01012014||236|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.62|Certificados de Recebíveis Imobiliários|01012014||237|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.65|Debêntures|01012014||238|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.70|Títulos de Responsabilidade da União no Exterior|01012014||239|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.85|Outros Títulos no Exterior|01012014||240|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.2.10.99|Outros|01012014||241|A|1.1.1.3.2.10.00|7|01
+1.1.1.3.3.00.00|Instrumentos Financeiros Derivativos|01012014||242|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.3.15.00|OPERAÇÕES DE SWAP|01012014||243|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.15.10|Diferencial a Receber|01012014||244|A|1.1.1.3.3.15.00|7|01
+1.1.1.3.3.15.11|Diferencial a Receber - COE|01012014||245|A|1.1.1.3.3.15.00|7|01
+1.1.1.3.3.15.13|Diferencial a Receber - Hedge de Título Mantido até o Vencimento|01012014||246|A|1.1.1.3.3.15.00|7|01
+1.1.1.3.3.15.20|Diferencial a Receber - Operações com Garantia de Bolsa|01012014||247|A|1.1.1.3.3.15.00|7|01
+1.1.1.3.3.15.23|Diferencial a Receber - Operações com Garantia de Bolsa - Hedge deTítulo Mantido até o Vencimento|01012014||248|A|1.1.1.3.3.15.00|7|01
+1.1.1.3.3.30.00|COMPRAS A TERMO A RECEBER|01012014||249|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.30.10|Operações com Ações|01012014||250|A|1.1.1.3.3.30.00|7|01
+1.1.1.3.3.30.11|Operações com Ações - COE|01012014||251|A|1.1.1.3.3.30.00|7|01
+1.1.1.3.3.30.13|Operações com Ações - Hedge de Título Mantido até o Vencimento|01012014||252|A|1.1.1.3.3.30.00|7|01
+1.1.1.3.3.30.40|Operações com Ativos Financeiros e Mercadorias|01012014||253|A|1.1.1.3.3.30.00|7|01
+1.1.1.3.3.30.41|Operações com Ativos Financeiros e Mercadorias - COE|01012014||254|A|1.1.1.3.3.30.00|7|01
+1.1.1.3.3.30.43|Oprações com Ativos Financeiros e Mercadorias - Hedge de Título Mantido até o Vencimento|01012014||255|A|1.1.1.3.3.30.00|7|01
+1.1.1.3.3.35.00|VENDAS A TERMO A RECEBER|01012014||256|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.35.10|Operações com Ações|01012014||257|A|1.1.1.3.3.35.00|7|01
+1.1.1.3.3.35.11|Operações com Ações - COE|01012014||258|A|1.1.1.3.3.35.00|7|01
+1.1.1.3.3.35.13|Operações com Ações - Hedge de Título Mantido até o Vencimento|01012014||259|A|1.1.1.3.3.35.00|7|01
+1.1.1.3.3.35.40|Operações com Ativos Financeiros e Mercadorias|01012014||260|A|1.1.1.3.3.35.00|7|01
+1.1.1.3.3.35.41|Operações com Ativos Financeiros e Mercadorias - COE|01012014||261|A|1.1.1.3.3.35.00|7|01
+1.1.1.3.3.35.43|Operações com Ativos Financeiros e Mercadorias - Hedge de Título Mantido até o Vencimento|01012014||262|A|1.1.1.3.3.35.00|7|01
+1.1.1.3.3.45.00|MERCADOS FUTUROS - AJUSTES DIÁRIOS - ATIVO|01012014||263|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.45.10|Futuros|01012014||264|A|1.1.1.3.3.45.00|7|01
+1.1.1.3.3.45.13|Futuros - Hedge de Título Mantido até o Vencimento|01012014||265|A|1.1.1.3.3.45.00|7|01
+1.1.1.3.3.60.00|PRÊMIOS DE OPÇÕES A EXERCER - AÇÕES|01012014||266|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.60.10|Compras de Opções de Compra - Posição Titular|01012014||267|A|1.1.1.3.3.60.00|7|01
+1.1.1.3.3.60.11|Compras de Opções de Compra - Posição Titular - COE|01012014||268|A|1.1.1.3.3.60.00|7|01
+1.1.1.3.3.60.13|Compras de Opções de Compra - Posição Titular - Hedge de Título Mantido até o Vencimento|01012014||269|A|1.1.1.3.3.60.00|7|01
+1.1.1.3.3.60.20|Compras de Opções de Venda - Posição Titular|01012014||270|A|1.1.1.3.3.60.00|7|01
+1.1.1.3.3.60.21|Compras de Opções de Venda - Posição Titular - COE|01012014||271|A|1.1.1.3.3.60.00|7|01
+1.1.1.3.3.60.23|Compras de Opções de Venda - Posição Titular - Hedge de Título Mantido até O Vencimento|01012014||272|A|1.1.1.3.3.60.00|7|01
+1.1.1.3.3.70.00|PRÊMIOS DE OPÇÕES A EXERCER - ATIVOS FINANCEIROS E MERCADORIAS|01012014||273|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.70.10|Compras de Opções de Compra - Posição Titular|01012014||274|A|1.1.1.3.3.70.00|7|01
+1.1.1.3.3.70.11|Compras de Opções de Compra - Posição Titular - COE|01012014||275|A|1.1.1.3.3.70.00|7|01
+1.1.1.3.3.70.13|Compras de Opções de Compra - Posição Titular - Hedge de Título Mantido até o Vencimento|01012014||276|A|1.1.1.3.3.70.00|7|01
+1.1.1.3.3.70.20|Compras de Opções de Venda - Posição Titular|01012014||277|A|1.1.1.3.3.70.00|7|01
+1.1.1.3.3.70.21|Compras de Opções de Venda - Posição Titular - COE|01012014||278|A|1.1.1.3.3.70.00|7|01
+1.1.1.3.3.70.23|Compras de Opções de Venda - Posição Titular - Hedge de Título Mantido até o Vencimento|01012014||279|A|1.1.1.3.3.70.00|7|01
+1.1.1.3.3.73.00|OPÇÕES COM AJUSTE DIÁRIO - ATIVO|01012014||280|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.73.10|Opção de Compra - Taxa de Câmbio|01012014||281|A|1.1.1.3.3.73.00|7|01
+1.1.1.3.3.73.15|Opção de Venda - Taxa de Câmbio|01012014||282|A|1.1.1.3.3.73.00|7|01
+1.1.1.3.3.73.90|Opção de Compra - Outros|01012014||283|A|1.1.1.3.3.73.00|7|01
+1.1.1.3.3.73.95|Opção de Venda - Outros|01012014||284|A|1.1.1.3.3.73.00|7|01
+1.1.1.3.3.80.00|DERIVATIVOS DE CRÉDITO - ATIVO|01012014||285|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.80.10|Swap de Crédito|01012014||286|A|1.1.1.3.3.80.00|7|01
+1.1.1.3.3.80.13|Swap de Crédito - Hedge de Título Mantido até o Vencimento|01012014||287|A|1.1.1.3.3.80.00|7|01
+1.1.1.3.3.80.30|Swap de Taxa de Retorno Total|01012014||288|A|1.1.1.3.3.80.00|7|01
+1.1.1.3.3.80.33|Swap de Taxa de Retorno Total - Hedge de Título Mantido até o Vencimento|01012014||289|A|1.1.1.3.3.80.00|7|01
+1.1.1.3.3.85.00|OUTROS INSTRUMENTOS FINANCEIROS DERIVATIVOS - ATIVO|01012014||290|S|1.1.1.3.3.00.00|6|01
+1.1.1.3.3.85.10|Outros - Hedge de Título Mantido até o Vencimento|01012014||291|A|1.1.1.3.3.85.00|7|01
+1.1.1.3.3.85.11|Outros - COE|01012014||292|A|1.1.1.3.3.85.00|7|01
+1.1.1.3.3.85.13|Outros|01012014||293|A|1.1.1.3.3.85.00|7|01
+1.1.1.3.4.00.00|Vinculados ao Banco Central|01012014||294|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.4.10.00|BANCO CENTRAL - DEPÓSITOS PARA CAPITAL EM TÍTULOS|01012014||295|S|1.1.1.3.4.00.00|6|01
+1.1.1.3.4.10.02|Títulos Públicos Federais - Tesouro Nacional|01012014||296|A|1.1.1.3.4.10.00|7|01
+1.1.1.3.4.10.04|Títulos Públicos Federais - Banco Central|01012014||297|A|1.1.1.3.4.10.00|7|01
+1.1.1.3.4.10.19|Título Públicos Federais - Outros|01012014||298|A|1.1.1.3.4.10.00|7|01
+1.1.1.3.4.10.99|Outros|01012014||299|A|1.1.1.3.4.10.00|7|01
+1.1.1.3.4.20.00|BANCO CENTRAL - RESERVAS COMPULSÓRIAS EM TÍTULOS|01012014||300|S|1.1.1.3.4.00.00|6|01
+1.1.1.3.4.20.02|Títulos Públicos Federais - Tesouro Nacional|01012014||301|A|1.1.1.3.4.20.00|7|01
+1.1.1.3.4.20.04|Títulos Públicos Federais - Banco Central|01012014||302|A|1.1.1.3.4.20.00|7|01
+1.1.1.3.4.20.19|Títulos Públicos Federais - Outros|01012014||303|A|1.1.1.3.4.20.00|7|01
+1.1.1.3.4.20.99|Outros|01012014||304|A|1.1.1.3.4.20.00|7|01
+1.1.1.3.4.30.00|BANCO CENTRAL - TÍTULOS VINCULADOS A OPERAÇÕES DE REDESCONTO|01012014||305|S|1.1.1.3.4.00.00|6|01
+1.1.1.3.4.30.02|Títulos Públicos Federais - Tesouro Nacional|01012014||306|A|1.1.1.3.4.30.00|7|01
+1.1.1.3.4.30.04|Títulos Públicos Federais - Banco Central|01012014||307|A|1.1.1.3.4.30.00|7|01
+1.1.1.3.4.30.19|Títulos Públicos Federais - Outros|01012014||308|A|1.1.1.3.4.30.00|7|01
+1.1.1.3.4.30.99|Outros|01012014||309|A|1.1.1.3.4.30.00|7|01
+1.1.1.3.4.40.00|BANCO CENTRAL - TÍTULOS VINCULADOS A RECURSOS EXTERNOS|01012014||310|S|1.1.1.3.4.00.00|6|01
+1.1.1.3.4.40.02|Títulos Públicos Federais - Tesouro Nacional|01012014||311|A|1.1.1.3.4.40.00|7|01
+1.1.1.3.4.40.04|Títulos Públicos Federais - Banco Central|01012014||312|A|1.1.1.3.4.40.00|7|01
+1.1.1.3.4.40.19|Títulos Públicos Federais - Outros|01012014||313|A|1.1.1.3.4.40.00|7|01
+1.1.1.3.4.40.99|Outros|01012014||314|A|1.1.1.3.4.40.00|7|01
+1.1.1.3.4.45.00|BANCO CENTRAL - TÍTULOS VINCULADOS A RECURSOS DE POUPANÇA|01012014||315|S|1.1.1.3.4.00.00|6|01
+1.1.1.3.4.45.02|Títulos Públicos Federais - Tesouro Nacional|01012014||316|A|1.1.1.3.4.45.00|7|01
+1.1.1.3.4.45.04|Títulos Públicos Federais - Banco Central|01012014||317|A|1.1.1.3.4.45.00|7|01
+1.1.1.3.4.45.19|Títulos Públicos Federais - Outros|01012014||318|A|1.1.1.3.4.45.00|7|01
+1.1.1.3.4.50.00|TÍTULOS DE RENDA FIXA BLOQUEADOS|01012014||319|A|1.1.1.3.4.00.00|6|01
+1.1.1.3.5.00.00|Vinculados à Aquisição de Ações de Empresas Estatais|01012014||320|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.5.10.00|MOEDAS DE PRIVATIZAÇÃO|01012014||321|A|1.1.1.3.5.00.00|6|01
+1.1.1.3.5.99.00|PROVISÃO PARA DESVALORIZAÇÃO DE MOEDAS DE PRIVATIZAÇÃO (-)|01012014||322|A|1.1.1.3.5.00.00|6|01
+1.1.1.3.6.00.00|Vinculados à Prestação de Garantias|01012014||323|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.6.10.00|TÍTULOS DADOS EM GARANTIA DE OPERAÇÕES EM BOLSA|01012014||324|S|1.1.1.3.6.00.00|6|01
+1.1.1.3.6.10.02|Títulos Públicos Federais  - Tesouro Nacional|01012014||325|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.10.04|Títulos Públicos Federais - Banco Central|01012014||326|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.10.19|Títulos Públicos Federais - Outros|01012014||327|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.10.20|Títulos Estaduais e Municipais|01012014||328|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.10.62|Certificados de Recebíveis Imobiliários|01012014||329|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.10.80|Títulos de Renda Variável|01012014||330|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.10.99|Outros|01012014||331|A|1.1.1.3.6.10.00|7|01
+1.1.1.3.6.15.00|TÍTULOS DADOS EM GARANTIA DE OPERAÇÕES EM CÂMARAS DE LIQUIDAÇÃO E COMPENSAÇÃO|01012014||332|S|1.1.1.3.6.00.00|6|01
+1.1.1.3.6.15.02|Títulos Públicos Federais - Tesouro Nacional|01012014||333|A|1.1.1.3.6.15.00|7|01
+1.1.1.3.6.15.04|Títulos Públicos Federais - Banco Central|01012014||334|A|1.1.1.3.6.15.00|7|01
+1.1.1.3.6.15.19|Títulos Públicos Federais - Outros|01012014||335|A|1.1.1.3.6.15.00|7|01
+1.1.1.3.6.15.20|Títulos Estaduais e Municipais|01012014||336|A|1.1.1.3.6.15.00|7|01
+1.1.1.3.6.15.80|Títulos de Renda Variável|01012014||337|A|1.1.1.3.6.15.00|7|01
+1.1.1.3.6.15.99|Outros|01012014||338|A|1.1.1.3.6.15.00|7|01
+1.1.1.3.6.20.00|TÍTULOS DADOS EM GARANTIA - OUTROS|01012014||339|S|1.1.1.3.6.00.00|6|01
+1.1.1.3.6.20.02|Títulos Públicos Federais - Tesouro Nacional|01012014||340|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.20.04|Títulos Públicos Federais - Banco Central|01012014||341|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.20.19|Títulos Públicos Federais - Outros|01012014||342|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.20.20|Títulos Estaduais e Municipais|01012014||343|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.20.62|Certificados de Recebíveis Imobiliários|01012014||344|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.20.80|Títulos de Renda Varíavel|01012014||345|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.20.99|Outros|01012014||346|A|1.1.1.3.6.20.00|7|01
+1.1.1.3.6.99.00|PROVISÃO PARA DESVALORIZAÇÃO DE TÍTULOS VINCULADOS À PRESTAÇÃO DE GARANTIAS (-)|01012014||347|S|1.1.1.3.6.00.00|6|01
+1.1.1.3.6.99.02|Títulos Públicos Federais - Tesouro Nacional|01012014||348|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.6.99.04|Títulos Públicos Federais - Banco Central|01012014||349|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.6.99.19|Títulos Públicos Federais - Outros|01012014||350|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.6.99.20|Títulos Estaduais e Municipais|01012014||351|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.6.99.62|Certificados de Recebíveis Imobiliários|01012014||352|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.6.99.80|Títulos de Renda Variável|01012014||353|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.6.99.99|Outros|01012014||354|A|1.1.1.3.6.99.00|7|01
+1.1.1.3.7.00.00|Títulos Objeto de Operações Compromissadas com Livre Movimentação|01012014||355|S|1.1.1.3.0.00.00|5|01
+1.1.1.3.7.10.00|TÍTULOS OBJETO DE OPERAÇÕES COMPROMISSADAS COM LIVRE MOVIMENTAÇÃO|01012014||356|S|1.1.1.3.7.00.00|6|01
+1.1.1.3.7.10.02|Títulos Públicos Federais - Tesouro Nacional|01012014||357|A|1.1.1.3.7.10.00|7|01
+1.1.1.3.7.10.04|Títulos Públicos Federais - Banco Central|01012014||358|A|1.1.1.3.7.10.00|7|01
+1.1.1.3.7.10.90|Outros Títulos de Renda Fixa|01012014||359|A|1.1.1.3.7.10.00|7|01
+1.1.1.4.0.00.00|RELAÇÕES INTERFINANCEIRAS|01012014||360|S|1.1.1.0.0.00.00|4|01
+1.1.1.4.1.00.00|Direitos junto a Participantes de Sistemas de Liquidação|01012014||361|S|1.1.1.4.0.00.00|5|01
+1.1.1.4.1.10.00|CHEQUES E OUTROS PAPÉIS A DEVOLVER|01012014||362|S|1.1.1.4.1.00.00|6|01
+1.1.1.4.1.10.40|Liquidação Bilateral|01012014||363|A|1.1.1.4.1.10.00|7|01
+1.1.1.4.1.10.90|Outros Sistemas de Liquidação|01012014||364|A|1.1.1.4.1.10.00|7|01
+1.1.1.4.1.20.00|CHEQUES E OUTROS PAPÉIS A REMETER|01012014||365|S|1.1.1.4.1.00.00|6|01
+1.1.1.4.1.20.40|Liquidação Bilateral|01012014||366|A|1.1.1.4.1.20.00|7|01
+1.1.1.4.1.20.90|Outros Sistemas de Liquidação|01012014||367|A|1.1.1.4.1.20.00|7|01
+1.1.1.4.1.30.00|CHEQUES E OUTROS PAPÉIS REMETIDOS|01012014||368|S|1.1.1.4.1.00.00|6|01
+1.1.1.4.1.30.40|Liquidação Bilateral|01012014||369|A|1.1.1.4.1.30.00|7|01
+1.1.1.4.1.30.90|Outros Sistemas de Liquidação|01012014||370|A|1.1.1.4.1.30.00|7|01
+1.1.1.4.1.40.00|RECEBIMENTOS DE DOCUMENTOS ENVIADOS POR OUTROS PARTICIPANTES DO SISTEMA|01012014||371|S|1.1.1.4.1.00.00|6|01
+1.1.1.4.1.40.40|Liquidação Bilateral|01012014||372|A|1.1.1.4.1.40.00|7|01
+1.1.1.4.1.40.90|Outros Sistemas de Liquidação|01012014||373|A|1.1.1.4.1.40.00|7|01
+1.1.1.4.2.00.00|Créditos Vinculados|01012014||374|S|1.1.1.4.0.00.00|5|01
+1.1.1.4.2.10.00|BANCO CENTRAL - DEPÓSITOS EM MOEDAS ESTRANGEIRAS|01012014||375|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.15.00|BANCO CENTRAL - DEPÓSITOS PARA CAPITAL EM DINHEIRO|01012014||376|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.25.00|BANCO CENTRAL - RECOLHIMENTO DE RECURSOS DO CRÉDITO RURAL|01012014||377|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.28.00|RESERVAS COMPULSÓRIAS EM ESPÉCIE NO BANCO CENTRAL|01012014||378|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.33.00|BANCO CENTRAL - RECOLHIMENTOS OBRIGATÓRIOS|01012014||379|S|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.33.10|Depósitos de Poupança|01012014||380|A|1.1.1.4.2.33.00|7|01
+1.1.1.4.2.33.20|Depósitos de Fundos de Investimento|01012014||381|A|1.1.1.4.2.33.00|7|01
+1.1.1.4.2.33.30|Depósitos Livres de Fundos de Investimento|01012014||382|A|1.1.1.4.2.33.00|7|01
+1.1.1.4.2.33.99|Outros|01012014||383|A|1.1.1.4.2.33.00|7|01
+1.1.1.4.2.35.00|BANCO CENTRAL - OUTROS DEPÓSITOS|01012014||384|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.40.00|BANCOS OFICIAIS - DEPÓSITOS VINCULADOS A CONVÊNIO|01012014||385|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.45.00|SFH - BÔNUS - ADQUIRENTES FINAIS - DL 2164/84|01012014||386|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.50.00|SFH - COTAS DO FUNDO DE ESTABILIZAÇÃO|01012014||387|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.55.00|SFH - DEPÓSITOS NO FAHBRE|01012014||388|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.60.00|SFH - FGTS A RESSARCIR|01012014||389|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.65.00|SFH - FUNDO DE COMPENSAÇÃO DE VARIAÇÕES SALARIAIS|01012014||390|S|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.65.10|Com Opção pela Novação|01012014||391|A|1.1.1.4.2.65.00|7|01
+1.1.1.4.2.65.20|Sem Opção pela Novação|01012014||392|A|1.1.1.4.2.65.00|7|01
+1.1.1.4.2.70.00|SFH - TRANSFERÊNCIA DE DEPÓSITOS DE POUPANÇA|01012014||393|A|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.80.00|CRÉDITO RURAL - PROAGRO A RECEBER|01012014||394|S|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.80.10|PROAGRO Novo|01012014||395|A|1.1.1.4.2.80.00|7|01
+1.1.1.4.2.80.20|PROAGRO Velho - Parcelas Securitizáveis|01012014||396|A|1.1.1.4.2.80.00|7|01
+1.1.1.4.2.80.30|PROAGRO Velho - Parcelas não Securitizáveis|01012014||397|A|1.1.1.4.2.80.00|7|01
+1.1.1.4.2.99.00|PROVISÃO PARA PERDAS EM CRÉDITOS VINCULADOS (-)|01012014||398|S|1.1.1.4.2.00.00|6|01
+1.1.1.4.2.99.10|Créditos Vinculados - Banco Central|01012014||399|A|1.1.1.4.2.99.00|7|01
+1.1.1.4.2.99.20|Créditos Vinculados - Bancos Oficiais|01012014||400|A|1.1.1.4.2.99.00|7|01
+1.1.1.4.2.99.30|Créditos Vinculados - FAHBRE|01012014||401|A|1.1.1.4.2.99.00|7|01
+1.1.1.4.2.99.40|Créditos Vinculados - FGTS|01012014||402|A|1.1.1.4.2.99.00|7|01
+1.1.1.4.2.99.50|Créditos Vinculados - PROAGRO|01012014||403|A|1.1.1.4.2.99.00|7|01
+1.1.1.4.2.99.60|Créditos Vinculados - SFH|01012014||404|A|1.1.1.4.2.99.00|7|01
+1.1.1.4.3.00.00|Repasses Interfinanceiros|01012014||405|S|1.1.1.4.0.00.00|5|01
+1.1.1.4.3.10.00|DEVEDORES POR REPASSES DE RECURSOS DO CRÉDITO RURAL|01012014||406|S|1.1.1.4.3.00.00|6|01
+1.1.1.4.3.10.10|Cooperativas de Crédito Rural|01012014||407|A|1.1.1.4.3.10.00|7|01
+1.1.1.4.3.10.99|Outras Instituições|01012014||408|A|1.1.1.4.3.10.00|7|01
+1.1.1.4.3.20.00|DEVEDORES POR REPASSES DE RECURSOS EXTERNOS|01012014||409|A|1.1.1.4.3.00.00|6|01
+1.1.1.4.3.60.00|DEVEDORES POR REPASSES A AGENTES FINANCEIROS|01012014||410|A|1.1.1.4.3.00.00|6|01
+1.1.1.4.3.90.00|DEVEDORES POR REPASSES DE OUTROS RECURSOS|01012014||411|A|1.1.1.4.3.00.00|6|01
+1.1.1.4.3.99.00|PROVISÃO PARA PERDAS EM REPASSES INTERFINANCEIROS (-)|01012014||412|S|1.1.1.4.3.00.00|6|01
+1.1.1.4.3.99.10|Cooperativas de Crédito Rural|01012014||413|A|1.1.1.4.3.99.00|7|01
+1.1.1.4.3.99.90|Outros|01012014||414|A|1.1.1.4.3.99.00|7|01
+1.1.1.4.4.00.00|Relações com Correspondentes|01012014||415|S|1.1.1.4.0.00.00|5|01
+1.1.1.4.4.10.00|CORRESPONDENTES DO EXTERIOR EM MOEDA NACIONAL|01012014||416|A|1.1.1.4.4.00.00|6|01
+1.1.1.4.4.30.00|CORRESPONDENTES NO PAÍS|01012014||417|A|1.1.1.4.4.00.00|6|01
+1.1.1.4.5.00.00|Centralização Financeira - Cooperativas|01012014||418|S|1.1.1.4.0.00.00|5|01
+1.1.1.4.5.10.00|DEPÓSITOS NAS COOPERATIVAS CENTRAIS|01012014||419|A|1.1.1.4.5.00.00|6|01
+1.1.1.5.0.00.00|RELAÇÕES INTERDEPENDÊNCIAS|01012014||420|S|1.1.1.0.0.00.00|4|01
+1.1.1.5.1.00.00|Recursos em Trânsito de Terceiros|01012014||421|S|1.1.1.5.0.00.00|5|01
+1.1.1.5.1.20.00|CHEQUES DE VIAGEM (+)|01012014||422|A|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.30.00|COBRANÇA DE TERCEIROS EM TRÂNSITO (+)|01012014||423|A|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.40.00|ORDENS DE PAGAMENTO (+)|01012014||424|A|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.50.00|PAGAMENTOS EM TRÂNSITO DE SOCIEDADES LIGADAS|01012014||425|A|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.60.00|PAGAMENTOS EM TRÂNSITO DE TERCEIROS|01012014||426|A|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.65.00|PAGAMENTOS EM TRÂNSITO DE TERCEIROS'|01012014||427|S|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.65.10|Governo Federal|01012014||428|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.65.20|Governos Estaduais|01012014||429|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.65.30|Governos Municipais|01012014||430|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.65.40|Empresas Estatais Federais|01012014||431|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.65.50|Empresas Estatais Estaduais|01012014||432|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.65.60|Empresas Estatais Municipais|01012014||433|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.65.70|Setor Privado|01012014||434|A|1.1.1.5.1.65.00|7|01
+1.1.1.5.1.70.00|RECEBIMENTOS EM TRÂNSITO DE SOCIEDADES LIGADAS (+)|01012014||435|A|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.80.00|RECEBIMENTOS EM TRÂNSITO DE TERCEIROS (+)|01012014||436|S|1.1.1.5.1.00.00|6|01
+1.1.1.5.1.80.10|Concessionários de Serviços Públicos (+)|01012014||437|A|1.1.1.5.1.80.00|7|01
+1.1.1.5.1.80.90|Outros (+)|01012014||438|A|1.1.1.5.1.80.00|7|01
+1.1.1.5.2.00.00|Transferências Internas de Recursos|01012014||439|S|1.1.1.5.0.00.00|5|01
+1.1.1.5.2.10.00|CHEQUES E ORDENS A RECEBER|01012014||440|A|1.1.1.5.2.00.00|6|01
+1.1.1.5.2.20.00|COBRANÇA PRÓPRIA EM TRÂNSITO (+)|01012014||441|A|1.1.1.5.2.00.00|6|01
+1.1.1.5.2.40.00|DEPENDÊNCIAS NO PAÍS|01012014||442|A|1.1.1.5.2.00.00|6|01
+1.1.1.5.2.50.00|NUMERÁRIO EM TRÂNSITO|01012014||443|A|1.1.1.5.2.00.00|6|01
+1.1.1.5.2.60.00|SUPRIMENTOS INTERDEPENDÊNCIAS|01012014||444|A|1.1.1.5.2.00.00|6|01
+1.1.1.6.0.00.00|OPERAÇÕES DE CRÉDITO|01012014||445|S|1.1.1.0.0.00.00|4|01
+1.1.1.6.1.00.00|Empréstimos e Títulos Descontados|01012014||446|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.1.10.00|ADIANTAMENTOS A DEPOSITANTES|01012014||447|A|1.1.1.6.1.00.00|6|01
+1.1.1.6.1.20.00|EMPRÉSTIMOS|01012014||448|A|1.1.1.6.1.00.00|6|01
+1.1.1.6.1.30.00|TÍTULOS DESCONTADOS|01012014||449|A|1.1.1.6.1.00.00|6|01
+1.1.1.6.1.40.00|RENEGOCIAÇÕES ESPECIAIS|01012014||450|A|1.1.1.6.1.00.00|6|01
+1.1.1.6.1.91.00|AJUSTE A VALOR DE MERCADO PARA EMPRÉSTIMOS E TÍTULOS DESCONTADOS OBJETO DE HEDGE (+/-)|01012014||451|A|1.1.1.6.1.00.00|6|01
+1.1.1.6.2.00.00|Financiamentos|01012014||452|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.2.10.00|FINANCIAMENTOS|01012014||453|A|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.15.00|FINANCIAMENTOS A AGENTES FINANCEIROS|01012014||454|A|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.20.00|FINANCIAMENTOS À EXPORTAÇÃO|01012014||455|S|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.20.10|A Produção para Exportação|01012014||456|A|1.1.1.6.2.20.00|7|01
+1.1.1.6.2.20.20|A Empresas Comerciais Exportadoras|01012014||457|A|1.1.1.6.2.20.00|7|01
+1.1.1.6.2.20.30|A Exportação Indireta|01012014||458|A|1.1.1.6.2.20.00|7|01
+1.1.1.6.2.25.00|FINANCIAMENTOS EM MOEDAS ESTRANGEIRAS|01012014||459|S|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.25.10|Importação - Cartas de Crédito a Prazo Utilizadas|01012014||460|A|1.1.1.6.2.25.00|7|01
+1.1.1.6.2.25.20|Importação - Não Amparada em Cartas de Crédito|01012014||461|A|1.1.1.6.2.25.00|7|01
+1.1.1.6.2.25.30|Operações de "Hedge"|01012014||462|A|1.1.1.6.2.25.00|7|01
+1.1.1.6.2.25.40|Importação - Cartas de Crédito a Prazo Utilizadas - CCR|01012014||463|A|1.1.1.6.2.25.00|7|01
+1.1.1.6.2.25.50|Importação - Não Amparada em Cartas de Crédito - CCR|01012014||464|A|1.1.1.6.2.25.00|7|01
+1.1.1.6.2.25.90|Outros|01012014||465|A|1.1.1.6.2.25.00|7|01
+1.1.1.6.2.30.00|FINANCIAMENTOS COM INTERVENIÊNCIA|01012014||466|A|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.50.00|REFINANCIAMENTOS DE OPERAÇÕES DE ARRENDAMENTO|01012014||467|A|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.60.00|REFINANCIAMENTOS DE OPERAÇÕES COM O GOVERNO FEDERAL|01012014||468|A|1.1.1.6.2.00.00|6|01
+1.1.1.6.2.91.00|AJUSTE A VALOR DE MERCADO PARA FINANCIAMENTOS OBJETO DE HEDGE (+/-)|01012014||469|A|1.1.1.6.2.00.00|6|01
+1.1.1.6.3.00.00|Financiamentos Rurais e Agroindustriais|01012014||470|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.3.10.00|FINANCIAMENTOS RURAIS - APLICAÇÕES LIVRES|01012014||471|S|1.1.1.6.3.00.00|6|01
+1.1.1.6.3.10.10|Custeio - Agricultura|01012014||472|A|1.1.1.6.3.10.00|7|01
+1.1.1.6.3.10.20|Custeio - Pecuária|01012014||473|A|1.1.1.6.3.10.00|7|01
+1.1.1.6.3.10.30|Investimento - Agricultura|01012014||474|A|1.1.1.6.3.10.00|7|01
+1.1.1.6.3.10.40|Investimento - Pecuária|01012014||475|A|1.1.1.6.3.10.00|7|01
+1.1.1.6.3.10.50|Comercialização - Agricultura|01012014||476|A|1.1.1.6.3.10.00|7|01
+1.1.1.6.3.10.60|Comercialização - Pecuária|01012014||477|A|1.1.1.6.3.10.00|7|01
+1.1.1.6.3.20.00|FINANCIAMENTOS RURAIS - APLICAÇÕES OBRIGATÓRIAS|01012014||478|S|1.1.1.6.3.00.00|6|01
+1.1.1.6.3.20.10|Custeio - Agricultura|01012014||479|A|1.1.1.6.3.20.00|7|01
+1.1.1.6.3.20.20|Custeio - Pecuária|01012014||480|A|1.1.1.6.3.20.00|7|01
+1.1.1.6.3.20.30|Investimento - Agricultura|01012014||481|A|1.1.1.6.3.20.00|7|01
+1.1.1.6.3.20.40|Investimento - Pecuária|01012014||482|A|1.1.1.6.3.20.00|7|01
+1.1.1.6.3.20.50|Comercialização - Agricultura|01012014||483|A|1.1.1.6.3.20.00|7|01
+1.1.1.6.3.20.60|Comercialização - Pecuária|01012014||484|A|1.1.1.6.3.20.00|7|01
+1.1.1.6.3.30.00|FINANCIAMENTOS RURAIS - APLICAÇÕES REPASSADAS E REFINANCIADAS|01012014||485|S|1.1.1.6.3.00.00|6|01
+1.1.1.6.3.30.10|Custeio - Agricultura|01012014||486|A|1.1.1.6.3.30.00|7|01
+1.1.1.6.3.30.20|Custeio - Pecuária|01012014||487|A|1.1.1.6.3.30.00|7|01
+1.1.1.6.3.30.30|Investimento - Agricultura|01012014||488|A|1.1.1.6.3.30.00|7|01
+1.1.1.6.3.30.40|Investimento - Pecuária|01012014||489|A|1.1.1.6.3.30.00|7|01
+1.1.1.6.3.30.50|Comercialização - Agricultura|01012014||490|A|1.1.1.6.3.30.00|7|01
+1.1.1.6.3.30.60|Comercialização - Pecuária|01012014||491|A|1.1.1.6.3.30.00|7|01
+1.1.1.6.3.40.00|FINANCIAMENTOS AGROINDUSTRIAIS|01012014||492|S|1.1.1.6.3.00.00|6|01
+1.1.1.6.3.40.10|Investimento - Agroindústria de Beneficiamento|01012014||493|A|1.1.1.6.3.40.00|7|01
+1.1.1.6.3.40.20|Investimento - Agroindústria de Transformação|01012014||494|A|1.1.1.6.3.40.00|7|01
+1.1.1.6.3.40.30|Investimento - Agroindústria - Outros Fins|01012014||495|A|1.1.1.6.3.40.00|7|01
+1.1.1.6.3.40.40|Investimento - Serviços|01012014||496|A|1.1.1.6.3.40.00|7|01
+1.1.1.6.3.40.50|Investimento - Pessoas Físicas|01012014||497|A|1.1.1.6.3.40.00|7|01
+1.1.1.6.3.40.60|Capital de Giro|01012014||498|A|1.1.1.6.3.40.00|7|01
+1.1.1.6.3.91.00|AJUSTE A VALOR DE MERCADO PARA FINANCIAMENTOS RURAIS E AGROINDUSTRIAIS OBJETO DE HEDGE (+/-)|01012014||499|A|1.1.1.6.3.00.00|6|01
+1.1.1.6.4.00.00|Financiamentos Imobiliários|01012014||500|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.4.10.00|FINANCIAMENTOS DE EMPREENDIMENTOS IMOBILIÁRIOS|01012014||501|A|1.1.1.6.4.00.00|6|01
+1.1.1.6.4.30.00|FINANCIAMENTOS HABITACIONAIS|01012014||502|A|1.1.1.6.4.00.00|6|01
+1.1.1.6.4.35.00|FINANCIAMENTOS SEM COBERTURA DO FCVS - DECRETO97.222/88|01012014||503|A|1.1.1.6.4.00.00|6|01
+1.1.1.6.4.91.00|AJUSTE A VALOR DE MERCADO PARA FINANCIAMENTOS IMOBILIÁRIOS OBJETO DE HEDGE (+/-)|01012014||504|A|1.1.1.6.4.00.00|6|01
+1.1.1.6.5.00.00|Financiamentos de Títulos e Valores Mobiliários|01012014||505|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.5.10.00|DIREITOS POR EMPRÉSTIMOS DE AÇÕES|01012014||506|S|1.1.1.6.5.00.00|6|01
+1.1.1.6.5.10.10|Carteira Própria|01012014||507|A|1.1.1.6.5.10.00|7|01
+1.1.1.6.5.10.20|Carteira de Terceiros|01012014||508|A|1.1.1.6.5.10.00|7|01
+1.1.1.6.5.20.00|FINANCIAMENTOS DE CONTA MARGEM|01012014||509|A|1.1.1.6.5.00.00|6|01
+1.1.1.6.5.30.00|FINANCIAMENTOS DO PROCAP|01012014||510|A|1.1.1.6.5.00.00|6|01
+1.1.1.6.5.40.00|DIREITOS POR EMPRÉSTIMOS DE OURO|01012014||511|A|1.1.1.6.5.00.00|6|01
+1.1.1.6.5.91.00|AJUSTE A VALOR DE MERCADO PARA FINANCIAMENTOS DE TÍTULOS E VALORES MOBILIÁRIOS OBJETO DE HEDGE (+/-)|01012014||512|A|1.1.1.6.5.00.00|6|01
+1.1.1.6.6.00.00|Financiamentos de Infraestrutura e Desenvolvimento|01012014||513|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.6.10.00|FINANCIAMENTOS DE INFRAESTRUTURA E DESENVOLVIMENTO|01012014||514|A|1.1.1.6.6.00.00|6|01
+1.1.1.6.6.91.00|AJUSTE A VALOR DE MERCADO PARA FINANCIAMENTOS DEINFRAESTRUTURA E DESENVOLVIMENTO OBJETO DE HEDGE (+/-)|01012014||515|A|1.1.1.6.6.00.00|6|01
+1.1.1.6.8.00.00|Operações de Crédito Vinculadas à Cessão ou a OperaçõesCompromissadas|01012014||516|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.8.10.00|OPERAÇÕES DE CRÉDITO CEDIDAS|01012014||517|A|1.1.1.6.8.00.00|6|01
+1.1.1.6.8.20.00|OPERAÇÕES DE CRÉDITO VINCULADAS A OPERAÇÕES COMPROMISSADAS|01012014||518|A|1.1.1.6.8.00.00|6|01
+1.1.1.6.8.90.00|AJUSTE A VALOR DE MERCADO PARA OPERAÇÕES DE CRÉDITO CEDIDAS OBJETO DE HEDGE (+/-)|01012014||519|A|1.1.1.6.8.00.00|6|01
+1.1.1.6.9.00.00|Provisão para Operações de Crédito (-)|01012014||520|S|1.1.1.6.0.00.00|5|01
+1.1.1.6.9.20.00|PROVISÃO PARA EMPRÉSTIMOS E TÍTULOS DESCONTADOS (-)|01012014||521|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.30.00|PROVISÃO PARA FINANCIAMENTOS (-)|01012014||522|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.40.00|PROVISÃO PARA FINANCIAMENTOS RURAIS E AGROINDUSTRIAIS (-)|01012014||523|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.50.00|PROVISÃO PARA FINANCIAMENTOS IMOBILIÁRIOS (-)|01012014||524|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.60.00|PROVISÃO PARA FINANCIAMENTOS DE TÍTULOS E VALORES MOBILIÁRIOS (-)|01012014||525|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.70.00|PROVISÃO PARA FINANCIAMENTOS DE INFRAESTRUTURA E DESENVOLVIMENTO (-)|01012014||526|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.80.00|PROVISÃO PARA OPERAÇÕES DE CRÉDITO CEDIDAS (-)|01012014||527|A|1.1.1.6.9.00.00|6|01
+1.1.1.6.9.97.00|PROVISÃO PARA PERDAS NA REALIZAÇÃO DE OPERAÇÕES DE CRÉDITO (-)|01012014||528|A|1.1.1.6.9.00.00|6|01
+1.1.1.7.0.00.00|OPERAÇÕES DE ARRENDAMENTO MERCANTIL|01012014||529|S|1.1.1.0.0.00.00|4|01
+1.1.1.7.1.00.00|Arrendamentos Financeiros a Receber|01012014||530|S|1.1.1.7.0.00.00|5|01
+1.1.1.7.1.10.00|ARRENDAMENTOS FINANCEIROS A RECEBER - RECURSOS INTERNOS|01012014||531|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.20.00|ARRENDAMENTOS FINANCEIROS A RECEBER - RECURSOS EXTERNOS|01012014||532|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.30.00|ARRENDAMENTOS FINANCEIROS ESPECIAIS A RECEBER|01012014||533|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.60.00|ADIANTAMENTOS A FORNECEDORES POR CONTA DE ARRENDATÁRIOS|01012014||534|S|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.60.10|Recursos Internos|01012014||535|A|1.1.1.7.1.60.00|7|01
+1.1.1.7.1.60.20|Recursos Externos|01012014||536|A|1.1.1.7.1.60.00|7|01
+1.1.1.7.1.95.00|RENDAS A APROPRIAR DE ARRENDAMENTOS FINANCEIROS A RECEBER - RECURSOS INTERNOS (-)|01012014||537|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.97.00|RENDAS A APROPRIAR DE ARRENDAMENTOS FINANCEIROS A RECEBER - RECURSOS EXTERNOS (-)|01012014||538|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.98.00|RENDAS A APROPRIAR DE COMISSÕES DE COMPROMISSO DE ARRENDAMENTOS (-)|01012014||539|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.1.99.00|RENDAS A APROPRIAR DE ARRENDAMENTOS FINANCEIROS ESPECIAIS A RECEBER (-)|01012014||540|A|1.1.1.7.1.00.00|6|01
+1.1.1.7.2.00.00|Arrendamentos Operacionais a Receber|01012014||541|S|1.1.1.7.0.00.00|5|01
+1.1.1.7.2.10.00|ARRENDAMENTOS OPERACIONAIS A RECEBER - RECURSOS INTERNOS|01012014||542|A|1.1.1.7.2.00.00|6|01
+1.1.1.7.2.20.00|ARRENDAMENTOS OPERACIONAIS A RECEBER - RECURSOS EXTERNOS|01012014||543|A|1.1.1.7.2.00.00|6|01
+1.1.1.7.2.95.00|RENDAS A APROPRIAR DE ARRENDAMENTOS OPERACIONAIS A RECEBER - RECURSOS INTERNOS (-)|01012014||544|A|1.1.1.7.2.00.00|6|01
+1.1.1.7.2.97.00|RENDAS A APROPRIAR DE ARRENDAMENTOS OPERACIONAIS A RECEBER - RECURSOS EXTERNOS (-)|01012014||545|A|1.1.1.7.2.00.00|6|01
+1.1.1.7.3.00.00|Subarrendamentos a Receber|01012014||546|S|1.1.1.7.0.00.00|5|01
+1.1.1.7.3.10.00|SUBARRENDAMENTOS A RECEBER|01012014||547|A|1.1.1.7.3.00.00|6|01
+1.1.1.7.3.60.00|ADIANTAMENTOS A FORNECEDORES POR CONTA DE SUBARRENDATÁRIOS|01012014||548|S|1.1.1.7.3.00.00|6|01
+1.1.1.7.3.60.10|Recursos Internos|01012014||549|A|1.1.1.7.3.60.00|7|01
+1.1.1.7.3.60.20|Recursos Externos|01012014||550|A|1.1.1.7.3.60.00|7|01
+1.1.1.7.3.95.00|RENDAS A APROPRIAR DE SUBARRENDAMENTOS A RECEBER (-)|01012014||551|A|1.1.1.7.3.00.00|6|01
+1.1.1.7.3.98.00|RENDAS A APROPRIAR DE COMISSÕES DE COMPROMISSO DE SUBARRENDAMENTOS (-)|01012014||552|A|1.1.1.7.3.00.00|6|01
+1.1.1.7.5.00.00|Valores Residuais a Realizar|01012014||553|S|1.1.1.7.0.00.00|5|01
+1.1.1.7.5.10.00|VALORES RESIDUAIS A REALIZAR|01012014||554|A|1.1.1.7.5.00.00|6|01
+1.1.1.7.5.95.00|VALORES RESIDUAIS A BALANCEAR (-)|01012014||555|A|1.1.1.7.5.00.00|6|01
+1.1.1.7.8.00.00|Operações de Arrendamento Mercantil Vinculadas a Cessão|01012014||556|S|1.1.1.7.0.00.00|5|01
+1.1.1.7.8.10.00|OPERAÇÕES DE ARRENDAMENTO MERCANTIL CEDIDAS|01012014||557|A|1.1.1.7.8.00.00|6|01
+1.1.1.7.9.00.00|Provisões para Operações de Arrendamento Mercantil (-)|01012014||558|S|1.1.1.7.0.00.00|5|01
+1.1.1.7.9.30.00|PROVISÃO PARA ARRENDAMENTOS FINANCEIROS (-)|01012014||559|A|1.1.1.7.9.00.00|6|01
+1.1.1.7.9.35.00|PROVISÃO PARA ARRENDAMENTOS FINANCEIROS ESPECIAIS (-)|01012014||560|A|1.1.1.7.9.00.00|6|01
+1.1.1.7.9.40.00|PROVISÃO PARA ARRENDAMENTOS OPERACIONAIS (-)|01012014||561|A|1.1.1.7.9.00.00|6|01
+1.1.1.7.9.50.00|PROVISÃO PARA SUBARRENDAMENTOS (-)|01012014||562|A|1.1.1.7.9.00.00|6|01
+1.1.1.7.9.80.00|PROVISÃO PARA OPERAÇÕES DE ARRENDAMENTO MERCANTIL CEDIDAS (-)|01012014||563|A|1.1.1.7.9.00.00|6|01
+1.1.1.7.9.97.00|PROVISÃO PARA PERDAS NA REALIZAÇÃO DE OPERAÇÕES DE ARRENDAMENTO MERCANTIL (-)|01012014||564|A|1.1.1.7.9.00.00|6|01
+1.1.1.8.0.00.00|OUTROS CRÉDITOS|01012014||565|S|1.1.1.0.0.00.00|4|01
+1.1.1.8.1.00.00|Avais e Fianças Honrados|01012014||566|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.1.10.00|CRÉDITOS POR AVAIS E FIANÇAS HONRADOS|01012014||567|A|1.1.1.8.1.00.00|6|01
+1.1.1.8.2.00.00|Câmbio|01012014||568|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.2.06.00|CÂMBIO COMPRADO A LIQUIDAR|01012014||569|S|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.06.10|Exportação - Letras a Entregar|01012014||570|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.20|Exportação - Letras Entregues|01012014||571|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.25|Ouro|01012014||572|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.30|Financeiro|01012014||573|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.32|Financeiro - Operações em Câmaras de Liquidação e Compensação|01012014||574|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.40|Interbancário para Liquidação Pronta|01012014||575|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.50|Interbancário para Liquidação Futura|01012014||576|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.60|Interbancário a Termo|01012014||577|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.06.70|Interdepartamental e Arbitragem|01012014||578|A|1.1.1.8.2.06.00|7|01
+1.1.1.8.2.07.00|ADIANTAMENTOS EM MOEDA ESTRANGEIRA RECEBIDOS (-)|01012014||579|S|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.07.10|Exportação|01012014||580|A|1.1.1.8.2.07.00|7|01
+1.1.1.8.2.07.25|(-) Ouro|01012014||581|A|1.1.1.8.2.07.00|7|01
+1.1.1.8.2.07.30|Financeiro|01012014||582|A|1.1.1.8.2.07.00|7|01
+1.1.1.8.2.07.40|Interbancário para Liquidação Pronta|01012014||583|A|1.1.1.8.2.07.00|7|01
+1.1.1.8.2.07.50|Interbancário para Liquidação Futura|01012014||584|A|1.1.1.8.2.07.00|7|01
+1.1.1.8.2.20.00|CAMBIAIS E DOCUMENTOS A PRAZO EM MOEDAS ESTRANGEIRAS|01012014||585|A|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.25.00|DIREITOS SOBRE VENDAS DE CÂMBIO|01012014||586|S|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.25.10|Importação|01012014||587|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.20|Financeiro|01012014||588|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.22|Financeiro - Operações em Câmaras de Liquidação e Compensação|01012014||589|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.25|Ouro|01012014||590|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.30|Interbancário para Liquidação Pronta|01012014||591|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.40|Interbancário para Liquidação Futura|01012014||592|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.50|Interbancário a Termo|01012014||593|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.25.60|Interdepartamental e Arbitragem|01012014||594|A|1.1.1.8.2.25.00|7|01
+1.1.1.8.2.26.00|ADIANTAMENTOS EM MOEDA NACIONAL RECEBIDOS (-)|01012014||595|S|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.26.25|(-) Operações de Câmbio relativas a Ouro de Liquidação Futura|01012014||596|A|1.1.1.8.2.26.00|7|01
+1.1.1.8.2.26.30|Operações de Câmbio de Importação de Liquidação Futura|01012014||597|A|1.1.1.8.2.26.00|7|01
+1.1.1.8.2.26.40|Operações de Câmbio Financeiras de Liquidação Futura|01012014||598|A|1.1.1.8.2.26.00|7|01
+1.1.1.8.2.26.50|Operações de Câmbio Interbancárias de Liquidação Futura|01012014||599|A|1.1.1.8.2.26.00|7|01
+1.1.1.8.2.26.70|Operações de Câmbio de Liquidação Pronta|01012014||600|A|1.1.1.8.2.26.00|7|01
+1.1.1.8.2.45.00|VALORES EM MOEDAS ESTRANGEIRAS A RECEBER|01012014||601|S|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.45.10|Fretes e Prêmios de Seguro Sobre Exportação|01012014||602|A|1.1.1.8.2.45.00|7|01
+1.1.1.8.2.45.90|Outros|01012014||603|A|1.1.1.8.2.45.00|7|01
+1.1.1.8.2.75.00|RENDAS A RECEBER DE ADIANTAMENTOS CONCEDIDOS|01012014||604|A|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.78.00|RENDAS A RECEBER DE IMPORTAÇÕES FINANCIADAS|01012014||605|A|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.85.00|DESPESAS A APROPRIAR DE ADIANTAMENTOS RECEBIDOS|01012014||606|S|1.1.1.8.2.00.00|6|01
+1.1.1.8.2.85.10|Exportação|01012014||607|A|1.1.1.8.2.85.00|7|01
+1.1.1.8.2.85.20|Financeiro|01012014||608|A|1.1.1.8.2.85.00|7|01
+1.1.1.8.2.85.30|Importação|01012014||609|A|1.1.1.8.2.85.00|7|01
+1.1.1.8.2.85.40|Ouro|01012014||610|A|1.1.1.8.2.85.00|7|01
+1.1.1.8.3.00.00|Rendas a Receber|01012014||611|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.3.30.00|COMISSÕES E CORRETAGENS A RECEBER|01012014||612|A|1.1.1.8.3.00.00|6|01
+1.1.1.8.3.40.00|COMISSÕES POR COOBRIGAÇÕES A RECEBER|01012014||613|A|1.1.1.8.3.00.00|6|01
+1.1.1.8.3.50.00|CORRETAGENS DE CÂMBIO A RECEBER|01012014||614|A|1.1.1.8.3.00.00|6|01
+1.1.1.8.3.60.00|DIVIDENDOS E BONIFICAÇÕES EM DINHEIRO A RECEBER|01012014||615|A|1.1.1.8.3.00.00|6|01
+1.1.1.8.3.70.00|SERVIÇOS PRESTADOS A RECEBER|01012014||616|A|1.1.1.8.3.00.00|6|01
+1.1.1.8.3.90.00|OUTRAS RENDAS A RECEBER|01012014||617|A|1.1.1.8.3.00.00|6|01
+1.1.1.8.4.00.00|Negociação e Intermediação de Valores|01012014||618|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.4.05.00|BOLSAS - DEPÓSITOS EM GARANTIA|01012014||619|S|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.05.10|Operações com Ações|01012014||620|A|1.1.1.8.4.05.00|7|01
+1.1.1.8.4.05.15|Operações com Índices de Ações|01012014||621|A|1.1.1.8.4.05.00|7|01
+1.1.1.8.4.05.20|Operações com Ativos Financeiros e Mercadorias|01012014||622|A|1.1.1.8.4.05.00|7|01
+1.1.1.8.4.05.99|Outras Operações|01012014||623|A|1.1.1.8.4.05.00|7|01
+1.1.1.8.4.10.00|CAIXAS DE REGISTRO E LIQUIDAÇÃO|01012014||624|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.15.00|CERTIFICADOS DE INVESTIMENTO PARA CONVERSÃO|01012014||625|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.30.00|DEVEDORES - CONTA LIQUIDAÇÕES PENDENTES|01012014||626|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.35.00|PARTICIPAÇÃO EM FUNDOS DE GARANTIA DE LIQUIDAÇÃO DE CÂMARAS|01012014||627|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.40.00|OPERAÇÕES COM ATIVOS FINANCEIROS E MERCADORIAS A LIQUIDAR|01012014||628|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.48.00|OPERAÇÕES EM MARGEM - OSCILAÇÕES DE VALORES|01012014||629|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.53.00|OPERAÇÕES DE INTERMEDIAÇÃO DE SWAP|01012014||630|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.70.00|CAPTAÇÕES INTERFINANCEIRAS DE TERCEIROS A LIQUIDAR|01012014||631|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.75.00|APLICAÇÕES INTERFINANCEIRAS DE TERCEIROS A RESGATAR|01012014||632|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.4.90.00|OUTROS CRÉDITOS POR NEGOCIAÇÃO E INTERMEDIAÇÃO DE VALORES|01012014||633|A|1.1.1.8.4.00.00|6|01
+1.1.1.8.5.00.00|Créditos Específicos|01012014||634|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.5.10.00|DEVEDORES LOTÉRICOS - LOTERIAS FEDERAL E ESTADUAL|01012014||635|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.13.00|DEVEDORES LOTÉRICOS - LOTERIA ESPORTIVA|01012014||636|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.16.00|DEVEDORES LOTÉRICOS - LOTERIA DE NÚMEROS|01012014||637|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.30.00|ADIANTAMENTOS PARA PAGAMENTO PIS/PASEP|01012014||638|S|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.30.10|Adiantamentos a Bancos|01012014||639|A|1.1.1.8.5.30.00|7|01
+1.1.1.8.5.30.20|Adiantamentos a Empresas|01012014||640|A|1.1.1.8.5.30.00|7|01
+1.1.1.8.5.35.00|CONTAS DE BALANCEAMENTO|01012014||641|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.36.00|OPERAÇÕES VINCULADAS A FUNDOS ADMINISTRADOS|01012014||642|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.37.00|BÔNUS DO SFH A APROPRIAR AO FUNDHAB|01012014||643|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.54.00|TESOURO NACIONAL - AVAIS HONRADOS|01012014||644|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.57.00|TESOURO NACIONAL - CONTAS BIRD|01012014||645|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.60.00|TESOURO NACIONAL - PAGAMENTOS A RESSARCIR|01012014||646|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.5.90.00|TESOURO NACIONAL - ALONGAMENTO DE CRÉDITO RURAL|01012014||647|A|1.1.1.8.5.00.00|6|01
+1.1.1.8.6.00.00|Operações Especiais|01012014||648|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.6.23.00|EMPRÉSTIMOS PARA PAGAMENTO DE OBRIGAÇÕES EXTERNAS|01012014||649|S|1.1.1.8.6.00.00|6|01
+1.1.1.8.6.23.10|Governo Federal|01012014||650|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.23.20|Governos Estaduais|01012014||651|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.23.30|Governos Municipais|01012014||652|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.23.40|Empresas Estatais Federais|01012014||653|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.23.50|Empresas Estatais Estaduais|01012014||654|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.23.60|Empresas Estatais Municipais|01012014||655|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.23.70|Setor Privado|01012014||656|A|1.1.1.8.6.23.00|7|01
+1.1.1.8.6.32.00|DEVEDORES POR OPERAÇÕES ESPECIAIS, COM RECURSOS DOGOVERNO FEDERAL|01012014||657|S|1.1.1.8.6.00.00|6|01
+1.1.1.8.6.32.10|Governo Federal|01012014||658|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.32.20|Governos Estaduais|01012014||659|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.32.30|Governos Municipais|01012014||660|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.32.40|Empresas Estatais Federais|01012014||661|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.32.50|Empresas Estatais Estaduais|01012014||662|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.32.60|Empresas Estatais Municipais|01012014||663|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.32.70|Setor Privado|01012014||664|A|1.1.1.8.6.32.00|7|01
+1.1.1.8.6.37.00|CRÉDITOS SOB ADMINISTRAÇÃO|01012014||665|S|1.1.1.8.6.00.00|6|01
+1.1.1.8.6.37.10|Tesouro Nacional|01012014||666|A|1.1.1.8.6.37.00|7|01
+1.1.1.8.6.37.15|BNCC|01012014||667|A|1.1.1.8.6.37.00|7|01
+1.1.1.8.6.37.20|COBAL|01012014||668|A|1.1.1.8.6.37.00|7|01
+1.1.1.8.6.37.25|IAA|01012014||669|A|1.1.1.8.6.37.00|7|01
+1.1.1.8.6.37.99|Outros|01012014||670|A|1.1.1.8.6.37.00|7|01
+1.1.1.8.6.38.00|GOVERNO FEDERAL - ADIANTAMENTOS PARA OPERAÇÕES ESPECIAIS|01012014||671|S|1.1.1.8.6.00.00|6|01
+1.1.1.8.6.38.10|Governo Federal|01012014||672|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.38.20|Governos Estaduais|01012014||673|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.38.30|Governos Municipais|01012014||674|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.38.40|Empresas Estatais Federais|01012014||675|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.38.50|Empresas Estatais Estaduais|01012014||676|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.38.60|Empresas Estatais Municipais|01012014||677|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.38.70|Setor Privado|01012014||678|A|1.1.1.8.6.38.00|7|01
+1.1.1.8.6.40.00|GOVERNO FEDERAL - DESEMBOLSOS PARA OPERAÇÕES ESPECIAIS, A TRANSFERIR|01012014||679|S|1.1.1.8.6.00.00|6|01
+1.1.1.8.6.40.10|Governo Federal|01012014||680|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.6.40.20|Governos Estaduais|01012014||681|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.6.40.30|Governos Municipais|01012014||682|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.6.40.40|Empresas Estatais Federais|01012014||683|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.6.40.50|Empresas Estatais Estaduais|01012014||684|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.6.40.60|Empresas Estatais Municipais|01012014||685|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.6.40.70|Setor Privado|01012014||686|A|1.1.1.8.6.40.00|7|01
+1.1.1.8.7.00.00|Valores Específicos|01012014||687|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.7.10.00|ENCARGOS DE CONCURSOS A APROPRIAR|01012014||688|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.50.00|APLICAÇÕES ESPECIAIS|01012014||689|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.80.00|ADIANTAMENTOS DE RECURSOS A TERCEIROS|01012014||690|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.82.00|VALORES A RECEBER - REAJUSTE DE SALDO DE CAIXA|01012014||691|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.88.00|BENS RETOMADOS OU DEVOLVIDOS|01012014||692|S|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.88.10|Valor Contábil dos Bens|01012014||693|A|1.1.1.8.7.88.00|7|01
+1.1.1.8.7.89.00|DIREITOS POR CRÉDITOS EM PROCESSO DE HABILITAÇÃO|01012014||694|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.93.00|DIREITOS JUNTO A CONSORCIADOS CONTEMPLADOS|01012014||695|S|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.93.05|Normais|01012014||696|A|1.1.1.8.7.93.00|7|01
+1.1.1.8.7.93.15|Em Atraso|01012014||697|A|1.1.1.8.7.93.00|7|01
+1.1.1.8.7.93.20|Em Cobrança Judicial - Grupos em Andamento|01012014||698|A|1.1.1.8.7.93.00|7|01
+1.1.1.8.7.95.00|VALORES PENDENTES DE RECEBIMENTO - COBRANÇA JUDICIAL|01012014||699|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.96.00|BENS RETOMADOS APÓS ENCERRAMENTO|01012014||700|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.97.00|DIREITOS POR ADIANTAMENTOS A TERCEIROS|01012014||701|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.7.98.00|CHEQUES E OUTROS VALORES A RECEBER|01012014||702|A|1.1.1.8.7.00.00|6|01
+1.1.1.8.8.00.00|Diversos (+/-)|01012014||703|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.8.02.00|ADIANTAMENTOS AO FGC|01012014||704|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.03.00|ADIANTAMENTOS E ANTECIPAÇÕES SALARIAIS|01012014||705|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.05.00|ADIANTAMENTOS PARA PAGAMENTOS DE NOSSA CONTA|01012014||706|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.10.00|ADIANTAMENTOS POR CONTA DE IMOBILIZAÇÕES|01012014||707|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.15.00|CHEQUES A RECEBER|01012014||708|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.20.00|CRÉDITOS DECORRENTES DE CONTRATOS DE EXPORTAÇÃO|01012014||709|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.20.10|Contratos de Exportação Adquiridos|01012014||710|A|1.1.1.8.8.20.00|7|01
+1.1.1.8.8.20.50|Contratos de Exportação Adquiridos em Atraso|01012014||711|A|1.1.1.8.8.20.00|7|01
+1.1.1.8.8.23.00|DIREITOS ESPECÍFICOS DE CONTROLADAS NÃO SUJEITAS À AUTORIZAÇÃO DO BANCO CENTRAL|01012014||712|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.25.00|CRÉDITOS TRIBUTÁRIOS DE IMPOSTOS E CONTRIBUIÇÕES|01012014||713|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.25.10|Créditos Tributários - Circular 2.746 - realização após 5 anos|01012014||714|A|1.1.1.8.8.25.00|7|01
+1.1.1.8.8.25.20|Créditos Tributários - Circular 2.746 - realização até 5 anos|01012014||715|A|1.1.1.8.8.25.00|7|01
+1.1.1.8.8.25.50|Créditos Tributários|01012014||716|A|1.1.1.8.8.25.00|7|01
+1.1.1.8.8.30.00|DEPÓSITOS PARA AQUISIÇÃO DE TELEFONES|01012014||717|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.35.00|DEVEDORES POR COMPRA DE VALORES E BENS|01012014||718|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.40.00|DEVEDORES POR DEPÓSITOS EM GARANTIA|01012014||719|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.40.05|Para Interposição de Recursos Fiscais - Lei 9.703/98|01012014||720|A|1.1.1.8.8.40.00|7|01
+1.1.1.8.8.40.15|Para Interposição de Outros Recursos Fiscais|01012014||721|A|1.1.1.8.8.40.00|7|01
+1.1.1.8.8.40.20|Para Interposição de Recursos Trabalhistas|01012014||722|A|1.1.1.8.8.40.00|7|01
+1.1.1.8.8.40.90|Outros|01012014||723|A|1.1.1.8.8.40.00|7|01
+1.1.1.8.8.45.00|IMPOSTOS E CONTRIBUIÇÕES A COMPENSAR|01012014||724|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.45.10|Antecipações de IRPJ não Compensadas no Próprio Exercício|01012014||725|A|1.1.1.8.8.45.00|7|01
+1.1.1.8.8.45.20|Antecipações de CSLL não Compensadas no Próprio Exercício|01012014||726|A|1.1.1.8.8.45.00|7|01
+1.1.1.8.8.45.30|Antecipações de ISS não Compensadas no Próprio Exercício|01012014||727|A|1.1.1.8.8.45.00|7|01
+1.1.1.8.8.45.40|Créditos Oriundos de Decisões Transitadas em Julgado|01012014||728|A|1.1.1.8.8.45.00|7|01
+1.1.1.8.8.45.90|Outros Impostos e Contribuições a Compensar|01012014||729|A|1.1.1.8.8.45.00|7|01
+1.1.1.8.8.50.00|IMPOSTO DE RENDA A RECUPERAR|01012014||730|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.52.00|CRÉDITO PRESUMIDO LEI 12.838/2013|01012014||731|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.60.00|OPÇÕES POR INCENTIVOS FISCAIS|01012014||732|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.65.00|PAGAMENTOS A RESSARCIR|01012014||733|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.65.20|Empréstimo Compulsório sobre o Consumo de Gasolina ou Álcool|01012014||734|A|1.1.1.8.8.65.00|7|01
+1.1.1.8.8.65.30|Empréstimo Compulsório sobre Aquisição de Automóveis|01012014||735|A|1.1.1.8.8.65.00|7|01
+1.1.1.8.8.65.40|Adiantamentos por Conta da Previdência Social|01012014||736|A|1.1.1.8.8.65.00|7|01
+1.1.1.8.8.65.99|Outros Pagamentos|01012014||737|A|1.1.1.8.8.65.00|7|01
+1.1.1.8.8.70.00|PARTICIPAÇÕES PAGAS ANTECIPADAMENTE|01012014||738|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.73.00|RESULTADO LÍQUIDO NEGATIVO DECORRENTE DE RENEGOCIAÇÃO DE OPERAÇÃO DE CRÉDITO CEDIDA|01012014||739|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.75.00|CRÉDITOS VINCULADOS A OPERAÇÕES ADQUIRIDAS EM CESSÃO|01012014||740|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.75.10|De Operações de Crédito|01012014||741|A|1.1.1.8.8.75.00|7|01
+1.1.1.8.8.75.20|De Operações de Arrendamento Mercantil|01012014||742|A|1.1.1.8.8.75.00|7|01
+1.1.1.8.8.75.30|De Outras Operações com Características de Concessão de Crédito|01012014||743|A|1.1.1.8.8.75.00|7|01
+1.1.1.8.8.75.40|De Outros Ativos Financeiros|01012014||744|A|1.1.1.8.8.75.00|7|01
+1.1.1.8.8.78.00|PRÊMIO OU DESCONTO EM OPERAÇÕES DE VENDA OU DE TRANSFERÊNCIA DE ATIVOS FINANCEIROS (+/-)|01012014||745|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.78.05|Prêmio em Operações de Crédito|01012014||746|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.06|Desconto em Operações de Crédito (-)|01012014||747|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.15|Prêmio em Operações de Arrendamento Mercantil|01012014||748|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.16|Desconto em Operações de Arrendamento Mercantil (-)|01012014||749|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.25|Prêmio em Outras Operações com Características de Concessão deCrédito|01012014||750|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.26|Desconto em Outras Operações com Características de Concessão de Crédito (-)|01012014||751|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.35|Prêmio em Outros Ativos Financeiros|01012014||752|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.78.36|Desconto em Outros Ativos Financeiros (-)|01012014||753|A|1.1.1.8.8.78.00|7|01
+1.1.1.8.8.80.00|TÍTULOS E CRÉDITOS A RECEBER|01012014||754|S|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.80.10|Com Característica de Concessão de Crédito|01012014||755|A|1.1.1.8.8.80.00|7|01
+1.1.1.8.8.80.20|Sem Característica de Concessão de Crédito|01012014||756|A|1.1.1.8.8.80.00|7|01
+1.1.1.8.8.82.00|ATIVOS ATUARIAIS GERADOS POR FUNDOS DE PENSÃO DE BENEFÍCIO DEFINIDO|01012014||757|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.85.00|VALORES A RECEBER DE SOCIEDADES LIGADAS|01012014||758|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.90.00|DEVEDORES DIVERSOS - EXTERIOR|01012014||759|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.8.92.00|DEVEDORES DIVERSOS - PAÍS|01012014||760|A|1.1.1.8.8.00.00|6|01
+1.1.1.8.9.00.00|Provisões para Outros Créditos (-)|01012014||761|S|1.1.1.8.0.00.00|5|01
+1.1.1.8.9.97.00|PROVISÃO PARA PERDAS NA REALIZAÇÃO DE OUTROS CRÉDITOS (-)|01012014||762|A|1.1.1.8.9.00.00|6|01
+1.1.1.8.9.99.00|PROVISÃO PARA OUTROS CRÉDITOS DE LIQUIDAÇÃO DUVIDOSA (-)|01012014||763|S|1.1.1.8.9.00.00|6|01
+1.1.1.8.9.99.10|Com Característica de Concessão de Crédito|01012014||764|A|1.1.1.8.9.99.00|7|01
+1.1.1.8.9.99.20|Sem Característica de Concessão de Crédito|01012014||765|A|1.1.1.8.9.99.00|7|01
+1.1.1.8.9.99.80|De Controladas não Sujeitas à Autorização do Banco Central (-)|01012014||766|A|1.1.1.8.9.99.00|7|01
+1.1.1.9.0.00.00|OUTROS VALORES E BENS|01012014||767|S|1.1.1.0.0.00.00|4|01
+1.1.1.9.1.00.00|Investimentos Temporários|01012014||768|S|1.1.1.9.0.00.00|5|01
+1.1.1.9.1.10.00|PARTICIPAÇÕES SOCIETÁRIAS|01012014||769|A|1.1.1.9.1.00.00|6|01
+1.1.1.9.1.99.00|PROVISÃO PARA PERDAS EM PARTICIPAÇÕES SOCIETÁRIAS (-)|01012014||770|A|1.1.1.9.1.00.00|6|01
+1.1.1.9.8.00.00|Outros Valores e Bens|01012014||771|S|1.1.1.9.0.00.00|5|01
+1.1.1.9.8.10.00|BENS NÃO DE USO PRÓPRIO|01012014||772|S|1.1.1.9.8.00.00|6|01
+1.1.1.9.8.10.10|Imóveis|01012014||773|A|1.1.1.9.8.10.00|7|01
+1.1.1.9.8.10.30|Veículos e Afins|01012014||774|A|1.1.1.9.8.10.00|7|01
+1.1.1.9.8.10.40|Máquinas e Equipamentos|01012014||775|A|1.1.1.9.8.10.00|7|01
+1.1.1.9.8.10.50|Bens em Regime Especial|01012014||776|A|1.1.1.9.8.10.00|7|01
+1.1.1.9.8.10.60|Imóveis Habitacionais|01012014||777|A|1.1.1.9.8.10.00|7|01
+1.1.1.9.8.10.99|Outros|01012014||778|A|1.1.1.9.8.10.00|7|01
+1.1.1.9.8.20.00|MERCADORIAS - CONTA PRÓPRIA|01012014||779|A|1.1.1.9.8.00.00|6|01
+1.1.1.9.8.40.00|MATERIAL EM ESTOQUE|01012014||780|A|1.1.1.9.8.00.00|6|01
+1.1.1.9.8.99.00|PROVISÃO PARA DESVALORIZAÇÃO DE OUTROS VALORES E BENS (-)|01012014||781|S|1.1.1.9.8.00.00|6|01
+1.1.1.9.8.99.10|Imóveis Habitacionais|01012014||782|A|1.1.1.9.8.99.00|7|01
+1.1.1.9.8.99.90|Outros Valores e Bens|01012014||783|A|1.1.1.9.8.99.00|7|01
+1.1.1.9.9.00.00|Despesas Antecipadas|01012014||784|S|1.1.1.9.0.00.00|5|01
+1.1.1.9.9.10.00|DESPESAS ANTECIPADAS|01012014||785|A|1.1.1.9.9.00.00|6|01
+1.1.2.0.0.00.00|PERMANENTE|01012014||786|S|1.1.0.0.0.00.00|3|01
+1.1.2.1.0.00.00|INVESTIMENTOS|01012014||787|S|1.1.2.0.0.00.00|4|01
+1.1.2.1.1.00.00|Investimentos no Exterior|01012014||788|S|1.1.2.1.0.00.00|5|01
+1.1.2.1.1.10.00|DEPÊNDENCIAS NO EXTERIOR|01012014||789|A|1.1.2.1.1.00.00|6|01
+1.1.2.1.1.20.00|PARTICIPAÇÕES NO EXTERIOR AVALIADAS PELO MEP|01012014||790|S|1.1.2.1.1.00.00|6|01
+1.1.2.1.1.20.05|Instituições Financeiras - Valor de Equivalência Patrimonial|01012014||791|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.06|Instituições Financeiras - Ágio Baseado em Expectativa de Rentabilidade Futura|01012014||792|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.07|Instituições Financeiras - Ágio por Diferença de Valor de Mercado de Ativos|01012014||793|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.08|Instituições Financeiras - Ágio Baseado em Fundo de Comércio, Intangíveis e Outras Razões Econômicas|01012014||794|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.15|Instituições não Financeiras - Valor de Equivalência Patrimonial|01012014||795|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.16|Instituições não Financeiras - Ágio Baseado em Expectativa deRentabilidade Futura|01012014||796|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.17|Instituições não Financeiras - Ágio por Diferença de Valor de Mercado de Ativos|01012014||797|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.20.18|Instituições não Financeiras - Ágio Baseado em Fundo de Comércio, Intangíveis e Outras Razões Econômicas|01012014||798|A|1.1.2.1.1.20.00|7|01
+1.1.2.1.1.90.00|OUTRAS PARTICIPAÇÕES NO EXTERIOR|01012014||799|S|1.1.2.1.1.00.00|6|01
+1.1.2.1.1.90.10|Instituições Financeiras|01012014||800|A|1.1.2.1.1.90.00|7|01
+1.1.2.1.1.90.20|Intituições Não Financeiras|01012014||801|A|1.1.2.1.1.90.00|7|01
+1.1.2.1.1.99.00|PROVISÃO PARA PERDAS EM INVESTIMENTOS NO EXTERIOR (-)|01012014||802|S|1.1.2.1.1.00.00|6|01
+1.1.2.1.1.99.10|Dependências|01012014||803|A|1.1.2.1.1.99.00|7|01
+1.1.2.1.1.99.20|Instituições Financeiras|01012014||804|A|1.1.2.1.1.99.00|7|01
+1.1.2.1.1.99.30|Instituições Não Financeiras|01012014||805|A|1.1.2.1.1.99.00|7|01
+1.1.2.1.2.00.00|Participações em Coligadas e Controladas no País|01012014||806|S|1.1.2.1.0.00.00|5|01
+1.1.2.1.2.10.00|PARTICIPAÇÕES EM COLIGADAS E CONTROLADAS|01012014||807|S|1.1.2.1.2.00.00|6|01
+1.1.2.1.2.10.11|Autorizadas a Funcionar pelo Banco Central - Valor de Equivalência Patrimonial|01012014||808|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.12|Autorizadas a Funcionar pelo Banco Central - Ágio Baseado em Expectativa de Rentabilidade Futura|01012014||809|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.13|Autorizadas a Funcionar pelo Banco Central - Ágio por Diferença de Valor de Mercado de Ativos|01012014||810|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.14|Autorizadas a Funcionar pelo Banco Central - Ágio Baseado em Fundo de Comércio, Intangíveis e Outras Razões Econômicas|01012014||811|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.21|Outras Participações - Valor de Equivalência Patrimonial|01012014||812|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.22|Outras Participações - Ágio Baseado em Expectativa de Rentabilidade Futura|01012014||813|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.23|Outras Participações - Ágio por Diferença de Valor de Mercado de Ativos|01012014||814|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.24|Outras Participações - Ágio Baseado em Fundo de Comércio, Intangíveis e Outras Razões Econômicas|01012014||815|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.45|Autorizadas a Funcionar pelo Banco Central não Avaliadas pelo MEP|01012014||816|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.55|Outras Participações não Avaliadas pelo MEP|01012014||817|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.10.95|Ações de Empresas Privatizadas|01012014||818|A|1.1.2.1.2.10.00|7|01
+1.1.2.1.2.99.00|PROVISÃO PARA PERDAS EM SOCIEDADES COLIGADAS E CONTROLADAS (-)|01012014||819|S|1.1.2.1.2.00.00|6|01
+1.1.2.1.2.99.11|Autorizadas a Funcionar pelo Banco Central - Valor de Equivalência Patrimonial|01012014||820|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.12|Autorizadas a Funcionar pelo Banco Central - Ágio Baseado em Expectativa de Rentabilidade Futura|01012014||821|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.13|Autorizadas a Funcionar pelo Banco Central - Ágio por Diferença de Valor de Mercado de Ativos|01012014||822|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.14|Autorizadas a Funcionar pelo Banco Central - Ágio Baseado em Fundo de Comércio, Intangíveis e Outras Razões Econômicas|01012014||823|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.21|Outras Participações - Valor de Equivalência Patrimonial|01012014||824|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.22|Outras Participações - Ágio Baseado em Expectativa de Rentabilidade Futura|01012014||825|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.23|Outras Participações - Ágio por Diferença de Valor de Mercado de Ativos|01012014||826|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.2.99.24|Outras Participações - Ágio Baseado em Fundo de Comércio, Intangíveis e Outras Razões Econômicas|01012014||827|A|1.1.2.1.2.99.00|7|01
+1.1.2.1.3.00.00|Investimentos por Incentivos Fiscais|01012014||828|S|1.1.2.1.0.00.00|5|01
+1.1.2.1.3.10.00|CERTIFICADOS DE INVESTIMENTO - CI|01012014||829|A|1.1.2.1.3.00.00|6|01
+1.1.2.1.3.20.00|PARTICIPAÇÕES DE CAPITAL POR INCENTIVOS FISCAIS|01012014||830|A|1.1.2.1.3.00.00|6|01
+1.1.2.1.3.90.00|OUTROS INVESTIMENTOS POR INCENTIVOS FISCAIS|01012014||831|A|1.1.2.1.3.00.00|6|01
+1.1.2.1.3.99.00|PROVISÃO PARA PERDAS EM INVESTIMENTOS POR INCENTIVOS FISCAIS (-)|01012014||832|A|1.1.2.1.3.00.00|6|01
+1.1.2.1.4.00.00|Títulos Patrimoniais|01012014||833|S|1.1.2.1.0.00.00|5|01
+1.1.2.1.4.10.00|TÍTULOS PATRIMONIAIS|01012014||834|S|1.1.2.1.4.00.00|6|01
+1.1.2.1.4.10.10|De Bolsas de Valores|01012014||835|A|1.1.2.1.4.10.00|7|01
+1.1.2.1.4.10.20|De Bolsas de Mercadorias e de Futuros|01012014||836|A|1.1.2.1.4.10.00|7|01
+1.1.2.1.4.10.30|Da CETIP|01012014||837|A|1.1.2.1.4.10.00|7|01
+1.1.2.1.4.10.90|Outros|01012014||838|A|1.1.2.1.4.10.00|7|01
+1.1.2.1.4.30.00|ÁGIOS NA AQUISIÇÃO DE TÍTULOS PATRIMONIAIS|01012014||839|A|1.1.2.1.4.00.00|6|01
+1.1.2.1.4.99.00|PROVISÃO PARA PERDAS EM TÍTULOS PATRIMONIAIS (-)|01012014||840|A|1.1.2.1.4.00.00|6|01
+1.1.2.1.5.00.00|Ações e Cotas|01012014||841|S|1.1.2.1.0.00.00|5|01
+1.1.2.1.5.10.00|AÇÕES E COTAS|01012014||842|S|1.1.2.1.5.00.00|6|01
+1.1.2.1.5.10.10|De Empresas de Liquidação e Custódia Vinculadas a Bolsas|01012014||843|A|1.1.2.1.5.10.00|7|01
+1.1.2.1.5.10.20|Outros|01012014||844|A|1.1.2.1.5.10.00|7|01
+1.1.2.1.5.20.00|AÇÕES DE EMPRESAS PRIVATIZADAS|01012014||845|A|1.1.2.1.5.00.00|6|01
+1.1.2.1.5.30.00|PARTICIPAÇÕES DE COOPERATIVAS|01012014||846|S|1.1.2.1.5.00.00|6|01
+1.1.2.1.5.30.05|Participação em Cooperativa Central de Crédito|01012014||847|A|1.1.2.1.5.30.00|7|01
+1.1.2.1.5.30.10|Participação em Instituição Financeira Controlada por Cooperativa de Crédito|01012014||848|A|1.1.2.1.5.30.00|7|01
+1.1.2.1.5.30.15|Participação em Cooperativas, Exceto Cooperativa Central de Crédito|01012014||849|A|1.1.2.1.5.30.00|7|01
+1.1.2.1.5.30.20|Participação em Empresas Controladas por Cooperativa Central de Crédito|01012014||850|A|1.1.2.1.5.30.00|7|01
+1.1.2.1.5.30.90|Outras Participações|01012014||851|A|1.1.2.1.5.30.00|7|01
+1.1.2.1.5.99.00|PROVISÃO PARA PERDAS EM AÇÕES E COTAS (-)|01012014||852|S|1.1.2.1.5.00.00|6|01
+1.1.2.1.5.99.10|De Empresas de Liquidação e Custódia Vinculadas a Bolsas|01012014||853|A|1.1.2.1.5.99.00|7|01
+1.1.2.1.5.99.20|Outros|01012014||854|A|1.1.2.1.5.99.00|7|01
+1.1.2.1.9.00.00|Outros Investimentos|01012014||855|S|1.1.2.1.0.00.00|5|01
+1.1.2.1.9.90.00|OUTROS INVESTIMENTOS|01012014||856|A|1.1.2.1.9.00.00|6|01
+1.1.2.1.9.99.00|PROVISÃO PARA PERDAS EM OUTROS INVESTIMENTOS (-)|01012014||857|A|1.1.2.1.9.00.00|6|01
+1.1.2.2.0.00.00|IMOBILIZADO DE USO|01012014||858|S|1.1.2.0.0.00.00|4|01
+1.1.2.2.1.00.00|Móveis e Equipamentos em Estoque|01012014||859|S|1.1.2.2.0.00.00|5|01
+1.1.2.2.1.10.00|MÓVEIS E EQUIPAMENTOS EM ESTOQUE|01012014||860|A|1.1.2.2.1.00.00|6|01
+1.1.2.2.2.00.00|Imobilizações em Curso|01012014||861|S|1.1.2.2.0.00.00|5|01
+1.1.2.2.2.10.00|IMOBILIZAÇÕES EM CURSO|01012014||862|S|1.1.2.2.2.00.00|6|01
+1.1.2.2.2.10.10|Imóveis|01012014||863|A|1.1.2.2.2.10.00|7|01
+1.1.2.2.2.10.20|Móveis e Equipamentos|01012014||864|A|1.1.2.2.2.10.00|7|01
+1.1.2.2.2.10.90|Outros|01012014||865|A|1.1.2.2.2.10.00|7|01
+1.1.2.2.3.00.00|Imóveis de Uso|01012014||866|S|1.1.2.2.0.00.00|5|01
+1.1.2.2.3.10.00|IMÓVEIS DE USO|01012014||867|S|1.1.2.2.3.00.00|6|01
+1.1.2.2.3.10.10|Terrenos|01012014||868|A|1.1.2.2.3.10.00|7|01
+1.1.2.2.3.10.15|Terrenos - Reavaliações|01012014||869|A|1.1.2.2.3.10.00|7|01
+1.1.2.2.3.10.20|Edificações|01012014||870|A|1.1.2.2.3.10.00|7|01
+1.1.2.2.3.10.25|Edificações - Reavaliações|01012014||871|A|1.1.2.2.3.10.00|7|01
+1.1.2.2.3.99.00|DEPRECIAÇÃO ACUMULADA DE IMÓVEIS DE USO - EDIFICAÇÕES (-)|01012014||872|A|1.1.2.2.3.00.00|6|01
+1.1.2.2.4.00.00|Instalações, Móveis e Equipamentos de Uso|01012014||873|S|1.1.2.2.0.00.00|5|01
+1.1.2.2.4.10.00|INSTALAÇÕES|01012014||874|A|1.1.2.2.4.00.00|6|01
+1.1.2.2.4.20.00|MÓVEIS E EQUIPAMENTOS DE USO|01012014||875|A|1.1.2.2.4.00.00|6|01
+1.1.2.2.4.96.00|DEPRECIAÇÃO ACUMULADA DE INSTALAÇÕES (-)|01012014||876|A|1.1.2.2.4.00.00|6|01
+1.1.2.2.4.99.00|DEPRECIAÇÃO ACUMULADA DE MÓVEIS E EQUIPAMENTOS DE USO (-)|01012014||877|A|1.1.2.2.4.00.00|6|01
+1.1.2.2.8.00.00|Provisão para o Imobilizado de Uso (-)|01012014||878|S|1.1.2.2.0.00.00|5|01
+1.1.2.2.8.97.00|PROVISÃO PARA PERDAS NA REALIZAÇÃO DO IMOBILIZADO DE USO (-)|01012014||879|A|1.1.2.2.8.00.00|6|01
+1.1.2.2.9.00.00|Outros|01012014||880|S|1.1.2.2.0.00.00|5|01
+1.1.2.2.9.10.00|SISTEMA DE COMUNICAÇÃO|01012014||881|S|1.1.2.2.9.00.00|6|01
+1.1.2.2.9.10.10|Equipamentos|01012014||882|A|1.1.2.2.9.10.00|7|01
+1.1.2.2.9.10.20|Direitos de Uso|01012014||883|A|1.1.2.2.9.10.00|7|01
+1.1.2.2.9.30.00|SISTEMA DE PROCESSAMENTO DE DADOS|01012014||884|A|1.1.2.2.9.00.00|6|01
+1.1.2.2.9.50.00|SISTEMA DE SEGURANÇA|01012014||885|A|1.1.2.2.9.00.00|6|01
+1.1.2.2.9.70.00|SISTEMA DE TRANSPORTE|01012014||886|A|1.1.2.2.9.00.00|6|01
+1.1.2.2.9.99.00|DEPRECIAÇÃO ACUMULADA DE OUTRAS IMOBILIZAÇÕES DE USO (-)|01012014||887|S|1.1.2.2.9.00.00|6|01
+1.1.2.2.9.99.10|Sistema de Comunicação - Equipamentos|01012014||888|A|1.1.2.2.9.99.00|7|01
+1.1.2.2.9.99.30|Sistema de Processamento de Dados|01012014||889|A|1.1.2.2.9.99.00|7|01
+1.1.2.2.9.99.50|Sistema de Segurança|01012014||890|A|1.1.2.2.9.99.00|7|01
+1.1.2.2.9.99.70|Sistema de Transporte|01012014||891|A|1.1.2.2.9.99.00|7|01
+1.1.2.3.0.00.00|IMOBILIZADO DE ARRENDAMENTO|01012014||892|S|1.1.2.0.0.00.00|4|01
+1.1.2.3.2.00.00|Bens Arrendados - Arrendamento Financeiro|01012014||893|S|1.1.2.3.0.00.00|5|01
+1.1.2.3.2.10.00|BENS ARRENDADOS - ARRENDAMENTO FINANCEIRO|01012014||894|S|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.10.10|Aeronaves|01012014||895|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.20|Embarcações|01012014||896|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.30|Imóveis|01012014||897|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.40|Instalações|01012014||898|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.50|Móveis|01012014||899|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.60|Máquinas e Equipamentos|01012014||900|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.70|Veículos e Afins|01012014||901|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.10.90|Outros|01012014||902|A|1.1.2.3.2.10.00|7|01
+1.1.2.3.2.15.00|BENS ARRENDADOS - ARRENDAMENTOS FINANCEIROS ESPECIAIS|01012014||903|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.30.00|SUPERVENIÊNCIAS DE DEPRECIAÇÕES|01012014||904|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.35.00|SUPERVENIÊNCIA DE DEPRECIAÇÕES - ARRENDAMENTOS FINANCEIROS ESPECIAIS|01012014||905|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.40.00|INSUFICIÊNCIA DE DEPRECIAÇÕES (-)|01012014||906|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.45.00|INSUFICIÊNCIA DE DEPRECIAÇÕES - ARRENDAMENTOS FINANCEIROS ESPECIAIS (-)|01012014||907|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.50.00|PROVISÃO PARA DEPRECIAÇÃO - CESSÃO DE CRÉDITOS (-)|01012014||908|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.70.00|VALOR A RECUPERAR (-)|01012014||909|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.90.00|DEPRECIAÇÃO ACUMULADA DE BENS DE ARRENDAMENTO FINANCEIRO     (-)|01012014||910|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.2.95.00|DEPRECIAÇÃO ACUMULADA DE BENS DE ARRENDAMENTOS FINANCEIROS ESPECIAIS (-)|01012014||911|A|1.1.2.3.2.00.00|6|01
+1.1.2.3.3.00.00|Bens Arrendados - Arrendamento Operacional|01012014||912|S|1.1.2.3.0.00.00|5|01
+1.1.2.3.3.10.00|BENS ARRENDADOS - ARRENDAMENTO OPERACIONAL|01012014||913|S|1.1.2.3.3.00.00|6|01
+1.1.2.3.3.10.10|Aeronaves|01012014||914|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.20|Embarcações|01012014||915|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.30|Imóveis|01012014||916|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.40|Instalações|01012014||917|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.50|Móveis|01012014||918|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.60|Máquinas e Equipamentos|01012014||919|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.70|Veículos e Afins|01012014||920|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.10.90|Outros|01012014||921|A|1.1.2.3.3.10.00|7|01
+1.1.2.3.3.40.00|PROVISÃO PARA PERDAS DE BENS DE ARRENDAMENTO OPERACIONAL (-)|01012014||922|A|1.1.2.3.3.00.00|6|01
+1.1.2.3.3.90.00|DEPRECIAÇÃO ACUMULADA DE BENS DE ARRENDAMENTO OPERACIONAL (-)|01012014||923|A|1.1.2.3.3.00.00|6|01
+1.1.2.4.0.00.00|DIFERIDO|01012014||924|S|1.1.2.0.0.00.00|4|01
+1.1.2.4.1.00.00|Gastos de Organização e Expansão|01012014||925|S|1.1.2.4.0.00.00|5|01
+1.1.2.4.1.10.00|ÁGIOS DE INCORPORAÇÃO|01012014||926|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.20.00|GASTOS EM IMÓVEIS DE TERCEIROS|01012014||927|S|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.20.10|Benfeitorias|01012014||928|A|1.1.2.4.1.20.00|7|01
+1.1.2.4.1.20.20|Fundo de Comércio|01012014||929|A|1.1.2.4.1.20.00|7|01
+1.1.2.4.1.30.00|SFH - DESCONTOS CONCEDIDOS|01012014||930|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.40.00|CONSTITUIÇÃO E REESTRUTURAÇÃO DA SOCIEDADE|01012014||931|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.45.00|GASTOS A AMORTIZAR - PROER|01012014||932|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.50.00|DIREITOS AO EXERCÍCIO DE ATIVIDADES FINANCEIRAS|01012014||933|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.60.00|GASTOS COM AQUISIÇÃO E DESENVOLVIMENTO DE LOGICIAIS|01012014||934|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.70.00|INSTALAÇÃO E ADAPTAÇÃO DE DEPENDÊNCIAS|01012014||935|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.80.00|PERDAS EM ARRENDAMENTOS A AMORTIZAR|01012014||936|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.90.00|OUTROS GASTOS DIFERIDOS|01012014||937|A|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.95.00|REORGANIZAÇÃO ADMINISTRATIVA E/OU REESTRUTURAÇÃO E MODERNIZAÇÃO DE SISTEMAS OPERACIONAIS|01012014||938|S|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.95.10|Redimensionamento de Recursos Humanos e Materiais|01012014||939|A|1.1.2.4.1.95.00|7|01
+1.1.2.4.1.95.20|Redimensionamento da Rede de Dependências|01012014||940|A|1.1.2.4.1.95.00|7|01
+1.1.2.4.1.99.00|AMORTIZAÇÃO ACUMULADA DO DIFERIDO (-)|01012014||941|S|1.1.2.4.1.00.00|6|01
+1.1.2.4.1.99.10|Ágios de Incorporação|01012014||942|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.20|Gastos em Imóveis de Terceiros|01012014||943|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.30|SFH - Descontos Concedidos|01012014||944|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.40|Constituição e Reestruturação da Sociedade|01012014||945|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.45|Gastos a Amortizar - PROER|01012014||946|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.50|Direitos ao Exercício de Atividades Financeiras|01012014||947|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.60|Gastos com Aquisição e Desenvolvimento de Logiciais|01012014||948|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.70|Instalação e Adaptação de Dependências|01012014||949|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.80|Perdas em Arrendamentos a Amortizar|01012014||950|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.90|Outros Gastos Diferidos|01012014||951|A|1.1.2.4.1.99.00|7|01
+1.1.2.4.1.99.95|Reorganização Administrativa e/ou Reestruturação e Modernização de Sistemas Operacionais|01012014||952|A|1.1.2.4.1.99.00|7|01
+1.1.2.5.0.00.00|INTANGÍVEL|01012014||953|S|1.1.2.0.0.00.00|4|01
+1.1.2.5.1.00.00|Ativos Intangíveis|01012014||954|S|1.1.2.5.0.00.00|5|01
+1.1.2.5.1.01.00|DIREITOS POR AQUISIÇÃO DE FOLHAS DE PAGAMENTO|01012014||955|S|1.1.2.5.1.00.00|6|01
+1.1.2.5.1.01.10|Adquiridos até 31 de dezembro de 2009|01012014||956|A|1.1.2.5.1.01.00|7|01
+1.1.2.5.1.01.20|Adquiridos entre 1º de janeiro de 2010 e 1º de outubro de 2013|01012014||957|A|1.1.2.5.1.01.00|7|01
+1.1.2.5.1.01.30|Adquiridos a partir de 1º de outubro de 2013|01012014||958|A|1.1.2.5.1.01.00|7|01
+1.1.2.5.1.98.00|OUTROS ATIVOS INTANGÍVEIS|01012014||959|S|1.1.2.5.1.00.00|6|01
+1.1.2.5.1.98.10|Outros Ativos Intangíveis Adquiridos antes de 1º de outubro de 2013|01012014||960|A|1.1.2.5.1.98.00|7|01
+1.1.2.5.1.98.20|Outros Ativos Intangíveis Adquiridos a partir de 1º de outubro de 2013|01012014||961|A|1.1.2.5.1.98.00|7|01
+1.1.2.5.1.99.00|AMORTIZAÇÃO ACUMULADA DE ATIVOS INTANGÍVEIS (-)|01012014||962|S|1.1.2.5.1.00.00|6|01
+1.1.2.5.1.99.10|Adquiridos antes de 1º de outubro de 2013|01012014||963|A|1.1.2.5.1.99.00|7|01
+1.1.2.5.1.99.20|Adquiridos a partir de 1º de outubro de 2013|01012014||964|A|1.1.2.5.1.99.00|7|01
+1.1.2.5.2.00.00|Ágio na Aquisição de Investimento|01012014||965|S|1.1.2.5.0.00.00|5|01
+1.1.2.5.2.10.00|ÁGIO BASEADO EM EXPECTATIVA DE RENTABILIDADE FUTURA|01012014||966|A|1.1.2.5.2.00.00|6|01
+1.1.2.5.2.90.00|AMORTIZAÇÃO ACUMULADA DE ÁGIO NA AQUISIÇÃO DE INVESTIMENTOS (-)|01012014||967|A|1.1.2.5.2.00.00|6|01
+2.0.0.0.0.00.00|PASSIVO GERAL|01012014||968|S||1|02
+2.1.0.0.0.00.00|PASSIVO|01012014||969|S|2.0.0.0.0.00.00|2|02
+2.1.4.0.0.00.00|CIRCULANTE EXIGIVEL A LONGO PRAZO|01012014||970|S|2.1.0.0.0.00.00|3|02
+2.1.4.1.0.00.00|DEPÓSITOS|01012014||971|S|2.1.4.0.0.00.00|4|02
+2.1.4.1.1.00.00|Depósitos à Vista|01012014||972|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.1.05.00|DEPÓSITOS À VISTA DE LIGADAS|01012014||973|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.05.10|Pessoas Físicas|01012014||974|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.20|Pessoas Jurídicas|01012014||975|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.30|Administração Direta - Governo Federal|01012014||976|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.40|Administração Indireta - Governo Federal|01012014||977|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.50|Administração Direta - Governo Estadual|01012014||978|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.60|Administração Indireta - Governo Estadual|01012014||979|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.70|Atividades Empresariais - Governo Federal|01012014||980|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.05.80|Atividades Empresariais - Governo Estadual|01012014||981|A|2.1.4.1.1.05.00|7|02
+2.1.4.1.1.10.00|DEPÓSITOS DE PESSOAS FÍSICAS|01012014||982|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.20.00|DEPÓSITOS DE PESSOAS JURÍDICAS|01012014||983|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.25.00|DEPÓSITOS DE EMPRESAS LOCALIZADAS EM ZONAS DE PROCESSAMENTO PARA EXPORTAÇÃO - ZPE|01012014||984|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.30.00|DEPÓSITOS DE INSTITUIÇÕES DO SISTEMA FINANCEIRO|01012014||985|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.30.30|Instituições Autorizadas a Funcionar pelo Banco Central|01012014||986|A|2.1.4.1.1.30.00|7|02
+2.1.4.1.1.30.40|Entidades do Mercado Segurador e de Previdência Privada|01012014||987|A|2.1.4.1.1.30.00|7|02
+2.1.4.1.1.30.99|Outras Instituições|01012014||988|A|2.1.4.1.1.30.00|7|02
+2.1.4.1.1.38.00|DEPÓSITOS PARA AQUISIÇÃO DE TÍTULOS PÚBLICOS FEDERAIS|01012014||989|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.38.05|Pessoas Físicas|01012014||990|A|2.1.4.1.1.38.00|7|02
+2.1.4.1.1.38.10|Pessoas Jurídicas|01012014||991|A|2.1.4.1.1.38.00|7|02
+2.1.4.1.1.40.00|DEPÓSITOS DE GOVERNOS|01012014||992|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.40.10|Administração Direta - Federal|01012014||993|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.15|Administração Indireta - Federal|01012014||994|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.20|Administração Direta - Estadual|01012014||995|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.25|Administração Indireta - Estadual|01012014||996|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.30|Administração Direta - Municipal|01012014||997|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.35|Administração Indireta - Municipal|01012014||998|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.40|Atividades Empresariais Federais|01012014||999|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.50|Atividades Empresariais Estaduais|01012014||1000|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.40.60|Atividades Empresariais Municipais|01012014||1001|A|2.1.4.1.1.40.00|7|02
+2.1.4.1.1.45.00|CHEQUES DE VIAGEM|01012014||1002|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.50.00|CHEQUES MARCADOS|01012014||1003|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.55.00|CHEQUES-SALÁRIO|01012014||1004|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.60.00|DEPÓSITOS DE DOMICILIADOS NO EXTERIOR|01012014||1005|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.60.10|Provenientes de Vendas de Câmbio|01012014||1006|A|2.1.4.1.1.60.00|7|02
+2.1.4.1.1.60.20|De Outras Origens|01012014||1007|A|2.1.4.1.1.60.00|7|02
+2.1.4.1.1.60.30|De Instituições Financeiras|01012014||1008|A|2.1.4.1.1.60.00|7|02
+2.1.4.1.1.65.00|DEPÓSITOS ESPECIAIS DO TESOURO NACIONAL|01012014||1009|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.75.00|DEPÓSITOS OBRIGATÓRIOS|01012014||1010|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.77.00|DEPÓSITOS OBRIGATÓRIOS DE LIGADAS|01012014||1011|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.80.00|DEPÓSITOS PARA INVESTIMENTOS DECORRENTES DE INCENTIVOS FISCAIS|01012014||1012|A|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.85.00|DEPÓSITOS VINCULADOS|01012014||1013|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.85.03|TEA - Ligadas|01012014||1014|A|2.1.4.1.1.85.00|7|02
+2.1.4.1.1.85.05|TEA - Não Ligadas|01012014||1015|A|2.1.4.1.1.85.00|7|02
+2.1.4.1.1.85.20|Ligadas|01012014||1016|A|2.1.4.1.1.85.00|7|02
+2.1.4.1.1.85.99|Outros|01012014||1017|A|2.1.4.1.1.85.00|7|02
+2.1.4.1.1.90.00|SALDOS CREDORES EM CONTAS DE EMPRÉSTIMOS E FINANCIAMENTOS|01012014||1018|S|2.1.4.1.1.00.00|6|02
+2.1.4.1.1.90.10|Comissão de Financiamento da Produção - CFP|01012014||1019|A|2.1.4.1.1.90.00|7|02
+2.1.4.1.1.90.99|Outros|01012014||1020|A|2.1.4.1.1.90.00|7|02
+2.1.4.1.2.00.00|Depósitos de Poupança|01012014||1021|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.2.10.00|DEPÓSITOS DE POUPANÇA LIVRES - PESSOAS FÍSICAS|01012014||1022|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.20.00|DEPÓSITOS DE POUPANÇA LIVRES - PESSOAS JURÍDICAS|01012014||1023|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.25.00|DEPÓSITOS DE POUPANÇA DE LIGADAS|01012014||1024|S|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.25.10|Pessoas Físicas|01012014||1025|A|2.1.4.1.2.25.00|7|02
+2.1.4.1.2.25.20|Pessoas Jurídicas|01012014||1026|A|2.1.4.1.2.25.00|7|02
+2.1.4.1.2.30.00|DEPÓSITOS DE POUPANÇA PECÚLIO|01012014||1027|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.35.00|DEPÓSITOS DE POUPANÇA DE INSTITUIÇÕES DO SISTEMA FINANCEIRO|01012014||1028|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.40.00|DEPÓSITOS DE POUPANÇA PROGRAMADA|01012014||1029|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.50.00|DEPÓSITOS DE POUPANÇA - VALORES MÚLTIPLOS|01012014||1030|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.60.00|DEPÓSITOS DE POUPANÇA VINCULADA|01012014||1031|S|2.1.4.1.2.00.00|6|02
+2.1.4.1.2.60.10|Habitacionais|01012014||1032|A|2.1.4.1.2.60.00|7|02
+2.1.4.1.2.60.20|Cooperativas|01012014||1033|A|2.1.4.1.2.60.00|7|02
+2.1.4.1.2.60.30|Cooperativados|01012014||1034|A|2.1.4.1.2.60.00|7|02
+2.1.4.1.2.60.40|Vinculadas a Carta de Crédito|01012014||1035|A|2.1.4.1.2.60.00|7|02
+2.1.4.1.2.60.99|Outras|01012014||1036|A|2.1.4.1.2.60.00|7|02
+2.1.4.1.2.80.00|DEPÓSITOS DE POUPANÇA ESPECIAL|01012014||1037|A|2.1.4.1.2.00.00|6|02
+2.1.4.1.3.00.00|Depósitos Interfinanceiros|01012014||1038|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.3.10.00|DEPÓSITOS INTERFINANCEIROS|01012014||1039|S|2.1.4.1.3.00.00|6|02
+2.1.4.1.3.10.10|Ligadas|01012014||1040|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.15|Ligadas com Garantia|01012014||1041|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.20|Não Ligadas|01012014||1042|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.25|Não Ligadas com Garantia|01012014||1043|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.30|Ligadas - Vinculados ao Crédito Rural|01012014||1044|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.35|Ligadas com Garantia - Vinculados ao Crédito Rural|01012014||1045|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.40|Não Ligadas - Vinculados ao Crédito Rural|01012014||1046|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.45|Não Ligadas com Garantia - Vinculados ao Crédito Rural|01012014||1047|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.50|Ligadas - Vinculados a Dívidas Renegociadas|01012014||1048|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.55|Não Ligadas - Vinculados a Dívidas Renegociadas|01012014||1049|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.60|Ligadas - Sociedade de Arrendamento Mercantil|01012014||1050|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.65|Ligadas com Garantia - Sociedade de Arrendamento Mercantil|01012014||1051|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.70|Não Ligadas - Sociedade de Arrendamento Mercantil|01012014||1052|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.3.10.75|Não Ligadas com Garantia - Sociedade de Arrendamento Mercantil|01012014||1053|A|2.1.4.1.3.10.00|7|02
+2.1.4.1.4.00.00|Depósitos sob Aviso|01012014||1054|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.4.10.00|DEPÓSITOS DE AVISO PRÉVIO|01012014||1055|S|2.1.4.1.4.00.00|6|02
+2.1.4.1.4.10.10|Ligadas|01012014||1056|A|2.1.4.1.4.10.00|7|02
+2.1.4.1.4.10.20|Não Ligadas|01012014||1057|A|2.1.4.1.4.10.00|7|02
+2.1.4.1.4.10.30|Instituições do Sistema Financeiro|01012014||1058|A|2.1.4.1.4.10.00|7|02
+2.1.4.1.4.20.00|DEPÓSITOS DE AVISO PRÉVIO EM MOEDAS ESTRANGEIRAS|01012014||1059|A|2.1.4.1.4.00.00|6|02
+2.1.4.1.5.00.00|Depósitos a Prazo|01012014||1060|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.5.10.00|DEPÓSITOS A PRAZO|01012014||1061|S|2.1.4.1.5.00.00|6|02
+2.1.4.1.5.10.10|Com Certificado|01012014||1062|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.20|Não Ligadas - Sem Certificado|01012014||1063|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.22|Não Ligadas - Sem Certificado - Com Garantia Especial do FGC - Com Alienação de Recebíveis|01012014||1064|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.23|Não Ligadas - Sem Certificado - Com Garantia Especial do FGC - Sem Alienação de Recebíveis|01012014||1065|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.30|Ligadas - Sem Certificado|01012014||1066|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.32|Ligadas - Sem Certificado - Com Garantia Especial do FGC - Com Alienação de Recebíveis|01012014||1067|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.33|Ligadas - Sem Certificado - Com Garantia Especial do FGC - Sem Alienação de Recebíveis|01012014||1068|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.10.50|Relacionados a Programas Governamentais|01012014||1069|A|2.1.4.1.5.10.00|7|02
+2.1.4.1.5.20.00|DEPÓSITOS A PRAZO EM MOEDAS ESTRANGEIRAS|01012014||1070|A|2.1.4.1.5.00.00|6|02
+2.1.4.1.5.30.00|DEPÓSITOS A PRAZO DE REAPLICAÇÃO AUTOMÁTICA|01012014||1071|S|2.1.4.1.5.00.00|6|02
+2.1.4.1.5.30.10|Ligadas|01012014||1072|A|2.1.4.1.5.30.00|7|02
+2.1.4.1.5.30.20|Não Ligadas|01012014||1073|A|2.1.4.1.5.30.00|7|02
+2.1.4.1.5.30.30|Instituições do Sistema Financeiro|01012014||1074|A|2.1.4.1.5.30.00|7|02
+2.1.4.1.5.50.00|DEPÓSITOS JUDICIAIS COM REMUNERAÇÃO|01012014||1075|S|2.1.4.1.5.00.00|6|02
+2.1.4.1.5.50.40|Na Justiça Federal|01012014||1076|A|2.1.4.1.5.50.00|7|02
+2.1.4.1.5.50.90|Outros|01012014||1077|A|2.1.4.1.5.50.00|7|02
+2.1.4.1.6.00.00|Obrigações por Depósitos Especiais e de Fundos e Programas|01012014||1078|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.6.10.00|DEPÓSITOS ESPECIAIS COM REMUNERAÇÃO|01012014||1079|A|2.1.4.1.6.00.00|6|02
+2.1.4.1.6.15.00|DEPÓSITOS DE PAGAMENTOS POR CONSIGNAÇÃO - EXTRAJUDICIAL|01012014||1080|A|2.1.4.1.6.00.00|6|02
+2.1.4.1.6.20.00|DEPÓSITOS DE FUNDOS E PROGRAMAS COM REMUNERAÇÃO|01012014||1081|A|2.1.4.1.6.00.00|6|02
+2.1.4.1.6.25.00|DEPÓSITOS DE FUNDOS E PROGRAMAS SEM REMUNERAÇÃO|01012014||1082|A|2.1.4.1.6.00.00|6|02
+2.1.4.1.6.30.00|DEPÓSITOS DO FGTS|01012014||1083|A|2.1.4.1.6.00.00|6|02
+2.1.4.1.7.00.00|APE - Depósitos Especiais|01012014||1084|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.7.10.00|APE - DEPÓSITOS ESPECIAIS|01012014||1085|A|2.1.4.1.7.00.00|6|02
+2.1.4.1.8.00.00|Depósitos em Moedas Estrangeiras|01012014||1086|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.8.10.00|DEPÓSITOS EM MOEDAS ESTRANGEIRAS NO PAÍS|01012014||1087|S|2.1.4.1.8.00.00|6|02
+2.1.4.1.8.10.10|"Special Accounts"|01012014||1088|A|2.1.4.1.8.10.00|7|02
+2.1.4.1.8.10.20|Rendimentos de "Special Accounts"|01012014||1089|A|2.1.4.1.8.10.00|7|02
+2.1.4.1.8.10.30|De Movimentação Livre|01012014||1090|A|2.1.4.1.8.10.00|7|02
+2.1.4.1.8.10.40|De Movimentação Restrita|01012014||1091|A|2.1.4.1.8.10.00|7|02
+2.1.4.1.8.10.90|Outros|01012014||1092|A|2.1.4.1.8.10.00|7|02
+2.1.4.1.9.00.00|Outros Depósitos|01012014||1093|S|2.1.4.1.0.00.00|5|02
+2.1.4.1.9.20.00|DEPÓSITOS PARA LIQUIDAÇÃO DE AJUSTES E DE POSIÇÕES EMSISTEMAS DE COMPENSAÇÃO E DE LIQUIDAÇÃO|01012014||1094|A|2.1.4.1.9.00.00|6|02
+2.1.4.2.0.00.00|OBRIGAÇÕES POR OPERAÇÕES COMPROMISSADAS|01012014||1095|S|2.1.4.0.0.00.00|4|02
+2.1.4.2.1.00.00|Carteira Própria|01012014||1096|S|2.1.4.2.0.00.00|5|02
+2.1.4.2.1.10.00|RECOMPRAS A LIQUIDAR - CARTEIRA PRÓPRIA|01012014||1097|S|2.1.4.2.1.00.00|6|02
+2.1.4.2.1.10.03|Letras Financeiras do Tesouro|01012014||1098|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.05|Letras do Tesouro Nacional|01012014||1099|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.07|Notas do Tesouro Nacional|01012014||1100|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.10|Obrigações do Tesouro Nacional|01012014||1101|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.12|Bônus do Tesouro Nacional|01012014||1102|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.15|Letras do Banco Central|01012014||1103|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.16|Notas do Banco Central|01012014||1104|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.18|Bônus do Banco Central|01012014||1105|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.20|Títulos Estaduais e Municipais|01012014||1106|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.25|Certificados de Depósito Bancário|01012014||1107|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.30|CDB - Instituição Financeira Ligada|01012014||1108|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.35|Letras de Câmbio|01012014||1109|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.40|LC - Instituição Financeira Ligada|01012014||1110|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.45|Letras Imobiliárias|01012014||1111|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.50|LI - Instituição Financeira Ligada|01012014||1112|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.62|Certificados de Recebíveis Imobiliários|01012014||1113|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.65|Debêntures|01012014||1114|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.80|Títulos de Emissão Própria|01012014||1115|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.92|Títulos de Responsabilidade da União no Exterior|01012014||1116|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.98|Outros Títulos no Exterior|01012014||1117|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.1.10.99|Outros|01012014||1118|A|2.1.4.2.1.10.00|7|02
+2.1.4.2.2.00.00|Carteira de Terceiros|01012014||1119|S|2.1.4.2.0.00.00|5|02
+2.1.4.2.2.20.00|RECOMPRAS A LIQUIDAR - CARTEIRA DE TERCEIROS|01012014||1120|S|2.1.4.2.2.00.00|6|02
+2.1.4.2.2.20.03|Letras Financeiras do Tesouro|01012014||1121|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.05|Letras do Tesouro Nacional|01012014||1122|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.07|Notas do Tesouro Nacional|01012014||1123|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.10|Obrigações do Tesouro Nacional|01012014||1124|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.12|Bônus do Tesouro Nacional|01012014||1125|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.15|Letras do Banco Central|01012014||1126|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.16|Notas do Banco Central|01012014||1127|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.18|Bônus do Banco Central|01012014||1128|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.20|Títulos Estaduais e Municipais|01012014||1129|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.25|Certificados de Depósito Bancário|01012014||1130|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.30|CDB - Instituição Financeira Ligada|01012014||1131|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.35|Letras de Câmbio|01012014||1132|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.40|LC - Instituição Financeira Ligada|01012014||1133|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.45|Letras Imobiliárias|01012014||1134|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.50|LI - Instituição Financeira Ligada|01012014||1135|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.62|Certificados de Recebíveis Imobiliários|01012014||1136|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.65|Debêntures|01012014||1137|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.92|Títulos de Responsabilidade da União no Exterior|01012014||1138|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.98|Outros Títulos no Exterior|01012014||1139|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.2.20.99|Outros|01012014||1140|A|2.1.4.2.2.20.00|7|02
+2.1.4.2.3.00.00|Carteira Livre Movimentação|01012014||1141|S|2.1.4.2.0.00.00|5|02
+2.1.4.2.3.30.00|RECOMPRAS A LIQUIDAR - LIVRE MOVIMENTAÇÃO|01012014||1142|S|2.1.4.2.3.00.00|6|02
+2.1.4.2.3.30.02|Títulos Públicos Federais - Tesouro Nacional|01012014||1143|A|2.1.4.2.3.30.00|7|02
+2.1.4.2.3.30.04|Títulos Públicos Federais - Banco Central|01012014||1144|A|2.1.4.2.3.30.00|7|02
+2.1.4.2.3.30.90|Outros Títulos de Renda Fixa|01012014||1145|A|2.1.4.2.3.30.00|7|02
+2.1.4.2.3.35.00|RECOMPRAS A LIQUIDAR - CÂMARAS DE LIQUIDAÇÃO E COMPENSAÇÃO - OPERAÇÕES COMPROMISSADAS GENÉRICAS|01012014||1146|A|2.1.4.2.3.00.00|6|02
+2.1.4.2.3.40.00|OBRIGAÇÕES VINCULADAS A OPERAÇÕES COMPROMISSADAS COM TÍTULOS DE LIVRE MOVIMENTAÇÃO|01012014||1147|S|2.1.4.2.3.00.00|6|02
+2.1.4.2.3.40.02|Títulos Públicos Federais - Tesouro Nacional|01012014||1148|A|2.1.4.2.3.40.00|7|02
+2.1.4.2.3.40.04|Títulos Públicos Federais - Banco Central|01012014||1149|A|2.1.4.2.3.40.00|7|02
+2.1.4.2.3.40.90|Outros Títulos de Renda Fixa|01012014||1150|A|2.1.4.2.3.40.00|7|02
+2.1.4.3.0.00.00|RECURSOS DE ACEITES CAMBIAIS, LETRAS IMOBILIÁRIAS E HIPOTECÁRIAS, DEBÊNTURES, E SIMILARES|01012014||1151|S|2.1.4.0.0.00.00|4|02
+2.1.4.3.1.00.00|Recursos de Aceites Cambiais|01012014||1152|S|2.1.4.3.0.00.00|5|02
+2.1.4.3.1.10.00|OBRIGAÇÕES POR ACEITES DE TÍTULOS CAMBIAIS|01012014||1153|A|2.1.4.3.1.00.00|6|02
+2.1.4.3.2.00.00|Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares|01012014||1154|S|2.1.4.3.0.00.00|5|02
+2.1.4.3.2.10.00|OBRIGAÇÕES POR EMISSÃO DE LETRAS IMOBILIÁRIAS|01012014||1155|A|2.1.4.3.2.00.00|6|02
+2.1.4.3.2.25.00|OBRIGAÇÕES POR EMISSÃO DE LETRAS HIPOTECÁRIAS|01012014||1156|A|2.1.4.3.2.00.00|6|02
+2.1.4.3.2.35.00|OBRIGAÇÕES POR EMISSÃO DE LETRAS DE CRÉDITO IMOBILIÁRIO|01012014||1157|A|2.1.4.3.2.00.00|6|02
+2.1.4.3.2.40.00|OBRIGAÇÕES POR EMISSÃO DE LETRAS DE CRÉDITO DO AGRONEGÓCIO|01012014||1158|S|2.1.4.3.2.00.00|6|02
+2.1.4.3.2.40.05|Emitidas até 23 de maio de 2013|01012014||1159|A|2.1.4.3.2.40.00|7|02
+2.1.4.3.2.40.10|Emitidas após 23 de maio de 2013|01012014||1160|A|2.1.4.3.2.40.00|7|02
+2.1.4.3.2.50.00|OBRIGAÇÕES POR EMISSÃO DE LETRAS FINANCEIRAS|01012014||1161|A|2.1.4.3.2.00.00|6|02
+2.1.4.3.2.93.00|OUTRAS|01012014||1162|A|2.1.4.3.2.00.00|6|02
+2.1.4.3.4.00.00|Recursos de Debêntures|01012014||1163|S|2.1.4.3.0.00.00|5|02
+2.1.4.3.4.10.00|OBRIGAÇÕES POR EMISSÃO DE DEBÊNTURES|01012014||1164|S|2.1.4.3.4.00.00|6|02
+2.1.4.3.4.10.10|Recursos em Moeda Estrangeira|01012014||1165|A|2.1.4.3.4.10.00|7|02
+2.1.4.3.4.10.20|Recursos em Moeda Nacional|01012014||1166|A|2.1.4.3.4.10.00|7|02
+2.1.4.3.4.50.00|CÉDULAS PIGNORATÍCIAS DE DEBÊNTURES|01012014||1167|A|2.1.4.3.4.00.00|6|02
+2.1.4.3.5.00.00|Obrigações por Títulos e Valores Mobiliários no Exterior|01012014||1168|S|2.1.4.3.0.00.00|5|02
+2.1.4.3.5.10.00|OBRIGAÇÕES POR TÍTULOS E VALORES MOBILIÁRIOS NO EXTERIOR|01012014||1169|A|2.1.4.3.5.00.00|6|02
+2.1.4.3.7.00.00|Captação por Certificados de Operações Estruturadas|01012014||1170|S|2.1.4.3.0.00.00|5|02
+2.1.4.3.7.13.00|CAPTAÇÃO POR CERTIFICADOS DE OPERAÇÕES ESTRUTURADAS|01012014||1171|S|2.1.4.3.7.00.00|6|02
+2.1.4.3.7.13.10|Certificados de Operações Estruturadas - Valor Nominal Protegido|01012014||1172|A|2.1.4.3.7.13.00|7|02
+2.1.4.3.7.13.30|Certificados de Operações Estruturadas - Valor Nominal em Risco|01012014||1173|A|2.1.4.3.7.13.00|7|02
+2.1.4.3.7.13.90|Certificados de Operações Estruturadas - Recompras (-)|01012014||1174|A|2.1.4.3.7.13.00|7|02
+2.1.4.3.8.00.00|Recursos por Emissões de Controladas não Sujeitas à Autorização do Banco Central|01012014||1175|S|2.1.4.3.0.00.00|5|02
+2.1.4.3.8.10.00|RECURSOS POR EMISSÕES DE CONTROLADAS NÃO SUJEITAS À AUTORIZAÇÃO DO BANCO CENTRAL|01012014||1176|A|2.1.4.3.8.00.00|6|02
+2.1.4.4.0.00.00|RELAÇÕES INTERFINANCEIRAS|01012014||1177|S|2.1.4.0.0.00.00|4|02
+2.1.4.4.1.00.00|Obrigações junto a Participantes de Sistemas de Liquidação|01012014||1178|S|2.1.4.4.0.00.00|5|02
+2.1.4.4.1.10.00|CHEQUES E OUTROS PAPÉIS RECEBIDOS|01012014||1179|S|2.1.4.4.1.00.00|6|02
+2.1.4.4.1.10.40|Liquidação Bilateral|01012014||1180|A|2.1.4.4.1.10.00|7|02
+2.1.4.4.1.10.90|Outros Sistemas de Liquidação|01012014||1181|A|2.1.4.4.1.10.00|7|02
+2.1.4.4.1.20.00|RECEBIMENTOS A DEVOLVER|01012014||1182|S|2.1.4.4.1.00.00|6|02
+2.1.4.4.1.20.40|Liquidação Bilateral|01012014||1183|A|2.1.4.4.1.20.00|7|02
+2.1.4.4.1.20.90|Outros Sistemas de Liquidação|01012014||1184|A|2.1.4.4.1.20.00|7|02
+2.1.4.4.1.30.00|RECEBIMENTOS REMETIDOS|01012014||1185|S|2.1.4.4.1.00.00|6|02
+2.1.4.4.1.30.40|Liquidação Bilateral|01012014||1186|A|2.1.4.4.1.30.00|7|02
+2.1.4.4.1.30.90|Outros Sistemas de Liquidação|01012014||1187|A|2.1.4.4.1.30.00|7|02
+2.1.4.4.1.50.00|RECEBIMENTOS REMETIDOS A REGULARIZAR|01012014||1188|S|2.1.4.4.1.00.00|6|02
+2.1.4.4.1.50.40|Liquidação Bilateral|01012014||1189|A|2.1.4.4.1.50.00|7|02
+2.1.4.4.1.50.90|Outros Sistemas de Liquidação|01012014||1190|A|2.1.4.4.1.50.00|7|02
+2.1.4.4.2.00.00|Obrigações Vinculadas|01012014||1191|S|2.1.4.4.0.00.00|5|02
+2.1.4.4.2.10.00|REDESCONTO DO BANCO CENTRAL - COMPRA COM COMPROMISSO DE REVENDA - TÍTULOS PÚBLICOS FEDERAIS|01012014||1192|A|2.1.4.4.2.00.00|6|02
+2.1.4.4.2.20.00|REDESCONTO DO BANCO CENTRAL - COMPRA COM COMPROMISSO DE REVENDA - OUTROS ATIVOS|01012014||1193|A|2.1.4.4.2.00.00|6|02
+2.1.4.4.2.30.00|REDESCONTO DO BANCO CENTRAL - REDESCONTO - TÍTULOS E DIREITOS CREDITÓRIOS DESCONTADOS|01012014||1194|A|2.1.4.4.2.00.00|6|02
+2.1.4.4.3.00.00|Repasses Interfinanceiros|01012014||1195|S|2.1.4.4.0.00.00|5|02
+2.1.4.4.3.10.00|OBRIGAÇÕES POR REPASSES INTERFINANCEIROS|01012014||1196|S|2.1.4.4.3.00.00|6|02
+2.1.4.4.3.10.10|Recursos Externos|01012014||1197|A|2.1.4.4.3.10.00|7|02
+2.1.4.4.3.10.20|Recursos do Crédito Rural|01012014||1198|A|2.1.4.4.3.10.00|7|02
+2.1.4.4.3.10.99|Outros Recursos|01012014||1199|A|2.1.4.4.3.10.00|7|02
+2.1.4.4.4.00.00|Relações com Correspondentes|01012014||1200|S|2.1.4.4.0.00.00|5|02
+2.1.4.4.4.10.00|CORRESPONDENTES DO EXTERIOR EM MOEDA NACIONAL'|01012014||1201|A|2.1.4.4.4.00.00|6|02
+2.1.4.4.4.30.00|CORRESPONDENTES NO PAÍS'|01012014||1202|A|2.1.4.4.4.00.00|6|02
+2.1.4.4.5.00.00|Centralização Financeira - Cooperativas|01012014||1203|S|2.1.4.4.0.00.00|5|02
+2.1.4.4.5.10.00|DEPÓSITOS DAS COOPERATIVAS FILIADAS|01012014||1204|A|2.1.4.4.5.00.00|6|02
+2.1.4.5.0.00.00|RELAÇÕES INTERDEPENDÊNCIAS|01012014||1205|S|2.1.4.0.0.00.00|4|02
+2.1.4.5.1.00.00|Recursos em Trânsito de Terceiros|01012014||1206|S|2.1.4.5.0.00.00|5|02
+2.1.4.5.1.30.00|COBRANÇA DE TERCEIROS EM TRÂNSITO|01012014||1207|A|2.1.4.5.1.00.00|6|02
+2.1.4.5.1.40.00|ORDENS DE PAGAMENTO|01012014||1208|A|2.1.4.5.1.00.00|6|02
+2.1.4.5.1.50.00|PAGAMENTOS EM TRÂNSITO DE SOCIEDADES LIGADAS (+)|01012014||1209|A|2.1.4.5.1.00.00|6|02
+2.1.4.5.1.60.00|PAGAMENTOS EM TRÂNSITO DE TERCEIROS (+)|01012014||1210|A|2.1.4.5.1.00.00|6|02
+2.1.4.5.1.70.00|RECEBIMENTOS EM TRÂNSITO DE SOCIEDADES LIGADAS|01012014||1211|A|2.1.4.5.1.00.00|6|02
+2.1.4.5.1.80.00|RECEBIMENTOS EM TRÂNSITO DE TERCEIROS|01012014||1212|S|2.1.4.5.1.00.00|6|02
+2.1.4.5.1.80.10|Concessionários de Serviços Públicos|01012014||1213|A|2.1.4.5.1.80.00|7|02
+2.1.4.5.1.80.90|Outros|01012014||1214|A|2.1.4.5.1.80.00|7|02
+2.1.4.5.1.85.00|ORDENS DE PAGAMENTO EM MOEDAS ESTRANGEIRAS|01012014||1215|A|2.1.4.5.1.00.00|6|02
+2.1.4.5.2.00.00|Transferências Internas de Recursos|01012014||1216|S|2.1.4.5.0.00.00|5|02
+2.1.4.5.2.10.00|CHEQUES E DOCUMENTOS A LIQUIDAR|01012014||1217|A|2.1.4.5.2.00.00|6|02
+2.1.4.5.2.20.00|COBRANÇA PRÓPRIA EM TRÂNSITO|01012014||1218|A|2.1.4.5.2.00.00|6|02
+2.1.4.5.2.40.00|DEPENDÊNCIAS NO PAÍS'|01012014||1219|A|2.1.4.5.2.00.00|6|02
+2.1.4.5.2.50.00|NUMERÁRIO EM TRÂNSITO (+)|01012014||1220|A|2.1.4.5.2.00.00|6|02
+2.1.4.5.2.60.00|SUPRIMENTOS INTERDEPENDÊNCIAS'|01012014||1221|A|2.1.4.5.2.00.00|6|02
+2.1.4.6.0.00.00|OBRIGAÇÕES POR EMPRÉSTIMOS E REPASSES|01012014||1222|S|2.1.4.0.0.00.00|4|02
+2.1.4.6.1.00.00|Empréstimos no País - Instituições Oficiais|01012014||1223|S|2.1.4.6.0.00.00|5|02
+2.1.4.6.1.10.00|BANCO CENTRAL - ASSISTÊNCIA FINANCEIRA E PROGRAMAS ESPECIAIS|01012014||1224|S|2.1.4.6.1.00.00|6|02
+2.1.4.6.1.10.20|Empréstimo Especial|01012014||1225|A|2.1.4.6.1.10.00|7|02
+2.1.4.6.1.10.30|Programas Especiais|01012014||1226|A|2.1.4.6.1.10.00|7|02
+2.1.4.6.1.10.99|Outras Operações|01012014||1227|A|2.1.4.6.1.10.00|7|02
+2.1.4.6.1.30.00|REFINANCIAMENTOS|01012014||1228|S|2.1.4.6.1.00.00|6|02
+2.1.4.6.1.30.10|Banco Central - Área Bancária|01012014||1229|A|2.1.4.6.1.30.00|7|02
+2.1.4.6.1.30.20|Tesouro Nacional - Área Rural e Industrial|01012014||1230|A|2.1.4.6.1.30.00|7|02
+2.1.4.6.1.30.30|Recursos do SFH|01012014||1231|A|2.1.4.6.1.30.00|7|02
+2.1.4.6.1.40.00|BNCC - CONTA EMPRÉSTIMOS|01012014||1232|A|2.1.4.6.1.00.00|6|02
+2.1.4.6.1.50.00|SFH - CONTA EMPRÉSTIMOS|01012014||1233|A|2.1.4.6.1.00.00|6|02
+2.1.4.6.1.70.00|BANCO CENTRAL - LINHAS DE CRÉDITO ESPECIAIS NO PAÍS|01012014||1234|S|2.1.4.6.1.00.00|6|02
+2.1.4.6.1.70.10|Financiamento a Exportação|01012014||1235|A|2.1.4.6.1.70.00|7|02
+2.1.4.6.1.70.20|BIRD - Proexport|01012014||1236|A|2.1.4.6.1.70.00|7|02
+2.1.4.6.1.70.30|Desconto de Cambiais - CCR|01012014||1237|A|2.1.4.6.1.70.00|7|02
+2.1.4.6.1.80.00|OBRIGAÇÕES POR AQUISIÇÃO DE TÍTULOS FEDERAIS|01012014||1238|A|2.1.4.6.1.00.00|6|02
+2.1.4.6.1.90.00|BANCO CENTRAL - SALDOS CREDORES EM RESERVAS|01012014||1239|A|2.1.4.6.1.00.00|6|02
+2.1.4.6.2.00.00|Empréstimos no País - Outras Instituições|01012014||1240|S|2.1.4.6.0.00.00|5|02
+2.1.4.6.2.10.00|OBRIGAÇÕES POR EMPRÉSTIMOS NO PAÍS|01012014||1241|S|2.1.4.6.2.00.00|6|02
+2.1.4.6.2.10.10|Em Moeda Nacional|01012014||1242|A|2.1.4.6.2.10.00|7|02
+2.1.4.6.2.10.20|Em Moeda Estrangeira|01012014||1243|A|2.1.4.6.2.10.00|7|02
+2.1.4.6.2.30.00|REFINANCIAMENTOS DE OPERAÇÕES DE ARRENDAMENTO'|01012014||1244|A|2.1.4.6.2.00.00|6|02
+2.1.4.6.3.00.00|Empréstimos no Exterior|01012014||1245|S|2.1.4.6.0.00.00|5|02
+2.1.4.6.3.10.00|OBRIGAÇÕES EM MOEDAS ESTRANGEIRAS|01012014||1246|S|2.1.4.6.3.00.00|6|02
+2.1.4.6.3.10.13|Exportação, até 360 Dias|01012014||1247|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.10.23|Exportação, acima de 360 Dias|01012014||1248|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.10.33|Importação, até 360 Dias|01012014||1249|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.10.43|Importação, até 360 Dias - CCR|01012014||1250|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.10.53|Importação, acima de 360 Dias|01012014||1251|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.10.63|Importação, acima de 360 Dias - CCR|01012014||1252|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.10.93|Outras Obrigações|01012014||1253|A|2.1.4.6.3.10.00|7|02
+2.1.4.6.3.30.00|OBRIGAÇÕES POR EMPRÉSTIMOS NO EXTERIOR|01012014||1254|A|2.1.4.6.3.00.00|6|02
+2.1.4.6.3.50.00|OBRIGAÇÕES POR SUBARRENDAMENTOS NO EXTERIOR|01012014||1255|S|2.1.4.6.3.00.00|6|02
+2.1.4.6.3.50.10|De Instituições Ligadas no Exterior|01012014||1256|A|2.1.4.6.3.50.00|7|02
+2.1.4.6.3.50.20|De Outras Instituições no Exterior|01012014||1257|A|2.1.4.6.3.50.00|7|02
+2.1.4.6.4.00.00|Repasses do País - Instituições Oficiais|01012014||1258|S|2.1.4.6.0.00.00|5|02
+2.1.4.6.4.10.00|OBRIGAÇÕES POR REPASSES - TESOURO NACIONAL|01012014||1259|S|2.1.4.6.4.00.00|6|02
+2.1.4.6.4.10.10|Crédito Rural|01012014||1260|A|2.1.4.6.4.10.00|7|02
+2.1.4.6.4.10.99|Outros Fundos e Programas|01012014||1261|A|2.1.4.6.4.10.00|7|02
+2.1.4.6.4.20.00|OBRIGAÇÕES POR REPASSES - BANCO DO BRASIL|01012014||1262|A|2.1.4.6.4.00.00|6|02
+2.1.4.6.4.30.00|OBRIGAÇÕES POR REPASSES - BNDES|01012014||1263|A|2.1.4.6.4.00.00|6|02
+2.1.4.6.4.40.00|OBRIGAÇÕES POR REPASSES - CEF|01012014||1264|A|2.1.4.6.4.00.00|6|02
+2.1.4.6.4.50.00|OBRIGAÇÕES POR REPASSES - FINAME|01012014||1265|A|2.1.4.6.4.00.00|6|02
+2.1.4.6.4.60.00|OBRIGAÇÕES POR REPASSES - FINEP|01012014||1266|A|2.1.4.6.4.00.00|6|02
+2.1.4.6.4.90.00|OBRIGAÇÕES POR REPASSES - OUTRAS INSTITUIÇÕES OFICIAIS|01012014||1267|A|2.1.4.6.4.00.00|6|02
+2.1.4.6.6.00.00|Repasses do Exterior|01012014||1268|S|2.1.4.6.0.00.00|5|02
+2.1.4.6.6.10.00|OBRIGAÇÕES POR REPASSES DO EXTERIOR|01012014||1269|S|2.1.4.6.6.00.00|6|02
+2.1.4.6.6.10.10|Vinculados a Repasses a Mutuários|01012014||1270|A|2.1.4.6.6.10.00|7|02
+2.1.4.6.6.10.20|Vinculados a Títulos Federais|01012014||1271|A|2.1.4.6.6.10.00|7|02
+2.1.4.6.6.10.30|Vinculados a Depósitos no Banco Central|01012014||1272|A|2.1.4.6.6.10.00|7|02
+2.1.4.6.6.10.40|Vinculados a Operações de Arrendamento Mercantil|01012014||1273|A|2.1.4.6.6.10.00|7|02
+2.1.4.6.6.10.50|Vinculados a Repasses Interfinanceiros|01012014||1274|A|2.1.4.6.6.10.00|7|02
+2.1.4.6.6.10.99|Outras|01012014||1275|A|2.1.4.6.6.10.00|7|02
+2.1.4.7.0.00.00|INSTRUMENTOS FINANCEIROS DERIVATIVOS|01012014||1276|S|2.1.4.0.0.00.00|4|02
+2.1.4.7.1.00.00|Instrumentos Financeiros Derivativos|01012014||1277|S|2.1.4.7.0.00.00|5|02
+2.1.4.7.1.10.00|OPERAÇÕES DE SWAP'|01012014||1278|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.10.10|Diferencial a Pagar|01012014||1279|A|2.1.4.7.1.10.00|7|02
+2.1.4.7.1.10.11|Diferencial a Pagar - COE|01012014||1280|A|2.1.4.7.1.10.00|7|02
+2.1.4.7.1.10.13|Diferencial a Pagar - Hedge de Título Mantido até o Vencimento|01012014||1281|A|2.1.4.7.1.10.00|7|02
+2.1.4.7.1.30.00|OBRIGAÇÕES POR COMPRA A TERMO A PAGAR|01012014||1282|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.30.10|Operações com Ações|01012014||1283|A|2.1.4.7.1.30.00|7|02
+2.1.4.7.1.30.11|Operações com Ações - COE|01012014||1284|A|2.1.4.7.1.30.00|7|02
+2.1.4.7.1.30.13|Operações com Ações - Hedge de Título Mantido até o Vencimento|01012014||1285|A|2.1.4.7.1.30.00|7|02
+2.1.4.7.1.30.40|Operações com Ativos Financeiros e Mercadorias|01012014||1286|A|2.1.4.7.1.30.00|7|02
+2.1.4.7.1.30.41|Operações com Ativos Financeiros e Mercadorias|01012014||1287|A|2.1.4.7.1.30.00|7|02
+2.1.4.7.1.30.43|Operações com Ativos Financeiros e Mercadorias - Hedge de Título Mantido até o Vencimento|01012014||1288|A|2.1.4.7.1.30.00|7|02
+2.1.4.7.1.40.00|OBRIGAÇÕES POR VENDA A TERMO A ENTREGAR|01012014||1289|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.40.10|Operações com Ações|01012014||1290|A|2.1.4.7.1.40.00|7|02
+2.1.4.7.1.40.11|Operações com Ações - COE|01012014||1291|A|2.1.4.7.1.40.00|7|02
+2.1.4.7.1.40.13|Operações com Ações - Hedge de Título Mantido até o Vencimento|01012014||1292|A|2.1.4.7.1.40.00|7|02
+2.1.4.7.1.40.40|Operações com Ativos Financeiros e Mercadorias|01012014||1293|A|2.1.4.7.1.40.00|7|02
+2.1.4.7.1.40.41|Operações com Ativos Financeiros e Mercadorias - COE|01012014||1294|A|2.1.4.7.1.40.00|7|02
+2.1.4.7.1.40.43|Operações com Ativos Financeiros e Mercadorias - Hedge de Título Mantido até o Vencimento|01012014||1295|A|2.1.4.7.1.40.00|7|02
+2.1.4.7.1.50.00|MERCADOS FUTUROS - AJUSTES DIÁRIOS - PASSIVO|01012014||1296|A|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.60.00|PRÊMIOS DE OPÇÕES LANÇADAS - AÇÕES|01012014||1297|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.60.10|Vendas de Opções de Compra - Posição Lançadora|01012014||1298|A|2.1.4.7.1.60.00|7|02
+2.1.4.7.1.60.11|Vendas de Opções de Compra - Posição Lançadora - COE|01012014||1299|A|2.1.4.7.1.60.00|7|02
+2.1.4.7.1.60.13|Vendas de Opções de Compra - Posição Lançadora - Hedge de Título Mantido até o Vencimento|01012014||1300|A|2.1.4.7.1.60.00|7|02
+2.1.4.7.1.60.20|Vendas de Opções de Venda - Posição Lançadora|01012014||1301|A|2.1.4.7.1.60.00|7|02
+2.1.4.7.1.60.21|Vendas de Opções de Venda - Posição Lançadora - COE|01012014||1302|A|2.1.4.7.1.60.00|7|02
+2.1.4.7.1.60.23|Vendas de Opções de Venda - Posição Lançadora - Hedge de Título Mantido até o Vencimento|01012014||1303|A|2.1.4.7.1.60.00|7|02
+2.1.4.7.1.70.00|PRÊMIOS DE OPÇÕES LANÇADAS - ATIVOS FINANCEIROS E MERCADORIAS|01012014||1304|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.70.10|Vendas de Opções de Compra - Posição Lançadora|01012014||1305|A|2.1.4.7.1.70.00|7|02
+2.1.4.7.1.70.11|Vendas de Opções de Compra - Posição Lançadora - COE|01012014||1306|A|2.1.4.7.1.70.00|7|02
+2.1.4.7.1.70.13|Vendas de Opções de Compra - Posição Lançadora - Hedge de Título Mantido até o Vencimento|01012014||1307|A|2.1.4.7.1.70.00|7|02
+2.1.4.7.1.70.20|Vendas de Opções de Venda - Posição Lançadora|01012014||1308|A|2.1.4.7.1.70.00|7|02
+2.1.4.7.1.70.21|Vendas de Opções de Venda - Posição Lançadora - COE|01012014||1309|A|2.1.4.7.1.70.00|7|02
+2.1.4.7.1.70.23|Vendas de Opções de Venda - Posição Lançadora - Hedge de Título Mantido até o Vencimento|01012014||1310|A|2.1.4.7.1.70.00|7|02
+2.1.4.7.1.73.00|OPÇÕES COM AJUSTE DIÁRIO - PASSIVO|01012014||1311|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.73.10|Opção de Compra - Taxa de Câmbio|01012014||1312|A|2.1.4.7.1.73.00|7|02
+2.1.4.7.1.73.15|Opção de Venda - Taxa de Câmbio|01012014||1313|A|2.1.4.7.1.73.00|7|02
+2.1.4.7.1.73.90|Opção de Compra - Outros|01012014||1314|A|2.1.4.7.1.73.00|7|02
+2.1.4.7.1.73.95|Opções de Venda - Outros|01012014||1315|A|2.1.4.7.1.73.00|7|02
+2.1.4.7.1.80.00|DERIVATIVOS DE CRÉDITO - PASSIVO|01012014||1316|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.80.10|Swap de Crédito|01012014||1317|A|2.1.4.7.1.80.00|7|02
+2.1.4.7.1.80.13|Swap de Crédito - Hedge de Título Mantido até o Vencimento|01012014||1318|A|2.1.4.7.1.80.00|7|02
+2.1.4.7.1.80.30|Swap de Taxa de Retorno Total|01012014||1319|A|2.1.4.7.1.80.00|7|02
+2.1.4.7.1.80.33|Swap de Taxa de Retorno Total - Hedge de Título Mantido até o Vencimento|01012014||1320|A|2.1.4.7.1.80.00|7|02
+2.1.4.7.1.85.00|OUTROS INSTRUMENTOS FINANCEIROS DERIVATIVOS - PASSIVO|01012014||1321|S|2.1.4.7.1.00.00|6|02
+2.1.4.7.1.85.10|Outros - Hedge de Título Mantido até o Vencimento|01012014||1322|A|2.1.4.7.1.85.00|7|02
+2.1.4.7.1.85.11|Outros - COE|01012014||1323|A|2.1.4.7.1.85.00|7|02
+2.1.4.7.1.85.13|Outros|01012014||1324|A|2.1.4.7.1.85.00|7|02
+2.1.4.9.0.00.00|OUTRAS OBRIGAÇÕES|01012014||1325|S|2.1.4.0.0.00.00|4|02
+2.1.4.9.1.00.00|Cobrança e Arrecadação de Tributos e Assemelhados|01012014||1326|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.1.10.00|IOF A RECOLHER|01012014||1327|S|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.10.10|Operações de Crédito|01012014||1328|A|2.1.4.9.1.10.00|7|02
+2.1.4.9.1.10.20|Operações de Câmbio|01012014||1329|A|2.1.4.9.1.10.00|7|02
+2.1.4.9.1.10.30|Operações de Seguro|01012014||1330|A|2.1.4.9.1.10.00|7|02
+2.1.4.9.1.10.40|Operações com Títulos e Valores Mobiliários|01012014||1331|A|2.1.4.9.1.10.00|7|02
+2.1.4.9.1.10.99|Outros Recebimentos|01012014||1332|A|2.1.4.9.1.10.00|7|02
+2.1.4.9.1.20.00|PROAGRO A RECOLHER|01012014||1333|S|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.20.10|Adicional|01012014||1334|A|2.1.4.9.1.20.00|7|02
+2.1.4.9.1.20.20|Multas|01012014||1335|A|2.1.4.9.1.20.00|7|02
+2.1.4.9.1.25.00|RECURSOS DO PROAGRO|01012014||1336|S|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.25.10|Adicional|01012014||1337|A|2.1.4.9.1.25.00|7|02
+2.1.4.9.1.25.20|Multas|01012014||1338|A|2.1.4.9.1.25.00|7|02
+2.1.4.9.1.30.00|RECEBIMENTOS DE CONTRIBUIÇÃO SINDICAL|01012014||1339|A|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.35.00|RECEBIMENTOS DE CONTRIBUIÇÕES PREVIDENCIÁRIAS|01012014||1340|S|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.35.10|Federais|01012014||1341|A|2.1.4.9.1.35.00|7|02
+2.1.4.9.1.35.20|Estaduais e Municipais|01012014||1342|A|2.1.4.9.1.35.00|7|02
+2.1.4.9.1.40.00|RECEBIMENTOS DE TRIBUTOS ESTADUAIS E MUNICIPAIS|01012014||1343|S|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.40.10|Estaduais|01012014||1344|A|2.1.4.9.1.40.00|7|02
+2.1.4.9.1.40.20|Municipais|01012014||1345|A|2.1.4.9.1.40.00|7|02
+2.1.4.9.1.50.00|RECEBIMENTOS DE TRIBUTOS FEDERAIS|01012014||1346|A|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.60.00|RECEBIMENTOS DO FGTS|01012014||1347|S|2.1.4.9.1.00.00|6|02
+2.1.4.9.1.60.10|Recolhimentos|01012014||1348|A|2.1.4.9.1.60.00|7|02
+2.1.4.9.1.60.20|Transferências (-)|01012014||1349|A|2.1.4.9.1.60.00|7|02
+2.1.4.9.1.60.30|Eventuais|01012014||1350|A|2.1.4.9.1.60.00|7|02
+2.1.4.9.1.60.40|Dívida Ativa - FGTS|01012014||1351|A|2.1.4.9.1.60.00|7|02
+2.1.4.9.1.60.50|Arrecadação a Repassar|01012014||1352|A|2.1.4.9.1.60.00|7|02
+2.1.4.9.2.00.00|Câmbio|01012014||1353|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.2.05.00|CÂMBIO VENDIDO A LIQUIDAR|01012014||1354|S|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.05.10|Importação|01012014||1355|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.20|Financeiro|01012014||1356|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.22|Financeiro - Operações em Câmaras de Liquidação e Compensação|01012014||1357|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.25|Ouro|01012014||1358|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.30|Interbancário para Liquidação Pronta|01012014||1359|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.40|Interbancário para Liquidação Futura|01012014||1360|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.50|Interbancário a Termo|01012014||1361|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.05.60|Interdepartamental e Arbitragem|01012014||1362|A|2.1.4.9.2.05.00|7|02
+2.1.4.9.2.06.00|ADIANTAMENTOS EM MOEDAS ESTRANGEIRAS CONCEDIDOS (-)|01012014||1363|S|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.06.25|(-) Ouro|01012014||1364|A|2.1.4.9.2.06.00|7|02
+2.1.4.9.2.06.90|(-) Outros|01012014||1365|A|2.1.4.9.2.06.00|7|02
+2.1.4.9.2.07.00|(-) IMPORTAÇÃO FINANCIADA - CÂMBIO CONTRATADO|01012014||1366|S|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.07.10|Cartas de Crédito a Prazo Utilizadas|01012014||1367|A|2.1.4.9.2.07.00|7|02
+2.1.4.9.2.07.20|Não Amparada em Cartas de Crédito|01012014||1368|A|2.1.4.9.2.07.00|7|02
+2.1.4.9.2.07.30|Cartas de Crédito a Prazo Utilizadas - CCR|01012014||1369|A|2.1.4.9.2.07.00|7|02
+2.1.4.9.2.07.40|Não Amparada em Cartas de Crédito - CCR|01012014||1370|A|2.1.4.9.2.07.00|7|02
+2.1.4.9.2.35.00|OBRIGAÇÕES POR COMPRAS DE CÂMBIO|01012014||1371|S|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.35.10|Exportação|01012014||1372|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.20|Financeiro|01012014||1373|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.22|Financeiro - Operações em Câmaras de Liquidação e Compensação|01012014||1374|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.25|Ouro|01012014||1375|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.30|Interbancário para Liquidação Pronta|01012014||1376|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.40|Interbancário para Liquidação Futura|01012014||1377|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.50|Interbancário a Termo|01012014||1378|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.35.60|Interdepartamental e Arbitragem|01012014||1379|A|2.1.4.9.2.35.00|7|02
+2.1.4.9.2.36.00|ADIANTAMENTOS SOBRE CONTRATOS DE CÂMBIO (-)|01012014||1380|S|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.36.10|Exportação - Letras a Entregar|01012014||1381|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.20|Exportação - Letras Entregues|01012014||1382|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.25|(-) Ouro|01012014||1383|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.30|A Instituições Financeiras|01012014||1384|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.40|Operações de Câmbio Financeiras de Liquidação Futura|01012014||1385|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.80|Exportação - Letras a Entregar - Vencidos|01012014||1386|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.90|Exportação - Letras Entregues - Vencidos|01012014||1387|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.36.99|(-) Outros|01012014||1388|A|2.1.4.9.2.36.00|7|02
+2.1.4.9.2.40.00|OBRIGAÇÕES POR VENDAS REALIZADAS|01012014||1389|A|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.75.00|ENCARGOS A PAGAR SOBRE ADIANTAMENTOS RECEBIDOS|01012014||1390|A|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.77.00|VALORES EM MOEDAS ESTRANGEIRAS A PAGAR|01012014||1391|S|2.1.4.9.2.00.00|6|02
+2.1.4.9.2.77.10|Comissões de Agentes sobre Exportação|01012014||1392|A|2.1.4.9.2.77.00|7|02
+2.1.4.9.2.77.20|Comissões de Agentes sobre Importação|01012014||1393|A|2.1.4.9.2.77.00|7|02
+2.1.4.9.2.77.30|Fretes e Prêmios de Seguro sobre Exportação|01012014||1394|A|2.1.4.9.2.77.00|7|02
+2.1.4.9.2.77.40|Fretes e Prêmios de Seguro de Importação|01012014||1395|A|2.1.4.9.2.77.00|7|02
+2.1.4.9.2.77.90|Outros|01012014||1396|A|2.1.4.9.2.77.00|7|02
+2.1.4.9.2.85.00|RENDAS A APROPRIAR DE ADIANTAMENTOS CONCEDIDOS|01012014||1397|A|2.1.4.9.2.00.00|6|02
+2.1.4.9.3.00.00|Sociais e Estatutárias|01012014||1398|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.3.10.00|DIVIDENDOS E BONIFICAÇÕES A PAGAR|01012014||1399|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.15.00|PROVISÃO PARA PARTICIPAÇÕES NOS LUCROS|01012014||1400|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.20.00|FUNDO DE ASSISTÊNCIA TÉCNICA, EDUCACIONAL E SOCIAL|01012014||1401|S|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.20.10|Resultado de Atos com Associados|01012014||1402|A|2.1.4.9.3.20.00|7|02
+2.1.4.9.3.20.20|Resultado de Atos com não Associados|01012014||1403|A|2.1.4.9.3.20.00|7|02
+2.1.4.9.3.30.00|GRATIFICAÇÕES E PARTICIPAÇÕES A PAGAR|01012014||1404|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.40.00|IMPOSTOS E PARTICIPAÇÕES DEVIDOS À MATRIZ NO EXTERIOR|01012014||1405|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.55.00|DEPÓSITO PARA GARANTIA DE PATRIMÔNIO LÍQUIDO EXIGIDO|01012014||1406|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.70.00|SOBRAS LÍQUIDAS A DISTRIBUIR|01012014||1407|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.3.80.00|COTAS DE CAPITAL A PAGAR|01012014||1408|A|2.1.4.9.3.00.00|6|02
+2.1.4.9.4.00.00|Fiscais e Previdenciárias|01012014||1409|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.4.10.00|IMPOSTOS E CONTRIBUIÇÕES SOBRE LUCROS A PAGAR|01012014||1410|A|2.1.4.9.4.00.00|6|02
+2.1.4.9.4.15.00|PROVISÃO PARA IMPOSTOS E CONTRIBUIÇÕES SOBRE LUCROS|01012014||1411|A|2.1.4.9.4.00.00|6|02
+2.1.4.9.4.20.00|IMPOSTOS E CONTRIBUIÇÕES A RECOLHER|01012014||1412|S|2.1.4.9.4.00.00|6|02
+2.1.4.9.4.20.10|Impostos e Contribuições sobre Serviços de Terceiros|01012014||1413|A|2.1.4.9.4.20.00|7|02
+2.1.4.9.4.20.20|Impostos e Contribuições sobre Salários|01012014||1414|A|2.1.4.9.4.20.00|7|02
+2.1.4.9.4.20.90|Outros|01012014||1415|A|2.1.4.9.4.20.00|7|02
+2.1.4.9.4.30.00|PROVISÃO PARA IMPOSTOS E CONTRIBUIÇÕES DIFERIDOS|01012014||1416|S|2.1.4.9.4.00.00|6|02
+2.1.4.9.4.30.10|Provisões de Superveniência de Depreciação em Operações de Arrendamento Mercantil|01012014||1417|A|2.1.4.9.4.30.00|7|02
+2.1.4.9.4.30.20|Provisões de Ágios de Investimentos com Fundamento em Expectativa de Rentabilidade Futura|01012014||1418|A|2.1.4.9.4.30.00|7|02
+2.1.4.9.4.30.30|Provisões de Ativos Atuariais de Fundos de Pensão de Benefício Definido de Acesso não Irrestrito|01012014||1419|A|2.1.4.9.4.30.00|7|02
+2.1.4.9.4.30.99|Outras|01012014||1420|A|2.1.4.9.4.30.00|7|02
+2.1.4.9.4.50.00|PROVISÃO PARA RISCOS FISCAIS|01012014||1421|S|2.1.4.9.4.00.00|6|02
+2.1.4.9.4.50.10|Impostos e Contribuições sobre Lucros|01012014||1422|A|2.1.4.9.4.50.00|7|02
+2.1.4.9.4.50.20|Impostos e Contribuições sobre Salários|01012014||1423|A|2.1.4.9.4.50.00|7|02
+2.1.4.9.4.50.90|Outros|01012014||1424|A|2.1.4.9.4.50.00|7|02
+2.1.4.9.5.00.00|Negociação e Intermediação de Valores|01012014||1425|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.5.05.00|AQUISIÇÃO E SUBSCRIÇÃO DE TÍTULOS DECORRENTES DE LANÇAMENTOS|01012014||1426|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.10.00|CAIXAS DE REGISTRO E LIQUIDAÇÃO'|01012014||1427|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.15.00|COMISSÕES E CORRETAGENS A PAGAR|01012014||1428|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.21.00|COTAS A EMITIR|01012014||1429|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.24.00|COTAS A RESGATAR|01012014||1430|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.30.00|CREDORES - CONTA LIQUIDAÇÕES PENDENTES|01012014||1431|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.33.00|APLICAÇÕES INTERFINANCEIRAS DE TERCEIROS A LIQUIDAR|01012014||1432|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.34.00|CAPTAÇÕES INTERFINANCEIRAS DE TERCEIROS A RESGATAR|01012014||1433|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.40.00|OPERAÇÕES COM ATIVOS FINANCEIROS E MERCADORIAS A LIQUIDAR|01012014||1434|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.48.00|OPERAÇÕES EM MARGEM - OSCILAÇÕES DE VALORES|01012014||1435|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.58.00|OBRIGAÇÕES POR EMPRÉSTIMOS DE OURO|01012014||1436|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.80.00|CLIENTES - CONTA COMPRAS EM MARGEM|01012014||1437|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.85.00|CLIENTES - CONTA VENDAS EM MARGEM|01012014||1438|S|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.85.10|Próprios|01012014||1439|A|2.1.4.9.5.85.00|7|02
+2.1.4.9.5.85.20|Terceiros|01012014||1440|A|2.1.4.9.5.85.00|7|02
+2.1.4.9.5.88.00|CREDORES POR EMPRÉSTIMOS DE AÇÕES|01012014||1441|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.5.90.00|OUTRAS OBRIGAÇÕES POR NEGOCIAÇÃO E INTERMEDIAÇÃO DE VALORES|01012014||1442|A|2.1.4.9.5.00.00|6|02
+2.1.4.9.6.00.00|Recursos para Destinação Específica|01012014||1443|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.6.10.00|OBRIGAÇÔES DE OPERAÇÕES COM LOTERIAS|01012014||1444|A|2.1.4.9.6.00.00|6|02
+2.1.4.9.6.30.00|OBRIGAÇÕES POR FUNDOS E PROGRAMAS SOCIAIS|01012014||1445|A|2.1.4.9.6.00.00|6|02
+2.1.4.9.6.50.00|OBRIGAÇÕES POR FUNDOS FINANCEIROS E DE DESENVOLVIMENTO|01012014||1446|S|2.1.4.9.6.00.00|6|02
+2.1.4.9.6.50.10|Fundos PIS-PASEP|01012014||1447|A|2.1.4.9.6.50.00|7|02
+2.1.4.9.6.50.20|Fundo da Marinha Mercante - FMM|01012014||1448|A|2.1.4.9.6.50.00|7|02
+2.1.4.9.6.50.30|Fundo de Investimento Social - FINSOCIAL|01012014||1449|A|2.1.4.9.6.50.00|7|02
+2.1.4.9.6.50.40|Fundo Nacional de Desenvolvimento - FND|01012014||1450|A|2.1.4.9.6.50.00|7|02
+2.1.4.9.6.50.90|Outros Fundos e Programas|01012014||1451|A|2.1.4.9.6.50.00|7|02
+2.1.4.9.6.70.00|TÍTULOS DE DESENVOLVIMENTO ECONÔMICO'|01012014||1452|A|2.1.4.9.6.00.00|6|02
+2.1.4.9.7.00.00|Operações Especiais|01012014||1453|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.7.04.00|GOVERNO FEDERAL - APROVISIONAMENTOS DE RECURSOS PARA APLICAÇÕES ESPECIAIS|01012014||1454|A|2.1.4.9.7.00.00|6|02
+2.1.4.9.7.21.00|GOVERNO FEDERAL - SUPRIMENTO ESPECIAL (ART. 60 DA LEI 4.595/64)|01012014||1455|A|2.1.4.9.7.00.00|6|02
+2.1.4.9.7.37.00|OBRIGAÇÕES VINCULADAS A CRÉDITOS SOB ADMINISTRAÇÃO|01012014||1456|S|2.1.4.9.7.00.00|6|02
+2.1.4.9.7.37.10|Tesouro Nacional|01012014||1457|A|2.1.4.9.7.37.00|7|02
+2.1.4.9.7.37.15|BNCC|01012014||1458|A|2.1.4.9.7.37.00|7|02
+2.1.4.9.7.37.20|COBAL|01012014||1459|A|2.1.4.9.7.37.00|7|02
+2.1.4.9.7.37.25|IAA|01012014||1460|A|2.1.4.9.7.37.00|7|02
+2.1.4.9.7.37.99|Outros|01012014||1461|A|2.1.4.9.7.37.00|7|02
+2.1.4.9.7.40.00|GOVERNO FEDERAL - SUPRIMENTOS PARA OPERAÇÕES ESPECIAIS|01012014||1462|A|2.1.4.9.7.00.00|6|02
+2.1.4.9.7.45.00|FUNDO DE INVESTIMENTOS SETORIAIS|01012014||1463|A|2.1.4.9.7.00.00|6|02
+2.1.4.9.7.60.00|GOVERNO FEDERAL - RECEBIMENTOS DECORRENTES DE OPERAÇÕES ESPECIAIS, A RECOLHER|01012014||1464|A|2.1.4.9.7.00.00|6|02
+2.1.4.9.8.00.00|Obrigações Diversas|01012014||1465|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.8.10.00|TAXAS DE CONCURSOS A APROPRIAR|01012014||1466|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.40.00|OBRIGAÇÕES POR COMPRA DE OURO|01012014||1467|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.55.00|OBRIGAÇÕES VINCULADAS AO TESOURO NACIONAL|01012014||1468|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.60.00|DIREITOS POR RESTITUIÇÃO|01012014||1469|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.60.10|Obrigações por Repasses|01012014||1470|A|2.1.4.9.8.60.00|7|02
+2.1.4.9.8.60.20|Obrigações por Custódia|01012014||1471|A|2.1.4.9.8.60.00|7|02
+2.1.4.9.8.65.00|CREDORES PREFERENCIAIS|01012014||1472|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.65.10|Créditos Trabalhistas|01012014||1473|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.15|Créditos Tributários da União|01012014||1474|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.20|Créditos Tributários dos Estados|01012014||1475|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.25|Créditos Tributários dos Municípios|01012014||1476|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.30|Créditos Parafiscais|01012014||1477|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.35|Outros Créditos da União|01012014||1478|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.40|Outros Créditos dos Estados|01012014||1479|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.45|Outros Créditos dos Municípios|01012014||1480|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.70|Reserva de Fundos - Art. 27 da Lei nº 6.024/74|01012014||1481|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.65.80|Provisão para Contingências|01012014||1482|A|2.1.4.9.8.65.00|7|02
+2.1.4.9.8.70.00|ENCARGOS E DÍVIDAS DA MASSA|01012014||1483|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.75.00|CREDORES PRIVILEGIADOS|01012014||1484|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.75.10|Créditos com Direito Real de Garantia|01012014||1485|A|2.1.4.9.8.75.00|7|02
+2.1.4.9.8.75.20|Créditos com Privilégio Especial|01012014||1486|A|2.1.4.9.8.75.00|7|02
+2.1.4.9.8.75.30|Créditos com Privilégio Geral|01012014||1487|A|2.1.4.9.8.75.00|7|02
+2.1.4.9.8.75.70|Reserva de Fundos - Art. 27 da Lei nº 6.024/74|01012014||1488|A|2.1.4.9.8.75.00|7|02
+2.1.4.9.8.75.80|Provisão para Contingências|01012014||1489|A|2.1.4.9.8.75.00|7|02
+2.1.4.9.8.75.90|Créditos Não Declarados|01012014||1490|A|2.1.4.9.8.75.00|7|02
+2.1.4.9.8.80.00|CREDORES QUIROGRAFÁRIOS|01012014||1491|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.80.10|Créditos Quirografários|01012014||1492|A|2.1.4.9.8.80.00|7|02
+2.1.4.9.8.80.70|Reserva de Fundos - Art. 27 da Lei nº 6.024/74|01012014||1493|A|2.1.4.9.8.80.00|7|02
+2.1.4.9.8.80.80|Provisão para Contingências|01012014||1494|A|2.1.4.9.8.80.00|7|02
+2.1.4.9.8.80.90|Créditos Não Declarados|01012014||1495|A|2.1.4.9.8.80.00|7|02
+2.1.4.9.8.82.00|OBRIGAÇÕES COM CONSORCIADOS|01012014||1496|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.82.05|Grupos em Formação|01012014||1497|A|2.1.4.9.8.82.00|7|02
+2.1.4.9.8.82.07|Recebimentos não Identificados|01012014||1498|A|2.1.4.9.8.82.00|7|02
+2.1.4.9.8.82.10|Contribuições de Consorciados não Contemplados|01012014||1499|A|2.1.4.9.8.82.00|7|02
+2.1.4.9.8.85.00|OUTRAS EXIGIBILIDADES|01012014||1500|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.86.00|VALORES A REPASSAR|01012014||1501|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.86.10|Taxa de Administração|01012014||1502|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.15|Prêmios de Seguro|01012014||1503|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.20|Multas e Juros Moratórios|01012014||1504|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.22|Multa Rescisória|01012014||1505|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.25|Custas Judiciais|01012014||1506|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.30|Despesas de Registro de Contratos de Garantia|01012014||1507|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.35|Outros Recursos|01012014||1508|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.86.95|Valores a Repassar - Encerramento|01012014||1509|A|2.1.4.9.8.86.00|7|02
+2.1.4.9.8.90.00|PROVISÃO PARA PAGAMENTO DE JUROS LEGAIS|01012014||1510|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.91.00|OBRIGAÇÕES POR CONTEMPLAÇÕES A ENTREGAR|01012014||1511|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.92.00|OBRIGAÇÕES COM A ADMINISTRADORA|01012014||1512|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.93.00|OBRIGAÇÕES POR RECURSOS DE CONSORCIADOS - GRUPOS ENCERRADOS|01012014||1513|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.93.10|Recursos não Procurados|01012014||1514|A|2.1.4.9.8.93.00|7|02
+2.1.4.9.8.93.20|Recursos Pendentes de Recebimento -  Cobrança Judicial|01012014||1515|A|2.1.4.9.8.93.00|7|02
+2.1.4.9.8.94.00|RECURSOS A DEVOLVER A CONSORCIADOS|01012014||1516|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.94.10|Ativos - em Andamento|01012014||1517|A|2.1.4.9.8.94.00|7|02
+2.1.4.9.8.94.15|Ativos - pelo Rateio|01012014||1518|A|2.1.4.9.8.94.00|7|02
+2.1.4.9.8.94.20|Desistentes ou Excluídos|01012014||1519|A|2.1.4.9.8.94.00|7|02
+2.1.4.9.8.95.00|PROVISÃO PARA PAGAMENTO DE JUROS CONTRATUAIS|01012014||1520|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.97.00|OBRIGAÇÕES POR ADIANTAMENTOS A TERCEIROS|01012014||1521|A|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.98.00|RECURSOS DO GRUPO|01012014||1522|S|2.1.4.9.8.00.00|6|02
+2.1.4.9.8.98.15|Fundo de Reserva|01012014||1523|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.16|Fundo de Reserva Transformado em Fundo Comum|01012014||1524|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.17|Fundo de Reserva a Receber de Consorciados Contemplados|01012014||1525|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.18|Recursos Utilizados do Fundo de Reserva (-)|01012014||1526|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.20|Rendimentos de Aplicações Financeiras|01012014||1527|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.30|Multas e Juros Moratórios Retidos|01012014||1528|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.35|Multa Rescisória Retida|01012014||1529|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.40|Recursos em Processo de Habilitação|01012014||1530|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.45|Reajuste de Saldo de Caixa|01012014||1531|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.50|Atualização de Direitos|01012014||1532|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.60|Atualização de Obrigações (-)|01012014||1533|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.8.98.90|Valores Irrecuperáveis (-)|01012014||1534|A|2.1.4.9.8.98.00|7|02
+2.1.4.9.9.00.00|Diversas|01012014||1535|S|2.1.4.9.0.00.00|5|02
+2.1.4.9.9.05.00|CHEQUES ADMINISTRATIVOS|01012014||1536|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.08.00|CREDORES POR ANTECIPAÇÃO DE VALOR RESIDUAL|01012014||1537|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.09.00|CREDORES POR ANTECIPAÇÃO DE VALOR RESIDUAL - ARRENDAMENTOS FINANCEIROS ESPECIAIS|01012014||1538|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.10.00|CREDORES POR RECURSOS A LIBERAR|01012014||1539|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.10.10|Financiados|01012014||1540|A|2.1.4.9.9.10.00|7|02
+2.1.4.9.9.10.20|Vendedores de Imóveis|01012014||1541|A|2.1.4.9.9.10.00|7|02
+2.1.4.9.9.12.00|CONTRATOS DE ASSUNÇÃO DE OBRIGAÇÕES|01012014||1542|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.12.10|Vinculados a Operações Realizadas no País|01012014||1543|A|2.1.4.9.9.12.00|7|02
+2.1.4.9.9.12.20|Vinculados a Operações Realizadas com o Exterior|01012014||1544|A|2.1.4.9.9.12.00|7|02
+2.1.4.9.9.15.00|DOTAÇÃO PARA AUMENTO DE CAPITAL|01012014||1545|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.17.00|OBRIGAÇÕES POR OPERAÇÕES VINCULADAS A CESSÃO|01012014||1546|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.17.10|De Operações de Crédito|01012014||1547|A|2.1.4.9.9.17.00|7|02
+2.1.4.9.9.17.20|De Operações de Arrendamento Mercantil|01012014||1548|A|2.1.4.9.9.17.00|7|02
+2.1.4.9.9.17.30|De Outras Operações com Características de Concessão de Crédito|01012014||1549|A|2.1.4.9.9.17.00|7|02
+2.1.4.9.9.17.40|De Outros Ativos Financeiros|01012014||1550|A|2.1.4.9.9.17.00|7|02
+2.1.4.9.9.17.90|Obrigações por Operações Vinculadas a Cessão - Liquidação Antecipada|01012014||1551|A|2.1.4.9.9.17.00|7|02
+2.1.4.9.9.20.00|OBRIGAÇÕES POR AQUISIÇÃO DE BENS E DIREITOS|01012014||1552|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.23.00|OBRIGAÇÕES POR CONTRIBUIÇÕES AO SFH|01012014||1553|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.25.00|OBRIGAÇÕES POR CONVÊNIOS OFICIAIS|01012014||1554|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.25.15|Previdência Social - Aposentadorias e Pensões|01012014||1555|A|2.1.4.9.9.25.00|7|02
+2.1.4.9.9.25.17|Previdência Social - Auxílios|01012014||1556|A|2.1.4.9.9.25.00|7|02
+2.1.4.9.9.25.19|Previdência Social - Outros|01012014||1557|A|2.1.4.9.9.25.00|7|02
+2.1.4.9.9.25.99|Outros Recursos Recebidos|01012014||1558|A|2.1.4.9.9.25.00|7|02
+2.1.4.9.9.27.00|OBRIGAÇÕES POR PRESTAÇÃO DE SERVIÇO DE PAGAMENTO|01012014||1559|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.27.05|Salários e Vencimentos|01012014||1560|A|2.1.4.9.9.27.00|7|02
+2.1.4.9.9.27.06|Aposentadorias e Pensões|01012014||1561|A|2.1.4.9.9.27.00|7|02
+2.1.4.9.9.27.10|Outros|01012014||1562|A|2.1.4.9.9.27.00|7|02
+2.1.4.9.9.30.00|PROVISÃO PARA PAGAMENTOS A EFETUAR|01012014||1563|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.30.10|Despesas de Pessoal|01012014||1564|A|2.1.4.9.9.30.00|7|02
+2.1.4.9.9.30.50|Outras Despesas Administrativas|01012014||1565|A|2.1.4.9.9.30.00|7|02
+2.1.4.9.9.30.90|Outros Pagamentos|01012014||1566|A|2.1.4.9.9.30.00|7|02
+2.1.4.9.9.35.00|PROVISÃO PARA PASSIVOS CONTINGENTES|01012014||1567|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.35.10|Passivos Trabalhistas|01012014||1568|A|2.1.4.9.9.35.00|7|02
+2.1.4.9.9.35.90|Outros Passivos|01012014||1569|A|2.1.4.9.9.35.00|7|02
+2.1.4.9.9.40.00|PROVISÃO PARA RISCO RECEBIDO EM OPERAÇÕES COM DERIVATIVOS DE CRÉDITO|01012014||1570|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.55.00|RECURSOS VINCULADOS A OPERAÇÕES DE CRÉDITO|01012014||1571|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.60.00|RECURSOS DE GARANTIAS REALIZADAS|01012014||1572|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.70.00|RECURSOS DO FGTS PARA AMORTIZAÇÕES|01012014||1573|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.80.00|SUBSCRIÇÕES DE CAPITAL A INTEGRALIZAR|01012014||1574|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.82.00|PASSIVOS ATUARIAIS|01012014||1575|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.82.10|De Fundos de Pensão de Benefício Definido|01012014||1576|A|2.1.4.9.9.82.00|7|02
+2.1.4.9.9.82.90|Outros|01012014||1577|A|2.1.4.9.9.82.00|7|02
+2.1.4.9.9.83.00|VALORES A PAGAR À SOCIEDADE ADMINISTRADORA|01012014||1578|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.85.00|VALORES A PAGAR A SOCIEDADES LIGADAS|01012014||1579|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.89.00|OBRIGAÇÕES POR COTAS DE FUNDOS DE INVESTIMENTO|01012014||1580|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.89.10|Cotas de Fundos de Investimento em Direitos Creditórios|01012014||1581|A|2.1.4.9.9.89.00|7|02
+2.1.4.9.9.89.90|Cotas de Outros Fundos|01012014||1582|A|2.1.4.9.9.89.00|7|02
+2.1.4.9.9.90.00|CREDORES DIVERSOS - EXTERIOR|01012014||1583|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.92.00|CREDORES DIVERSOS - PAÍS|01012014||1584|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.94.00|OBRIGAÇÕES ESPECÍFICAS DE CONTROLADAS NÃO SUJEITAS À AUTORIZAÇÃO DO BANCO CENTRAL|01012014||1585|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.95.00|INSTRUMENTOS HÍBRIDOS DE CAPITAL E DÍVIDA ELEGÍVEIS A CAPITAL ANTERIORES À RES. 4.192/2013|01012014||1586|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.95.05|Elegíveis a Capital Nível I|01012014||1587|A|2.1.4.9.9.95.00|7|02
+2.1.4.9.9.95.10|Elegíveis a Capital Nível II|01012014||1588|A|2.1.4.9.9.95.00|7|02
+2.1.4.9.9.95.90|Outros|01012014||1589|A|2.1.4.9.9.95.00|7|02
+2.1.4.9.9.96.00|DÍVIDAS SUBORDINADAS ELEGÍVEIS A CAPITAL|01012014||1590|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.96.05|Vencimento Superior a 5 Anos|01012014||1591|A|2.1.4.9.9.96.00|7|02
+2.1.4.9.9.96.10|Vencimento Entre 4 e 5 Anos|01012014||1592|A|2.1.4.9.9.96.00|7|02
+2.1.4.9.9.96.15|Vencimento Entre 3 e 4 Anos|01012014||1593|A|2.1.4.9.9.96.00|7|02
+2.1.4.9.9.96.20|Vencimento Entre 2 e 3 Anos|01012014||1594|A|2.1.4.9.9.96.00|7|02
+2.1.4.9.9.96.25|Vencimento Entre 1 e 2 Anos|01012014||1595|A|2.1.4.9.9.96.00|7|02
+2.1.4.9.9.96.30|Vencimento Inferior a 1 Ano|01012014||1596|A|2.1.4.9.9.96.00|7|02
+2.1.4.9.9.97.00|OUTRAS DÍVIDAS SUBORDINADAS|01012014||1597|A|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.98.00|INSTRUMENTOS DE DÍVIDA ELEGÍVEIS A CAPITAL COM BASE NA RES. 4.192/2013|01012014||1598|S|2.1.4.9.9.00.00|6|02
+2.1.4.9.9.98.10|Principal Autorizado|01012014||1599|A|2.1.4.9.9.98.00|7|02
+2.1.4.9.9.98.15|Principal Pendente de Autorização|01012014||1600|A|2.1.4.9.9.98.00|7|02
+2.1.4.9.9.98.20|Complementar Autorizado|01012014||1601|A|2.1.4.9.9.98.00|7|02
+2.1.4.9.9.98.25|Complementar Pendente de Autorização|01012014||1602|A|2.1.4.9.9.98.00|7|02
+2.1.4.9.9.98.30|Nível II Autorizado|01012014||1603|A|2.1.4.9.9.98.00|7|02
+2.1.4.9.9.98.35|Nível II Pendente de Autorização|01012014||1604|A|2.1.4.9.9.98.00|7|02
+2.1.5.0.0.00.00|RESULTADOS DE EXERCICIOS FUTUROS|01012014||1605|S|2.1.0.0.0.00.00|3|02
+2.1.5.1.0.00.00|RECEITAS DE EXERCÍCIOS FUTUROS|01012014||1606|S|2.1.5.0.0.00.00|4|02
+2.1.5.1.1.00.00|Receitas de Exercícios Futuros|01012014||1607|S|2.1.5.1.0.00.00|5|02
+2.1.5.1.1.10.00|RENDAS ANTECIPADAS|01012014||1608|A|2.1.5.1.1.00.00|6|02
+2.1.6.0.0.00.00|PATRIMÔNIO LÍQUIDO|01012014||1609|S|2.1.0.0.0.00.00|3|03
+2.1.6.1.0.00.00|PATRIMÔNIO LÍQUIDO|01012014||1610|S|2.1.6.0.0.00.00|4|03
+2.1.6.1.1.00.00|Capital Social|01012014||1611|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.1.10.00|CAPITAL|01012014||1612|S|2.1.6.1.1.00.00|6|03
+2.1.6.1.1.10.13|Ações Ordinárias - País|01012014||1613|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.16|Ações Preferenciais não Cumulativas e não Resgatáveis - País|01012014||1614|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.17|Demais Ações Preferenciais - País|01012014||1615|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.23|Ações Ordinárias - Exterior|01012014||1616|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.26|Ações Preferenciais não Cumulativas e não Resgatáveis - Exterior|01012014||1617|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.27|Demais Ações Preferenciais - Exterior|01012014||1618|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.28|Cotas - País|01012014||1619|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.10.29|Cotas - Exterior|01012014||1620|A|2.1.6.1.1.10.00|7|03
+2.1.6.1.1.20.00|AUMENTO DE CAPITAL|01012014||1621|S|2.1.6.1.1.00.00|6|03
+2.1.6.1.1.20.13|Ações Ordinárias - País|01012014||1622|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.16|Ações Preferenciais não Cumulativas e não Resgatáveis - País|01012014||1623|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.17|Demais Ações Preferenciais - País|01012014||1624|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.23|Ações Ordinárias - Exterior|01012014||1625|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.26|Ações Preferenciais não Cumulativas e não Resgatáveis - Exterior|01012014||1626|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.27|Demais Ações Preferenciais - Exterior|01012014||1627|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.28|Cotas - País|01012014||1628|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.20.29|Cotas - Exterior|01012014||1629|A|2.1.6.1.1.20.00|7|03
+2.1.6.1.1.40.00|REDUÇÃO DE CAPITAL (-)|01012014||1630|S|2.1.6.1.1.00.00|6|03
+2.1.6.1.1.40.10|Redução de Capital - País (-)|01012014||1631|A|2.1.6.1.1.40.00|7|03
+2.1.6.1.1.40.20|Redução de Capital - Exterior (-)|01012014||1632|A|2.1.6.1.1.40.00|7|03
+2.1.6.1.1.50.00|CAPITAL A REALIZAR (-)|01012014||1633|A|2.1.6.1.1.00.00|6|03
+2.1.6.1.1.70.00|COTAS DE INVESTIMENTO|01012014||1634|S|2.1.6.1.1.00.00|6|03
+2.1.6.1.1.70.10|Cotas a Individualizar|01012014||1635|A|2.1.6.1.1.70.00|7|03
+2.1.6.1.1.70.20|Pessoas Físicas|01012014||1636|A|2.1.6.1.1.70.00|7|03
+2.1.6.1.1.70.30|Pessoas Jurídicas|01012014||1637|A|2.1.6.1.1.70.00|7|03
+2.1.6.1.1.80.00|VARIAÇÕES NO RESGATE DE COTAS (-)|01012014||1638|A|2.1.6.1.1.00.00|6|03
+2.1.6.1.2.00.00|Correção Monetária do Capital|01012014||1639|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.2.10.00|CORREÇÃO MONETÁRIA DO CAPITAL REALIZADO|01012014||1640|A|2.1.6.1.2.00.00|6|03
+2.1.6.1.2.20.00|CORREÇÃO MONETÁRIA DE AUMENTOS DE CAPITAL|01012014||1641|A|2.1.6.1.2.00.00|6|03
+2.1.6.1.3.00.00|Reservas de Capital|01012014||1642|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.3.10.00|RESERVA DE ÁGIOS POR SUBSCRIÇÃO DE AÇÕES|01012014||1643|A|2.1.6.1.3.00.00|6|03
+2.1.6.1.3.70.00|RESERVA DE ATUALIZAÇÃO DE TÍTULOS PATRIMONIAIS|01012014||1644|A|2.1.6.1.3.00.00|6|03
+2.1.6.1.3.80.00|RESERVA ESPECIAL - LEI Nº 8.200|01012014||1645|A|2.1.6.1.3.00.00|6|03
+2.1.6.1.3.99.00|OUTRAS RESERVAS DE CAPITAL|01012014||1646|A|2.1.6.1.3.00.00|6|03
+2.1.6.1.4.00.00|Reservas de Reavaliação|01012014||1647|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.4.10.00|RESERVA DE REAVALIAÇÃO DE IMÓVEIS DE USO PRÓPRIO|01012014||1648|A|2.1.6.1.4.00.00|6|03
+2.1.6.1.4.30.00|RESERVA DE REAVALIAÇÃO DE BENS DE COLIGADAS E CONTROLADAS|01012014||1649|A|2.1.6.1.4.00.00|6|03
+2.1.6.1.5.00.00|Reservas de Lucros|01012014||1650|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.5.10.00|RESERVA  LEGAL|01012014||1651|A|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.20.00|RESERVAS ESTATUTÁRIAS|01012014||1652|A|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.30.00|RESERVAS PARA CONTINGÊNCIAS|01012014||1653|A|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.40.00|RESERVAS PARA EXPANSÃO|01012014||1654|A|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.50.00|RESERVAS DE LUCROS A REALIZAR|01012014||1655|A|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.60.00|RESERVA PARA INCENTIVOS FISCAIS|01012014||1656|A|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.80.00|RESERVAS ESPECIAIS DE LUCROS|01012014||1657|S|2.1.6.1.5.00.00|6|03
+2.1.6.1.5.80.10|Dividendos Obrigatórios Não Distribuídos|01012014||1658|A|2.1.6.1.5.80.00|7|03
+2.1.6.1.5.80.20|Dividendos Adicionais Propostos|01012014||1659|A|2.1.6.1.5.80.00|7|03
+2.1.6.1.5.80.99|Outras|01012014||1660|A|2.1.6.1.5.80.00|7|03
+2.1.6.1.6.00.00|Ajustes de Avaliação Patrimonial|01012014||1661|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.6.10.00|TÍTULOS DISPONÍVEIS PARA VENDA|01012014||1662|S|2.1.6.1.6.00.00|6|03
+2.1.6.1.6.10.10|Próprios|01012014||1663|A|2.1.6.1.6.10.00|7|03
+2.1.6.1.6.10.20|De Coligadas e Controladas|01012014||1664|A|2.1.6.1.6.10.00|7|03
+2.1.6.1.6.20.00|HEDGE DE FLUXO DE CAIXA (+/-)|01012014||1665|S|2.1.6.1.6.00.00|6|03
+2.1.6.1.6.20.05|Próprios - Derivativos cujos Itens Objeto de Hedge são Ajustados a Valor de Mercado|01012014||1666|A|2.1.6.1.6.20.00|7|03
+2.1.6.1.6.20.15|Próprios - Derivativos cujos Itens Objeto de Hedge não são Ajustados a Valor de Mercado|01012014||1667|A|2.1.6.1.6.20.00|7|03
+2.1.6.1.6.20.25|De Coligadas e Controladas - Derivativos cujos Itens Objeto de Hedge são Ajustados a Valor de Mercado|01012014||1668|A|2.1.6.1.6.20.00|7|03
+2.1.6.1.6.20.35|De Coligadas e Controladas - Derivativos cujos Itens Objeto de Hedge não são Ajustados a Valor de Mercado|01012014||1669|A|2.1.6.1.6.20.00|7|03
+2.1.6.1.6.30.00|AJUSTES DE COMBINAÇÃO DE NEGÓCIOS|01012014||1670|A|2.1.6.1.6.00.00|6|03
+2.1.6.1.6.90.00|OUTROS AJUSTES DE AVALIAÇÃO PATRIMONIAL|01012014||1671|A|2.1.6.1.6.00.00|6|03
+2.1.6.1.7.00.00|Sobras ou Perdas Acumuladas|01012014||1672|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.7.10.00|SOBRAS OU PERDAS ACUMULADAS|01012014||1673|A|2.1.6.1.7.00.00|6|03
+2.1.6.1.8.00.00|Lucros ou Prejuízos Acumulados|01012014||1674|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.8.10.00|LUCROS OU PREJUÍZOS ACUMULADOS|01012014||1675|A|2.1.6.1.8.00.00|6|03
+2.1.6.1.8.80.00|DIVIDENDOS E LUCROS PAGOS ANTECIPADAMENTE (-)|01012014||1676|A|2.1.6.1.8.00.00|6|03
+2.1.6.1.8.90.00|GANHOS OU PERDAS DE CAPITAL NÃO REALIZADOS|01012014||1677|A|2.1.6.1.8.00.00|6|03
+2.1.6.1.9.00.00|Ações em Tesouraria (-)|01012014||1678|S|2.1.6.1.0.00.00|5|03
+2.1.6.1.9.10.00|AÇÕES EM TESOURARIA (-)|01012014||1679|S|2.1.6.1.9.00.00|6|03
+2.1.6.1.9.10.10|Autorizadas a Compor o Capital Principal|01012014||1680|A|2.1.6.1.9.10.00|7|03
+2.1.6.1.9.10.20|Autorizadas a Compor o Capital Complementar com Base em Norma Anterior à Res. 4.192/2013|01012014||1681|A|2.1.6.1.9.10.00|7|03
+2.1.6.1.9.10.30|Autorizadas a Compor o Capital Complementar com Base na Res. 4.192/2013|01012014||1682|A|2.1.6.1.9.10.00|7|03
+2.1.6.1.9.10.40|Autorizadas a Compor o Nível II com Base em Norma Anterior à Res. 4.192/2013|01012014||1683|A|2.1.6.1.9.10.00|7|03
+2.1.6.1.9.10.50|Autorizadas a Compor o Nível II com Base na Res. 4.192/2013|01012014||1684|A|2.1.6.1.9.10.00|7|03
+2.1.6.2.0.00.00|APE - PATRIMÔNIO SOCIAL|01012014||1685|S|2.1.6.0.0.00.00|4|03
+2.1.6.2.1.00.00|APE - Recursos de Associados Poupadores|01012014||1686|S|2.1.6.2.0.00.00|5|03
+2.1.6.2.1.10.00|APE - DEPÓSITOS DE POUPANÇA LIVRES - PESSOAS FÍSICAS|01012014||1687|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.20.00|APE - DEPÓSITOS DE POUPANÇA LIVRES - PESSOAS JURÍDICAS|01012014||1688|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.25.00|APE - DEPÓSITOS DE POUPANÇA DE LIGADAS|01012014||1689|S|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.25.10|Pessoas Físicas|01012014||1690|A|2.1.6.2.1.25.00|7|03
+2.1.6.2.1.25.20|Pessoas Jurídicas|01012014||1691|A|2.1.6.2.1.25.00|7|03
+2.1.6.2.1.30.00|APE - DEPÓSITOS DE POUPANÇA PECÚLIO|01012014||1692|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.35.00|APE - DEPÓSITOS DE POUPANÇA DE INSTITUIÇÕES DO SISTEMA FINANCEIRO|01012014||1693|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.40.00|APE - DEPÓSITOS DE POUPANÇA PROGRAMADA|01012014||1694|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.50.00|APE - DEPÓSITOS DE POUPANÇA - VALORES MÚLTIPLOS|01012014||1695|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.60.00|APE - DEPÓSITOS DE POUPANÇA VINCULADA|01012014||1696|S|2.1.6.2.1.00.00|6|03
+2.1.6.2.1.60.10|Habitacionais|01012014||1697|A|2.1.6.2.1.60.00|7|03
+2.1.6.2.1.60.20|Cooperativas|01012014||1698|A|2.1.6.2.1.60.00|7|03
+2.1.6.2.1.60.30|Cooperativados|01012014||1699|A|2.1.6.2.1.60.00|7|03
+2.1.6.2.1.60.40|Vinculados a Carta de Crédito|01012014||1700|A|2.1.6.2.1.60.00|7|03
+2.1.6.2.1.60.99|Outros|01012014||1701|A|2.1.6.2.1.60.00|7|03
+2.1.6.2.1.80.00|APE - DEPÓSITOS DE POUPANÇA ESPECIAL|01012014||1702|A|2.1.6.2.1.00.00|6|03
+2.1.6.2.4.00.00|APE - Reservas de Reavaliação|01012014||1703|S|2.1.6.2.0.00.00|5|03
+2.1.6.2.4.10.00|APE - RESERVA DE REAVALIAÇÃO DE IMÓVEIS DE USO PRÓPRIO|01012014||1704|A|2.1.6.2.4.00.00|6|03
+2.1.6.2.5.00.00|APE - Reservas de Lucros|01012014||1705|S|2.1.6.2.0.00.00|5|03
+2.1.6.2.5.20.00|APE - RESERVAS ESTATUTÁRIAS|01012014||1706|A|2.1.6.2.5.00.00|6|03
+2.1.6.2.5.30.00|APE - RESERVAS PARA CONTINGÊNCIAS|01012014||1707|A|2.1.6.2.5.00.00|6|03
+2.1.6.2.5.40.00|APE - RESERVA PARA INCENTIVOS FICAIS|01012014||1708|A|2.1.6.2.5.00.00|6|03
+2.1.6.2.6.00.00|APE - Ajustes de Avaliação Patrimonial|01012014||1709|S|2.1.6.2.0.00.00|5|03
+2.1.6.2.6.10.00|APE - TÍTULOS DISPONÍVEIS PARA VENDA|01012014||1710|A|2.1.6.2.6.00.00|6|03
+2.1.6.2.6.20.00|APE - HEDGE DE FLUXO DE CAIXA|01012014||1711|A|2.1.6.2.6.00.00|6|03
+2.1.6.2.6.30.00|APE - AJUSTES DE COMBINAÇÕES DE NEGÓCIOS|01012014||1712|A|2.1.6.2.6.00.00|6|03
+2.1.6.2.6.90.00|APE - OUTROS AJUSTES DE AVALIAÇÃO PATRIMONIAL|01012014||1713|A|2.1.6.2.6.00.00|6|03
+2.1.6.2.8.00.00|APE - Lucros ou Prejuízos Acumulados|01012014||1714|S|2.1.6.2.0.00.00|5|03
+2.1.6.2.8.10.00|APE - LUCROS OU PREJUÍZOS ACUMULADOS|01012014||1715|A|2.1.6.2.8.00.00|6|03
+2.1.6.4.0.00.00|PARTICIPAÇÃO DE NÃO CONTROLADORES|01012014||1716|S|2.1.6.0.0.00.00|4|03
+2.1.6.4.1.00.00|Participação de não Controladores|01012014||1717|S|2.1.6.4.0.00.00|5|03
+2.1.6.4.1.10.00|PARTICIPAÇÃO DE NÃO CONTROLADORES|01012014||1718|A|2.1.6.4.1.00.00|6|03
