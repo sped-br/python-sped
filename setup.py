@@ -25,6 +25,10 @@ class PyTest(test_command):
 setup(
     name='sped',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    include_package_data=True,
+    package_data={
+        'sped': ['ecd/tabelas/*'],
+    },
     version=__version__,
     description='Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python.',
     long_description='Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para '
@@ -34,13 +38,6 @@ setup(
     url='https://github.com/sped-br/python-sped',
     download_url='https://github.com/sped-br/python-sped/releases',
     license='MIT',
-    include_package_data=True,
-    package_data={
-        # If any package contains *.txt or *.rst files, include them:
-        #'': ['*.txt', '*.rst'],
-        # And include any *.msg files found in the 'hello' package, too:
-        'sped': ['ecd/tabelas/*'],
-    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
