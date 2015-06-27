@@ -5,6 +5,7 @@ from ..campos import Campo
 from ..campos import CampoData
 from ..campos import CampoFixo
 from ..campos import CampoNumerico
+from sped.campos import CampoAlfanumerico
 
 
 class Registro0000(Registro):
@@ -431,7 +432,7 @@ class RegistroJ005(Registro):
         CampoFixo(1, 'REG', 'J005'),
         CampoData(2, 'DT_INI'),
         CampoData(3, 'DT_FIN'),
-        Campo(4, 'ID_DEM'),
+        CampoNumerico(4, 'ID_DEM'),
         Campo(5, 'CAB_DEM'),
     ]
 
@@ -458,7 +459,7 @@ class RegistroJ150(Registro):
     campos = [
         CampoFixo(1, 'REG', 'J150'),
         Campo(2, 'COD_AGL'),
-        Campo(3, 'NÍVEL_AGL'),
+        CampoNumerico(3, 'NÍVEL_AGL'),
         Campo(4, 'DESCR_COD_AGL'),
         CampoNumerico(5, 'VL_CTA', precisao=2),
         Campo(6, 'IND_VL'),
@@ -498,11 +499,16 @@ class RegistroJ930(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'J930'),
-        Campo(2, 'IDENT_NOM'),
-        Campo(3, 'IDENT_CPF'),
-        Campo(4, 'IDENT_QUALIF'),
-        Campo(5, 'COD_ASSIM'),
-        Campo(6, 'IND_CRC'),
+        CampoAlfanumerico(2, 'IDENT_NOM'),
+        CampoAlfanumerico(3, 'IDENT_CPF', tamanho=11),
+        CampoAlfanumerico(4, 'IDENT_QUALIF'),
+        CampoAlfanumerico(5, 'COD_ASSIN', tamanho=3),
+        CampoAlfanumerico(6, 'IND_CRC'),
+        CampoAlfanumerico(7, 'EMAIL'),
+        CampoAlfanumerico(8, 'FONE'),
+        CampoAlfanumerico(9, 'UF_CRC'),
+        CampoAlfanumerico(10, 'NUM_SEQ_CRC'),
+        CampoData(11, 'DT_CRC')
     ]
 
 
