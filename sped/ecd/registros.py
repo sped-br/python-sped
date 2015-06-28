@@ -444,11 +444,13 @@ class RegistroJ100(Registro):
     campos = [
         CampoFixo(1, 'REG', 'J100'),
         Campo(2, 'COD_AGL'),
-        Campo(3, 'NÍVEL_AGL'),
+        CampoNumerico(3, 'NIVEL_AGL'),
         Campo(4, 'IND_GRP_BAL'),
         Campo(5, 'DESCR_COD_AGL'),
         CampoNumerico(6, 'VL_CTA', precisao=2),
         Campo(7, 'IND_DC_BAL'),
+        CampoNumerico(8, 'VL_CTA_INI', precisao=2),
+        Campo(9, 'IND_DC_BAL_INI'),
     ]
 
 
@@ -459,7 +461,7 @@ class RegistroJ150(Registro):
     campos = [
         CampoFixo(1, 'REG', 'J150'),
         Campo(2, 'COD_AGL'),
-        CampoNumerico(3, 'NÍVEL_AGL'),
+        CampoNumerico(3, 'NIVEL_AGL'),
         Campo(4, 'DESCR_COD_AGL'),
         CampoNumerico(5, 'VL_CTA', precisao=2),
         Campo(6, 'IND_VL'),
