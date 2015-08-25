@@ -57,7 +57,7 @@ class Campo(object):
             return
         if valor and not self.__class__.validar(valor):
             raise FormatoInvalidoError(registro, self.nome)
-        if not isinstance(valor, str):
+        if not isinstance(valor, basestring):
             raise FormatoInvalidoError(registro, self.nome)
         registro.valores[self._indice] = valor or ''
 
