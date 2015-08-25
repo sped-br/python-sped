@@ -19,7 +19,7 @@ class ArquivoDigital(ArquivoDigital):
     blocos = blocos
 
     def __init__(self):
-        super().__init__()
+        super(ArquivoDigital, self).__init__()
         self._blocos['0'] = Bloco0()
         self._blocos['I'] = BlocoI()
         self._blocos['J'] = BlocoJ()
