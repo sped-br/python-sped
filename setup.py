@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from setuptools import setup, find_packages
 from setuptools.command.test import test as test_command
 from sped import __version__

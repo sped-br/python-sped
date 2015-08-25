@@ -41,17 +41,17 @@ class ArquivoDigital(object):
             bloco.add(registro)
 
     def write_to(self, buffer):
-        buffer.write(self._registro_abertura.as_line() + '\r\n')
+        buffer.write(self._registro_abertura.as_line() + u'\r\n')
         reg_count = 2
         for key in self._blocos.keys():
             bloco = self._blocos[key]
             reg_count += len(bloco.registros)
             for r in bloco.registros:
-                buffer.write(r.as_line() + '\r\n')
+                buffer.write(r.as_line() + u'\r\n')
 
         self._registro_fechamento[2] = reg_count
 
-        buffer.write(self._registro_fechamento.as_line() + '\r\n')
+        buffer.write(self._registro_fechamento.as_line() + u'\r\n')
 
     def getstring(self):
         buffer = StringIO()

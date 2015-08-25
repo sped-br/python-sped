@@ -113,4 +113,4 @@ class Registro(object):
         campo.set(self, value)
 
     def as_line(self):
-        return '|'.join(self._valores)
+        return u'|'.join(self._valores)
