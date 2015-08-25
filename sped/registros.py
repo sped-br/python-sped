@@ -104,7 +104,7 @@ class Registro(object):
         return campo.get(self)
 
     def __setattr__(self, name, value):
-        if name.startswith('_'):
+        if name.startswith(u'_'):
             super(Registro, self).__setattr__(name, value)
             return
         campo = ([c for c in self.campos if c.nome == name] or [None])[0]

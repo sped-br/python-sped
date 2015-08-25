@@ -7,6 +7,8 @@ from datetime import date
 from datetime import datetime
 from decimal import Decimal
 
+from six import string_types
+
 from .erros import CampoFixoError
 from .erros import CampoObrigatorioError
 from .erros import FormatoInvalidoError
@@ -57,7 +59,7 @@ class Campo(object):
             return
         if valor and not self.__class__.validar(valor):
             raise FormatoInvalidoError(registro, self.nome)
-        if not isinstance(valor, basestring):
+        if not isinstance(valor, string_types):
             raise FormatoInvalidoError(registro, self.nome)
         registro.valores[self._indice] = valor or ''
 
