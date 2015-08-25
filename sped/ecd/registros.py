@@ -5,7 +5,7 @@ from ..campos import Campo
 from ..campos import CampoData
 from ..campos import CampoFixo
 from ..campos import CampoNumerico
-from sped.campos import CampoAlfanumerico
+from ..campos import CampoAlfanumerico
 
 
 class Registro0000(Registro):

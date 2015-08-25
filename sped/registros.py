@@ -17,18 +17,18 @@ class Registro(object):
     ...               CampoData(3, 'DT_FIM'),
     ...               CampoRegex(4, 'RETIFICADORA', obrigatorio=True, regex='[SN]'),]
     >>> line = '|ERRO|01012015||N|'
-    >>> r = RegistroTest(line)
+    >>> r = RegistroTest(line) # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
      ...
-    sped.erros.CampoError: RegistroTest -> REG
+    CampoError: RegistroTest -> REG
     >>> line = '|TEST|01012015||N|'
     >>> r = RegistroTest(line)
     >>> r.REG
     'TEST'
-    >>> r.REG = '0000'
+    >>> r.REG = '0000' # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
      ...
-    sped.erros.CampoFixoError: RegistroTest -> REG
+    CampoFixoError: RegistroTest -> REG
     >>> r.DT_INI
     datetime.date(2015, 1, 1)
     >>> r.DT_FIM
@@ -36,31 +36,31 @@ class Registro(object):
     >>> r.DT_INI = date(2014, 2, 1)
     >>> r.DT_INI
     datetime.date(2014, 2, 1)
-    >>> r.DT_INI = '01012014'
+    >>> r.DT_INI = '01012014' # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
      ...
-    sped.erros.FormatoInvalidoError: RegistroTest -> DT_INI
+    FormatoInvalidoError: RegistroTest -> DT_INI
     >>> r.DT_INI = ''
     >>> r.DT_INI
     >>> r.DT_INI = None
     >>> r.DT_INI
-    >>> r.CAMPO_INEXISTENTE = ''
+    >>> r.CAMPO_INEXISTENTE = '' # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
      ...
-    sped.erros.CampoInexistenteError: RegistroTest -> CAMPO_INEXISTENTE
-    >>> r.CAMPO_INEXISTENTE
+    CampoInexistenteError: RegistroTest -> CAMPO_INEXISTENTE
+    >>> r.CAMPO_INEXISTENTE # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
      ...
-    sped.erros.CampoInexistenteError: RegistroTest -> CAMPO_INEXISTENTE
+    CampoInexistenteError: RegistroTest -> CAMPO_INEXISTENTE
     >>> r.RETIFICADORA
     'N'
-    >>> r.RETIFICADORA='S'
+    >>> r.RETIFICADORA = 'S'
     >>> r.RETIFICADORA
     'S'
-    >>> r.RETIFICADORA='0'
+    >>> r.RETIFICADORA = '0' # doctest: +IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
      ...
-    sped.erros.FormatoInvalidoError: RegistroTest -> RETIFICADORA
+    FormatoInvalidoError: RegistroTest -> RETIFICADORA
     """
     campos = []
 
@@ -104,7 +104,7 @@ class Registro(object):
         return campo.get(self)
 
     def __setattr__(self, name, value):
-        if name.startswith(u'_'):
+        if name.startswith('_'):
             super(Registro, self).__setattr__(name, value)
             return
         campo = ([c for c in self.campos if c.nome == name] or [None])[0]
@@ -113,4 +113,4 @@ class Registro(object):
         campo.set(self, value)
 
     def as_line(self):
-        return u'|'.join(self._valores)
+        return '|'.join(self._valores)
