@@ -36,8 +36,6 @@ path_tabela = os.path.join(path_tabelas, tabela)
 def carregar_tabela(caminho_tabela, encoding='cp1252'):
     with open(caminho_tabela, 'r', encoding=encoding) as file:
         header = re.match('versão=(?P<version>\\d+) (?P<columns>.+)$', file.readline())
-        if not header:
-            raise Error()
         version = header.groupdict()['version']
         columns = header.groupdict()['columns'].split(', ')
 
