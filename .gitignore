@@ -18,7 +18,6 @@ nosetests.xml
 
 # Pycharm
 .idea
-main.py
 
 # Vim
 
@@ -44,5 +43,4 @@ build/
 .eggs/
 *.egg-info
 
-main.py
 

@@ -54,3 +54,4 @@ class Bloco9(Bloco):
     def abertura(self):
         registro = self.__class__.registro_abertura()
         return registro
+
