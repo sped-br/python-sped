@@ -20,7 +20,7 @@ class ArquivoDigital(object):
     def readfile(self, filename):
         with open(filename) as file:
             for line in [line.rstrip('\r\n') for line in file]:
-                self.read_registro(line)
+                self.read_registro(line.decode('utf8'))
 
     def read_registro(self, line):
         reg_id = line.split('|')[1]

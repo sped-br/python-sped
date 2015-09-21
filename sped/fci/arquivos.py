@@ -11,7 +11,6 @@ from .registros import Registro9999
 
 
 class ArquivoDigital(ArquivoDigital):
-
     registro_abertura = Registro0000
     registro_fechamento = Registro9999
     registros = registros
@@ -57,7 +56,7 @@ class ArquivoDigital(ArquivoDigital):
             if reg_id == '5020':
                 registros_9 = self._blocos['9'].registros[3]
                 registros_9.valores[3] = \
-                    str((len(self._blocos['5'].registros))-2)
+                    str((len(self._blocos['5'].registros)) - 2)
 
     def write_to(self, buffer):
 
@@ -75,3 +74,11 @@ class ArquivoDigital(ArquivoDigital):
         self._registro_fechamento[2] = reg_count
         linha_fechamento = self._registro_fechamento.as_line()[1:]
         buffer.write(linha_fechamento + u'\r\n')
+
+
+    def readfile(self, filename):
+
+        with open(filename) as file:
+            for line in [line.rstrip('\r\n') for line in file]:
+                if line[:4]!='9900':
+                    self.read_registro(line.decode('utf8'))
