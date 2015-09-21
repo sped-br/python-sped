@@ -10,14 +10,19 @@ class Registro0000(Registro):
         CampoFixo(1, 'REG', '0000'),
         CampoAlfanumerico(2, 'CNPJ_CONTRIBUINTE'),
         CampoAlfanumerico(3, 'NOME_CONTRIBUINTE'),
-        CampoFixo(4, 'VERSAO_LEIAUTE', '1.0')
+        CampoFixo(4, 'VERSAO_LEIAUTE', '1.0'),
+        CampoAlfanumerico(5, 'HASH CODE',obrigatorio=False, tamanho=47),
+        CampoAlfanumerico(6, 'DT_RECEPCAO_ARQUIVO',obrigatorio=False, tamanho=20),
+        CampoAlfanumerico(7, 'COD_RECEPCAO_ARQUIVO',obrigatorio=False, tamanho=36),
+        CampoAlfanumerico(8, 'DT_VALIDACAO_ARQUIVO', obrigatorio=False, tamanho=20),
+        CampoAlfanumerico(9, 'IN_VALIDACAO_ARQUIVO',obrigatorio=False, tamanho=20)
     ]
 
 
 class Registro0001(Registro):
     campos = [
         CampoFixo(1, 'REG', "0001"),
-        CampoAlfanumerico(2, 'TEXTO_PADRAO_UTF8', obrigatorio=True, )
+        CampoAlfanumerico(2, 'TEXTO_PADRAO_UTF8', obrigatorio=True )
     ]
 
 
@@ -78,11 +83,9 @@ class Registro5020(Registro):
         CampoFixo(1, 'REG', '5020'),
         CampoAlfanumerico(2, 'NOME_MERCADORIA', obrigatorio=True, tamanho=255),
         CampoNumerico(3, 'CODIGO_NCM', obrigatorio=True),
-        CampoAlfanumerico(4, 'CODIGO_MERCADORIA', tamanho=50,
-                          obrigatorio=True),
+        CampoAlfanumerico(4, 'CODIGO_MERCADORIA', obrigatorio=True, tamanho=50),
         CampoNumerico(5, 'CODIGO_GTIN'),
-        CampoAlfanumerico(6, 'UNIDADE_MERCADORIA', tamanho=6,
-                          obrigatorio=True),
+        CampoAlfanumerico(6, 'UNIDADE_MERCADORIA', tamanho=6, obrigatorio=True),
         CampoNumerico(7, 'VALOR_SAIDA_MERCADORIA_INTERESTADUAL', precisao=2,
                       obrigatorio=True),
         CampoNumerico(8, 'VALOR_PARCELA_IMPORTADA_EXTERIOR', precisao=2,
@@ -90,6 +93,9 @@ class Registro5020(Registro):
         CampoNumerico(9, 'CONTEUDO_IMPORTACAO_CI', precisao=2,
                       minimo=Decimal(0), maximo=Decimal(100),
                       obrigatorio=True),
+        CampoAlfanumerico(10, 'CODIGO_FCI', obrigatorio=False, tamanho=36),
+        CampoAlfanumerico(11, 'IN_VALIDACAO_FICHA', obrigatorio=False, tamanho=20)
+
     ]
 
 
@@ -163,7 +169,7 @@ class Registro9990(Registro):
 class Registro9999(Registro):
     campos = [
         CampoFixo(1, 'REG', '9999'),
-        CampoNumerico(2, ' QUANTIDADE_LINHAS_ARQUIVO')
+        CampoNumerico(2, 'QUANTIDADE_LINHAS_ARQUIVO')
     ]
 
     def __init__(self, line=None):
