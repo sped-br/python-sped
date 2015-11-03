@@ -22,8 +22,10 @@ class ArquivoDigital(ArquivoDigital):
         self._blocos['5'] = Bloco5()
         self._blocos['9'] = Bloco9()
 
-        self.read_registro(
-            u"""0001|Texto em caracteres UTF-8: (dígrafo BR)\"ção\",(dígrafo espanholenhe)\"ñ\",(trema)\"Ü\",(ordinais)\"ªº\",(ligamento s+z alemão)\"ß\"""")
+        utf = (u"0001|Texto em caracteres UTF-8: (dígrafo BR)'ção',(dígrafo esp"
+               u"anhol-enhe)'ñ',(trema)'Ü',(ordinais)'ªº',(ligamento s+z ale"
+               u"mão)'ß'.")
+        self.read_registro(utf)
         self.read_registro('|9900|0000|1')
         self.read_registro('|9900|0010|1')
         self.read_registro('|9900|5020|')
@@ -77,9 +79,10 @@ class ArquivoDigital(ArquivoDigital):
         linha_fechamento = self._registro_fechamento.as_line()[1:]
         buffer.write(linha_fechamento + u'\r\n')
 
+
     def readfile(self, filename):
 
-        with open(filename) as file:
+         with open(filename) as file:
             for line in [line.rstrip('\r\n') for line in file]:
-                if (line[:4] != '9900' and line[:4] != '0001' and line[:4] != '0990'):
+                if (line[:4]!='9900' and line[:4]!='0001' and line[:4]!='0990'):
                     self.read_registro(line.decode('utf-8-sig'))

@@ -59,3 +59,10 @@ class ArquivoDigital(object):
         buffer = StringIO()
         self.write_to(buffer)
         return buffer.getvalue()
+
+    # def getFile(self):
+    #     from tempfile import TemporaryFile
+    #     tmp = TemporaryFile()
+    #     self.write_to(tmp)
+    #     tmp.seek(0)
+    #     return tmp
