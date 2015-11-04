@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from ..campos import *
+from ..campos import CampoFixo, CampoAlfanumerico, CampoNumerico
 from ..registros import Registro
 from ..erros import CampoError
 
@@ -97,7 +97,6 @@ class Registro5020(Registro):
         CampoNumerico(8, 'VALOR_PARCELA_IMPORTADA_EXTERIOR', precisao=2,
                       obrigatorio=True),
         CampoNumerico(9, 'CONTEUDO_IMPORTACAO_CI', precisao=2,
-                      minimo=Decimal(0), maximo=Decimal(100),
                       obrigatorio=True),
         CampoAlfanumerico(10, 'CODIGO_FCI', obrigatorio=False, tamanho=36),
         CampoAlfanumerico(11, 'IN_VALIDACAO_FICHA', obrigatorio=False,

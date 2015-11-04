@@ -48,7 +48,6 @@ class ArquivoDigital(object):
             bloco = self._blocos[key]
             reg_count += len(bloco.registros)
             for r in bloco.registros:
-                a = r.as_line()
                 buffer.write(r.as_line() + u'\r\n')
 
         self._registro_fechamento[2] = reg_count
@@ -59,10 +58,3 @@ class ArquivoDigital(object):
         buffer = StringIO()
         self.write_to(buffer)
         return buffer.getvalue()
-
-    # def getFile(self):
-    #     from tempfile import TemporaryFile
-    #     tmp = TemporaryFile()
-    #     self.write_to(tmp)
-    #     tmp.seek(0)
-    #     return tmp
