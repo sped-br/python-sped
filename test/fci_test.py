@@ -17,7 +17,7 @@ class TestArquivoDigital(unittest.TestCase):
 
     def test_read_registro(self):
         txt = u"""0000|11111111000191|EMPRESA TESTE|1.0
-0001|Texto em caracteres UTF-8: (dígrafo BR)\"ção\",(dígrafo espanholenhe)\"ñ\",(trema)\"Ü\",(ordinais)\"ªº\",(ligamento s+z alemão)\"ß\"
+0001|Texto em caracteres UTF-8: (dígrafo BR)'ção',(dígrafo espanhol-enhe)'ñ',(trema)'Ü',(ordinais)'ªº',(ligamento s+z alemão)'ß'.
 0010|46377222000129|Contribuinte de Teste S/A|686001664111|Rua XV de novembro, 1.234|01506000|São João|SP
 0990|4
 5001
@@ -39,10 +39,9 @@ class TestArquivoDigital(unittest.TestCase):
 
         arq.read_registro('0000|11111111000191|EMPRESA TESTE|1.0')
 
-        arq.read_registro(u'0001|Texto em caracteres UTF-8: '
-                          u'(dígrafo BR)\"ção\",(dígrafo espanholenhe)\"ñ\",'
-                          u'(trema)\"Ü\",(ordinais)\"ªº\",(ligamento s+z '
-                          u'alemão)\"ß\"')
+        arq.read_registro(u"|0001|Texto em caracteres UTF-8: (dígrafo BR)'ção',"
+                          u"(dígrafo espanhol-enhe)'ñ',(trema)'Ü',(ordinais"
+                          u")'ªº',(ligamento s+z alemão)'ß'.")
 
         arq.read_registro( u'|0010|46377222000129|Contribuinte de Teste '
                            u'S/A|686001664111|Rua XV de novembro, 1.234|'
