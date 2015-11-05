@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from ..arquivos import ArquivoDigital
+from .. import arquivos
 from . import registros
 from . import blocos
 from .blocos import Bloco0
@@ -10,7 +10,7 @@ from .registros import Registro0000
 from .registros import Registro9999
 
 
-class ArquivoDigital(ArquivoDigital):
+class ArquivoDigital(arquivos.ArquivoDigital):
     registro_abertura = Registro0000
     registro_fechamento = Registro9999
     registros = registros
