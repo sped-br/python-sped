@@ -6,6 +6,7 @@ from io import StringIO
 
 
 class ArquivoDigital(object):
+
     registro_abertura = None
     registro_fechamento = None
     registros = None
@@ -19,7 +20,7 @@ class ArquivoDigital(object):
     def readfile(self, filename):
         with open(filename) as file:
             for line in [line.rstrip('\r\n') for line in file]:
-                self.read_registro(line)
+                self.read_registro(line.decode('utf8'))
 
     def read_registro(self, line):
         reg_id = line.split('|')[1]
@@ -27,7 +28,7 @@ class ArquivoDigital(object):
         try:
             registro_class = getattr(self.__class__.registros, 'Registro' + reg_id)
         except AttributeError:
-            raise RuntimeError("Arquivo inválido para EFD - PIS/COFINS")
+            raise RuntimeError(u"Arquivo inválido para EFD - PIS/COFINS")
 
         registro = registro_class(line)
 
