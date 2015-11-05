@@ -38,6 +38,12 @@ class Bloco0(Bloco):
     registro_abertura = Registro0001
     registro_fechamento = Registro0990
 
+    @property
+    def fechamento(self):
+        registro = Bloco.fechamento.fget(self)
+        registro[2] += 1
+        return registro
+
 
 class BlocoC(Bloco):
     """
@@ -141,3 +147,9 @@ class Bloco9(Bloco):
     """
     registro_abertura = Registro9001
     registro_fechamento = Registro9099
+
+    @property
+    def fechamento(self):
+        registro = super(Bloco9, self).fechamento
+        registro[2] += 1
+        return registro
