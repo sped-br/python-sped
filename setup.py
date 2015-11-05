@@ -18,9 +18,19 @@ class PyTest(test_command):
         self.test_suite = True
 
     def run_tests(self):
+        # doctest
         import sys
         import pytest
+
         errno = pytest.main(self.pytest_args)
+
+        # unittest
+        import unittest
+        from test.fci_test import TestArquivoDigital
+
+        suite = unittest.TestLoader().loadTestsFromTestCase(TestArquivoDigital)
+        unittest.TextTestRunner(verbosity=2).run(suite)
+
         sys.exit(errno)
 
 

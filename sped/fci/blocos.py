@@ -2,12 +2,12 @@
 
 from ..blocos import Bloco
 
-from registros import Registro0001
-from registros import Registro0990
-from registros import Registro5001
-from registros import Registro5990
-from registros import Registro9001
-from registros import Registro9990
+from .registros import Registro0001
+from .registros import Registro0990
+from .registros import Registro5001
+from .registros import Registro5990
+from .registros import Registro9001
+from .registros import Registro9990
 
 
 class Bloco0(Bloco):
