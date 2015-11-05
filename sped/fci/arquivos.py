@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from ..arquivos import ArquivoDigital
-import blocos
-import registros
-from blocos import Bloco0
-from blocos import Bloco5
-from blocos import Bloco9
-from registros import Registro0000
-from registros import Registro9999
+from . import registros
+from . import blocos
+from .blocos import Bloco0
+from .blocos import Bloco5
+from .blocos import Bloco9
+from .registros import Registro0000
+from .registros import Registro9999
 
 
 class ArquivoDigital(ArquivoDigital):
