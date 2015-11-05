@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from ..arquivos import ArquivoDigital
-from . import blocos
-from . import registros
-from .blocos import Bloco0
-from .blocos import Bloco5
-from .blocos import Bloco9
-from .registros import Registro0000
-from .registros import Registro9999
+import blocos
+import registros
+from blocos import Bloco0
+from blocos import Bloco5
+from blocos import Bloco9
+from registros import Registro0000
+from registros import Registro9999
 
 
 class ArquivoDigital(ArquivoDigital):
@@ -81,7 +81,7 @@ class ArquivoDigital(ArquivoDigital):
 
     def readfile(self, filename):
 
-        with open(filename) as file:
-            for line in [line.rstrip('\r\n') for line in file]:
+        with open(filename) as arq:
+            for line in [line.rstrip('\r\n') for line in arq]:
                 if (line[:4] != '9900' and line[:4] != '0001' and line[:4] != '0990'):
                     self.read_registro(line.decode('utf-8-sig'))
