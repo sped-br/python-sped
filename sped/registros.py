@@ -5,6 +5,7 @@ from .campos import CampoFixo
 from .campos import CampoRegex
 from .erros import CampoError
 from .erros import CampoInexistenteError
+from .erros import RegistroError
 
 
 class Registro(object):
@@ -114,3 +115,9 @@ class Registro(object):
 
     def as_line(self):
         return '|'.join(self._valores)
+
+
+class RegistroIndefinido(Registro):
+    def __init__(self):
+        super(RegistroIndefinido, self).__init__()
+        raise RegistroError(self)

@@ -4,20 +4,19 @@
 from collections import OrderedDict
 from io import StringIO
 
+from .registros import RegistroIndefinido
+
 
 class ArquivoDigital(object):
     registros = None
     blocos = None
 
-    def registro_abertura():
-        pass
-
-    def registro_fechamento():
-        pass
+    registro_abertura = RegistroIndefinido
+    registro_fechamento = RegistroIndefinido
 
     def __init__(self):
-        self._registro_abertura = self.__class__.registro_abertura()
-        self._registro_fechamento = self.__class__.registro_fechamento()
+        self._registro_abertura = self.registro_abertura()
+        self._registro_fechamento = self.registro_fechamento()
         self._blocos = OrderedDict()
 
     def readfile(self, filename):

@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 
+from .registros import RegistroIndefinido
+
 
 class Bloco(object):
     def __init__(self):
         self._registros = []
 
-    def registro_abertura():
-        pass
-
-    def registro_fechamento():
-        pass
+    registro_abertura = RegistroIndefinido
+    registro_fechamento = RegistroIndefinido
 
     @property
     def abertura(self):
