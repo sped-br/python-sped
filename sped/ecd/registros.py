@@ -10,7 +10,8 @@ from ..campos import CampoAlfanumerico
 
 class Registro0000(Registro):
     """
-    ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DO EMPRESÁRIO OU DA SOCIEDADE EMPRESÁRIA
+    ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DO EMPRESÁRIO OU DA SOCIEDADE
+    EMPRESÁRIA
     """
     campos = [
         CampoFixo(1, 'REG', '0000'),
@@ -151,7 +152,8 @@ class RegistroI012(Registro):
 
 class RegistroI015(Registro):
     """
-    IDENTIFICAÇÃO DAS CONTAS DA ESCRITURAÇÃO RESUMIDA A QUE SE REFERE A ESCRITURAÇÃO AUXILIAR
+    IDENTIFICAÇÃO DAS CONTAS DA ESCRITURAÇÃO RESUMIDA A QUE SE REFERE A
+    ESCRITURAÇÃO AUXILIAR
     """
     campos = [
         CampoFixo(1, 'REG', 'I015'),
@@ -338,7 +340,8 @@ class RegistroI310(Registro):
 
 class RegistroI350(Registro):
     """
-    SALDOS DAS CONTAS DE RESULTADO ANTES DO ENCERRAMENTO - IDENTIFICAÇÃO DA DATA
+    SALDOS DAS CONTAS DE RESULTADO ANTES DO ENCERRAMENTO - IDENTIFICAÇÃO DA
+    DATA
     """
     campos = [
         CampoFixo(1, 'REG', 'I350'),
@@ -361,7 +364,8 @@ class RegistroI355(Registro):
 
 class RegistroI500(Registro):
     """
-    PARÂMETROS DE IMPRESSÃO E VISUALIZAÇÃO DO LIVRO RAZÃO AUXILIAR COM LEIAUTE PARAMETRIZÁVEL
+    PARÂMETROS DE IMPRESSÃO E VISUALIZAÇÃO DO LIVRO RAZÃO AUXILIAR COM LEIAUTE
+    PARAMETRIZÁVEL
     """
     campos = [
         CampoFixo(1, 'REG', 'I500'),

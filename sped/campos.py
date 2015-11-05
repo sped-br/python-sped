@@ -34,7 +34,9 @@ class Campo(object):
         self._obrigatorio = obrigatorio
 
     def __repr__(self):
-        return "[{0}({1}, {2!r})]".format(self.__class__.__name__, self._indice, self._nome)
+        return "[{0}({1}, {2!r})]".format(self.__class__.__name__,
+                                          self._indice,
+                                          self._nome)
 
     @property
     def indice(self):
@@ -115,7 +117,8 @@ class CampoAlfanumerico(Campo):
 
 
 class CampoNumerico(Campo):
-    def __init__(self, indice, nome, obrigatorio=False, precisao=0, minimo=0, maximo=1000):
+    def __init__(self, indice, nome, obrigatorio=False,
+                 precisao=0, minimo=0, maximo=1000):
         super(CampoNumerico, self).__init__(indice, nome, obrigatorio)
         self._precisao = precisao
         self._minimo = minimo

@@ -44,3 +44,4 @@ build/
 *.egg-info
 
 
+.env/

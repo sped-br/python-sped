@@ -100,8 +100,8 @@ class Bloco1(Bloco):
     Complemento da Escrituração – Controle de Saldos de Créditos e de  Retenções, Operações Extemporâneas e Outras Informações
     """
     def __init__(self):
-        self._registro_abertura = Registro001()
-        self._registro_fechamento = Registro0990()
+        self._registro_abertura = Registro1001()
+        self._registro_fechamento = Registro1990()
 
 
 class Bloco9(Bloco):

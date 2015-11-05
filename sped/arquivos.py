@@ -6,11 +6,14 @@ from io import StringIO
 
 
 class ArquivoDigital(object):
-
-    registro_abertura = None
-    registro_fechamento = None
     registros = None
     blocos = None
+
+    def registro_abertura():
+        pass
+
+    def registro_fechamento():
+        pass
 
     def __init__(self):
         self._registro_abertura = self.__class__.registro_abertura()
@@ -18,15 +21,16 @@ class ArquivoDigital(object):
         self._blocos = OrderedDict()
 
     def readfile(self, filename):
-        with open(filename) as file:
-            for line in [line.rstrip('\r\n') for line in file]:
+        with open(filename) as spedfile:
+            for line in [line.rstrip('\r\n') for line in spedfile]:
                 self.read_registro(line.decode('utf8'))
 
     def read_registro(self, line):
         reg_id = line.split('|')[1]
 
         try:
-            registro_class = getattr(self.__class__.registros, 'Registro' + reg_id)
+            registro_class = getattr(self.__class__.registros,
+                                     'Registro' + reg_id)
         except AttributeError:
             raise RuntimeError(u"Arquivo inválido para EFD - PIS/COFINS")
 
@@ -41,20 +45,20 @@ class ArquivoDigital(object):
             bloco = self._blocos[bloco_id]
             bloco.add(registro)
 
-    def write_to(self, buffer):
-        buffer.write(self._registro_abertura.as_line() + u'\r\n')
+    def write_to(self, buff):
+        buff.write(self._registro_abertura.as_line() + u'\r\n')
         reg_count = 2
         for key in self._blocos.keys():
             bloco = self._blocos[key]
             reg_count += len(bloco.registros)
-            for r in bloco.registros:
-                buffer.write(r.as_line() + u'\r\n')
+            for registro in bloco.registros:
+                buff.write(registro.as_line() + u'\r\n')
 
         self._registro_fechamento[2] = reg_count
 
-        buffer.write(self._registro_fechamento.as_line() + u'\r\n')
+        buff.write(self._registro_fechamento.as_line() + u'\r\n')
 
     def getstring(self):
-        buffer = StringIO()
-        self.write_to(buffer)
-        return buffer.getvalue()
+        buff = StringIO()
+        self.write_to(buff)
+        return buff.getvalue()
