@@ -2,11 +2,14 @@
 
 
 class Bloco(object):
-    registro_abertura = None
-    registro_fechamento = None
-
     def __init__(self):
         self._registros = []
+
+    def registro_abertura():
+        pass
+
+    def registro_fechamento():
+        pass
 
     @property
     def abertura(self):
