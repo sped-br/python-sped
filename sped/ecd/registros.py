@@ -33,6 +33,7 @@ class Registro0000(Registro):
         Campo(17, 'IND_GRANDE_PORTE'),
         Campo(18, 'TIP_ECD'),
         Campo(19, 'COD_SCP'),
+        Campo(20, 'IDENT_MF')
     ]
 
 
