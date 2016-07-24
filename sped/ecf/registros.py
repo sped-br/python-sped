@@ -775,8 +775,7 @@ class RegistroM310(Registro):
         Campo(2, 'COD_CTA'),
         Campo(3, 'COD_CCUS'),
         CampoNumerico(4, 'VL_CTA', precisao=2),
-        Campo(5, 'IND_VL_CTA'),
-        Campo(6, 'IND_TIPO'),
+        Campo(5, 'IND_VL_CTA')
     ]
 
 
@@ -840,7 +839,6 @@ class RegistroM360(Registro):
         Campo(3, 'COD_CCUS'),
         CampoNumerico(4, 'VL_CTA', precisao=2),
         Campo(5, 'IND_VL_CTA'),
-        Campo(6, 'IND_TIPO'),
     ]
 
 
@@ -999,12 +997,7 @@ class RegistroN615(Registro):
         CampoNumerico(4, 'VL_LIQ_INCEN_FINOR', precisao=2),
         Campo(5, 'PER_INCEN_FINAM'),
         CampoNumerico(6, 'VL_LIQ_INCEN_FINAM', precisao=2),
-        CampoNumerico(7, 'VL_SUBTOTAL', precisao=2),
-        Campo(8, 'PER_VL_SUBTOTAL'),
-        Campo(9, 'PER_INCEN_FUNRES'),
-        CampoNumerico(10, 'VL_LIQ_INCEN_FUNRES', precisao=2),
-        CampoNumerico(11, 'VL_TOTAL', precisao=2),
-        Campo(12, 'PER_VL_TOTAL'),
+        CampoNumerico(7, 'VL_TOTAL', precisao=2),
     ]
 
 
@@ -1219,6 +1212,41 @@ class RegistroP990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'P990'),
+        CampoNumerico(2, 'QTD_LIN'),
+    ]
+
+
+class RegistroQ001(Registro):
+    """
+    Abertura do Bloco Q
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'Q001'),
+        CampoNumerico(2, 'IND_DAD'),
+    ]
+
+
+class RegistroQ100(Registro):
+    """
+    Demonstrativo do Livro Caixa
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'Q100'),
+        CampoData(2, 'DATA'),
+        CampoNumerico(3, 'NUM_DOC'),
+        CampoAlfanumerico(4, 'HIST'),
+        CampoNumerico(5, 'VL_ENTRADA', precisao=2),
+        CampoNumerico(6, 'VL_SAIDA', precisao=2),
+        CampoNumerico(7, 'SLD_FIN', precisao=2),
+    ]
+
+
+class RegistroQ990(Registro):
+    """
+    Encerramento do Bloco Q
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'Q990'),
         CampoNumerico(2, 'QTD_LIN'),
     ]
 
@@ -1976,27 +2004,32 @@ class RegistroY600(Registro):
         CampoNumerico(10, 'PERC_CAP_VOT'),
         Campo(11, 'CPF_REP_LEG'),
         Campo(12, 'QUALIF_REP_LEG'),
+        CampoNumerico(13, 'VL_REM_TRAB', precisao=2),
+        CampoNumerico(14, 'VL_LUC_DIV', precisao=2),
+        CampoNumerico(15, 'VL_JUR_CAP', precisao=2),
+        CampoNumerico(16, 'VL_DEM_REND', precisao=2),
+        CampoNumerico(17, 'VL_IR_RET', precisao=2),
     ]
 
 
-class RegistroY611(Registro):
-    """
-    Rendimentos de Dirigentes, Conselheiros, Sócios ou
-    Titular
-    """
-    campos = [
-        CampoFixo(1, 'REG', 'Y611'),
-        CampoNumerico(2, 'PAIS'),
-        Campo(3, 'IND_PF_PJ'),
-        Campo(4, 'CPF_CNPJ'),
-        Campo(5, 'NOM_EMP'),
-        Campo(6, 'QUALIF'),
-        CampoNumerico(7, 'VL_REM_TRAB', precisao=2),
-        CampoNumerico(8, 'VL_LUC_DIV', precisao=2),
-        CampoNumerico(9, 'VL_JUR_CAP', precisao=2),
-        CampoNumerico(10, 'VL_DEM_REND', precisao=2),
-        CampoNumerico(11, 'VL_IR_RET', precisao=2),
-    ]
+# class RegistroY611(Registro):
+#     """
+#     Rendimentos de Dirigentes, Conselheiros, Sócios ou
+#     Titular
+#     """
+#     campos = [
+#         CampoFixo(1, 'REG', 'Y611'),
+#         CampoNumerico(2, 'PAIS'),
+#         Campo(3, 'IND_PF_PJ'),
+#         Campo(4, 'CPF_CNPJ'),
+#         Campo(5, 'NOM_EMP'),
+#         Campo(6, 'QUALIF'),
+#         CampoNumerico(7, 'VL_REM_TRAB', precisao=2),
+#         CampoNumerico(8, 'VL_LUC_DIV', precisao=2),
+#         CampoNumerico(9, 'VL_JUR_CAP', precisao=2),
+#         CampoNumerico(10, 'VL_DEM_REND', precisao=2),
+#         CampoNumerico(11, 'VL_IR_RET', precisao=2),
+#     ]
 
 
 class RegistroY612(Registro):

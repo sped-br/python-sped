@@ -19,6 +19,8 @@ from .registros import RegistroN001
 from .registros import RegistroN990
 from .registros import RegistroP001
 from .registros import RegistroP990
+from .registros import RegistroQ001
+from .registros import RegistroQ990
 from .registros import RegistroT001
 from .registros import RegistroT990
 from .registros import RegistroU001
@@ -107,6 +109,14 @@ class BlocoP(Bloco):
     """
     registro_abertura = RegistroP001
     registro_fechamento = RegistroP990
+
+
+class BlocoQ(Bloco):
+    """
+    Livro Caixa
+    """
+    registro_abertura = RegistroQ001
+    registro_fechamento = RegistroQ990
 
 
 class BlocoT(Bloco):
