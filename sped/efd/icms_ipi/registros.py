@@ -4,6 +4,7 @@ from ...registros import Registro
 from ...campos import Campo
 from ...campos import CampoData
 from ...campos import CampoFixo
+from ...campos import CampoNumerico
 
 
 class Registro0000(Registro):
@@ -281,7 +282,7 @@ class Registro0990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '0990'),
-        Campo(2, 'QTD_LIN_0'),
+        CampoNumerico(2, 'QTD_LIN_0'),
     ]
 
 
@@ -1303,7 +1304,7 @@ class RegistroC990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'C990'),
-        Campo(2, 'QTD_LIN_C'),
+        CampoNumerico(2, 'QTD_LIN_C'),
     ]
 
 
@@ -2010,7 +2011,7 @@ class RegistroD990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'D990'),
-        Campo(2, 'QTD_LIN_D'),
+        CampoNumerico(2, 'QTD_LIN_D'),
     ]
 
 
@@ -2290,7 +2291,7 @@ class RegistroE990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'E990'),
-        Campo(2, 'QTD_LIN_E'),
+        CampoNumerico(2, 'QTD_LIN_E'),
     ]
 
 
@@ -2390,7 +2391,7 @@ class RegistroG990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'G990'),
-        Campo(2, 'QTD_LIN_G'),
+        CampoNumerico(2, 'QTD_LIN_G'),
     ]
 
 
@@ -2452,7 +2453,7 @@ class RegistroH990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'H990'),
-        Campo(2, 'QTD_LIN_H'),
+        CampoNumerico(2, 'QTD_LIN_H'),
     ]
 
 
@@ -2562,7 +2563,7 @@ class RegistroK990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'K990'),
-        Campo(2, 'QTD_LIN_K'),
+        CampoNumerico(2, 'QTD_LIN_K'),
     ]
 
 
@@ -3054,7 +3055,7 @@ class Registro1990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '1990'),
-        Campo(2, 'QTD_LIN_1'),
+        CampoNumerico(2, 'QTD_LIN_1'),
     ]
 
 
@@ -3085,7 +3086,7 @@ class Registro9990(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '9990'),
-        Campo(2, 'QTD_LIN_9'),
+        CampoNumerico(2, 'QTD_LIN_9'),
     ]
 
 
@@ -3095,5 +3096,5 @@ class Registro9999(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '9999'),
-        Campo(2, 'QTD_LIN'),
+        CampoNumerico(2, 'QTD_LIN'),
     ]

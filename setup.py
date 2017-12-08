@@ -26,10 +26,14 @@ class PyTest(test_command):
 
         # unittest
         import unittest
-        from test.fci_test import TestArquivoDigital
 
+        from test.fci_test import TestArquivoDigital
         suite = unittest.TestLoader().loadTestsFromTestCase(TestArquivoDigital)
         unittest.TextTestRunner(verbosity=2).run(suite)
+
+        from test.pis_cofins import TestSpedPisCofins
+        pis_confins = unittest.TestLoader().loadTestsFromTestCase(TestSpedPisCofins)
+        unittest.TextTestRunner(verbosity=2).run(pis_confins)
 
         sys.exit(errno)
 
