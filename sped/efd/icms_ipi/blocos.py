@@ -28,6 +28,13 @@ class Bloco0(Bloco):
     registro_abertura = Registro0001
     registro_fechamento = Registro0990
 
+    @property
+    def fechamento(self):
+        registro = self.__class__.registro_fechamento()
+        # Define a quantidade de registros
+        registro[2] = len(self._registros) + 3
+        return registro
+
 
 class BlocoC(Bloco):
     """
@@ -91,3 +98,11 @@ class Bloco9(Bloco):
     """
     registro_abertura = Registro9001
     registro_fechamento = Registro9990
+
+    @property
+    def fechamento(self):
+        registro = self.__class__.registro_fechamento()
+        # Define a quantidade de registros
+        registro[2] = len(self._registros) + 3
+        return registro
+
