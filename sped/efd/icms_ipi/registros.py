@@ -152,6 +152,7 @@ class Registro0200(Registro):
         Campo(10, 'COD_GEN'),
         Campo(11, 'COD_LST'),
         Campo(12, 'ALIQ_ICMS'),
+        Campo(13, 'CEST'),
     ]
 
 
