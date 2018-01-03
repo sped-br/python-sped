@@ -2129,6 +2129,7 @@ class RegistroE116(Registro):
         Campo(7, 'IND_PROC'),
         Campo(8, 'PROC'),
         Campo(9, 'TXT_COMPL'),
+        Campo(10, 'MES_REF'),
     ]
 
 
