@@ -299,7 +299,7 @@ class RegistroC001(Registro):
 
 class RegistroC100(Registro):
     """
-    DADOS NOTA FISCAL (CÓDIGO 01, 1B, 04 E 55)
+    DADOS NOTA FISCAL (CÓDIGO 01, 1B, 04, 55 E 65)
     """
     campos = [
         CampoFixo(1, 'REG', 'C100'),
