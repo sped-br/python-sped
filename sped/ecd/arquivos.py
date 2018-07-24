@@ -14,7 +14,7 @@ from .registros import Registro9999
 
 class ArquivoDigital(arquivos.ArquivoDigital):
     registro_abertura = Registro0000
-    registro_fechamento = Registro9999
+    registro_encerramento = Registro9999
     registros = registros
     blocos = blocos
 
@@ -49,4 +49,4 @@ class ArquivoDigital(arquivos.ArquivoDigital):
         for bloco in self._blocos.values():
             reg_count += len(bloco.registros)
 
-        self._registro_fechamento[2] = reg_count
+        self._registro_encerramento[2] = reg_count

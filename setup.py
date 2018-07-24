@@ -23,27 +23,15 @@ class PyTest(test_command):
         import pytest
 
         errno = pytest.main(self.pytest_args)
-
-        # unittest
-        import unittest
-
-        from test.fci_test import TestArquivoDigital
-        suite = unittest.TestLoader().loadTestsFromTestCase(TestArquivoDigital)
-        unittest.TextTestRunner(verbosity=2).run(suite)
-
-        from test.pis_cofins import TestSpedPisCofins
-        pis_confins = unittest.TestLoader().loadTestsFromTestCase(TestSpedPisCofins)
-        unittest.TextTestRunner(verbosity=2).run(pis_confins)
-
         sys.exit(errno)
 
 
 setup(
     name='sped',
-    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    packages=find_packages(exclude=['contrib', 'docs', 'test*']),
     include_package_data=True,
     package_data={
-        'sped': ['ecd/tabelas/*'],
+        'sped': ['leiautes/*'],
     },
     version=__version__,
     description='Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python.',
@@ -58,13 +46,18 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.6',
     ],
     keywords='sped fiscal contábil contabilidade receita federal',
     install_requires=['six'],
     tests_require=['pytest'],
+    extras_require={
+        'dev': ['pylint>=1.9.1'],
+        'leiaute': [
+            'jupyter>=1.0.0',
+            'pyquery>=1.4.0',
+        ]
+    },
     cmdclass={'test': PyTest},
 )

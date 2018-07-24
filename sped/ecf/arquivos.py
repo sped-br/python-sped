@@ -24,7 +24,7 @@ from .registros import Registro9999
 
 class ArquivoDigital(arquivos.ArquivoDigital):
     registro_abertura = Registro0000
-    registro_fechamento = Registro9999
+    registro_encerramento = Registro9999
     registros = registros
     blocos = blocos
 

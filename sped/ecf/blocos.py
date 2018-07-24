@@ -38,7 +38,7 @@ class Bloco0(Bloco):
     Abertura e Identificação
     """
     registro_abertura = Registro0001
-    registro_fechamento = Registro0990
+    registro_encerramento = Registro0990
 
     @property
     def fechamento(self):
@@ -52,7 +52,7 @@ class BlocoC(Bloco):
     Informações Recuperadas das ECD (bloco recuperado pelo sistema – não é importado)
     """
     registro_abertura = RegistroC001
-    registro_fechamento = RegistroC990
+    registro_encerramento = RegistroC990
 
 
 class BlocoE(Bloco):
@@ -60,7 +60,7 @@ class BlocoE(Bloco):
     Informações Recuperadas da ECF Anterior e Cálculo Fiscal dos Dados Recuperados da ECD (Bloco recuperado pelo sistema – não é importado)
     """
     registro_abertura = RegistroE001
-    registro_fechamento = RegistroE990
+    registro_encerramento = RegistroE990
 
 
 class BlocoJ(Bloco):
@@ -68,7 +68,7 @@ class BlocoJ(Bloco):
     Plano de Contas e Mapeamento
     """
     registro_abertura = RegistroJ001
-    registro_fechamento = RegistroJ990
+    registro_encerramento = RegistroJ990
 
 
 class BlocoK(Bloco):
@@ -76,7 +76,7 @@ class BlocoK(Bloco):
     Saldos das Contas Contábeis e Referenciais
     """
     registro_abertura = RegistroK001
-    registro_fechamento = RegistroK990
+    registro_encerramento = RegistroK990
 
 
 class BlocoL(Bloco):
@@ -84,7 +84,7 @@ class BlocoL(Bloco):
     Lucro Líquido
     """
     registro_abertura = RegistroL001
-    registro_fechamento = RegistroL990
+    registro_encerramento = RegistroL990
 
 
 class BlocoM(Bloco):
@@ -92,7 +92,7 @@ class BlocoM(Bloco):
     e-LALUR e e-LACS
     """
     registro_abertura = RegistroM001
-    registro_fechamento = RegistroM990
+    registro_encerramento = RegistroM990
 
 
 class BlocoN(Bloco):
@@ -100,7 +100,7 @@ class BlocoN(Bloco):
     Imposto de Renda e Contribuição Social (Lucro Real)
     """
     registro_abertura = RegistroN001
-    registro_fechamento = RegistroN990
+    registro_encerramento = RegistroN990
 
 
 class BlocoP(Bloco):
@@ -108,7 +108,7 @@ class BlocoP(Bloco):
     Lucro Presumido
     """
     registro_abertura = RegistroP001
-    registro_fechamento = RegistroP990
+    registro_encerramento = RegistroP990
 
 
 class BlocoQ(Bloco):
@@ -116,7 +116,7 @@ class BlocoQ(Bloco):
     Livro Caixa
     """
     registro_abertura = RegistroQ001
-    registro_fechamento = RegistroQ990
+    registro_encerramento = RegistroQ990
 
 
 class BlocoT(Bloco):
@@ -124,7 +124,7 @@ class BlocoT(Bloco):
     Lucro Arbitrado
     """
     registro_abertura = RegistroT001
-    registro_fechamento = RegistroT990
+    registro_encerramento = RegistroT990
 
 
 class BlocoU(Bloco):
@@ -132,7 +132,7 @@ class BlocoU(Bloco):
     Imunes ou Isentas
     """
     registro_abertura = RegistroU001
-    registro_fechamento = RegistroU990
+    registro_encerramento = RegistroU990
 
 
 class BlocoX(Bloco):
@@ -140,7 +140,7 @@ class BlocoX(Bloco):
     Informações Econômicas
     """
     registro_abertura = RegistroX001
-    registro_fechamento = RegistroX990
+    registro_encerramento = RegistroX990
 
 
 class BlocoY(Bloco):
@@ -148,7 +148,7 @@ class BlocoY(Bloco):
     Informações Gerais
     """
     registro_abertura = RegistroY001
-    registro_fechamento = RegistroY990
+    registro_encerramento = RegistroY990
 
 
 class Bloco9(Bloco):
@@ -156,7 +156,7 @@ class Bloco9(Bloco):
     Encerramento do Arquivo Digital
     """
     registro_abertura = Registro9001
-    registro_fechamento = Registro9099
+    registro_encerramento = Registro9099
 
     @property
     def fechamento(self):

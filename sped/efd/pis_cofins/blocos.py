@@ -29,7 +29,7 @@ class Bloco0(Bloco):
     """
     def __init__(self):
         self._registro_abertura = Registro0001()
-        self._registro_fechamento = Registro0990()
+        self._registro_encerramento = Registro0990()
 
 
 class BlocoA(Bloco):
@@ -38,7 +38,7 @@ class BlocoA(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroA001()
-        self._registro_fechamento = RegistroA990()
+        self._registro_encerramento = RegistroA990()
 
 
 class BlocoC(Bloco):
@@ -47,7 +47,7 @@ class BlocoC(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroC001()
-        self._registro_fechamento = RegistroC990()
+        self._registro_encerramento = RegistroC990()
 
 
 class BlocoD(Bloco):
@@ -56,7 +56,7 @@ class BlocoD(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroD001()
-        self._registro_fechamento = RegistroD990()
+        self._registro_encerramento = RegistroD990()
 
 
 class BlocoF(Bloco):
@@ -65,7 +65,7 @@ class BlocoF(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroF001()
-        self._registro_fechamento = RegistroF990()
+        self._registro_encerramento = RegistroF990()
 
 
 class BlocoI(Bloco):
@@ -74,7 +74,7 @@ class BlocoI(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroI001()
-        self._registro_fechamento = RegistroI990()
+        self._registro_encerramento = RegistroI990()
 
 
 class BlocoM(Bloco):
@@ -83,7 +83,7 @@ class BlocoM(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroM001()
-        self._registro_fechamento = RegistroM990()
+        self._registro_encerramento = RegistroM990()
 
 
 class BlocoP(Bloco):
@@ -92,7 +92,7 @@ class BlocoP(Bloco):
     """
     def __init__(self):
         self._registro_abertura = RegistroP001()
-        self._registro_fechamento = RegistroP990()
+        self._registro_encerramento = RegistroP990()
 
 
 class Bloco1(Bloco):
@@ -101,7 +101,7 @@ class Bloco1(Bloco):
     """
     def __init__(self):
         self._registro_abertura = Registro1001()
-        self._registro_fechamento = Registro1990()
+        self._registro_encerramento = Registro1990()
 
 
 class Bloco9(Bloco):
@@ -110,4 +110,4 @@ class Bloco9(Bloco):
     """
     def __init__(self):
         self._registro_abertura = Registro0001()
-        self._registro_fechamento = Registro0990()
+        self._registro_encerramento = Registro0990()

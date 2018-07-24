@@ -1,35 +1,37 @@
 # -*- coding: utf-8 -*-
 
-from .registros import RegistroIndefinido
+from .registros import Registro
 
 
 class Bloco(object):
     def __init__(self):
         self._registros = []
-
-    registro_abertura = RegistroIndefinido
-    registro_fechamento = RegistroIndefinido
+        self.registro_abertura = Registro()
+        self.registro_encerramento = Registro()
 
     @property
     def abertura(self):
-        registro = self.__class__.registro_abertura()
         # Define o indicador de movimento ou dados
-        registro[2] = '0' if self._registros else '1'
-        return registro
+        self.registro_abertura[2] = '0' if self._registros else '1'
+        print(self.registro_abertura)
+        print(self.registro_abertura[2])
+        return self.registro_abertura
 
     @property
-    def fechamento(self):
-        registro = self.__class__.registro_fechamento()
+    def encerramento(self):
         # Define a quantidade de registros
-        registro[2] = len(self._registros) + 2
-        return registro
+        if self.registro_abertura.REG[0] == '0' or self.registro_abertura.REG[0] == '9':
+            self.registro_encerramento[2] = len(self._registros) + 3
+        else:
+            self.registro_encerramento[2] = len(self._registros) + 2
+        return self.registro_encerramento
 
     @property
     def registros(self):
-        return [self.abertura] + self._registros + [self.fechamento]
+        return [self.abertura] + self._registros + [self.encerramento]
 
     def add(self, registro):
         # Não adiciona o registro de abertura e fechamento
-        if not registro.__class__ == self.__class__.registro_abertura and \
-           not registro.__class__ == self.__class__.registro_fechamento:
+        if not registro.__class__ == self.registro_abertura.__class__ and \
+           not registro.__class__ == self.registro_encerramento.__class__:
             self._registros.append(registro)

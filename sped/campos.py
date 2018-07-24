@@ -7,8 +7,6 @@ from datetime import date
 from datetime import datetime
 from decimal import Decimal
 
-from six import string_types
-
 from .erros import CampoFixoError
 from .erros import CampoObrigatorioError
 from .erros import FormatoInvalidoError
@@ -20,7 +18,7 @@ class Campo(object):
 
     >>> campo = Campo(1, 'TESTE', True)
     >>> campo
-    [Campo(1, 'TESTE')]
+    <sped.campos.Campo(1, TESTE)>
     >>> campo.indice
     1
     >>> campo.nome
@@ -34,9 +32,7 @@ class Campo(object):
         self._obrigatorio = obrigatorio
 
     def __repr__(self):
-        return "[{0}({1}, {2!r})]".format(self.__class__.__name__,
-                                          self._indice,
-                                          self._nome)
+        return f'<{self.__class__.__module__}.{self.__class__.__name__}({self._indice}, {self._nome})>'
 
     @property
     def indice(self):
@@ -61,7 +57,7 @@ class Campo(object):
             return
         if valor and not self.__class__.validar(valor):
             raise FormatoInvalidoError(registro, self.nome)
-        if not isinstance(valor, string_types):
+        if not isinstance(valor, str):
             raise FormatoInvalidoError(registro, self.nome)
         registro.valores[self._indice] = valor or ''
 
@@ -76,7 +72,7 @@ class CampoFixo(Campo):
 
     >>> campo = CampoFixo(1, 'REG', '0000')
     >>> campo
-    [CampoFixo(1, 'REG')]
+    <sped.campos.CampoFixo(1, REG)>
     >>> campo.indice
     1
     >>> campo.nome
@@ -87,7 +83,7 @@ class CampoFixo(Campo):
     '0000'
     """
     def __init__(self, indice, nome, valor):
-        super(CampoFixo, self).__init__(indice, nome, True)
+        super().__init__(indice, nome, True)
         self._valor = valor
 
     @property
@@ -98,12 +94,13 @@ class CampoFixo(Campo):
         return self._valor
 
     def set(self, registro, valor):
-        raise CampoFixoError(registro, self.nome)
+        if valor != self._valor:
+            raise CampoFixoError(registro, self.nome)
 
 
 class CampoAlfanumerico(Campo):
-    def __init__(self, indice, nome, obrigatorio=False, tamanho=255):
-        super(CampoAlfanumerico, self).__init__(indice, nome, obrigatorio)
+    def __init__(self, indice, nome, obrigatorio=False, tamanho=None):
+        super().__init__(indice, nome, obrigatorio)
         self._tamanho = tamanho
 
     @property
@@ -112,15 +109,37 @@ class CampoAlfanumerico(Campo):
 
     def set(self, registro, valor):
         valor = valor or ''
-        valor = valor[:self._tamanho]
-        super(CampoAlfanumerico, self).set(registro, valor)
+        if self._tamanho is not None:
+            valor = valor[:self._tamanho]
+        super().set(registro, valor)
+
+
+class CampoBool(Campo):
+    def __init__(self, indice, nome, obrigatorio=False, valorVerdadeiro='S', valorFalso='N'):
+        super().__init__(indice, nome, obrigatorio)
+        self.valorVerdadeiro = valorVerdadeiro
+        self.valorFalso = valorFalso
+
+    def get(self, registro):
+        valor = super().get(registro)
+        if not valor:
+            return None
+        return valor == self.valorVerdadeiro
+
+    def set(self, registro, valor):
+        if isinstance(valor, bool):
+            super().set(registro, self.valorVerdadeiro if valor else self.valorFalso)
+        elif valor is None:
+            super().set(registro, None)
+        else:
+            raise FormatoInvalidoError(registro, self.nome)
 
 
 class CampoNumerico(Campo):
     def __init__(self, indice, nome, obrigatorio=False,
-                 precisao=0, minimo=0, maximo=1000):
-        super(CampoNumerico, self).__init__(indice, nome, obrigatorio)
-        self._precisao = precisao
+                 precisao=None, minimo=0, maximo=1000):
+        super().__init__(indice, nome, obrigatorio)
+        self._precisao = precisao if precisao is not None else 0
         self._minimo = minimo
         self._maximo = maximo
 
@@ -137,51 +156,59 @@ class CampoNumerico(Campo):
         return self._maximo
 
     def get(self, registro):
-        valor = super(CampoNumerico, self).get(registro)
+        valor = super().get(registro)
         if not valor:
             return None
         return Decimal(valor.replace(',', '.'))
 
     def set(self, registro, valor):
+        if isinstance(valor, str):
+            valor = Decimal(valor.replace(',', '.'))
+
         if isinstance(valor, Decimal) or isinstance(valor, float):
-            super(CampoNumerico, self).set(registro, (('%.' + str(self._precisao) + 'f') % valor).replace('.', ','))
+            super().set(registro, (('%.' + str(self._precisao) + 'f') % valor).replace('.', ','))
         elif isinstance(valor, int):
-            super(CampoNumerico, self).set(registro, str(valor))
+            super().set(registro, str(valor))
         elif not valor:
-            super(CampoNumerico, self).set(registro, '0')
+            super().set(registro, '0')
         else:
             raise FormatoInvalidoError(registro, self.nome)
 
 
 class CampoData(Campo):
     def __init__(self, indice, nome, obrigatorio=False):
-        super(CampoData, self).__init__(indice, nome, obrigatorio)
+        super().__init__(indice, nome, obrigatorio)
 
     def get(self, registro):
-        valor = super(CampoData, self).get(registro)
+        valor = super().get(registro)
         if not valor:
             return None
         return datetime.strptime(valor, '%d%m%Y').date()
 
     def set(self, registro, valor):
         if isinstance(valor, date):
-            super(CampoData, self).set(registro, valor.strftime('%d%m%Y'))
+            super().set(registro, valor.strftime('%d%m%Y'))
         elif not valor:
-            super(CampoData, self).set(registro, None)
+            super().set(registro, None)
         else:
             raise FormatoInvalidoError(registro, self.nome)
 
 
 class CampoRegex(Campo):
     def __init__(self, indice, nome, obrigatorio=False, regex=None):
-        super(CampoRegex, self).__init__(indice, nome, obrigatorio)
+        super().__init__(indice, nome, obrigatorio)
         self._regex = re.compile('^' + regex + '$')
 
     def set(self, registro, valor):
+        if not isinstance(valor, str):
+            valor = str(valor)
         if not valor or self._regex.match(valor):
-            super(CampoRegex, self).set(registro, valor)
+            super().set(registro, valor)
         else:
-            raise FormatoInvalidoError(registro, self.nome)
+            raise FormatoInvalidoError(registro, str(self))
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}({self.indice}, {self.nome}, {self._obrigatorio}, {self._regex})'
 
 
 class CampoCNPJ(Campo):

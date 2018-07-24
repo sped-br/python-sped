@@ -79,10 +79,6 @@ class Registro(object):
                         raise CampoError(self, c.nome)
 
     @property
-    def campos(self):
-        return self.__class__.campos
-
-    @property
     def valores(self):
         return self._valores
 
@@ -114,7 +110,13 @@ class Registro(object):
         campo.set(self, value)
 
     def as_line(self):
+        return str(self)
+
+    def __str__(self):
         return '|'.join(self._valores)
+
+    def __repr__(self):
+        return f'<{self.__class__.__module__}.{self.__class__.__name__}>'
 
 
 class RegistroIndefinido(Registro):

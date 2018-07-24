@@ -12,7 +12,7 @@ from .registros import Registro9999
 
 class ArquivoDigital(arquivos.ArquivoDigital):
     registro_abertura = Registro0000
-    registro_fechamento = Registro9999
+    registro_encerramento = Registro9999
     registros = registros
     blocos = blocos
 
@@ -46,8 +46,8 @@ class ArquivoDigital(arquivos.ArquivoDigital):
         registro = registro_class(line)
         if registro.__class__ == self.__class__.registro_abertura:
             self._registro_abertura = registro
-        elif registro.__class__ == self.__class__.registro_fechamento:
-            self._registro_fechamento = registro
+        elif registro.__class__ == self.__class__.registro_encerramento:
+            self._registro_encerramento = registro
         elif registro.__class__ == \
                 self.__class__.blocos.Bloco0.registro_abertura:
             self.blocos.Bloco0.abertura = registro
@@ -75,8 +75,8 @@ class ArquivoDigital(arquivos.ArquivoDigital):
                 a = a[1:]
                 buffer.write(a + u'\r\n')
 
-        self._registro_fechamento[2] = reg_count
-        linha_fechamento = self._registro_fechamento.as_line()[1:]
+        self._registro_encerramento[2] = reg_count
+        linha_fechamento = self._registro_encerramento.as_line()[1:]
         buffer.write(linha_fechamento + u'\r\n')
 
     def readfile(self, filename):
