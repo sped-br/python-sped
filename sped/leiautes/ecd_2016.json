@@ -3458,7 +3458,7 @@
           "tipo": "C",
           "tamanho": 4,
           "decimal": null,
-          "valores": "[\"J930\"]",
+          "valores": "\"J930\"",
           "obrigatorio": true,
           "regras": []
         },

@@ -4,10 +4,14 @@ from .registros import Registro
 
 
 class Bloco(object):
-    def __init__(self):
+    def __init__(self, nome):
+        self._nome = nome
         self._registros = []
         self.registro_abertura = Registro()
         self.registro_encerramento = Registro()
+
+    def __repr__(self):
+        return f'<{self.__class__.__module__}.{self.__class__.__name__}({self._nome})>'
 
     @property
     def abertura(self):

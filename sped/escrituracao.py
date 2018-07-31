@@ -90,7 +90,7 @@ class Escrituracao(object):
             p = json.load(f)
 
         for bloco in p['blocos']:
-            self._blocos[bloco['nome']] = Bloco()
+            self._blocos[bloco['nome']] = Bloco(bloco['nome'])
 
         for registro in p['registros']:
             campos = []
@@ -131,7 +131,7 @@ class Escrituracao(object):
                     continue
                 
                 # Campo CNPJ ou CPF
-                if 'REGRA_VALIDA_CNPJ' in regras and 'REGRA_VALIDA_CPF' in regras:
+                if 'REGRA_VALIDA_CNPJ' in regras and 'REGRA_VALIDA_CPF' in regras or nome == 'IDENT_CPF_CNPJ' or nome == 'CPF_CNPJ':
                     campos.append(CampoCPFouCNPJ(indice, nome, obrigatorio=obrigatorio))
                     continue
 
@@ -144,7 +144,6 @@ class Escrituracao(object):
                 if 'REGRA_VALIDA_CPF' in regras:
                     campos.append(CampoCPF(indice, nome, obrigatorio=obrigatorio))
                     continue
-
 
                 # CampoAlfaNumerico
                 if tipo == 'C':
@@ -210,7 +209,13 @@ class Escrituracao(object):
 
             for reg in regs.keys():
                 registro = self.registros.Registro9900() # pylint: disable=E1101
-                registro.REG_BLC = reg
+                try:
+                    registro.REG_BLC = reg
+                except:
+                    for rrr in bloco.registros:
+                        print(rrr)
+                    print(locals())
+                    raise
                 registro.QTD_REG_BLC = regs[reg]
                 bloco_9.add(registro)
 
