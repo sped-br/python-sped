@@ -334,6 +334,20 @@ class RegistroC100(Registro):
     ]
 
 
+class RegistroC101(Registro):
+    """
+    INFORMAÇÃO COMPLEMENTAR DOS DOCUMENTOS FISCAIS
+    QUANDO DAS OPERAÇÕES INTERESTADUAIS DESTINADAS A CONSUMIDOR FINAL
+    NÃO CONTRIBUINTE EC 87/15 (CÓDIGO 55)
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'C101'),
+        Campo(2, 'VL_FCP_UF_DEST'),
+        Campo(3, 'VL_ICMS_UF_DEST'),
+        Campo(4, 'VL_ICMS_UF_REM'),
+    ]
+
+
 class RegistroC105(Registro):
     """
     OPERAÇÕES COM ICMS ST RECOLHIDO PARA UF DIVERSA DO DESTINATÁRIO DO DOCUMENTO FISCAL (CÓDIGO 55)
@@ -1350,6 +1364,8 @@ class RegistroD100(Registro):
         Campo(21, 'VL_NT'),
         Campo(22, 'COD_INF'),
         Campo(23, 'COD_CTA'),
+        Campo(24, 'COD_MUN_ORIG'),
+        Campo(25, 'COD_MUN_DEST'),
     ]
 
 
@@ -2229,6 +2245,69 @@ class RegistroE250(Registro):
         Campo(10, 'MES_REF'),
     ]
 
+
+class RegistroE300(Registro):
+    """
+    PERÍODO DE APURAÇÃO DO FUNDO DE COMBATE À POBREZA E
+    DO ICMS DIFERENCIAL DE ALÍQUOTA – UF ORIGEM/DESTINO EC 87/15
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'E300'),
+        Campo(2, 'UF'),
+        Campo(3, 'DT_INI'),
+        Campo(4, 'DT_FIM'),
+    ]
+
+
+class RegistroE310(Registro):
+    """
+    APURAÇÃO DO FUNDO DE COMBATE À POBREZA E DO ICMS
+    DIFERENCIAL DE ALÍQUOTA – UF ORIGEM/DESTINO EC 87/15. 
+    (VÁLIDO A PARTIR DE 01/01/2017)
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'E310'),
+        Campo(2, 'IND_MOV_FCP_DIFAL'),
+        Campo(3, 'VL_SLD_CRED_ANT_DIFAL'),
+        Campo(4, 'VL_TOT_DEBITOS_DIFAL'),
+        Campo(5, 'VL_OUT_DEB_DIFAL'),
+        Campo(6, 'VL_TOT_CREDITOS_DIFAL'),
+        Campo(7, 'VL_OUT_CRED_DIFAL'),
+        Campo(8, 'VL_SLD_DEV_ANT_DIFAL'),
+        Campo(9, 'VL_DEDUCOES_DIFAL'),
+        Campo(10, 'VL_RECOL_DIFAL'),
+        Campo(11, 'VL_SLD_CRED_TRANSPORTAR_DIFAL'),
+        Campo(12, 'DEB_ESP_DIFAL'),
+        Campo(13, 'VL_SLD_CRED_ANT_FCP'),
+        Campo(14, 'VL_TOT_DEB_FCP'),
+        Campo(15, 'VL_OUT_DEB_FCP'),
+        Campo(16, 'VL_TOT_CRED_FCP'),
+        Campo(17, 'VL_OUT_CRED_FCP'),
+        Campo(18, 'VL_SLD_DEV_ANT_FCP'),
+        Campo(19, 'VL_DEDUCOES_FCP'),
+        Campo(20, 'VL_RECOL_FCP'),
+        Campo(21, 'VL_SLD_CRED_TRANSPORTAR_FCP'),
+        Campo(22, 'DEB_ESP_FCP'),
+    ]
+
+class RegistroE316(Registro):
+    """
+    OBRIGAÇÕES RECOLHIDAS OU A RECOLHER – FUNDO DE
+    COMBATE À POBREZA E ICMS DIFERENCIAL DE ALÍQUOTA UF ORIGEM/DESTINO
+    EC 87/15.
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'E316'),
+        Campo(2, 'COD_OR'),
+        Campo(3, 'VL_OR'),
+        Campo(4, 'DT_VCTO'),
+        Campo(5, 'COD_REC'),
+        Campo(6, 'NUM_PROC'),
+        Campo(7, 'IND_PROC'),
+        Campo(8, 'PROC'),
+        Campo(9, 'TXT_COMPL'),
+        Campo(10, 'MES_REF'),
+    ]
 
 class RegistroE500(Registro):
     """
