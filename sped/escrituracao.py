@@ -102,18 +102,18 @@ class Escrituracao(object):
                 regras = campo['regras']
                 tipo = campo['tipo']
                 obrigatorio = campo['obrigatorio']
-                
+
                 # Campos Fixo
                 m = re.match(r'"([a-z0-9]+)"', valores, re.IGNORECASE)
                 if m:
                     campos.append(CampoFixo(indice, nome, m.group(1)))
                     continue
-                
+
                 m = re.match(r'\[([a-z0-9]+)\]', valores, re.IGNORECASE)
                 if m:
                     campos.append(CampoFixo(indice, nome, m.group(1)))
                     continue
-                
+
                 # Campos Regex
                 m = re.match(r'\[([^\]]+)\]', valores)
                 if m:
@@ -124,12 +124,12 @@ class Escrituracao(object):
                     else:
                         campos.append(CampoRegex(indice, nome, obrigatorio=obrigatorio, regex='|'.join(valoresValidos)))
                         continue
-                
+
                 # Campos Data
-                if nome.startswith('DT_'):
+                if nome.startswith('DT_') or nome.startswith('DATA_'):
                     campos.append(CampoData(indice, nome, obrigatorio=obrigatorio))
                     continue
-                
+
                 # Campo CNPJ ou CPF
                 if 'REGRA_VALIDA_CNPJ' in regras and 'REGRA_VALIDA_CPF' in regras or nome == 'IDENT_CPF_CNPJ' or nome == 'CPF_CNPJ':
                     campos.append(CampoCPFouCNPJ(indice, nome, obrigatorio=obrigatorio))
