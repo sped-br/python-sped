@@ -4,7 +4,7 @@ from .registros import Registro
 
 
 class Bloco(object):
-    def __init__(self, nome):
+    def __init__(self, nome=''):
         self._nome = nome
         self._registros = []
         self.registro_abertura = Registro()
