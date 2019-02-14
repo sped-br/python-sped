@@ -79,6 +79,10 @@ class Registro(object):
                         raise CampoError(self, c.nome)
 
     @property
+    def campos(self):
+        return self.__class__.campos
+
+    @property
     def valores(self):
         return self._valores
 
