@@ -10,6 +10,8 @@ from .blocos import Bloco9
 from .registros import Registro0000
 from .registros import Registro9900
 from .registros import Registro9999
+from .registros import RegistroI030
+from .registros import RegistroJ900
 
 
 class ArquivoDigital(arquivos.ArquivoDigital):
@@ -61,6 +63,13 @@ class ArquivoDigital(arquivos.ArquivoDigital):
         for bloco in self._blocos.values():
             reg_count += len(bloco.registros)
 
-        self._blocos['I'].registros[2].QTD_LIN = reg_count
-        self._blocos['J'].registros[1].QTD_LIN = reg_count
+        encerramentoI = [x for x in self._blocos['I'].registros
+                         if isinstance(x, RegistroI030)]
+        encerramentoI[0].QTD_LIN = reg_count
+
+        encerramentoJ = [x for x in self._blocos['J'].registros
+                         if isinstance(x, RegistroJ900)]
+        encerramentoJ[0].QTD_LIN = reg_count
+
+        # self._blocos['J'].registros[1].QTD_LIN = reg_count
         self._registro_encerramento.QTD_LIN = reg_count

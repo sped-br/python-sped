@@ -456,6 +456,7 @@ class RegistroJ100(Registro):
         Campo(7, 'IND_DC_BAL'),
         CampoNumerico(8, 'VL_CTA_INI', precisao=2),
         Campo(9, 'IND_DC_BAL_INI'),
+        Campo(10, 'NOTA_EXP_REF'),
     ]
 
 
@@ -472,6 +473,7 @@ class RegistroJ150(Registro):
         Campo(6, 'IND_VL'),
         CampoNumerico(7, 'VL_CTA_ULT_DRE', precisao=2),
         Campo(8, 'IND_VL_ULT_DRE'),
+        Campo(9, 'NOTA_EXP_REF'),
     ]
 
 
