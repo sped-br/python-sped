@@ -7,7 +7,6 @@ install:
 - pip install coveralls
 script:
 - coverage run --source=sped setup.py test
-- python test/fci_test.py
 deploy:
   provider: pypi
   user: danimaribeiro

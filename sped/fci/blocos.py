@@ -14,43 +14,39 @@ class Bloco0(Bloco):
     """
     Cabeçalho da FCI: Identificação do contribuinte
     """
-    registro_abertura = Registro0001
-    registro_encerramento = Registro0990
+    registro_abertura = Registro0001()
+    registro_encerramento = Registro0990()
 
     @property
     def abertura(self):
-        registro = self.__class__.registro_abertura()
-        return registro
+        return self.registro_abertura
 
     @property
     def fechamento(self):
-        registro = self.__class__.registro_encerramento()
         # Define a quantidade de registros
-        registro[2] = len(self._registros) + 3
-        return registro
+        self.registro_encerramento[2] = len(self._registros) + 3
+        return self.registro_encerramento
 
     def add(self, registro):
         self._registros.append(registro)
 
 
 class Bloco5(Bloco):
-    registro_abertura = Registro5001
-    registro_encerramento = Registro5990
+    registro_abertura = Registro5001()
+    registro_encerramento = Registro5990()
 
     @property
     def abertura(self):
-        registro = self.__class__.registro_abertura()
-        return registro
+        return self.registro_abertura
 
 
 class Bloco9(Bloco):
     """
     Controle e Encerramento do Arquivo Digital
     """
-    registro_abertura = Registro9001
-    registro_encerramento = Registro9990
+    registro_abertura = Registro9001()
+    registro_encerramento = Registro9990()
 
     @property
     def abertura(self):
-        registro = self.__class__.registro_abertura()
-        return registro
+        return self.registro_abertura
