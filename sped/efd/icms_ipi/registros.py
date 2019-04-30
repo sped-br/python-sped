@@ -2262,7 +2262,7 @@ class RegistroE300(Registro):
 class RegistroE310(Registro):
     """
     APURAÇÃO DO FUNDO DE COMBATE À POBREZA E DO ICMS
-    DIFERENCIAL DE ALÍQUOTA – UF ORIGEM/DESTINO EC 87/15. 
+    DIFERENCIAL DE ALÍQUOTA – UF ORIGEM/DESTINO EC 87/15.
     (VÁLIDO A PARTIR DE 01/01/2017)
     """
     campos = [
@@ -2482,7 +2482,7 @@ class RegistroH001(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'H001'),
-        Campo(2, 'IND_MO V'),
+        Campo(2, 'IND_MOV'),
     ]
 
 
@@ -2492,8 +2492,8 @@ class RegistroH005(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'H005'),
-        Campo(2, 'DT_INV'),
-        Campo(3, 'VL_INV'),
+        CampoData(2, 'DT_INV'),
+        CampoNumerico(3, 'VL_INV'),
         Campo(4, 'MOT_INV'),
     ]
 
@@ -2506,9 +2506,9 @@ class RegistroH010(Registro):
         CampoFixo(1, 'REG', 'H010'),
         Campo(2, 'COD_ITEM'),
         Campo(3, 'UNID'),
-        Campo(4, 'QTD'),
-        Campo(5, 'VL_UNIT'),
-        Campo(6, 'VL_ITEM'),
+        CampoNumerico(4, 'QTD'),
+        CampoNumerico(5, 'VL_UNIT'),
+        CampoNumerico(6, 'VL_ITEM'),
         Campo(7, 'IND_PROP'),
         Campo(8, 'COD_PART'),
         Campo(9, 'TXT_COMPL'),
@@ -2567,7 +2567,7 @@ class RegistroK200(Registro):
         CampoFixo(1, 'REG', 'K200'),
         CampoData(2, 'DT_EST'),
         Campo(3, 'COD_ITEM'),
-        Campo(4, 'QTD'),
+        CampoNumerico(4, 'QTD'),
         Campo(5, 'IND_EST'),
         Campo(6, 'COD_PART'),
     ]
@@ -2582,7 +2582,7 @@ class RegistroK220(Registro):
         CampoData(2, 'DT_MOV'),
         Campo(3, 'COD_ITEM_ORI'),
         Campo(4, 'COD_ITEM_DEST'),
-        Campo(5, 'QTD'),
+        CampoNumerico(5, 'QTD'),
     ]
 
 
@@ -2596,7 +2596,7 @@ class RegistroK230(Registro):
         CampoData(3, 'DT_FIN_OP'),
         Campo(4, 'COD_DOC_OP'),
         Campo(5, 'COD_ITEM'),
-        Campo(6, 'QTD_ENC'),
+        CampoNumerico(6, 'QTD_ENC'),
     ]
 
 
@@ -2606,9 +2606,9 @@ class RegistroK235(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'K235'),
-        CampoData(2, 'DT_SAÍDA'),
+        CampoData(2, 'DT_SAIDA'),
         Campo(3, 'COD_ITEM'),
-        Campo(4, 'QTD'),
+        CampoNumerico(4, 'QTD'),
         Campo(5, 'COD_INS_SUBST'),
     ]
 
@@ -2621,7 +2621,7 @@ class RegistroK250(Registro):
         CampoFixo(1, 'REG', 'K250'),
         CampoData(2, 'DT_PROD'),
         Campo(3, 'COD_ITEM'),
-        Campo(4, 'QTD'),
+        CampoNumerico(4, 'QTD'),
     ]
 
 
@@ -2633,7 +2633,7 @@ class RegistroK255(Registro):
         CampoFixo(1, 'REG', 'K255'),
         CampoData(2, 'DT_CONS'),
         Campo(3, 'COD_ITEM'),
-        Campo(4, 'QTD'),
+        CampoNumerico(4, 'QTD'),
         Campo(5, 'COD_INS_SUBST'),
     ]
 
