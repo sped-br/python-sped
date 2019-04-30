@@ -15,8 +15,8 @@ class Registro0000(Registro):
         CampoFixo(1, 'REG', '0000'),
         Campo(2, 'COD_VER'),
         Campo(3, 'COD_FIN'),
-        Campo(4, 'DT_INI'),
-        Campo(5, 'DT_FIN'),
+        CampoData(4, 'DT_INI'),
+        CampoData(5, 'DT_FIN'),
         Campo(6, 'NOME'),
         Campo(7, 'CNPJ'),
         Campo(8, 'CPF'),
@@ -163,8 +163,8 @@ class Registro0205(Registro):
     campos = [
         CampoFixo(1, 'REG', '0205'),
         Campo(2, 'DESCR_ANT_ITEM'),
-        Campo(3, 'DT_INI'),
-        Campo(4, 'DT_FIM'),
+        CampoData(3, 'DT_INI'),
+        CampoData(4, 'DT_FIM'),
         Campo(5, 'COD_ANT_ITEM'),
     ]
 
@@ -287,6 +287,26 @@ class Registro0990(Registro):
     ]
 
 
+class RegistroB001(Registro):
+    """
+    ABERTURA DO BLOCO B
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'B001'),
+        Campo(2, 'IND_MOV', '1'),
+    ]
+
+
+class RegistroB990(Registro):
+    """
+    ENCERRAMENTO DO BLOCO B
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'B990'),
+        CampoNumerico(2, 'QTD_LIN_B', 2),
+    ]
+
+
 class RegistroC001(Registro):
     """
     ABERTURA DO BLOCO C
@@ -311,26 +331,26 @@ class RegistroC100(Registro):
         Campo(7, 'SER'),
         Campo(8, 'NUM_DOC'),
         Campo(9, 'CHV_NFE'),
-        Campo(10, 'DT_DOC'),
-        Campo(11, 'DT_E_S'),
-        Campo(12, 'VL_DOC'),
+        CampoData(10, 'DT_DOC'),
+        CampoData(11, 'DT_E_S'),
+        CampoNumerico(12, 'VL_DOC'),
         Campo(13, 'IND_PGTO'),
-        Campo(14, 'VL_DESC'),
-        Campo(15, 'VL_ABAT_NT'),
-        Campo(16, 'VL_MERC'),
+        CampoNumerico(14, 'VL_DESC'),
+        CampoNumerico(15, 'VL_ABAT_NT'),
+        CampoNumerico(16, 'VL_MERC'),
         Campo(17, 'IND_FRT'),
-        Campo(18, 'VL_FRT'),
-        Campo(19, 'VL_SEG'),
-        Campo(20, 'VL_OUT_DA'),
-        Campo(21, 'VL_BC_ICMS'),
-        Campo(22, 'VL_ICMS'),
-        Campo(23, 'VL_BC_ICMS_ST'),
-        Campo(24, 'VL_ICMS_ST'),
-        Campo(25, 'VL_IPI'),
-        Campo(26, 'VL_PIS'),
-        Campo(27, 'VL_COFINS'),
-        Campo(28, 'VL_PIS_ST'),
-        Campo(29, 'VL_COFINS_ST'),
+        CampoNumerico(18, 'VL_FRT'),
+        CampoNumerico(19, 'VL_SEG'),
+        CampoNumerico(20, 'VL_OUT_DA'),
+        CampoNumerico(21, 'VL_BC_ICMS'),
+        CampoNumerico(22, 'VL_ICMS'),
+        CampoNumerico(23, 'VL_BC_ICMS_ST'),
+        CampoNumerico(24, 'VL_ICMS_ST'),
+        CampoNumerico(25, 'VL_IPI'),
+        CampoNumerico(26, 'VL_PIS'),
+        CampoNumerico(27, 'VL_COFINS'),
+        CampoNumerico(28, 'VL_PIS_ST'),
+        CampoNumerico(29, 'VL_COFINS_ST'),
     ]
 
 
@@ -559,42 +579,43 @@ class RegistroC170(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'C170'),
-        Campo(2, 'NUM_ITEM'),
+        CampoNumerico(2, 'NUM_ITEM'),
         Campo(3, 'COD_ITEM'),
         Campo(4, 'DESCR_COMPL'),
-        Campo(5, 'QTD'),
+        CampoNumerico(5, 'QTD'),
         Campo(6, 'UNID'),
-        Campo(7, 'VL_ITEM'),
-        Campo(8, 'VL_DESC'),
+        CampoNumerico(7, 'VL_ITEM'),
+        CampoNumerico(8, 'VL_DESC'),
         Campo(9, 'IND_MOV'),
         Campo(10, 'CST_ICMS'),
         Campo(11, 'CFOP'),
         Campo(12, 'COD_NAT'),
-        Campo(13, 'VL_BC_ICMS'),
-        Campo(14, 'ALIQ_ICMS'),
-        Campo(15, 'VL_ICMS'),
-        Campo(16, 'VL_BC_ICMS_ST'),
-        Campo(17, 'ALIQ_ST'),
-        Campo(18, 'VL_ICMS_ST'),
+        CampoNumerico(13, 'VL_BC_ICMS'),
+        CampoNumerico(14, 'ALIQ_ICMS'),
+        CampoNumerico(15, 'VL_ICMS'),
+        CampoNumerico(16, 'VL_BC_ICMS_ST'),
+        CampoNumerico(17, 'ALIQ_ST'),
+        CampoNumerico(18, 'VL_ICMS_ST'),
         Campo(19, 'IND_APUR'),
         Campo(20, 'CST_IPI'),
         Campo(21, 'COD_ENQ'),
-        Campo(22, 'VL_BC_IPI'),
-        Campo(23, 'ALIQ_IPI'),
-        Campo(24, 'VL_IPI'),
+        CampoNumerico(22, 'VL_BC_IPI'),
+        CampoNumerico(23, 'ALIQ_IPI'),
+        CampoNumerico(24, 'VL_IPI'),
         Campo(25, 'CST_PIS'),
-        Campo(26, 'VL_BC_PIS'),
-        Campo(27, 'ALIQ_PIS'),
-        Campo(28, 'QUANT_BC_PIS'),
-        Campo(29, 'ALIQ_PIS'),
-        Campo(30, 'VL_PIS'),
+        CampoNumerico(26, 'VL_BC_PIS'),
+        CampoNumerico(27, 'ALIQ_PIS'),
+        CampoNumerico(28, 'QUANT_BC_PIS'),
+        CampoNumerico(29, 'ALIQ_PIS'),
+        CampoNumerico(30, 'VL_PIS'),
         Campo(31, 'CST_COFINS'),
-        Campo(32, 'VL_BC_COFINS'),
-        Campo(33, 'ALIQ_COFINS'),
-        Campo(34, 'QUANT_BC_COFINS'),
-        Campo(35, 'ALIQ_COFINS'),
-        Campo(36, 'VL_COFINS'),
+        CampoNumerico(32, 'VL_BC_COFINS'),
+        CampoNumerico(33, 'ALIQ_COFINS'),
+        CampoNumerico(34, 'QUANT_BC_COFINS'),
+        CampoNumerico(35, 'ALIQ_COFINS'),
+        CampoNumerico(36, 'VL_COFINS'),
         Campo(37, 'COD_CTA'),
+        CampoNumerico(38, 'VL_ABAT_NT'),
     ]
 
 
@@ -2048,8 +2069,8 @@ class RegistroE100(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'E100'),
-        Campo(2, 'DT_INI'),
-        Campo(3, 'DT_FIN'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
     ]
 
 
@@ -2156,8 +2177,8 @@ class RegistroE200(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E200'),
         Campo(2, 'UF'),
-        Campo(3, 'DT_INI'),
-        Campo(4, 'DT_FIN'),
+        CampoData(3, 'DT_INI'),
+        CampoData(4, 'DT_FIN'),
     ]
 
 
@@ -2254,8 +2275,8 @@ class RegistroE300(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E300'),
         Campo(2, 'UF'),
-        Campo(3, 'DT_INI'),
-        Campo(4, 'DT_FIM'),
+        CampoData(3, 'DT_INI'),
+        CampoData(4, 'DT_FIN'),
     ]
 
 
@@ -2309,6 +2330,7 @@ class RegistroE316(Registro):
         Campo(10, 'MES_REF'),
     ]
 
+
 class RegistroE500(Registro):
     """
     PERÍODO DE APURAÇÃO DO IPI
@@ -2316,8 +2338,8 @@ class RegistroE500(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E500'),
         Campo(2, 'IND_APUR'),
-        Campo(3, 'DT_INI'),
-        Campo(4, 'DT_FIN'),
+        CampoData(3, 'DT_INI'),
+        CampoData(4, 'DT_FIN'),
     ]
 
 
@@ -2382,7 +2404,7 @@ class RegistroG001(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'G001'),
-        Campo(2, 'IND_MO V'),
+        Campo(2, 'IND_MOV'),
     ]
 
 
@@ -2392,8 +2414,8 @@ class RegistroG110(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'G110'),
-        Campo(2, 'DT_INI'),
-        Campo(3, 'DT_FIN'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
         Campo(4, 'SALDO_IN_ICMS'),
         Campo(5, 'SOM_PARC'),
         Campo(6, 'VL_TRIB_EXP'),
@@ -2428,8 +2450,8 @@ class RegistroG126(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'G126'),
-        Campo(2, 'DT_INI'),
-        Campo(3, 'DT_FIM'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
         Campo(4, 'NUM_PARC'),
         Campo(5, 'VL_PARC_PASS'),
         Campo(6, 'VL_TRIB_OC'),
@@ -2513,6 +2535,7 @@ class RegistroH010(Registro):
         Campo(8, 'COD_PART'),
         Campo(9, 'TXT_COMPL'),
         Campo(10, 'COD_CTA'),
+        CampoNumerico(11, 'VL_ITEM_IR'),
     ]
 
 
@@ -2673,6 +2696,9 @@ class Registro1010(Registro):
         Campo(8, 'IND_CART'),
         Campo(9, 'IND_FORM'),
         Campo(10, 'IND_AER'),
+        Campo(11, 'IND_GIAF1'),
+        Campo(12, 'IND_GIAF3'),
+        Campo(13, 'IND_GIAF4'),
     ]
 
 
@@ -3032,8 +3058,8 @@ class Registro1910(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', '1910'),
-        Campo(2, 'DT_INI'),
-        Campo(3, 'DT_FIN'),
+        CampoData(2, 'DT_INI'),
+        CampoData(3, 'DT_FIN'),
     ]
 
 

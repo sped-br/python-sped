@@ -3,6 +3,8 @@
 from ...blocos import Bloco
 from .registros import Registro0001
 from .registros import Registro0990
+from .registros import RegistroB001
+from .registros import RegistroB990
 from .registros import RegistroC001
 from .registros import RegistroC990
 from .registros import RegistroD001
@@ -34,6 +36,14 @@ class Bloco0(Bloco):
         # Define a quantidade de registros
         registro[2] = len(self._registros) + 3
         return registro
+
+
+class BlocoB(Bloco):
+    """
+    Apuração de ISS – Mercadorias (ICMS/IPI)
+    """
+    registro_abertura = RegistroB001()
+    registro_encerramento = RegistroB990()
 
 
 class BlocoC(Bloco):
