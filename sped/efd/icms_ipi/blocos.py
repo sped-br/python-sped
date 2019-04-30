@@ -25,8 +25,8 @@ class Bloco0(Bloco):
     """
     Abertura, Identificação e Referências
     """
-    registro_abertura = Registro0001
-    registro_encerramento = Registro0990
+    registro_abertura = Registro0001()
+    registro_encerramento = Registro0990()
 
     @property
     def fechamento(self):
@@ -40,64 +40,64 @@ class BlocoC(Bloco):
     """
     Documentos Fiscais I – Mercadorias (ICMS/IPI)
     """
-    registro_abertura = RegistroC001
-    registro_encerramento = RegistroC990
+    registro_abertura = RegistroC001()
+    registro_encerramento = RegistroC990()
 
 
 class BlocoD(Bloco):
     """
     Documentos Fiscais II – Serviços (ICMS)
     """
-    registro_abertura = RegistroD001
-    registro_encerramento = RegistroD990
+    registro_abertura = RegistroD001()
+    registro_encerramento = RegistroD990()
 
 
 class BlocoE(Bloco):
     """
     Apuração do ICMS e do IPI
     """
-    registro_abertura = RegistroE001
-    registro_encerramento = RegistroE990
+    registro_abertura = RegistroE001()
+    registro_encerramento = RegistroE990()
 
 
 class BlocoG(Bloco):
     """
     Controle do Crédito de ICMS do Ativo Permanente – CIAP
     """
-    registro_abertura = RegistroG001
-    registro_encerramento = RegistroG990
+    registro_abertura = RegistroG001()
+    registro_encerramento = RegistroG990()
 
 
 class BlocoH(Bloco):
     """
     Inventário Físico
     """
-    registro_abertura = RegistroH001
-    registro_encerramento = RegistroH990
+    registro_abertura = RegistroH001()
+    registro_encerramento = RegistroH990()
 
 
 class BlocoK(Bloco):
     """
     Controle da Produção e do Estoque
     """
-    registro_abertura = RegistroK001
-    registro_encerramento = RegistroK990
+    registro_abertura = RegistroK001()
+    registro_encerramento = RegistroK990()
 
 
 class Bloco1(Bloco):
     """
     Outras Informações
     """
-    registro_abertura = Registro1001
-    registro_encerramento = Registro1990
+    registro_abertura = Registro1001()
+    registro_encerramento = Registro1990()
 
 
 class Bloco9(Bloco):
     """
     Controle e Encerramento do Arquivo Digital
     """
-    registro_abertura = Registro9001
-    registro_encerramento = Registro9990
+    registro_abertura = Registro9001()
+    registro_encerramento = Registro9990()
 
     @property
     def fechamento(self):
@@ -105,4 +105,3 @@ class Bloco9(Bloco):
         # Define a quantidade de registros
         registro[2] = len(self._registros) + 3
         return registro
-
