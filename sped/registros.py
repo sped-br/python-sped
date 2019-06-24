@@ -120,7 +120,7 @@ class Registro(object):
         return '|'.join(self._valores)
 
     def __repr__(self):
-        return f'<{self.__class__.__module__}.{self.__class__.__name__}>'
+        return '<%s.%s>' % (self.__class__.__module__, self.__class__.__name__)
 
 
 class RegistroIndefinido(Registro):

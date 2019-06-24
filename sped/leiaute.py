@@ -44,7 +44,7 @@ class Bloco(object):
         self.descricao = descricao
 
     def __repr__(self):
-        return f'<Bloco({self.nome}, {self.descricao})>'
+        return '<Bloco(%s, %s)>' % (self.nome, self.descricao)
 
 
 class Registro(object):
@@ -58,7 +58,7 @@ class Registro(object):
         self.campos = []
 
     def __repr__(self):
-        return f'<Registro({self.codigo}, {self.nome})>'
+        return '<Registro(%s, %s)>' % (self.codigo, self.nome)
 
 
 class Campo(object):
@@ -70,12 +70,12 @@ class Campo(object):
         self.nome = nome
         self.descricao = descricao
         self.tipo = tipo
-        
+
         try:
             self.tamanho = int(tamanho)
         except:
             self.tamanho = None
-        
+
         try:
             self.decimal = int(decimal)
         except:
@@ -86,4 +86,4 @@ class Campo(object):
         self.regras = regras
 
     def __repr__(self):
-        return f'<Campo({self.indice}, {self.nome})>'
+        return '<Campo(%s, %s)>' % (self.indice, self.nome)

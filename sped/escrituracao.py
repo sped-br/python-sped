@@ -84,7 +84,10 @@ class Escrituracao(object):
         self._add_registro(self._registro_escrituracao)
 
         sped_path = Path(__file__).parent
-        leiaute_ecd = Path(sped_path / 'leiautes' / f'{self._tipo}_{self._ano_calendario}.json')
+
+        leiaute_path = '%s/leiautes/%s_%s.json' % (sped_path, self._tipo,
+                                                   self._ano_calendario)
+        leiaute_ecd = Path(leiaute_path)
 
         with leiaute_ecd.open(encoding='utf-8', newline='\n') as f:
             p = json.load(f)
@@ -226,19 +229,21 @@ class Escrituracao(object):
         self.registro_encerramento[2] = reg_count
 
     def write_to(self, buff):
-        buff.write(f'{self.registro_abertura}\r\n')
+        buff.write('%s\r\n' % self.registro_abertura)
         reg_count = 2
         for bloco in self._blocos.values():
             reg_count += len(bloco.registros)
             for registro in bloco.registros:
-                buff.write(f'{registro}\r\n')
+                buff.write('%s\r\n' % registro)
 
         self.registro_encerramento[2] = reg_count
 
-        buff.write(f'{self.registro_encerramento}\r\n')
+        buff.write('%s\r\n' % self.registro_encerramento)
 
     def add(self, registro: Registro):
         pass
 
     def __repr__(self):
-        return f'<{self.__class__.__module__}.{self.__class__.__name__}({self._tipo}, {self._ano_calendario})>'
+        return '<%s.%s(%s, %s)>' % (self.__class__.__module__,
+                                    self.__class__.__name__,
+                                    self._tipo, self._ano_calendario)

@@ -32,7 +32,9 @@ class Campo(object):
         self._obrigatorio = obrigatorio
 
     def __repr__(self):
-        return f'<{self.__class__.__module__}.{self.__class__.__name__}({self._indice}, {self._nome})>'
+        return '<%s.%s(%s, %s)>' % (self.__class__.__module__,
+                                    self.__class__.__name__,
+                                    self._indice, self._nome)
 
     @property
     def indice(self):
@@ -207,8 +209,8 @@ class CampoRegex(Campo):
         else:
             raise FormatoInvalidoError(registro, str(self))
 
-    def __repr__(self):
-        return f'{self.__class__.__name__}({self.indice}, {self.nome}, {self._obrigatorio}, {self._regex})'
+    # def __repr__(self):
+    #     return '' f'{self.__class__.__name__}({self.indice}, {self.nome}, {self._obrigatorio}, {self._regex})'
 
 
 class CampoCNPJ(Campo):

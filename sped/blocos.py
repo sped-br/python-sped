@@ -9,7 +9,8 @@ class Bloco(object):
         self._registros = []
 
     def __repr__(self):
-        return f'<{self.__class__.__module__}.{self.__class__.__name__}({self._nome})>'
+        return '<%s.%s(%s)>' % (self.__class__.__module__,
+                                self.__class__.__name__, self._nome)
 
     @property
     def abertura(self):
