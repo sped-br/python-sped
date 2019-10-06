@@ -177,6 +177,18 @@ class Registro0206(Registro):
         CampoFixo(1, 'REG', '0206'),
         Campo(2, 'COD_COMB'),
     ]
+    
+
+class Registro0210(Registro):
+    """
+    CONSUMO ESPECÍFICO PADRONIZADO
+    """
+    campos = [
+        CampoFixo(1, 'REG', '0210'),
+        Campo(2, 'COD_ITEM_COMP'),
+        CampoNumerico(3, 'QTD_COMP'),
+        CampoNumerico(4, 'PERDA'),
+    ]
 
 
 class Registro0220(Registro):
