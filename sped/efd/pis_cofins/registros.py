@@ -39,7 +39,8 @@ class Registro0000(Registro):
         Campo(13, 'IND_NAT_PJ'),
         Campo(14, 'IND_ATIV', obrigatorio=True),
     ]
-
+    
+    nivel = 0
 
 class Registro0001(Registro):
     """
@@ -49,7 +50,8 @@ class Registro0001(Registro):
         CampoFixo(1, 'REG', '0001'),
         Campo(2, 'IND_MOV', obrigatorio=True)
     ]
-
+    
+    nivel = 1
 
 class Registro0035(Registro):
     """
@@ -61,7 +63,8 @@ class Registro0035(Registro):
         Campo(3, 'DESC_SCP', obrigatorio=True),
         Campo(4, 'INF_COMP', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class Registro0100(Registro):
     """
@@ -83,7 +86,8 @@ class Registro0100(Registro):
         Campo(13, 'EMAIL'),
         Campo(14, 'COD_MUN'),
     ]
-
+    
+    nivel = 2
 
 class Registro0110(Registro):
     """
@@ -96,7 +100,8 @@ class Registro0110(Registro):
         Campo(4, 'COD_TIPO_CONT'),
         Campo(5, 'IND_REG_CUM'),
     ]
-
+    
+    nivel = 2
 
 class Registro0111(Registro):
     """
@@ -110,7 +115,8 @@ class Registro0111(Registro):
         CampoNumerico(5, 'REC_BRU_CUM', obrigatorio=True),
         CampoNumerico(6, 'REC_BRU_TOTAL', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro0120(Registro):
     """
@@ -121,7 +127,8 @@ class Registro0120(Registro):
         Campo(2, 'MES_DISPENSA', obrigatorio=True),
         Campo(3, 'INF_COMP'),
     ]
-
+    
+    nivel = 2
 
 class Registro0140(Registro):
     """
@@ -138,6 +145,8 @@ class Registro0140(Registro):
         Campo(8, 'IM'),
         Campo(9, 'SUFRAMA'),
     ]
+    
+    nivel = 2
 
 
 class Registro0145(Registro):
@@ -152,7 +161,8 @@ class Registro0145(Registro):
         CampoNumerico(5, 'VL_REC_DEMAIS_ATIV'),
         Campo(6, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class Registro0150(Registro):
     """
@@ -173,7 +183,8 @@ class Registro0150(Registro):
         Campo(12, 'COMPL'),
         Campo(13, 'BAIRRO'),
     ]
-
+    
+    nivel = 3
 
 class Registro0190(Registro):
     """
@@ -184,7 +195,8 @@ class Registro0190(Registro):
         Campo(2, 'UNID', obrigatorio=True),
         Campo(3, 'DESCR', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro0200(Registro):
     """
@@ -204,7 +216,8 @@ class Registro0200(Registro):
         Campo(11, 'COD_LST'),
         CampoNumerico(12, 'ALIQ_ICMS'),
     ]
-
+    
+    nivel = 3
 
 class Registro0205(Registro):
     """
@@ -217,7 +230,8 @@ class Registro0205(Registro):
         CampoData(4, 'DT_FIM', obrigatorio=True),
         Campo(5, 'COD_ANT_ITEM'),
     ]
-
+    
+    nivel = 4
 
 class Registro0206(Registro):
     """
@@ -227,7 +241,8 @@ class Registro0206(Registro):
         CampoFixo(1, 'REG', '0206'),
         Campo(2, 'COD_COMB', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class Registro0208(Registro):
     """
@@ -239,7 +254,8 @@ class Registro0208(Registro):
         Campo(3, 'COD_GRU', obrigatorio=True),
         Campo(4, 'MARCA_COM', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class Registro0400(Registro):
     """
@@ -250,7 +266,8 @@ class Registro0400(Registro):
         Campo(2, 'COD_NAT', obrigatorio=True),
         Campo(3, 'DESCR_NAT', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro0450(Registro):
     """
@@ -261,7 +278,8 @@ class Registro0450(Registro):
         Campo(2, 'COD_INF', obrigatorio=True),
         Campo(3, 'TXT', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro0500(Registro):
     """
@@ -278,7 +296,8 @@ class Registro0500(Registro):
         Campo(8, 'COD_CTA_REF'),
         CampoCNPJ(9, 'CNPJ_EST'),
     ]
-
+    
+    nivel = 2
 
 class Registro0600(Registro):
     """
@@ -290,7 +309,32 @@ class Registro0600(Registro):
         Campo(3, 'COD_CCUS', obrigatorio=True),
         Campo(4, 'CCUS', obrigatorio=True),
     ]
+    
+    nivel = 2
 
+class Registro0900(Registro):
+    """
+    Composição das Receitas do Período - Receita Bruta e Demais Receitas
+    """
+    campos = [
+        CampoFixo(1, 'REG', '0900'),
+        CampoNumerico(2, 'REC_TOTAL_BLOCO_A', obrigatorio=True),
+        CampoNumerico(3, 'REC_NRB_BLOCO_A'),
+        CampoNumerico(4, 'REC_TOTAL_BLOCO_C', obrigatorio=True),
+        CampoNumerico(5, 'REC_NRB_BLOCO_C'),
+        CampoNumerico(6, 'REC_TOTAL_BLOCO_D', obrigatorio=True),
+        CampoNumerico(7, 'REC_NRB_BLOCO_D'),
+        CampoNumerico(8, 'REC_TOTAL_BLOCO_F', obrigatorio=True),
+        CampoNumerico(9, 'REC_NRB_BLOCO_F'),
+        CampoNumerico(10, 'REC_TOTAL_BLOCO_I', obrigatorio=True),
+        CampoNumerico(11, 'REC_NRB_BLOCO_I'),
+        CampoNumerico(12, 'REC_TOTAL_BLOCO_1', obrigatorio=True),
+        CampoNumerico(13, 'REC_NRB_BLOCO_1'),
+        CampoNumerico(14, 'REC_TOTAL_PERIODO', obrigatorio=True),
+        CampoNumerico(15, 'REC_TOTAL_NRB_PERÍODO'),
+    ]
+    
+    nivel = 2
 
 class Registro0990(Registro):
     """
@@ -300,7 +344,9 @@ class Registro0990(Registro):
         CampoFixo(1, 'REG', '0990'),
         CampoNumerico(2, 'QTD_LIN_0', obrigatorio=True),
     ]
-
+    
+    nivel = 1
+    
 
 class RegistroA001(Registro):
     """
@@ -310,7 +356,8 @@ class RegistroA001(Registro):
         CampoFixo(1, 'REG', 'A001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroA010(Registro):
     """
@@ -320,7 +367,7 @@ class RegistroA010(Registro):
         CampoFixo(1, 'REG', 'A010'),
         CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
-
+    nivel = 2
 
 class RegistroA100(Registro):
     """
@@ -349,7 +396,7 @@ class RegistroA100(Registro):
         CampoNumerico(20, 'VL_COFINS_RET'),
         CampoNumerico(21, 'VL_ISS'),
     ]
-
+    nivel = 3
 
 class RegistroA110(Registro):
     """
@@ -360,7 +407,8 @@ class RegistroA110(Registro):
         Campo(2, 'COD_INF', obrigatorio=True),
         Campo(3, 'TXT_COMPL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroA111(Registro):
     """
@@ -371,7 +419,8 @@ class RegistroA111(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroA120(Registro):
     """
@@ -388,7 +437,8 @@ class RegistroA120(Registro):
         CampoData(8, 'DT_PAG_COFINS'),
         Campo(9, 'LOC_EXE_SERV', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroA170(Registro):
     """
@@ -414,7 +464,8 @@ class RegistroA170(Registro):
         Campo(17, 'COD_CTA'),
         Campo(18, 'COD_CCUS'),
     ]
-
+    
+    nivel = 4
 
 class RegistroA990(Registro):
     """
@@ -424,7 +475,8 @@ class RegistroA990(Registro):
         CampoFixo(1, 'REG', 'A990'),
         CampoNumerico(2, 'QTD_LIN_A', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroC001(Registro):
     """
@@ -434,7 +486,8 @@ class RegistroC001(Registro):
         CampoFixo(1, 'REG', 'C001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroC010(Registro):
     """
@@ -445,7 +498,8 @@ class RegistroC010(Registro):
         CampoCNPJ(2, 'CNPJ', obrigatorio=True),
         Campo(3, 'IND_ESCRI'),
     ]
-
+    
+    nivel = 2
 
 class RegistroC100(Registro):
     """
@@ -457,15 +511,15 @@ class RegistroC100(Registro):
         Campo(2, 'IND_OPER', obrigatorio=True),
         Campo(3, 'IND_EMIT', obrigatorio=True),
         Campo(4, 'COD_PART', obrigatorio=True),
-        Campo(5, 'COD_MOD', obrigatorio=True),
-        Campo(6, 'COD_SIT;', obrigatorio=True),
+        Campo(5, 'COD_MOD',  obrigatorio=True),
+        Campo(6, 'COD_SIT',  obrigatorio=True),
         Campo(7, 'SER'),
         Campo(8, 'NUM_DOC', obrigatorio=True),
         Campo(9, 'CHV_NFE'),
-        Campo(10, 'CHV_NFE', obrigatorio=True),
-        CampoData(11, 'DT_DOC'),
-        CampoData(12, 'DT_E_S', obrigatorio=True),
-        CampoNumerico(13, 'VL_DOC', obrigatorio=True),
+        CampoData(10, 'DT_DOC', obrigatorio=True),
+        CampoData(11, 'DT_E_S'),
+        CampoNumerico(12, 'VL_DOC', obrigatorio=True),
+        CampoNumerico(13, 'IND_PGTO', obrigatorio=True),
         CampoNumerico(14, 'VL_DESC'),
         CampoNumerico(15, 'VL_ABAT_NT'),
         CampoNumerico(16, 'VL_MERC'),
@@ -483,7 +537,8 @@ class RegistroC100(Registro):
         CampoNumerico(28, 'VL_PIS_ST'),
         CampoNumerico(29, 'VL_COFINS_ST'),
     ]
-
+    
+    nivel = 3
 
 class RegistroC110(Registro):
     """
@@ -494,7 +549,8 @@ class RegistroC110(Registro):
         Campo(2, 'COD_INF', obrigatorio=True),
         Campo(3, 'TXT_COMPL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC111(Registro):
     """
@@ -505,7 +561,8 @@ class RegistroC111(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC120(Registro):
     """
@@ -519,7 +576,8 @@ class RegistroC120(Registro):
         CampoNumerico(5, 'VL_COFINS_IMP'),
         Campo(6, 'NUM_ACDRAW'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC170(Registro):
     """
@@ -564,7 +622,8 @@ class RegistroC170(Registro):
         CampoNumerico(36, 'VL_COFINS'),
         Campo(37, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC175(Registro):
     """
@@ -590,7 +649,8 @@ class RegistroC175(Registro):
         Campo(17, 'COD_CTA'),
         Campo(18, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC180(Registro):
     """
@@ -606,7 +666,8 @@ class RegistroC180(Registro):
         Campo(7, 'EX_IPI'),
         CampoNumerico(8, 'VL_TOT_ITEM', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroC181(Registro):
     """
@@ -625,7 +686,8 @@ class RegistroC181(Registro):
         CampoNumerico(10, 'VL_PIS'),
         Campo(11, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC185(Registro):
     """
@@ -644,7 +706,8 @@ class RegistroC185(Registro):
         CampoNumerico(10, 'VL_COFINS'),
         Campo(11, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC188(Registro):
     """
@@ -655,7 +718,8 @@ class RegistroC188(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC190(Registro):
     """
@@ -672,7 +736,8 @@ class RegistroC190(Registro):
         Campo(7, 'EX_IPI'),
         CampoNumerico(8, 'VL_TOT_ITEM', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroC191(Registro):
     """
@@ -693,7 +758,8 @@ class RegistroC191(Registro):
         CampoNumerico(11, 'VL_PIS'),
         Campo(12, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC195(Registro):
     """
@@ -714,7 +780,8 @@ class RegistroC195(Registro):
         CampoNumerico(11, 'VL_COFINS'),
         Campo(12, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC198(Registro):
     """
@@ -725,7 +792,8 @@ class RegistroC198(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC199(Registro):
     """
@@ -739,7 +807,8 @@ class RegistroC199(Registro):
         CampoNumerico(5, 'VL_COFINS_IMP'),
         Campo(6, 'NUM_ACDRAW'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC380(Registro):
     """
@@ -755,7 +824,8 @@ class RegistroC380(Registro):
         CampoNumerico(7, 'VL_DOC', obrigatorio=True),
         CampoNumerico(8, 'VL_DOC_CANC', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroC381(Registro):
     """
@@ -773,7 +843,8 @@ class RegistroC381(Registro):
         CampoNumerico(9, 'VL_PIS', obrigatorio=True),
         Campo(10, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC385(Registro):
     """
@@ -791,7 +862,8 @@ class RegistroC385(Registro):
         CampoNumerico(9, 'VL_COFINS', obrigatorio=True),
         Campo(10, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC395(Registro):
     """
@@ -807,7 +879,8 @@ class RegistroC395(Registro):
         CampoData(7, 'DT_DOC', obrigatorio=True),
         CampoNumerico(8, 'VL_DOC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC396(Registro):
     """
@@ -829,7 +902,8 @@ class RegistroC396(Registro):
         CampoNumerico(13, 'VL_COFINS'),
         Campo(14, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC400(Registro):
     """
@@ -842,7 +916,8 @@ class RegistroC400(Registro):
         Campo(4, 'ECF_FAB', obrigatorio=True),
         Campo(5, 'ECF_CX', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroC405(Registro):
     """
@@ -857,7 +932,8 @@ class RegistroC405(Registro):
         Campo(6, 'GT_FIN', obrigatorio=True),
         CampoNumerico(7, 'VL_BRT', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC481(Registro):
     """
@@ -875,7 +951,8 @@ class RegistroC481(Registro):
         Campo(9, 'COD_ITEM'),
         Campo(10, 'COD_CTA'),
     ]
-
+    
+    nivel = 5
 
 class RegistroC485(Registro):
     """
@@ -893,7 +970,8 @@ class RegistroC485(Registro):
         Campo(9, 'COD_ITEM'),
         Campo(10, 'COD_CTA'),
     ]
-
+    
+    nivel = 5
 
 class RegistroC489(Registro):
     """
@@ -904,7 +982,8 @@ class RegistroC489(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC490(Registro):
     """
@@ -916,7 +995,8 @@ class RegistroC490(Registro):
         CampoData(3, 'DT_DOC_FIN', obrigatorio=True),
         Campo(4, 'COD_MOD', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroC491(Registro):
     """
@@ -935,7 +1015,8 @@ class RegistroC491(Registro):
         CampoNumerico(10, 'VL_PIS'),
         Campo(11, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC495(Registro):
     """
@@ -954,7 +1035,8 @@ class RegistroC495(Registro):
         CampoNumerico(10, 'VL_COFINS'),
         Campo(11, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC499(Registro):
     """
@@ -965,7 +1047,8 @@ class RegistroC499(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC500(Registro):
     """
@@ -988,7 +1071,8 @@ class RegistroC500(Registro):
         CampoNumerico(13, 'VL_PIS'),
         CampoNumerico(14, 'VL_COFINS'),
     ]
-
+    
+    nivel = 3
 
 class RegistroC501(Registro):
     """
@@ -1004,7 +1088,8 @@ class RegistroC501(Registro):
         CampoNumerico(7, 'VL_PIS', obrigatorio=True),
         Campo(8, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC505(Registro):
     """
@@ -1020,7 +1105,8 @@ class RegistroC505(Registro):
         CampoNumerico(7, 'VL_COFINS', obrigatorio=True),
         Campo(8, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC509(Registro):
     """
@@ -1031,7 +1117,8 @@ class RegistroC509(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC600(Registro):
     """
@@ -1063,7 +1150,8 @@ class RegistroC600(Registro):
         CampoNumerico(21, 'VL_PIS', obrigatorio=True),
         CampoNumerico(22, 'VL_COFINS', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroC601(Registro):
     """
@@ -1078,7 +1166,8 @@ class RegistroC601(Registro):
         CampoNumerico(6, 'VL_PIS', obrigatorio=True),
         Campo(7, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC605(Registro):
     """
@@ -1093,7 +1182,8 @@ class RegistroC605(Registro):
         CampoNumerico(6, 'VL_COFINS', obrigatorio=True),
         Campo(7, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC609(Registro):
     """
@@ -1104,7 +1194,8 @@ class RegistroC609(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC800(Registro):
     """
@@ -1129,7 +1220,8 @@ class RegistroC800(Registro):
         CampoNumerico(16, 'VL_PIS_ST'),
         CampoNumerico(17, 'VL_COFINS_ST'),
     ]
-
+    
+    nivel = 3
 
 class RegistroC810(Registro):
     """
@@ -1150,7 +1242,8 @@ class RegistroC810(Registro):
         CampoNumerico(12, 'VL_COFINS'),
         Campo(13, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC820(Registro):
     """
@@ -1172,7 +1265,8 @@ class RegistroC820(Registro):
         CampoNumerico(12, 'VL_COFINS'),
         Campo(13, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC830(Registro):
     """
@@ -1183,7 +1277,8 @@ class RegistroC830(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC860(Registro):
     """
@@ -1197,7 +1292,8 @@ class RegistroC860(Registro):
         Campo(5, 'DOC_INI'),
         Campo(6, 'DOC_FIM'),
     ]
-
+    
+    nivel = 3
 
 class RegistroC870(Registro):
     """
@@ -1218,7 +1314,8 @@ class RegistroC870(Registro):
         CampoNumerico(12, 'VL_COFINS'),
         Campo(13, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC880(Registro):
     """
@@ -1239,7 +1336,8 @@ class RegistroC880(Registro):
         CampoNumerico(12, 'VL_COFINS'),
         Campo(13, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroC890(Registro):
     """
@@ -1250,7 +1348,8 @@ class RegistroC890(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroC990(Registro):
     """
@@ -1260,7 +1359,8 @@ class RegistroC990(Registro):
         CampoFixo(1, 'REG', 'C990'),
         CampoNumerico(2, 'QTD_LIN_C', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroD001(Registro):
     """
@@ -1270,7 +1370,8 @@ class RegistroD001(Registro):
         CampoFixo(1, 'REG', 'D001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroD010(Registro):
     """
@@ -1280,7 +1381,8 @@ class RegistroD010(Registro):
         CampoFixo(1, 'REG', 'D010'),
         CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroD100(Registro):
     """
@@ -1311,7 +1413,8 @@ class RegistroD100(Registro):
         Campo(22, 'COD_INF'),
         Campo(23, 'COD_CTA'),
     ]
-
+    
+    nivel = 3
 
 class RegistroD101(Registro):
     """
@@ -1328,7 +1431,8 @@ class RegistroD101(Registro):
         CampoNumerico(8, 'VL_PIS'),
         Campo(9, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD105(Registro):
     """
@@ -1345,7 +1449,8 @@ class RegistroD105(Registro):
         CampoNumerico(8, 'VL_COFINS'),
         Campo(9, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD111(Registro):
     """
@@ -1356,7 +1461,8 @@ class RegistroD111(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroD200(Registro):
     """
@@ -1375,7 +1481,8 @@ class RegistroD200(Registro):
         CampoNumerico(10, 'VL_DOC', obrigatorio=True),
         CampoNumerico(11, 'VL_DESC'),
     ]
-
+    
+    nivel = 3
 
 class RegistroD201(Registro):
     """
@@ -1390,7 +1497,8 @@ class RegistroD201(Registro):
         CampoNumerico(6, 'VL_PIS'),
         Campo(7, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD205(Registro):
     """
@@ -1405,7 +1513,8 @@ class RegistroD205(Registro):
         CampoNumerico(6, 'VL_COFINS'),
         Campo(7, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD209(Registro):
     """
@@ -1416,7 +1525,8 @@ class RegistroD209(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroD300(Registro):
     """
@@ -1443,7 +1553,8 @@ class RegistroD300(Registro):
         CampoNumerico(18, 'VL_COFINS'),
         Campo(19, 'COD_CTA'),
     ]
-
+    
+    nivel = 3
 
 class RegistroD309(Registro):
     """
@@ -1454,7 +1565,8 @@ class RegistroD309(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroD350(Registro):
     """
@@ -1485,7 +1597,8 @@ class RegistroD350(Registro):
         CampoNumerico(22, 'VL_COFINS'),
         Campo(23, 'COD_CTA'),
     ]
-
+    
+    nivel = 3
 
 class RegistroD359(Registro):
     """
@@ -1496,7 +1609,8 @@ class RegistroD359(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroD500(Registro):
     """
@@ -1527,7 +1641,8 @@ class RegistroD500(Registro):
         CampoNumerico(21, 'VL_PIS'),
         CampoNumerico(22, 'VL_COFINS'),
     ]
-
+    
+    nivel = 3
 
 class RegistroD501(Registro):
     """
@@ -1543,7 +1658,8 @@ class RegistroD501(Registro):
         CampoNumerico(7, 'VL_PIS'),
         Campo(8, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD505(Registro):
     """
@@ -1559,7 +1675,8 @@ class RegistroD505(Registro):
         CampoNumerico(7, 'VL_COFINS'),
         Campo(8, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD509(Registro):
     """
@@ -1570,7 +1687,8 @@ class RegistroD509(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroD600(Registro):
     """
@@ -1598,7 +1716,8 @@ class RegistroD600(Registro):
         CampoNumerico(18, 'VL_PIS'),
         CampoNumerico(19, 'VL_COFINS'),
     ]
-
+    
+    nivel = 3
 
 class RegistroD601(Registro):
     """
@@ -1615,7 +1734,8 @@ class RegistroD601(Registro):
         CampoNumerico(8, 'VL_PIS'),
         Campo(9, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD605(Registro):
     """
@@ -1632,7 +1752,8 @@ class RegistroD605(Registro):
         CampoNumerico(8, 'VL_COFINS'),
         Campo(9, 'COD_CTA'),
     ]
-
+    
+    nivel = 4
 
 class RegistroD609(Registro):
     """
@@ -1643,7 +1764,8 @@ class RegistroD609(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroD990(Registro):
     """
@@ -1653,7 +1775,8 @@ class RegistroD990(Registro):
         CampoFixo(1, 'REG', 'D990'),
         CampoNumerico(2, 'QTD_LIN_D', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroF001(Registro):
     """
@@ -1663,7 +1786,8 @@ class RegistroF001(Registro):
         CampoFixo(1, 'REG', 'F001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroF010(Registro):
     """
@@ -1673,7 +1797,8 @@ class RegistroF010(Registro):
         CampoFixo(1, 'REG', 'F010'),
         CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroF100(Registro):
     """
@@ -1700,7 +1825,8 @@ class RegistroF100(Registro):
         Campo(18, 'COD_CCUS'),
         Campo(19, 'DESC_DOC_OPER'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF111(Registro):
     """
@@ -1711,7 +1837,8 @@ class RegistroF111(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF120(Registro):
     """
@@ -1738,7 +1865,8 @@ class RegistroF120(Registro):
         Campo(17, 'COD_CCUS'),
         Campo(18, 'DESC_BEM_IMOB'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF129(Registro):
     """
@@ -1749,7 +1877,8 @@ class RegistroF129(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF130(Registro):
     """
@@ -1778,7 +1907,8 @@ class RegistroF130(Registro):
         Campo(20, 'COD_CCUS'),
         Campo(21, 'DESC_BEM_IMOB'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF139(Registro):
     """
@@ -1789,7 +1919,8 @@ class RegistroF139(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF150(Registro):
     """
@@ -1811,7 +1942,8 @@ class RegistroF150(Registro):
         Campo(13, 'DESC_EST'),
         Campo(14, 'COD_CTA'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF200(Registro):
     """
@@ -1841,7 +1973,8 @@ class RegistroF200(Registro):
         Campo(21, 'IND_NAT_EMP'),
         Campo(22, 'INF_COMP'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF205(Registro):
     """
@@ -1867,7 +2000,8 @@ class RegistroF205(Registro):
         CampoNumerico(17, 'VL_CRED_COFINS_DESC', obrigatorio=True),
         CampoNumerico(18, 'VL_CRED_COFINS_DESC_FUT', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF210(Registro):
     """
@@ -1886,7 +2020,8 @@ class RegistroF210(Registro):
         CampoNumerico(10, 'ALIQ_COFINS'),
         CampoNumerico(11, 'VL_CRED_COFINS_UTIL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroF211(Registro):
     """
@@ -1897,7 +2032,8 @@ class RegistroF211(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF500(Registro):
     """
@@ -1922,7 +2058,8 @@ class RegistroF500(Registro):
         Campo(15, 'COD_CTA'),
         Campo(16, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF509(Registro):
     """
@@ -1933,7 +2070,8 @@ class RegistroF509(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF510(Registro):
     """
@@ -1958,7 +2096,8 @@ class RegistroF510(Registro):
         Campo(15, 'COD_CTA'),
         Campo(16, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF519(Registro):
     """
@@ -1969,7 +2108,8 @@ class RegistroF519(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF525(Registro):
     """
@@ -1988,7 +2128,8 @@ class RegistroF525(Registro):
         Campo(10, 'INFO_COMPL'),
         Campo(11, 'COD_CTA'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF550(Registro):
     """
@@ -2013,7 +2154,8 @@ class RegistroF550(Registro):
         Campo(15, 'COD_CTA'),
         Campo(16, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF559(Registro):
     """
@@ -2024,7 +2166,8 @@ class RegistroF559(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF560(Registro):
     """
@@ -2050,7 +2193,8 @@ class RegistroF560(Registro):
         Campo(15, 'COD_CTA'),
         Campo(16, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF569(Registro):
     """
@@ -2061,7 +2205,8 @@ class RegistroF569(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroF600(Registro):
     """
@@ -2080,7 +2225,8 @@ class RegistroF600(Registro):
         CampoNumerico(10, 'VL_RET_COFINS', obrigatorio=True),
         Campo(11, 'IND_DEC', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroF700(Registro):
     """
@@ -2096,7 +2242,8 @@ class RegistroF700(Registro):
         CampoCNPJ(7, 'CNPJ'),
         Campo(8, 'INF_COMP'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF800(Registro):
     """
@@ -2113,7 +2260,8 @@ class RegistroF800(Registro):
         CampoNumerico(8, 'VL_CRED_COFINS', obrigatorio=True),
         Campo(9, 'PER_CRED_CIS'),
     ]
-
+    
+    nivel = 3
 
 class RegistroF990(Registro):
     """
@@ -2123,7 +2271,8 @@ class RegistroF990(Registro):
         CampoFixo(1, 'REG', 'F990'),
         CampoNumerico(2, 'QTD_LIN_F', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroI001(Registro):
     """
@@ -2133,7 +2282,8 @@ class RegistroI001(Registro):
         CampoFixo(1, 'REG', 'I001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroI010(Registro):
     """
@@ -2145,7 +2295,8 @@ class RegistroI010(Registro):
         Campo(3, 'IND_ATIV', obrigatorio=True),
         Campo(4, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 2
 
 class RegistroI100(Registro):
     """
@@ -2165,7 +2316,8 @@ class RegistroI100(Registro):
         CampoNumerico(11, 'VL_COFINS', obrigatorio=True),
         Campo(12, 'INFO_COMPL', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroI199(Registro):
     """
@@ -2176,7 +2328,8 @@ class RegistroI199(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroI200(Registro):
     """
@@ -2190,7 +2343,8 @@ class RegistroI200(Registro):
         Campo(5, 'COD_CTA', obrigatorio=True),
         Campo(6, 'INFO_COMPL', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroI299(Registro):
     """
@@ -2201,7 +2355,8 @@ class RegistroI299(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 5
 
 class RegistroI300(Registro):
     """
@@ -2214,7 +2369,8 @@ class RegistroI300(Registro):
         Campo(4, 'COD_CTA', obrigatorio=True),
         Campo(5, 'INFO_COMPL', obrigatorio=True),
     ]
-
+    
+    nivel = 5
 
 class RegistroI399(Registro):
     """
@@ -2225,7 +2381,8 @@ class RegistroI399(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 6
 
 class RegistroI990(Registro):
     """
@@ -2235,7 +2392,8 @@ class RegistroI990(Registro):
         CampoFixo(1, 'REG', 'I990'),
         CampoNumerico(2, 'QTD_LIN_I', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroM001(Registro):
     """
@@ -2245,7 +2403,7 @@ class RegistroM001(Registro):
         CampoFixo(1, 'REG', 'M001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    nivel = 1
 
 class RegistroM100(Registro):
     """
@@ -2268,7 +2426,8 @@ class RegistroM100(Registro):
         CampoNumerico(14, 'VL_CRED_DESC'),
         Campo(15, 'SLD_CRED', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroM105(Registro):
     """
@@ -2286,7 +2445,8 @@ class RegistroM105(Registro):
         Campo(9, 'QUANT_BC_PIS'),
         Campo(10, 'DESC_CRED'),
     ]
-
+    
+    nivel = 3
 
 class RegistroM110(Registro):
     """
@@ -2301,7 +2461,8 @@ class RegistroM110(Registro):
         Campo(6, 'DESCR_AJ'),
         CampoData(7, 'DT_REF'),
     ]
-
+    
+    nivel = 3
 
 class RegistroM115(Registro):
     """
@@ -2318,7 +2479,8 @@ class RegistroM115(Registro):
         Campo(8, 'COD_CTA'),
         Campo(9, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroM200(Registro):
     """
@@ -2339,7 +2501,8 @@ class RegistroM200(Registro):
         CampoNumerico(12, 'VL_CONT_CUM_REC', obrigatorio=True),
         CampoNumerico(13, 'VL_TOT_CONT_REC', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroM205(Registro):
     """
@@ -2351,7 +2514,8 @@ class RegistroM205(Registro):
         Campo(3, 'COD_REC', obrigatorio=True),
         CampoNumerico(4, 'VL_DEBITO', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroM210(Registro):
     """
@@ -2372,7 +2536,8 @@ class RegistroM210(Registro):
         CampoNumerico(12, 'VL_CONT_DIFER_ANT'),
         CampoNumerico(13, 'VL_CONT_PER', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroM211(Registro):
     """
@@ -2386,7 +2551,8 @@ class RegistroM211(Registro):
         CampoNumerico(5, 'VL_EXC_ESP_COOP'),
         CampoNumerico(6, 'VL_BC_CONT', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroM220(Registro):
     """
@@ -2401,7 +2567,8 @@ class RegistroM220(Registro):
         Campo(6, 'DESCR_AJ'),
         CampoData(7, 'DT_REF'),
     ]
-
+    
+    nivel = 4
 
 class RegistroM225(Registro):
     """
@@ -2418,7 +2585,8 @@ class RegistroM225(Registro):
         Campo(8, 'COD_CTA'),
         Campo(9, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 5
 
 class RegistroM230(Registro):
     """
@@ -2433,7 +2601,8 @@ class RegistroM230(Registro):
         CampoNumerico(6, 'VL_CRED_DIF'),
         Campo(7, 'COD_CRED'),
     ]
-
+    
+    nivel = 4
 
 class RegistroM300(Registro):
     """
@@ -2449,7 +2618,8 @@ class RegistroM300(Registro):
         Campo(7, 'PER_APUR', obrigatorio=True),
         CampoData(8, 'DT_RECEB'),
     ]
-
+    
+    nivel = 2
 
 class RegistroM350(Registro):
     """
@@ -2463,7 +2633,8 @@ class RegistroM350(Registro):
         CampoNumerico(5, 'ALIQ_PIS_FOL', obrigatorio=True),
         CampoNumerico(6, 'VL_TOT_CONT_FOL', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroM400(Registro):
     """
@@ -2477,7 +2648,8 @@ class RegistroM400(Registro):
         Campo(4, 'COD_CTA'),
         Campo(5, 'DESC_COMPL'),
     ]
-
+    
+    nivel = 2
 
 class RegistroM410(Registro):
     """
@@ -2491,7 +2663,8 @@ class RegistroM410(Registro):
         Campo(4, 'COD_CTA', obrigatorio=True),
         Campo(5, 'DESC_COMPL', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroM500(Registro):
     """
@@ -2514,7 +2687,8 @@ class RegistroM500(Registro):
         CampoNumerico(14, 'VL_CRED_DESC'),
         Campo(15, 'SLD_CRED', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroM505(Registro):
     """
@@ -2532,7 +2706,8 @@ class RegistroM505(Registro):
         Campo(9, 'QUANT_BC_COFINS'),
         Campo(10, 'DESC_CRED'),
     ]
-
+    
+    nivel = 3
 
 class RegistroM510(Registro):
     """
@@ -2547,7 +2722,8 @@ class RegistroM510(Registro):
         Campo(6, 'DESCR_AJ'),
         CampoData(7, 'DT_REF'),
     ]
-
+    
+    nivel = 3
 
 class RegistroM515(Registro):
     """
@@ -2564,7 +2740,8 @@ class RegistroM515(Registro):
         Campo(8, 'COD_CTA'),
         Campo(9, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroM600(Registro):
     """
@@ -2585,7 +2762,8 @@ class RegistroM600(Registro):
         CampoNumerico(12, 'VL_CONT_CUM_REC', obrigatorio=True),
         CampoNumerico(13, 'VL_TOT_CONT_REC', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroM605(Registro):
     """
@@ -2597,7 +2775,8 @@ class RegistroM605(Registro):
         Campo(3, 'COD_REC', obrigatorio=True),
         CampoNumerico(4, 'VL_DEBITO', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroM610(Registro):
     """
@@ -2618,7 +2797,8 @@ class RegistroM610(Registro):
         CampoNumerico(12, 'VL_CONT_DIFER_ANT'),
         CampoNumerico(13, 'VL_CONT_PER', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class RegistroM611(Registro):
     """
@@ -2632,7 +2812,8 @@ class RegistroM611(Registro):
         CampoNumerico(5, 'VL_EXC_ESP_COOP'),
         CampoNumerico(6, 'VL_BC_CONT', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroM620(Registro):
     """
@@ -2647,7 +2828,8 @@ class RegistroM620(Registro):
         Campo(6, 'DESCR_AJ'),
         CampoData(7, 'DT_REF'),
     ]
-
+    
+    nivel = 4
 
 class RegistroM625(Registro):
     """
@@ -2664,7 +2846,8 @@ class RegistroM625(Registro):
         Campo(8, 'COD_CTA'),
         Campo(9, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 5
 
 class RegistroM630(Registro):
     """
@@ -2679,7 +2862,8 @@ class RegistroM630(Registro):
         CampoNumerico(6, 'VL_CRED_DIF'),
         Campo(7, 'COD_CRED'),
     ]
-
+    
+    nivel = 4
 
 class RegistroM700(Registro):
     """
@@ -2695,7 +2879,8 @@ class RegistroM700(Registro):
         Campo(7, 'PER_APUR', obrigatorio=True),
         CampoData(8, 'DT_RECEB'),
     ]
-
+    
+    nivel = 2
 
 class RegistroM800(Registro):
     """
@@ -2709,7 +2894,8 @@ class RegistroM800(Registro):
         Campo(4, 'COD_CTA'),
         Campo(5, 'DESC_COMPL'),
     ]
-
+    
+    nivel = 2
 
 class RegistroM810(Registro):
     """
@@ -2723,7 +2909,8 @@ class RegistroM810(Registro):
         Campo(4, 'COD_CTA'),
         Campo(5, 'DESC_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class RegistroM990(Registro):
     """
@@ -2733,7 +2920,8 @@ class RegistroM990(Registro):
         CampoFixo(1, 'REG', 'M990'),
         CampoNumerico(2, 'QTD_LIN_M', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroP001(Registro):
     """
@@ -2743,7 +2931,8 @@ class RegistroP001(Registro):
         CampoFixo(1, 'REG', 'P001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class RegistroP010(Registro):
     """
@@ -2753,7 +2942,8 @@ class RegistroP010(Registro):
         CampoFixo(1, 'REG', 'P010'),
         CampoCNPJ(2, 'CNPJ', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroP100(Registro):
     """
@@ -2773,7 +2963,8 @@ class RegistroP100(Registro):
         Campo(11, 'COD_CTA'),
         Campo(12, 'INFO_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class RegistroP110(Registro):
     """
@@ -2786,7 +2977,8 @@ class RegistroP110(Registro):
         Campo(4, 'DET_VALOR', obrigatorio=True),
         Campo(5, 'INF_COMPL'),
     ]
-
+    
+    nivel = 4
 
 class RegistroP199(Registro):
     """
@@ -2797,7 +2989,8 @@ class RegistroP199(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 4
 
 class RegistroP200(Registro):
     """
@@ -2812,7 +3005,8 @@ class RegistroP200(Registro):
         CampoNumerico(6, 'VL_TOT_CONT_DEV', obrigatorio=True),
         Campo(7, 'COD_REC', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class RegistroP210(Registro):
     """
@@ -2827,7 +3021,8 @@ class RegistroP210(Registro):
         Campo(6, 'DESCR_AJ'),
         CampoData(7, 'DT_REF'),
     ]
-
+    
+    nivel = 3
 
 class RegistroP990(Registro):
     """
@@ -2837,7 +3032,8 @@ class RegistroP990(Registro):
         CampoFixo(1, 'REG', 'P990'),
         CampoNumerico(2, 'QTD_LIN_P', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class Registro1001(Registro):
     """
@@ -2847,7 +3043,8 @@ class Registro1001(Registro):
         CampoFixo(1, 'REG', '1001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class Registro1010(Registro):
     """
@@ -2862,7 +3059,43 @@ class Registro1010(Registro):
         Campo(6, 'DESC_DEC_JUD'),
         CampoData(7, 'DT_SENT_JUD'),
     ]
+    
+    nivel = 2
 
+class Registro1011(Registro):
+    """
+    Apuração de Crédito Extemporâneo - Documentos e Operações de Períodos Anteriores – PIS/PASEP
+    """
+    campos = [
+        CampoFixo(1, 'REG', '1011'),
+        Campo(2, 'REG_REF'),
+        Campo(3, 'CHAVE_DOC'),
+        Campo(4, 'COD_PART'),
+        Campo(5, 'COD_ITEM'),
+        CampoData(6, 'DT_OPER', obrigatorio=True),
+        CampoNumerico(7, 'VL_OPER', obrigatorio=True),
+        Campo(8, 'CST_PIS', obrigatorio=True),
+        CampoNumerico(9, 'VL_BC_PIS'),
+        CampoNumerico(10, 'ALIQ_PIS'),
+        CampoNumerico(11, 'VL_PIS'),
+        Campo(12, 'CST_COFINS', obrigatorio=True),
+        CampoNumerico(13, 'VL_BC_COFINS'),
+        CampoNumerico(14, 'ALIQ_COFINS'),
+        CampoNumerico(15, 'VL_COFINS'),
+        Campo(16, 'CST_PIS_SUSP', obrigatorio=True),
+        CampoNumerico(17, 'VL_BC_PIS_SUSP'),
+        CampoNumerico(18, 'ALIQ_PIS_SUSP'),
+        CampoNumerico(19, 'VL_PIS_SUSP'),
+        Campo(20, 'CST_COFINS_SUSP', obrigatorio=True),
+        CampoNumerico(21, 'VL_BC_COFINS_SUSP'),
+        CampoNumerico(22, 'ALIQ_COFINS_SUSP'),
+        CampoNumerico(23, 'VL_COFINS_SUSP'),
+        Campo(24, 'COD_CTA'),
+        Campo(25, 'COD_CCUS'),
+        Campo(26, 'DESC_DOC_OPER'),
+    ]
+    
+    nivel = 3
 
 class Registro1020(Registro):
     """
@@ -2874,7 +3107,8 @@ class Registro1020(Registro):
         Campo(3, 'IND_NAT_ACAO', obrigatorio=True),
         CampoData(4, 'DT_DEC_ADM', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class Registro1100(Registro):
     """
@@ -2900,7 +3134,8 @@ class Registro1100(Registro):
         CampoNumerico(17, 'VL_CRED_OUT'),
         Campo(18, 'SLD_CRED_FIM'),
     ]
-
+    
+    nivel = 2
 
 class Registro1101(Registro):
     """
@@ -2930,7 +3165,8 @@ class Registro1101(Registro):
         Campo(21, 'PER_ESCRIT'),
         CampoCNPJ(22, 'CNPJ', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro1102(Registro):
     """
@@ -2942,7 +3178,8 @@ class Registro1102(Registro):
         CampoNumerico(3, 'VL_CRED_PIS_NT_MI'),
         CampoNumerico(4, 'VL_CRED_PIS_EXP'),
     ]
-
+    
+    nivel = 4
 
 class Registro1200(Registro):
     """
@@ -2961,7 +3198,8 @@ class Registro1200(Registro):
         CampoNumerico(10, 'VL_JUR'),
         CampoData(11, 'DT_RECOL'),
     ]
-
+    
+    nivel = 2
 
 class Registro1210(Registro):
     """
@@ -2980,7 +3218,8 @@ class Registro1210(Registro):
         Campo(10, 'COD_CTA'),
         Campo(11, 'DESC_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class Registro1220(Registro):
     """
@@ -2993,7 +3232,8 @@ class Registro1220(Registro):
         Campo(4, 'COD_CRED', obrigatorio=True),
         CampoNumerico(5, 'VL_CRED', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro1300(Registro):
     """
@@ -3009,7 +3249,8 @@ class Registro1300(Registro):
         CampoNumerico(7, 'VL_RET_DCOMP', obrigatorio=True),
         Campo(8, 'SLD_RET', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class Registro1500(Registro):
     """
@@ -3035,7 +3276,8 @@ class Registro1500(Registro):
         CampoNumerico(17, 'VL_CRED_OUT'),
         Campo(18, 'SLD_CRED_FIM', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class Registro1501(Registro):
     """
@@ -3065,7 +3307,8 @@ class Registro1501(Registro):
         Campo(21, 'PER_ESCRIT'),
         CampoCNPJ(22, 'CNPJ', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro1502(Registro):
     """
@@ -3077,7 +3320,8 @@ class Registro1502(Registro):
         CampoNumerico(3, 'VL_CRED_COFINS_NT_MI'),
         CampoNumerico(4, 'VL_CRED_COFINS_EXP'),
     ]
-
+    
+    nivel = 4
 
 class Registro1600(Registro):
     """
@@ -3096,7 +3340,8 @@ class Registro1600(Registro):
         CampoNumerico(10, 'VL_JUR'),
         CampoData(11, 'DT_RECOL'),
     ]
-
+    
+    nivel = 2
 
 class Registro1610(Registro):
     """
@@ -3115,7 +3360,8 @@ class Registro1610(Registro):
         Campo(10, 'COD_CTA'),
         Campo(11, 'DESC_COMPL'),
     ]
-
+    
+    nivel = 3
 
 class Registro1620(Registro):
     """
@@ -3128,7 +3374,8 @@ class Registro1620(Registro):
         Campo(4, 'COD_CRED', obrigatorio=True),
         CampoNumerico(5, 'VL_CRED', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro1700(Registro):
     """
@@ -3144,7 +3391,8 @@ class Registro1700(Registro):
         CampoNumerico(7, 'VL_RET_DCOMP', obrigatorio=True),
         Campo(8, 'SLD_RET', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class Registro1800(Registro):
     """
@@ -3161,7 +3409,8 @@ class Registro1800(Registro):
         CampoData(8, 'DT_REC_UNI'),
         Campo(9, 'COD_REC'),
     ]
-
+    
+    nivel = 2
 
 class Registro1809(Registro):
     """
@@ -3172,7 +3421,8 @@ class Registro1809(Registro):
         Campo(2, 'NUM_PROC', obrigatorio=True),
         Campo(3, 'IND_PROC', obrigatorio=True),
     ]
-
+    
+    nivel = 3
 
 class Registro1900(Registro):
     """
@@ -3194,7 +3444,8 @@ class Registro1900(Registro):
         Campo(12, 'INF_COMPL'),
         Campo(13, 'COD_CTA'),
     ]
-
+    
+    nivel = 2
 
 class Registro1990(Registro):
     """
@@ -3204,7 +3455,8 @@ class Registro1990(Registro):
         CampoFixo(1, 'REG', '1990'),
         CampoNumerico(2, 'QTD_LIN_1', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class Registro9001(Registro):
     """
@@ -3214,7 +3466,8 @@ class Registro9001(Registro):
         CampoFixo(1, 'REG', '9001'),
         Campo(2, 'IND_MOV', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class Registro9900(Registro):
     """
@@ -3225,7 +3478,8 @@ class Registro9900(Registro):
         Campo(2, 'REG_BLC', obrigatorio=True),
         CampoNumerico(3, 'QTD_REG_BLC', obrigatorio=True),
     ]
-
+    
+    nivel = 2
 
 class Registro9990(Registro):
     """
@@ -3235,7 +3489,8 @@ class Registro9990(Registro):
         CampoFixo(1, 'REG', '9990'),
         CampoNumerico(2, 'QTD_LIN_9', obrigatorio=True),
     ]
-
+    
+    nivel = 1
 
 class Registro9999(Registro):
     """
@@ -3245,3 +3500,5 @@ class Registro9999(Registro):
         CampoFixo(1, 'REG', '9999'),
         CampoNumerico(2, 'QTD_LIN', obrigatorio=True),
     ]
+    nivel = 0
+
