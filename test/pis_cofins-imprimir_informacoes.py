@@ -3,7 +3,8 @@
 
 # Imprimir informações da SPED EFD Contribuições em um arquivo.csv
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '23 de Janeiro de 2020 (início: 10 de Janeiro de 2020)'
+Data  = '24 de Janeiro de 2020 (início: 10 de Janeiro de 2020)'
+# Versão mínima exigida: python 3.8
 
 import os, csv, sys, re
 from datetime import datetime
@@ -21,8 +22,8 @@ from sped.efd.pis_cofins.registros import *
 verbose = False
 
 # Altere o endereço e nome do arquivo EFD Contribuições
-# file_path = './PISCOFINS_20150201_20150228_77744881000155_teste1.txt'
-file_path = './PISCOFINS_20170101_20170131_55566871000169_teste2.txt'
+file_path = './PISCOFINS_20150201_20150228_77744881000155_teste1.txt'
+#file_path = './PISCOFINS_20170101_20170131_55566871000169_teste2.txt'
 
 arq = ArquivoDigital() # veja sped/arquivos.py
 
@@ -37,6 +38,8 @@ registros_de_valor = ['VL_DOC', 'VL_BRT', 'VL_OPER', 'VL_OPR', 'VL_OPER_DEP', 'V
 
 registros_de_chave_eletronica = ['CHV_NFE', 'CHV_CTE', 'CHV_NFSE', 'CHV_DOCe', 'CHV_CFE', 'CHV_NFE_CTE']
 
+registros_de_data = ['DT_INI', 'DT_FIN', 'DT_DOC', 'DT_E_S', 'DT_A_P']
+
 registros_de_codigo_cst = ['CST_PIS', 'CST_COFINS']
 
 registros_de_base_de_calculo = ['VL_BC_PIS', 'VL_BC_COFINS']
@@ -47,11 +50,11 @@ def formatar_valor(nome,val):
 		# Manual de Orientação Contribuinte v 6.00 - NFe, quantidade de caracteres: 02 04 14 02 03 09 01 08 01
 		return "%s.%s.%s.%s.%s.%s.%s.%s-%s" % (chave[0:2],chave[2:6],chave[6:20],chave[20:22],chave[22:25],chave[25:34],chave[34:35],chave[35:43],chave[43:44])
 	# re.search: find something anywhere in the string and return a match object.
-	if re.search('CNPJ', nome, flags=re.IGNORECASE): # em perl: if (cfop =~ /CNPJ/i)
+	if re.search('CNPJ', nome, flags=re.IGNORECASE): # em perl: if (nome =~ /CNPJ/i)
 		cnpj = val
 		# https://wiki.python.org.br/Cnpj
 		return "%s.%s.%s/%s-%s" % (cnpj[0:2],cnpj[2:5],cnpj[5:8],cnpj[8:12],cnpj[12:14])
-	if nome in ['DT_INI', 'DT_FIN', 'DT_DOC', 'DT_E_S', 'DT_A_P'] and len(val) == 8:
+	if nome in registros_de_data and len(val) == 8:
 		dt = datetime.strptime(val, "%d%m%Y") # ddmmaaaa
 		#return dt.isoformat('T')
 		return dt.strftime("%d/%m/%Y")
@@ -146,7 +149,7 @@ def imprimir_informacoes_linha_a_linha():
 						info[c.nome] = valor
 					if c.nome in registros_de_valor:
 						info['Valor do Item'] = valor
-					if c.nome in registros_de_chave_eletronica and registro.valores[c.indice] != '':
+					if c.nome in registros_de_chave_eletronica:
 						info['Chave Eletrônica'] = valor
 					if c.nome in registros_de_base_de_calculo:
 						info['Valor da Base de Cálculo'] = valor
@@ -222,7 +225,7 @@ with open('efd_contrib.csv', 'w', newline='') as csvfile:
 				
 				if c.nome in colunas:
 					info[nivel][codigo_cst][valor_item][c.nome] = valor
-				if c.nome in registros_de_chave_eletronica and registro.valores[c.indice] != '':
+				if c.nome in registros_de_chave_eletronica:
 					info[nivel][codigo_cst][valor_item]['Chave Eletrônica'] = valor
 				if c.nome in registros_de_valor:
 					info[nivel][codigo_cst][valor_item]['Valor do Item'] = valor
