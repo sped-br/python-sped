@@ -26,7 +26,7 @@ file_path = './PISCOFINS_20170101_20170131_55566871000169_teste2.txt'
 
 arq = ArquivoDigital() # veja sped/arquivos.py
 
-arq.readfile(file_path, 'verbose')
+arq.readfile(file_path, codificacao='latin-1', verbose=True)
 
 print() if verbose else 0
 
