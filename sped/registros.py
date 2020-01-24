@@ -7,7 +7,6 @@ from .erros import CampoError
 from .erros import CampoInexistenteError
 from .erros import RegistroError
 
-
 class Registro(object):
     """
     Classe abstrata para a manipulação dos registros.
@@ -66,17 +65,28 @@ class Registro(object):
     campos = []
 
     def __init__(self, line=None):
+		
         if not line:
             self._valores = [''] * (len(self.campos) + 2)
+            #print(f'--> A {self._valores = } ; {self.campos = } ')
             for c in self.campos:
                 if isinstance(c, CampoFixo):
                     self._valores[c.indice] = c.valor
+                    #print(f'--> B {self._valores = } ; {c.indice = } ; {c.nome = } ; {c.valor = } ')
         else:
             self._valores = line.split('|')
             for c in self.campos:
                 if isinstance(c, CampoFixo):
                     if self._valores[c.indice] != c.valor:
                         raise CampoError(self, c.nome)
+
+    @property
+    def campos(self):
+        return self.__class__.campos
+
+    @property
+    def nivel(self):
+        return self.__class__.nivel
 
     @property
     def valores(self):
@@ -116,7 +126,7 @@ class Registro(object):
         return '|'.join(self._valores)
 
     def __repr__(self):
-        return f'<{self.__class__.__module__}.{self.__class__.__name__}>'
+        return '<%s.%s>' % (self.__class__.__module__, self.__class__.__name__)
 
 
 class RegistroIndefinido(Registro):
