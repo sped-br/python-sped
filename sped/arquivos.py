@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-
 from collections import OrderedDict
 from io import StringIO
+from time import sleep
 
-from .registros import RegistroIndefinido
-
+from .registros import RegistroIndefinido, Registro
+from .campos import *
 
 class ArquivoDigital(object):
     registros = None
@@ -19,17 +19,22 @@ class ArquivoDigital(object):
         self._registro_encerramento = self.registro_encerramento()
         self._blocos = OrderedDict()
 
-    def readfile(self, filename):
-        with open(filename) as spedfile:
-            for line in [line.rstrip('\r\n') for line in spedfile]:
-                self.read_registro(line.decode('utf8'))
+    def readfile(self, filename, codificacao='utf-8', verbose=None):
+        with open(filename, 'r', encoding=codificacao) as spedfile: # encoding='utf-8', 'latin-1'
+            for line in [line.strip() for line in spedfile]:
+                reg = self.read_registro(line)
+                if reg == '9999': # Ler arquivo até a última linha válida da EFD que contém o registro |9999|.
+                    break
+        if verbose:
+            print(f"Successfully read the file: \n'{filename}'")
 
     def read_registro(self, line):
         reg_id = line.split('|')[1]
-
+        reg_id = reg_id.upper() # 'c170' --> 'C170'
+        
         try:
-            registro_class = getattr(self.__class__.registros,
-                                     'Registro' + reg_id)
+			# self.__class__.registros.Registro0000 ... Resgistro9999
+            registro_class = getattr(self.__class__.registros, 'Registro' + reg_id)
         except AttributeError:
             raise RuntimeError(u"Arquivo inválido para EFD - PIS/COFINS")
 
@@ -43,6 +48,8 @@ class ArquivoDigital(object):
             bloco_id = reg_id[0]
             bloco = self._blocos[bloco_id]
             bloco.add(registro)
+        
+        return reg_id
 
     def write_to(self, buff):
         buff.write(self._registro_abertura.as_line() + u'\r\n')
