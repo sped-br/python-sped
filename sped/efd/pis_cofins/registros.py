@@ -9,7 +9,6 @@ from ...campos import CampoNumerico
 from ...campos import CampoRegex
 from ...registros import Registro
 
-
 class Registro0000(Registro):
     """
     Abertura do Arquivo Digital e Identificação da Pessoa Jurídica
@@ -147,7 +146,6 @@ class Registro0140(Registro):
     ]
     
     nivel = 2
-
 
 class Registro0145(Registro):
     """
