@@ -2,10 +2,8 @@
 
 from collections import OrderedDict
 from io import StringIO
-from time import sleep
 
-from .registros import RegistroIndefinido, Registro
-from .campos import *
+from .registros import RegistroIndefinido
 
 class ArquivoDigital(object):
     registros = None
@@ -23,32 +21,40 @@ class ArquivoDigital(object):
         with open(filename, 'r', encoding=codificacao) as spedfile: # encoding='utf-8', 'latin-1'
             for line in [line.strip() for line in spedfile]:
                 reg = self.read_registro(line)
-                if reg == '9999': # Ler arquivo até a última linha válida da EFD que contém o registro |9999|.
+                # Ler arquivo até a última linha válida da EFD que contém o registro |9999|.
+                if reg == '9999':
                     break
         if verbose:
             print(f"Successfully read the file: \n'{filename}'")
 
     def read_registro(self, line):
-        reg_id = line.split('|')[1]
-        reg_id = reg_id.upper() # 'c170' --> 'C170'
+        reg_id = line.split('|')[1].upper() # 'c170' --> 'C170'
         
         try:
-			# self.__class__.registros.Registro0000 ... Resgistro9999
             registro_class = getattr(self.__class__.registros, 'Registro' + reg_id)
         except AttributeError:
             raise RuntimeError(u"Arquivo inválido para EFD - PIS/COFINS")
 
         registro = registro_class(line)
+        bloco_id = reg_id[0]
+        bloco = self._blocos[bloco_id]
 
         if registro.__class__ == self.__class__.registro_abertura:
+			# Atualizar o registro de abertura 0000
             self._registro_abertura = registro
         elif registro.__class__ == self.__class__.registro_encerramento:
+			# Atualizar o registro de encerramento 9999
             self._registro_encerramento = registro
+        elif registro.__class__ == bloco.registro_abertura.__class__:
+			# Atualizar os registros de abertura: 0001, A001, C001, ...
+            bloco.registro_abertura = registro           
+        elif registro.__class__ == bloco.registro_encerramento.__class__:
+			# Atualizar os registros de encerramento: 0990, A990, C990, ...
+            bloco.registro_encerramento = registro
         else:
-            bloco_id = reg_id[0]
-            bloco = self._blocos[bloco_id]
+			# Adicionar novos registros a cada linha obtida de filename
             bloco.add(registro)
-        
+                    
         return reg_id
 
     def write_to(self, buff):
