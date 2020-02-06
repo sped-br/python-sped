@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import re
 from collections import OrderedDict
 from io import StringIO
 
@@ -18,22 +19,31 @@ class ArquivoDigital(object):
         self._blocos = OrderedDict()
 
     def readfile(self, filename, codificacao='utf-8', verbose=None):
+        sucesso = False
         with open(filename, 'r', encoding=codificacao) as spedfile: # encoding='utf-8', 'latin-1'
             for line in [line.strip() for line in spedfile]:
-                reg = self.read_registro(line)
-                # Ler arquivo até a última linha válida da EFD que contém o registro |9999|.
-                if reg == '9999':
+                # a simple way to remove multiple spaces in a string
+                line = re.sub('\s{2,}', ' ', line)
+                # Em algumas EFDs foram encontrados registros digitados incorretamente em minúsculo.
+                # Por exemplo, o registro 'c491' deve ser corrigido para 'C491'.
+                line = line[:6].upper() + line[6:] # line = '|c491|...' --> '|C491|...'
+                regt = self.read_registro(line)
+                # Verificar se foi lido o arquivo SPED até a última linha válida que contém o registro '9999'.
+                if regt.__class__ == self.__class__.registro_encerramento:
+                    sucesso = True
                     break
-        if verbose:
-            print(f"Successfully read the file: \n'{filename}'")
+        if not sucesso:
+            raise RuntimeError(u"\nOcorreu uma falha ao ler o arquivo: '%s'.\n" % filename)
+        elif verbose:
+            print(u"O arquivo SPED '%s' foi lido com sucesso.\n" % filename)
 
     def read_registro(self, line):
-        reg_id = line.split('|')[1].upper() # 'c170' --> 'C170'
+        reg_id = line.split('|')[1]
         
         try:
             registro_class = getattr(self.__class__.registros, 'Registro' + reg_id)
         except AttributeError:
-            raise RuntimeError(u"Arquivo inválido para EFD - PIS/COFINS")
+            raise RuntimeError(u"Arquivo inválido para EFD - PIS/COFINS. Registro: %s" % reg_id)
 
         registro = registro_class(line)
         bloco_id = reg_id[0]
@@ -54,8 +64,8 @@ class ArquivoDigital(object):
         else:
 			# Adicionar novos registros a cada linha obtida de filename
             bloco.add(registro)
-                    
-        return reg_id
+
+        return registro
 
     def write_to(self, buff):
         buff.write(self._registro_abertura.as_line() + u'\r\n')

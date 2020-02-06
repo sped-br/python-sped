@@ -73,7 +73,8 @@ class Registro(object):
                     self._valores[c.indice] = c.valor
             self._numero_da_linha = None
         else:
-            self._valores = line.split('|')
+            #self._valores = line.split('|')
+            self._valores = [valor.strip() for valor in line.split('|')]
             for c in self.campos:
                 if isinstance(c, CampoFixo):
                     if self._valores[c.indice] != c.valor:
@@ -81,7 +82,7 @@ class Registro(object):
             # Inicializar contador na leitura do registro de abertura '0000'
             if self._valores[1] == '0000':
                 __class__.contador_de_linhas = itertools.count(1)
-            # adicionar informação do número da linha do arquivo sped
+            # Informação do número da linha do arquivo sped
             self._numero_da_linha = next(__class__.contador_de_linhas)
 
     @property
