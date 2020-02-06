@@ -195,14 +195,14 @@ if __name__ == '__main__':
 		
 		# SPED EFD Contrib:
 		for index,file_path in enumerate(lista_de_arquivos.find_all_efd_contrib,1):
-			print( f"{index:>6}: {file_path} ; type = {lista_de_arquivos.informations[file_path]['tipo']}" )
+			print( f"{index:>6}: {file_path} ; tipo = {lista_de_arquivos.informations[file_path]['tipo']}" )
 			#continue
 			for attribute, value in lista_de_arquivos.get_file_info(file_path).items():
 				print(f'{attribute:>30}: {value}')
 		
 		# SPED EFD ICMS_IPI:
 		for index,file_path in enumerate(lista_de_arquivos.find_all_efd_icmsipi,1):
-			print( f"{index:>6}: {file_path} ; type = {lista_de_arquivos.informations[file_path]['tipo']}" )
+			print( f"{index:>6}: {file_path} ; tipo = {lista_de_arquivos.informations[file_path]['tipo']}" )
 			#continue
 			for attribute, value in lista_de_arquivos.get_file_info(file_path).items():
 				print(f'{attribute:>30}: {value}')

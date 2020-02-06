@@ -585,7 +585,7 @@ class EFD_Contrib_Info(ArquivoDigital):
 		
 		# adicionar informação de NAT_BC_CRED para os créditos (50 <= cst <= 66) quando houver informação do CFOP e NAT_BC_CRED estiver vazio.
 		if (len(dict_info['NAT_BC_CRED']) == 0 and re.search('\d{4}', dict_info['CFOP'])
-			and ( re.search('[1-9]', dict_info['ALIQ_PIS']) or re.search('[1-9]', dict_info['ALIQ_COFINS']) ) # aliq_cofins > 0
+			#and ( re.search('[1-9]', dict_info['ALIQ_PIS']) or re.search('[1-9]', dict_info['ALIQ_COFINS']) ) # aliq_cofins > 0
 			and re.search('\d{1,2}', dict_info['CST Código da Situação Tributária'])):
 			cfop = str(dict_info['CFOP'])
 			cst  = int(dict_info['CST Código da Situação Tributária'])
