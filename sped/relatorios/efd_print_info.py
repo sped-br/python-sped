@@ -26,7 +26,7 @@ class EFD_Contrib_Info(ArquivoDigital):
 	
 	# class or static variable
 	
-	# Python 3 Deep Dive (Part 4 - OOP)/03. Project 1/03. Project Solution - Transaction Numbers.mkv
+	# Python 3 Deep Dive (Part 4 - OOP)/03. Project 1/03. Project Solution - Transaction Numbers
 	contador_de_linhas = itertools.count(2) # 2 é o valor inicial do contador
 	
 	tabela_natureza_da_conta = {
@@ -183,7 +183,8 @@ class EFD_Contrib_Info(ArquivoDigital):
 			   'NAT_BC_CRED', 'CFOP', 'COD_PART', *registros_de_cadastro_do_participante, 'CNPJ_CPF_PART', 'Data de Emissão', 'Data de Execução', 'COD_ITEM', *registros_de_identificacao_do_item, 
 			   'Chave Eletrônica', 'COD_MOD', 'NUM_DOC', 'NUM_ITEM', 'COD_CTA', *registros_de_plano_de_contas, 'Valor do Item', 'Valor da Base de Cálculo', 'ALIQ_PIS', 'ALIQ_COFINS']
 
-	# initialize the attributes of the class	
+	# initialize the attributes of the class
+	
 	def __init__(self, file_path=None, encoding=None, verbose=False):
 
 		if file_path is None or not os.path.isfile(file_path):
