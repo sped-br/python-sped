@@ -30,12 +30,9 @@ if python_version < (3,6,0):
 	print('versão atual', "%s.%s.%s" % (python_version[0],python_version[1],python_version[2]))
 	exit()
 
-if __name__ == '__main__':	
+if __name__ == '__main__':
 	
-	CurrentDirectory = os.getcwd()
-	
-	dir_path = '/home/claudio/Documentos/'
-	dir_path = CurrentDirectory
+	dir_path = os.getcwd() # CurrentDirectory
 	extensao = 'txt'
 	
 	lista_de_arquivos = ReadFiles(root_path = dir_path, extension = extensao)
