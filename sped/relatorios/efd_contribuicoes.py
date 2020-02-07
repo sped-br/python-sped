@@ -60,14 +60,16 @@ if __name__ == '__main__':
 		indice_do_arquivo = 0
 	else:
 		dir_path_exemplo = '/home/claudio/Documentos/'
-		print(f"\n\tlista_de_arquivos = ReadFiles(root_path = dir_path, extension = extensao).\n")
+		print(f"\nA lista de arquivos de SPED Contribuições é obtida a partir de:\n")
+		print(f"\tlista_de_arquivos = ReadFiles(root_path = dir_path, extension = extensao).\n")
 		print(f"tal que:\n")
 		print(f"\tdir_path = '{dir_path}' e extensao = '{extensao}'.\n")
-		print(f"Nenhum arquivo de EFD Contribuções foi encontrado no diretório dir_path = '{dir_path}' com a extensao = '{extensao}'.")
-		print(f"Altere a variável 'dir_path' para o diretório que contenha as EFDs.")
-		print(f"Por exemplo, se as EFDs estão localizadas no diretório '{dir_path_exemplo}', então:")
-		print(f"\n\tReadFiles(root_path = '{dir_path_exemplo}', extension = {extensao}).\n")
-		print(f"Outra alternativa é copiar este arquivo '{__file__}' para o diretório que contenha as EFDs e, em seguida, executar no terminal:\n")
+		print(f"Nenhum arquivo de EFD Contribuções foi encontrado no diretório definido acima.")
+		print(f"Se as EFDs estão localizadas, por exemplo, no diretório '{dir_path_exemplo}',")
+		print(f"então altere a variável 'dir_path' para o diretório que contenha as EFDs:")
+		print(f"\n\tdir_path = '{dir_path_exemplo}'\n")
+		print(f"Outra alternativa é copiar este arquivo '{__file__}' para o diretório que contenha as EFDs.")
+		print(f"Em seguida, executar no terminal:\n")
 		print(f"\t python {__file__} \n")
 		exit()
 
