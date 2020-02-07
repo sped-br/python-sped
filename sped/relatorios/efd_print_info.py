@@ -9,6 +9,7 @@ from datetime import datetime
 from time import time, sleep
 from sped.efd.pis_cofins.arquivos import ArquivoDigital
 from sped.relatorios.efd_tabelas import EFD_Tabelas
+from sped.campos import CampoCNPJ, CampoCPF, CampoCPFouCNPJ, CampoChaveEletronica
 
 # Versão mínima exigida: python 3.6.0
 python_version = sys.version_info
@@ -156,9 +157,12 @@ class EFD_Contrib_Info(ArquivoDigital):
 		return data_out
 
 	def formatar_chave(chave):
+		chave_copia = chave
 		if len(chave) == 44:
-			chave = "%s.%s.%s.%s.%s.%s.%s.%s-%s" % (chave[0:2],chave[2:6],chave[6:20],chave[20:22],chave[22:25],chave[25:34],chave[34:35],chave[35:43],chave[43:44])
-		return chave
+			chave_copia = "%s.%s.%s.%s.%s.%s.%s.%s-%s" % (chave[0:2],chave[2:6],chave[6:20],chave[20:22],chave[22:25],chave[25:34],chave[34:35],chave[35:43],chave[43:44])
+		if len(chave) >= 1 and not CampoChaveEletronica.validar(chave):
+			chave_copia = chave_copia + ' : o dígito verificador da chave é inválido!'
+		return chave_copia
 
 	def formatar_ncm(ncm):
 		if len(ncm) == 8:
@@ -166,22 +170,27 @@ class EFD_Contrib_Info(ArquivoDigital):
 		return ncm
 	
 	def formatar_cnpj(cnpj):
+		cnpj_copia = cnpj
 		if len(cnpj) == 14:
-			# https://wiki.python.org.br/Cnpj
-			cnpj = "%s.%s.%s/%s-%s" % (cnpj[0:2],cnpj[2:5],cnpj[5:8],cnpj[8:12],cnpj[12:14])
-		return cnpj
+			cnpj_copia = "%s.%s.%s/%s-%s" % (cnpj[0:2],cnpj[2:5],cnpj[5:8],cnpj[8:12],cnpj[12:14])
+		if len(cnpj) >= 1 and not CampoCNPJ.validar(cnpj):
+			cnpj_copia = cnpj_copia + ' : o dígito verificador do cnpj é inválido!'
+		return cnpj_copia
 	
 	def formatar_cpf(cpf):
+		cpf_copia = cpf
 		if len(cpf) == 11:
-			cpf =  "%s.%s.%s-%s" % (cpf[0:3],cpf[3:6],cpf[6:9],cpf[9:11])
-		return cpf
+			cpf_copia = "%s.%s.%s-%s" % (cpf[0:3],cpf[3:6],cpf[6:9],cpf[9:11])
+		if len(cpf) >= 1 and not CampoCPF.validar(cpf):
+			cpf_copia = cpf_copia + ' : o dígito verificador do cpf é inválido!'
+		return cpf_copia
 
-	def formatar_cnpj_cpf(cod):
-		if len(cod) == 11:
-			cod = "CPF %s.%s.%s-%s" % (cod[0:3],cod[3:6],cod[6:9],cod[9:11])
-		elif len(cod) == 14:
-			cod = "CNPJ %s.%s.%s/%s-%s" % (cod[0:2],cod[2:5],cod[5:8],cod[8:12],cod[12:14])
-		return cod
+	def formatar_cnpj_cpf(pjpf):
+		if len(pjpf) == 11:
+			pjpf = "CPF %s.%s.%s-%s" % (pjpf[0:3],pjpf[3:6],pjpf[6:9],pjpf[9:11])
+		elif len(pjpf) == 14:
+			pjpf = "CNPJ %s.%s.%s/%s-%s" % (pjpf[0:2],pjpf[2:5],pjpf[5:8],pjpf[8:12],pjpf[12:14])
+		return pjpf
 	
 	def formatar_cst(codigo_cst):
 		try:
