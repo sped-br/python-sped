@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 import re
 
 from datetime import date
@@ -32,7 +31,9 @@ class Campo(object):
         self._obrigatorio = obrigatorio
 
     def __repr__(self):
-        return f'<{self.__class__.__module__}.{self.__class__.__name__}({self._indice}, {self._nome})>'
+        return '<%s.%s(%s, %s)>' % (self.__class__.__module__,
+                                    self.__class__.__name__,
+                                    self._indice, self._nome)
 
     @property
     def indice(self):
@@ -186,6 +187,8 @@ class CampoData(Campo):
         return datetime.strptime(valor, '%d%m%Y').date()
 
     def set(self, registro, valor):
+        # https://stackoverflow.com/questions/19887353/attributeerror-str-object-has-no-attribute-strftime
+        valor = datetime.strptime(valor, '%d%m%Y')
         if isinstance(valor, date):
             super().set(registro, valor.strftime('%d%m%Y'))
         elif not valor:
@@ -207,8 +210,8 @@ class CampoRegex(Campo):
         else:
             raise FormatoInvalidoError(registro, str(self))
 
-    def __repr__(self):
-        return f'{self.__class__.__name__}({self.indice}, {self.nome}, {self._obrigatorio}, {self._regex})'
+    # def __repr__(self):
+    #     return '' f'{self.__class__.__name__}({self.indice}, {self.nome}, {self._obrigatorio}, {self._regex})'
 
 
 class CampoCNPJ(Campo):
@@ -273,3 +276,33 @@ class CampoCPFouCNPJ(Campo):
         if len(valor) == 11:
             return CampoCPF.validar(valor)
         return False
+
+
+# Fonte: 'NFe Manual_de_Orientacao_Contribuinte_v_6.00.pdf', pg 144.
+# 5.4 Cálculo do Dígito Verificador da Chave de Acesso da NF-e
+class CampoChaveEletronica(Campo):
+    @staticmethod
+    def validar(valor):
+        if not re.search('^\d{44}$', str(valor)):
+            return None
+
+        chave = [int(digito) for digito in valor]
+        multiplicadores = [4, 3, 2] + [9, 8, 7, 6, 5, 4, 3, 2] * 5 + [0]
+
+        soma = sum([chave[i] * multiplicadores[i] for i in range(44)])
+
+        resto_da_divisao = soma % 11
+        digito_verificador = 11 - resto_da_divisao
+
+        if digito_verificador >= 10:
+            digito_verificador = 0
+
+        if chave[-1] != digito_verificador:
+            return False
+
+        # dentro da chave eletrônica há o CNPJ do emitente
+        # que também será verificado
+        cnpj = str(valor)[6:20]
+
+        return CampoCNPJ.validar(cnpj)
+
