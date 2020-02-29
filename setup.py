@@ -50,7 +50,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='sped fiscal contábil contabilidade receita federal',
-    install_requires=['six'],
+    install_requires=['six','cchardet','xlsxwriter'],
     tests_require=['pytest'],
     extras_require={
         'dev': ['pylint>=1.9.1'],
