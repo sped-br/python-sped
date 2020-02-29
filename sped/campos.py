@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 import re
 
 from datetime import date
@@ -188,12 +187,22 @@ class CampoData(Campo):
         return datetime.strptime(valor, '%d%m%Y').date()
 
     def set(self, registro, valor):
+        # https://stackoverflow.com/questions/19887353/attributeerror-str-object-has-no-attribute-strftime
+        valor = datetime.strptime(valor, '%d%m%Y')
         if isinstance(valor, date):
             super().set(registro, valor.strftime('%d%m%Y'))
         elif not valor:
             super().set(registro, None)
         else:
             raise FormatoInvalidoError(registro, self.nome)
+
+    @staticmethod
+    def formatar(data_in):
+        dt = datetime.strptime(data_in, "%d%m%Y") # ddmmaaaa
+        #data_out =  dt.isoformat('T')
+        #data_out = dt.strftime('%x %X') # excel date format
+        data_out = dt.strftime("%d/%m/%Y")
+        return data_out
 
 
 class CampoRegex(Campo):
@@ -216,7 +225,11 @@ class CampoRegex(Campo):
 class CampoCNPJ(Campo):
     @staticmethod
     def validar(valor):
-        if len(valor) != 14:
+        # valor = '53.939.351/0001-29'
+        # remover os caracteres não dígitos (\D)
+        valor = re.sub(r'\D', '', valor)
+
+        if not re.search(r'^\d{14}$', str(valor)):
             return False
 
         multiplicadores = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
@@ -239,11 +252,26 @@ class CampoCNPJ(Campo):
 
         return True
 
+    @staticmethod
+    def formatar(cnpj):
+        cnpj = re.sub(r'\D', '', cnpj)
+        mensagem_de_validacao = ''
+        if len(cnpj) >= 1:
+            if not CampoCNPJ.validar(cnpj):
+                mensagem_de_validacao = ' : dígito verificador do cnpj inválido!'
+            if len(cnpj) == 14:
+                cnpj = "%s.%s.%s/%s-%s" % (cnpj[0:2],cnpj[2:5],cnpj[5:8],cnpj[8:12],cnpj[12:14])
+        return cnpj + mensagem_de_validacao
+
 
 class CampoCPF(Campo):
     @staticmethod
     def validar(valor):
-        if len(valor) != 11:
+        # valor = '333.333.333-33'
+        # remover os caracteres não dígitos (\D)
+        valor = re.sub(r'\D', '', valor)
+
+        if not re.search(r'^\d{11}$', str(valor)):
             return False
 
         multiplicadores = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
@@ -265,13 +293,94 @@ class CampoCPF(Campo):
             return False
 
         return True
+    
+    @staticmethod
+    def formatar(cpf):
+        cpf = re.sub(r'\D', '', cpf)
+        mensagem_de_validacao = ''
+        if len(cpf) >= 1:
+            if not CampoCPF.validar(cpf):
+                mensagem_de_validacao = ' : dígito verificador do cpf inválido!'
+            if len(cpf) == 11:
+                cpf = "%s.%s.%s-%s" % (cpf[0:3],cpf[3:6],cpf[6:9],cpf[9:11])
+        return cpf + mensagem_de_validacao
 
 
 class CampoCPFouCNPJ(Campo):
     @staticmethod
     def validar(valor):
+        # remover os caracteres não dígitos (\D)
+        valor = re.sub(r'\D', '', valor)
+
         if len(valor) == 14:
             return CampoCNPJ.validar(valor)
         if len(valor) == 11:
             return CampoCPF.validar(valor)
         return False
+
+    @staticmethod
+    def formatar(digt):
+        digt = re.sub(r'\D', '', digt)
+        mensagem_de_validacao = ''
+        if len(digt) >= 1:
+            if len(digt) == 11 and not CampoCPF.validar(digt):
+                mensagem_de_validacao = ' : dígito verificador do cpf inválido!'
+            elif len(digt) == 14 and not CampoCNPJ.validar(digt):
+                mensagem_de_validacao = ' : dígito verificador do cnpj inválido!'
+
+            if len(digt) == 11:
+                digt = "CPF %s.%s.%s-%s" % (digt[0:3],digt[3:6],digt[6:9],digt[9:11])
+            elif len(digt) == 14:
+                digt = "CNPJ %s.%s.%s/%s-%s" % (digt[0:2],digt[2:5],digt[5:8],digt[8:12],digt[12:14])
+        return digt + mensagem_de_validacao
+
+
+# Fonte: 'NFe Manual_de_Orientacao_Contribuinte_v_6.00.pdf', pg 144.
+# 5.4 Cálculo do Dígito Verificador da Chave de Acesso da NF-e
+class CampoChaveEletronica(Campo):
+    @staticmethod
+    def validar(valor):
+        # remover os caracteres não dígitos (\D)
+        valor = re.sub(r'\D', '', valor)
+
+        if not re.search(r'^\d{44}$', str(valor)):
+            return False
+
+        chave = [int(digito) for digito in valor]
+        multiplicadores = [4, 3, 2] + [9, 8, 7, 6, 5, 4, 3, 2] * 5 + [0]
+
+        soma = sum([chave[i] * multiplicadores[i] for i in range(44)])
+
+        resto_da_divisao = soma % 11
+        digito_verificador = 11 - resto_da_divisao
+
+        if digito_verificador >= 10:
+            digito_verificador = 0
+
+        if chave[-1] != digito_verificador:
+            return False
+
+        # dentro da chave eletrônica há o CNPJ do emitente
+        # que também será verificado
+        cnpj = str(valor)[6:20]
+
+        return CampoCNPJ.validar(cnpj)
+
+    @staticmethod
+    def formatar(chave):
+        chave = re.sub(r'\D', '', chave)
+        mensagem_de_validacao = ''
+        if len(chave) >= 1:
+            if not CampoChaveEletronica.validar(chave):
+                mensagem_de_validacao = ' : dígito verificador da chave inválido!'
+            if len(chave) == 44:
+                chave = "%s.%s.%s.%s.%s.%s.%s.%s-%s" % (chave[0:2],chave[2:6],chave[6:20],chave[20:22],chave[22:25],chave[25:34],chave[34:35],chave[35:43],chave[43:44])
+        return chave + mensagem_de_validacao
+
+
+class CampoNCM(Campo):
+    @staticmethod
+    def formatar(ncm):
+        if len(ncm) == 8:
+            ncm = "%s.%s.%s" % (ncm[0:4],ncm[4:6],ncm[6:8])
+        return ncm
