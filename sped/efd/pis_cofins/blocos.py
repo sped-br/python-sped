@@ -30,14 +30,12 @@ class Bloco0(Bloco):
     registro_abertura = Registro0001()
     registro_encerramento = Registro0990()
 
-
 class BlocoA(Bloco):
     """
     Documentos Fiscais - Serviços (ISS)
     """
     registro_abertura = RegistroA001()
     registro_encerramento = RegistroA990()
-
 
 class BlocoC(Bloco):
     """
@@ -99,5 +97,5 @@ class Bloco9(Bloco):
     """
     Controle e Encerramento do Arquivo Digital
     """
-    registro_abertura = Registro0001()
-    registro_encerramento = Registro0990()
+    registro_abertura = Registro9001()
+    registro_encerramento = Registro9990()
