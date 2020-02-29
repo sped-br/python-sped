@@ -1,19 +1,30 @@
 #!/usr/bin/env python3
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '14 de Fevereiro de 2020 (início: 29 de Janeiro de 2020)'
+Data  = '28 de Fevereiro de 2020 (início: 29 de Janeiro de 2020)'
 
 # Instruções (no Linux):
-
 # Digite em seu web brawser o endereço abaixo:
-# https://github.com/claudiofsr/python-sped
-# Clique em 'Clone or download'.
+
+# Escolha a opção A ou B:
+# A: https://github.com/claudiofsr
+# Selecione o projeto 'python-sped'.
+# Em seguida selecione o Branch 'relatorios'.
+# B: https://github.com/claudiofsr/python-sped/tree/relatorios
+
+# Execute os passos 1 ou 2:
+# 1. Na linha de comando execute:
+# > git clone -b relatorios git@github.com:claudiofsr/python-sped.git
+# Em seguida, vá ao diretório python-sped:
+# > cd python-sped
+# 2. Em 'Clone ou download' clique em 'Download ZIP':
 # Em seguida, descompacte o arquivo copiado:
-# > unzip python-sped-11.0.zip
-# > cd python-sped-11.0
-# Para instalar o módulo do sped em seu sistema execute, como superusuário:
+# > unzip python-sped-relatorios.zip
+# > cd python-sped-relatorios
+
+# Para instalar o módulo do SPED em seu sistema execute, como superusuário:
 # python setup.py install
-# Copie o arquivo 'efd_relatorios.py' de python-sped-11.0/relatorios
+# Copie o arquivo 'efd_relatorios.py' de python-sped/relatorios
 # para o diretório que contenha os arquivos de EFD Contribuições.
 # Em seguida, execute no terminal o camando:
 # > python efd_relatorios.py
