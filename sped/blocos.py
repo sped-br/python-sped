@@ -2,7 +2,6 @@
 
 from .registros import Registro
 
-
 class Bloco(object):
     def __init__(self, nome=''):
         self._nome = nome
@@ -14,12 +13,10 @@ class Bloco(object):
 
     @property
     def abertura(self):
-        # Define o indicador de movimento ou dados
         return self.registro_abertura
 
     @property
     def encerramento(self):
-        # Define a quantidade de registros
         return self.registro_encerramento
 
     @property
@@ -27,7 +24,4 @@ class Bloco(object):
         return [self.abertura] + self._registros + [self.encerramento]
 
     def add(self, registro):
-        # Não adiciona o registro de abertura e fechamento
-        if not registro.__class__ == self.registro_abertura.__class__ and \
-           not registro.__class__ == self.registro_encerramento.__class__:
-            self._registros.append(registro)
+        self._registros.append(registro)
