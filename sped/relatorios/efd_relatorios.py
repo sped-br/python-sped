@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '28 de Fevereiro de 2020 (início: 29 de Janeiro de 2020)'
+Data  = '29 de Fevereiro de 2020 (início: 29 de Janeiro de 2020)'
 
 # Instruções (no Linux):
 # Digite em seu web brawser o endereço abaixo:
@@ -23,11 +24,10 @@ Data  = '28 de Fevereiro de 2020 (início: 29 de Janeiro de 2020)'
 # > cd python-sped-relatorios
 
 # Para instalar o módulo do SPED em seu sistema execute, como superusuário:
-# python setup.py install
-# Copie o arquivo 'efd_relatorios.py' de python-sped/relatorios
-# para o diretório que contenha os arquivos de EFD Contribuições.
-# Em seguida, execute no terminal o camando:
-# > python efd_relatorios.py
+# > python setup.py install
+# Em um diretório que contenha arquivos de EFD Contribuições, 
+# execute no terminal o camando:
+# > efd_relatorios
 
 import sys, os
 from time import time, sleep
@@ -42,7 +42,7 @@ if python_version < (3,6,0):
 	print('versão atual', "%s.%s.%s" % (python_version[0],python_version[1],python_version[2]))
 	exit()
 
-if __name__ == '__main__':
+def main():
 
 	print(f'\nPython Sped - versão: {__version__}\n')
 	
@@ -76,18 +76,14 @@ if __name__ == '__main__':
 	elif len(arquivos_sped_efd) == 1:
 		indice_do_arquivo = 0
 	else:
-		dir_path_exemplo = '/home/claudio/Documentos/'
-		print(f"A lista de arquivos de SPED EFD é obtida a partir de:\n")
-		print(f"\tlista_de_arquivos = ReadFiles(root_path = dir_path, extension = extensao).\n")
-		print(f"tal que:\n")
-		print(f"\tdir_path = '{dir_path}' e extensao = '{extensao}'.\n")
-		print(f"Nenhum arquivo de SPED EFD foi encontrado no diretório dir_path definido acima.")
-		print(f"Se as EFDs estão localizadas, por exemplo, no diretório '{dir_path_exemplo}',")
-		print(f"então altere a variável 'dir_path' para o diretório que contenha as EFDs:")
-		print(f"\n\tdir_path = '{dir_path_exemplo}'\n")
-		print(f"Outra alternativa é copiar este arquivo '{__file__}' para o diretório que contenha as EFDs.")
-		print(f"Em seguida, executar no terminal:\n")
-		print(f"\t python {__file__} \n")
+		# https://stackoverflow.com/questions/8384737/extract-file-name-from-path-no-matter-what-the-os-path-format
+		basename = os.path.basename(__file__) # 'efd_relatorios'
+		file_ext = os.path.splitext(__file__)[-1] # ('./efd_relatorios', '.py')
+		executavel = basename.replace(file_ext, '')
+		
+		print(f"Execute este programa no diretório que contenha os arquivos SPED EFD.")
+		print(f"Na linha de comando, digite:\n")
+		print(f"\t{executavel}\n")
 		exit()
 
 	# arquivo SPED EFD
@@ -109,3 +105,5 @@ if __name__ == '__main__':
 	
 	print(f'\nTotal Execution Time: {Total_Execution_Time(start,end)} \n')
 
+if __name__ == '__main__':
+	main()

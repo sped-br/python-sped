@@ -339,7 +339,7 @@ class SPED_EFD_Info:
 		
 		self.info_de_abertura = self.obter_info_de_abertura(self.objeto_sped)
 		
-		filename, _ = os.path.splitext(self.file_path)
+		filename = os.path.splitext(self.file_path)[0] # ('./efd_info', '.py')
 		arquivo_csv   = filename + '.csv'
 		arquivo_excel = filename + '.xlsx'
 		
