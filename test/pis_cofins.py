@@ -60,7 +60,7 @@ class TestSpedPisCofins(unittest.TestCase):
 
         contabilista = Registro0100()
         contabilista.NOME = 'Daniel Sadamo'
-        contabilista.CPF = '12334532212'
+        contabilista.CPF = '12334532207'
         contabilista.CRC = '532212'
         contabilista.END = 'Rua dos ferroviario'
         contabilista.NUM = '123'
