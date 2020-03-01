@@ -18,7 +18,7 @@ class TestSpedPisCofins(unittest.TestCase):
     def test_read_registro(self):
         txt = u"""|0000|010|0|01102016|30102016|KMEE INFORMATICA LTDA|53.939.351/0001-29|333.333.333-33|SP|222.222.222.222|1234567|5999|0123|A|1|
 |0001|0|
-|0100|Daniel Sadamo|12334532212|532212|||Rua dos ferroviario|123|Agonia||||||
+|0100|Daniel Sadamo|12334532207|532212|||Rua dos ferroviario|123|Agonia||||||
 |0990|3|
 |C001|1|
 |C990|2|
