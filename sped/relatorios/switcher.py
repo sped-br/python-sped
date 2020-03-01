@@ -5,6 +5,7 @@ Data  = '01 de Março de 2020 (início: 10 de Janeiro de 2020)'
 
 import sys, re
 from datetime import datetime
+from sped.relatorios.efd_tabelas import EFD_Tabelas
 from sped.campos import (CampoData, CampoCNPJ, CampoCPF, CampoNCM,
                         CampoCPFouCNPJ, CampoChaveEletronica)
 
