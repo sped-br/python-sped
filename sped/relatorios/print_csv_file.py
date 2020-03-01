@@ -513,10 +513,10 @@ class SPED_EFD_Info:
 						info[nivel][combinacao][campo.nome] = valor
 						
 						# Informar os campos em registros_de_data_emissao na coluna 'Data de Emissão'.
-						if campo.nome in type(self).registros_de_data_emissao:
+						if campo.nome in type(self).registros_de_data_emissao and len(valor) == 8:
 							info[nivel][combinacao]['Data de Emissão'] = valor
 						# Informar os campos em registros_de_data_execucao na coluna 'Data de Execução'.
-						if campo.nome in type(self).registros_de_data_execucao:
+						if campo.nome in type(self).registros_de_data_execucao and len(valor) == 8:
 							info[nivel][combinacao]['Data de Execução'] = valor
 						# Informar os campos de chave eletrônica de 44 dígitos na coluna 'Chave Eletrônica'.
 						if campo.nome in type(self).registros_de_chave_eletronica:
