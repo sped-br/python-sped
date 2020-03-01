@@ -78,7 +78,7 @@ def main():
 		indice_do_arquivo = 0
 	else:
 		print(f"\tDiretório atual: '{dir_path}'.")
-		print(f"\tNão foi encontrado arquivos SPED EFD neste diretório.\n")
+		print(f"\tNenhum arquivo SPED EFD foi encontrado neste diretório.\n")
 		exit()
 
 	# arquivo SPED EFD
