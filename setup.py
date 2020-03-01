@@ -60,7 +60,7 @@ setup(
     cmdclass={'test': PyTest},
 
     # https://stackoverflow.com/questions/4840182/setup-py-and-adding-file-to-bin
-    # scripts=['sped/relatorios/efd_relatorios']
+    # scripts=['sped/relatorios/efd_relatorios'],
 
     entry_points = {
         'console_scripts': ['efd_relatorios=sped.relatorios.efd_relatorios:main']
