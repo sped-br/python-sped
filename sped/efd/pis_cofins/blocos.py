@@ -30,12 +30,21 @@ class Bloco0(Bloco):
     registro_abertura = Registro0001()
     registro_encerramento = Registro0990()
 
+    @property
+    def encerramento(self):
+        registro = self.__class__.registro_encerramento
+        # Define a quantidade de registros
+        registro[2] = len(self._registros) + 3
+        return registro
+
+
 class BlocoA(Bloco):
     """
     Documentos Fiscais - Serviços (ISS)
     """
     registro_abertura = RegistroA001()
     registro_encerramento = RegistroA990()
+
 
 class BlocoC(Bloco):
     """
@@ -99,3 +108,10 @@ class Bloco9(Bloco):
     """
     registro_abertura = Registro9001()
     registro_encerramento = Registro9990()
+
+    @property
+    def encerramento(self):
+        registro = self.__class__.registro_encerramento
+        # Define a quantidade de registros
+        registro[2] = len(self._registros) + 3
+        return registro
