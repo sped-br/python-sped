@@ -10,6 +10,11 @@ os.chdir(test_root)
 sys.path.insert(0, os.path.dirname(test_root))
 sys.path.insert(0, test_root)
 
+# De fato, trata-se de um teste de registro da EFD ICMS_IPI
+# Não se trata de teste de EFD PIS_COFINS
+#from sped.efd.pis_cofins.arquivos import ArquivoDigital
+#from sped.efd.pis_cofins.registros import Registro0100
+
 from sped.efd.icms_ipi.arquivos import ArquivoDigital
 from sped.efd.icms_ipi.registros import Registro0100
 

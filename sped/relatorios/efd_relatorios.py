@@ -91,12 +91,12 @@ def main():
 	arquivo_excel = filename + '.xlsx'
 	
 	print(f"\nSelecionado o arquivo {indice_do_arquivo + 1}: '{file_path}'.\n")
-	input("Tecle Enter para gerar arquivo Excel .xlsx com informações da SPED EFD.")
+	input("Tecle <Enter> para gerar arquivo Excel .xlsx com informações da SPED EFD: ")
 	print()
 	
 	start = time()
 	
-	csv_file = SPED_EFD_Info(file_path, encoding=codificacao, efd_tipo = tipo_da_efd, verbose=False)
+	csv_file = SPED_EFD_Info(file_path, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
 	
 	csv_file.imprimir_arquivo_csv
 

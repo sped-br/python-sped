@@ -218,3 +218,7 @@ class My_Switch:
 
 			# Caso não ocorra nenhum match, retornar default value = format_default
 			self.dicionario[nome_da_coluna] = switcher.get(True, format_default)
+
+		if self.verbose:
+			for idx, key in enumerate(sorted(self.dicionario.keys()),1):
+				print(f'{key:>40}: [{idx:>2}] {self.dicionario[key]}')
