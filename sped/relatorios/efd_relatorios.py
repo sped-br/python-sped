@@ -38,25 +38,18 @@ if python_version < (3,6,0):
 	print('versão atual', "%s.%s.%s" % (python_version[0],python_version[1],python_version[2]))
 	exit()
 
-def make_excel_file(sped_file_path, numero_do_arquivo, lista_de_arquivos):
+def make_csv_file(sped_file_path, numero_do_arquivo, lista_de_arquivos):
 
 	tipo_da_efd = lista_de_arquivos.informations[sped_file_path]['tipo']
 	codificacao = lista_de_arquivos.informations[sped_file_path]['codificação']
 
 	filename = os.path.splitext(sped_file_path)[0] # ('/home/user/file', '.txt')
 	arquivo_csv   = filename + '.csv'
-	arquivo_excel = filename + '.xlsx'
 	
-	csv_file = SPED_EFD_Info(sped_file_path, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
+	csv_file = SPED_EFD_Info(sped_file_path, numero_do_arquivo, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
 	csv_file.imprimir_arquivo_csv
 
-	excel_file = CSV_to_Excel(arquivo_csv, arquivo_excel, numero_do_arquivo, verbose=False)
-	excel_file.convert_csv_to_xlsx
-
-	if os.path.exists(arquivo_csv):
-		os.remove(arquivo_csv)
-	
-	return 1
+	return {numero_do_arquivo: arquivo_csv}
 
 def main():
 
@@ -158,17 +151,70 @@ def main():
 	# https://sebastianraschka.com/Articles/2014_multiprocessing.html
 	# https://stackoverflow.com/questions/26068819/how-to-kill-all-pool-workers-in-multiprocess
 	# https://www.programcreek.com/python/index/175/multiprocessing
-	
 	pool    = Pool( processes = int(max(1, num_cpus - 2)) )
-	results = [ pool.apply_async(make_excel_file, args=(k,v,lista_de_arquivos)) for (k,v) in arquivos_escolhidos.items() ]
-	output  = [ p.get() for p in results ] # output = [1, 1, 1, 1, 1, 1]
+	results = [ pool.apply_async(make_csv_file, args=(k,v,lista_de_arquivos)) for (k,v) in arquivos_escolhidos.items() ]
+	output  = [ p.get() for p in results ] # output = [{num: csv_file_path}]
 	pool.close()
 
-	num_total_de_arquivos = sum(output)
+	num_total_de_arquivos = len(output)
 	if num_total_de_arquivos > 1:
-		print(f"\nForam gerados {num_total_de_arquivos} arquivos xlsx do Excel.\n")
+		print(f"\nForam gerados {num_total_de_arquivos} arquivos csv temporários.\n")
 	else:
-		print(f"\nFoi gerado {num_total_de_arquivos} arquivo xlsx do Excel.\n")
+		print(f"\nFoi gerado {num_total_de_arquivos} arquivo csv temporário.\n")
+
+	# https://stackoverflow.com/questions/5236296/how-to-convert-list-of-dict-to-dict
+	new_dict = { key: dicts[key] for dicts in output for key in dicts } # dict Comprehensions
+	#print(f'{new_dict = } ; {new_dict.values() = }')
+
+	data_ini = {}
+	data_fim = {}
+
+	for value in new_dict.values():
+		# PISCOFINS_20150701_20150731_12345678912345_...csv
+		# 12345678912345-123456789123-20170101-20170131-1-...-SPED-EFD.csv
+		data01 = re.search(r'PISCOFINS_(\d{8})_(\d{8})', value, flags=re.IGNORECASE)
+		data02 = re.search(r'\d{14}.\d+.(\d{8}).(\d{8}).*SPED-EFD', value, flags=re.IGNORECASE)
+
+		if data01:
+			data_ini[ data01.group(1) ] = 1
+			data_fim[ data01.group(2) ] = 1
+		if data02:
+			data_ini[ data02.group(1) ] = 1
+			data_fim[ data02.group(2) ] = 1
+	
+	#print(f'{data_ini = } ; {data_fim = }')
+	
+	if len(data_ini) >= 1:
+		ini = list(sorted(data_ini.keys()))[0]
+	if len(data_fim) >= 1:
+		fim = list(sorted(data_fim.keys()))[-1]
+	
+	target = f'Info do Contribuinte - SPED EFD - {ini} a {fim}'
+
+	final_file_csv   = target + ".csv"
+	final_file_excel = target + ".xlsx"
+
+	# unificar todos os arquivos csv no arquivo final_file_csv
+	with open(final_file_csv, 'w', newline='', encoding='utf-8', errors='ignore') as csvfile:
+		# imprimir nomes das colunas apenas uma vez na primeira linha
+		nomes_das_colunas = ';'.join(SPED_EFD_Info.colunas_selecionadas)
+		csvfile.write( nomes_das_colunas + '\n' )
+
+		# https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
+		for num,csv_file_path in sorted(new_dict.items()):
+			print(f"arquivo[{num:2d}]: '{csv_file_path}'.")
+			with open(csv_file_path, mode='r') as f:
+				csvfile.write(f.read()) # read all lines at once
+			if os.path.exists(csv_file_path):
+				os.remove(csv_file_path)
+
+	excel_file = CSV_to_Excel(final_file_csv, final_file_excel, verbose=False)
+	excel_file.convert_csv_to_xlsx
+
+	if os.path.exists(final_file_csv):
+		os.remove(final_file_csv)
+	
+	print(f"\nFinalmente, foi gerado o arquivo xlsx do Excel -> '{final_file_excel}'.\n")
 
 	end = time()
 
