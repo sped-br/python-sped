@@ -26,12 +26,37 @@ from sped.relatorios.find_efd_files import ReadFiles, Total_Execution_Time
 from sped.relatorios.print_csv_file import SPED_EFD_Info
 from sped.relatorios.convert_csv_to_xlsx import CSV_to_Excel
 
+import psutil
+from multiprocessing import Pool # take advantage of multiple cores
+
+num_cpus = psutil.cpu_count(logical=True)
+
 # Versão mínima exigida: python 3.6.0
 python_version = sys.version_info
 if python_version < (3,6,0):
 	print('versão mínima exigida do python é 3.6.0')
 	print('versão atual', "%s.%s.%s" % (python_version[0],python_version[1],python_version[2]))
 	exit()
+
+def make_excel_file(sped_file_path, numero_do_arquivo, lista_de_arquivos):
+
+	tipo_da_efd = lista_de_arquivos.informations[sped_file_path]['tipo']
+	codificacao = lista_de_arquivos.informations[sped_file_path]['codificação']
+
+	filename = os.path.splitext(sped_file_path)[0] # ('/home/user/file', '.txt')
+	arquivo_csv   = filename + '.csv'
+	arquivo_excel = filename + '.xlsx'
+	
+	csv_file = SPED_EFD_Info(sped_file_path, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
+	csv_file.imprimir_arquivo_csv
+
+	excel_file = CSV_to_Excel(arquivo_csv, arquivo_excel, numero_do_arquivo, verbose=False)
+	excel_file.convert_csv_to_xlsx
+
+	if os.path.exists(arquivo_csv):
+		os.remove(arquivo_csv)
+	
+	return 1
 
 def main():
 
@@ -75,6 +100,7 @@ def main():
 	else:
 		# concatenate item in list to strings
 		opcoes = ' '.join(command_line)
+		comando_inicial = opcoes
 		# remover todos os caracteres, exceto dígitos, pontos e espaços em branco
 		opcoes = re.sub(r'[^\d\.\s]', '', opcoes)
 		# substituir dois ou mais espaços em branco por apenas um.
@@ -88,8 +114,7 @@ def main():
 		# split string based on regex
 		command_line = re.split(r'\s+', opcoes)
 	
-	arquivos_escolhidos = []
-	# print(f'\n{arquivos_sped_efd = } ; {len(arquivos_sped_efd) = } ; {command_line = }\n')
+	arquivos_escolhidos = {} # usar dicionário para evitar repetição
 
 	for indice in command_line: # exemplo: ('5', '17', '32..41')
 
@@ -102,12 +127,11 @@ def main():
 				print(f"\nArquivo número {value_1} não encontrado!\n")
 				exit()
 			sped_file = arquivos_sped_efd[value_1 - 1]
-			# evitar repetição e manter a mesma ordem
-			if sped_file not in arquivos_escolhidos:
-				arquivos_escolhidos.append(sped_file)
+			arquivos_escolhidos[sped_file] = value_1
+
 		elif intervalo_digito: # exemplo: '32..41'
-			value_1 = int(intervalo_digito.group(1))
-			value_2 = int(intervalo_digito.group(2))
+			value_1 = int(intervalo_digito.group(1)) # 32
+			value_2 = int(intervalo_digito.group(2)) # 41
 			if value_1 > len(arquivos_sped_efd) or value_1 <= 0:
 				print(f"\nArquivo número {value_1} não encontrado!\n")
 				exit()
@@ -119,41 +143,36 @@ def main():
 				exit()
 			for index in range(value_1 - 1, value_2):
 				sped_file = arquivos_sped_efd[index]
-				# evitar repetição e manter a mesma ordem
-				if sped_file not in arquivos_escolhidos:
-					arquivos_escolhidos.append(sped_file)
+				arquivos_escolhidos[sped_file] = index + 1
 		else:
 			print(f"\nOpção {indice} inválida!\n")
 			exit()
 	
-	print(f'\nArquivo(s) selecionado(s) {command_line}:')
+	print(f"\nArquivo(s) selecionado(s) '{comando_inicial}' -> {list(arquivos_escolhidos.values())}:")
 	for sped_file in arquivos_escolhidos:
 		print(f'\t{sped_file}')
 	print()
 
 	start = time()
 
-	for sped_file_path in arquivos_escolhidos:
+	# https://sebastianraschka.com/Articles/2014_multiprocessing.html
+	# https://stackoverflow.com/questions/26068819/how-to-kill-all-pool-workers-in-multiprocess
+	# https://www.programcreek.com/python/index/175/multiprocessing
+	
+	pool    = Pool( processes = int(num_cpus - 2) )
+	results = [ pool.apply_async(make_excel_file, args=(k,v,lista_de_arquivos)) for (k,v) in arquivos_escolhidos.items() ]
+	output  = [ p.get() for p in results ] # output = [1, 1, 1, 1, 1, 1]
+	pool.close()
 
-		tipo_da_efd = lista_de_arquivos.informations[sped_file_path]['tipo']
-		codificacao = lista_de_arquivos.informations[sped_file_path]['codificação']
-
-		filename = os.path.splitext(sped_file_path)[0] # ('/home/user/file', '.txt')
-		arquivo_csv   = filename + '.csv'
-		arquivo_excel = filename + '.xlsx'
-		
-		csv_file = SPED_EFD_Info(sped_file_path, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
-		csv_file.imprimir_arquivo_csv
-
-		excel_file = CSV_to_Excel(arquivo_csv, arquivo_excel, verbose=False)
-		excel_file.convert_csv_to_xlsx
-
-		if os.path.exists(arquivo_csv):
-			os.remove(arquivo_csv)
+	num_total_de_arquivos = sum(output)
+	if num_total_de_arquivos > 1:
+		print(f"\nForam gerados {num_total_de_arquivos} arquivos xlsx do Excel.\n")
+	else:
+		print(f"\nFoi gerado {num_total_de_arquivos} arquivo xlsx do Excel.\n")
 
 	end = time()
 
-	print(f'\nTotal Execution Time: {Total_Execution_Time(start,end)}\n')
+	print(f'Total Execution Time: {Total_Execution_Time(start,end)}\n')
 
 if __name__ == '__main__':
 	main()
