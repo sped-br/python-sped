@@ -184,10 +184,8 @@ def main():
 	
 	#print(f'{data_ini = } ; {data_fim = }')
 	
-	if len(data_ini) >= 1:
-		ini = list(sorted(data_ini.keys()))[0]
-	if len(data_fim) >= 1:
-		fim = list(sorted(data_fim.keys()))[-1]
+	ini = list(sorted(data_ini.keys()))[0]
+	fim = list(sorted(data_fim.keys()))[-1]
 	
 	target = f'Info do Contribuinte - SPED EFD - {ini} a {fim}'
 
