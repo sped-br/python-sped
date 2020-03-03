@@ -148,7 +148,7 @@ def main():
 			print(f"\nOpção {indice} inválida!\n")
 			exit()
 	
-	print(f"\nArquivo(s) selecionado(s) '{comando_inicial}' -> {list(arquivos_escolhidos.values())}:")
+	print(f"\nArquivo(s) selecionado(s) '{comando_inicial}' -> {list(arquivos_escolhidos.values())}:\n")
 	for sped_file in arquivos_escolhidos:
 		print(f'\t{sped_file}')
 	print()
@@ -159,7 +159,7 @@ def main():
 	# https://stackoverflow.com/questions/26068819/how-to-kill-all-pool-workers-in-multiprocess
 	# https://www.programcreek.com/python/index/175/multiprocessing
 	
-	pool    = Pool( processes = int(num_cpus - 2) )
+	pool    = Pool( processes = int(max(1, num_cpus - 2)) )
 	results = [ pool.apply_async(make_excel_file, args=(k,v,lista_de_arquivos)) for (k,v) in arquivos_escolhidos.items() ]
 	output  = [ p.get() for p in results ] # output = [1, 1, 1, 1, 1, 1]
 	pool.close()
