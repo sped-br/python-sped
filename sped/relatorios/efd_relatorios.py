@@ -2,34 +2,24 @@
 # -*- coding: utf-8 -*-
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '01 de Março de 2020 (início: 29 de Janeiro de 2020)'
+Data  = '03 de Março de 2020 (início: 29 de Janeiro de 2020)'
+Home  = 'https://github.com/claudiofsr/python-sped'
 
 # Instruções (no Linux):
-# Digite em seu web brawser o endereço abaixo:
+# Para obter uma cópia, na linha de comando, execute:
+# > git clone git@github.com:claudiofsr/python-sped.git
 
-# Escolha a opção A ou B:
-# A: https://github.com/claudiofsr
-# Selecione o projeto 'python-sped'.
-# Em seguida selecione o Branch 'relatorios'.
-# B: https://github.com/claudiofsr/python-sped/tree/relatorios
-
-# Execute os passos 1 ou 2:
-# 1. Na linha de comando execute:
-# > git clone -b relatorios git@github.com:claudiofsr/python-sped.git
 # Em seguida, vá ao diretório python-sped:
 # > cd python-sped
-# 2. Em 'Clone ou download' clique em 'Download ZIP':
-# Em seguida, descompacte o arquivo copiado:
-# > unzip python-sped-relatorios.zip
-# > cd python-sped-relatorios
 
 # Para instalar o módulo do SPED em seu sistema execute, como superusuário:
 # > python setup.py install
-# Em um diretório que contenha arquivos de EFD Contribuições, 
+
+# Em um diretório que contenha arquivos de SPED EFD, 
 # execute no terminal o camando:
 # > efd_relatorios
 
-import sys, os
+import sys, os, re
 from time import time, sleep
 from sped import __version__
 from sped.relatorios.find_efd_files import ReadFiles, Total_Execution_Time
@@ -45,7 +35,7 @@ if python_version < (3,6,0):
 
 def main():
 
-	print(f'\n\tPython Sped - versão: {__version__}\n')
+	print(f'\n Python Sped - versão: {__version__}\n')
 	
 	dir_path = os.getcwd() # CurrentDirectory
 	extensao = 'txt'
@@ -56,59 +46,113 @@ def main():
 	arquivos_efd_icms_ipi = list(lista_de_arquivos.find_all_efd_icmsipi) # SPED EFD ICMS_IPI
 	
 	arquivos_sped_efd = arquivos_efd_contrib + arquivos_efd_icms_ipi
+
+	if len(arquivos_sped_efd) == 0:
+		print(f"\tDiretório atual: '{dir_path}'.")
+		print(f"\tNenhum arquivo SPED EFD foi encontrado neste diretório.\n")
+		exit()
+	
+	print(" Arquivo(s) de SPED EFD encontrado(s) neste diretório:\n")
 	
 	for index,file_path in enumerate(arquivos_sped_efd,1):
 		print( f"{index:>6}: {file_path}")
 		for attribute, value in lista_de_arquivos.get_file_info(file_path).items():
 			print(f'{attribute:>25}: {value}')
+
+	# argumentos: sys.argv: argv[0], argv[1], argv[2], ...
+	command_line = sys.argv[1:]
 	
-	indice_do_arquivo = None
-	
-	if len(arquivos_sped_efd) > 1:
-		while indice_do_arquivo is None:
-			my_input = input(f"\nFavor, digite o número do arquivo SPED EFD (1 a {len(arquivos_sped_efd)}): ")
-			try:
-				my_input = int(my_input)
-				if 1 <= my_input <= len(arquivos_sped_efd):
-					indice_do_arquivo = my_input - 1
-			except:
-				print(f"-->Opção incorreta: '{my_input}'.")
-				print(f"-->Digite um número inteiro entre 1 e {len(arquivos_sped_efd)}.")
-	elif len(arquivos_sped_efd) == 1:
-		indice_do_arquivo = 0
-	else:
-		print(f"\tDiretório atual: '{dir_path}'.")
-		print(f"\tNenhum arquivo SPED EFD foi encontrado neste diretório.\n")
+	if len(command_line) == 0:
+		print("\n Selecione os arquivos pelos números correspondentes.")
+		print(" Use dois pontos .. para indicar intervalo.")
+		print(" Modos de uso:\n")
+		print("\tExemplo A (selecionar apenas o arquivo 4): \n\tefd_relatorios 4 \n")
+		print("\tExemplo B (selecionar os arquivos de 1 a 6): \n\tefd_relatorios 1 2 3 4 5 6 \n")
+		print("\tExemplo C (selecionar os arquivos de 1 a 6): \n\tefd_relatorios 1..6 \n")
+		print("\tExemplo D (selecionar os arquivos 2, 4 e 8): \n\tefd_relatorios 2 4 8 \n")
+		print("\tExemplo E (selecionar os arquivos de 1 a 5, 7, 9, 12 a 15 e 18): \n\tefd_relatorios 1..5 7 9 12..15 18 \n")
 		exit()
-
-	# arquivo SPED EFD
-	file_path   = arquivos_sped_efd[indice_do_arquivo]
-	tipo_da_efd = lista_de_arquivos.informations[file_path]['tipo']
-	codificacao = lista_de_arquivos.informations[file_path]['codificação']
-
-	filename = os.path.splitext(file_path)[0] # ('./efd_info', '.py')
-	arquivo_csv   = filename + '.csv'
-	arquivo_excel = filename + '.xlsx'
+	else:
+		# concatenate item in list to strings
+		opcoes = ' '.join(command_line)
+		# remover todos os caracteres, exceto dígitos, pontos e espaços em branco
+		opcoes = re.sub(r'[^\d\.\s]', '', opcoes)
+		# substituir dois ou mais espaços em branco por apenas um.
+		opcoes = re.sub(r'\s{2,}', ' ', opcoes)
+		# remover os possíveis espaços em branco do início e do final da variável
+		opcoes = opcoes.strip()
+		# remover possíveis espaços: '32 ..  41' --> '32..41' ou também '32... ..  41' --> '32..41'
+		opcoes = re.sub(r'(?<=\d)[\.\s]*\.[\.\s]*(?=\d)', '..', opcoes)
+		# string.split(separator, maxsplit): maxsplit -1 split "all occurrences"
+		# command_line = opcoes.split(r' ', -1)
+		# split string based on regex
+		command_line = re.split(r'\s+', opcoes)
 	
-	print(f"\nSelecionado o arquivo {indice_do_arquivo + 1}: '{file_path}'.\n")
-	input("Tecle <Enter> para gerar arquivo Excel .xlsx com informações da SPED EFD: ")
+	arquivos_escolhidos = []
+	# print(f'\n{arquivos_sped_efd = } ; {len(arquivos_sped_efd) = } ; {command_line = }\n')
+
+	for indice in command_line: # exemplo: ('5', '17', '32..41')
+
+		apenas_um_digito = re.search(r'^(\d+)$', indice)
+		intervalo_digito = re.search(r'^(\d+)\.{2}(\d+)$', indice)
+
+		if apenas_um_digito: # exemplo: '17'
+			value_1 = int(apenas_um_digito.group(1)) # group(1) will return the 1st capture.
+			if value_1 > len(arquivos_sped_efd) or value_1 <= 0:
+				print(f"\nArquivo número {value_1} não encontrado!\n")
+				exit()
+			sped_file = arquivos_sped_efd[value_1 - 1]
+			# evitar repetição e manter a mesma ordem
+			if sped_file not in arquivos_escolhidos:
+				arquivos_escolhidos.append(sped_file)
+		elif intervalo_digito: # exemplo: '32..41'
+			value_1 = int(intervalo_digito.group(1))
+			value_2 = int(intervalo_digito.group(2))
+			if value_1 > len(arquivos_sped_efd) or value_1 <= 0:
+				print(f"\nArquivo número {value_1} não encontrado!\n")
+				exit()
+			if value_2 > len(arquivos_sped_efd) or value_2 <= 0:
+				print(f"\nArquivo número {value_2} não encontrado!\n")
+				exit()
+			if value_1 > value_2:
+				print(f"\n{value_1}..{value_2}: o primeiro número deve ser menor ou igual ao segundo!\n")
+				exit()
+			for index in range(value_1 - 1, value_2):
+				sped_file = arquivos_sped_efd[index]
+				# evitar repetição e manter a mesma ordem
+				if sped_file not in arquivos_escolhidos:
+					arquivos_escolhidos.append(sped_file)
+		else:
+			print(f"\nOpção {indice} inválida!\n")
+			exit()
+	
+	print(f'\nArquivo(s) selecionado(s) {command_line}:')
+	for sped_file in arquivos_escolhidos:
+		print(f'\t{sped_file}')
 	print()
-	
+
 	start = time()
-	
-	csv_file = SPED_EFD_Info(file_path, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
-	
-	csv_file.imprimir_arquivo_csv
 
-	excel_file = CSV_to_Excel(arquivo_csv, arquivo_excel, verbose=False)
+	for sped_file_path in arquivos_escolhidos:
 
-	excel_file.convert_csv_to_xlsx
+		tipo_da_efd = lista_de_arquivos.informations[sped_file_path]['tipo']
+		codificacao = lista_de_arquivos.informations[sped_file_path]['codificação']
 
-	if os.path.exists(arquivo_csv):
-		os.remove(arquivo_csv)
+		filename = os.path.splitext(sped_file_path)[0] # ('/home/user/file', '.txt')
+		arquivo_csv   = filename + '.csv'
+		arquivo_excel = filename + '.xlsx'
+		
+		csv_file = SPED_EFD_Info(sped_file_path, encoding=codificacao, efd_tipo=tipo_da_efd, verbose=False)
+		csv_file.imprimir_arquivo_csv
+
+		excel_file = CSV_to_Excel(arquivo_csv, arquivo_excel, verbose=False)
+		excel_file.convert_csv_to_xlsx
+
+		if os.path.exists(arquivo_csv):
+			os.remove(arquivo_csv)
 
 	end = time()
-	
+
 	print(f'\nTotal Execution Time: {Total_Execution_Time(start,end)}\n')
 
 if __name__ == '__main__':

@@ -95,4 +95,4 @@ class CSV_to_Excel:
 
 		workbook.close()
 
-		print(f"Gerado arquivo Excel .xlsx: '{self.output_excel}'.")
+		print(f"Gerado arquivo Excel: '{self.output_excel}'.")
