@@ -74,12 +74,10 @@ class SPED_EFD_Info:
 	
 	# initialize the attributes of the class
 	
-	def __init__(self, file_path=None, encoding=None, efd_tipo=None, verbose=False):
+	def __init__(self, file_path, numero_do_arquivo, encoding=None, efd_tipo=None, verbose=False):
 
-		if file_path is None or not os.path.isfile(file_path):
-			raise ValueError(f'O arquivo file_path = {file_path} não é válido!')
-		else:
-			self.file_path = file_path
+		self.file_path = file_path
+		self.numero_do_arquivo = numero_do_arquivo
 				
 		if encoding is None:
 			self.encoding = 'UTF-8'
@@ -415,7 +413,7 @@ class SPED_EFD_Info:
 		with open(output_filename, 'w', newline='', encoding='utf-8', errors='ignore') as csvfile:
 
 			writer = csv.writer(csvfile, delimiter=';')
-			writer.writerow(type(self).colunas_selecionadas) # imprimir nomes das colunas apenas uma vez
+			#writer.writerow(type(self).colunas_selecionadas) # imprimir nomes das colunas apenas uma vez
 			
 			for key in sped_efd._blocos.keys():
 				
@@ -572,3 +570,5 @@ class SPED_EFD_Info:
 					count += 1
 					if self.verbose and count > 20:
 						break
+
+		print(f"finalizado arquivo {self.numero_do_arquivo:2d} -> '{output_filename}'.")
