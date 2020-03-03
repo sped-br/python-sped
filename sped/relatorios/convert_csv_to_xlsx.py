@@ -23,9 +23,10 @@ class CSV_to_Excel:
 
 	# initialize the attributes of the class
 	
-	def __init__(self, arquivo_csv, arquivo_excel, verbose=False):
+	def __init__(self, arquivo_csv, arquivo_excel, numero_do_arquivo, verbose=False):
 		self.imput_csv = arquivo_csv
 		self.output_excel = arquivo_excel
+		self.numero_do_arquivo = numero_do_arquivo
 		self.verbose = verbose
 
 	@property
@@ -95,4 +96,4 @@ class CSV_to_Excel:
 
 		workbook.close()
 
-		print(f"Gerado arquivo Excel: '{self.output_excel}'.")
+		print(f"finalizado arquivo {self.numero_do_arquivo:2d} -> '{self.output_excel}'.")
