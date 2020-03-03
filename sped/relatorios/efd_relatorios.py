@@ -201,7 +201,7 @@ def main():
 		# https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 		for num,csv_file_path in sorted(new_dict.items()):
 			print(f"arquivo[{num:2d}]: '{csv_file_path}'.")
-			with open(csv_file_path, mode='r') as f:
+			with open(csv_file_path, mode='r', encoding='utf-8', errors='ignore') as f:
 				csvfile.write(f.read()) # read all lines at once
 			if os.path.exists(csv_file_path):
 				os.remove(csv_file_path)
