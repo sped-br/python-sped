@@ -18,7 +18,7 @@ if python_version < (3,6,0):
 # Python OOP: Atributos e Métodos (def, funções)
 class CSV_to_Excel:
 	"""
-	converter arquivo de formato .csv para .xlsx do excel
+	Converter arquivo de formato CSV para XLSX do Excel
 	"""
 
 	# initialize the attributes of the class
