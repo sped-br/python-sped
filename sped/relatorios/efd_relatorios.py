@@ -38,7 +38,7 @@ if python_version < (3,6,0):
 	print('versão atual', "%s.%s.%s" % (python_version[0],python_version[1],python_version[2]))
 	exit()
 
-def make_csv_file(sped_file_path, numero_do_arquivo, lista_de_arquivos):
+def make_csv_file(numero_do_arquivo, sped_file_path, lista_de_arquivos):
 
 	tipo_da_efd = lista_de_arquivos.informations[sped_file_path]['tipo']
 	codificacao = lista_de_arquivos.informations[sped_file_path]['codificação']
@@ -50,6 +50,31 @@ def make_csv_file(sped_file_path, numero_do_arquivo, lista_de_arquivos):
 	csv_file.imprimir_arquivo_csv
 
 	return {numero_do_arquivo: arquivo_csv}
+
+def make_target_name(new_dict):
+	data_ini = {}
+	data_fim = {}
+
+	for file_path in new_dict.values():
+		# PISCOFINS_20150701_20150731_12345678912345_...csv
+		# 12345678912345-123456789123-20170101-20170131-1-...-SPED-EFD.csv
+		data01 = re.search(r'PISCOFINS_(\d{8})_(\d{8})', file_path, flags=re.IGNORECASE)
+		data02 = re.search(r'\d{14}.\d+.(\d{8}).(\d{8}).*SPED-EFD', file_path, flags=re.IGNORECASE)
+
+		if data01:
+			data_ini[ data01.group(1) ] = 1
+			data_fim[ data01.group(2) ] = 1
+		if data02:
+			data_ini[ data02.group(1) ] = 1
+			data_fim[ data02.group(2) ] = 1
+	
+	#print(f'{data_ini = } ; {data_fim = }')
+	ini = list(sorted(data_ini.keys()))[0]
+	fim = list(sorted(data_fim.keys()))[-1]
+	
+	target = f'Info do Contribuinte - SPED EFD - {ini} a {fim}'
+
+	return target
 
 def main():
 
@@ -120,7 +145,7 @@ def main():
 				print(f"\nArquivo número {value_1} não encontrado!\n")
 				exit()
 			sped_file = arquivos_sped_efd[value_1 - 1]
-			arquivos_escolhidos[sped_file] = value_1
+			arquivos_escolhidos[value_1] = sped_file
 
 		elif intervalo_digito: # exemplo: '32..41'
 			value_1 = int(intervalo_digito.group(1)) # 32
@@ -131,18 +156,21 @@ def main():
 			if value_2 > len(arquivos_sped_efd) or value_2 <= 0:
 				print(f"\nArquivo número {value_2} não encontrado!\n")
 				exit()
-			if value_1 > value_2:
-				print(f"\n{value_1}..{value_2}: o primeiro número deve ser menor ou igual ao segundo!\n")
-				exit()
-			for index in range(value_1 - 1, value_2):
-				sped_file = arquivos_sped_efd[index]
-				arquivos_escolhidos[sped_file] = index + 1
+			
+			if value_2 >= value_1: # ordem crescente
+				intervalo = range(value_1, value_2 + 1)
+			else:                  # ordem decrescente
+				intervalo = reversed(range(value_2, value_1 + 1))
+
+			for value in list(intervalo):
+				sped_file = arquivos_sped_efd[value - 1]
+				arquivos_escolhidos[value] = sped_file
 		else:
 			print(f"\nOpção {indice} inválida!\n")
 			exit()
 	
-	print(f"\nArquivo(s) selecionado(s) '{comando_inicial}' -> {list(arquivos_escolhidos.values())}:\n")
-	for sped_file in arquivos_escolhidos:
+	print(f"\nArquivo(s) selecionado(s) '{comando_inicial}' -> {list(arquivos_escolhidos.keys())}:\n")
+	for sped_file in arquivos_escolhidos.values():
 		print(f'\t{sped_file}')
 	print()
 
@@ -166,43 +194,22 @@ def main():
 	new_dict = { key: dicts[key] for dicts in output for key in dicts } # dict Comprehensions
 	#print(f'{new_dict = } ; {new_dict.values() = }')
 
-	data_ini = {}
-	data_fim = {}
-
-	for value in new_dict.values():
-		# PISCOFINS_20150701_20150731_12345678912345_...csv
-		# 12345678912345-123456789123-20170101-20170131-1-...-SPED-EFD.csv
-		data01 = re.search(r'PISCOFINS_(\d{8})_(\d{8})', value, flags=re.IGNORECASE)
-		data02 = re.search(r'\d{14}.\d+.(\d{8}).(\d{8}).*SPED-EFD', value, flags=re.IGNORECASE)
-
-		if data01:
-			data_ini[ data01.group(1) ] = 1
-			data_fim[ data01.group(2) ] = 1
-		if data02:
-			data_ini[ data02.group(1) ] = 1
-			data_fim[ data02.group(2) ] = 1
-	
-	#print(f'{data_ini = } ; {data_fim = }')
-	
-	ini = list(sorted(data_ini.keys()))[0]
-	fim = list(sorted(data_fim.keys()))[-1]
-	
-	target = f'Info do Contribuinte - SPED EFD - {ini} a {fim}'
+	target = make_target_name(new_dict)
 
 	final_file_csv   = target + ".csv"
 	final_file_excel = target + ".xlsx"
 
 	# unificar todos os arquivos csv no arquivo final_file_csv
-	with open(final_file_csv, 'w', newline='', encoding='utf-8', errors='ignore') as csvfile:
+	with open(final_file_csv, 'w', newline='', encoding='utf-8', errors='ignore') as csv_unificado:
 		# imprimir nomes das colunas apenas uma vez na primeira linha
 		nomes_das_colunas = ';'.join(SPED_EFD_Info.colunas_selecionadas)
-		csvfile.write( nomes_das_colunas + '\n' )
+		csv_unificado.write(nomes_das_colunas + '\n')
 
 		# https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
-		for num,csv_file_path in sorted(new_dict.items()):
+		for num, csv_file_path in new_dict.items():
 			print(f"arquivo[{num:2d}]: '{csv_file_path}'.")
 			with open(csv_file_path, mode='r', encoding='utf-8', errors='ignore') as f:
-				csvfile.write(f.read()) # read all lines at once
+				csv_unificado.write(f.read()) # f.read() all lines at once
 			if os.path.exists(csv_file_path):
 				os.remove(csv_file_path)
 
