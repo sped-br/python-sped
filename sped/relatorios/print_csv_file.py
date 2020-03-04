@@ -62,8 +62,8 @@ class SPED_EFD_Info:
 		'NAT_BC_CRED', 'CFOP', 'COD_PART', *registros_de_cadastro_do_participante, 'CNPJ_CPF_PART', 
 		'Data de Emissão', 'Data de Execução', 'COD_ITEM', *registros_de_identificacao_do_item, 
 		'Chave Eletrônica', 'COD_MOD', 'NUM_DOC', 'NUM_ITEM', 'COD_CTA', *registros_de_plano_de_contas, 
-		'Valor do Item', 'VL_BC_PIS', 'VL_BC_COFINS', 'ALIQ_PIS', 'ALIQ_COFINS', 
-		'VL_ISS', 'CST_ICMS', 'VL_BC_ICMS', 'ALIQ_ICMS'
+		'Valor do Item', 'VL_BC_PIS', 'VL_BC_COFINS', 'ALIQ_PIS', 'ALIQ_COFINS', 'VL_PIS', 'VL_COFINS',  
+		'VL_ISS', 'CST_ICMS', 'VL_BC_ICMS', 'ALIQ_ICMS', 'VL_ICMS'
 	]
 	
 	# evitar duplicidade: Is there a more Pythonic way to prevent adding a duplicate to a list?
