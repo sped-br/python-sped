@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '01 de Março de 2020 (início: 10 de Janeiro de 2020)'
+Data  = '04 de Março de 2020 (início: 10 de Janeiro de 2020)'
 
 import os, re, sys, itertools, csv
 from time import time, sleep
@@ -52,8 +52,8 @@ class SPED_EFD_Info:
 	registros_de_chave_eletronica = ['CHV_NFE', 'CHV_CTE', 'CHV_NFSE', 'CHV_DOCe', 'CHV_CFE', 'CHV_NFE_CTE']
 
 	# adicionado 'VL_OPR' para EFD ICMS_IPI
-	registros_de_valor = ['VL_DOC', 'VL_BRT', 'VL_OPER', 'VL_OPR', 'VL_OPER_DEP', 'VL_BC_CRED', 'VL_BC_EST', 
-						  'VL_TOT_REC', 'VL_REC_CAIXA', 'VL_REC_COMP', 'VL_REC', 'VL_ITEM']
+	registros_de_valor_do_item = ['VL_DOC', 'VL_BRT', 'VL_OPER', 'VL_OPR', 'VL_OPER_DEP', 'VL_BC_CRED', 
+		'VL_BC_EST', 'VL_TOT_REC', 'VL_REC_CAIXA', 'VL_REC_COMP', 'VL_REC', 'VL_ITEM']
 
 	# Imprimir as informações desta coluna, nesta ordem
 	colunas_selecionadas = [
@@ -69,7 +69,7 @@ class SPED_EFD_Info:
 	# evitar duplicidade: Is there a more Pythonic way to prevent adding a duplicate to a list?
 	registros_totais = set(
 		registros_de_data + registros_de_identificacao_do_item + registros_de_plano_de_contas + 
-		registros_de_codigo_cst + registros_de_chave_eletronica + registros_de_valor + 
+		registros_de_codigo_cst + registros_de_chave_eletronica + registros_de_valor_do_item + 
 		colunas_selecionadas)
 	
 	# initialize the attributes of the class
@@ -402,11 +402,13 @@ class SPED_EFD_Info:
 		
 		my_regex = r'^[A-K]' # Ler os blocos da A a K.
 		
+		registros_da_bcalc = ['VL_BC_PIS', 'VL_BC_COFINS']
 		campos_necessarios = ['CST_PIS', 'CST_COFINS', 'VL_BC_PIS', 'VL_BC_COFINS']
 		# Bastam os seguintes campos, desde que os registros de PIS/PASEP ocorram sempre anteriores aos registros de COFINS:
 		# campos_necessarios = ['CST_COFINS', 'VL_BC_COFINS']
 
 		if self.efd_tipo == 'efd_icms_ipi':
+			registros_da_bcalc = ['VL_BC_ICMS']
 			campos_necessarios = ['CST_ICMS', 'VL_BC_ICMS']
 		
 		# https://docs.python.org/3/library/csv.html
@@ -444,7 +446,7 @@ class SPED_EFD_Info:
 					cst_cofins = ''   # 2 caracteres
 					cst_icms = ''     # 3 caracteres
 					cfop = 'cfop'     # 4 caracteres
-					valor_item = 'valor_item'
+					valor_bc = 'valor_bc'
 					
 					for campo in registro.campos:
 						if campo.nome == 'CST_PIS': 
@@ -455,13 +457,13 @@ class SPED_EFD_Info:
 							cst_icms = registro.valores[campo.indice]
 						if campo.nome == 'CFOP': 
 							cfop = registro.valores[campo.indice]
-						if campo.nome in type(self).registros_de_valor: 
-							valor_item = registro.valores[campo.indice]
+						if campo.nome in registros_da_bcalc:
+							valor_bc = registro.valores[campo.indice]
 					
 					cst_contribuicao = max(cst_pis,cst_cofins)
 
 					# Utilizar uma combinação de valores para identificar univocamente um item.
-					combinacao = f'{cst_contribuicao}_{cst_icms}_{cfop}_{valor_item}'
+					combinacao = f'{cst_contribuicao}_{cst_icms}_{cfop}_{valor_bc}'
 					
 					if self.verbose:
 						print(f'\ncount = {count:>2} ; key = {key} ; REG = {REG} ; nivel_anterior = {nivel_anterior} ; nivel = {nivel} ; ', end='')
@@ -490,7 +492,6 @@ class SPED_EFD_Info:
 					
 					# https://www.geeksforgeeks.org/python-creating-multidimensional-dictionary/
 					info.setdefault(nivel, {}).setdefault(combinacao, {})['Nível Hierárquico'] = nivel
-					info[nivel][combinacao]['Valor do Item'] = valor_item
 					info[nivel][combinacao]['CST_PIS_COFINS'] = cst_contribuicao
 					
 					for campo in registro.campos:
@@ -509,14 +510,14 @@ class SPED_EFD_Info:
 						
 						# reter em info{} as informações dos registros contidos em registros_totais
 						info[nivel][combinacao][campo.nome] = valor
-						
-						# Informar os campos em registros_de_data_emissao na coluna 'Data de Emissão'.
+
+						# Aparentemenete, o SPED RFB Java escolhe a primeira, quando há duas opções C191/C195, D101/D105, ... 
+						if campo.nome in type(self).registros_de_valor_do_item and 'Valor do Item' not in info[nivel][combinacao]:
+							info[nivel][combinacao]['Valor do Item'] = valor
 						if campo.nome in type(self).registros_de_data_emissao and len(valor) == 8:
 							info[nivel][combinacao]['Data de Emissão'] = valor
-						# Informar os campos em registros_de_data_execucao na coluna 'Data de Execução'.
 						if campo.nome in type(self).registros_de_data_execucao and len(valor) == 8:
 							info[nivel][combinacao]['Data de Execução'] = valor
-						# Informar os campos de chave eletrônica de 44 dígitos na coluna 'Chave Eletrônica'.
 						if campo.nome in type(self).registros_de_chave_eletronica:
 							info[nivel][combinacao]['Chave Eletrônica'] = valor
 						# Informar nomes dos estabelecimentos de cada CNPJ
@@ -571,4 +572,4 @@ class SPED_EFD_Info:
 					if self.verbose and count > 20:
 						break
 
-		print(f"finalizado arquivo {self.numero_do_arquivo:2d} -> '{output_filename}'.")
+		print(f"arquivo[{self.numero_do_arquivo:2d}]: '{output_filename}'.")
