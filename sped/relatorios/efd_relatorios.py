@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '03 de Março de 2020 (início: 29 de Janeiro de 2020)'
+Data  = '04 de Março de 2020 (início: 29 de Janeiro de 2020)'
 Home  = 'https://github.com/claudiofsr/python-sped'
 
 # Instruções (no Linux):
@@ -51,7 +51,7 @@ def make_csv_file(numero_do_arquivo, sped_file_path, lista_de_arquivos):
 
 	return {numero_do_arquivo: arquivo_csv}
 
-def make_target_name(new_dict):
+def make_target_name(new_dict,lista_de_arquivos):
 	data_ini = {}
 	data_fim = {}
 
@@ -71,7 +71,7 @@ def make_target_name(new_dict):
 	#print(f'{data_ini = } ; {data_fim = }')
 	ini = list(sorted(data_ini.keys()))[0]
 	fim = list(sorted(data_fim.keys()))[-1]
-	
+
 	target = f'Info do Contribuinte - SPED EFD - {ini} a {fim}'
 
 	return target
@@ -169,10 +169,12 @@ def main():
 			print(f"\nOpção {indice} inválida!\n")
 			exit()
 	
-	print(f"\nArquivo(s) selecionado(s) '{comando_inicial}' -> {list(arquivos_escolhidos.keys())}:\n")
+	print(f"\nArquivo(s) SPED EFD selecionado(s): '{comando_inicial}' -> {list(arquivos_escolhidos.keys())}\n")
 	for sped_file in arquivos_escolhidos.values():
 		print(f'\t{sped_file}')
 	print()
+
+	print(f"Gerar arquivos CSV com as informações do SPED EFD:\n")
 
 	start = time()
 
@@ -181,23 +183,21 @@ def main():
 	# https://www.programcreek.com/python/index/175/multiprocessing
 	pool    = Pool( processes = int(max(1, num_cpus - 2)) )
 	results = [ pool.apply_async(make_csv_file, args=(k,v,lista_de_arquivos)) for (k,v) in arquivos_escolhidos.items() ]
-	output  = [ p.get() for p in results ] # output = [{num: csv_file_path}]
+	output  = [ p.get() for p in results ] # output = [{num1: csv_file_path1}, {num2: csv_file_path2}, ...]
 	pool.close()
-
-	num_total_de_arquivos = len(output)
-	if num_total_de_arquivos > 1:
-		print(f"\nForam gerados {num_total_de_arquivos} arquivos csv temporários.\n")
-	else:
-		print(f"\nFoi gerado {num_total_de_arquivos} arquivo csv temporário.\n")
 
 	# https://stackoverflow.com/questions/5236296/how-to-convert-list-of-dict-to-dict
 	new_dict = { key: dicts[key] for dicts in output for key in dicts } # dict Comprehensions
 	#print(f'{new_dict = } ; {new_dict.values() = }')
 
-	target = make_target_name(new_dict)
+	target = make_target_name(new_dict,lista_de_arquivos)
 
 	final_file_csv   = target + ".csv"
 	final_file_excel = target + ".xlsx"
+
+	num_total_de_arquivos = len(new_dict)
+	if num_total_de_arquivos > 1:
+		print(f"\nUnificar o(s) {num_total_de_arquivos} arquivo(s) CSV no arquivo '{final_file_csv}'.\n")
 
 	# unificar todos os arquivos csv no arquivo final_file_csv
 	with open(final_file_csv, 'w', newline='', encoding='utf-8', errors='ignore') as csv_unificado:
@@ -207,19 +207,21 @@ def main():
 
 		# https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 		for num, csv_file_path in new_dict.items():
-			print(f"arquivo[{num:2d}]: '{csv_file_path}'.")
+			if num_total_de_arquivos > 1:
+				print(f"arquivo[{num:2d}]: '{csv_file_path}'.")
 			with open(csv_file_path, mode='r', encoding='utf-8', errors='ignore') as f:
 				csv_unificado.write(f.read()) # f.read() all lines at once
 			if os.path.exists(csv_file_path):
 				os.remove(csv_file_path)
+	
+	print(f"\nConverter o arquivo '{final_file_csv}' para o formato XLSX do Excel:\n")
+	print(f"'{final_file_csv}' -> '{final_file_excel}'.\n")
 
 	excel_file = CSV_to_Excel(final_file_csv, final_file_excel, verbose=False)
 	excel_file.convert_csv_to_xlsx
 
 	if os.path.exists(final_file_csv):
 		os.remove(final_file_csv)
-	
-	print(f"\nFinalmente, foi gerado o arquivo xlsx do Excel -> '{final_file_excel}'.\n")
 
 	end = time()
 
