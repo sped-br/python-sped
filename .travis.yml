@@ -1,22 +1,20 @@
 language: python
 python:
-- '3.4'
-- '2.7'
+- '3.5'
+- '3.6'
 install:
-  - pip install six
-  - pip install pytest
-  - pip install coveralls
+- pip install six
+- pip install pytest
+- pip install coveralls
 script:
-  - coverage run --source=sped setup.py test
-  - python test/fci_test.py
+- coverage run --source=sped setup.py test
 deploy:
   provider: pypi
-  user: ginx
+  user: danimaribeiro
   password:
-    secure: "TAjKq1M0eWjMq/ZJ2tuBOYbcLY1v0mwKqRUsrpBJUOgam+4YLQhblPcHLZ3yOV5FzqBxHU/WBByZMloW3Cx5+FYL0MRDmktJTqsM0OjdIqmS5m9+yWIQul8nc/54Aa5lMhXgmDHFrqVV+Noe7nYZ//EetN02DHwx7HN/3lva/Is="
-  distributions: "sdist bdist_wheel"
+    secure: PDqIGKOTaUWpM4R8HDqV9cumPUlbLBH/IpFpkGfy79E4UsR6cY4eb0WfoNwBXIlH0lBqVIJizgHcqD3yo0GeHFmOrnjOIZdSZyo3QG7W+nlzIohrwvgQ+pG//nBOgRJn/K5FVV9f2HM+QgKpNXgVU14ZIu+iR8mv/uanuMFoIZu9zmTUJk7mBYGRJteBsr7i+2AaTODQp4G1kXdnWQhj5R+cCVgd2uMFEtErXrqUs+KJ5hxT+OvDQQgEeZao7CVm8fS7Y+OJXBAciXnvtN/dmXlIWXJTtplnnzjGnuwj3c5hnpaX5N3PzJQwXy0ParrwyMoKRFr4ESgZWrlxHnxaPNe0TQjqQs2MFprFVoYgDKfaOzdcwI+bdKaiDztcvOmHPi17L8LdryTT97zSuTMFcKXkhxbr/W/kyL4VClIVrp3AVHyu4K9ih9rjgM+AZjIK28B2GKLCvaZpQy/lFmi21TyNZ92lodWKXJX76i7HhdkExasBiWk3CprC3cuL4wDPJnp9Rb9oO0R0qBV11UC4MsPvtR+6RSJZt/eus3iyNWcq4nbMlFe//yvk265n8nJlxP4qcCthi5+zthbGWoH7+TOMHVE0Svla7EKY0TpPtlixh9Jj0Reqk8sJqbo8RuvrI37nsJG1F5QAmme2TYtn4CryekbCpQLCvq8eZBGCk/4=
   on:
-    tags: true
-    repo: sped-br/python-sped
+    branch: 11.0
+  distributions: bdist_wheel
 after_success:
-  - coveralls
+- coveralls

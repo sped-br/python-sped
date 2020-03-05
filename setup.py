@@ -27,7 +27,7 @@ class PyTest(test_command):
 
 
 setup(
-    name='sped',
+    name='python-sped',
     packages=find_packages(exclude=['contrib', 'docs', 'test*']),
     include_package_data=True,
     package_data={
@@ -39,8 +39,8 @@ setup(
                      'Python.',
     author='Sergio Garcia',
     author_email='sergio@ginx.com.br',
-    url='https://github.com/sped-br/python-sped',
-    download_url='https://github.com/sped-br/python-sped/releases',
+    url='https://github.com/Trust-Code/python-sped',
+    download_url='https://github.com/Trust-Code/python-sped/releases',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
