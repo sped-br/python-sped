@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '04 de Março de 2020 (início: 10 de Janeiro de 2020)'
+Data  = '05 de Março de 2020 (início: 10 de Janeiro de 2020)'
 
 import os, re, sys, itertools, csv
 from time import time, sleep
@@ -335,9 +335,11 @@ class SPED_EFD_Info:
 		Adicionar informações em dict_info
 		Formatar alguns de seus campos com o uso de tabelas ou funções
 		"""
+
 		dict_info['Arquivo da SPED EFD'] = self.basename
 		dict_info['Linhas'] = next(type(self).contador_de_linhas)
 
+		# adicionar informação de 'Tipo de Operação'
 		if self.efd_tipo == 'efd_contribuicoes':
 			if 'CST_PIS_COFINS' in dict_info and re.search(r'\d{1,2}', dict_info['CST_PIS_COFINS']):
 				cst = int(dict_info['CST_PIS_COFINS'])
@@ -352,22 +354,6 @@ class SPED_EFD_Info:
 					dict_info['Tipo de Operação'] = 'Saída'
 				else:
 					dict_info['Tipo de Operação'] = 'Entrada'
-
-		if (self.efd_tipo == 'efd_contribuicoes' and 'CST_PIS_COFINS' in dict_info 
-			and re.search(r'\d{1,2}', dict_info['CST_PIS_COFINS'])):
-			cst = int(dict_info['CST_PIS_COFINS'])
-			if 1 <= cst <= 49:
-				dict_info['Tipo de Operação'] = 'Saída'
-			elif 50 <= cst <= 99:
-				dict_info['Tipo de Operação'] = 'Entrada'
-		
-		if (self.efd_tipo == 'efd_icms_ipi' and 'CFOP' in dict_info 
-			and re.search(r'\d{4}', dict_info['CFOP'])):
-			cfop = int(dict_info['CFOP'])
-			if cfop >= 4000:
-				dict_info['Tipo de Operação'] = 'Saída'
-			else:
-				dict_info['Tipo de Operação'] = 'Entrada'
 		
 		# adicionar informação de NAT_BC_CRED para os créditos (50 <= cst <= 66) 
 		# quando houver informação do CFOP e NAT_BC_CRED estiver vazio.
@@ -425,20 +411,22 @@ class SPED_EFD_Info:
 		
 		my_regex = r'^[A-K]' # Ler os blocos da A a K.
 		
-		registros_da_bcalc = ['VL_BC_PIS', 'VL_BC_COFINS']
-		campos_necessarios = ['CST_PIS', 'CST_COFINS', 'VL_BC_PIS', 'VL_BC_COFINS']
-		# Bastam os seguintes campos, desde que os registros de PIS/PASEP ocorram sempre anteriores aos registros de COFINS:
-		# campos_necessarios = ['CST_COFINS', 'VL_BC_COFINS']
-
-		if self.efd_tipo == 'efd_icms_ipi':
-			registros_da_bcalc = ['VL_BC_ICMS']
+		if self.efd_tipo == 'efd_contribuicoes':
+			registros_de_base_calculo = ['VL_BC_PIS', 'VL_BC_COFINS']
+			campos_necessarios = ['CST_PIS', 'CST_COFINS', 'VL_BC_PIS', 'VL_BC_COFINS']
+			# Bastariam os seguintes campos, desde que os registros de PIS/PASEP ocorressem sempre anteriores 
+			# aos registros de COFINS: campos_necessarios = ['CST_COFINS', 'VL_BC_COFINS']
+		elif self.efd_tipo == 'efd_icms_ipi':
+			registros_de_base_calculo = ['VL_BC_ICMS']
 			campos_necessarios = ['CST_ICMS', 'VL_BC_ICMS']
 		
 		# https://docs.python.org/3/library/csv.html
-		with open(output_filename, 'w', newline='', encoding='utf-8', errors='ignore') as csvfile:
+		with open(output_filename, mode='w', newline='', encoding='utf-8', errors='ignore') as csvfile:
 
 			writer = csv.writer(csvfile, delimiter=';')
-			#writer.writerow(type(self).colunas_selecionadas) # imprimir nomes das colunas apenas uma vez
+
+			# Os nomes das colunas serão impressos posteriormente em efd_relatorios.py 
+			# writer.writerow(type(self).colunas_selecionadas)
 			
 			for key in sped_efd._blocos.keys():
 				
@@ -480,12 +468,13 @@ class SPED_EFD_Info:
 							cst_icms = registro.valores[campo.indice]
 						if campo.nome == 'CFOP': 
 							cfop = registro.valores[campo.indice]
-						if campo.nome in registros_da_bcalc:
+						if campo.nome in registros_de_base_calculo:
 							valor_bc = registro.valores[campo.indice]
 					
 					cst_contribuicao = max(cst_pis,cst_cofins)
 
 					# Utilizar uma combinação de valores para identificar univocamente um item.
+					# O pareamento entre itens de PIS e COFINS ocorre dinamicamente, linha a linha.
 					combinacao = f'{cst_contribuicao}_{cst_icms}_{cfop}_{valor_bc}'
 					
 					if self.verbose:
