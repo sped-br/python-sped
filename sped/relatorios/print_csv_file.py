@@ -338,12 +338,35 @@ class SPED_EFD_Info:
 		dict_info['Arquivo da SPED EFD'] = self.basename
 		dict_info['Linhas'] = next(type(self).contador_de_linhas)
 
-		# re.search: find something anywhere in the string and return a match object.
-		if 'CST_PIS_COFINS' in dict_info and re.search(r'\d{1,2}', dict_info['CST_PIS_COFINS']):
+		if self.efd_tipo == 'efd_contribuicoes':
+			if 'CST_PIS_COFINS' in dict_info and re.search(r'\d{1,2}', dict_info['CST_PIS_COFINS']):
+				cst = int(dict_info['CST_PIS_COFINS'])
+				if 1 <= cst <= 49:
+					dict_info['Tipo de Operação'] = 'Saída'
+				elif 50 <= cst <= 99:
+					dict_info['Tipo de Operação'] = 'Entrada'
+		elif self.efd_tipo == 'efd_icms_ipi':
+			if 'CFOP' in dict_info and re.search(r'\d{4}', dict_info['CFOP']):
+				cfop = int(dict_info['CFOP'])
+				if cfop >= 4000:
+					dict_info['Tipo de Operação'] = 'Saída'
+				else:
+					dict_info['Tipo de Operação'] = 'Entrada'
+
+		if (self.efd_tipo == 'efd_contribuicoes' and 'CST_PIS_COFINS' in dict_info 
+			and re.search(r'\d{1,2}', dict_info['CST_PIS_COFINS'])):
 			cst = int(dict_info['CST_PIS_COFINS'])
 			if 1 <= cst <= 49:
 				dict_info['Tipo de Operação'] = 'Saída'
 			elif 50 <= cst <= 99:
+				dict_info['Tipo de Operação'] = 'Entrada'
+		
+		if (self.efd_tipo == 'efd_icms_ipi' and 'CFOP' in dict_info 
+			and re.search(r'\d{4}', dict_info['CFOP'])):
+			cfop = int(dict_info['CFOP'])
+			if cfop >= 4000:
+				dict_info['Tipo de Operação'] = 'Saída'
+			else:
 				dict_info['Tipo de Operação'] = 'Entrada'
 		
 		# adicionar informação de NAT_BC_CRED para os créditos (50 <= cst <= 66) 
@@ -511,10 +534,9 @@ class SPED_EFD_Info:
 						# reter em info{} as informações dos registros contidos em registros_totais
 						info[nivel][combinacao][campo.nome] = valor
 
-						# Aparentemenete, o SPED RFB Java escolhe a primeira, quando há duas opções C191/C195, D101/D105, ... 
-						if campo.nome in type(self).registros_de_valor_do_item and 'Valor do Item' not in info[nivel][combinacao]:
+						if campo.nome in type(self).registros_de_valor_do_item:
 							info[nivel][combinacao]['Valor do Item'] = valor
-						if campo.nome in type(self).registros_de_data_emissao and len(valor) == 8:
+						if campo.nome in type(self).registros_de_data_emissao  and len(valor) == 8:
 							info[nivel][combinacao]['Data de Emissão'] = valor
 						if campo.nome in type(self).registros_de_data_execucao and len(valor) == 8:
 							info[nivel][combinacao]['Data de Execução'] = valor
