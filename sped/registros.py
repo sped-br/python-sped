@@ -114,7 +114,13 @@ class Registro(object):
         campo.set(self, value)
 
     def as_line(self):
+        return str(self)
+
+    def __str__(self):
         return '|'.join(self._valores)
+
+    def __repr__(self):
+        return '<%s.%s>' % (self.__class__.__module__, self.__class__.__name__)
 
 
 class RegistroIndefinido(Registro):

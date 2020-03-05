@@ -15,8 +15,8 @@ class Bloco0(Bloco):
     """
     Abertura, Identificação e Referências
     """
-    registro_abertura = Registro0001
-    registro_fechamento = Registro0990
+    registro_abertura = Registro0001()
+    registro_encerramento = Registro0990()
 
     @property
     def fechamento(self):
@@ -29,24 +29,24 @@ class BlocoI(Bloco):
     """
     Lançamentos Contábeis
     """
-    registro_abertura = RegistroI001
-    registro_fechamento = RegistroI990
+    registro_abertura = RegistroI001()
+    registro_encerramento = RegistroI990()
 
 
 class BlocoJ(Bloco):
     """
     Demonstrações Contábeis
     """
-    registro_abertura = RegistroJ001
-    registro_fechamento = RegistroJ990
+    registro_abertura = RegistroJ001()
+    registro_encerramento = RegistroJ990()
 
 
 class Bloco9(Bloco):
     """
     Controle e Encerramento do Arquivo Digital
     """
-    registro_abertura = Registro9001
-    registro_fechamento = Registro9990
+    registro_abertura = Registro9001()
+    registro_encerramento = Registro9990()
 
     @property
     def fechamento(self):

@@ -12,11 +12,11 @@ class ArquivoDigital(object):
     blocos = None
 
     registro_abertura = RegistroIndefinido
-    registro_fechamento = RegistroIndefinido
+    registro_encerramento = RegistroIndefinido
 
     def __init__(self):
         self._registro_abertura = self.registro_abertura()
-        self._registro_fechamento = self.registro_fechamento()
+        self._registro_encerramento = self.registro_encerramento()
         self._blocos = OrderedDict()
 
     def readfile(self, filename):
@@ -37,8 +37,8 @@ class ArquivoDigital(object):
 
         if registro.__class__ == self.__class__.registro_abertura:
             self._registro_abertura = registro
-        elif registro.__class__ == self.__class__.registro_fechamento:
-            self._registro_fechamento = registro
+        elif registro.__class__ == self.__class__.registro_encerramento:
+            self._registro_encerramento = registro
         else:
             bloco_id = reg_id[0]
             bloco = self._blocos[bloco_id]
@@ -53,9 +53,9 @@ class ArquivoDigital(object):
             for registro in bloco.registros:
                 buff.write(registro.as_line() + u'\r\n')
 
-        self._registro_fechamento[2] = reg_count
+        self._registro_encerramento[2] = reg_count
 
-        buff.write(self._registro_fechamento.as_line() + u'\r\n')
+        buff.write(self._registro_encerramento.as_line() + u'\r\n')
 
     def getstring(self):
         buff = StringIO()

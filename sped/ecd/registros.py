@@ -29,11 +29,11 @@ class Registro0000(Registro):
         Campo(13, 'IND_NIRE'),
         Campo(14, 'IND_FIN_ESC'),
         Campo(15, 'COD_HASH_SUB'),
-        Campo(16, 'NIRE_SUBST'),
-        Campo(17, 'IND_GRANDE_PORTE'),
-        Campo(18, 'TIP_ECD'),
-        Campo(19, 'COD_SCP'),
-        Campo(20, 'IDENT_MF')
+        Campo(16, 'IND_GRANDE_PORTE'),
+        Campo(17, 'TIP_ECD'),
+        Campo(18, 'COD_SCP'),
+        Campo(19, 'IDENT_MF'),
+        Campo(20, 'IND_ESC_CONS')
     ]
 
 
@@ -456,6 +456,7 @@ class RegistroJ100(Registro):
         Campo(7, 'IND_DC_BAL'),
         CampoNumerico(8, 'VL_CTA_INI', precisao=2),
         Campo(9, 'IND_DC_BAL_INI'),
+        Campo(10, 'NOTA_EXP_REF'),
     ]
 
 
@@ -472,6 +473,7 @@ class RegistroJ150(Registro):
         Campo(6, 'IND_VL'),
         CampoNumerico(7, 'VL_CTA_ULT_DRE', precisao=2),
         Campo(8, 'IND_VL_ULT_DRE'),
+        Campo(9, 'NOTA_EXP_REF'),
     ]
 
 
@@ -509,7 +511,7 @@ class RegistroJ930(Registro):
     campos = [
         CampoFixo(1, 'REG', 'J930'),
         CampoAlfanumerico(2, 'IDENT_NOM'),
-        CampoAlfanumerico(3, 'IDENT_CPF', tamanho=11),
+        CampoAlfanumerico(3, 'IDENT_CPF_CNPJ', tamanho=14),
         CampoAlfanumerico(4, 'IDENT_QUALIF'),
         CampoAlfanumerico(5, 'COD_ASSIN', tamanho=3),
         CampoAlfanumerico(6, 'IND_CRC'),
@@ -517,7 +519,8 @@ class RegistroJ930(Registro):
         CampoAlfanumerico(8, 'FONE'),
         CampoAlfanumerico(9, 'UF_CRC'),
         CampoAlfanumerico(10, 'NUM_SEQ_CRC'),
-        CampoData(11, 'DT_CRC')
+        CampoData(11, 'DT_CRC'),
+        CampoAlfanumerico(12, 'IND_RESP_LEGAL')
     ]
 
 
