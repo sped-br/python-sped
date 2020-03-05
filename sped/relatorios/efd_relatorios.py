@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 Autor = 'Claudio Fernandes de Souza Rodrigues (claudiofsr@yahoo.com)'
-Data  = '04 de Março de 2020 (início: 29 de Janeiro de 2020)'
+Data  = '05 de Março de 2020 (início: 29 de Janeiro de 2020)'
 Home  = 'https://github.com/claudiofsr/python-sped'
 
 # Instruções (no Linux):
@@ -19,7 +19,7 @@ Home  = 'https://github.com/claudiofsr/python-sped'
 # execute no terminal o camando:
 # > efd_relatorios
 
-import sys, os, re
+import sys, os, re, csv
 from time import time, sleep
 from sped import __version__
 from sped.relatorios.find_efd_files import ReadFiles, Total_Execution_Time
@@ -200,17 +200,23 @@ def main():
 		print(f"\nUnificar o(s) {num_total_de_arquivos} arquivo(s) CSV no arquivo '{final_file_csv}'.\n")
 
 	# unificar todos os arquivos csv no arquivo final_file_csv
-	with open(final_file_csv, 'w', newline='', encoding='utf-8', errors='ignore') as csv_unificado:
-		# imprimir nomes das colunas apenas uma vez na primeira linha
-		nomes_das_colunas = ';'.join(SPED_EFD_Info.colunas_selecionadas)
-		csv_unificado.write(nomes_das_colunas + '\n')
+	with open(final_file_csv, mode='w', newline='', encoding='utf-8', errors='ignore') as csv_unificado:
+
+		writer = csv.writer(csv_unificado, delimiter=';')
+			
+		# imprimir os nomes das colunas apenas uma vez na primeira linha 
+		writer.writerow(SPED_EFD_Info.colunas_selecionadas)
 
 		# https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 		for num, csv_file_path in new_dict.items():
+			
 			if num_total_de_arquivos > 1:
 				print(f"arquivo[{num:2d}]: '{csv_file_path}'.")
-			with open(csv_file_path, mode='r', encoding='utf-8', errors='ignore') as f:
-				csv_unificado.write(f.read()) # f.read() all lines at once
+			
+			with open(csv_file_path, mode='r', newline='', encoding='utf-8', errors='ignore') as f:
+				reader = csv.reader(f, delimiter=';')
+				writer.writerows(reader) # write all lines at once
+			
 			if os.path.exists(csv_file_path):
 				os.remove(csv_file_path)
 	
