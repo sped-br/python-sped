@@ -10,6 +10,11 @@ os.chdir(test_root)
 sys.path.insert(0, os.path.dirname(test_root))
 sys.path.insert(0, test_root)
 
+# De fato, trata-se de um teste de registro da EFD ICMS_IPI
+# Não se trata de teste de EFD PIS_COFINS
+#from sped.efd.pis_cofins.arquivos import ArquivoDigital
+#from sped.efd.pis_cofins.registros import Registro0100
+
 from sped.efd.icms_ipi.arquivos import ArquivoDigital
 from sped.efd.icms_ipi.registros import Registro0100
 
@@ -18,7 +23,7 @@ class TestSpedPisCofins(unittest.TestCase):
     def test_read_registro(self):
         txt = u"""|0000|010|0|01102016|30102016|KMEE INFORMATICA LTDA|53.939.351/0001-29|333.333.333-33|SP|222.222.222.222|1234567|5999|0123|A|1|
 |0001|0|
-|0100|Daniel Sadamo|12334532212|532212|||Rua dos ferroviario|123|Agonia||||||
+|0100|Daniel Sadamo|12334532207|532212|||Rua dos ferroviario|123|Agonia||||||
 |0990|3|
 |C001|1|
 |C990|2|
@@ -60,7 +65,7 @@ class TestSpedPisCofins(unittest.TestCase):
 
         contabilista = Registro0100()
         contabilista.NOME = 'Daniel Sadamo'
-        contabilista.CPF = '12334532212'
+        contabilista.CPF = '12334532207'
         contabilista.CRC = '532212'
         contabilista.END = 'Rua dos ferroviario'
         contabilista.NUM = '123'

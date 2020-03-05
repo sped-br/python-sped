@@ -31,8 +31,8 @@ class Bloco0(Bloco):
     registro_encerramento = Registro0990()
 
     @property
-    def fechamento(self):
-        registro = self.__class__.registro_encerramento()
+    def encerramento(self):
+        registro = self.__class__.registro_encerramento
         # Define a quantidade de registros
         registro[2] = len(self._registros) + 3
         return registro
@@ -110,8 +110,8 @@ class Bloco9(Bloco):
     registro_encerramento = Registro9990()
 
     @property
-    def fechamento(self):
-        registro = self.__class__.registro_encerramento()
+    def encerramento(self):
+        registro = self.__class__.registro_encerramento
         # Define a quantidade de registros
         registro[2] = len(self._registros) + 3
         return registro

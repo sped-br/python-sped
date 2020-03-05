@@ -11,6 +11,8 @@ Biblioteca para geração dos arquivos do Sistema Público de Escrituração Dig
 
   * python
   * six
+  * cchardet
+  * xlsxwriter
 
 ## Como instalar
 

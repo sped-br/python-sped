@@ -7,4 +7,4 @@ from .escrituracao import EFD_PIS_COFINS
 from .escrituracao import Escrituracao
 
 
-__version__ = '1.0.2'
+__version__ = '1.0.3'

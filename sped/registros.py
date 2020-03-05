@@ -6,7 +6,7 @@ from .campos import CampoRegex
 from .erros import CampoError
 from .erros import CampoInexistenteError
 from .erros import RegistroError
-
+import itertools
 
 class Registro(object):
     """
@@ -64,6 +64,7 @@ class Registro(object):
     FormatoInvalidoError: RegistroTest -> RETIFICADORA
     """
     campos = []
+    contador_de_linhas = itertools.count(1)
 
     def __init__(self, line=None):
         if not line:
@@ -71,16 +72,24 @@ class Registro(object):
             for c in self.campos:
                 if isinstance(c, CampoFixo):
                     self._valores[c.indice] = c.valor
+            self._numero_da_linha = None
         else:
-            self._valores = line.split('|')
+            #self._valores = line.split('|')
+            self._valores = [valor.strip() for valor in line.split('|')]
             for c in self.campos:
                 if isinstance(c, CampoFixo):
                     if self._valores[c.indice] != c.valor:
                         raise CampoError(self, c.nome)
+            # Inicializar contador na leitura do registro de abertura '0000'
+            # if self.__class__.__name__ == 'Registro0000':
+            if self._valores[1] == '0000':
+                Registro.contador_de_linhas = itertools.count(1)
+            # Informação do número da linha do arquivo sped
+            self._numero_da_linha = next(Registro.contador_de_linhas)
 
     @property
-    def campos(self):
-        return self.__class__.campos
+    def numero_da_linha(self):
+        return self._numero_da_linha
 
     @property
     def valores(self):
@@ -121,7 +130,6 @@ class Registro(object):
 
     def __repr__(self):
         return '<%s.%s>' % (self.__class__.__module__, self.__class__.__name__)
-
 
 class RegistroIndefinido(Registro):
     def __init__(self):

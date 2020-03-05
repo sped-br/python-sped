@@ -1,3 +1,5 @@
 coveralls==0.5
 six==1.9.0
 pytest==2.6.4
+cchardet==2.1.5
+xlsxwriter=1.2.7

@@ -4,7 +4,6 @@ from setuptools import setup, find_packages
 from setuptools.command.test import test as test_command
 from sped import __version__
 
-
 class PyTest(test_command):
     user_options = [('pytest-args=', 'a', "Arguments to pass to py.test")]
 
@@ -24,7 +23,6 @@ class PyTest(test_command):
 
         errno = pytest.main(self.pytest_args)
         sys.exit(errno)
-
 
 setup(
     name='python-sped',
@@ -50,7 +48,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='sped fiscal contábil contabilidade receita federal',
-    install_requires=['six'],
+    install_requires=['six','cchardet','xlsxwriter'],
     tests_require=['pytest'],
     extras_require={
         'dev': ['pylint>=1.9.1'],
@@ -60,4 +58,11 @@ setup(
         ]
     },
     cmdclass={'test': PyTest},
+
+    # https://stackoverflow.com/questions/4840182/setup-py-and-adding-file-to-bin
+    # scripts=['sped/relatorios/efd_relatorios'],
+
+    entry_points = {
+        'console_scripts': ['efd_relatorios=sped.relatorios.efd_relatorios:main']
+    },
 )

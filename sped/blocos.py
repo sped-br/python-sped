@@ -2,11 +2,12 @@
 
 from .registros import Registro
 
-
 class Bloco(object):
     def __init__(self, nome=''):
         self._nome = nome
         self._registros = []
+        #self.registro_abertura = Registro()
+        #self.registro_encerramento = Registro()
 
     def __repr__(self):
         return '<%s.%s(%s)>' % (self.__class__.__module__,
@@ -28,6 +29,4 @@ class Bloco(object):
 
     def add(self, registro):
         # Não adiciona o registro de abertura e fechamento
-        if not registro.__class__ == self.registro_abertura.__class__ and \
-           not registro.__class__ == self.registro_encerramento.__class__:
-            self._registros.append(registro)
+        self._registros.append(registro)
