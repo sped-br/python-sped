@@ -40,6 +40,16 @@ class Registro0001(Registro):
     ]
 
 
+class Registro0002(Registro):
+    """
+    ABERTURA DO BLOCO 0
+    """
+    campos = [
+        CampoFixo(1, 'REG', '0002'),
+        Campo(2, 'CLAS_ESTAB_IND'),
+    ]
+
+
 class Registro0005(Registro):
     """
     DADOS COMPLEMENTARES DA ENTIDADE
@@ -198,7 +208,7 @@ class Registro0220(Registro):
     campos = [
         CampoFixo(1, 'REG', '0220'),
         Campo(2, 'UNID_CONV'),
-        Campo(3, 'FAT_CONV'),
+        CampoNumerico(3, 'FAT_CONV'),
     ]
 
 
@@ -345,24 +355,24 @@ class RegistroC100(Registro):
         Campo(9, 'CHV_NFE'),
         CampoData(10, 'DT_DOC'),
         CampoData(11, 'DT_E_S'),
-        CampoNumerico(12, 'VL_DOC'),
+        CampoNumerico(12, 'VL_DOC', precisao=2),
         Campo(13, 'IND_PGTO'),
-        CampoNumerico(14, 'VL_DESC'),
-        CampoNumerico(15, 'VL_ABAT_NT'),
-        CampoNumerico(16, 'VL_MERC'),
+        CampoNumerico(14, 'VL_DESC', precisao=2),
+        CampoNumerico(15, 'VL_ABAT_NT', precisao=2),
+        CampoNumerico(16, 'VL_MERC', precisao=2),
         Campo(17, 'IND_FRT'),
-        CampoNumerico(18, 'VL_FRT'),
-        CampoNumerico(19, 'VL_SEG'),
-        CampoNumerico(20, 'VL_OUT_DA'),
-        CampoNumerico(21, 'VL_BC_ICMS'),
-        CampoNumerico(22, 'VL_ICMS'),
-        CampoNumerico(23, 'VL_BC_ICMS_ST'),
-        CampoNumerico(24, 'VL_ICMS_ST'),
-        CampoNumerico(25, 'VL_IPI'),
-        CampoNumerico(26, 'VL_PIS'),
-        CampoNumerico(27, 'VL_COFINS'),
-        CampoNumerico(28, 'VL_PIS_ST'),
-        CampoNumerico(29, 'VL_COFINS_ST'),
+        CampoNumerico(18, 'VL_FRT', precisao=2),
+        CampoNumerico(19, 'VL_SEG', precisao=2),
+        CampoNumerico(20, 'VL_OUT_DA', precisao=2),
+        CampoNumerico(21, 'VL_BC_ICMS', precisao=2),
+        CampoNumerico(22, 'VL_ICMS', precisao=2),
+        CampoNumerico(23, 'VL_BC_ICMS_ST', precisao=2),
+        CampoNumerico(24, 'VL_ICMS_ST', precisao=2),
+        CampoNumerico(25, 'VL_IPI', precisao=2),
+        CampoNumerico(26, 'VL_PIS', precisao=2),
+        CampoNumerico(27, 'VL_COFINS', precisao=2),
+        CampoNumerico(28, 'VL_PIS_ST', precisao=2),
+        CampoNumerico(29, 'VL_COFINS_ST', precisao=2),
     ]
 
 
@@ -374,9 +384,9 @@ class RegistroC101(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'C101'),
-        Campo(2, 'VL_FCP_UF_DEST'),
-        Campo(3, 'VL_ICMS_UF_DEST'),
-        Campo(4, 'VL_ICMS_UF_REM'),
+        CampoNumerico(2, 'VL_FCP_UF_DEST', precisao=2),
+        CampoNumerico(3, 'VL_ICMS_UF_DEST', precisao=2),
+        CampoNumerico(4, 'VL_ICMS_UF_REM', precisao=2),
     ]
 
 
@@ -594,40 +604,40 @@ class RegistroC170(Registro):
         CampoNumerico(2, 'NUM_ITEM'),
         Campo(3, 'COD_ITEM'),
         Campo(4, 'DESCR_COMPL'),
-        CampoNumerico(5, 'QTD'),
+        CampoNumerico(5, 'QTD', precisao=2),
         Campo(6, 'UNID'),
-        CampoNumerico(7, 'VL_ITEM'),
-        CampoNumerico(8, 'VL_DESC'),
+        CampoNumerico(7, 'VL_ITEM', precisao=2),
+        CampoNumerico(8, 'VL_DESC', precisao=2),
         Campo(9, 'IND_MOV'),
         Campo(10, 'CST_ICMS'),
         Campo(11, 'CFOP'),
         Campo(12, 'COD_NAT'),
-        CampoNumerico(13, 'VL_BC_ICMS'),
-        CampoNumerico(14, 'ALIQ_ICMS'),
-        CampoNumerico(15, 'VL_ICMS'),
-        CampoNumerico(16, 'VL_BC_ICMS_ST'),
-        CampoNumerico(17, 'ALIQ_ST'),
-        CampoNumerico(18, 'VL_ICMS_ST'),
+        CampoNumerico(13, 'VL_BC_ICMS', precisao=2),
+        CampoNumerico(14, 'ALIQ_ICMS', precisao=2),
+        CampoNumerico(15, 'VL_ICMS', precisao=2),
+        CampoNumerico(16, 'VL_BC_ICMS_ST', precisao=2),
+        CampoNumerico(17, 'ALIQ_ST', precisao=2),
+        CampoNumerico(18, 'VL_ICMS_ST', precisao=2),
         Campo(19, 'IND_APUR'),
         Campo(20, 'CST_IPI'),
         Campo(21, 'COD_ENQ'),
-        CampoNumerico(22, 'VL_BC_IPI'),
-        CampoNumerico(23, 'ALIQ_IPI'),
-        CampoNumerico(24, 'VL_IPI'),
+        CampoNumerico(22, 'VL_BC_IPI', precisao=2),
+        CampoNumerico(23, 'ALIQ_IPI', precisao=2),
+        CampoNumerico(24, 'VL_IPI', precisao=2),
         Campo(25, 'CST_PIS'),
-        CampoNumerico(26, 'VL_BC_PIS'),
-        CampoNumerico(27, 'ALIQ_PIS'),
-        CampoNumerico(28, 'QUANT_BC_PIS'),
-        CampoNumerico(29, 'ALIQ_PIS'),
-        CampoNumerico(30, 'VL_PIS'),
+        CampoNumerico(26, 'VL_BC_PIS', precisao=2),
+        CampoNumerico(27, 'ALIQ_PIS', precisao=2),
+        CampoNumerico(28, 'QUANT_BC_PIS', precisao=2),
+        CampoNumerico(29, 'ALIQ_PIS', precisao=2),
+        CampoNumerico(30, 'VL_PIS', precisao=2),
         Campo(31, 'CST_COFINS'),
-        CampoNumerico(32, 'VL_BC_COFINS'),
-        CampoNumerico(33, 'ALIQ_COFINS'),
-        CampoNumerico(34, 'QUANT_BC_COFINS'),
-        CampoNumerico(35, 'ALIQ_COFINS'),
-        CampoNumerico(36, 'VL_COFINS'),
+        CampoNumerico(32, 'VL_BC_COFINS', precisao=2),
+        CampoNumerico(33, 'ALIQ_COFINS', precisao=2),
+        CampoNumerico(34, 'QUANT_BC_COFINS', precisao=2),
+        CampoNumerico(35, 'ALIQ_COFINS', precisao=2),
+        CampoNumerico(36, 'VL_COFINS', precisao=2),
         Campo(37, 'COD_CTA'),
-        CampoNumerico(38, 'VL_ABAT_NT'),
+        CampoNumerico(38, 'VL_ABAT_NT', precisao=2),
     ]
 
 
@@ -757,15 +767,28 @@ class RegistroC190(Registro):
         CampoFixo(1, 'REG', 'C190'),
         Campo(2, 'CST_ICMS'),
         Campo(3, 'CFOP'),
-        Campo(4, 'ALIQ_ICMS'),
-        Campo(5, 'VL_OPR'),
-        Campo(6, 'VL_BC_ICMS'),
-        Campo(7, 'VL_ICMS'),
-        Campo(8, 'VL_BC_ICMS_ST'),
-        Campo(9, 'VL_ICMS_ST'),
-        Campo(10, 'VL_RED_BC'),
-        Campo(11, 'VL_IPI'),
+        CampoNumerico(4, 'ALIQ_ICMS', precisao=2),
+        CampoNumerico(5, 'VL_OPR', precisao=2),
+        CampoNumerico(6, 'VL_BC_ICMS', precisao=2),
+        CampoNumerico(7, 'VL_ICMS', precisao=2),
+        CampoNumerico(8, 'VL_BC_ICMS_ST', precisao=2),
+        CampoNumerico(9, 'VL_ICMS_ST', precisao=2),
+        CampoNumerico(10, 'VL_RED_BC', precisao=2),
+        CampoNumerico(11, 'VL_IPI', precisao=2),
         Campo(12, 'COD_OBS'),
+    ]
+
+
+class RegistroC191(Registro):
+    """
+    REGISTRO C191: INFORMAÇÕES DO FUNDO DE COMBATE À POBREZA – FCP – NA NF-
+    e (CÓDIGO 55) E NA NFC-E (CÓDIGO 65)
+    """
+    campos = [
+        CampoFixo(1, 'REG', 'C191'),
+        CampoNumerico(2, 'VL_FCP_OP', precisao=2),
+        CampoNumerico(3, 'VL_FCP_ST', precisao=2),
+        CampoNumerico(4, 'VL_FCP_RET', precisao=2),
     ]
 
 
@@ -1384,17 +1407,17 @@ class RegistroD100(Registro):
         Campo(8, 'SUB'),
         Campo(9, 'NUM_DOC'),
         Campo(10, 'CHV_CTE'),
-        Campo(11, 'DT_DOC'),
-        Campo(12, 'DT_A_P'),
+        CampoData(11, 'DT_DOC'),
+        CampoData(12, 'DT_A_P'),
         Campo(13, 'TP_CT-e'),
         Campo(14, 'CHV_CTE_REF'),
-        Campo(15, 'VL_DOC'),
-        Campo(16, 'VL_DESC'),
+        CampoNumerico(15, 'VL_DOC', precisao=2),
+        CampoNumerico(16, 'VL_DESC', precisao=2),
         Campo(17, 'IND_FRT'),
-        Campo(18, 'VL_SERV'),
-        Campo(19, 'VL_BC_ICMS'),
-        Campo(20, 'VL_ICMS'),
-        Campo(21, 'VL_NT'),
+        CampoNumerico(18, 'VL_SERV', precisao=2),
+        CampoNumerico(19, 'VL_BC_ICMS', precisao=2),
+        CampoNumerico(20, 'VL_ICMS', precisao=2),
+        CampoNumerico(21, 'VL_NT', precisao=2),
         Campo(22, 'COD_INF'),
         Campo(23, 'COD_CTA'),
         Campo(24, 'COD_MUN_ORIG'),
@@ -1596,11 +1619,11 @@ class RegistroD190(Registro):
         CampoFixo(1, 'REG', 'D190'),
         Campo(2, 'CST_ICMS'),
         Campo(3, 'CFOP'),
-        Campo(4, 'ALIQ_ICMS'),
-        Campo(5, 'VL_OPR'),
-        Campo(6, 'VL_BC_ICMS'),
-        Campo(7, 'VL_ICMS'),
-        Campo(8, 'VL_RED_BC'),
+        CampoNumerico(4, 'ALIQ_ICMS', precisao=2),
+        CampoNumerico(5, 'VL_OPR', precisao=2),
+        CampoNumerico(6, 'VL_BC_ICMS', precisao=2),
+        CampoNumerico(7, 'VL_ICMS', precisao=2),
+        CampoNumerico(8, 'VL_RED_BC', precisao=2),
         Campo(9, 'COD_OBS'),
     ]
 
@@ -2092,20 +2115,20 @@ class RegistroE110(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'E110'),
-        Campo(2, 'VL_TOT_DEBITOS'),
-        Campo(3, 'VL_AJ_DEBITOS'),
-        Campo(4, 'VL_TOT_AJ_DEBITOS'),
-        Campo(5, 'VL_ESTORNOS_CRED'),
-        Campo(6, 'VL_TOT_CREDITOS'),
-        Campo(7, 'VL_AJ_CREDITOS'),
-        Campo(8, 'VL_TOT_AJ_CREDITOS'),
-        Campo(9, 'VL_ESTORNOS_DEB'),
-        Campo(10, 'VL_SLD_CREDOR_ANT'),
-        Campo(11, 'VL_SLD_APURADO'),
-        Campo(12, 'VL_TOT_DED'),
-        Campo(13, 'VL_ICMS_RECOLHER'),
-        Campo(14, 'VL_SLD_CREDOR_TRANSPORTAR'),
-        Campo(15, 'DEB_ESP'),
+        CampoNumerico(2, 'VL_TOT_DEBITOS', precisao=2),
+        CampoNumerico(3, 'VL_AJ_DEBITOS', precisao=2),
+        CampoNumerico(4, 'VL_TOT_AJ_DEBITOS', precisao=2),
+        CampoNumerico(5, 'VL_ESTORNOS_CRED', precisao=2),
+        CampoNumerico(6, 'VL_TOT_CREDITOS', precisao=2),
+        CampoNumerico(7, 'VL_AJ_CREDITOS', precisao=2),
+        CampoNumerico(8, 'VL_TOT_AJ_CREDITOS', precisao=2),
+        CampoNumerico(9, 'VL_ESTORNOS_DEB', precisao=2),
+        CampoNumerico(10, 'VL_SLD_CREDOR_ANT', precisao=2),
+        CampoNumerico(11, 'VL_SLD_APURADO', precisao=2),
+        CampoNumerico(12, 'VL_TOT_DED', precisao=2),
+        CampoNumerico(13, 'VL_ICMS_RECOLHER', precisao=2),
+        CampoNumerico(14, 'VL_SLD_CREDOR_TRANSPORTAR', precisao=2),
+        CampoNumerico(15, 'DEB_ESP', precisao=2),
     ]
 
 
@@ -2171,8 +2194,8 @@ class RegistroE116(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E116'),
         Campo(2, 'COD_OR'),
-        Campo(3, 'VL_OR'),
-        Campo(4, 'DT_VCTO'),
+        CampoNumerico(3, 'VL_OR', precisao=2),
+        CampoData(4, 'DT_VCTO'),
         Campo(5, 'COD_REC'),
         Campo(6, 'NUM_PROC'),
         Campo(7, 'IND_PROC'),
@@ -2201,19 +2224,19 @@ class RegistroE210(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E210'),
         Campo(2, 'IND_MOV_ST'),
-        Campo(3, 'VL_SLD_CRED_ANT_ST'),
-        Campo(4, 'VL_DEVOL_ST'),
-        Campo(5, 'VL_RESSARC_ST'),
-        Campo(6, 'VL_OUT_CRED_ST'),
-        Campo(7, 'VL_AJ_CREDITOS_ST'),
-        Campo(8, 'VL_RETENÇAO_ST'),
-        Campo(9, 'VL_OUT_DEB_ST'),
-        Campo(10, 'VL_AJ_DEBITOS_ST'),
-        Campo(11, 'VL_SLD_DEV_ANT_ST'),
-        Campo(12, 'VL_DEDUÇÕES_ST'),
-        Campo(13, 'VL_ICMS_RECOL_ST'),
-        Campo(14, 'VL_SLD_CRED_ST_TRAN SPORTAR'),
-        Campo(15, 'DEB_ESP_ST'),
+        CampoNumerico(3, 'VL_SLD_CRED_ANT_ST', precisao=2),
+        CampoNumerico(4, 'VL_DEVOL_ST', precisao=2),
+        CampoNumerico(5, 'VL_RESSARC_ST', precisao=2),
+        CampoNumerico(6, 'VL_OUT_CRED_ST', precisao=2),
+        CampoNumerico(7, 'VL_AJ_CREDITOS_ST', precisao=2),
+        CampoNumerico(8, 'VL_RETENÇAO_ST', precisao=2),
+        CampoNumerico(9, 'VL_OUT_DEB_ST', precisao=2),
+        CampoNumerico(10, 'VL_AJ_DEBITOS_ST', precisao=2),
+        CampoNumerico(11, 'VL_SLD_DEV_ANT_ST', precisao=2),
+        CampoNumerico(12, 'VL_DEDUÇÕES_ST', precisao=2),
+        CampoNumerico(13, 'VL_ICMS_RECOL_ST', precisao=2),
+        CampoNumerico(14, 'VL_SLD_CRED_ST_TRAN SPORTAR', precisao=2),
+        CampoNumerico(15, 'DEB_ESP_ST', precisao=2),
     ]
 
 
@@ -2225,7 +2248,7 @@ class RegistroE220(Registro):
         CampoFixo(1, 'REG', 'E220'),
         Campo(2, 'COD_AJ_APUR'),
         Campo(3, 'DESCR_COMPL_AJ'),
-        Campo(4, 'VL_AJ_APUR'),
+        CampoNumerico(4, 'VL_AJ_APUR', precisao=2),
     ]
 
 
@@ -2257,7 +2280,7 @@ class RegistroE240(Registro):
         Campo(6, 'NUM_DOC'),
         Campo(7, 'DT_DOC'),
         Campo(8, 'COD_ITEM'),
-        Campo(9, 'VL_AJ_ITEM'),
+        CampoNumerico(9, 'VL_AJ_ITEM', precisao=2),
     ]
 
 
@@ -2268,7 +2291,7 @@ class RegistroE250(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E250'),
         Campo(2, 'COD_OR'),
-        Campo(3, 'VL_OR'),
+        CampoNumerico(3, 'VL_OR', precisao=2),
         Campo(4, 'DT_VCTO'),
         Campo(5, 'COD_REC'),
         Campo(6, 'NUM_PROC'),
@@ -2301,26 +2324,26 @@ class RegistroE310(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E310'),
         Campo(2, 'IND_MOV_FCP_DIFAL'),
-        Campo(3, 'VL_SLD_CRED_ANT_DIFAL'),
-        Campo(4, 'VL_TOT_DEBITOS_DIFAL'),
-        Campo(5, 'VL_OUT_DEB_DIFAL'),
-        Campo(6, 'VL_TOT_CREDITOS_DIFAL'),
-        Campo(7, 'VL_OUT_CRED_DIFAL'),
-        Campo(8, 'VL_SLD_DEV_ANT_DIFAL'),
-        Campo(9, 'VL_DEDUCOES_DIFAL'),
-        Campo(10, 'VL_RECOL_DIFAL'),
-        Campo(11, 'VL_SLD_CRED_TRANSPORTAR_DIFAL'),
-        Campo(12, 'DEB_ESP_DIFAL'),
-        Campo(13, 'VL_SLD_CRED_ANT_FCP'),
-        Campo(14, 'VL_TOT_DEB_FCP'),
-        Campo(15, 'VL_OUT_DEB_FCP'),
-        Campo(16, 'VL_TOT_CRED_FCP'),
-        Campo(17, 'VL_OUT_CRED_FCP'),
-        Campo(18, 'VL_SLD_DEV_ANT_FCP'),
-        Campo(19, 'VL_DEDUCOES_FCP'),
-        Campo(20, 'VL_RECOL_FCP'),
-        Campo(21, 'VL_SLD_CRED_TRANSPORTAR_FCP'),
-        Campo(22, 'DEB_ESP_FCP'),
+        CampoNumerico(3, 'VL_SLD_CRED_ANT_DIFAL', precisao=2),
+        CampoNumerico(4, 'VL_TOT_DEBITOS_DIFAL', precisao=2),
+        CampoNumerico(5, 'VL_OUT_DEB_DIFAL', precisao=2),
+        CampoNumerico(6, 'VL_TOT_CREDITOS_DIFAL', precisao=2),
+        CampoNumerico(7, 'VL_OUT_CRED_DIFAL', precisao=2),
+        CampoNumerico(8, 'VL_SLD_DEV_ANT_DIFAL', precisao=2),
+        CampoNumerico(9, 'VL_DEDUCOES_DIFAL', precisao=2),
+        CampoNumerico(10, 'VL_RECOL_DIFAL', precisao=2),
+        CampoNumerico(11, 'VL_SLD_CRED_TRANSPORTAR_DIFAL', precisao=2),
+        CampoNumerico(12, 'DEB_ESP_DIFAL', precisao=2),
+        CampoNumerico(13, 'VL_SLD_CRED_ANT_FCP', precisao=2),
+        CampoNumerico(14, 'VL_TOT_DEB_FCP', precisao=2),
+        CampoNumerico(15, 'VL_OUT_DEB_FCP', precisao=2),
+        CampoNumerico(16, 'VL_TOT_CRED_FCP', precisao=2),
+        CampoNumerico(17, 'VL_OUT_CRED_FCP', precisao=2),
+        CampoNumerico(18, 'VL_SLD_DEV_ANT_FCP', precisao=2),
+        CampoNumerico(19, 'VL_DEDUCOES_FCP', precisao=2),
+        CampoNumerico(20, 'VL_RECOL_FCP', precisao=2),
+        CampoNumerico(21, 'VL_SLD_CRED_TRANSPORTAR_FCP', precisao=2),
+        CampoNumerico(22, 'DEB_ESP_FCP', precisao=2),
     ]
 
 class RegistroE316(Registro):
@@ -2332,7 +2355,7 @@ class RegistroE316(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E316'),
         Campo(2, 'COD_OR'),
-        Campo(3, 'VL_OR'),
+        CampoNumerico(3, 'VL_OR', precisao=2),
         Campo(4, 'DT_VCTO'),
         Campo(5, 'COD_REC'),
         Campo(6, 'NUM_PROC'),
@@ -2363,9 +2386,9 @@ class RegistroE510(Registro):
         CampoFixo(1, 'REG', 'E510'),
         Campo(2, 'CFOP'),
         Campo(3, 'CST_IPI'),
-        Campo(4, 'VL_CONT_IPI'),
-        Campo(5, 'VL_BC_IPI'),
-        Campo(6, 'VL_IPI'),
+        CampoNumerico(4, 'VL_CONT_IPI', precisao=2),
+        CampoNumerico(5, 'VL_BC_IPI', precisao=2),
+        CampoNumerico(6, 'VL_IPI', precisao=2),
     ]
 
 
@@ -2375,13 +2398,13 @@ class RegistroE520(Registro):
     """
     campos = [
         CampoFixo(1, 'REG', 'E520'),
-        Campo(2, 'VL_SD_ANT_IPI'),
-        Campo(3, 'VL_DEB_IPI'),
-        Campo(4, 'VL_CRED_IPI'),
-        Campo(5, 'VL_OD_IPI'),
-        Campo(6, 'VL_OC_IPI'),
-        Campo(7, 'VL_SC_IPI'),
-        Campo(8, 'VL_SD_IPI'),
+        CampoNumerico(2, 'VL_SD_ANT_IPI', precisao=2),
+        CampoNumerico(3, 'VL_DEB_IPI', precisao=2),
+        CampoNumerico(4, 'VL_CRED_IPI', precisao=2),
+        CampoNumerico(5, 'VL_OD_IPI', precisao=2),
+        CampoNumerico(6, 'VL_OC_IPI', precisao=2),
+        CampoNumerico(7, 'VL_SC_IPI', precisao=2),
+        CampoNumerico(8, 'VL_SD_IPI', precisao=2),
     ]
 
 
@@ -2392,7 +2415,7 @@ class RegistroE530(Registro):
     campos = [
         CampoFixo(1, 'REG', 'E530'),
         Campo(2, 'IND_AJ'),
-        Campo(3, 'VL_AJ'),
+        CampoNumerico(3, 'VL_AJ', precisao=2),
         Campo(4, 'COD_AJ'),
         Campo(5, 'IND_DOC'),
         Campo(6, 'NUM_DOC'),
@@ -2711,6 +2734,7 @@ class Registro1010(Registro):
         Campo(11, 'IND_GIAF1'),
         Campo(12, 'IND_GIAF3'),
         Campo(13, 'IND_GIAF4'),
+        Campo(14, 'IND_REST_RESSARC_COMPL_ICMS'),
     ]
 
 
